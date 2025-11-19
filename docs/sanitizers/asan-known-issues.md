@@ -103,7 +103,7 @@ Please report any bugs to our [Developer Community](https://aka.ms/feedback/repo
 
 In 64-bit systems, MSVC ASan's [shadow bytes](./asan-shadow-bytes.md) region occupies several terabytes of virtual address space. ASan does not pre-commit this memory; instead, it uses on demand paging. When a shadow page is accessed for the first time, a first-chance page-fault exception occurs and is handled by ASan, which commits the page.
 
-The Visual Studio debugger handles this gracefully, and doesn't show these traces. However, debuggers like WinDbgX may break on every exception by default. Disabling breaking on first-chance exceptions is recommended. For example, in WinDbgX, this corresponds to the [`sxd av`](https://learn.microsoft.com/en-us/windows-hardware/drivers/debuggercmds/sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-) command. 
+The Visual Studio debugger handles this gracefully, and doesn't show these traces. However, debuggers like WinDbgX may break on every exception by default. Disabling breaking on first-chance exceptions is recommended. For example, in WinDbgX, this corresponds to the [`sxd av`](https://learn.microsoft.com/windows-hardware/drivers/debuggercmds/sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-) command. 
 
 ## See also
 
