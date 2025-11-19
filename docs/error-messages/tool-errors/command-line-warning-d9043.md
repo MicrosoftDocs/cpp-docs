@@ -11,7 +11,7 @@ helpviewer_keywords: ["D9043"]
 
 ## Example
 
-The following example generates C9043.
+The following example generates D9043.
 
 ```cpp
 // D9043.cpp

@@ -17,7 +17,7 @@ This error can be caused by a semicolon between a function header and the openin
 
 ## Example
 
-The following example generates C2499:
+The following example generates C2449:
 
 ```c
 // C2449.c
