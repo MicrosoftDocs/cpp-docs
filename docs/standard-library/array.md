@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: <array>"
 title: "<array>"
-ms.date: "11/04/2016"
+description: "Learn more about: <array>"
+ms.date: 11/04/2016
 f1_keywords: ["<array>"]
 helpviewer_keywords: ["array header"]
 ---
@@ -45,6 +45,7 @@ Defines the container class template **array** and several supporting templates.
 |-|-|
 |[get](../standard-library/array-functions.md#get)|Get specified array element.|
 |[swap](../standard-library/array-functions.md#swap)|Exchanges the contents of one array with the contents of another array.|
+| [`to_array`](array-functions.md#to_array) | Converts a built-in array to a `std::array` object. |
 
 ## See also
 
