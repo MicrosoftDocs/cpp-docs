@@ -99,7 +99,7 @@ If all of the DLLs compiled with ASan are unloaded from the process before the p
 
 Please report any bugs to our [Developer Community](https://aka.ms/feedback/report?space=62).
 
-## ASan generates a large amount of benign first chance exceptions in 64-bit architectures
+## ASan 64-bit first chance exceptions
 
 ASan reserves about one third of the process virtual memory for its [shadow bytes](./asan-shadow-bytes.md). In a 64-bit address space, this corresponds to several terabytes of memory, making it impractical for ASan to pre-commit these pages during initialization. Therefore, ASan in 64-bit architectures uses an on-demand shadow byte paging scheme: when a shadow bytes page is accessed for the first time, ASan is notified through a first-chance exception, and only commits the page at that moment. As a result, some debuggers may display a large amount of benign 'first chance' exceptions when running under ASan.
 
