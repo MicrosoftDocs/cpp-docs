@@ -168,7 +168,7 @@ The following warnings are turned off by default in Visual Studio 2019 and later
 | C5220 (level 4) | '*member*': a non-static data member with a volatile qualified type no longer implies that<br/> compiler generated copy/move constructors and copy/move assignment operators are not trivial <sup>16.7</sup> |
 | C5233 (level 4) | explicit lambda capture '*identifier*' is not used <sup>16.10</sup> |
 | [C5240 (level 4)](../error-messages/compiler-warnings/c5240.md)  | '*attribute-name*': attribute is ignored in this syntactic position <sup>16.10</sup> |
-| [C5243 (level 1)](../error-messages/compiler-warnings/c5247.md) | '*type-name*': using incomplete class '*class-name*' can cause potential one definition rule violation due to ABI limitation <sup>16.10</sup> |
+| [C5243 (level 1)](../error-messages/compiler-warnings/c5243.md) | '*type-name*': using incomplete class '*class-name*' can cause potential one definition rule violation due to ABI limitation <sup>16.10</sup> |
 | C5245 (level 4) | '*function*': unreferenced function with internal linkage has been removed |
 | C5246 (level 1) | '*member*': the initialization of a subobject should be wrapped in braces <sup>16.10</sup> |
 | [C5247 (level 1)](../error-messages/compiler-warnings/c5247.md) | Section '*section-name*' is reserved for C++ dynamic initialization. Manually creating the section will interfere with C++ dynamic initialization and may lead to undefined behavior <sup>16.11</sup> |
