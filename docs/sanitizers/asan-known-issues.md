@@ -1,7 +1,7 @@
 ---
 title: "AddressSanitizer known issues and limitations"
 description: "Technical description of the AddressSanitizer for Microsoft C/C++ known issues."
-ms.date: 5/21/2025
+ms.date: 11/19/2025
 helpviewer_keywords: ["AddressSanitizer known issues"]
 ---
 
@@ -98,6 +98,12 @@ If all of the code in a process isn't compiled with `/fsanitize=address`, ASan m
 If all of the DLLs compiled with ASan are unloaded from the process before the process ends, there may be crashes due to dangling references to intercepted functions such as `memcmp`, `memcpy`, `memmove`, and so on. For the best results, compile all modules under test with `/fsanitize=address`, or don't unload modules compiled with ASan after they enter the process.
 
 Please report any bugs to our [Developer Community](https://aka.ms/feedback/report?space=62).
+
+## ASan 64-bit first chance exceptions
+
+On x64, MSVC ASan's [shadow bytes](./asan-shadow-bytes.md) region occupies several terabytes of virtual address space. ASan doesn't pre-commit this memory. Instead, it uses on-demand paging. When a shadow page is accessed for the first time, a first-chance page fault exception occurs and is handled by ASan, which commits the page.
+
+The Visual Studio debugger handles this gracefully, and doesn't show these traces. However, debuggers like WinDbgX may break on every exception by default. Disabling breaking on first-chance exceptions is recommended. For example, in WinDbgX, this corresponds to the [`sxd av`](/windows-hardware/drivers/debuggercmds/sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-) command. 
 
 ## See also
 
