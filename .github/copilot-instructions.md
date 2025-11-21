@@ -11,6 +11,7 @@ When writing documentation, follow these guidelines:
 
 ## Grammar
 
+* Avoid "we"/"our" referring to documentation authors
 * Use present tense verbs (is, open) instead of past tense (was, opened). For example, "The method returns a value" instead of "The method will return a value."
 * Write factual statements and direct commands. Avoid hypotheticals.
 * Use active voice where the subject performs the action.
@@ -81,7 +82,8 @@ When writing documentation, follow these guidelines:
 
 ## Adding links
 
-* Add links to related topics and resources where appropriate. 
+* Add links to related topics and resources where appropriate.
+* Use relative links for files in this repo 
 * Links to other documentation articles should be relative, not absolute. Start relative links with `/docs/` and include the `.md` suffix. If you add a link to another page on learn.microsoft.com that's not in this repo, remove https://learn.microsoft.com/en-us from the link.
 * Links to bookmarks within the same article should be relative and start with `#`.
 * Link descriptions should be descriptive and make sense on their own. Don't use "click here" or "this link" or "here".
