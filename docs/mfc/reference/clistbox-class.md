@@ -873,10 +873,10 @@ int InitStorage(
 ### Parameters
 
 *`nItems`*<br/>
-Specifies the number of items to add.
+Specifies the number of items to for which to reserve space.
 
 *`nBytes`*<br/>
-Specifies the amount of memory, in bytes, to allocate for item strings.
+Specifies the amount of additional memory, in bytes, to allocate for item strings.
 
 ### Return Value
 
@@ -884,9 +884,11 @@ If successful, the maximum number of items that the list box can store before a 
 
 ### Remarks
 
-Call this function before adding a large number of items to a `CListBox`.
+You can call this function before adding a large number of items to a `CListBox`.
 
-This function helps speed up the initialization of list boxes that have a large number of items (more than 100). It preallocates the specified amount of memory so that subsequent [`AddString`](#addstring), [`InsertString`](#insertstring), and [`Dir`](#dir) functions take the shortest possible time. You can use estimates for the parameters. If you overestimate, some extra memory is allocated; if you underestimate, the normal allocation is used for items that exceed the preallocated amount.
+This function helps speed up the initialization of list boxes that have a large number of items (more than 100). It preallocates the specified amount of memory so that subsequent [`AddString`](#addstring), [`InsertString`](#insertstring), and [`Dir`](#dir) functions are more efficient. You can use estimates for the parameters. If you overestimate, the extra memory remains allocated; if you underestimate, the list box will allocate additional memory as necessary.
+
+The memory required to store a string includes the null terminator. Therefore, if you plan to add 100 strings, each with a length of 10 characters, you would pass a *wParam* of 100 and an *lParam* of 100 &times; (10 + 1) &times; sizeof(TCHAR).
 
 Windows 95/98 only: The *`nItems`* parameter is limited to 16-bit values. This means list boxes cannot contain more than 32,767 items. Although the number of items is restricted, the total size of the items in a list box is limited only by available memory.
 
