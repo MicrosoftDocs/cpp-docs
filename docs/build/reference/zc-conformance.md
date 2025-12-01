@@ -30,7 +30,7 @@ Here are the **`/Zc`** compiler options:
 | [`/Zc:checkGwOdr[-]`](zc-check-gwodr.md) | Enforce Standard C++ ODR violations under `/Gw`. |
 | [`/Zc:enumTypes[-]`](zc-enumtypes.md) | Enable Standard C++ rules for `enum` type deduction. Off by default. |
 | [`/Zc:externC[-]`](zc-externc.md) | Enforce Standard C++ rules for `extern "C"` functions. Off by default unless **`/permissive-`** is specified. |
-| [`/Zc:externConstexpr[-]`](zc-externconstexpr.md) | Enable external linkage for **`constexpr`** variables. Off by default. |
+| [`/Zc:externConstexpr[-]`](zc-externconstexpr.md) | Enable external linkage for **`constexpr`** variables. Off by default unless **`/permissive-`** is specified. |
 | [`/Zc:forScope[-]`](zc-forscope-force-conformance-in-for-loop-scope.md) | Enforce Standard C++ **`for`** scoping rules. On by default. |
 | [`/Zc:gotoScope[-]`](zc-gotoscope.md) | Enforce Standard C++ **`goto`** rules around local variable initialization. Off by default unless **`/permissive-`** is specified. |
 | [`/Zc:hiddenFriend[-]`](zc-hiddenfriend.md) | Enforce Standard C++ hidden friend rules. Off by default unless **`/permissive-`**  is specified. |
