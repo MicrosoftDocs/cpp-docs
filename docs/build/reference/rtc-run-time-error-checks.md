@@ -42,7 +42,7 @@ int main() {
 }
 ```
 
-Because **`/RTCc`** rejects code that conforms to the standard, it's not supported by the C++ Standard Library. Code that uses **`/RTCc`** and the C++ Standard Library may cause compiler error [C1189](../../error-messages/compiler-errors-1/fatal-error-c1189.md). You can define `_ALLOW_RTCc_IN_STL` to silence the warning and use the **`/RTCc`** option.
+Because **`/RTCc`** rejects code that conforms to the standard, it's not supported by the C++ Standard Library. Code that uses **`/RTCc`** and the C++ Standard Library may cause compiler error [C1189](../../error-messages/compiler-errors-1/fatal-error-c1189.md) or [C2338](../../error-messages/compiler-errors-1/compiler-error-c2338.md). Remove the **`/RTCc`** option to use the C++ Standard Library.
 
 **`/RTCs`**<br/>
 Enables stack frame run-time error checking, as follows:
