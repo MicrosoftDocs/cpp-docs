@@ -311,6 +311,19 @@ After you generate the preprocessed files, it's a good idea to make sure the pro
 
 Finally, attach the preprocessed repro files (*filename*.i and *modulename*.i) along with the .ifc output to your report.
 
+#### To generate a module trace file
+
+When issues involve C++ modules, providing a module trace file along with the preprocessed repro improves diagnostic quality and reduces turnaround time. A module trace file records detailed information about module operations during compilation.
+
+1. In the developer command prompt console window, enter the command **cl /d1module:enableLogging** *trace.json* *arguments* *filename.cpp*. The *trace.json* is the desired output file name for the module trace. The *arguments* are the compilation arguments, and *filename.cpp* is the source file that reproduces the problem.
+
+   > [!IMPORTANT]
+   > You must compile exactly one source file to collect a module trace. Don't use the **/MP** (multi-processor compilation) option or invoke the compiler with multiple source files. Using **/MP** or multi-source invocations can cause the trace to represent only the last compiled file or be incomplete.
+
+1. If multiple translation units are involved in the problem, run separate single-file invocations to collect a trace for each relevant file. Focus on the specific file that reproduces the problem, and optionally collect one trace per relevant file.
+
+Finally, attach the generated *trace.json* file along with the preprocessed repro to your report.
+
 ### Link repros
 
 A *link repro* is the linker-generated contents of a directory, specified either by the **link\_repro** environment variable, or as an argument to the [/LINKREPRO](../build/reference/linkrepro.md) linker option. It contains build artifacts that collectively demonstrate a problem that occurs at link time. Examples include a backend crash involving Link-Time Code Generation (LTCG), or a linker crash. These build artifacts are the ones needed as linker input so the problem can be reproduced. A link repro can be created easily by using this environment variable. It enables the linker's built-in repro generation capability.
