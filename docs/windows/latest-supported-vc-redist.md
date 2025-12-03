@@ -62,7 +62,8 @@ Download other versions, including long term servicing release channel (LTSC) ve
 - The latest version of the Visual C++ v14 Redistributable included with Visual Studio 2026 only supports the following operating systems:
   * Windows 10 and 11
   * Windows Server 2016, 2019, 2022, and 2025
-- Support for Visual Studio 2015 ended on October 15, 2025. Because support for the Visual C++ Redistributable is connected to the version of Visual Studio in which it first ships, support for Visual C++ 2015 Redistributable (version 14.0.24212) also ended October 15, 2025. See [Visual Studio 2015 (VC++ 14.0)](#visual-studio-2015-vc-140-no-longer-supported) section below for the latest available version.
+- Support for Visual Studio 2015 ended on October 15, 2025. Because support for the Visual C++ Redistributable is connected to the version of Visual Studio in which it first ships, support for Visual C++ 2015 Redistributable (version 14.0.24212) also ended October 15, 2025. See [Visual Studio 2015 (VC++ 14.0)](#visual-studio-2015-vc-140-no-longer-supported) section below for the latest available version.<br/>
+When Visual Studio 2015 support ended, the v14 runtime was binary compatible with applications built using the VS 2015 MSVC Build Tools. Since VS 2015 is no longer supported, we recommend updating your projects to use a supported MSVC Build Tools version and the latest v14 runtime.
 -  The Visual C++ Redistributable supports several command-line options. For more information, see [Command-line options for the Redistributable packages](./redistributing-visual-cpp-files.md#command-line-options-for-the-redistributable-packages).
 
 ## Unsupported legacy versions
