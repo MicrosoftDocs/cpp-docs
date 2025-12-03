@@ -315,7 +315,7 @@ Finally, attach the preprocessed repro files (*filename*.i and *modulename*.i) a
 
 When issues involve C++ modules, providing a module trace file along with the preprocessed repro improves diagnostic quality and reduces turnaround time. A module trace file records detailed information about module operations during compilation.
 
-1. In the developer command prompt console window, enter the command **cl /d1module:enableLogging** *trace.json* *arguments* *filename.cpp*. For *trace.json*, specify the desired output file name for the module trace. For *arguments*, use the compilation arguments. For *filename.cpp*, specify the source file that reproduces the problem.
+1. In the developer command prompt console window, enter the command **cl /d1module:enableLogging** *trace.json* [*other-args*] *filename.cpp*. For *trace.json*, specify the desired output file name for the module trace. For [*other-args*], include any additional compilation arguments. For *filename.cpp*, specify the source file that reproduces the problem.
 
    > [!IMPORTANT]
    > You must compile exactly one source file to collect a module trace. Don't use the **/MP** (multi-processor compilation) option or invoke the compiler with multiple source files. Using **/MP** or multi-source invocations can cause the trace to represent only the last compiled file or be incomplete.
