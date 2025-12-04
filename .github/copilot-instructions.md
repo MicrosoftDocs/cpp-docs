@@ -58,7 +58,7 @@ When writing documentation, follow these guidelines:
     * Code elements, like method names, property names, and language keywords.
     * SQL commands.
     * NuGet package names.
-    * Command-line commands.
+    * Command-line commands. The style in some articles uses **bold** for command-line commands, but use `code style` instead. 
     * Database table and column names.
     * Resource names (like virtual machine names) that shouldn't be localized.
     * URLs that you don't want to be selectable.
