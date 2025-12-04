@@ -1,7 +1,7 @@
 ---
 title: "Latest supported Visual C++ Redistributable downloads"
 description: "This article provides download links for the latest Visual C++ Redistributable packages."
-ms.date: 11/03/2025
+ms.date: 12/03/2025
 helpviewer_keywords:
   [
     "redist",
@@ -58,12 +58,13 @@ Download other versions, including long term servicing release channel (LTSC) ve
 
 - Some of the downloads that are mentioned in this article are currently available on [my.visualstudio.com](https://my.visualstudio.com/). Log in using a Visual Studio Subscription account so that you can access the download links. If you're asked for credentials, use your existing Visual Studio subscription account. Or, create a free account by choosing the [**No account? Create one!**](https://my.visualstudio.com/).
 - The Visual C++ v14 Redistributable doesn't have separate packages for different languages. License terms for different languages are available at [https://aka.ms/VCRedistLicense](https://aka.ms/VCRedistLicense).
-- Visual Studio 2017 and later share the same Redistributable files. Any apps built by Microsoft C++ (MSVC) Build Tools v14.* available in Visual Studio 2017, 2019, 2022, or 2026 can use the latest Visual C++ v14 Redistributable. However, the version of the redistributable installed on the machine must be the same or higher than the version of the MSVC Build Tools used to create your application. For more information about which version of the Redistributable to install, see [Determining which DLLs to redistribute](determining-which-dlls-to-redistribute.md). For more information about binary compatibility, see [C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md).
+- Visual Studio 2017 and later share the same Redistributable files. Any apps built by Microsoft C++ (MSVC) Build Tools v14.* available in Visual Studio 2017, 2019, 2022, or 2026 can use the latest Visual C++ v14 Redistributable. The version of the redistributable installed on the machine must be the same or higher than the version of the MSVC Build Tools used to create your application. For more information about which version of the Redistributable to install, see [Determining which DLLs to redistribute](determining-which-dlls-to-redistribute.md). For more information about binary compatibility, see [C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md).
 - The latest version of the Visual C++ v14 Redistributable included with Visual Studio 2026 only supports the following operating systems:
   * Windows 10 and 11
   * Windows Server 2016, 2019, 2022, and 2025
 - Support for Visual Studio 2015 ended on October 15, 2025. Because support for the Visual C++ Redistributable is connected to the version of Visual Studio in which it first ships, support for Visual C++ 2015 Redistributable (version 14.0.24212) also ended October 15, 2025. See [Visual Studio 2015 (VC++ 14.0)](#visual-studio-2015-vc-140-no-longer-supported) section below for the latest available version.<br/>
-When Visual Studio 2015 support ended, the v14 runtime was binary compatible with applications built using the VS 2015 MSVC Build Tools. Since VS 2015 is no longer supported, we recommend updating your projects to use a supported MSVC Build Tools version and the latest v14 runtime.
+When Visual Studio 2015 support ended, the v14 runtime was binary compatible with applications built using the VS 2015 MSVC Build Tools. Since VS 2015 is no longer supported, we recommend updating your projects to use a supported MSVC Build Tools version and the latest v14 runtime. The Visual C++ Redistributable for 2017, and later, in-place upgrade the Visual C++ 2015 Redistributable (14.0.24212.0). Redistributables for 2013 and earlier remain installed side-by-side.
+
 -  The Visual C++ Redistributable supports several command-line options. For more information, see [Command-line options for the Redistributable packages](./redistributing-visual-cpp-files.md#command-line-options-for-the-redistributable-packages).
 
 ## Unsupported legacy versions
