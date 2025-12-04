@@ -311,6 +311,20 @@ After you generate the preprocessed files, it's a good idea to make sure the pro
 
 Finally, attach the preprocessed repro files (*filename*.i and *modulename*.i) along with the .ifc output to your report.
 
+#### To generate a module trace file
+
+When issues involve C++ modules, provide a module trace file along with the preprocessed repro improves diagnostic quality to reduce turnaround time. A module trace file records detailed information about module operations during compilation.
+
+It's ideal if the example can be condensed to a single source code file, without reference to any user headers. 
+
+Reducing the amount of code we have to consider as a possible contributor to the problem is enormously helpful to us. Using **/MP** or multi-source invocations can cause the trace to represent only the last compiled file or be incomplete. If you can't reduce the problem to a single source file, package your code into a .zip file or similar, or consider using an IDE project repro. For more information, see [Other repros](#other-repros).
+
+1. Open the **Developer Command Prompt** that matches the Visual Studio version and configuration architecture used to build your project.
+1. Enter the command `cl /d1module:enableLogging`*trace.json* [*other-args*] *filename.cpp*. For *trace.json*, specify the desired output file name for the module trace. There can't be a space between `/d1module:enableLogging` and the output file name. For [*other-args*], include any additional compilation arguments. For *filename.cpp*, specify the source file that reproduces the problem.
+1. If multiple translation units are involved in the problem, run separate single-file invocations to collect a trace for the specific file that reproduces the problem. You can collect traces for additional relevant files if needed.
+
+Finally, attach the generated *trace.json* file along with the preprocessed repro to your report.
+
 ### Link repros
 
 A *link repro* is the linker-generated contents of a directory, specified either by the **link\_repro** environment variable, or as an argument to the [/LINKREPRO](../build/reference/linkrepro.md) linker option. It contains build artifacts that collectively demonstrate a problem that occurs at link time. Examples include a backend crash involving Link-Time Code Generation (LTCG), or a linker crash. These build artifacts are the ones needed as linker input so the problem can be reproduced. A link repro can be created easily by using this environment variable. It enables the linker's built-in repro generation capability.
