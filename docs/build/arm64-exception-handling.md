@@ -401,7 +401,7 @@ Step 6: Allocate remaining stack, including local area, `<x29,lr>` pair, and out
 
 \* If **CR** == 01 and **RegI** is an odd number, step 3 and the last `save_reg` in step 2 are merged into one `save_regp`.
 
-\*\* If **RegI** == **CR** == 0, and **RegF** != 0, the first `stp` for the floating-point does the predecrement.
+\*\* If **RegI** == 0, **CR** != 01, and **RegF** != 0, the first `stp` for the floating-point does the predecrement.
 
 \*\*\* No instruction corresponding to `mov x29,sp` is present in the epilog. Packed unwind data can't be used if a function requires restoration of `sp` from `x29`.
 
