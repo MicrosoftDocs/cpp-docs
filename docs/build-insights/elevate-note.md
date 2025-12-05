@@ -4,7 +4,6 @@ description: "To capture trace files, Build Insights needs additional permission
 ms.topic: article
 ms.date: 12/04/2025
 ms.update-cycle: 365-days
-ms.topic: tutorial
 f1_keywords: 
   - bi_permissions
 ---
@@ -20,4 +19,4 @@ After you accept the elevation request, you'll be able to capture trace files wi
 
 ## See also
 
-[Get started with C++ Build Insights](../get-started-with-cpp-build-insights.md)
+[Get started with C++ Build Insights](get-started-with-cpp-build-insights.md)
