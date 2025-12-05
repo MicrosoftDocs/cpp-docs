@@ -417,7 +417,7 @@ int main( )
         << str1a << "." << endl << endl;
 
    // The second member function assigning a specific
-   // number of the characters of a C-string to a string
+   // number of characters of a C-string to a string
    string  str1b;
    const char *cstr1b = "Out There";
    cout << "The C-string cstr1b is: " << cstr1b << endl;
