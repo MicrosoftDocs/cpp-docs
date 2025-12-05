@@ -24,7 +24,6 @@ The following example generates C2033:
 struct S
 {
     int* ptr : 1;     // C2033
-    int& ref : 1;     // C2033
     int arr[3] : 1;   // C2033
 };
 ```
