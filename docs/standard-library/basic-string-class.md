@@ -1,5 +1,5 @@
 ---
-title: "basic_string Class"
+title: "basic_string class"
 description: "API reference for the Standard C++ string class, `basic_string`."
 ms.date: 07/11/2023
 f1_keywords: ["xstring/std::basic_string", "xstring/std::basic_string::allocator_type", "xstring/std::basic_string::const_iterator", "xstring/std::basic_string::const_pointer", "xstring/std::basic_string::const_reference", "xstring/std::basic_string::const_reverse_iterator", "xstring/std::basic_string::difference_type", "xstring/std::basic_string::iterator", "xstring/std::basic_string::npos", "xstring/std::basic_string::pointer", "xstring/std::basic_string::reference", "xstring/std::basic_string::reverse_iterator", "xstring/std::basic_string::size_type", "xstring/std::basic_string::traits_type", "xstring/std::basic_string::value_type", "xstring/std::basic_string::append", "xstring/std::basic_string::assign", "xstring/std::basic_string::at", "xstring/std::basic_string::back", "xstring/std::basic_string::begin", "xstring/std::basic_string::c_str", "xstring/std::basic_string::capacity", "xstring/std::basic_string::cbegin", "xstring/std::basic_string::cend", "xstring/std::basic_string::clear", "xstring/std::basic_string::compare", "xstring/std::basic_string::copy", "xstring/std::basic_string::crbegin", "xstring/std::basic_string::crend", "xstring/std::basic_string::_Copy_s", "xstring/std::basic_string::data", "xstring/std::basic_string::empty", "xstring/std::basic_string::end", "xstring/std::basic_string::erase", "xstring/std::basic_string::find", "xstring/std::basic_string::find_first_not_of", "xstring/std::basic_string::find_first_of", "xstring/std::basic_string::find_last_not_of", "xstring/std::basic_string::find_last_of", "xstring/std::basic_string::front", "xstring/std::basic_string::get_allocator", "xstring/std::basic_string::insert", "xstring/std::basic_string::length", "xstring/std::basic_string::max_size", "xstring/std::basic_string::pop_back", "xstring/std::basic_string::push_back", "xstring/std::basic_string::rbegin", "xstring/std::basic_string::rend", "xstring/std::basic_string::replace", "xstring/std::basic_string::reserve", "xstring/std::basic_string::resize", "xstring/std::basic_string::rfind", "xstring/std::basic_string::shrink_to_fit", "xstring/std::basic_string::size", "xstring/std::basic_string::substr", "xstring/std::basic_string::ends_with", "xstring/std::basic_string::starts_with", "xstring/std::basic_string::swap", 'xstring/std::literals::string_literals', 'std::literals::string_literals', 'string_literals', 'xstring/std::literals::string_literals::operator "s', 'std::literals::string_literals::operator s']
@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::basic_string [C++]", "std::basic_string [C++], alloc
 ms.custom: devdivchpfy22
 ---
 
-# `basic_string` Class
+# `basic_string` class
 
 The sequences controlled by an object of type `basic_string` are the Standard C++ string class and are referred to as strings, but they shouldn't be confused with the null-terminated C-style strings used throughout the C++ Standard Library. The Standard C++ string is a container that enables the use of strings as normal types, such as comparison and concatenation operations, iterators, C++ Standard Library algorithms, and copying and assigning with class allocator-managed memory. If you need to convert a Standard C++ string to a null-terminated C-style string, use the [`basic_string::c_str`](#c_str) member.
 
@@ -18,13 +18,13 @@ template <class CharType, class Traits = char_traits<CharType>, class Allocator 
 class basic_string;
 ```
 
-### Parameters
+### Template parameters
 
 *`CharType`*\
-The data type of a single character to be stored in the string. The C++ Standard Library provides specializations of this class template, with the type definitions [`string`](../standard-library/string-typedefs.md#string) for elements of type `char`, [`wstring`](../standard-library/string-typedefs.md#wstring), for `wchar_t`, [`u16string`](../standard-library/string-typedefs.md#u16string) for `char16_t`, and [`u32string`](../standard-library/string-typedefs.md#u32string) for `char32_t`.
+The data type of a single character to be stored in the string. The C++ Standard Library provides specializations of this class template, with the type definitions [`string`](string-typedefs.md#string) for elements of type `char`, [`wstring`](string-typedefs.md#wstring), for `wchar_t`, [`u16string`](string-typedefs.md#u16string) for `char16_t`, and [`u32string`](string-typedefs.md#u32string) for `char32_t`.
 
 *`Traits`*\
-Various important properties of the `CharType` elements in a basic_string specialization are described by the class `Traits`. The default value is `char_traits`<`CharType`>.
+Various important properties of the `CharType` elements in a `basic_string` specialization are described by the class `Traits`. The default value is `char_traits`<`CharType`>.
 
 *`Allocator`*\
 The type that represents the stored allocator object that encapsulates details about the string's allocation and deallocation of memory. The default value is `allocator<CharType>`.
@@ -117,22 +117,22 @@ The headers that define `basic_string` also define the following [user-defined l
 | Declaration | Description |
 |--|--|
 | `inline string operator"" s(const char* str, size_t len)` | Returns: `string(str, len)` |
-| `inline string operator"" s(const wchar_t* str, size_t len)` | Returns: `wstring(str, len)` |
+| `inline wstring operator"" s(const wchar_t* str, size_t len)` | Returns: `wstring(str, len)` |
 | `inline basic_string<char8_t> operator"" s(const char8_t* str, size_t len)` | Returns: `basic_string<char8_t>(str, len)` |
 | `inline u16string operator"" s(const char16_t* str, size_t len)` | Returns: `u16string(str, len)` |
 | `inline u32string operator"" s(const char32_t* str, size_t len)` | Returns: `u32string(str, len)` |
 
 ## Remarks
 
-If a function is asked to generate a sequence longer than [`max_size`](#max_size) elements, the function reports a length error by throwing an object of type [`length_error`](../standard-library/length-error-class.md).
+If a function is asked to generate a sequence longer than [`max_size`](#max_size) elements, the function reports a length error by throwing an object of type [`length_error`](length-error-class.md).
 
 References, pointers, and iterators that designate elements of the controlled sequence can become invalid after any call to a function that alters the controlled sequence, or after the first call to a non-`const` member function.
 
 ## Requirements
 
-**Header:** \<string>
+**Header:** `<string>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## <a name="allocator_type"></a> `basic_string::allocator_type`
 
@@ -279,7 +279,7 @@ int main( )
    // appending one string to another in two ways,
    // comparing append and operator [ ]
    string str1d ( "Hello " ), str2d ( "Wide " ), str3d ( "World " );
-   cout << "The  string str2d is: " << str2d << endl;
+   cout << "The string str2d is: " << str2d << endl;
    str1d.append ( str2d );
    cout << "The appended string str1d is: "
         << str1d << "." << endl;
@@ -316,7 +316,7 @@ Appending the 1st part of the C-string cstr1b to string str1 gives: Hello Out.
 The string str2c is: Wide World
 The appended string str1 is: Hello World.
 
-The  string str2d is: Wide
+The string str2d is: Wide
 The appended string str1d is: Hello Wide .
 The doubly appended string str1 is: Hello Wide World .
 
@@ -379,10 +379,10 @@ The source string whose characters are to be assigned to the target string.
 The character value to be assigned.
 
 *`first`*\
-An input iterator, const_pointer, or const_iterator addressing the first character in the range of the source string to be assigned to the target range.
+An input iterator, `const_pointer`, or `const_iterator` addressing the first character in the range of the source string to be assigned to the target range.
 
 *`last`*\
-An input iterator, const_pointer, or const_iterator addressing the one beyond the last character in the range of the source string to be assigned to the target range.
+An input iterator, `const_pointer`, or `const_iterator` addressing the one beyond the last character in the range of the source string to be assigned to the target range.
 
 *`off`*\
 The position at which new characters will start to be assigned.
@@ -417,7 +417,7 @@ int main( )
         << str1a << "." << endl << endl;
 
    // The second member function assigning a specific
-   // number of the of characters a C-string to a string
+   // number of characters of a C-string to a string
    string  str1b;
    const char *cstr1b = "Out There";
    cout << "The C-string cstr1b is: " << cstr1b << endl;
@@ -452,7 +452,7 @@ int main( )
    // number of characters of a certain value to a string
    string str1e ( "Hello " );
    str1e.assign ( 4 , '!' );
-   cout << "The string str1 assigned with eclamations is: "
+   cout << "The string str1 assigned with exclamations is: "
         << str1e << endl << endl;
 
    // The sixth member function assigning the value from
@@ -481,7 +481,7 @@ The string str1 newly assigned with string str2d is: Wide.
 The string str3d is: World.
 The string str1 reassigned with string str3d is: World.
 
-The string str1 assigned with eclamations is: !!!!
+The string str1 assigned with exclamations is: !!!!
 
 The string str2f is: Wide World
 The string str1 assigned a range of string str2f is: World.
@@ -512,7 +512,7 @@ The first element of the string has an index of zero and the following elements 
 
 The member [`operator[]`](#op_at) is faster than the member function `at` for providing read and write access to the elements of a string.
 
-The member `operator[]` doesn't check whether the index passed as a parameter is valid but the member function `at` does and so should be used if the validity isn't certain. An invalid index, which is an index less that zero or greater than or equal to the size of the string, passed to the member function `at` throws an [`out_of_range` Class](../standard-library/out-of-range-class.md) exception. An invalid index passed to the `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null-character when passed this index.
+The member `operator[]` doesn't check whether the index passed as a parameter is valid but the member function `at` does and so should be used if the validity isn't certain. An invalid index, which is an index less than zero or greater than or equal to the size of the string, passed to the member function `at` throws an [`out_of_range` Class](out-of-range-class.md) exception. An invalid index passed to the `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null-character when passed this index.
 
 The reference returned may be invalidated by string reallocations or modifications for the non-`const` strings.
 
@@ -662,10 +662,10 @@ The index of a character in a string that is the first to be used to initialize 
 The character value to be copied into the string being constructed.
 
 *`first`*\
-An input iterator, const_pointer, or const_iterator addressing the first element in the source range to be inserted.
+An input iterator, `const_pointer`, or `const_iterator` addressing the first element in the source range to be inserted.
 
 *`last`*\
-An input iterator, const_pointer, or const_iterator addressing the position of the one beyond the last element in the source range to be inserted.
+An input iterator, `const_pointer`, or `const_iterator` addressing the position of the one beyond the last element in the source range to be inserted.
 
 ### Return value
 
@@ -1046,7 +1046,7 @@ int compare(
 int compare(
     size_type position_1,
     size_type number_1,
-    const value_type* ptr
+    const value_type* ptr,
     size_type number_2) const;
 ```
 
@@ -1079,7 +1079,7 @@ A negative value if the operand string is less than the parameter string; zero i
 
 ### Remarks
 
-The `compare` member functions compare either all, or part, of the parameter and operand strings depending on which in used.
+The `compare` member functions compare either all, or part, of the parameter and operand strings depending on which is used.
 
 The comparison is case-sensitive.
 
@@ -1778,7 +1778,7 @@ int main( )
    if ( str2.begin( ) == str2.end ( ) )
       cout << "The string str2 is empty." << endl;
    else
-      cout << "The stringstr2  is not empty." << endl;
+      cout << "The string str2 is not empty." << endl;
 }
 ```
 
@@ -2447,7 +2447,7 @@ int main( )
            << "position is: " << indexCh3b << endl << endl;
    else
       cout << "Elements of the substring '5G' were not "
-           << "found in str3\n after the first occurrrence."
+           << "found in str3\n after the first occurrence."
            << endl << endl;
 
    // The fourth member function searches a string
@@ -3200,7 +3200,7 @@ The maximum number of characters a string could contain.
 
 ### Remarks
 
-An exception of type [`length_error` Class](../standard-library/length-error-class.md) is thrown when an operation produces a string with a length greater than the maximum size.
+An exception of type [`length_error` Class](length-error-class.md) is thrown when an operation produces a string with a length greater than the maximum size.
 
 ### Example
 
@@ -3479,11 +3479,11 @@ The first element of the string has an index of zero, and the following elements
 
 `operator[]` is faster than the member function [`at`](#at) for providing read and write access to the elements of a string.
 
-`operator[]` doesn't check whether the index passed as a parameter is valid, but the member function `at` does and so should be used in the validity isn't certain. An invalid index (an index less that zero or greater than or equal to the size of the string) passed to the member function `at` throws an [`out_of_range` Class](../standard-library/out-of-range-class.md) exception. An invalid index passed to `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null character when passed this index.
+`operator[]` doesn't check whether the index passed as a parameter is valid, but the member function `at` does and so should be used if the validity isn't certain. An invalid index (an index less than zero or greater than or equal to the size of the string) passed to the member function `at` throws an [`out_of_range` Class](out-of-range-class.md) exception. An invalid index passed to `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null character when passed this index.
 
 The reference returned may be invalidated by string reallocations or modifications for the non-`const` strings.
 
-When compiling with [`_ITERATOR_DEBUG_LEVEL`](../standard-library/iterator-debug-level.md) set to 1 or 2, a runtime error will occur if you attempt to access an element outside the bounds of the string. For more information, see [Checked Iterators](../standard-library/checked-iterators.md).
+When compiling with [`_ITERATOR_DEBUG_LEVEL`](iterator-debug-level.md) set to 1 or 2, a runtime error will occur if you attempt to access an element outside the bounds of the string. For more information, see [Checked Iterators](checked-iterators.md).
 
 ### Example
 
@@ -3690,7 +3690,7 @@ int main( )
    if ( str2.rbegin( ) == str2.rend ( ) )
       cout << "The string str2 is empty." << endl;
    else
-      cout << "The stringstr2  is not empty." << endl;
+      cout << "The string str2 is not empty." << endl;
 }
 ```
 
@@ -3788,7 +3788,7 @@ int main( )
    if ( str2.rbegin( ) == str2.rend ( ) )
       cout << "The string str2 is empty." << endl;
    else
-      cout << "The stringstr2  is not empty." << endl;
+      cout << "The string str2 is not empty." << endl;
 }
 ```
 
@@ -3908,10 +3908,10 @@ An iterator addressing the first character to be removed in the operand string.
 An iterator addressing the last character to be removed in the operand string.
 
 *`first`*\
-An iterator, const_pointer, or const_iterator addressing the first character to be copied in the parameter string.
+An iterator, `const_pointer`, or `const_iterator` addressing the first character to be copied in the parameter string.
 
 *`last`*\
-An iterator, const_pointer, or const_iterator addressing the last character to be copied in the parameter string.
+An iterator, `const_pointer`, or `const_iterator` addressing the last character to be copied in the parameter string.
 
 *`count`*\
 The number of times *`char_value`* is copied into the operand string.
@@ -4151,7 +4151,7 @@ int main( )
    sizerStr1 = str1.size ( );
    caprStr1 = str1.capacity ( );
 
-   cout << "The string str1with augmented capacity is: "
+   cout << "The string str1 with augmented capacity is: "
         << str1 << endl;
    cout << "The current size of string str1 is: "
         << sizerStr1 << "." << endl;
@@ -4180,7 +4180,7 @@ The original string str1 is: Hello world
 The current size of original string str1 is: 11.
 The capacity of original string str1 is: 15.
 
-The string str1with augmented capacity is: Hello world
+The string str1 with augmented capacity is: Hello world
 The current size of string str1 is: 11.
 The new capacity of string str1 is: 47.
 
@@ -4805,7 +4805,7 @@ For type `string`, it's equivalent to `char_traits<char>`.
 
 ### Example
 
-See the example for [`copy`](../standard-library/char-traits-struct.md#copy) for an example of how to declare and use `traits_type`.
+See the example for [`copy`](char-traits-struct.md#copy) for an example of how to declare and use `traits_type`.
 
 ## <a name="value_type"></a> `basic_string::value_type`
 
@@ -4847,5 +4847,5 @@ The character ch2 is: H.
 
 ## See also
 
-[`<string>`](../standard-library/string.md)\
-[Thread safety in the C++ standard library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[`<string>`](string.md)\
+[Thread safety in the C++ standard library](thread-safety-in-the-cpp-standard-library.md)
