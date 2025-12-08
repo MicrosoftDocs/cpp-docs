@@ -69,7 +69,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2151](compiler-error-c2151.md)|more than one language attribute|
 |[Compiler error C2152](compiler-error-c2152.md)|'*identifier*': pointers to functions with different attributes|
 |[Compiler error C2153](compiler-error-c2153.md)|integer literals must have at least one digit|
-|[Compiler error C2154](compiler-error-c2154.md)|'*type*': only enumeration type is allowed as an argument to compiler intrinsic type trait '*trait*'|
+|[Compiler error C2154](compiler-error-c2154.md)|'*type*': only enumeration type is allowed as an argument to compiler intrinsic type trait '__underlying_type'|
 |[Compiler error C2155](compiler-error-c2155.md)|'?': invalid left operand, expected arithmetic or pointer type|
 |[Compiler error C2156](compiler-error-c2156.md)|pragma must be outside function|
 |[Compiler error C2157](compiler-error-c2157.md)|'*identifier*': must be declared before use in pragma list|
