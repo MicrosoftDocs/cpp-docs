@@ -28,7 +28,7 @@ For compatibility with previous versions, **_ptr32** and **_ptr64** are synonyms
 
 ## Example
 
-The following example shows how to declare and allocate pointers with the **`__ptr32`** and **`__ptr64`** keywords.
+The following example shows how to declare and allocate pointers with the **`__ptr32`** and **`__ptr64`** keywords. This code will crash when compiled for 64-bit due to the pointer from `malloc` being truncated to 32-bit. Since 32-bit pointers can be represented in 64-bit, when compiled for 32-bit this code does not necessarily crash.
 
 ```cpp
 #include <cstdlib>
