@@ -160,19 +160,19 @@ void f() {
 ```
 ### `[[msvc::musttail]]`
 
-The `[[msvc::musttail]]` attribute is an experimental x64 only Microsoft-specific attribute that enforces tail-call optimization for a given function call. When applied on a qualifying return statement, it instructs the compiler to emit the call as a tail call. If the compiler cannot do so, it will produce a compilation error. The `[[msvc::musttail]]` attribute will enforce tail calling over inlining of a function.
+The `[[msvc::musttail]]` attribute is an experimental x64 only Microsoft-specific attribute introduced in [MSVC Build Tools version 14.50](https://learn.microsoft.com/en-us/cpp/overview/what-s-new-for-msvc?view=msvc-170) that enforces tail-call optimization for a given function call. When applied on a qualifying return statement, it instructs the compiler to emit the call as a tail call. If the compiler cannot do so, it will produce a compilation error. The `[[msvc::musttail]]` attribute will enforce tail calling over inlining of a function.
 
 The `[[msvc::musttail]]` attribute has constraints:
 - The caller and callee must have matching return types.
 - The calling conventions must be compatible.
-- The tail call must be in the return position (i.e., the final action in the calling function).
+- The tail call must be the final action in the calling function.
 - The callee must not use more stack space than the calling function.
-- If more than 4 integer parameters are passed, the calling function must allocate enough stack space for those additional arguments. Please see __preserve_none calling convention for tail calling without additional stack overhead.
-- Other compiler optimizations must be enabled.
+- If more than four integer parameters are passed, the calling function must allocate enough stack space for those additional arguments. Please see `__preserve_none` calling convention for tail calling without additional stack overhead.
+- Must compile with `/O2` or `/O2 /GL` optimization level
 
 #### Example
 
-In this sample code, the `[[msvc::musttail]]` attribute applied to the return bar function call forces execution to jump from foo to bar before returning to main, rather than inlining bar into foo or calling bar from foo and returning to foo before returning to main.
+In the follwoing code, the `[[msvc::musttail]]` attribute applied to the `return bar(x)` call forces execution to jump from `foo` to `bar` before returning to `main`, rather than inlining `bar` into `foo` or calling `bar` from `foo` and returning to `foo` before returning to `main`.
 
 ```cpp
 int bar(int x) {
@@ -182,9 +182,9 @@ int bar(int x) {
 int foo(int x) {
     if(x > 0){
 	[[msvc::musttail]]
-return bar(x);
+	return bar(x);
 }
-return -1;
+	return -1;
 }
 
 int main() {
