@@ -1,9 +1,9 @@
 ---
 title: "Attributes in C++"
 description: "Learn more about: Attributes in C++"
-f1_keywords: ["deprecated", "noreturn", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::flatten", "msvc::forceinline", "msvc::forceinline_calls", "msvc::intrinsic", "msvc::noinline", "msvc::noinline_calls", "msvc::no_tls_guard"]
-helpviewer_keywords: ["deprecated", "noreturn", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::flatten", "msvc::forceinline", "msvc::forceinline_calls", "msvc::intrinsic", "msvc::noinline", "msvc::noinline_calls", "msvc::no_tls_guard"]
-ms.date: 4/13/2023
+f1_keywords: ["deprecated", "noreturn", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::flatten", "msvc::forceinline", "msvc::forceinline_calls", "msvc::intrinsic", "msvc::noinline", "msvc::noinline_calls", "msvc::no_tls_guard", "msvc::musttail"]
+helpviewer_keywords: ["deprecated", "noreturn", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::flatten", "msvc::forceinline", "msvc::forceinline_calls", "msvc::intrinsic", "msvc::noinline", "msvc::noinline_calls", "msvc::no_tls_guard", "msvc::musttail"]
+ms.date: 12/9/2025
 ---
 
 # Attributes in C++
@@ -156,6 +156,56 @@ template <typename T>
 void f() {
     int i = 0;
     i = my_move(i);
+}
+```
+
+### `[[msvc::musttail]]`
+
+The `[[msvc::musttail]]` attribute, introduced in [MSVC Build Tools version 14.50](../overview/what-s-new-for-msvc.md#whats-new-for-msvc-build-tools-version-1450), is an experimental x64-only Microsoft-specific attribute that enforces tail-call optimization. When applied to a qualifying return statement, it instructs the compiler to emit the call as a tail call. If the compiler can't emit the tail call, it produces a compilation error. The `[[msvc::musttail]]` attribute enforces a tail call instead of inlining the function.
+
+`[[msvc::musttail]]` requirements:
+- The caller and callee must have matching return types.
+- The calling conventions must be compatible.
+- The tail call must be the final action in the calling function.
+- The callee can't use more stack space than the calling function.
+- If more than four integer parameters are passed, the calling function must allocate enough stack space for those additional arguments.
+- Compile with `/O2` or `/O2 /GL` optimization level.
+
+#### Example
+
+Tail calls are a compiler optimization that is possible when a function call is the last action performed before returning. Instead of creating a new stack frame to call the function, the current function's stack frame is reused. This reduces stack usage and improves performance—especially in recursive scenarios.
+
+In the following code, the `[[msvc::musttail]]` attribute applied to `return increment(x)` causes control to transfer directly to `increment`. When `increment` reaches the `return x+1;` statement, its result is provided directly to the caller of `incrementIfPositive`, that is `main`. This replaces inlining `increment` into `incrementIfPositive` or calling `increment` from `incrementIfPositive` and returning to `incrementIfPositive` before returning to `main`. The tail call optimization eliminates the need for `incrementIfPositive` to regain control after `increment` finishes. This is a performance optimization that reduces stack usage, especially useful in recursive scenarios.
+
+```cpp
+// compile with /O2
+#include <iostream>
+
+int increment(int x)
+{
+    return x + 1;
+}
+
+int incrementIfPositive(int x)
+{
+    if (x > 0)
+    {
+        [[msvc::musttail]]
+        return increment(x);
+	}
+    return -1;
+}
+
+int main()
+{
+    int result = incrementIfPositive(42);
+    if (result < 0)
+    {
+        return -1;
+    }
+
+    std::cout << result; // outputs 43
+    return 0;
 }
 ```
 
