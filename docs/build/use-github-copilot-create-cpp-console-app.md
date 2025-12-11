@@ -3,11 +3,11 @@ title: Use AI to create a C++ console application in Visual Studio
 description: "Learn how to use GitHub Copilot to create a C++ app using Microsoft C++ in Visual Studio."
 ms.date: 10/24/2025
 ms.topic: "tutorial"
+ms.collection: ce-skilling-ai-copilot
 ms.custom:
   - ai-assisted
   - copilot-scenario-highlight
-  - ce-skilling-ai-copilot
-  - ms.update-cycle: 180 days
+ms.update-cycle: "180 days"
 ---
 
 # Use AI to create a C++ console application in Visual Studio
