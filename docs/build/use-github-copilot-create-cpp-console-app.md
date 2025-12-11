@@ -6,6 +6,8 @@ ms.topic: "tutorial"
 ms.custom:
   - ai-assisted
   - copilot-scenario-highlight
+  - ce-skilling-ai-copilot
+  - ms.update-cycle: 180 days
 ---
 
 # Use AI to create a C++ console application in Visual Studio
