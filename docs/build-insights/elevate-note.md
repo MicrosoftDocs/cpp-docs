@@ -3,7 +3,7 @@ title: "Build Insights needs additional permissions"
 description: "To capture trace files, Build Insights needs additional permissions as described in this topic."
 ms.topic: article
 ms.date: 12/9/2025
-ms.update-cycle: 365-days
+ms.update-cycle: 3650-days
 f1_keywords: 
   - bi_permissions
 ---
