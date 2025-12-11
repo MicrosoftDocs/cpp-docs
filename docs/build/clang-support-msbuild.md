@@ -1,7 +1,7 @@
 ---
 title: "Clang/LLVM support in Visual Studio projects"
 description: "Learn more about: Clang/LLVM support in Visual Studio projects"
-ms.date: 03/13/2024
+ms.date: 12/11/2025
 ms.description: "Configure a Visual Studio MSBuild project to use the Clang/LLVM toolchain."
 helpviewer_keywords: ["Clang support for C++ MSBuild projects"]
 ---
@@ -48,6 +48,10 @@ The Individual components tab is selected in the installer. C++ Clang Compiler f
 
 ::: moniker range=">=msvc-160"
 Later versions of Visual Studio provide newer versions of the Clang toolset. The bundled version of Clang gets updated automatically to stay current with updates in the Microsoft implementation of the Standard Library. For example, Visual Studio 2019 version 16.11 includes Clang v12.
+
+The LLVM experience in Visual Studio delivers seamless build support, project system integration, and design-time features that work with your choice of LLVM distributions. For acquisition convenience, we provide an optional LLVM binary distribution with Visual Studio. This LLVM toolset is provided as-is, sourced directly from the [LLVM Foundation’s release page](https://github.com/llvm/llvm-project/releases) without modifications by Microsoft. The installed binaries, are digitally signed with a third-party Microsoft code signing certificate to mark their third-party status and to confirm that they were obtained from the LLVM Foundation’s release page.
+
+LLVM updates in Visual Studio are typically aligned with major LLVM releases ahead of a Visual Studio general release. However, if the community or partners report security or critical blocking issues that were addressed in a minor LLVM release, we prioritize updating the bundled LLVM toolset to a newer minor version containing the fix. Visual Studio’s build and project system supports using your own custom LLVM installation if needed.
 
 ## Configure a Windows project to use Clang tools
 
