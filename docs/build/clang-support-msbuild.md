@@ -49,9 +49,9 @@ The Individual components tab is selected in the installer. C++ Clang Compiler f
 ::: moniker range=">=msvc-160"
 Later versions of Visual Studio provide newer versions of the Clang toolset. The bundled version of Clang gets updated automatically to stay current with updates in the Microsoft implementation of the Standard Library. For example, Visual Studio 2019 version 16.11 includes Clang v12.
 
-The LLVM experience in Visual Studio delivers seamless build support, project system integration, and design-time features that work with your choice of LLVM distributions. For acquisition convenience, we provide an optional LLVM binary distribution with Visual Studio. This LLVM toolset is provided as-is, sourced directly from the [LLVM Foundation’s release page](https://github.com/llvm/llvm-project/releases) without modifications by Microsoft. The installed binaries, are digitally signed with a third-party Microsoft code signing certificate to mark their third-party status and to confirm that they were obtained from the LLVM Foundation’s release page.
+The LLVM experience in Visual Studio delivers seamless build support, project system integration, and design-time features that work with your choice of LLVM distributions. For acquisition convenience, we provide an optional LLVM binary distribution with Visual Studio. This LLVM toolset is provided as-is, sourced directly from the [LLVM Foundation’s release page](https://github.com/llvm/llvm-project/releases) without modifications by Microsoft. The installed binaries are digitally signed with a third-party Microsoft code signing certificate to mark their third-party status and to confirm that they were obtained from the LLVM Foundation’s release page.
 
-LLVM updates in Visual Studio are typically aligned with major LLVM releases ahead of a Visual Studio general release. However, if the community or partners report security or critical blocking issues that were addressed in a minor LLVM release, we prioritize updating the bundled LLVM toolset to a newer minor version containing the fix. Visual Studio’s build and project system supports using your own custom LLVM installation if needed.
+LLVM updates in Visual Studio are typically aligned with major LLVM releases ahead of a Visual Studio general release. However, if the community or partners report security or critical blocking issues that addressed in a minor LLVM release, we prioritize updating the bundled LLVM toolset to a newer minor version containing the fix. Visual Studio’s build and project system supports using your own custom LLVM installation if needed.
 
 ## Configure a Windows project to use Clang tools
 
@@ -115,12 +115,12 @@ When you add a `Directory.build.props` file to a project or solution, the settin
 
 ## Set properties, edit, build, and debug
 
-After you have set up a Clang configuration, right-click again on the project node and choose **Reload project**. You can now build and debug the project using the Clang tools. Visual Studio detects that you're using the Clang compiler and provides IntelliSense, highlighting, navigation, and other editing features. Errors and warnings are displayed in the **Output Window**. The project property pages for a Clang configuration are similar to the ones for MSVC. However, some compiler-dependent features such as Edit and Continue aren't available for Clang configurations. You can set a Clang compiler or linker option that isn't available in the property pages. Add it manually in the property pages under **Configuration Properties** > **C/C++ (or Linker)** > **Command Line** > **Additional Options**.
+After you set up a Clang configuration, right-click again on the project node and choose **Reload project**. You can now build and debug the project using the Clang tools. Visual Studio detects that you're using the Clang compiler and provides IntelliSense, highlighting, navigation, and other editing features. Errors and warnings are displayed in the **Output Window**. The project property pages for a Clang configuration are similar to the ones for MSVC. However, some compiler-dependent features such as Edit and Continue aren't available for Clang configurations. You can set a Clang compiler or linker option that isn't available in the property pages. Add it manually in the property pages under **Configuration Properties** > **C/C++ (or Linker)** > **Command Line** > **Additional Options**.
 
 When debugging, you can use breakpoints, memory and data visualization, and most other debugging features.  
 
 :::image type="complex" source="media/clang-debug-msbuild.png" alt-text="Screenshot of Visual Studio debugging a sample app":::
-The portion of the app that is visible creates a string vector and adds some strings to it. Execution has stopped on a breakpoint for the code: v.push_back("Clang/LLVM");.
+The portion of the app that's visible creates a string vector and adds some strings to it. Execution stopped on a breakpoint for the code v.push_back("Clang/LLVM");.
 :::image-end:::
 
 ::: moniker-end
