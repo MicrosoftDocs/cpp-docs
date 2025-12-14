@@ -82,8 +82,8 @@ You can download other versions and languages from [Update for Visual C++ 2013 R
 
 | Architecture |   Version    | Link |
 | ------------ | :----------: | ------------------------------------------------------: |
-| X86          | 12.0.40664.0 | [vcredist_x86.exe](https://aka.ms/highdpimfc2013x86enu) |
-| X64          | 12.0.40664.0 | [vcredist_x64.exe](https://aka.ms/highdpimfc2013x64enu) |
+| X86          | 12.0.40664.0 | [vcredist_x86.exe](https://download.visualstudio.microsoft.com/download/pr/10912113/5da66ddebb0ad32ebd4b922fd82e8e25/vcredist_x86.exe) |
+| X64          | 12.0.40664.0 | [vcredist_x64.exe](https://download.visualstudio.microsoft.com/download/pr/10912041/cee5d6bca2ddbcd039da727bf4acb48a/vcredist_x64.exe) |
 
 ### Other 2013 versions
 
