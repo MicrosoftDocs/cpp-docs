@@ -1,16 +1,17 @@
 ---
 description: "Learn more about: __ptr32, __ptr64"
 title: "__ptr32, __ptr64"
-ms.date: "10/09/2018"
+ms.date: 12/16/2025
 f1_keywords: ["__ptr32_cpp", "__ptr64_cpp", "__ptr32", "__ptr64", "_ptr32", "_ptr64"]
 helpviewer_keywords: ["__ptr64 keyword [C++]", "_ptr32 keyword [C++]", "ptr32 keyword [C++]", "ptr64 keyword [C++]", "_ptr64 keyword [C++]", "__ptr32 keyword [C++]"]
-ms.assetid: afb563d8-7458-4fe7-9c30-bd4b5385a59f
 ---
 # __ptr32, __ptr64
 
-**Microsoft Specific**
+**Microsoft specific**
 
-**`__ptr32`** represents a native pointer on a 32-bit system, while **`__ptr64`** represents a native pointer on a 64-bit system.
+Use **`__ptr32`** to represent a native pointer on a 32-bit system. Use **`__ptr64`** to represent a native pointer on a 64-bit system.
+
+The `__ptr32` and `__ptr64` modifiers are Microsoft-specific extensions for interop scenarios. For standard 32-bit (x86) or standard x64 code, use native pointers, instead.
 
 The following example shows how to declare each of these pointer types:
 
@@ -19,16 +20,21 @@ int * __ptr32 p32;
 int * __ptr64 p64;
 ```
 
-On a 32-bit system, a pointer declared with **`__ptr64`** is truncated to a 32-bit pointer. On a 64-bit system, a pointer declared with **`__ptr32`** is coerced to a 64-bit pointer.
+On a 32-bit system, a pointer declared with **`__ptr64`** is treated as a 32-bit pointer and truncates the upper 32 bits of any 64-bit address assigned to it. On a 64-bit system, a pointer declared with **`__ptr32`** is treated as a 32-bit pointer and truncates the upper 32 bits of any 64-bit address assigned to it. This truncation can lead to an invalid pointer if the 64-bit address is above 4GB.
 
 > [!NOTE]
-> You cannot use **`__ptr32`** or **`__ptr64`** when compiling with **/clr:pure**. Otherwise, Compiler Error C2472 will be generated. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
+> You can't use **`__ptr32`** or **`__ptr64`** when compiling with **`/clr:pure`**. Otherwise, the compiler generates error C2472. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Microsoft Visual Studio 2015 and unsupported in Microsoft Visual Studio 2017.
 
-For compatibility with previous versions, **_ptr32** and **_ptr64** are synonyms for **`__ptr32`** and **`__ptr64`** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
+For compatibility with previous versions, **`_ptr32`** and **`_ptr64`** are synonyms for **`__ptr32`** and **`__ptr64`** unless you specify compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md).
 
 ## Example
 
-The following example shows how to declare and allocate pointers with the **`__ptr32`** and **`__ptr64`** keywords. This code will crash when compiled for 64-bit due to the pointer from `malloc` being truncated to 32-bit. Since 32-bit pointers can be represented in 64-bit, when compiled for 32-bit this code does not necessarily crash.
+The following example shows how to declare and allocate pointers with the **`__ptr32`** and **`__ptr64`** keywords.
+
+This code works on x86 but might crash on x64.
+
+- It works when compiled for 32-bit because **`__ptr64`** pointers are treated as 32-bit pointers on x86. On x86 (32-bit), `malloc` returns a 32-bit address which fits in `p64`.
+- It might crash when compiled for 64-bit because on x64, `malloc` returns a 64-bit pointer which is truncated to 32 bits by this line: `p32 = (int* __ptr32)malloc(4);`. Truncating a 64-bit address to a 32-bit address could result in an invalid pointer if the allocation happened above 4GB. In that case, `*p32 = 32` could attempt to access a truncated address that isn't part of your process's address space, causing an access violation. Even if it works once, it could fail later if the memory allocator returns a higher address.
 
 ```cpp
 #include <cstdlib>
@@ -38,22 +44,22 @@ int main()
 {
     using namespace std;
 
-    int * __ptr32 p32;
-    int * __ptr64 p64;
+    int* __ptr32 p32;
+    int* __ptr64 p64;
 
-    p32 = (int * __ptr32)malloc(4);
-    *p32 = 32;
+    p64 = (int* __ptr64)malloc(4);
+    *p64 = 64; // Works on x86 and x64
+    cout << *p64 << endl; 
+    
+    p32 = (int* __ptr32)malloc(4);
+    *p32 = 32; // Works on x86. Possible exception on x64
     cout << *p32 << endl;
-
-    p64 = (int * __ptr64)malloc(4);
-    *p64 = 64;
-    cout << *p64 << endl;
 }
 ```
 
 ```Output
-32
 64
+32
 ```
 
 **END Microsoft Specific**
