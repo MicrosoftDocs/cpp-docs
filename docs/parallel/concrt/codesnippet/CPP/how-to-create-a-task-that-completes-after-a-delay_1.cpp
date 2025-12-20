@@ -28,7 +28,7 @@ task<void> complete_after(unsigned int timeout)
     });
 }
 
-// Cancels the provided task after the specifed delay, if the task
+// Cancels the provided task after the specified delay, if the task
 // did not complete.
 template<typename T>
 task<T> cancel_after_timeout(task<T> t, cancellation_token_source cts, unsigned int timeout)
