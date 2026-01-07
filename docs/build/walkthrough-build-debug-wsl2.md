@@ -31,7 +31,7 @@ Install the tools necessary to build and debug on WSL 2. You'll install a recent
 
     ```bash
     sudo apt update
-    sudo apt install g++ gdb make ninja-build rsync zip
+    sudo apt install cmake g++ gdb make ninja-build rsync zip
     ```
 
     The `apt` commands above install:
