@@ -17,7 +17,7 @@ You can improve the quality of your application by running code analysis regular
 
 1. Optionally, in the **Configuration** and **Platform** lists, choose the build configuration and target platform.
 
-1. To run code analysis every time the project is built using the selected configuration, select the **Enable Code Analysis on Build** check box. You can also run code analysis manually by opening the **Analyze** menu and then choosing **Run Code Analysis on** *ProjectName* or **Run Code Analysis on File**.
+1. To run code analysis every time the project is built using the selected configuration, select **Configuration Properties** > **Code Analysis**, then select the **Enable Code Analysis on Build** check box. You can also run code analysis manually by opening the **Analyze** menu and then choosing **Run Code Analysis on** *ProjectName* or **Run Code Analysis on File**.
 
 1. Choose the [rule set](using-rule-sets-to-specify-the-cpp-rules-to-run.md) that you want to use or create a [custom rule set](using-rule-sets-to-specify-the-cpp-rules-to-run.md#to-create-a-rule-set-in-a-text-editor). If using LLVM/clang-cl, see [Using Clang-Tidy in Visual Studio](clang-tidy.md) to configure Clang-Tidy analysis options.
 
@@ -92,7 +92,7 @@ To run code analysis on a file:
 
 1. In the **Build** menu, choose **Run Code Analysis on File** or press **Ctrl+Shift+Alt+F7**.
 
-   The project or solution is compiled and code analysis runs. Results appear in the Error List window.
+The project or solution is compiled and code analysis runs. Results appear in the **Error List** window.
 
 ## Analyze and resolve code analysis warnings
 
