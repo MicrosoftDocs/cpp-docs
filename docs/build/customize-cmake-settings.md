@@ -23,6 +23,9 @@ Now you see the **Settings Editor** with the installed configurations on the lef
 The left pane shows the installed configurations (x86-Debug). The right pane shows the settings for the selected configuration. The settings include the configuration name, configuration type (set to Debug), toolset (set to msvc_x86), CMake toolchain file (empty), build root (contains ${env:USERPROFILE}\CMakeBuilds\${workspaceHash}\build\${name}), CMake command arguments (empty), and build command arguments (-v).
 :::image-end:::
 
+> [!NOTE]
+> If a JSON editor opens instead of the **Settings Editor** when you select **Manage Configurations**, you need to enable the CMakeSettings mode. Under **Tools** > **Options** > **CMake**, select **Never use CMake Presets**, and then close and reopen your CMake project. Alternatively, you can choose **Use CMake Presets if available, otherwise use CMakeSettings.json**, and then delete the *CMakePresets.json* file from the project folder.
+
 Visual Studio provides one `x64-Debug` configuration by default. You can add more configurations by choosing the green plus sign. The settings that you see in the editor might vary depending on which configuration is selected.
 
 The options that you choose in the editor are written to a file called *`CMakeSettings.json`*. This file provides command-line arguments and environment variables that are passed to CMake when you build the projects. Visual Studio never modifies *`CMakeLists.txt`* automatically; by using *`CMakeSettings.json`* you can customize the build through Visual Studio while leaving the CMake project files untouched so that others on your team can consume them with whatever tools they're using.
