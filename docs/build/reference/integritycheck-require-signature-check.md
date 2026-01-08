@@ -17,7 +17,7 @@ The **`/INTEGRITYCHECK`** linker option sets a flag, `IMAGE_DLLCHARACTERISTICS_F
 
 ### Signing `/INTEGRITYCHECK` files
 
-Microsoft has new signing guidance for DLL and executable files linked by using **`/INTEGRITYCHECK`**. The guidance used to recommend a cross-signed certificate from the [cross-signing program](/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing). However, the [cross-signing program is now deprecated](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates). You must now sign your **`/INTEGRITYCHECK`** files by using the Microsoft [Trusted Signing service](/azure/trusted-signing/) program instead.
+Microsoft has new signing guidance for DLL and executable files linked by using **`/INTEGRITYCHECK`**. The guidance used to recommend a cross-signed certificate from the [cross-signing program](/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing). However, the [cross-signing program is now deprecated](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates). You must now sign your **`/INTEGRITYCHECK`** files by using the [Azure Artifact Signing service](https://azure.microsoft.com/en-us/products/artifact-signing) program instead.
 
 ### To set this linker option in Visual Studio
 
