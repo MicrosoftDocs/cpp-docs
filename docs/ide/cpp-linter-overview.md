@@ -2,7 +2,7 @@
 description: "Learn more about: IntelliSense code linter for C++"
 title: IntelliSense code linter for C++ overview
 ms.date: 09/30/2021
-ms.topic: conceptual
+ms.topic: overview
 helpviewer_keywords:
   - "C/C++, linter"
   - "C++, linter"

@@ -4,7 +4,7 @@ description: "Learn time-saving tips for using Build Insights."
 ms.date: 1/8/2025
 author: tylermsft
 ms.author: twhitney
-ms.topic: article
+ms.topic: concept-article
 helpviewer_keywords: ["C++ Build Insights tips and tricks"]
 ---
 # Build Insights tips and tricks
