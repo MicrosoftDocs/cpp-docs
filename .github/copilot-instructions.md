@@ -88,7 +88,7 @@ When working on an issue:
   author: github-username
   ms.author: ms-alias
   ms.date: 12/11/2025
-  ms.topic: conceptual
+  ms.topic: concept-article
   ai-usage: ai-assisted
   ---
  ```
