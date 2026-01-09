@@ -14,6 +14,8 @@ The Serial Monitor allows users to configure, monitor, and communicate with seri
 
 # [Visual Studio](#tab/visual-studio)
 
+To install Serial Monitor in Visual Studio, go to **Extensions** > **Manage Extensions**. Search for **Serial Monitor 2** in the extensions marketplace. Select **Install** and then restart Visual Studio to complete the installation.
+
 :::image type="complex" source="./media/serial-monitor.png" alt-text="Screenshot of the Visual Studio Serial Monitor window.":::
 The window is split into two sections. The top section shows the monitoring mode (serial), Port (virtual COM port COM3), baud rate (115200), line ending (None), and a Stop monitoring button. The bottom section shows the messages, consisting of four lines of the text Hello, World!
 :::image-end:::
@@ -43,6 +45,8 @@ The window is split into two sections. The top section shows the monitoring mode
 | **File Logging** | Allows the ability to log output to a file | Use the **file logging** toggle button, as well as the **Choose Log File Directory** button to choose the desired directory in the **additional settings** | On/Off |
 
 # [Visual Studio Code](#tab/visual-studio-code)
+
+To install Serial Monitor in Visual Studio Code, open the extensions marketplace and then search for **Serial Monitor**. Select **Install**.
 
 :::image type="complex" source="./media/serial-monitor-vscode.png" alt-text="Screenshot of the VS Code Serial Monitor window.":::
 The window is split into two sections. The top section shows the monitoring mode (serial), Port (virtual COM port COM3), baud rate (115200), line ending (None), and a Stop monitoring button. The bottom section where messages are displayed is empty.
