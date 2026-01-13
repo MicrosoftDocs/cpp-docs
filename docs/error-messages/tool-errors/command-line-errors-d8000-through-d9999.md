@@ -27,8 +27,8 @@ The articles in this section provide a reference to the command-line errors and 
 
 | Warning | Message |
 |--|--|
-| Command-Line Warning D9014 | invalid value for 'processMax' |
-| [Command-Line Warning D9024](command-line-warning-d9024.md) | unrecognized source file type 'filename', object file assumed |
+| Command-Line Warning D9014 | invalid value for 'processMax' | The compiler ignores the invalid value and assumes a value of 1.|
+| [Command-Line Warning D9024](command-line-warning-d9024.md) | unrecognized source file type 'filename', object file assumed. Occurs when a command‑line argument looks like a filename but doesn’t match a recognized source or object file extension. The compiler assumes it's an object file and passes it to the linker. |
 | [Command-Line Warning D9025](command-line-warning-d9025.md) | overriding 'option1' with 'option2' |
 | [Command-Line Warning D9026](command-line-warning-d9026.md) | options apply to entire command line |
 | [Command-Line Warning D9027](command-line-warning-d9027.md) | source file '\<filename>' ignored |
