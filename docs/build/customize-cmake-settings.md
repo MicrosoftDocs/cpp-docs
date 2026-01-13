@@ -15,7 +15,7 @@ If you maintain projects that use a *`CMakeSettings.json`* file for CMake build 
 
 To open the CMake settings editor, select the **Configuration** drop-down in the main toolbar and choose **Manage Configurations**.
 
-![Screenshot of the CMake configuration drop-down. Manage Configurations is highlighted.](media/vs2026-cmake-manage-configurations.png)
+![Screenshot of the CMake configuration drop-down. Manage Configurations is highlighted.](media/vs-2026-cmake-manage-configurations.png)
 
 Now you see the **Settings Editor** with the installed configurations on the left.
 
