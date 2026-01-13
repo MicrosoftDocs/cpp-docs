@@ -15,7 +15,7 @@ If you maintain projects that use a *`CMakeSettings.json`* file for CMake build 
 
 To open the CMake settings editor, select the **Configuration** drop-down in the main toolbar and choose **Manage Configurations**.
 
-![Screenshot of the CMake configuration drop-down. Manage Configurations is highlighted.](media/vs2019-cmake-manage-configurations.png)
+![Screenshot of the CMake configuration drop-down. Manage Configurations is highlighted.](media/vs2026-cmake-manage-configurations.png)
 
 Now you see the **Settings Editor** with the installed configurations on the left.
 
@@ -24,7 +24,7 @@ The left pane shows the installed configurations (x86-Debug). The right pane sho
 :::image-end:::
 
 > [!NOTE]
-> If a JSON editor opens instead of the **Settings Editor** when you select **Manage Configurations**, you need to enable the CMakeSettings mode. Under **Tools** > **Options** > **CMake**, select **Never use CMake Presets**, and then close and reopen your CMake project. Alternatively, you can choose **Use CMake Presets if available, otherwise use CMakeSettings.json**, and then delete the *CMakePresets.json* file from the project folder.
+> If a JSON editor opens instead of the **Settings Editor** when you select **Manage Configurations**, you need to enable the CMakeSettings mode. In Visual Studio 2026, under **Tools** > **Options** > **CMake**, select **Never use CMake Presets**, and then close and reopen your CMake project. Alternatively, you can choose **Use CMake Presets if available, otherwise use CMakeSettings.json**, and then delete the *CMakePresets.json* file from the project folder.
 > :::image type="content" source="media/options-configuration-file.png" alt-text="Screenshot of the C make options pane.":::
 
 Visual Studio provides one `x64-Debug` configuration by default. You can add more configurations by choosing the green plus sign. The settings that you see in the editor might vary depending on which configuration is selected.
