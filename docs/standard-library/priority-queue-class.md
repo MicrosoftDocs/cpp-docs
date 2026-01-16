@@ -33,7 +33,7 @@ Elements of class `Type` specified in the first template parameter of a `priorit
 
 The `priority_queue` uses a comparison function to determine which elements have higher priority. This comparison function is a function object of class `Traits`. To work with `priority_queue`, your elements only need to support comparison using the less-than operator (`<`) so that it can arrange the elements in order.
 
-Suitable underlying container classes for `priority_queue` include [`deque` Class](../standard-library/deque-class.md), the default [`vector` Class](../standard-library/vector-class.md), or any other sequence container that supports the operations of `front`, `push_back`, and `pop_back` and a random-access iterator. The container adaptor encapsulates the underlying container class and exposes only a limited set of the sequence container member functions as a public interface.
+For more information about suitable underlying container classes, see [container_type](#container_type).
 
 Adding and removing elements from a `priority_queue` both have logarithmic complexity. Accessing elements in a `priority_queue` has constant complexity.
 
@@ -94,10 +94,11 @@ typedef Container container_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter `Container`. The C++ Standard Library sequence container class `deque` and the default class `vector` meet the requirements to be used as the base container for a `priority_queue` object. User-defined types satisfying the requirements may also be used.
+The type is a synonym for the template parameter `Container`. 
 
-For more information about `Container`, see the Remarks section of the [`priority_queue` Class](../standard-library/priority-queue-class.md) topic.
-To specify a different STL container as the base container for a `priority_queue`, see [`priority_queue`](#priority_queue) for an example of how to declare and use `container_type`. 
+Suitable underlying container classes for `priority_queue` include [`deque` Class](../standard-library/deque-class.md), the default [`vector` Class](../standard-library/vector-class.md), or any other sequence container that supports the operations of `front`, `push_back`, and `pop_back` and a random-access iterator. The container adaptor encapsulates the underlying container class and exposes only a limited set of the sequence container member functions as a public interface.
+
+For an example of how to declare and use `container_type`, see [Use custom containers and comparers](#construct-priority_queue-with-custom-containers-and-comparers)
 
 ## <a name="empty"></a> `priority_queue::empty`
 
