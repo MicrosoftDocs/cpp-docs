@@ -51,7 +51,7 @@ The C++ Standard Library defines other container adaptors that you can use to st
 - [Push elements and read the top](#push-elements-and-read-the-top)
 - [Get the number of elements](#get-priority_queue-size)
 - [Access the top element](#access-the-top-element)
-- [Get the top element of the `priority_queue`](#use-the-priority_queue-value_type-alias)
+- [Use the priority_queue value_type alias](#use-the-priority_queue-value_type-alias)
 - [Use a user-defined data type](#use-a-user-defined-data-type-with-the-priority_queue)
 
 ### Constructors
@@ -64,7 +64,7 @@ The C++ Standard Library defines other container adaptors that you can use to st
 
 |Type name|Description|
 |-|-|
-|[`container_type`](#container_type)|A type that provides the base container to be adapted by a `priority_queue`.|
+|[`container_type`](#container_type)|A type that provides the base container that the `priority_queue` adapts.|
 |[`size_type`](#size_type)|An unsigned integer type that can represent the number of elements in a `priority_queue`.|
 |[`value_type`](#value_type)|A type that represents the type of object stored as an element in a `priority_queue`.|
 
