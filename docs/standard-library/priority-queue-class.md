@@ -33,7 +33,7 @@ Elements of class `Type` specified in the first template parameter of a `priorit
 
 The `priority_queue` uses a comparison function to determine which elements have higher priority. This comparison function is a function object of class `Traits`. To work with `priority_queue`, your elements only need to support comparison using the less-than operator (`<`) so that it can arrange the elements in order.
 
-For more information about suitable underlying container classes, see [container_type](#container_type).
+You can change the underlying container type used by the `priority_queue`. You may want to do that for performance reasons. The default, `vector`, is usually best for cache locality because elements are stored in contiguous storage, and does fewer allocations as it grows. But perhaps you would consider `deque` if you have very large or unbounded queues and moving elements is expensive. For more information about suitable underlying container classes, see [container_type](#container_type).
 
 Adding and removing elements from a `priority_queue` both have logarithmic complexity. Accessing elements in a `priority_queue` has constant complexity.
 
@@ -42,6 +42,17 @@ The C++ Standard Library defines other container adaptors that you can use to st
 - The [`stack` Class](../standard-library/stack-class.md) supports a last-in, first-out (LIFO) data structure. Consider a stack of plates: you can insert, inspect, or remove elements (plates) only from the top of the stack, which is the last element at the end of the base container.
 - The [`queue` Class](../standard-library/queue-class.md) supports a first-in, first-out (FIFO) data structure. Consider people in a line. You add elements (people) to the back of the line and remove them from the front of the line. Both the front and the back of a line can be inspected.
 - The `priority_queue` class orders its elements so that the largest element is always at the top. It supports insertion of an element and the inspection and removal of the top element.
+
+## Examples
+
+- [Check if the `priority_queue` is empty](#check-if-a-priority_queue-is-empty)
+- [Pop elements and check queue size](#pop-elements-and-inspect-size)
+- [Use custom containers and comparers](#construct-priority_queue-with-custom-containers-and-comparers)
+- [Push elements and read the top](#push-elements-and-read-the-top)
+- [Get the number of elements](#get-priority_queue-size)
+- [Access the top element](#access-the-top-element)
+- [Get the top element of the `priority_queue`](#use-the-priority_queue-value_type-alias)
+- [Use a user-defined data type](#use-a-user-defined-data-type-with-the-priority_queue)
 
 ### Constructors
 
@@ -72,17 +83,6 @@ The C++ Standard Library defines other container adaptors that you can use to st
 **Header:** `<queue>`
 
 **Namespace:** `std`
-
-## Examples index
-
-- [Check if the `priority_queue` is empty](#check-if-a-priority_queue-is-empty)
-- [Pop elements and inspect size](#pop-elements-and-inspect-size)
-- [Use custom containers and comparers](#construct-priority_queue-with-custom-containers-and-comparers)
-- [Push elements and read the top](#push-elements-and-read-the-top)
-- [Get the number of elements in the `priority_queue`](#get-priority_queue-size)
-- [Access the top element](#access-the-top-element)
-- [Use the `value_type` alias](#use-the-priority_queue-value_type-alias)
-- [Use a user-defined data type](#use-a-user-defined-data-type-with-the-priority_queue)
 
 ## <a name="container_type"></a> `priority_queue::container_type`
 
@@ -449,7 +449,7 @@ This type is a synonym for the `size_type` of the base container that the `prior
 
 ### <a name="access-the-top-element"></a>Example: Access the top element
 
-See the example for [`size`](#size) for an example of how to declare and use `size_type`.
+For an example of how to declare and use `size_type`, see [Get the number of elements](#get-priority_queue-size)
 
 ## <a name="top"></a> `priority_queue::top`
 
@@ -467,7 +467,7 @@ A reference to the largest element, as determined by the `Traits` function, obje
 
 The `priority_queue` must be nonempty to use this member function.
 
-### <a name="use-the-priority_queue-value_type-alias"></a>Example: Use the `value_type` alias
+### <a name="priority_queue::top-example"></a>Example: Get the top element of the `priority_queue`
 
 ```cpp
 // compile with: /EHsc
