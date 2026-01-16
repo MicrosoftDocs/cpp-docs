@@ -7,7 +7,17 @@ ms.topic: how-to
 ---
 # Customize CMake build settings
 
-::: moniker range=">=msvc-160"
+::: moniker range="=visual-studio"
+
+The CMake settings editor has been deprecated in Visual Studio 2026.
+
+To learn about changing the *`CMakePresets.json`* file, see [CMakePresets.json and CMakeUserPresets.json Microsoft vendor maps](/cpp/build/cmake-presets-json-reference).
+
+For Visual Studio 2019 to 2022, select your version by using the version selector in the sidebar menu.
+
+::: moniker-end
+
+::: moniker range="<=msvc-170"
 
 Visual Studio uses a CMake configuration file to drive CMake generation and build. *`CMakePresets.json`* is supported by Visual Studio 2019 version 16.10 or later and is the recommended CMake configuration file. *`CMakePresets.json`* is supported directly by CMake and can be used to drive CMake generation and build from Visual Studio, from VS Code, in a Continuous Integration pipeline, and from the command line on Windows, Linux, and Mac. For more information on *`CMakePresets.json`*, see [Configure and build with CMake Presets](cmake-presets-vs.md).
 
@@ -15,7 +25,7 @@ If you maintain projects that use a *`CMakeSettings.json`* file for CMake build 
 
 To open the CMake settings editor, select the **Configuration** drop-down in the main toolbar and choose **Manage Configurations**.
 
-![Screenshot of the CMake configuration drop-down. Manage Configurations is highlighted.](media/vs-2026-cmake-manage-configurations.png)
+![Screenshot of the CMake configuration drop-down. Manage Configurations is highlighted.](media/vs2019-cmake-manage-configurations.png)
 
 Now you see the **Settings Editor** with the installed configurations on the left.
 
@@ -24,7 +34,7 @@ The left pane shows the installed configurations (x86-Debug). The right pane sho
 :::image-end:::
 
 > [!NOTE]
-> If a JSON editor opens instead of the **Settings Editor** when you select **Manage Configurations**, you need to enable the CMakeSettings mode. In Visual Studio 2026, under **Tools** > **Options** > **CMake**, select **Never use CMake Presets**, and then close and reopen your CMake project. Alternatively, you can choose **Use CMake Presets if available, otherwise use CMakeSettings.json**, and then delete the *CMakePresets.json* file from the project folder.
+> If a JSON editor opens instead of the **Settings Editor** when you select **Manage Configurations**, you need to enable the CMakeSettings mode. Under **Tools** > **Options** > **CMake**, select **Never use CMake Presets**, and then close and reopen your CMake project. Alternatively, you can choose **Use CMake Presets if available, otherwise use CMakeSettings.json**, and then delete the *CMakePresets.json* file from the project folder.
 > :::image type="content" source="media/options-configuration-file.png" alt-text="Screenshot of the C make options pane.":::
 
 Visual Studio provides one `x64-Debug` configuration by default. You can add more configurations by choosing the green plus sign. The settings that you see in the editor might vary depending on which configuration is selected.
@@ -161,55 +171,11 @@ For more information about each of the properties in the file, see [CMakeSetting
 
 ::: moniker-end
 
-::: moniker range="<=msvc-150"
+## Related content
 
-Visual Studio 2017 provides several CMake configurations that define how CMake is invoked to create the CMake cache for a given project. To add a new configuration, select the configuration drop-down in the toolbar and choose **Manage Configurations**:
-
-   ![Screenshot of Manage configurations selected in the drop-down.](media/cmake-manage-configurations.png)
-
-You can choose from the list of predefined configurations:
-
-   ![Add Configuration to CMake Settings dialog list of predefined configurations.](media/cmake-configurations.png)
-
-The first time you select a configuration, Visual Studio creates a *`CMakeSettings.json`* file in your project's root folder. This file is used to re-create the CMake cache file, for example after a **Clean** operation.
-
-To add another configuration, right-click *`CMakeSettings.json`* and choose **Add Configuration**.
-
-   ![Screenshot of the shortcut menu with Add configuration selected.](media/cmake-add-configuration.png "CMake Add Configuration")
-
-You can also edit the file using the **CMake Settings Editor**. Right-click on *`CMakeSettings.json`* in **Solution Explorer** and choose **Edit CMake Settings**. Or, select **Manage Configurations** from the configuration drop-down at the top of the editor window.
-
-You can also directly edit *`CMakeSettings.json`* to create custom configurations. The following example shows a sample configuration, which you can use as a starting point:
-
-```json
-    {
-      "name": "x86-Debug",
-      "generator": "Ninja",
-      "configurationType": "Debug",
-      "inheritEnvironments": [ "msvc_x86" ],
-      "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
-      "installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "-v",
-      "ctestCommandArgs": ""
-    },
-```
-
-JSON IntelliSense helps you edit the *`CMakeSettings.json`* file:
-
-   :::image type="complex" source="media/cmake-json-intellisense.png" alt-text="Screenshot of the CMake JSON IntelliSense pop-up in the editor.":::
-   The JSON IntelliSense pop-up for "configurations" shows buildCommandArgs, buildRoot, cmakeCommandArgs, configurationType, among several others.
-   :::image-end:::
-    
-For more information about each of the properties in the file, see [`CMakeSettings.json` schema reference](cmakesettings-reference.md).
-
-::: moniker-end
-
-## See also
-
-[CMake Projects in Visual Studio](cmake-projects-in-visual-studio.md)<br/>
-[Configure a Linux CMake project](../linux/cmake-linux-project.md)<br/>
-[Connect to your remote Linux computer](../linux/connect-to-your-remote-linux-computer.md)<br/>
-[Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)<br/>
-[Deploy, run, and debug your Linux project](../linux/deploy-run-and-debug-your-linux-project.md)<br/>
-[CMake predefined configuration reference](cmake-predefined-configuration-reference.md)
+- [CMake Projects in Visual Studio](cmake-projects-in-visual-studio.md)
+- [Configure a Linux CMake project](../linux/cmake-linux-project.md)
+- [Connect to your remote Linux computer](../linux/connect-to-your-remote-linux-computer.md)
+- [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)
+- [Deploy, run, and debug your Linux project](../linux/deploy-run-and-debug-your-linux-project.md)
+- [CMake predefined configuration reference](cmake-predefined-configuration-reference.md)
