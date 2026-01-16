@@ -7,7 +7,7 @@ ms.topic: how-to
 ---
 # Customize CMake build settings
 
-::: moniker range="=visual-studio"
+::: moniker range=">=msvc-180"
 
 The CMake settings editor has been deprecated in Visual Studio 2026.
 
