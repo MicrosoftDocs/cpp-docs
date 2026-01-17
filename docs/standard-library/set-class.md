@@ -1080,69 +1080,56 @@ An iterator that refers to the location of an element with a specified key, or t
 
 ### Remarks
 
-The member function returns an iterator that refers to an element in the set whose key is equivalent to the argument *key* under a binary predicate that induces an ordering based on a less than comparability relation.
+The member function returns an iterator that points to the element in the set that has a key equal to the argument *key*. If no such element exists, the function returns `end()`. The comparison uses a binary predicate based on a less-than ordering relation.
 
-If the return value of `find` is assigned to a `const_iterator`, the set object can't be modified. If the return value of `find` is assigned to an `iterator`, the set object can be modified
+If the return value of `find` is assigned to a `const_iterator`, the set object can't be modified. If the return value of `find` is assigned to an `iterator`, the set object can be modified.
 
-### Example
+### Example of set::find()
 
 ```cpp
 // compile with: /EHsc /W4 /MTd
 #include <set>
 #include <iostream>
-#include <vector>
-#include <string>
 
-using namespace std;
+using namespace std;  // std c++ libs implemented in std
 
-template <typename T> void print_elem(const T& t) {
-    cout << "(" << t << ") ";
-}
-
-template <typename T> void print_collection(const T& t) {
-    cout << t.size() << " elements: ";
-
-    for (const auto& p : t) {
-        print_elem(p);
-    }
-    cout << endl;
-}
-
-template <typename C, class T> void findit(const C& c, T val) {
-    cout << "Trying find() on value " << val << endl;
-    auto result = c.find(val);
-    if (result != c.end()) {
-        cout << "Element found: "; print_elem(*result); cout << endl;
-    } else {
-        cout << "Element not found." << endl;
-    }
-}
-
-int main()
+void main()
 {
-    set<int> s1({ 40, 45 });
-    cout << "The starting set s1 is: " << endl;
-    print_collection(s1);
+	set<int, less<int>, allocator<int>> s1{5, 8, 12};
 
-    vector<int> v;
-    v.push_back(43);
-    v.push_back(41);
-    v.push_back(46);
-    v.push_back(42);
-    v.push_back(44);
-    v.push_back(44); // attempt a duplicate
+	// find() returns an iterator that points to the first element
+	// that has the same key as the value passed to the find function.
+	// If no such element exists, the iterator equals end().
 
-    cout << "Inserting the following vector data into s1: " << endl;
-    print_collection(v);
+	set<int, less<int>, allocator<int>>::iterator it;
 
-    s1.insert(v.begin(), v.end());
+	// Is 8 in the set?
+	it = s1.find(8);
+	if (it != s1.end())
+	{
+		cout << "Found 8" << endl;
+	}
+	else
+	{
+		cout << "Didn't find 8" << endl;
+	}
 
-    cout << "The modified set s1 is: " << endl;
-    print_collection(s1);
-    cout << endl;
-    findit(s1, 45);
-    findit(s1, 6);
+	// Is 6 in the set?
+	it = s1.find(6);
+	if (it != s1.end())
+	{
+		cout << "Found 6" << endl;
+	}
+	else
+	{
+		cout << "Didn't find 6" << endl;
+	}
 }
+```
+
+```output
+Found 8
+Didn't find 6
 ```
 
 ## <a name="get_allocator"></a> `get_allocator`
