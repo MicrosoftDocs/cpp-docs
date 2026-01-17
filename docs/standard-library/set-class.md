@@ -1084,7 +1084,7 @@ The member function returns an iterator that points to the element in the set th
 
 If the return value of `find` is assigned to a `const_iterator`, the set object can't be modified. If the return value of `find` is assigned to an `iterator`, the set object can be modified.
 
-### Example
+### Example of set::find()
 
 ```cpp
 // compile with: /EHsc /W4 /MTd
