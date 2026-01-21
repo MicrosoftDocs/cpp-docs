@@ -115,9 +115,9 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
     :::column-end:::
 :::row-end:::
 
-<sup>a</sup> The Microsoft-specific **`__asm`** keyword replaces C++ **`asm`** syntax. **`asm`** is reserved for compatibility with other C++ implementations, but not implemented. Use **`__asm`** for inline assembly on x86 targets. Microsoft C++ doesn't support Inline assembly for other targets.
+<sup>a</sup> The Microsoft-specific **`__asm`** keyword replaces C++ **`asm`** syntax. **`asm`** is reserved for compatibility with other C++ implementations, but not implemented. Use **`__asm`** for inline assembly on x86 targets. Microsoft C++ doesn't support inline assembly for other targets.
 
-<sup>b</sup> The extended operator synonyms are keywords when [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za` \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified. They aren't keywords when Microsoft extensions are enabled.
+<sup>b</sup> The extended operator synonyms are keywords when [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za` (Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified. They aren't keywords when Microsoft extensions are enabled.
 
 <sup>c</sup> Supported when [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later (such as **`/std:c++latest`**) is specified.
 
@@ -125,7 +125,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 
 In C++, identifiers that contain two consecutive underscores are reserved for compiler implementations. The Microsoft convention is to precede Microsoft-specific keywords with double underscores. These words can't be used as identifier names.
 
-Microsoft extensions are enabled by default. To ensure that your programs are fully portable, you can disable Microsoft extensions by specifying the [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za` \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) option during compilation. These options disable some Microsoft-specific keywords.
+Microsoft extensions are enabled by default. To ensure that your programs are fully portable, you can disable Microsoft extensions by specifying the [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za` (Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) option during compilation. These options disable some Microsoft-specific keywords.
 
 When Microsoft extensions are enabled, you can use the Microsoft-specific keywords in your programs. For ANSI conformance, these keywords are prefaced by a double underscore. For backward compatibility, single-underscore versions of many of the double-underscored keywords are supported. The **`__cdecl`** keyword is available with no leading underscore.
 
@@ -166,11 +166,11 @@ The **`__based`** keyword has limited uses for 32-bit and 64-bit target compilat
         [`__m64`](m64.md)\
         [`__multiple_inheritance`](inheritance-keywords.md) <sup>e</sup>\
         [`__ptr32`](ptr32-ptr64.md) <sup>e</sup>\
-        [`__ptr64`](ptr32-ptr64.md)<sup>e</sup>\
+        [`__ptr64`](ptr32-ptr64.md) <sup>e</sup>\
         [`__raise`](raise.md)\
         [`__restrict`](extension-restrict.md) <sup>e</sup>\
-        [`__single_inheritance`](inheritance-keywords.md)<sup>e</sup>\
-        [`__sptr`](sptr-uptr.md)<sup>e</sup>\
+        [`__single_inheritance`](inheritance-keywords.md) <sup>e</sup>\
+        [`__sptr`](sptr-uptr.md) <sup>e</sup>\
         [`__stdcall`](stdcall.md) <sup>e</sup>
     :::column-end:::
     :::column:::
@@ -191,7 +191,7 @@ The **`__based`** keyword has limited uses for 32-bit and 64-bit target compilat
 
 <sup>e</sup> For backward compatibility with previous versions, these keywords are available both with two leading underscores and a single leading underscore when Microsoft extensions are enabled (the default).
 
-## Microsoft keywords in __declspec modifiers
+## Microsoft keywords in `__declspec` modifiers
 
 These identifiers are extended attributes for the **`__declspec`** modifier. They're considered keywords within that context.
 
