@@ -19,7 +19,7 @@ A pointer can also be *dereferenced* to retrieve the value of the object that it
     int j = *p; // dereference p to retrieve the value at its address
 ```
 
-A pointer can point to a typed object or to **`void`**. When a program allocates an object on the [heap](https://wikipedia.org/wiki/Heap) in memory, it receives the address of that object in the form of a pointer. Such pointers are called *owning pointers*. An owning pointer (or a copy of it) must be used to explicitly free the heap-allocated object when it's no longer needed. Failure to free the memory results in a *memory leak*, and renders that memory location unavailable to any other program on the machine. Memory allocated using **`new`** must be freed by using **`delete`** (or **`delete[]`**). For more information, see [`new` and `delete` operators](new-and-delete-operators.md).
+A pointer can point to a typed object or to **`void`**. When a program allocates an object on the [heap](https://wikipedia.org/wiki/Heap) in memory, it receives the address of that object in the form of a pointer. Such pointers are called *owning pointers*. An owning pointer (or a copy of it) must be used to explicitly free the heap-allocated object when it's no longer needed. Failure to free the memory results in a *memory leak*, and renders that memory location unavailable to any other program on the machine. Memory allocated with **`new`** must be freed using **`delete`**, and memory allocated with **`new[]`** must be freed using **`delete[]`**. For more information, see [`new` and `delete` operators](new-and-delete-operators.md).
 
 ```cpp
     MyClass* mc = new MyClass(); // allocate object on the heap
@@ -78,7 +78,7 @@ void func_B(MyClass mc)
     // This statement modifies only the local copy of mc.
     mc.num = 21;
     std::cout << "Local copy of mc:";
-    mc.print(); // "Erika, 21"
+    mc.print(); // "Erika:21"
 }
 
 int main()
@@ -99,28 +99,28 @@ int main()
     MyClass* pcopy = &mc;
 
     // Use the -> operator to access the object's public members
-    pmc->print(); // "Nick, 108"
+    pmc->print(); // "Nick:108"
 
     // Copy the pointer. Now pmc and pmc2 point to same object!
     MyClass* pmc2 = pmc;
 
     // Use copied pointer to modify the original object
     pmc2->name = "Erika";
-    pmc->print(); // "Erika, 108"
-    pmc2->print(); // "Erika, 108"
+    pmc->print(); // "Erika:108"
+    pmc2->print(); // "Erika:108"
 
     // Pass the pointer to a function.
     func_A(pmc);
-    pmc->print(); // "Erika, 3"
-    pmc2->print(); // "Erika, 3"
+    pmc->print(); // "Erika:3"
+    pmc2->print(); // "Erika:3"
 
     // Dereference the pointer and pass a copy
     // of the pointed-to object to a function
     func_B(*pmc);
-    pmc->print(); // "Erika, 3" (original not modified by function)
+    pmc->print(); // "Erika:3" (original not modified by function)
 
-    delete(pmc); // don't forget to give memory back to operating system!
-   // delete(pmc2); //crash! memory location was already deleted
+    delete pmc; // don't forget to give memory back to operating system!
+    // delete pmc2; //crash! memory location was already deleted
 }
 ```
 
@@ -156,7 +156,11 @@ int main()
 }
 ```
 
-Certain arithmetic operations can be used on non-`const` pointers to make them point to another memory location. Pointers are incremented and decremented using the **`++`**, **`+=`**, **`-=`** and **`--`** operators. This technique can be used in arrays and is especially useful in buffers of untyped data. A `void*` gets incremented by the size of a **`char`** (1 byte). A typed pointer gets incremented by size of the type it points to.
+```Output
+1 2 3 4 5 
+```
+
+Certain arithmetic operations can be used on non-`const` pointers to make them point to another memory location. Pointers are incremented and decremented using the **`++`**, **`+=`**, **`-=`** and **`--`** operators. This technique can be used in arrays and is especially useful in buffers of untyped data. A typed pointer gets incremented by size of the type it points to.
 
 The following example demonstrates how pointer arithmetic can be used to access individual pixels in a bitmap on Windows. Note the use of **`new`** and **`delete`**, and the dereference operator.
 
@@ -264,7 +268,7 @@ int main()
     void* p = static_cast<void*>(mc);
     MyClass* mc2 = static_cast<MyClass*>(p);
     std::cout << mc2->name << std::endl; // "Marian"
-    delete(mc);
+    delete mc;
 
     // use operator new to allocate untyped memory block
     void* pvoid = operator new(1000);
@@ -330,6 +334,11 @@ int main()
     cout << combine("from MSVC", append) << "\n";
     cout << combine("Good morning and", prepend) << "\n";
 }
+```
+
+```Output
+hello world from MSVC
+Good morning and hello world from MSVC
 ```
 
 ## See also
