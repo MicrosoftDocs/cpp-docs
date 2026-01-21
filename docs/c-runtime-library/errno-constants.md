@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: errno constants"
 title: "errno constants"
+description: "Learn more about: errno constants"
 ms.date: 04/26/2021
 f1_keywords: ["E2BIG", "EACCES", "EAGAIN", "EBADF", "EBUSY", "ECHILD", "EDEADLK", "EDEADLOCK", "EDOM", "EEXIST", "EFAULT", "EFBIG", "EILSEQ", "EINTR", "EINVAL", "EIO", "EISDIR", "EMFILE", "EMLINK", "ENAMETOOLONG", "ENFILE", "ENODEV", "ENOENT", "ENOEXEC", "ENOLCK", "ENOMEM", "ENOSPC", "ENOSYS", "ENOTDIR", "ENOTEMPTY", "ENOTTY", "ENXIO", "EPERM", "EPIPE", "ERANGE", "EROFS", "ESPIPE", "ESRCH", "EXDEV", "STRUNCATE", "EADDRINUSE", "EADDRNOTAVAIL", "EAFNOSUPPORT", "EALREADY", "EBADMSG", "ECANCELED", "ECONNABORTED", "ECONNREFUSED", "ECONNRESET", "EDESTADDRREQ", "EHOSTUNREACH", "EIDRM", "EINPROGRESS", "EISCONN", "ELOOP", "EMSGSIZE", "ENETDOWN", "ENETRESET", "ENETUNREACH", "ENOBUFS", "ENODATA", "ENOLINK", "ENOMSG", "ENOPROTOOPT", "ENOSR", "ENOSTR", "ENOTCONN", "ENOTRECOVERABLE", "ENOTSOCK", "ENOTSUP", "EOPNOTSUPP", "EOTHER", "EOVERFLOW", "EOWNERDEAD", "EPROTO", "EPROTONOSUPPORT", "EPROTOTYPE", "ETIME", "ETIMEDOUT", "ETXTBSY", "EWOULDBLOCK"]
 helpviewer_keywords: ["E2BIG constant", "EACCES constant", "EAGAIN constant", "EBADF constant", "EBUSY constant", "ECHILD constant", "EDEADLK constant", "EDEADLOCK constant", "EDOM constant", "EEXIST constant", "EFAULT constant", "EFBIG constant", "EILSEQ constant", "EINTR constant", "EINVAL constant", "EIO constant", "EISDIR constant", "EMFILE constant", "EMLINK constant", "ENAMETOOLONG constant", "ENFILE constant", "ENODEV constant", "ENOENT constant", "ENOEXEC constant", "ENOLCK constant", "ENOMEM constant", "ENOSPC constant", "ENOSYS constant", "ENOTDIR constant", "ENOTEMPTY constant", "ENOTTY constant", "ENXIO constant", "EPERM constant", "EPIPE constant", "ERANGE constant", "EROFS constant", "ESPIPE constant", "ESRCH constant", "EXDEV constant", "STRUNCATE constant", "EADDRINUSE constant", "EADDRNOTAVAIL constant", "EAFNOSUPPORT constant", "EALREADY constant", "EBADMSG constant", "ECANCELED constant", "ECONNABORTED constant", "ECONNREFUSED constant", "ECONNRESET constant", "EDESTADDRREQ constant", "EHOSTUNREACH constant", "EIDRM constant", "EINPROGRESS constant", "EISCONN constant", "ELOOP constant", "EMSGSIZE constant", "ENETDOWN constant", "ENETRESET constant", "ENETUNREACH constant", "ENOBUFS constant", "ENODATA constant", "ENOLINK constant", "ENOMSG constant", "ENOPROTOOPT constant", "ENOSR constant", "ENOSTR constant", "ENOTCONN constant", "ENOTRECOVERABLE constant", "ENOTSOCK constant", "ENOTSUP constant", "EOPNOTSUPP constant", "EOTHER constant", "EOVERFLOW constant", "EOWNERDEAD constant", "EPROTO constant", "EPROTONOSUPPORT constant", "EPROTOTYPE constant", "ETIME constant", "ETIMEDOUT constant", "ETXTBSY constant", "EWOULDBLOCK constant"]
@@ -15,11 +15,11 @@ helpviewer_keywords: ["E2BIG constant", "EACCES constant", "EAGAIN constant", "E
 
 ## Remarks
 
-The `errno` constants are values assigned to [`errno`](./errno-doserrno-sys-errlist-and-sys-nerr.md) for various error conditions.
+The `errno` constants are values assigned to [`errno`](errno-doserrno-sys-errlist-and-sys-nerr.md) for various error conditions.
 
 `ERRNO.H` contains the definitions of the `errno` values. However, not all the definitions given in `ERRNO.H` are used in 32-bit Windows operating systems. Some of the values in `ERRNO.H` are present to maintain compatibility with the UNIX family of operating systems. The `errno` values in a 32-bit Windows operating system are a subset of the values for `errno` in UNIX systems.
 
-The `errno` value isn't necessarily the same as the actual error code returned by a system call from the Windows operating system. To access the actual operating system error code, use the [`_doserrno`](./errno-doserrno-sys-errlist-and-sys-nerr.md) variable, which contains this value.
+The `errno` value isn't necessarily the same as the actual error code returned by a system call from the Windows operating system. To access the actual operating system error code, use the [`_doserrno`](errno-doserrno-sys-errlist-and-sys-nerr.md) variable, which contains this value.
 
 The following `errno` values are supported:
 
@@ -34,7 +34,7 @@ The following `errno` values are supported:
 | `EDEADLK` | Resource deadlock would occur. | 36 |
 | `EDEADLOCK` | Same as `EDEADLK` for compatibility with older Microsoft C versions. | 36 |
 | `EDOM` | Math argument. The argument to a math function isn't in the domain of the function. | 33 |
-| `EEXIST` | Files exists. An attempt has been made to create a file that already exists. For example, the `_O_CREAT` and `_O_EXCL` flags are specified in an `_open` call, but the named file already exists. | 17 |
+| `EEXIST` | File exists. An attempt has been made to create a file that already exists. For example, the `_O_CREAT` and `_O_EXCL` flags are specified in an `_open` call, but the named file already exists. | 17 |
 | `EFAULT` | Bad address. | 14 |
 | `EFBIG` | File too large. | 27 |
 | `EILSEQ` | Illegal sequence of bytes (for example, in an `MBCS` string). | 42 |
@@ -50,7 +50,7 @@ The following `errno` values are supported:
 | `ENOENT` | No such file or directory. The specified file or directory doesn't exist or can't be found. This message can occur whenever a specified file doesn't exist or a component of a path doesn't specify an existing directory. | 2 |
 | `ENOEXEC` | Exec format error. An attempt was made to execute a file that isn't executable or that has an invalid executable-file format. | 8 |
 | `ENOLCK` | No locks available. | 39 |
-| `ENOMEM` | Not enough memory is available for the attempted operator. For example, this message can occur when insufficient memory is available to execute a child process, or when the allocation request in a `_getcwd` call can't be satisfied. | 12 |
+| `ENOMEM` | Not enough memory is available for the attempted operation. For example, this message can occur when insufficient memory is available to execute a child process, or when the allocation request in a `_getcwd` call can't be satisfied. | 12 |
 | `ENOSPC` | No space left on device. No more space for writing is available on the device (for example, when the disk is full). | 28 |
 | `ENOSYS` | Function not supported. | 40 |
 | `ENOTDIR` | Not a directory. | 20 |
@@ -60,11 +60,11 @@ The following `errno` values are supported:
 | `EPERM` | Operation not permitted. | 1 |
 | `EPIPE` | Broken pipe. | 32 |
 | `ERANGE` | Result too large. An argument to a math function is too large, resulting in partial or total loss of significance in the result. This error can also occur in other functions when an argument is larger than expected (for example, when the *`buffer`* argument to `_getcwd` is longer than expected). | 34 |
-| `EROFS` | Read only file system. | 30 |
+| `EROFS` | Read-only file system. | 30 |
 | `ESPIPE` | Invalid seek. | 29 |
 | `ESRCH` | No such process. | 3 |
 | `EXDEV` | Cross-device link. An attempt was made to move a file to a different device (using the `rename` function). | 18 |
-| `STRUNCATE` | A string copy or concatenation resulted in a truncated string. See [`_TRUNCATE`](./truncate.md). | 80 |
+| `STRUNCATE` | A string copy or concatenation resulted in a truncated string. See [`_TRUNCATE`](truncate.md). | 80 |
 
 The following values are supported for compatibility with POSIX:
 
@@ -84,8 +84,8 @@ The following values are supported for compatibility with POSIX:
 | `EIDRM` | Identifier removed. | 111 |
 | `EINPROGRESS` | Operation in progress. | 112 |
 | `EISCONN` | Already connected. | 113 |
-| `ELOOP` | Too many symbolic link levels. | 114 |
-| `EMSGSIZE` | Message size. | 115 |
+| `ELOOP` | Too many levels of symbolic links. | 114 |
+| `EMSGSIZE` | Message too long. | 115 |
 | `ENETDOWN` | Network down. | 116 |
 | `ENETRESET` | Network reset. | 117 |
 | `ENETUNREACH` | Network unreachable. | 118 |
@@ -114,4 +114,4 @@ The following values are supported for compatibility with POSIX:
 
 ## See also
 
-[Global constants](./global-constants.md)
+[Global constants](global-constants.md)
