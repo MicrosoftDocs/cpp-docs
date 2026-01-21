@@ -1,34 +1,12 @@
 ---
-description: "Learn more about: concurrency namespace enums"
 title: "concurrency namespace enums"
-ms.date: "11/04/2016"
+description: "Learn more about: concurrency namespace enums"
+ms.date: 11/04/2016
 f1_keywords: ["CONCRT/concurrency::Agents_EventType", "CONCRT/concurrency::Concrt_TraceFlags", "CONCRT/concurrency::CriticalRegionType", "CONCRT/concurrency::PolicyElementKey", "CONCRT/concurrency::SchedulerType", "CONCRT/concurrency::SwitchingProxyState", "CONCRT/concurrency::WinRTInitializationType", "CONCRT/concurrency::join_type", "CONCRT/concurrency::message_status Enumeration"]
-ms.assetid: a40e3b2d-ad21-4229-9880-2cfa84f7ab8f
 ---
 # concurrency namespace enums
 
-:::row:::
-   :::column span="":::
-      [`agent_status`](#agent_status)\
-      [`Agents_EventType`](#agents_eventtype)\
-      [`ConcRT_EventType`](#concrt_eventtype)\
-      [`Concrt_TraceFlags`](#concrt_traceflags)\
-      [`CriticalRegionType`](#criticalregiontype)
-   :::column-end:::
-   :::column span="":::
-      [`DynamicProgressFeedbackType`](#dynamicprogressfeedbacktype)\
-      [`join_type`](#join_type)\
-      [`message_status`](#message_status)\
-      [`PolicyElementKey`](#policyelementkey)\
-      [`SchedulerType`](#schedulertype)
-   :::column-end:::
-   :::column span="":::
-      [`SchedulingProtocolType`](#schedulingprotocoltype)\
-      [`SwitchingProxyState`](#switchingproxystate)\
-      [`task_group_status`](#task_group_status)\
-      [`WinRTInitializationType`](#winrtinitializationtype)
-   :::column-end:::
-:::row-end:::
+The following enumerations are available in the `concurrency` namespace:
 
 ## <a name="agent_status"></a> agent_status Enumeration
 
