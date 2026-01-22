@@ -12,21 +12,16 @@ The GitHub Copilot build performance for Windows helps you make your builds fast
 
 ## Prerequisites 
 
-- Visual Studio 2026. Install the latest available version here: [Installation Guide](/visualstudio/install/install-visual-studio)
 - MSVC Build Tools version 14.50 or later.
-- An MSBuild or CMake project.
+- A MSBuild or CMake project.
 - Windows 10 or later.
 
 ### Before you begin 
 
 In the Visual Studio 2026 Installer, ensure the following components are selected in the **Desktop development with C++** [workload](/visualstudio/install/install-visual-studio#step-4---choose-workloads):
 
-- **C++ Build Insights**
-- **C++ profiling tools**
-- **C++ CMake tools for Windows (required for CMake projects)**
-
-:::image type="complex" source="./media/vs-installer-options.png" alt-text="Screenshot of the Visual Studio installer. The desktop development with C++ section is highlighted and C++ Build Insights, C++ profiling tools, and C++ CMake tools for Windows are selected.":::
-The list shows C++ Build Insights, C++ profiling tools, and C++ CMake tools for Windows are all selected for installation.
+:::image type="complex" source="./media/vs-installer-options.png" alt-text="Screenshot of the Visual Studio installer.":::
+The desktop development with C++ section is highlighted and C++ Build Insights, C++ profiling tools, and C++ CMake tools for Windows are selected.
 :::image-end:::
 
 ### Verify your GitHub Copilot subscription
@@ -35,18 +30,14 @@ To use GitHub Copilot build performance for Windows, you need a GitHub Copilot P
 
 Verify your GitHub Copilot subscription on GitHub, and then sign in to your GitHub account in Visual Studio 2026:
 
-1. Verify your GitHub Copilot subscription:
-  - Sign in to [https://github.com](https://github.com/).
-  - Select your profile picture and then [Copilot settings](https://github.com/settings/copilot/features). Your plan type appears near the top of the page:
+1. Verify your GitHub Copilot subscription by signing in to [https://github.com](https://github.com/). Select your profile picture and then [Copilot settings](https://github.com/settings/copilot/features). Your plan type appears near the top of the page:
 
     :::image type="complex" source="./media/copilot-subscription.png" alt-text="Screenshot of the users GitHub Copilot information.":::
     The Copilot settings page shows the type of subscription. In this case, the user has GitHub Copilot Enterprise.
     :::image-end:::
-
 1. Sign in to your GitHub account in Visual Studio:
-
   - If you're not signed in to GitHub in Visual Studio, open the GitHub Copilot Chat and follow the sign-in instructions in the pop-up window.
-  - Select your profile picture in Visual Studio to confirm your GitHub sign-in status:
+  - To confirm your GitHub sign-in status, select your profile picture in Visual Studio:
 
     :::image type="complex" source="./media/vs-account-authentication.png" alt-text="Screenshot of the account dropdown in Visual Studio.":::
     The account dropdown shows that a Microsoft account and a GitHub account are both signed in and active.
@@ -68,13 +59,13 @@ For more information about template instantiation on build time, see [Troublesho
 
 ## Troubleshoot build performance with GitHub Copilot
 
-View GitHub Copilot build performance on Windows via the GitHub Copilot chat pane. Choose the **Agent** feature within the chat interface:
+View GitHub Copilot build performance on Windows via the GitHub Copilot chat pane. Choose **Agent** in the dropdown:
 
 :::image type="complex" source="./media/copilot-build-perf-select.png" alt-text="Screenshot of the GitHub Copilot chat pane.":::
 The GitHub Copilot chat pane shows a list of agents to choose from. Build Perf C p p (optimize your c + + build) is selected.
 :::image-end:::
 
-Select your preferred model in the model drowpdown menu:
+Then Select your preferred model in the model drop down menu:
 
 :::image type="complex" source="./media/model-select.png" alt-text="Screenshot of the model selection menu in the Copilot Chat window.":::
 This dropdown lists models various models like GPT-5, CLaude Sonnet 4, Gemini 3 Pro, and others.
@@ -86,36 +77,38 @@ Instruct GitHub Copilot to improve the build performance of your selected projec
 The GitHub Copilot chat window shows @ Build Per Cpp: Help me improve the build performance of this project.
 :::image-end:::
 
-If this is your first time using GitHub Copilot build performance for Windows, you'll need to enable Build Insights and grant elevated permissions to collect MSVC compiler traces.
+The first time you use GitHub Copilot build performance for Windows, you may need to enable Build Insights and grant elevated permissions to collect MSVC compiler traces.
 
 ### Grant additional permissions to run Build Insights
 
-Visual Studio needs elevated permissions to analyze build performance. The Build Insights tool needs to be enabled to start the build performance analysis. Once enabled, it stays enabled until you disable it. For more information about these permissions, see [Build Insights needs additional permissions](/cpp/build-insights/elevate-note). Github copilot prompts you to enable Build Insights and grant elevated permissions:
+Visual Studio needs elevated permissions to analyze build performance and the Build Insights tool needs to be enabled. It stays enabled until you disable it. For more information about these permissions, see [Build Insights needs additional permissions](/cpp/build-insights/elevate-note).
+
+GitHub Copilot prompts you to enable Build Insights and grant elevated permissions:
 
 :::image type="complex" source="./media/build-insights-permission.png" alt-text="Screenshot of a GitHub Copilot dialog asking to elevate permissions.":::
 The dialog indicates that Build Insights (vcperf) needs additional permissions to capture MSVC compiler traces. There are Confirm and Deny buttons.
 :::image-end:::
 
-Choose **Confirm** to have GitHub Copilot proceed with the request. A Visual Studio dialog then appears prompting you to allow a one-time elevated request:
+Choose **Confirm**. A Visual Studio dialog then appears prompting you to allow a one-time elevated request:
 
 :::image type="complex" source="./media/msvc-elevation.png" alt-text="Screenshot of a Microsoft Visual Studio prompt requesting elevated permissions.":::
 The elevation prompt says: Build Insights (vcperf) needs additional permissions to capture MSVC compiler traces. Allow this one-time elevated request? There are Yes and No buttons.
 :::image-end:::
 
-If you choose to grant elevated permissions, the Windows User Account Control dialog appears. Choose **Yes** to grant permission to capture the MSVC compiler traces:
+If you choose to grant elevated permissions, the Windows User Account Control dialog appears:
 
 :::image type="complex" source="./media/windows-user-account-control.png" alt-text="Screenshot of the User Account Control dialog.":::
 The dialog asks for permission for the Windows Command Processor, verified publisher Microsoft, to allow this app to make changes to your device. There are Yes and No buttons.
 :::image-end:::
 
-Denying the elevated request cancels the Build Insights operation.
+Choose **Yes** to grant permission to capture the MSVC compiler traces. Denying the elevated request to cancel the build analysis.
 
 ## Guide GitHub Copilot through the process of improving the build time
 
-As you guide GitHub Copilot through the process of improving the build time, you will be asked to provide permission, as needed, to run tools such as PowerShell scripts:
+As you guide GitHub Copilot through the process of improving the build time, it may ask you to provide permission to run tools such as PowerShell scripts:
 
 :::image type="complex" source="./media/terminal-permission.png" alt-text="Screenshot of a Copilot Chat notification.":::
-The prompt asks the user to authorize running the command: ls ../src/ in the terminal. The Confirm dropdown offers: Always allow and Allow in this session. There is also a Deny button.
+The prompt asks the user to authorize running the command: ls ../src/ in the terminal. The Confirm dropdown offers: Always allow and Allow in this session. There's also a Deny button.
 :::image-end:::
 
 The GitHub Copilot build performance for Windows may go through multiple iterations to find the best way to make the build faster:
@@ -127,7 +120,7 @@ The message indicates that analysis is complete and the build time improved from
 When the analysis is complete, GitHub Copilot displays a summary of the changes and build performance impact for that iteration:
 
 :::image type="complex" source="./media/build-summary.png" alt-text="Screenshot of the build performance summary.":::
-The summary shows a before and after optimization summary indicating build time, the top bottleneck, and the top 5 headers that contributed the most to the build time. The report shows build time dropping from 110.7 seconds to 34.1 seconds. It highlights a 69.2% overall improvement and faster incremental rebuilds after enabling precompiled headers.
+The summary shows a before and after optimization summary indicating build time, the top bottleneck, and the top five headers that contributed the most to the build time. The report shows build time dropping from 110.7 seconds to 34.1 seconds. It highlights a 69.2% overall improvement and faster incremental rebuilds after enabling precompiled headers.
 :::image-end:::
 
 In this case, build time dropped from **110.7s to 34.1s** after enabling precompiled headers for costly includes, delivering a **69% improvement** and **3.2× faster builds** with near-instant incremental rebuilds.
@@ -162,7 +155,7 @@ You can access the GitHub Copilot build performance for Windows in these other w
 
 - Build Insights view:
 
-  Select **Improve** from the Build Insights diagnostics session view to open the GitHub Copilot chat window, which prompts you to optimize the build performance of your project, shown previously. This button uses data from the existing build insights trace results and doesn't trigger a new build insights tool execution until the current changes are processed.
+  Select **Improve** from the Build Insights diagnostics session view to open the GitHub Copilot chat window, which prompts you to optimize the build performance of your project, shown previously. This button uses data from the existing build insights trace results. It doesn't do a new analysis until the current changes are processed.
 
   :::image type="complex" source="./media/insights-improve-button.png" alt-text="Screenshot of the Build Insights view window.":::
   The Improve link is highlighted.
