@@ -137,9 +137,9 @@ The **Build** menu:
 
 Or select a **Improve build performance** prompt in GitHub Copilot chat:
 
-    :::image type="complex" source="./media/copilot-improve-prompt.png" alt-text="Screenshot of the Copilot chat window.":::
-    The chat window shows a prompt to Improve Build Performance.
-    :::image-end:::
+  :::image type="complex" source="./media/copilot-improve-prompt.png" alt-text="Screenshot of the Copilot chat window.":::
+  The chat window shows a prompt to Improve Build Performance.
+  :::image-end:::
 
 Or use the **Solution** window context menu which you can access by right-clicking the solution node:
 
