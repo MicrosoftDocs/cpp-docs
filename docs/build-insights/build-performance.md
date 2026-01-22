@@ -116,7 +116,7 @@ The prompt asks the user to authorize running the command: ls ../src/ in the ter
 
 Choose the level of permission you are comfortable with. If you deny the request, GitHub Copilot can't proceed with the build performance analysis.
 
-Copilot may go through multiple iterations to find the best way to make the build faster. In this chat example, ...
+Copilot may go through multiple iterations to find the best way to make the build faster. In this chat example, Copilot made its first build performance improvement but recognizes more areas to optimize.
 
 :::image type="complex" source="./media/build-analysis-complete.png" alt-text="Screenshot of a message in the GitHub Copilot chat window.":::
 The message indicates that analysis is complete and the build time improved from 78.6 seconds to 70.5 seconds (8.1 seconds faster, ~10.3% improvement). It indicates there's still room for improvement.
