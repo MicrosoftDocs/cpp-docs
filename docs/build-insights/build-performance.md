@@ -1,6 +1,6 @@
 ---
 title: "Get Started with GitHub Copilot build performance for Windows"
-description: "Learn how to use GitHub Copilot build performance for Windows to analyze C++ builds, identify expensive headers and templates, and automatically optimize build times in Visual Studio 2026."
+description: "Learn how to use GitHub Copilot to improve build times."
 ms.date: 01/21/2026
 helpviewer_keywords: ["GitHub Copilot build performance", "C++ Build Insights", "build time optimization", "header file analysis", "template instantiation", "Visual Studio build performance"]
 ms.topic: how-to
@@ -8,7 +8,7 @@ ms.topic: how-to
 
 # Get started with GitHub Copilot build performance for Windows 
 
-The GitHub Copilot build performance for Windows analyzes your C++ builds and highlights expensive headers, template instantiations, and functions so you can identify and fix build time bottlenecks. GitHub Copilot is integrated with Visual Studio.
+The GitHub Copilot build performance for Windows helps you make your builds faster. It finds expensive headers, template instantiations, and functions and can automatically make your builds more efficient. GitHub Copilot is integrated with Visual Studio.
 
 ## Prerequisites 
 
@@ -108,7 +108,7 @@ If you choose to grant elevated permissions, the Windows User Account Control di
 The dialog asks for permission for the Windows Command Processor, verified publisher Microsoft, to allow this app to make changes to your device. There are Yes and No buttons.
 :::image-end:::
 
-Denying the elevated request will cancel the Build Insights operation.
+Denying the elevated request cancels the Build Insights operation.
 
 ## Guide GitHub Copilot through the process of improving the build time
 
@@ -138,7 +138,7 @@ You can access the GitHub Copilot build performance for Windows in these other w
 
 - The **Build** menu:
 
-  :::image type="complex" source="./media/build-menu-improve.png" alt-text="Screenshot of the Build menu."":::
+  :::image type="complex" source="./media/build-menu-improve.png" alt-text="Screenshot of the Build menu.":::
   The Build menu option Run Build Insights is expanded to show Build All, Rebuild All, and Improve Build Performance. The latter is selected.
   :::image-end:::
 
