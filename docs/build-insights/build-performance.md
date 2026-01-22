@@ -29,14 +29,14 @@ The desktop development with C++ section is highlighted and C++ Build Insights, 
 
 To use GitHub Copilot build performance for Windows, you need a GitHub Copilot Pro, Pro+, Business, or Enterprise subscription.
 
-Verify your GitHub Copilot subscription on GitHub, and then sign in to your GitHub account in Visual Studio 2026:
+Verify your GitHub Copilot subscription on GitHub, and then sign in to your GitHub account in Visual Studio 2026.
 
 1. Verify your GitHub Copilot subscription by signing in to [https://github.com](https://github.com/). Select your profile picture and then [Copilot settings](https://github.com/settings/copilot/features). Your plan type appears near the top of the page:
 
     :::image type="complex" source="./media/copilot-subscription.png" alt-text="Screenshot of the users GitHub Copilot information.":::
     The Copilot settings page shows the type of subscription. In this case, the user has GitHub Copilot Enterprise.
     :::image-end:::
-1. Sign in to your GitHub account in Visual Studio:
+1. In Visual Studio, sign in to your GitHub account:
   - If you're not signed in to GitHub in Visual Studio, open the GitHub Copilot Chat and follow the sign-in instructions in the pop-up window.
   - Confirm your GitHub sign-in status by selecting your profile picture in Visual Studio. You should see that your GitHub account is **Active**:
 
@@ -46,7 +46,7 @@ Verify your GitHub Copilot subscription on GitHub, and then sign in to your GitH
 
 ### Enable template collection
 
-To minimize analysis overhead, the template instantiation time collection is off by default. To turn it on:
+To minimize analysis overhead, the template instantiation time collection is off by default. Turn it on:
 
   1. In Visual Studio, go to **Tools** > **Options**.
   1. In the **Options** dialog, expand **Build Insights**.
@@ -60,25 +60,27 @@ For more information about template instantiation on build time, see [Troublesho
 
 ## Troubleshoot build performance with GitHub Copilot
 
-To start GitHub Copilot build performance:
+To start the GitHub Copilot build performance agent:
 
-1. open the GitHub Copilot chat pane and type '@'. One of the options is **@BuildPerfCpp**. Select it:
+1. Open the GitHub Copilot chat pane and type '@'. One of the options is **@BuildPerfCpp**. Select it:
 
-:::image type="complex" source="./media/copilot-build-perf-select.png" alt-text="Screenshot of the GitHub Copilot chat pane.":::
-The GitHub Copilot chat pane shows a list of agents to choose from. Build Perf C p p (optimize your c + + build) is selected.
-:::image-end:::
-
+    :::image type="complex" source="./media/copilot-build-perf-select.png" alt-text="Screenshot of the GitHub Copilot chat pane.":::
+    The GitHub Copilot chat pane shows a list of agents to choose from. Build Perf C p p (optimize your c + + build) is selected.
+    :::image-end:::
+    
 1. Select your preferred model in the model drop down menu:
 
-:::image type="complex" source="./media/model-select.png" alt-text="Screenshot of the model selection menu in the Copilot Chat window.":::
-This dropdown lists models various models like GPT-5, CLaude Sonnet 4, Gemini 3 Pro, and others.
-:::image-end:::
-
+    :::image type="complex" source="./media/model-select.png" alt-text="Screenshot of the model selection menu in the Copilot Chat window.":::
+    This dropdown lists models various models like GPT-5, CLaude Sonnet 4, Gemini 3 Pro, and others.
+    :::image-end:::
+    
 1. Instruct GitHub Copilot to improve the build performance of your selected project by typing something like **Help me improve the build performance of this project**. You can add extra context so that GitHub Copilot can better make suggestions to match the needs of your project.
 
-:::image type="complex" source="./media/copilot-build-request.png" alt-text="Screenshot of the GitHub Copilot Chat window.":::
-The GitHub Copilot chat window shows @ Build Per Cpp: Help me improve the build performance of this project.
-:::image-end:::
+    :::image type="complex" source="./media/copilot-build-request.png" alt-text="Screenshot of the GitHub Copilot Chat window.":::
+    The GitHub Copilot chat window shows @ Build Per Cpp: Help me improve the build performance of this project.
+    :::image-end:::
+    
+### Permissions
 
 The first time you use GitHub Copilot build performance for Windows, you may need to enable Build Insights and grant elevated permissions to collect MSVC compiler traces.
 
@@ -112,17 +114,20 @@ As you guide GitHub Copilot through the process of improving the build time, it 
 The prompt asks the user to authorize running the command: ls ../src/ in the terminal. The Confirm dropdown offers: Always allow and Allow in this session. There's also a Deny button.
 :::image-end:::
 
-Copilot may go through multiple iterations to find the best way to make the build faster. When the analysis is done, GitHub Copilot displays a summary of the changes and build performance impact for that iteration:
+Choose the level of permission you are comfortable with. If you deny the request, GitHub Copilot can't proceed with the build performance analysis.
+Copilot may go through multiple iterations to find the best way to make the build faster.
+
+When the analysis is done, GitHub Copilot displays a summary of the changes and build performance impact for that iteration:
 
 :::image type="complex" source="./media/build-summary.png" alt-text="Screenshot of the build performance summary.":::
 The summary shows a before and after optimization summary indicating build time, the top bottleneck, and the top five headers that contributed the most to the build time. The report shows build time dropping from 110.7 seconds to 34.1 seconds. It highlights a 69.2% overall improvement and faster incremental rebuilds after enabling precompiled headers.
 :::image-end:::
 
-In this case, build time dropped from **110.7s to 34.1s** after enabling precompiled headers for costly includes, delivering a **69% improvement** and **3.2× faster builds** with near-instant incremental rebuilds.
+In this example, build time dropped from **110.7s to 34.1s** after enabling precompiled headers for costly includes. A **69% improvement** and **3.2× faster builds** with near-instant incremental rebuilds.
 
 ### Other ways to access GitHub Copilot build performance for Windows
 
-You can access the GitHub Copilot build performance for Windows in these other ways:
+You can access the GitHub Copilot build performance for Windows in other ways:
 
 The **Build** menu:
 
@@ -136,7 +141,7 @@ Or select a **Improve build performance** prompt in GitHub Copilot chat:
     The chat window shows a prompt to Improve Build Performance.
     :::image-end:::
 
-Or use the **Solution** window context menu:
+Or use the **Solution** window context menu which you can access by right-clicking the solution node:
 
   :::image type="complex" source="./media/solution-menu-improve.png" alt-text="A screenshot of the Solution explorer.":::
   The context menu shows Build Solution, Build Solution, and so on. Improve build performance on Solution is highlighted.
