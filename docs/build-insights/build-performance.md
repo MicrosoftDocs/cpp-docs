@@ -161,6 +161,10 @@ Or from the Build Insights view:
   The Improve link is highlighted.
   :::image-end:::
 
+## Summary
+
+By combining MSVC Build Insights with GitHub Copilot, you can identify build bottlenecks and apply fixes without manually analyzing trace data or configuring precompiled headers yourself. The workflow handles trace collection, analysis, and code changes in an iterative loop until build times are reduced to your satisfaction.
+
 ## See also
 
 [Build Insights function view](/cpp/build-insights/tutorials/build-insights-function-view)\
