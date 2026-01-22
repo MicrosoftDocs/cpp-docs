@@ -30,7 +30,7 @@ The output file that you specify in the project has no effect on the name that t
 
 ### To create a makefile project in Visual Studio
 
-1. From the Visual Studio main menu, choose **File** > **New** > **Project**.
+1. From the Visual Studio main menu, choose **File** > **New** > **Project/Solution**.
 
     :::image type="content" source="media/file-new-project.png" alt-text="Screenshot of the menu dropdown item to create a new project highlighted":::
 
