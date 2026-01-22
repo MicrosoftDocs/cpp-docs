@@ -38,7 +38,7 @@ Verify your GitHub Copilot subscription on GitHub, and then sign in to your GitH
     :::image-end:::
 1. Sign in to your GitHub account in Visual Studio:
   - If you're not signed in to GitHub in Visual Studio, open the GitHub Copilot Chat and follow the sign-in instructions in the pop-up window.
-  - To confirm your GitHub sign-in status, select your profile picture in Visual Studio:
+  - Confirm your GitHub sign-in status by selecting your profile picture in Visual Studio. You should see that your GitHub account is **Active**:
 
     :::image type="complex" source="./media/vs-account-authentication.png" alt-text="Screenshot of the account dropdown in Visual Studio.":::
     The account dropdown shows that a Microsoft account and a GitHub account are both signed in and active.
@@ -60,19 +60,21 @@ For more information about template instantiation on build time, see [Troublesho
 
 ## Troubleshoot build performance with GitHub Copilot
 
-View GitHub Copilot build performance on Windows via the GitHub Copilot chat pane. Choose **Agent** in the dropdown:
+To start GitHub Copilot build performance:
+
+1. open the GitHub Copilot chat pane and type '@'. One of the options is **@BuildPerfCpp**. Select it:
 
 :::image type="complex" source="./media/copilot-build-perf-select.png" alt-text="Screenshot of the GitHub Copilot chat pane.":::
 The GitHub Copilot chat pane shows a list of agents to choose from. Build Perf C p p (optimize your c + + build) is selected.
 :::image-end:::
 
-Then Select your preferred model in the model drop down menu:
+1. Select your preferred model in the model drop down menu:
 
 :::image type="complex" source="./media/model-select.png" alt-text="Screenshot of the model selection menu in the Copilot Chat window.":::
 This dropdown lists models various models like GPT-5, CLaude Sonnet 4, Gemini 3 Pro, and others.
 :::image-end:::
 
-Instruct GitHub Copilot to improve the build performance of your selected project. You can add extra context so that GitHub Copilot can better make suggestions to match the needs of your project.
+1. Instruct GitHub Copilot to improve the build performance of your selected project by typing something like **Help me improve the build performance of this project**. You can add extra context so that GitHub Copilot can better make suggestions to match the needs of your project.
 
 :::image type="complex" source="./media/copilot-build-request.png" alt-text="Screenshot of the GitHub Copilot Chat window.":::
 The GitHub Copilot chat window shows @ Build Per Cpp: Help me improve the build performance of this project.
@@ -80,23 +82,21 @@ The GitHub Copilot chat window shows @ Build Per Cpp: Help me improve the build 
 
 The first time you use GitHub Copilot build performance for Windows, you may need to enable Build Insights and grant elevated permissions to collect MSVC compiler traces.
 
-### Grant additional permissions to run Build Insights
-
 Visual Studio needs elevated permissions to analyze build performance and the Build Insights tool needs to be enabled. It stays enabled until you disable it. For more information about these permissions, see [Build Insights needs additional permissions](/cpp/build-insights/elevate-note).
 
-GitHub Copilot prompts you to enable Build Insights and grant elevated permissions:
+If GitHub Copilot prompts you to enable Build Insights and grant elevated permissions, choose **Confirm**:
 
 :::image type="complex" source="./media/build-insights-permission.png" alt-text="Screenshot of a GitHub Copilot dialog asking to elevate permissions.":::
 The dialog indicates that Build Insights (vcperf) needs additional permissions to capture MSVC compiler traces. There are Confirm and Deny buttons.
 :::image-end:::
 
-Choose **Confirm**. A Visual Studio dialog then appears prompting you to allow a one-time elevated request:
+A Visual Studio dialog then appears prompting you to allow a one-time elevated request:
 
 :::image type="complex" source="./media/msvc-elevation.png" alt-text="Screenshot of a Microsoft Visual Studio prompt requesting elevated permissions.":::
 The elevation prompt says: Build Insights (vcperf) needs additional permissions to capture MSVC compiler traces. Allow this one-time elevated request? There are Yes and No buttons.
 :::image-end:::
 
-If you choose to grant elevated permissions, the Windows User Account Control dialog appears:
+Choose **Yes**. The Windows User Account Control dialog then appears:
 
 :::image type="complex" source="./media/windows-user-account-control.png" alt-text="Screenshot of the User Account Control dialog.":::
 The dialog asks for permission for the Windows Command Processor, verified publisher Microsoft, to allow this app to make changes to your device. There are Yes and No buttons.
@@ -112,13 +112,7 @@ As you guide GitHub Copilot through the process of improving the build time, it 
 The prompt asks the user to authorize running the command: ls ../src/ in the terminal. The Confirm dropdown offers: Always allow and Allow in this session. There's also a Deny button.
 :::image-end:::
 
-The GitHub Copilot build performance for Windows may go through multiple iterations to find the best way to make the build faster:
-
-:::image type="complex" source="./media/build-analysis-complete.png" alt-text="Screenshot of a message in the GitHub Copilot chat window.":::
-The message indicates that analysis is complete and the build time improved from 78.6 seconds to 70.5 seconds (8.1 seconds faster, ~10.3% improvement). It indicates there's still room for improvement.
-:::image-end:::
-
-When the analysis is complete, GitHub Copilot displays a summary of the changes and build performance impact for that iteration:
+Copilot may go through multiple iterations to find the best way to make the build faster. When the analysis is done, GitHub Copilot displays a summary of the changes and build performance impact for that iteration:
 
 :::image type="complex" source="./media/build-summary.png" alt-text="Screenshot of the build performance summary.":::
 The summary shows a before and after optimization summary indicating build time, the top bottleneck, and the top five headers that contributed the most to the build time. The report shows build time dropping from 110.7 seconds to 34.1 seconds. It highlights a 69.2% overall improvement and faster incremental rebuilds after enabling precompiled headers.
@@ -130,19 +124,19 @@ In this case, build time dropped from **110.7s to 34.1s** after enabling precomp
 
 You can access the GitHub Copilot build performance for Windows in these other ways:
 
-- The **Build** menu:
+The **Build** menu:
 
   :::image type="complex" source="./media/build-menu-improve.png" alt-text="Screenshot of the Build menu.":::
   The Build menu option Run Build Insights is expanded to show Build All, Rebuild All, and Improve Build Performance. The latter is selected.
   :::image-end:::
 
-- Select a **Improve build performance** prompt in GitHub Copilot chat:
+Or select a **Improve build performance** prompt in GitHub Copilot chat:
 
     :::image type="complex" source="./media/copilot-improve-prompt.png" alt-text="Screenshot of the Copilot chat window.":::
     The chat window shows a prompt to Improve Build Performance.
     :::image-end:::
 
-- **Solution** window context menu:
+Or use the **Solution** window context menu:
 
   :::image type="complex" source="./media/solution-menu-improve.png" alt-text="A screenshot of the Solution explorer.":::
   The context menu shows Build Solution, Build Solution, and so on. Improve build performance on Solution is highlighted.
@@ -154,7 +148,7 @@ You can access the GitHub Copilot build performance for Windows in these other w
   The chat window shows a prompt to Improve Build Performance.
   :::image-end:::
 
-- Build Insights view:
+Or from the Build Insights view:
 
   Select **Improve** from the Build Insights diagnostics session view to open the GitHub Copilot chat window, which prompts you to optimize the build performance of your project, shown previously. This button uses data from the existing build insights trace results. It doesn't do a new analysis until the current changes are processed.
 
