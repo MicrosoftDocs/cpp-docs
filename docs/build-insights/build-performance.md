@@ -12,6 +12,7 @@ The GitHub Copilot build performance for Windows helps you make your builds fast
 
 ## Prerequisites 
 
+- Visual Studio 2026 version 18.3 Insiders 4, or later.
 - MSVC Build Tools version 14.50 or later.
 - A MSBuild or CMake project.
 - Windows 10 or later.
