@@ -140,8 +140,7 @@ The **Build** menu:
   The Build menu option Run Build Insights is expanded to show Build All, Rebuild All, and Improve Build Performance. The latter is selected.
   :::image-end:::
 
-Or select a **Improve build performance** prompt in GitHub Copilot chat:
-
+  Select **Improve build performance on Solution** to open the GitHub Copilot chat window, which prompts you to optimize the build performance of your project.
   :::image type="complex" source="./media/copilot-improve-prompt.png" alt-text="Screenshot of the Copilot chat window.":::
   The chat window shows a prompt to Improve Build Performance.
   :::image-end:::
@@ -160,10 +159,16 @@ Or use the **Solution** window context menu which you can access by right-clicki
 
 Or from the Build Insights view:
 
-  Select **Improve** from the Build Insights diagnostics session view to open the GitHub Copilot chat window, which prompts you to optimize the build performance of your project, shown previously. This button uses data from the existing build insights trace results. It doesn't do a new analysis until the current changes are processed.
+  Select **Improve** from the Build Insights diagnostics session view to open the GitHub Copilot chat window, which prompts you to optimize the build performance of your project. This button uses data from the existing build insights trace results. It doesn't do a new analysis until the current changes are processed.
 
   :::image type="complex" source="./media/insights-improve-button.png" alt-text="Screenshot of the Build Insights view window.":::
   The Improve link is highlighted.
+  :::image-end:::
+
+  The GitHub Copilot chat window is prompted to optimize the build performance of your project, focusing on includes.
+  
+  :::image type="complex" source="./media/copilot-improve-includes.png" alt-text="Screenshot of the Build Insights view window.":::
+  The chat window shows a prompt to Improve Build Performance, focusing on includes.
   :::image-end:::
 
 ## Summary
