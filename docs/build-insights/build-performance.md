@@ -166,8 +166,8 @@ Or from the Build Insights view:
   :::image-end:::
 
   The GitHub Copilot chat window is prompted to optimize the build performance of your project, focusing on includes.
-  
-  :::image type="complex" source="./media/copilot-improve-includes.png" alt-text="Screenshot of the Build Insights view window.":::
+
+  :::image type="complex" source="./media/copilot-improve-includes.png" alt-text="Screenshot of the Copilot chat window with focusing on includes prompt.":::
   The chat window shows a prompt to Improve Build Performance, focusing on includes.
   :::image-end:::
 
