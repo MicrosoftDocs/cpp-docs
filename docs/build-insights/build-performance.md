@@ -52,7 +52,7 @@ To minimize analysis overhead, the template instantiation time collection is off
   1. In the **Options** dialog, expand **Build Insights**.
   1. Select **Collect Template Instantiation**.
 
-:::image type="complex" source="./media/build-insights-options.png" alt-text="Build Insights settings page in Visual Studio Options with the Collect template instantiation checkbox enabled, displaying trace collection configurations for analysis.":::
+:::image type="complex" source="./media/build-insights-options.png" alt-text="Screenshot of the Build Insights settings page in Visual Studio Options with the Collect template instantiation checkbox enabled, displaying trace collection configurations for analysis.":::
 The dialog shows trace collection settings with the Collect template instantiation checkbox selected.
 :::image-end:::
 
