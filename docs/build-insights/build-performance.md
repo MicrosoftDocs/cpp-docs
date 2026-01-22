@@ -157,7 +157,7 @@ Or use the **Solution** window context menu which you can access by right-clicki
   The chat window shows a prompt to Improve Build Performance.
   :::image-end:::
 
-Or from the Build Insights view:
+Or from the **Build Insights** view:
 
   Select **Improve** from the Build Insights diagnostics session view to open the GitHub Copilot chat window, which prompts you to optimize the build performance of your project. This button uses data from the existing build insights trace results. It doesn't do a new analysis until the current changes are processed.
 
