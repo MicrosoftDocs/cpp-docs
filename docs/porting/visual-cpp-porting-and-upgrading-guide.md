@@ -45,6 +45,16 @@ ms.author: twhitney
 ## 🎯 Choose your upgrade path
 
 :::row:::
+:::column span="2":::
+### 🤖 Upgrade with an AI agent (public preview)
+**Use GitHub Copilot app modernization to upgrade your MSVC Build Tools and resolve upgrade issues**
+
+- [⬆️ Public Preview announcement](https://aka.ms/cppblog)
+- [🤖 Using GitHub Copilot app modernization for C++](ghcp-app-modernization-cpp.md)
+:::column-end:::
+:::row-end:::
+
+:::row:::
 :::column:::
 ### 📋 Assess & plan
 **Evaluate your current codebase and plan your strategy**
