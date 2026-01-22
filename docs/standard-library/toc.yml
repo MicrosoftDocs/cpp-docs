@@ -149,7 +149,7 @@ items:
           href: chrono-operators.md
         - name: <chrono> literals
           href: chrono-literals.md
-        - name: ambiguous_local_time
+        - name: ambiguous_local_time class
           href: ambiguous-local-time.md
         - name: choose enum
           href: choose-enum.md
@@ -173,7 +173,7 @@ items:
           href: high-resolution-clock-struct.md
         - name: is_clock struct
           href: is-clock-struct.md
-        - name: last_spec
+        - name: last_spec struct
           href: last-spec-struct.md
         - name: leap_second class
           href: leap-second-class.md
@@ -193,7 +193,7 @@ items:
           href: month-weekday-class.md
         - name: month_weekday_last class
           href: month-weekday-last-class.md
-        - name: nonexistent_local_time
+        - name: nonexistent_local_time class
           href: nonexistent-local-time.md
         - name: steady_clock struct
           href: steady-clock-struct.md
@@ -219,7 +219,7 @@ items:
           href: utc-clock-class.md
         - name: weekday class
           href: weekday-class.md
-        - name: weekday_indexed
+        - name: weekday_indexed class
           href: weekdayindexed-class.md
         - name: weekday_last class
           href: weekdaylast-class.md
@@ -256,11 +256,11 @@ items:
           href: codecvt.md
         - name: <codecvt> enums
           href: codecvt-enums.md
-        - name: codecvt_utf8
+        - name: codecvt_utf8 class
           href: codecvt-utf8-class.md
-        - name: codecvt_utf8_utf16
+        - name: codecvt_utf8_utf16 class
           href: codecvt-utf8-utf16-class.md
-        - name: codecvt_utf16
+        - name: codecvt_utf16 class
           href: codecvt-utf16-class.md
     - name: <complex>
       expanded: false
@@ -980,7 +980,7 @@ items:
               href: transform-view-class.md
             - name: values_view class
               href: values-view-class.md
-            - name: view_interface
+            - name: view_interface class
               href: view-interface.md
         - name: <ranges> alias templates
           href: ranges-alias-templates.md
