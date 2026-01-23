@@ -25,6 +25,8 @@ landingContent:
             url: get-started-with-cpp-build-insights.md
       - linkListType: tutorial
         links:
+          - text: Get started with GitHub Copilot build performance for Windows
+            url: build-performance.md
           - text: Build Insights function view
             url: tutorials/build-insights-function-view.md
           - text: Build Insights included files view

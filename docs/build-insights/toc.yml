@@ -6,6 +6,8 @@ items:
 - name: "Tutorials"
   expanded: true
   items:
+    - name: "Get started with GitHub Copilot build performance for Windows"
+      href: ../build-insights/build-performance.md
     - name: "Troubleshoot function inlining impact on build time"
       href: ../build-insights/tutorials/build-insights-function-view.md
     - name: "Troubleshoot template instantiation impact on build time"
