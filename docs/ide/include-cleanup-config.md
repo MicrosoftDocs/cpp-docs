@@ -1,7 +1,7 @@
 ---
 title: "Configure C/C++ Include Cleanup in Visual Studio"
 description: "Learn how to configure C/C++ Include Cleanup."
-ms.date: 01/22/2026
+ms.date: 01/23/2026
 ms.topic: "how-to"
 f1_keywords: ["config include cleanup"]
 helpviewer_keywords: ["config include cleanup"]
@@ -59,7 +59,7 @@ The `.editorconfig` settings that you can use with Include Cleanup are:
 | `cpp_include_cleanup_excluded_files`</br></br>Excludes the specified files from Include Cleanup messages. You won't get a suggestion related to the header at all, whether to add it or that it's unused. | *filename* | `cpp_include_cleanup_excluded_files = vcruntime.h, vcruntime_string.h` |
 | `cpp_include_cleanup_required_files`</br></br>Specify that usage of *file1* requires *file2*. For example, specify that if you use `atlwin.h` that `altbase.h` must also be included. | *file1*:*file2* | `cpp_include_cleanup_required_files = atlwin.h:altbase.h, atlcom.h:altbase.h` |
 | `cpp_include_cleanup_replacement_files`</br></br>Replaces *file1* with *file2* during Include Cleanup processing. For example, you may prefer using `cstdio` over `stdio.h`. If you have a file with both `#include <cstdio>` and `#include <stdio.h>` and you consume content only from `stdio.h`, with this setting Include Cleanup will tell you to remove `stdio.h` because it replaced the usage of `cstdio` with `stdio.h` during processing. If you don't use the contents from either, Include Cleanup will tell you to remove both.| *file1*:*file2* | `cpp_include_cleanup_replacement_files = stdio.h:cstdio,stdint.h:cstdint` |
-| `cpp_include_cleanup_alternate_files`</br></br>Suppress messages for indirect includes from an umbrella header. For example, if you `#include <windows.h>` and only use content from its indirectly included headers `winerror.h` or `minwindef.h`, Include Cleanup won't suggest adding them. *| *file1*:*file2*[:*file3*...][,*file4*:*file5*...] | `cpp_include_cleanup_alternate_files = windows.h:winerror.h:minwindef.h`</br>`cpp_include_cleanup_alternate_files = windows.h:winerror.h:minwindef.h,umbrella.h:internal.h`|
+| `cpp_include_cleanup_alternate_files`</br></br>Suppress messages for indirect includes. For example, if you `#include <windows.h>` and only use content from its indirectly included headers `winerror.h` or `minwindef.h`, Include Cleanup won't suggest adding them. *| *file1*:*file2*[:*file3*...][,*file4*:*file5*...] | `cpp_include_cleanup_alternate_files = windows.h:winerror.h:minwindef.h`</br>or</br>`cpp_include_cleanup_alternate_files = windows.h:winerror.h:minwindef.h,umbrella.h:internal.h`|
 
 ## See also
 
