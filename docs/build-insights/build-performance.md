@@ -33,7 +33,7 @@ Verify your GitHub Copilot subscription on GitHub, and then sign in to your GitH
 
 1. Verify your GitHub Copilot subscription by signing in to [https://github.com](https://github.com/). Select your profile picture and then [Copilot settings](https://github.com/settings/copilot/features). Your plan type appears near the top of the page:
 
-    :::image type="complex" source="./media/copilot-subscription.png" alt-text="Screenshot of the users GitHub Copilot information.":::
+    :::image type="complex" source="./media/copilot-subscription.png" alt-text="Screenshot showing the user's GitHub Copilot information.":::
     The Copilot settings page shows the type of subscription. In this case, the user has GitHub Copilot Enterprise.
     :::image-end:::
 1. In Visual Studio, sign in to your GitHub account:
