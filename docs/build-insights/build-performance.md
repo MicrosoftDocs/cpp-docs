@@ -104,7 +104,7 @@ Choose **Yes**. The Windows User Account Control dialog then appears:
 The dialog asks for permission for the Windows Command Processor, verified publisher Microsoft, to allow this app to make changes to your device. There are Yes and No buttons.
 :::image-end:::
 
-Choose **Yes** to grant permission to capture the MSVC compiler traces. Denying the elevated request to cancel the build analysis.
+Choose **Yes** to grant permission to capture the MSVC compiler traces. Denying the elevated request cancels the build analysis.
 
 ## Guide GitHub Copilot through the process of improving the build time
 
