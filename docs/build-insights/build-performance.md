@@ -71,7 +71,7 @@ To start the GitHub Copilot build performance agent:
 1. Select your preferred model in the model drop down menu:
 
     :::image type="complex" source="./media/model-select.png" alt-text="Screenshot of the model selection menu in the Copilot Chat window.":::
-    This dropdown lists models various models like GPT-5, CLaude Sonnet 4, Gemini 3 Pro, and others.
+    This dropdown lists various models like GPT-5, CLaude Sonnet 4, Gemini 3 Pro, and others.
     :::image-end:::
     
 1. Instruct GitHub Copilot to improve the build performance of your selected project by typing something like **Help me improve the build performance of this project**. You can add extra context so that GitHub Copilot can better make suggestions to match the needs of your project.
