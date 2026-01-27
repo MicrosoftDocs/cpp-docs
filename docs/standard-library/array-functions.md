@@ -15,16 +15,16 @@ Returns a reference to the specified element of the array.
 
 ```cpp
 template <std::size_t Index, class Type, std::size_t Size>
-constexpr T& get(std::array<Type, Size>& arr) noexcept;
+constexpr Type& get(std::array<Type, Size>& arr) noexcept;
 
 template <std::size_t Index, class Type, std::size_t Size>
-constexpr const T& get(const std::array<Type, Size>& arr) noexcept;
+constexpr const Type& get(const std::array<Type, Size>& arr) noexcept;
 
 template <std::size_t Index, class Type, std::size_t Size>
-constexpr T&& get(std::array<Type, Size>&& arr) noexcept;
+constexpr Type&& get(std::array<Type, Size>&& arr) noexcept;
 
 template <std::size_t Index, class Type, std::size_t Size>
-constexpr const T&& get(const std::array<Type, Size>&& arr) noexcept;
+constexpr const Type&& get(const std::array<Type, Size>&& arr) noexcept;
 ```
 
 ### Template parameters
