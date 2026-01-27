@@ -1,11 +1,11 @@
 ---
 title: "Tutorial: Import the standard library (STL) using modules from the command line (C++)"
+description: "Learn how to import the C++ standard library (STL) using modules from the command line."
 ms.date: 01/29/2024
 ms.topic: "tutorial"
 author: "tylermsft"
 ms.author: "twhitney"
-helpviewer_keywords: ["modules [C++]", "modules [C++]", "named modules [C++], import standard library (STL) using named modules"]
-description: Learn how to import the C++ standard library (STL) using modules from the command line
+helpviewer_keywords: ["modules [C++]", "named modules [C++], import standard library (STL) using named modules"]
 ---
 
 # Tutorial: Import the C++ standard library using modules from the command line
@@ -26,7 +26,7 @@ This tutorial requires Visual Studio 2022 17.5 or later.
 
 Header file semantics can change depending on macro definitions, the order in which you include them, and they slow compilation. Modules solve these problems.
 
-It's now possible to import the standard library as a module instead of as a tangle of header files. This is much faster and more robust than including header files or header units or precompiled headers (PCH).
+It's now possible to import the standard library as a module instead of as a tangle of header files. This is much faster and more robust than including header files, header units, or precompiled headers (PCH).
 
 The C++23 standard library introduces two named modules: `std` and `std.compat`:
 
@@ -49,7 +49,7 @@ This article demonstrates the new and best way to consume the standard library. 
 
 ## Import the standard library with `std`
 
-The following examples demonstrate how to consume the standard library as a module using the command line compiler. For information about how to do this in the Visual Studio IDE, see [Build ISO C++23 Standard Library Modules](..\build\reference\c-cpp-prop-page.md#build-iso-c23-standard-library-modules).
+The following examples demonstrate how to consume the standard library as a module using the command line compiler. For information about how to do this in the Visual Studio IDE, see [Build ISO C++23 Standard Library Modules](../build/reference/c-cpp-prop-page.md#build-iso-c23-standard-library-modules).
 
 The statement `import std;` or `import std.compat;` imports the standard library into your application. But first, you must compile the standard library named modules into binary form. The following steps demonstrate how.
 
@@ -75,9 +75,9 @@ The statement `import std;` or `import std.compat;` imports the standard library
 
     | Switch | Meaning |
     |---|---|
-    | [`/std:c++:latest`](../build/reference/std-specify-language-standard-version.md) | Use the latest version of the C++ language standard and library. Although module support is available under `/std:c++20`, you need the latest standard library to get support for standard library named modules. |
+    | [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) | Use the latest version of the C++ language standard and library. Although module support is available under `/std:c++20`, you need the latest standard library to get support for standard library named modules. |
     | [`/EHsc`](../build/reference/eh-exception-handling-model.md) | Use C++ exception handling, except for functions marked `extern "C"`. |
-    | [`/W4`](../build/reference//compiler-option-warning-level.md) | Using /W4 is generally recommended, especially for new projects because it enables all level 1, level 2, level 3, and most level 4 (informational) warnings, which can help you catch potential issues early. It essentially provides lint-like warnings that can help ensure the fewest possible hard-to-find code defects. |
+    | [`/W4`](../build/reference/compiler-option-warning-level.md) | Using `/W4` is generally recommended, especially for new projects because it enables all level 1, level 2, level 3, and most level 4 (informational) warnings, which can help you catch potential issues early. It essentially provides lint-like warnings that can help ensure the fewest possible hard-to-find code defects. |
     | [`/c`](../build/reference/c-compile-without-linking.md) | Compile without linking, because we're just building the binary named module interface at this point. |
 
     You can control the object file name and the named module interface file name with the following switches:
@@ -159,7 +159,7 @@ Before you can use `import std.compat;` you must compile the module interface fi
     - `std.compat.obj` contains implementation. However, most of the implementation is provided by `std.obj`. Add `std.obj` to the command line when you compile the sample app to statically link the functionality that you use from the standard library into your application.
 
     You can control the object file name and the named module interface file name with the following switches:
-    - [`/Fo`](../build/reference/fo-object-file-name.md) sets the name of the object file. For example, `/Fo:"somethingelse"`. By default, the compiler uses the same name for the object file as the module source file (`.ixx`) you're compiling. In the example, the object file names are `std.obj` and `std.compat.obj` by default because we're compiling the module files `std.ixx` and `std.compat.obj`.
+    - [`/Fo`](../build/reference/fo-object-file-name.md) sets the name of the object file. For example, `/Fo:"somethingelse"`. By default, the compiler uses the same name for the object file as the module source file (`.ixx`) you're compiling. In the example, the object file names are `std.obj` and `std.compat.obj` by default because we're compiling the module files `std.ixx` and `std.compat.ixx`.
     - [`/ifcOutput`](../build/reference/ifc-output.md) sets the name of the named module interface file (`.ifc`). For example, `/ifcOutput "somethingelse.ifc"`. By default, the compiler uses the same name for the module interface file (`.ifc`) as the module source file (`.ixx`) you're compiling. In the example, the generated `ifc` files are `std.ifc` and `std.compat.ifc` by default because we're compiling the module files `std.ixx` and `std.compat.ixx`.
 
 1. Import the `std.compat` library by first creating a file named `stdCompatExample.cpp` with the following content:
@@ -210,7 +210,7 @@ Before you can use `import std.compat;` you must compile the module interface fi
 
 ## Standard library named module considerations
 
-Versioning for named modules is the same as for headers. The `.ixx` named module files are installed alongside the headers, for example: `"%VCToolsInstallDir%\modules\std.ixx`, which resolves to `C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.38.33130\modules\std.ixx` in the version of the tools used at the time of this writing. Select the version of the named module the same way you choose the version of the header file to use--by the directory you refer to them from.
+Versioning for named modules is the same as for headers. The `.ixx` named module files are installed alongside the headers, for example: `"%VCToolsInstallDir%\modules\std.ixx"`, which resolves to `C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.38.33130\modules\std.ixx` in the version of the tools used at the time of this writing. Select the version of the named module the same way you choose the version of the header file to use--by the directory you refer to them from.
 
 Don't mix and match importing header units and named modules. For example, don't `import <vector>;` and `import std;` in the same file.
 
@@ -222,7 +222,7 @@ If you need to use the `assert()` macro, then `#include <assert.h>`.
 
 If you need to use the `errno` macro, `#include <errno.h>`. Because named modules don't expose macros, this is the workaround if you need to check for errors from `<math.h>`, for example.
 
-Macros such as `NAN`, `INFINITY`, and `INT_MIN` are defined by `<limits.h>`, which you can include. However, if you `import std;` you can use `numeric_limits<double>::quiet_NaN()` and `numeric_limits<double>::infinity()` instead of `NAN` and `INFINITY`, and `std::numeric_limits<int>::min()` instead of `INT_MIN`.
+Macros such as `NAN`, `INFINITY`, and `INT_MIN` are defined by `<limits.h>`, which you can include. However, if you `import std;` you can use `std::numeric_limits<double>::quiet_NaN()` and `std::numeric_limits<double>::infinity()` instead of `NAN` and `INFINITY`, and `std::numeric_limits<int>::min()` instead of `INT_MIN`.
 
 ## Summary
 

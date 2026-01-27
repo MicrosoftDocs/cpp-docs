@@ -6,12 +6,16 @@ items:
       href: ../overview/visual-cpp-in-visual-studio.md
     - name: Overview of C++ development in Visual Studio
       href: ../overview/overview-of-cpp-development.md
+    - name: What's new for MSVC Build Tools
+      href: ../overview/what-s-new-for-msvc.md
     - name: What's new for C++ in Visual Studio 2022
       href: ../overview/what-s-new-for-visual-cpp-in-visual-studio.md
     - name: What's new for C++ in Visual Studio 2019
       href: ../overview/what-s-new-for-cpp-2019.md
     - name: What's new for C++ in Visual Studio 2017
       href: ../overview/what-s-new-for-cpp-2017.md
+    - name: C/C++ conformance improvements in Microsoft C++ (MSVC) Build Tools
+      href: ../overview/msvc-conformance-improvements.md
     - name: C++ conformance improvements in Visual Studio 2022
       href: ../overview/cpp-conformance-improvements.md
     - name: C++ conformance improvements in Visual Studio 2019
@@ -32,7 +36,7 @@ items:
       href: ../overview/visual-cpp-samples.md
     - name: Help and community
       href: ../overview/visual-cpp-help-and-community.md
-    - name: How to report a problem with the Visual C++ toolset
+    - name: How to report a problem with the Microsoft C++ Build Tools
       href: ../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md
 - name: Visual Studio C++ Tutorials
   expanded: false

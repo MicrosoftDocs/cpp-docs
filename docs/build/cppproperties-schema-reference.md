@@ -93,7 +93,7 @@ You can optionally use the `environments` property to define sets of variables i
         "mingw_64"
       ],
       "name": "Mingw64",
-      "includePath ,": [
+      "includePath": [
         "${env.INCLUDE}",
         "${workspaceRoot}\\**",
       ],

@@ -77,7 +77,7 @@ You can use project macros to change the directory location. For more informatio
 
 ### Platform Toolset
 
-Specifies the toolset used for building the current configuration. This property allows the project to target a different version of the Visual C++ libraries and compiler. By default, Visual Studio C++ projects target the latest toolset installed by Visual Studio. You can choose one of the toolsets installed by several previous versions of Visual Studio instead. Some older toolsets can create executables that run on Windows XP or Vista. For more information on how to change the platform toolset, see [How to: Modify the target framework and platform toolset](../how-to-modify-the-target-framework-and-platform-toolset.md).
+Specifies the toolset used for building the current configuration. This property allows the project to target a different version of the Microsoft C++ libraries and compiler. By default, Visual Studio C++ projects target the latest toolset installed by Visual Studio. You can choose one of the toolsets installed by several previous versions of Visual Studio instead. Some older toolsets can create executables that run on Windows XP or Vista. For more information on how to change the platform toolset, see [How to: Modify the target framework and platform toolset](../how-to-modify-the-target-framework-and-platform-toolset.md).
 
 ### Enable Managed Incremental Build
 

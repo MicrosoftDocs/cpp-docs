@@ -1,14 +1,18 @@
 ---
 title: "What's new for C++ in Visual Studio"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio."
-ms.date: 05/13/2025
+ms.date: 11/04/2025
 ms.service: "visual-cpp"
 ms.subservice: "ide"
 ms.custom: intro-whats-new
 ai-usage: ai-assisted
 ---
 
-# What's new for C++ in Visual Studio 2022
+# What's new for C++ in Visual Studio
+
+Microsoft C++ Build Tools (MSVC Build Tools) versioning is no longer synchronized with Visual Studio versioning starting with Visual Studio 2026 version 18.0 and Microsoft C++ Build Tools version 14.50. For the latest updates to MSVC going forward, see [What's new for MSVC](what-s-new-for-msvc.md).
+
+## What's new for C++ in Visual Studio 2022
 
 Visual Studio 2022 brings many updates and fixes to the Microsoft C++ compiler and tools. The Visual Studio IDE also offers significant improvements in performance and productivity, and now runs natively as a 64-bit application.
 

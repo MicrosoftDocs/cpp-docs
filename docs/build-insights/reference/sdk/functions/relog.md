@@ -75,7 +75,7 @@ A result code from the [`RESULT_CODE`](../other-types/result-code-enum.md) enum.
 
 ### Remarks
 
-The input trace is passed through the analyzer group *`numberOfAnalysisPasses`* times. There's no similar option for relogging passes. The trace is passed trough the relogger group only once, after all analysis passes are complete.
+The input trace is passed through the analyzer group *`numberOfAnalysisPasses`* times. There's no similar option for relogging passes. The trace is passed through the relogger group only once, after all analysis passes are complete.
 
 The relogging of system events like CPU samples from within a relogger class isn't supported. Use the *`systemEventsRetentionFlags`* parameter to decide which system events to keep in the output trace.
 

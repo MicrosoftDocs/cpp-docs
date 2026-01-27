@@ -1,6 +1,6 @@
 ---
 description: "Learn more about C++ header units. Convert a header file to a header unit using Visual Studio 2022."
-title: "Walkthrough: Build and import header units in Visual C++ projects"
+title: "Walkthrough: Build and import header units in Microsoft C++ projects"
 ms.date: 09/29/2022
 ms.custom: "conceptual"
 author: "tylermsft"
@@ -9,7 +9,7 @@ helpviewer_keywords: ["import", "header unit", "ifc"]
 monikerRange: '>=msvc-160'
 ---
 
-# Walkthrough: Build and import header units in Microsoft Visual C++
+# Walkthrough: Build and import header units in Microsoft C++
 
 This article is about building and importing header units with Visual Studio 2022. To learn how to import C++ standard library headers as header units, see [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md). For an even faster and more robust way to import the standard library, see [Tutorial: Import the C++ standard library using modules](../cpp/tutorial-import-stl-named-module.md).
 

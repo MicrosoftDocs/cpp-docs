@@ -3,7 +3,7 @@ title: "CMake projects in Visual Studio"
 description: "Learn how to create and build C++ projects using CMake in Visual Studio."
 ms.date: 03/18/2025
 ms.topic: concept-article
-f1_keywords: ["VS.ToolsOptionsPages.CMake.General", "VS.ToolsOptionsPages.CMake.LanguageServices"] 
+f1_keywords: ["VS.ToolsOptionsPages.CMake.General", "VS.ToolsOptionsPages.CMake.LanguageServices"]
 ms.custom: sfi-image-nochange
 ---
 
@@ -147,13 +147,13 @@ You can customize a CMake debugging session by setting properties in the *`launc
 
 ### Just My Code for CMake projects
 
-When you build for Windows using the MSVC compiler, CMake projects have support for Just My Code debugging. To change the Just My Code setting, go to **Tools** > **Options** > **Debugging** > **General**. For more information on Just My Code debugging, see [Debug only user code with Just My Code](/visualstudio/debugger/just-my-code).
+When you build for Windows using the Microsoft C++ (MSVC) compiler, CMake projects have support for Just My Code debugging. To change the Just My Code setting, go to **Tools** > **Options** > **Debugging** > **General**. For more information on Just My Code debugging, see [Debug only user code with Just My Code](/visualstudio/debugger/just-my-code).
 
 ### Edit and Continue for CMake projects
 
 When you build for Windows with the MSVC compiler, CMake projects have support for Edit and Continue. Add the following code to your *`CMakeLists.txt`* file to enable Edit and Continue.
 
-```
+```txt
 if(MSVC)
   target_compile_options(<target> PUBLIC "/ZI")
   target_link_options(<target> PUBLIC "/INCREMENTAL")

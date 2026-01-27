@@ -1,13 +1,13 @@
 ---
-title: "How to report a problem with the Microsoft C++ toolset"
+title: "How to report a problem with the Microsoft C++ Build Tools"
 description: How to create a good problem report and repro information for the Microsoft C++ toolset.
 ms.date: "09/24/2019"
 ms.service: "visual-cpp"
-ms.subservice: "ide"
+ms.subservice: "cpp-lang"
 author: "tylermsft"
 ms.author: "twhitney"
 ---
-# How to report a problem with the Microsoft C++ toolset or documentation
+# How to report a problem with the Microsoft C++ Build Tools or documentation
 
 If you find problems in the Microsoft C++ compiler (MSVC), the linker, or other tools and libraries, we want to know about them. When the issue is in our documentation, we want to know about that, too.
 
@@ -311,6 +311,20 @@ After you generate the preprocessed files, it's a good idea to make sure the pro
 
 Finally, attach the preprocessed repro files (*filename*.i and *modulename*.i) along with the .ifc output to your report.
 
+#### To generate a module trace file
+
+When issues involve C++ modules, provide a module trace file along with the preprocessed repro improves diagnostic quality to reduce turnaround time. A module trace file records detailed information about module operations during compilation.
+
+It's ideal if the example can be condensed to a single source code file, without reference to any user headers. 
+
+Reducing the amount of code we have to consider as a possible contributor to the problem is enormously helpful to us. Using **/MP** or multi-source invocations can cause the trace to represent only the last compiled file or be incomplete. If you can't reduce the problem to a single source file, package your code into a .zip file or similar, or consider using an IDE project repro. For more information, see [Other repros](#other-repros).
+
+1. Open the **Developer Command Prompt** that matches the Visual Studio version and configuration architecture used to build your project.
+1. Enter the command `cl /d1module:enableLogging`*trace.json* [*other-args*] *filename.cpp*. For *trace.json*, specify the desired output file name for the module trace. There can't be a space between `/d1module:enableLogging` and the output file name. For [*other-args*], include any additional compilation arguments. For *filename.cpp*, specify the source file that reproduces the problem.
+1. If multiple translation units are involved in the problem, run separate single-file invocations to collect a trace for the specific file that reproduces the problem. You can collect traces for additional relevant files if needed.
+
+Finally, attach the generated *trace.json* file along with the preprocessed repro to your report.
+
 ### Link repros
 
 A *link repro* is the linker-generated contents of a directory, specified either by the **link\_repro** environment variable, or as an argument to the [/LINKREPRO](../build/reference/linkrepro.md) linker option. It contains build artifacts that collectively demonstrate a problem that occurs at link time. Examples include a backend crash involving Link-Time Code Generation (LTCG), or a linker crash. These build artifacts are the ones needed as linker input so the problem can be reproduced. A link repro can be created easily by using this environment variable. It enables the linker's built-in repro generation capability.
@@ -382,7 +396,7 @@ For issues with the C++ compiler, linker, and other tools and libraries, first s
 > Information in the initial Developer Community report will always be public. If this is a concern, see the next section about [Reports and privacy](#reports-and-privacy).
 
 > [!TIP]
-> For other kinds of problems you might find in Visual Studio that are unrelated to the C++ toolset (For example, UI issues, broken IDE functionality, or general crashes), use the **Report a Problem** tool in the IDE. This is the best choice, due to its screenshot capabilities and its ability to record UI actions that lead to the problem you found. These kinds of errors can also be looked up on the Visual Studio [Developer Community](https://aka.ms/feedback/report?space=8) site. For more information, see [How to report a problem with Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
+> For other kinds of problems you might find in Visual Studio that are unrelated to the Microsoft C++ Build Tools (For example, UI issues, broken IDE functionality, or general crashes), use the **Report a Problem** tool in the IDE. This is the best choice, due to its screenshot capabilities and its ability to record UI actions that lead to the problem you found. These kinds of errors can also be looked up on the Visual Studio [Developer Community](https://aka.ms/feedback/report?space=8) site. For more information, see [How to report a problem with Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
 ### Reports and privacy
 
@@ -408,6 +422,6 @@ To maintain your privacy and keep your sensitive information out of public view,
 
 ## How to report a C++ documentation issue
 
-We use GitHub issues to track problems reported in our documentation. You can now create GitHub issues directly from a content page, which enables you interact in a richer way with writers and product teams. If you see an issue with a document, a bad code sample, a confusing explanation, a critical omission, or even just a typo, you can easily let us know. Scroll to the bottom of the page and select **Sign in to give documentation feedback**. You need to create a GitHub account if you don't have one already. When you have a GitHub account, you can see all of our documentation issues and their status. You also get notifications when changes are made for the issue you reported. For more information, see our [Feedback System blog entry](/teamblog/a-new-feedback-system-is-coming-to-docs).
+If you see an issue with a document, a bad code sample, a confusing explanation, a critical omission, or even just a typo, you can easily let us know by using the feedback buttons on the page. Since 2024, we no longer use GitHub issues to track problems reported. For more information, see [Announcing a new way to give feedback on Microsoft Learn](https://techcommunity.microsoft.com/blog/microsoftlearnblog/announcing-a-new-way-to-give-feedback-on-microsoft-learn/4027635).
 
-You create a documentation issue on GitHub when you use the documentation feedback button. The issue is automatically filled in with some information about the page you created the issue on. That's how we know where the problem is located, so don't edit this information. Just append the details about what's wrong, and if you like, a suggested fix. [Our C++ docs are open source](https://github.com/MicrosoftDocs/cpp-docs/), so if you'd like to submit a fix yourself, you can. For more information about how you can contribute to our documentation, see our [Contributing guide](https://github.com/MicrosoftDocs/cpp-docs/blob/main/CONTRIBUTING.md) on GitHub.
+[Our C++ docs are open source](https://github.com/MicrosoftDocs/cpp-docs/), so if you'd like to submit a fix yourself, you can. For more information about how you can contribute to our documentation, see our [Contributing guide](https://github.com/MicrosoftDocs/cpp-docs/blob/main/CONTRIBUTING.md) on GitHub.

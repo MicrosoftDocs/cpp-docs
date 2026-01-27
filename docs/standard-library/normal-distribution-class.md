@@ -83,7 +83,7 @@ using namespace std;
 void test(const double m, const double s, const int samples) {
 
     // uncomment to use a non-deterministic seed
-    //    random_device gen;
+    //    random_device rd;
     //    mt19937 gen(rd());
     mt19937 gen(1701);
 

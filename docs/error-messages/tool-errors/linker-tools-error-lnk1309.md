@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1309"
 title: "Linker Tools Error LNK1309"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1309"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1309"]
 helpviewer_keywords: ["LNK1309"]
-ms.assetid: 10146071-883f-4849-97d1-c7468f90efbb
 ---
 # Linker Tools Error LNK1309
 

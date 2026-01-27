@@ -17,7 +17,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Learn how your build performs 
+  - title: Learn how your build performs
     linkLists:
       - linkListType: overview
         links:
@@ -25,6 +25,8 @@ landingContent:
             url: get-started-with-cpp-build-insights.md
       - linkListType: tutorial
         links:
+          - text: Get started with GitHub Copilot build performance for Windows
+            url: build-performance.md
           - text: Build Insights function view
             url: tutorials/build-insights-function-view.md
           - text: Build Insights included files view

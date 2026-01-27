@@ -37,7 +37,7 @@ The **`/fsanitize-address-use-after-return`**, **`/fno-sanitize-address-vcasan-l
 
 1. Select the **Configuration Properties** > **C/C++** > **General** property page.
 
-1. Modify the **Enable Address Sanitizer** property. To enable it, choose **Yes (/fsanitize=address)**.
+1. Modify the **Enable AddressSanitizer** property. To enable it, choose **Yes (/fsanitize=address)**.
 
 1. Choose **OK** or **Apply** to save your changes.
 

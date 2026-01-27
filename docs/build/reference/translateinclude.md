@@ -13,7 +13,7 @@ This switch instructs the compiler to treat `#include` as `import` for header fi
 
 When used with [`/scanDependencies`](scandependencies.md) or [`/sourceDependencies-directives`](sourcedependencies-directives.md), the compiler lists as imported header units in the generated dependency file those headers that are both included in the source and have a corresponding entry in a `header-units.json` file. This dependency info is used by the build system to generate compiled header unit `.ifc` files. Once the header units are built, they're treated by the compiler as an `import` instead of an `#include`.
 
-The `header-units.json` file is only consulted when `/translateInclude` is specified. For more information about the format and purpose of the `header-units.json` file,  see [`header-units.json`](header-unit-json-reference.md).
+The `header-units.json` file is only consulted when `/translateInclude` is specified. For more information about the format and purpose of the `header-units.json` file, see [`header-units.json`](header-unit-json-reference.md).
 
 If an `#include` file isn't listed in the `header-units.json` file, it's treated as a normal `#include`.
 
