@@ -18,15 +18,12 @@ You cannot take the address of a [constructor](../../cpp/constructors-cpp.md) or
 The following example generates C2277:
 
 ```cpp
-// C2277.cpp
 // compile with: /c
 
-struct S
+class A
 {
-    S() {}
-    ~S() {}
+public:
+   A();
 };
-
-void (S::* pointer_to_constructor)() = &S::S;   // C2277
-void (S::* pointer_to_destructor)() = &S::~S;   // C2277
+(*pctor)() = &A::A; // C2277
 ```
