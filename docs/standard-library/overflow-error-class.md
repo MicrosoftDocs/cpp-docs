@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: overflow_error Class"
-title: "overflow_error Class"
-ms.date: "09/09/2021"
+title: "overflow_error class"
+description: "Learn more about: overflow_error class"
+ms.date: 09/09/2021
 f1_keywords: ["stdexcept/std::overflow_error"]
 helpviewer_keywords: ["overflow_error class"]
-ms.assetid: bae7128d-e36b-4a45-84f1-2f89da441d20
 ---
-# overflow_error Class
+# `overflow_error` class
 
 The class serves as the base class for all exceptions thrown to report an arithmetic overflow.
 
@@ -18,13 +17,12 @@ public:
     explicit overflow_error(const string& message);
 
     explicit overflow_error(const char *message);
-
 };
 ```
 
 ## Remarks
 
-The value returned by `what()` is a copy of `message.data()`. For more information, see [`what`](../standard-library/exception-class.md) and [`data`](../standard-library/basic-string-class.md#data).
+The value returned by `what()` is a copy of `message.data()`. For more information, see [`what`](exception-class.md) and [`data`](basic-string-class.md#data).
 
 ## Example
 
@@ -52,19 +50,20 @@ int main()
       cerr << "Type: " << typeid(e).name() << endl;
    }
 }
-/* Output:
+```
+
+```Output
 Caught: bitset overflow
 Type: class std::overflow_error
-*/
 ```
 
 ## Requirements
 
-**Header:** \<stdexcept>
+**Header:** `<stdexcept>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 
-[runtime_error Class](../standard-library/runtime-error-class.md)\
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[`runtime_error` class](runtime-error-class.md)\
+[Thread Safety in the C++ Standard Library](thread-safety-in-the-cpp-standard-library.md)
