@@ -14,7 +14,7 @@ The GitHub Copilot build performance for Windows helps you make your builds fast
 
 - Visual Studio 2026 version 18.3 Insiders 4, or later.
 - MSVC Build Tools version 14.50 or later.
-- A MSBuild or CMake project.
+- An MSBuild or CMake project.
 - Windows 10 or later.
 
 ### Before you begin 
@@ -33,7 +33,7 @@ Verify your GitHub Copilot subscription on GitHub, and then sign in to your GitH
 
 1. Verify your GitHub Copilot subscription by signing in to [https://github.com](https://github.com/). Select your profile picture and then [Copilot settings](https://github.com/settings/copilot/features). Your plan type appears near the top of the page:
 
-    :::image type="complex" source="./media/copilot-subscription.png" alt-text="Screenshot of the users GitHub Copilot information.":::
+    :::image type="complex" source="./media/copilot-subscription.png" alt-text="Screenshot showing the user's GitHub Copilot information.":::
     The Copilot settings page shows the type of subscription. In this case, the user has GitHub Copilot Enterprise.
     :::image-end:::
 1. In Visual Studio, sign in to your GitHub account:
@@ -71,7 +71,7 @@ To start the GitHub Copilot build performance agent:
 1. Select your preferred model in the model drop down menu:
 
     :::image type="complex" source="./media/model-select.png" alt-text="Screenshot of the model selection menu in the Copilot Chat window.":::
-    This dropdown lists models various models like GPT-5, CLaude Sonnet 4, Gemini 3 Pro, and others.
+    This dropdown lists various models like GPT-5, CLaude Sonnet 4, Gemini 3 Pro, and others.
     :::image-end:::
     
 1. Instruct GitHub Copilot to improve the build performance of your selected project by typing something like **Help me improve the build performance of this project**. You can add extra context so that GitHub Copilot can better make suggestions to match the needs of your project.
@@ -104,7 +104,7 @@ Choose **Yes**. The Windows User Account Control dialog then appears:
 The dialog asks for permission for the Windows Command Processor, verified publisher Microsoft, to allow this app to make changes to your device. There are Yes and No buttons.
 :::image-end:::
 
-Choose **Yes** to grant permission to capture the MSVC compiler traces. Denying the elevated request to cancel the build analysis.
+Choose **Yes** to grant permission to capture the MSVC compiler traces. Denying the elevated request cancels the build analysis.
 
 ## Guide GitHub Copilot through the process of improving the build time
 
