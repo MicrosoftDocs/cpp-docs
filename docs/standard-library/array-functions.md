@@ -1,39 +1,44 @@
 ---
 title: "<array> functions"
 description: "Learn more about: <array> functions"
-ms.date: 11/04/2016
-f1_keywords: ["array/std::array::get", "array/std::get", "array/std::swap"]
-helpviewer_keywords: ["std::array [C++], get", "std::get [C++]", "std::swap [C++]"]
+ms.date: 08/20/2025
+f1_keywords: ["array/std::array::get", "array/std::get", "array/std::swap", "array/std::to_array"]
+helpviewer_keywords: ["std::array [C++], get", "std::get [C++]", "std::swap [C++]", "std::to_array [C++]"]
 ---
 # `<array>` functions
 
-The `<array>` header includes two non-member functions, `get` and `swap`, that operate on **array** objects.
+The `<array>` header includes three non-member functions, `get`, `swap`, and `to_array` that operate on **array** objects.
 
 ## <a name="get"></a> `get`
 
 Returns a reference to the specified element of the array.
 
 ```cpp
-template <int Index, class T, size_t N>
-constexpr T& get(array<T, N>& arr) noexcept;
+template <std::size_t Index, class Type, std::size_t Size>
+constexpr Type& get(std::array<Type, Size>& arr) noexcept;
 
-template <int Index, class T, size_t N>
-constexpr const T& get(const array<T, N>& arr) noexcept;
+template <std::size_t Index, class Type, std::size_t Size>
+constexpr const Type& get(const std::array<Type, Size>& arr) noexcept;
 
-template <int Index, class T, size_t N>
-constexpr T&& get(array<T, N>&& arr) noexcept;
+template <std::size_t Index, class Type, std::size_t Size>
+constexpr Type&& get(std::array<Type, Size>&& arr) noexcept;
+
+template <std::size_t Index, class Type, std::size_t Size>
+constexpr const Type&& get(const std::array<Type, Size>&& arr) noexcept;
 ```
 
-### Parameters
+### Template parameters
 
 *`Index`*\
 The element offset.
 
-*`T`*\
+*`Type`*\
 The type of an element.
 
-*`N`*\
+*`Size`*\
 The number of elements in the array.
+
+### Parameters
 
 *`arr`*\
 The array to select from.
@@ -75,17 +80,19 @@ int main()
 A non-member template specialization of `std::swap` that swaps two **array** objects.
 
 ```cpp
-template <class Ty, std::size_t N>
-void swap(array<Ty, N>& left, array<Ty, N>& right);
+template <class Type, std::size_t Size>
+void swap(std::array<Type, Size>& left, std::array<Type, Size>& right);
 ```
 
-### Parameters
+### Template parameters
 
-*`Ty`*\
+*`Type`*\
 The type of an element.
 
-*`N`*\
+*`Size`*\
 The size of the array.
+
+### Parameters
 
 *`left`*\
 The first array to swap.
@@ -143,6 +150,74 @@ int main()
 0 1 2 3
 ```
 
+## <a name="to_array"></a> `to_array`
+
+Converts a built-in array to a `std::array` object.
+
+```cpp
+// C++20
+template <class Type, std::size_t Size>
+constexpr std::array<std::remove_cv_t<Type>, Size> to_array(Type (&arr)[Size]);
+
+// C++20
+template <class Type, std::size_t Size>
+constexpr std::array<std::remove_cv_t<Type>, Size> to_array(Type (&&arr)[Size]);
+```
+
+### Template parameters
+
+*`Type`*\
+The type of an element.
+
+*`Size`*\
+The size of the input array.
+
+### Parameters
+
+*`arr`*\
+The input array used for conversion.
+
+### Example
+
+```cpp
+// std_to_array.cpp
+// Requires /std:c++20 or later
+
+#include <array>
+#include <iostream>
+
+int main()
+{
+    int arr1[]{ 1, 2, 3 };
+    std::array<int, 3> arr2 = std::to_array(arr1);
+
+    std::cout << "std::to_array(arr1):\n";
+    for (const auto& i : arr2)
+    {
+        std::cout << i << " ";
+    }
+    std::cout << std::endl;
+
+    // The size is 7 as it includes the null terminator
+    std::array<char, 7> arr3 = std::to_array("string");
+
+    std::cout << "\nstd::to_array(\"string\"):\n";
+    for (const auto& i : arr3)
+    {
+        std::cout << i << " ";
+    }
+    std::cout << std::endl;
+}
+```
+
+```Output
+std::to_array(arr1):
+1 2 3 
+
+std::to_array("string"):
+s t r i n g 
+```
+
 ## See also
 
-[`<array>`](../standard-library/array.md)
+[`<array>`](array.md)
