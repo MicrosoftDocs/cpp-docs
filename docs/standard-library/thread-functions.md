@@ -14,7 +14,7 @@ The `<thread>` header provides the following functions:
 Uniquely identifies the current thread of execution.
 
 ```cpp
-thread::id this_thread::get_id() noexcept;
+thread::id get_id() noexcept;
 ```
 
 ### Return Value
@@ -44,7 +44,7 @@ Blocks the calling thread.
 
 ```cpp
 template <class Rep, class Period>
-void this_thread::sleep_for(const chrono::duration<Rep, Period>& Rel_time);
+void sleep_for(const chrono::duration<Rep, Period>& Rel_time);
 ```
 
 ### Parameters
@@ -62,7 +62,7 @@ Blocks the calling thread at least until the specified time.
 
 ```cpp
 template <class Clock, class Duration>
-void this_thread::sleep_until(const chrono::time_point<Clock, Duration>& Abs_time);
+void sleep_until(const chrono::time_point<Clock, Duration>& Abs_time);
 ```
 
 ### Parameters
@@ -99,7 +99,7 @@ The function calls `Left.swap(Right)`.
 Signals the operating system to run other threads, even if the current thread would ordinarily continue to run.
 
 ```cpp
-inline void this_thread::yield() noexcept;
+inline void yield() noexcept;
 ```
 
 ## See also
