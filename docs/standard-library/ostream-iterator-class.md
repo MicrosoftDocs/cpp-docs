@@ -14,7 +14,7 @@ The class template ostream_iterator describes an output iterator object that wri
 ## Syntax
 
 ```cpp
-template <class Type class CharType = char class Traits = char_traits <CharType>>
+template <class Type, class CharType = char, class Traits = char_traits <CharType>>
 class ostream_iterator
 ```
 
