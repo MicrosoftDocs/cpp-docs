@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: path Class"
 title: "path Class"
+description: "Learn more about: path Class"
 ms.date: 06/17/2022
 f1_keywords: ["filesystem/std::experimental::filesystem::path"]
 ---
@@ -41,7 +41,7 @@ class path;
 |[`c_str`](#c_str)|Returns a pointer to the first character in `mypath`.|
 |[`clear`](#clear)|Executes `mypath.clear()`.|
 |[`compare`](#compare)|Returns comparison values.|
-|[`concat`](#compare)|Appends the specified sequence to `mypath`, converted (but not inserting a separator) as needed.|
+|[`concat`](#concat)|Appends the specified sequence to `mypath`, converted (but not inserting a separator) as needed.|
 |[`empty`](#empty)|Returns `mypath.empty()`.|
 |[`end`](#end)|Returns an end-of-sequence iterator of type `iterator`.|
 |[`extension`](#extension)|Returns the suffix of `filename()`.|
