@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: <ratio>"
 title: "<ratio>"
-ms.date: "11/04/2016"
+description: "Learn more about: <ratio>"
+ms.date: 11/04/2016
 f1_keywords: ["<ratio>", "ratio/std::mega", "ratio/std::peta", "ratio/std::ratio_greater", "ratio/std::micro", "ratio/std::ratio_add", "ratio/std::ratio_not_equal", "ratio/std::hecto", "ratio/std::nano", "ratio/std::ratio_less_equal", "ratio/std::ratio_less", "ratio/std::centi", "ratio/std::ratio_greater_equal", "ratio/std::ratio_subtract", "ratio/std::atto", "ratio/std::tera", "ratio/std::milli", "ratio/std::ratio_multiply", "ratio/std::kilo", "ratio/std::ratio_divide", "ratio/std::giga", "ratio/std::pico", "ratio/std::femto", "ratio/std::ratio_equal", "ratio/std::ratio", "ratio/std::exa", "ratio/std::deci", "ratio/std::deca"]
-ms.assetid: 8543e912-2d84-45ea-b3c0-bd7bfacee405
 ---
 # `<ratio>`
 
@@ -24,7 +23,7 @@ struct ratio // holds the ratio of Numerator to Denominator
    static constexpr std::intmax_t num;
    static constexpr std::intmax_t den;
    typedef ratio<num, den> type;
-}
+};
 ```
 
 The template `ratio` defines the static constants `num` and `den` such that `num` / `den` == Numerator / Denominator and `num` and `den` have no common factors. `num` / `den` is the value that is represented by the class template. Therefore, `type` designates the instantiation `ratio<num, den>`.

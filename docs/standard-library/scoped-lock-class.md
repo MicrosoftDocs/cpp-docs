@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: scoped_lock Class"
 title: "scoped_lock Class"
-ms.date: "11/04/2016"
+description: "Learn more about: scoped_lock Class"
+ms.date: 11/04/2016
 f1_keywords: ["mutex/std::scoped_lock"]
 ---
 # scoped_lock Class
@@ -17,5 +17,5 @@ class scoped_lock {
     ~scoped_lock();
     scoped_lock(const scoped_lock&) = delete;
     scoped_lock& operator=(const scoped_lock&) = delete;
-}
+};
 ```

@@ -12,7 +12,7 @@ In this walkthrough, create checked builds that find and report memory safety er
 
 Memory safety errors like out-of-bounds memory reads and writes, using memory after it has been freed, `NULL` pointer dereferences, and so on, are a top concern for C/C++ code. AddressSanitizer (ASAN) is a compiler and runtime technology that exposes these kinds of hard-to-find bugs, and does it with zero false positives. For an overview of ASAN, see [AddressSanitizer](asan.md).
 
-Continue On Error (COE) is a new ASAN feature that automatically diagnoses and reports memory safety errors as your app runs. When your program exits, a summary of unique memory safety errors is output to `stdout`, `stderr`, or to a log file of your choice. When you create a standard C++ checked build with `-fsanitizer=address`, calls to allocators, deallocators such as `free`, `memcpy`, `memset`, and so on, are forwarded to the ASAN runtime. The ASAN runtime provides the same semantics for these functions, but monitors what happens with the memory. ASAN diagnoses and reports hidden memory safety errors, with zero false positives, as your app runs.
+Continue On Error (COE) is a new ASAN feature that automatically diagnoses and reports memory safety errors as your app runs. When your program exits, a summary of unique memory safety errors is output to `stdout`, `stderr`, or to a log file of your choice. When you create a standard C++ checked build with `-fsanitize=address`, calls to allocators, deallocators such as `free`, `memcpy`, `memset`, and so on, are forwarded to the ASAN runtime. The ASAN runtime provides the same semantics for these functions, but monitors what happens with the memory. ASAN diagnoses and reports hidden memory safety errors, with zero false positives, as your app runs.
 
 A significant advantage of COE is that, unlike the previous ASAN behavior, your program doesn't stop running when the first memory error is found. Instead, ASAN notes the error, and your app continues to run. After your app exits, a summary of all the memory issues is output.
 
@@ -44,21 +44,21 @@ Create the example:
     ```cpp
     #include <stdio.h>
     #include <stdlib.h>
-    
+
     void BadFunction(int *pointer)
     {
         free(pointer);
         free(pointer); // double-free!
     }
-    
+
     int main(int argc, const char *argv[])
     {
         int *pointer = static_cast<int *>(malloc(4));
         BadFunction(pointer);
-    
+
         // Normally we'd crash before this, but with COE we can see heap-use-after-free error as well
         printf("\n\n******* Pointer value: %d\n", *pointer);
-    
+
         return 1;
     }
     ```
@@ -181,24 +181,24 @@ Create the example:
 1. In that directory, create a source file, for example, `coe.cpp`, and paste the following code:
 
     ```cpp
-    #include <stdlib.h> 
-    
+    #include <stdlib.h>
+
     char* func(char* buf, size_t sz)
-    { 
-        char* local = (char*)malloc(sz); 
-        for (auto ii = 0; ii <= sz; ii++) // bad loop exit test 
+    {
+        char* local = (char*)malloc(sz);
+        for (auto ii = 0; ii <= sz; ii++) // bad loop exit test
         {
-            local[ii] = ~buf[ii]; // Two memory safety errors 
+            local[ii] = ~buf[ii]; // Two memory safety errors
         }
-     
-        return local; 
-    } 
-    
-    char buffer[10] = {0,1,2,3,4,5,6,7,8,9}; 
-    
+
+        return local;
+    }
+
+    char buffer[10] = {0,1,2,3,4,5,6,7,8,9};
+
     int main()
-    {   
-        char* inverted_buf= func(buffer, 10); 
+    {
+        char* inverted_buf= func(buffer, 10);
     }
     ```
 
