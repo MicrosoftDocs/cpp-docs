@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3458"
 title: "Compiler Error C3458"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3458"
+ms.date: 11/04/2016
 f1_keywords: ["C3458"]
 helpviewer_keywords: ["C3458"]
-ms.assetid: 940202fd-8dcc-4042-9c96-3f9e9127d2f1
 ---
 # Compiler Error C3458
 
-'attribute1': attribute 'attribute2' already specified for 'construct'
+> 'attribute1': attribute 'attribute2' already specified for 'construct'
+
+## Remarks
 
 Two attributes that are mutually exclusive were specified for the same construct.
 
 ## Example
 
-The following sample generates C3458
+The following example generates C3458
 
 ```cpp
 // C3458.cpp

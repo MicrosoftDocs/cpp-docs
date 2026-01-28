@@ -1,25 +1,28 @@
 ---
-description: "Learn more about: Compiler Error C2182"
 title: "Compiler Error C2182"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2182"
+ms.date: 08/22/2025
 f1_keywords: ["C2182"]
 helpviewer_keywords: ["C2182"]
-ms.assetid: dfd8d47d-9606-496e-bd96-4bf41ba1f857
 ---
 # Compiler Error C2182
 
-'identifier' : illegal use of type 'void'
+> '*identifier*': this use of 'void' is not valid
 
-A variable is declared type **`void`**.
+## Remarks
 
-The following sample generates C2182:
+You can't create a variable or array of type **`void`**. Only pointers to **`void`** are allowed.
+
+## Example
+
+The following example generates C2182:
 
 ```cpp
 // C2182.cpp
 // compile with: /c
-int main() {
-   int i = 10;
-   void &ir = i;   // C2182 cannot have a reference to type void
-   int &ir = i;   // OK
-}
+
+void var;      // C2182
+void arr[5];   // C2182
+
+void* ptr;     // OK
 ```

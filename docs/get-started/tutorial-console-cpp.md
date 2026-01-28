@@ -1,6 +1,6 @@
 ---
 title: "Create a console calculator in C++"
-description: "Create a Hello World console app and a calculator app in Visual C++"
+description: "Create a Hello World console app and a calculator app in Visual Studio C++"
 ms.custom: "acquisition, mvc"
 ms.date: 10/08/2024
 ms.topic: "tutorial"
@@ -27,7 +27,7 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
    The dialog has options to clone a repository, open a project or solution, open a local folder, and create a new project."
    :::image-end:::
 
-1. In the **Create a new project** dialog, set the language dropdown to **C++**,  set the platform dropdown to **Windows**, select **Console App** from the list of project types, then select **Next**.
+1. In the **Create a new project** dialog, set the language dropdown to **C++**, set the platform dropdown to **Windows**, select **Console App** from the list of project types, then select **Next**.
 
    :::image type="complex" source="./media/calc-vs2022-choose-console-app.png" alt-text="Screenshot of the Visual Studio Create a new project dialog.":::
    The language dropdown is set to C++, the platform dropdown is set to Windows, and project types like Empty Project, Console App, CMake Project, Windows Desktop Wizard, and so on, appear in the list of project types."

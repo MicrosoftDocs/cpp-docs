@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2801"
 title: "Compiler Error C2801"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2801"
+ms.date: 11/04/2016
 f1_keywords: ["C2801"]
 helpviewer_keywords: ["C2801"]
-ms.assetid: 35dfc7ea-9e37-4e30-baa1-944dc61302f5
 ---
 # Compiler Error C2801
 
-'operator operator' must be a non-static member
+> 'operator operator' must be a non-static member
+
+## Remarks
 
 The following operators can be overloaded only as nonstatic members:
 
@@ -26,7 +27,9 @@ Possible C2801 causes:
 
 - Overloaded operator is declared **`static`**.
 
-- The following sample generates C2801:
+## Example
+
+- The following example generates C2801:
 
 ```cpp
 // C2801.cpp

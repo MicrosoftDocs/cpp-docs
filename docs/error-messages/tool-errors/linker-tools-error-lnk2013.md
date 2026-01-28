@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Error LNK2013"
 title: "Linker Tools Error LNK2013"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK2013"
+ms.date: 11/04/2016
 f1_keywords: ["LNK2013"]
 helpviewer_keywords: ["LNK2013"]
-ms.assetid: 21408e2d-3f56-4d1f-a031-00df70785ed4
 ---
 # Linker Tools Error LNK2013
 
-fixup type fixup overflow. Target 'symbol name' is out of range
+> fixup type fixup overflow. Target 'symbol name' is out of range
+
+## Remarks
 
 The linker cannot fit the necessary address or offset into the given instruction because the target symbol is too far away from the instruction's location.
 

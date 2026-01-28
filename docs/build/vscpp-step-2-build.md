@@ -1,6 +1,6 @@
 ---
 title: Build and run a C++ console app project
-description: "Build and run a Hello World console app in Visual C++"
+description: "Build and run a Hello World console app in Microsoft C++"
 ms.custom: "mvc"
 ms.date: 06/28/2024
 ms.topic: "tutorial"

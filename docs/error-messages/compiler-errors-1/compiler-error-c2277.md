@@ -1,24 +1,29 @@
 ---
-description: "Learn more about: Compiler Error C2277"
 title: "Compiler Error C2277"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2277"
+ms.date: 08/27/2025
 f1_keywords: ["C2277"]
 helpviewer_keywords: ["C2277"]
-ms.assetid: 15a83b07-8731-4524-810b-267f65a7844f
 ---
 # Compiler Error C2277
 
-'identifier' : cannot take address of this member function
+> '*function*': cannot take address of this member function
 
-You cannot take the address of a member function.
+## Remarks
 
-The following sample generates C2277:
+You cannot take the address of a [constructor](../../cpp/constructors-cpp.md) or [destructor](../../cpp/destructors-cpp.md). For more information, see [Address-of operator: `&`](../../cpp/address-of-operator-amp.md) and [Pointers to Members](../../cpp/pointers-to-members.md).
+
+## Example
+
+The following example generates C2277:
 
 ```cpp
-// C2277.cpp
-class A {
+// compile with: /c
+
+class A
+{
 public:
    A();
 };
-(*pctor)() = &A::A;   // C2277
+(*pctor)() = &A::A; // C2277
 ```

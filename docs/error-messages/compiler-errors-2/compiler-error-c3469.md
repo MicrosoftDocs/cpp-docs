@@ -1,22 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C3469"
 title: "Compiler Error C3469"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3469"
+ms.date: 11/04/2016
 f1_keywords: ["C3469"]
 helpviewer_keywords: ["C3469"]
-ms.assetid: e23b0e5c-c704-4e67-a868-bf02c2055d85
 ---
 # Compiler Error C3469
 
-'type' : a generic class cannot be forwarded
+> 'type' : a generic class cannot be forwarded
+
+## Remarks
 
 You cannot use type forwarding on a generic class.
 
 For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
-## Examples
+## Example
 
-The following sample creates a component.
+The following example creates a component.
 
 ```cpp
 // C3469.cpp
@@ -27,7 +28,7 @@ public ref class GR {};
 public ref class GR2 {};
 ```
 
-The following sample generates C3466.
+The following example generates C3469.
 
 ```cpp
 // C3469_b.cpp

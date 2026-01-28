@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Error C2248"
 title: "Compiler Error C2248"
+description: "Learn more about: Compiler Error C2248"
 ms.date: 09/27/2022
 f1_keywords: ["C2248"]
 helpviewer_keywords: ["C2248"]
-ms.assetid: 7a3ba0e8-d3b9-4bb9-95db-81ef17e31d23
 ---
 # Compiler Error C2248
 
@@ -14,9 +13,9 @@ ms.assetid: 7a3ba0e8-d3b9-4bb9-95db-81ef17e31d23
 
 Members of a derived class can't access **`private`** members of a base class. You can't access **`private`** or **`protected`** members of class instances.
 
-## Example
+## Examples
 
-The following sample generates C2248 when `private` or `protected` members of a class are accessed from outside the class. To fix this issue, don't access these members directly outside the class. Use `public` member data and member functions to interact with the class.
+The following example generates C2248 when `private` or `protected` members of a class are accessed from outside the class. To fix this issue, don't access these members directly outside the class. Use `public` member data and member functions to interact with the class.
 
 ```cpp
 // C2248_access.cpp

@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4544"
 title: "Compiler Warning (level 1) C4544"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4544"
+ms.date: 11/04/2016
 f1_keywords: ["C4544"]
 helpviewer_keywords: ["C4544"]
-ms.assetid: 11ee04df-41ae-435f-af44-881e801315a8
 ---
 # Compiler Warning (level 1) C4544
 
-'declaration': Default template argument ignored on this template declaration
+> 'declaration': Default template argument ignored on this template declaration
+
+## Remarks
 
 A default template argument was specified in an incorrect location and was ignored. A default template argument for a class template can only be specified in the declaration or definition of the class template and not on a member of the class template.
 
-This sample generates C4545, and the next sample shows how to fix it:
+## Example
+
+This example generates C4544, and the next example shows how to fix it:
 
 ```cpp
 // C4544.cpp

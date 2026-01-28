@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4154"
 title: "Compiler Warning (level 1) C4154"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4154"
+ms.date: 11/04/2016
 f1_keywords: ["C4154"]
 helpviewer_keywords: ["C4154"]
-ms.assetid: 4511afeb-e893-4cc6-83b6-4c7a0477f76b
 ---
 # Compiler Warning (level 1) C4154
 
-deletion of an array expression; conversion to pointer supplied
+> deletion of an array expression; conversion to pointer supplied
+
+## Remarks
 
 You cannot use **`delete`** on an array, so the compiler converts the array to a pointer.
 
 ## Example
+
+The following example generates C4154:
 
 ```cpp
 // C4154.cpp

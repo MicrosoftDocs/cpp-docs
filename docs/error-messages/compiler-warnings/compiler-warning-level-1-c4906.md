@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4906"
 title: "Compiler Warning (level 1) C4906"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4906"
+ms.date: 11/04/2016
 f1_keywords: ["C4906"]
 helpviewer_keywords: ["C4906"]
-ms.assetid: 05318e74-799b-412a-9dce-f02b8161d762
 ---
 # Compiler Warning (level 1) C4906
 
-string literal cast to 'LPWSTR'
+> string literal cast to 'LPWSTR'
+
+## Remarks
 
 The compiler detected an unsafe cast. The cast did succeed, but you should use a conversion routine.
 
@@ -16,7 +17,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 ## Example
 
-The following sample generates C4906:
+The following example generates C4906:
 
 ```cpp
 // C4906.cpp

@@ -93,7 +93,6 @@ All versions of the [C run-time libraries](../crt-library-features.md).
 
 ```C
 // crt_cprintf_s.c
-// compile with: /c
 // This program displays some variables to the console.
 
 #include <conio.h>

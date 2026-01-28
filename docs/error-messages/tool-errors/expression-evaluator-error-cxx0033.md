@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Expression Evaluator Error CXX0033"
 title: "Expression Evaluator Error CXX0033"
-ms.date: "11/04/2016"
+description: "Learn more about: Expression Evaluator Error CXX0033"
+ms.date: 11/04/2016
 f1_keywords: ["CXX0033"]
 helpviewer_keywords: ["CAN0033", "CXX0033"]
-ms.assetid: 0bd62c5b-de89-481f-9b12-88fe84805afe
 ---
 # Expression Evaluator Error CXX0033
 
-error in OMF type information
+> error in OMF type information
+
+## Remarks
 
 The executable file did not have a valid object module format (OMF) for debugging.
 

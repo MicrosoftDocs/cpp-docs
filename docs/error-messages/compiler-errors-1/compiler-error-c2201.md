@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler Error C2201"
 title: "Compiler Error C2201"
+description: "Learn more about: Compiler Error C2201"
 ms.date: 05/03/2021
 f1_keywords: ["C2201"]
 helpviewer_keywords: ["C2201"]
@@ -9,11 +9,13 @@ helpviewer_keywords: ["C2201"]
 
 > '*identifier*' : must have external linkage in order to be exported/imported
 
+## Remarks
+
 The exported identifier is **`static`**.
 
 ## Example
 
-The following sample generates C2286, and shows how to fix it:
+The following example generates C2201, and shows how to fix it:
 
 ```cpp
 // C2201.cpp

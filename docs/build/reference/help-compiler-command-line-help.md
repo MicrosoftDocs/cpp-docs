@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: /HELP (Compiler Command-Line Help)"
 title: "/HELP (Compiler Command-Line Help)"
-ms.date: "11/04/2016"
+description: "Learn more about: /HELP (Compiler Command-Line Help)"
+ms.date: 11/04/2016
 f1_keywords: ["/help"]
 helpviewer_keywords: ["HELP compiler option [C++]", "Help, for compiler command line", "/HELP compiler option [C++]", "/? compiler option [C++]", "-HELP compiler option [C++]", "-? compiler option [C++]", "cl.exe compiler, command-line syntax"]
-ms.assetid: 192533e7-86f2-48e0-a08f-b5e4e3a4e784
 ---
 # /HELP (Compiler Command-Line Help)
 
@@ -17,8 +16,6 @@ Displays a listing of compiler options to standard output.
 /help
 /?
 ```
-
-## Remarks
 
 ### To set this compiler option in the Visual Studio development environment
 

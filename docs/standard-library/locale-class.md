@@ -1,10 +1,9 @@
 ---
 description: "Learn more about: locale Class"
 title: "locale Class"
-ms.date: 06/15/2022
+ms.date: 11/13/2025
 f1_keywords: ["xlocale/std::locale", "xlocale/std::locale::category", "xlocale/std::locale::combine", "xlocale/std::locale::name", "xlocale/std::locale::classic", "xlocale/std::locale::global", "xlocale/std::locale::operator( )", "xlocale/std::locale::facet", "xlocale/std::locale::id"]
 helpviewer_keywords: ["std::locale [C++]", "std::locale [C++], category", "std::locale [C++], combine", "std::locale [C++], name", "std::locale [C++], classic", "std::locale [C++], global", "std::locale [C++], facet", "std::locale [C++], id"]
-ms.assetid: 7dd6d271-472d-4750-8fb5-ea8f55fbef62
 ms.custom: devdivchpfy22
 ---
 
@@ -92,15 +91,16 @@ messages<wchar_t>
 
 Some of these predefined facets are used by the `iostream` classes, to control the conversion of numeric values to and from text sequences.
 
-An object of class locale also stores a locale name as an object of class [string](../standard-library/string-typedefs.md#string). Using an invalid locale name to construct a locale facet or a locale object throws an object of class [runtime_error](../standard-library/runtime-error-class.md). The stored locale name is `"*"` if the locale object can't be certain that a C-style locale corresponds exactly to the one represented by the object. Otherwise, you can establish a matching locale within the Standard C Library, for some locale object `locale_object`, by calling `setlocale(LC_ALL , locale_object.`[name](#name)`().c_str())`.
-
-In this implementation, you can also call the static member function:
+An object of class `locale` also stores a locale name as an object of class [string](../standard-library/string-typedefs.md#string). Using an invalid locale name to construct a locale facet or a locale object throws an object of class [runtime_error](../standard-library/runtime-error-class.md). The stored locale name is `"*"` if the locale object can't be certain that a C-style locale corresponds exactly to the one represented by the object. Otherwise, you can establish a matching locale within the Standard C Library, for some locale object `locale_object`, by calling `setlocale(LC_ALL , locale_object.`[name](#name)`().c_str())`.
 
 ```cpp
 static locale empty();
 ```
 
-to construct a locale object that has no facets. It's also a transparent locale. If the template functions [has_facet](../standard-library/locale-functions.md#has_facet) and [use_facet](../standard-library/locale-functions.md#use_facet) can't find the requested facet in a transparent locale, they consult first the global locale and then, if that is transparent, the classic locale. So, you can write:
+> [!NOTE]
+> `locale::empty()` was deprecated starting with Visual Studio 2022 17.14. It'll be removed starting with MSVC Build Tools 14.51. For more information, see [#5834](https://github.com/microsoft/STL/pull/5834).
+
+In this implementation, you can also call the static member function `empty()` to construct a locale object that has no facets. It's also a transparent locale. If the template functions [has_facet](../standard-library/locale-functions.md#has_facet) and [use_facet](../standard-library/locale-functions.md#use_facet) can't find the requested facet in a transparent locale, they consult first the global locale and then, if that is transparent, the classic locale. So, you can write:
 
 ```cpp
 cout.imbue(locale::empty());

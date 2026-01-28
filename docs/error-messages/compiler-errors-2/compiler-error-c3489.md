@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3489"
 title: "Compiler Error C3489"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3489"
+ms.date: 11/04/2016
 f1_keywords: ["C3489"]
 helpviewer_keywords: ["C3489"]
-ms.assetid: 47b58d69-459d-4499-abc7-5f0b9303d773
 ---
 # Compiler Error C3489
 
-'var' is required when the default capture mode is by-value
+> 'var' is required when the default capture mode is by-value
+
+## Remarks
 
 When you specify that the default capture mode for a lambda expression is by-value, you cannot pass a variable by value to the capture clause of that expression.
 
@@ -22,7 +23,7 @@ When you specify that the default capture mode for a lambda expression is by-val
 
 - Pass the variable by reference to the capture clause. (This might change the behavior of the lambda expression.)
 
-## Examples
+## Example
 
 The following example generates C3489 variable `n` appears by value in the capture clause of a lambda expression whose default mode is by-value:
 

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 3) C4995"
 title: "Compiler Warning (level 3) C4995"
+description: "Learn more about: Compiler Warning (level 3) C4995"
 ms.date: 08/30/2022
 f1_keywords: ["C4995"]
 helpviewer_keywords: ["C4995"]
-ms.assetid: c6b61755-4730-4947-ad4d-d1c2bc82585a
 ---
 # Compiler Warning (level 3) C4995
 
@@ -18,7 +17,7 @@ The [`/sdl` (Enable Additional Security Checks)](../../build/reference/sdl-enabl
 
 ## Example
 
-The following sample generates C4995. Uncomment the `#pragma warning` line to disable the warning.
+The following example generates C4995. Uncomment the `#pragma warning` line to disable the warning.
 
 ```cpp
 // C4995.cpp

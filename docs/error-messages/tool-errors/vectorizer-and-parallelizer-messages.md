@@ -30,12 +30,16 @@ The 5*xx* reason codes apply to both the parallelizer and the vectorizer.
 
 | Reason code | Explanation |
 |--|--|
-| 500 | A generic message that covers several cases: For example, the loop includes multiple exits, or the loop header doesn't end by incrementing the induction variable. |
+| 500 | Induction variable discovery or recurrence failure. |
 | 501 | Induction variable isn't local; or upper bound isn't loop-invariant. |
 | 502 | Induction variable is stepped in some manner other than a simple +1. |
 | 503 | Loop includes exception-handling or switch statements. |
 | 504 | Loop body may throw an exception that requires destruction of a C++ object. |
 | 505 | Outer loop has a pre-incremented induction variable. Exiting analysis. |
+| 506 | Loop structural or canonical form failure. |
+| 507 | Bounds, initialization, termination, or compare consistency failure. |
+| 508 | Stride derivation or usage failure |
+| 509 | Loop direction acceptability failure. |
 
 ```cpp
 void code_500(int *A)

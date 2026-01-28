@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Error LNK1306"
 title: "Linker Tools Error LNK1306"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Error LNK1306"
+ms.date: 11/04/2016
 f1_keywords: ["LNK1306"]
 helpviewer_keywords: ["LNK1306"]
-ms.assetid: fad1df6a-0bd9-412f-b0d1-7c9bc749c584
 ---
 # Linker Tools Error LNK1306
 
 > DLL entry point function cannot be managed; compile to native
+
+## Remarks
 
 `DllMain` cannot be compiled to MSIL; it must be compiled to native.
 
@@ -30,7 +31,7 @@ For more information, see:
 
 ## Example
 
-The following sample generates LNK1306.
+The following example generates LNK1306.
 
 ```cpp
 // LNK1306.cpp

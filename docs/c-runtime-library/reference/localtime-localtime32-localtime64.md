@@ -17,7 +17,7 @@ Converts a time value and corrects for the local time zone. More secure versions
 ## Syntax
 
 ```C
-struct tm *localtime( const time_t *sourceTime );
+struct tm *localtime( const time_t *sourceTime ); // See note in remarks section about linkage
 struct tm *_localtime32( const __time32_t *sourceTime );
 struct tm *_localtime64( const __time64_t *sourceTime );
 ```
@@ -71,6 +71,11 @@ Both the 32-bit and 64-bit versions of [`gmtime`](gmtime-gmtime32-gmtime64.md), 
 These functions validate their parameters. If *`sourceTime`* is a null pointer, or if the *`sourceTime`* value is negative, these functions invoke an invalid parameter handler, as described in [Parameter validation](../parameter-validation.md). If execution is allowed to continue, the functions return `NULL` and set `errno` to `EINVAL`.
 
 By default, this function's global state is scoped to the application. To change this behavior, see [Global state in the CRT](../global-state.md).
+
+> [!Note]
+> When you use Windows SDK version 10.0.26100.6901 and Visual Studio 2026 or later together, `localtime` is no longer `static inline` (internal linkage). Instead, it's `inline` (external linkage).\
+> To return to the previous behavior, `#define _STATIC_INLINE_UCRT_FUNCTIONS=1` before including any CRT headers. By default, `_STATIC_INLINE_UCRT_FUNCTIONS` is set to 0.\
+> This change increases UCRT conformance with the C++ standard and improves compatibility with C++ modules.
 
 ## Requirements
 

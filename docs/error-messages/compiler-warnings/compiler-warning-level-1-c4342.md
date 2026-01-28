@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 1) C4342"
 title: "Compiler Warning (level 1) C4342"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 1) C4342"
+ms.date: 11/04/2016
 f1_keywords: ["C4342"]
 helpviewer_keywords: ["C4342"]
-ms.assetid: 47d4d5ab-069f-4cdc-98c3-10d649577a37
 ---
 # Compiler Warning (level 1) C4342
 
-behavior change: '*function*' called, but a member operator was called in previous versions
+> behavior change: '*function*' called, but a member operator was called in previous versions
+
+## Remarks
 
 In versions of Visual C++ before Visual Studio 2002, a member was called, but this behavior has been changed and the compiler now finds the best match in namespace scope.
 
@@ -18,7 +19,9 @@ This warning should be disabled after you successfully port your code to the cur
 
 This warning is off by default. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
-The following sample generates C4342:
+## Example
+
+The following example generates C4342:
 
 ```cpp
 // C4342.cpp

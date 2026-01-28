@@ -215,7 +215,7 @@ This example produces the following output.
 Caught 50
 ```
 
-The following example uses a Boolean flag to coordinate cancellation in a `parallel_for` loop. Every task runs because this example does not use the `cancel` method or exception handling to cancel the overall set of tasks. Therefore, this technique can have more computational overhead than a cancelation mechanism.
+The following example uses a Boolean flag to coordinate cancellation in a `parallel_for` loop. Every task runs because this example does not use the `cancel` method or exception handling to cancel the overall set of tasks. Therefore, this technique can have more computational overhead than a cancellation mechanism.
 
 [!code-cpp[concrt-task-tree#8](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_14.cpp)]
 

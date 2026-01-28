@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: /Fd (Program Database File Name)"
 title: "/Fd (Program Database File Name)"
-ms.date: "11/04/2016"
+description: "Learn more about: /Fd (Program Database File Name)"
+ms.date: 11/04/2016
 f1_keywords: ["/FD", "VC.Project.VCCLWCECompilerTool.ProgramDataBaseFileName", "VC.Project.VCCLCompilerTool.ProgramDataBaseFileName"]
 helpviewer_keywords: ["/FD compiler option [C++]", "program database file name [C++]", "-FD compiler option [C++]", "PDB files, creating", "program database compiler option [C++]", ".pdb files, creating", "FD compiler option [C++]"]
-ms.assetid: 3977a9ed-f0ac-45df-bf06-01cedd2ba85a
 ---
 # /Fd (Program Database File Name)
 
@@ -42,7 +41,7 @@ This option also names the state (.idb) file used for minimal rebuild and increm
 
 This command line creates a .pdb file named PROG.pdb and an .idb file named PROG.idb:
 
-```
+```cmd
 CL /DDEBUG /Zi /FdPROG.PDB PROG.CPP
 ```
 

@@ -1,11 +1,10 @@
 ---
-description: "Learn more about: `__asm`"
 title: "__asm"
-ms.date: "10/09/2018"
+description: "Learn more about: `__asm`"
+ms.date: 10/09/2018
+ms.topic: reference
 f1_keywords: ["__asm", "_asm", "__asm_cpp"]
 helpviewer_keywords: ["__asm keyword [C++], vs. asm blocks", "__asm keyword [C++]"]
-ms.assetid: 77ff3bc9-a492-4b5e-85e1-fa4e414e79cd
-ms.topic: reference
 ---
 # `__asm`
 
@@ -14,7 +13,7 @@ ms.topic: reference
 The **`__asm`** keyword invokes the inline assembler and can appear wherever a C or C++ statement is legal. It can't appear by itself. It must be followed by an assembly instruction, a group of instructions enclosed in braces, or, at minimum, an empty pair of braces. The term "**`__asm`** block" here refers to any instruction or group of instructions, whether or not in braces.
 
 > [!NOTE]
-> Visual C++ support for the Standard C++ **`asm`** keyword is limited to the fact that the compiler will not generate an error on the keyword. However, an **`asm`** block will not generate any meaningful code. Use **`__asm`** instead of **`asm`**.
+> MSVC support for the Standard C++ **`asm`** keyword is limited to the fact that the compiler will not generate an error on the keyword. However, an **`asm`** block will not generate any meaningful code. Use **`__asm`** instead of **`asm`**.
 
 ## Grammar
 
@@ -28,7 +27,7 @@ The **`__asm`** keyword invokes the inline assembler and can appear wherever a C
 
 ## Remarks
 
-If used without braces, the **`__asm`** keyword means that the rest of the line is an assembly-language statement. If used with braces, it means that each line between the braces is an assembly-language statement. For compatibility with previous versions, **`_asm`** is a synonym for **`__asm`**.
+If used without braces, the **`__asm`** keyword means that the rest of the line is an assembly-language statement. If used with braces, it means that each line between the braces is an assembly-language statement. For compatibility with previous versions, **`_asm`** is a synonym for **`__asm`** unless compiler option [`/Za` (Disable language extensions)](../../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 Since the **`__asm`** keyword is a statement separator, you can put assembly instructions on the same line.
 
@@ -41,8 +40,6 @@ __asm int 3
 didn't cause native code to be generated when compiled with **/clr**; the compiler translated the instruction to a CLR break instruction.
 
 `__asm int 3` now results in native code generation for the function. If you want a function to cause a break point in your code and if you want that function compiled to MSIL, use [__debugbreak](../../intrinsics/debugbreak.md).
-
-For compatibility with previous versions, **`_asm`** is a synonym for **`__asm`** unless compiler option [/Za \(Disable language extensions)](../../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 ## Example
 

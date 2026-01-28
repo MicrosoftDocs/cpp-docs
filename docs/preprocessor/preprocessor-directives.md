@@ -1,13 +1,12 @@
 ---
 description: "Learn more about: Preprocessor directives"
 title: "Preprocessor directives"
-ms.date: "08/29/2019"
+ms.date: 10/15/2025
 helpviewer_keywords: ["directives, preprocessor", "preprocessor, directives"]
-ms.assetid: e0fc4564-b6cf-4a36-bf51-6ccd7abd0a94
 ---
 # Preprocessor directives
 
-Preprocessor directives, such as `#define` and `#ifdef`, are typically used to make source programs easy to change and easy to compile in different execution environments. Directives in the source file tell the preprocessor to take specific actions. For example, the preprocessor can replace tokens in the text, insert the contents of other files into the source file, or suppress compilation of part of the file by removing sections of text. Preprocessor lines are recognized and carried out before macro expansion. Therefore, if a macro expands into something that looks like a preprocessor command, it isn't recognized by the preprocessor.
+Preprocessor directives, such as `#define` and `#ifdef`, are used to make source programs easy to change and compile in different execution environments. Directives in the source file tell the preprocessor to take specific actions. For example, the preprocessor can replace tokens in the text, insert the contents of other files into the source file, or suppress compilation of part of the file by removing sections of text. Preprocessor directives are processed before macro expansion. Therefore, if a macro expands into something that looks like a preprocessor command, it isn't recognized by the preprocessor.
 
 Preprocessor statements use the same character set as source file statements, with the exception that escape sequences aren't supported. The character set used in preprocessor statements is the same as the execution character set. The preprocessor also recognizes negative character values.
 
@@ -29,7 +28,8 @@ The preprocessor recognizes the following directives:
    :::column span="":::
       [`#import`](../preprocessor/hash-import-directive-cpp.md)\
       [`#include`](../preprocessor/hash-include-directive-c-cpp.md)\
-      [`#line`](../preprocessor/hash-line-directive-c-cpp.md)
+      [`#line`](../preprocessor/hash-line-directive-c-cpp.md)\
+      [`#warning`](../preprocessor/hash-warning-directive-c-cpp.md)
    :::column-end:::
    :::column span="":::
       [`#pragma`](../preprocessor/pragma-directives-and-the-pragma-keyword.md)\

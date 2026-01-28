@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3207"
 title: "Compiler Error C3207"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3207"
+ms.date: 11/04/2016
 f1_keywords: ["C3207"]
 helpviewer_keywords: ["C3207"]
-ms.assetid: 4a28b976-142a-4cff-aa2f-480b892c50ca
 ---
 # Compiler Error C3207
 
-'function' : invalid template argument for 'arg', class template expected
+> 'function' : invalid template argument for 'arg', class template expected
+
+## Remarks
 
 A function template is defined as taking a template template argument. However, a template type argument was passed.
 
-The following sample generates C3207:
+## Example
+
+The following example generates C3207:
 
 ```cpp
 // C3207.cpp

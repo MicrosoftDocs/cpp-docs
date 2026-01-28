@@ -1,16 +1,15 @@
 ---
-description: "Learn more about: MFC COM"
 title: "MFC COM"
-ms.date: "09/12/2018"
+description: "Learn more about: MFC COM"
+ms.date: 09/12/2018
 f1_keywords: ["MFC COM (MFC)"]
 helpviewer_keywords: ["MFC, COM support", "MFC ActiveX controls [MFC], COM support in MFC", "MFC COM [MFC]", "ActiveX controls [MFC], COM object model", "Active technology [MFC]", "COM [MFC], MFC support"]
-ms.assetid: 7646bdcb-3a06-4ed5-9386-9b00f3979dcb
 ---
 # MFC COM
 
 A subset of MFC is designed to support COM, while most of the Active Template Library (ATL) is designed for COM programming. This section of topics describes MFC's support for COM.
 
-Active technologies (such as ActiveX controls, Active document containment, OLE, and so on) use the Component Object Model (COM) to enable software components to interact with one another in a networked environment, regardless of the language with which they were created. Active technologies can be used to create applications that run on the desktop or the Internet. For more information see [Introduction to COM](../atl/introduction-to-com.md) or [The Component Object Model](/windows/win32/com/the-component-object-model).
+Active technologies (such as ActiveX controls, Active document containment, OLE, and so on) use the Component Object Model (COM) to enable software components to interact with one another in a networked environment, regardless of the language with which they were created. Active technologies can be used to create applications that run on the desktop or the Internet. For more information, see [Introduction to COM](../atl/introduction-to-com.md) or [The Component Object Model](/windows/win32/com/the-component-object-model).
 
 Active technologies include both client and server technologies, including the following:
 

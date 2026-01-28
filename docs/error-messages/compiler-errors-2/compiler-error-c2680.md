@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2680"
 title: "Compiler Error C2680"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2680"
+ms.date: 11/04/2016
 f1_keywords: ["C2680"]
 helpviewer_keywords: ["C2680"]
-ms.assetid: d6f7129e-dd17-4661-b680-18d6b925b1cc
 ---
 # Compiler Error C2680
 
-'type' : invalid target type for name
+> 'type' : invalid target type for name
+
+## Remarks
 
 A casting operator tried to convert to a type that is not a pointer or reference. The [dynamic_cast](../../cpp/dynamic-cast-operator.md) operator can be used only for pointers or references.
 
-The following sample generates C2680:
+## Examples
+
+The following example generates C2680:
 
 ```cpp
 // C2680.cpp

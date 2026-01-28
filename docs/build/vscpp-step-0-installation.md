@@ -1,13 +1,14 @@
 ---
 title: Install C and C++ support in Visual Studio
 description: "Learn how to install Visual Studio with support for Microsoft C and C++ and related workloads."
-ms.date: 03/18/2025
+ms.date: 09/09/2025
 ms.topic: tutorial
 ms.devlang: "cpp"
 ms.custom:
   - vs-acquisition
   - intro-installation
   - sfi-image-nochange
+  - copilot-scenario-highlight
 ---
 # Install C and C++ support in Visual Studio
 
@@ -114,6 +115,21 @@ You can reduce the installation footprint of Visual Studio on your system drive.
 
 1. Visual Studio opens your new project, and you're ready to code!
 
+### Step 9 - Install GitHub Copilot
+
+You can use GitHub Copilot in Visual Studio to help with your C++ development. Copilot is an AI-powered coding assistant that helps you write code faster, reduce errors, and explore new solutions.
+
+Some benefits of using Copilot for your C++ coding scenarios:
+- Generate entire C++ functions or classes as you type.
+- Suggest code completions based on plain-language comments or prompts.
+- Get help with complex algorithms, data structures, and standard library usage.
+- Learn new APIs and modern C++ patterns through in-context examples.
+- Receive context-aware suggestions based on your comments or code.
+- Debug errors in your code.
+- Simplify and refactor existing code.
+
+To try GitHub copilot to create a C++ app, follow the instructions in [Use AI to create a C++ console application in Visual Studio](../build/use-github-copilot-create-cpp-console-app.md).
+
 ::: moniker-end
 
 ::: moniker range="msvc-160"
@@ -209,9 +225,7 @@ You can reduce the installation footprint of Visual Studio on your system drive.
 ### Step 8 - Start developing
 
 1. After Visual Studio installation is complete, choose the **Launch** button to get started developing with Visual Studio.
-
 1. On the start window, choose **Create a new project**.
-
 1. In the search box, enter the type of app you want to create to see a list of available templates. The list of templates depends on the workloads that you chose during installation. To see different templates, choose different workloads.
 
    You can also filter your search for a specific programming language by using the **Language** dropdown list. You can filter by using the **Platform** list and the **Project type** list, too.

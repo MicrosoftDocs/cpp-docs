@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: istreambuf_iterator Class"
 title: "istreambuf_iterator Class"
+description: "Learn more about: istreambuf_iterator Class"
 ms.date: 06/15/2022
 f1_keywords: ["streambuf/std::istreambuf_iterator", "iterator/std::istreambuf_iterator::char_type", "iterator/std::istreambuf_iterator::int_type", "iterator/std::istreambuf_iterator::istream_type", "iterator/std::istreambuf_iterator::streambuf_type", "iterator/std::istreambuf_iterator::traits_type", "iterator/std::istreambuf_iterator::equal"]
 helpviewer_keywords: ["std::istreambuf_iterator [C++]", "std::istreambuf_iterator [C++], char_type", "std::istreambuf_iterator [C++], int_type", "std::istreambuf_iterator [C++], istream_type", "std::istreambuf_iterator [C++], streambuf_type", "std::istreambuf_iterator [C++], traits_type", "std::istreambuf_iterator [C++], equal"]
-ms.assetid: 39002da2-61a6-48a5-9d0c-5df8271f6038
 ms.custom: devdivchpfy22
 ---
 
@@ -15,7 +14,7 @@ The class template istreambuf_iterator describes an input iterator object that e
 ## Syntax
 
 ```cpp
-template <class CharType class Traits = char_traits <CharType>>
+template <class CharType, class Traits = char_traits <CharType>>
 class istreambuf_iterator
 : public iterator<input_iterator_tag, CharType, typename Traits ::off_type, CharType*, CharType&>
 ```
@@ -341,7 +340,7 @@ int main( )
    ostreambuf_iterator<char> outpos ( cout );
    while ( inpos != endpos )
    {
-*outpos = *inpos;
+      *outpos = *inpos;
       ++inpos;   //Increment istreambuf_iterator
       ++outpos;
    }

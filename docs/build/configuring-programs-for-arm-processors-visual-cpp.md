@@ -5,7 +5,7 @@ ms.date: "07/11/2018"
 ---
 # Configure C++ projects for ARM processors
 
-This section of the documentation contains information about how to use the MSVC build tools to target ARM hardware.
+This section of the documentation contains information about how to use the Microsoft C++ (MSVC) Build Tools to target ARM hardware.
 
 ## In This Section
 

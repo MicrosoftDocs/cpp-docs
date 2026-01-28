@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4373"
 title: "Compiler Warning (level 4) C4373"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4373"
+ms.date: 11/04/2016
 f1_keywords: ["C4373"]
 helpviewer_keywords: ["C4373"]
 ---
@@ -21,7 +21,7 @@ The following code example generates warning C4373. To resolve this issue, make 
 
 ```cpp
 // c4373.cpp
-// compile with: /c /W3
+// compile with: /c /W4
 #include <stdio.h>
 struct Base
 {

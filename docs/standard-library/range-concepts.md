@@ -1,6 +1,6 @@
 ---
-description: "Learn more about range concepts."
 title: "<ranges> concepts"
+description: "Learn more about range concepts."
 ms.date: 12/16/2022
 f1_keywords: ["ranges/std::ranges::range", "ranges/std::ranges::bidirectional_range", "ranges/std::ranges::borrowed_range", "ranges/std::ranges::common_range", "ranges/std::ranges::contiguous_range", "ranges/std::ranges::forward_range", "ranges/std::ranges::input_range", "ranges/std::ranges::output_range", "ranges/std::ranges::random_access_range", "ranges/std::ranges::simple_view", "ranges/std::ranges::sized_range", "ranges/std::ranges::view", "ranges/std::ranges::viewable_range"]
 helpviewer_keywords: ["std::ranges [C++], ranges::range", "std::ranges [C++], ranges::bidirectional_range", "std::ranges [C++], ranges::borrowed_range", "std::ranges [C++], ranges::common_range", "std::ranges [C++], ranges::contiguous_range", "std::ranges [C++], ranges::forward_range", "std::ranges [C++], ranges::input_range", "std::ranges [C++], ranges::output_range", "std::ranges [C++], ranges::random_access_range", "std::ranges [C++], ranges::simple_view", "std::ranges [C++], ranges::sized_range", "std::ranges [C++], ranges::view", "std::ranges [C++], ranges::viewable_range"]
@@ -43,7 +43,7 @@ int main()
     DivideEmUp<int> dividerOfInts;
     std::cout << dividerOfInts.Divide(6, 3); // outputs 2
     // The following line will not compile because the template can't be instantiated 
-    // with char* because char* can be divided
+    // with char* because char* can't be divided
     DivideEmUp<char*> dividerOfCharPtrs; // compiler error: cannot deduce template arguments 
 }
 ```
@@ -163,7 +163,7 @@ The type to test to see if it's a `contiguous_range`.
 
 ### Remarks
 
-A `contiguous_range` can be accessed by pointer arithmetic because the elements are laid out sequentially in memory and are the same size. This kind of range supports [`continguous_iterator`](iterator-concepts.md#contiguous_iterator), which is the most flexible of all the iterators.
+A `contiguous_range` can be accessed by pointer arithmetic because the elements are laid out sequentially in memory and are the same size. This kind of range supports [`contiguous_iterator`](iterator-concepts.md#contiguous_iterator), which is the most flexible of all the iterators.
 
 Some examples of a `contiguous_range` are `std::array`, `std::vector`, and `std::string`.
 
@@ -270,7 +270,7 @@ bidirectional_range<T> && random_access_iterator<iterator_t<T>>;
 ### Parameters
 
 *`T`*\
-The type to test to see if it's a `sized_range`.
+The type to test to see if it's a `random_access_range`.
 
 ### Remarks
 

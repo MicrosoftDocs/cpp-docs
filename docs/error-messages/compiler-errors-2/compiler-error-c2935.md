@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2935"
 title: "Compiler Error C2935"
+description: "Learn more about: Compiler Error C2935"
 ms.date: 06/01/2022
 f1_keywords: ["C2935"]
 helpviewer_keywords: ["C2935"]
-ms.assetid: e11ef90d-0756-4e43-8a09-4974c6aa72a3
 ---
 # Compiler Error C2935
 
 > '*class*' : type-class-id redefined as a global function
+
+## Remarks
 
 You can't use a generic or template class as a global function.
 
@@ -16,7 +17,9 @@ This error is obsolete in Visual Studio 2022 and later versions.
 
 This error can be caused if braces are improperly matched.
 
-The following sample generates C2935:
+## Examples
+
+The following example generates C2935:
 
 ```cpp
 // C2935.cpp

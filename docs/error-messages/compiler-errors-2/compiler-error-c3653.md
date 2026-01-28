@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3653"
 title: "Compiler Error C3653"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3653"
+ms.date: 11/04/2016
 f1_keywords: ["C3653"]
 helpviewer_keywords: ["C3653"]
-ms.assetid: 316549d7-f7ef-4578-a2ba-57adc8aac527
 ---
 # Compiler Error C3653
 
-'function' : cannot be used as a named override: a function being overridden not found; did you forget to name the function explicitly, using a :: operator?
+> 'function' : cannot be used as a named override: a function being overridden not found; did you forget to name the function explicitly, using a :: operator?
+
+## Remarks
 
 An explicit override specified a function that was not found in any interface. For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md).
 
-The following sample generates C3653:
+## Example
+
+The following example generates C3653:
 
 ```cpp
 // C3653.cpp

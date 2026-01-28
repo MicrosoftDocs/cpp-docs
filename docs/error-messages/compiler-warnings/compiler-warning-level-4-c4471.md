@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4471"
 title: "Compiler Warning (level 4) C4471"
-ms.date: "04/24/2017"
+description: "Learn more about: Compiler Warning (level 4) C4471"
+ms.date: 04/24/2017
 f1_keywords: ["C4471"]
 helpviewer_keywords: ["C4471"]
-ms.assetid: ccfd8bd5-bc1b-4be7-a6ea-0e3a7add6607
 ---
 # Compiler Warning (level 4) C4471
 
-'*enumeration*': a forward declaration of an unscoped enumeration must have an underlying type (int assumed)
+> '*enumeration*': a forward declaration of an unscoped enumeration must have an underlying type (int assumed)
+
+## Remarks
 
 A forward declaration of an unscoped enumeration was found without a specifier for the underlying type. By default, Visual C++ assumes **`int`** is the underlying type for an enumeration. This can cause issues if a different type is used in the enumeration definition, for example, if a different explicit type is specified, or if a different type is implicitly set by an initializer. You may also have portability issues; other compilers do not assume **`int`** is the underlying type of an enumeration.
 

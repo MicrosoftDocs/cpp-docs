@@ -30,13 +30,13 @@ Here are the **`/Zc`** compiler options:
 | [`/Zc:checkGwOdr[-]`](zc-check-gwodr.md) | Enforce Standard C++ ODR violations under `/Gw`. |
 | [`/Zc:enumTypes[-]`](zc-enumtypes.md) | Enable Standard C++ rules for `enum` type deduction. Off by default. |
 | [`/Zc:externC[-]`](zc-externc.md) | Enforce Standard C++ rules for `extern "C"` functions. Off by default unless **`/permissive-`** is specified. |
-| [`/Zc:externConstexpr[-]`](zc-externconstexpr.md) | Enable external linkage for **`constexpr`** variables. Off by default. |
+| [`/Zc:externConstexpr[-]`](zc-externconstexpr.md) | Enable external linkage for **`constexpr`** variables. Off by default unless **`/permissive-`** is specified. |
 | [`/Zc:forScope[-]`](zc-forscope-force-conformance-in-for-loop-scope.md) | Enforce Standard C++ **`for`** scoping rules. On by default. |
 | [`/Zc:gotoScope[-]`](zc-gotoscope.md) | Enforce Standard C++ **`goto`** rules around local variable initialization. Off by default unless **`/permissive-`** is specified. |
 | [`/Zc:hiddenFriend[-]`](zc-hiddenfriend.md) | Enforce Standard C++ hidden friend rules. Off by default unless **`/permissive-`**  is specified. |
 | [`/Zc:implicitNoexcept[-]`](zc-implicitnoexcept-implicit-exception-specifiers.md) | Enable implicit **`noexcept`** on required functions. On by default. |
 | [`/Zc:inline[-]`](zc-inline-remove-unreferenced-comdat.md) | Remove unreferenced functions or data if they're COMDAT or have internal linkage only. Off by default. |
-| [`/Zc:lambda[-]`](zc-lambda.md) | Enable new lambda processor for conformance-mode syntactic checks in generic lambdas. Off by default unless **`/std:c++20`** or later is specified. |
+| [`/Zc:lambda[-]`](zc-lambda.md) | Enable new lambda processor for conformance-mode syntactic checks in generic lambdas. Off by default unless **`/permissive-`** or **`/std:c++20`** or later is specified. |
 | [`/Zc:noexceptTypes[-]`](zc-noexcepttypes.md) | Enforce C++17 **`noexcept`** rules. Off by default unless **`/std:c++17`** or later is specified. |
 | [`/Zc:nrvo[-]`](zc-nrvo.md) | Enable optional copy and move elisions. Off by default unless **`/O2`**, **`/permissive-`**, or **`/std:c++20`** or later is specified. |
 | [`/Zc:preprocessor[-]`](zc-preprocessor.md) | Use the new conforming preprocessor. Off by default unless **`/std:c11`** or later is specified. |

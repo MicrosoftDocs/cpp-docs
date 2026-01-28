@@ -4,7 +4,6 @@ description: "Describes Microsoft C/C++ compiler error C2712."
 ms.date: 08/25/2020
 f1_keywords: ["C2712"]
 helpviewer_keywords: ["C2712"]
-ms.assetid: f7d4ffcc-7ed2-459b-8067-a728ce647071
 ---
 # Compiler Error C2712
 
@@ -30,7 +29,7 @@ The **`/clr:pure`** and **`/clr:safe`** compiler options are deprecated in Visua
 
 ## Example
 
-The following sample generates C2712 and shows how to fix it.
+The following example generates C2712 and shows how to fix it.
 
 ```cpp
 // C2712.cpp

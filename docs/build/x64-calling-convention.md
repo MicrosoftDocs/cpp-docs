@@ -34,7 +34,7 @@ Prologs and epilogs are highly restricted so that they can be properly described
 
 ## Parameter passing
 
-By default, the x64 calling convention passes the first four arguments to a function in registers. The registers used for these arguments depend on the position and type of the argument. Remaining arguments get pushed on the stack in right-to-left order. All arguments passed on the stack are 8-byte aligned.
+By default, the x64 calling convention passes the first four arguments to a function in registers. The registers used for these arguments depend on the position and type of the argument. Remaining arguments are passed on the stack in right-to-left order. The caller reserves the required stack space and writes these arguments to stack memory using store or move instructions, maintaining 8-byte alignment for each argument.
 
 Integer valued arguments in the leftmost four positions are passed in left-to-right order in RCX, RDX, R8, and R9, respectively. The fifth and higher arguments are passed on the stack as previously described. All integer arguments in registers are right-justified, so the callee can ignore the upper bits of the register and access only the portion of the register necessary.
 
@@ -60,21 +60,21 @@ The following table summarizes how parameters are passed, by type and position f
 
 ```cpp
 func1(int a, int b, int c, int d, int e, int f);
-// a in RCX, b in RDX, c in R8, d in R9, f then e pushed on stack
+// a in RCX, b in RDX, c in R8, d in R9, f then e passed on stack
 ```
 
 ### Example of argument passing 2 - all floats
 
 ```cpp
 func2(float a, double b, float c, double d, float e, float f);
-// a in XMM0, b in XMM1, c in XMM2, d in XMM3, f then e pushed on stack
+// a in XMM0, b in XMM1, c in XMM2, d in XMM3, f then e passed on stack
 ```
 
 ### Example of argument passing 3 - mixed ints and floats
 
 ```cpp
 func3(int a, double b, int c, float d, int e, float f);
-// a in RCX, b in XMM1, c in R8, d in XMM3, f then e pushed on stack
+// a in RCX, b in XMM1, c in R8, d in XMM3, f then e passed on stack
 ```
 
 ### Example of argument passing 4 - `__m64`, `__m128`, and aggregates
@@ -82,7 +82,7 @@ func3(int a, double b, int c, float d, int e, float f);
 ```cpp
 func4(__m64 a, __m128 b, struct c, float d, __m128 e, __m128 f);
 // a in RCX, ptr to b in RDX, ptr to c in R8, d in XMM3,
-// ptr to f pushed on stack, then ptr to e pushed on stack
+// ptr to f passed on stack, then ptr to e passed on stack
 ```
 
 ## Varargs
@@ -112,7 +112,7 @@ These examples show how parameters and return values are passed for functions wi
 
 ```cpp
 __int64 func1(int a, float b, int c, int d, int e);
-// Caller passes a in RCX, b in XMM1, c in R8, d in R9, e pushed on stack,
+// Caller passes a in RCX, b in XMM1, c in R8, d in R9, e passed on stack,
 // callee returns __int64 result in RAX.
 ```
 
@@ -132,7 +132,7 @@ struct Struct1 {
 };
 Struct1 func3(int a, double b, int c, float d);
 // Caller allocates memory for Struct1 returned and passes pointer in RCX,
-// a in RDX, b in XMM2, c in R9, d pushed on the stack;
+// a in RDX, b in XMM2, c in R9, d passed on the stack;
 // callee returns pointer to Struct1 result in RAX.
 ```
 

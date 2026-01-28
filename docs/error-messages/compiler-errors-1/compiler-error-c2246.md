@@ -7,11 +7,15 @@ helpviewer_keywords: ["C2246"]
 ---
 # Compiler Error C2246
 
-'identifier' : illegal static data member in locally defined class
+> 'identifier' : illegal static data member in locally defined class
+
+## Remarks
 
 A member of a class, structure, or union with local scope is declared **`static`**.
 
-The following sample generates C2246:
+## Example
+
+The following example generates C2246:
 
 ```cpp
 // C2246.cpp
