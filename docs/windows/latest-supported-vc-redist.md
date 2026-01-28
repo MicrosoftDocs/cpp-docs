@@ -145,8 +145,8 @@ Download Redistributable files for other languages and architectures from:
 
 **Release notes**
 
+- [What's new for C++ in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)
 - [Visual Studio 2026 release notes](/visualstudio/releases/2026/release-notes)
-- [What's new for C++ in Visual Studio](../overview//what-s-new-for-visual-cpp-in-visual-studio.md)
 - [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md)
 - [Standard Template Library (STL) changelog](https://github.com/microsoft/STL/wiki/Changelog)
 - [A year of C++ improvements](https://devblogs.microsoft.com/cppblog/a-year-of-cpp-improvements-in-visual-studio-vs-code-and-vcpkg)

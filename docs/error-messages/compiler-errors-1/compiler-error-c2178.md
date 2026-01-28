@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2178"
 description: "Learn more about: Compiler Error C2178"
-ms.date: 05/08/2017
+ms.date: 08/11/2025
 f1_keywords: ["C2178"]
 helpviewer_keywords: ["C2178"]
 ---
@@ -11,23 +11,41 @@ helpviewer_keywords: ["C2178"]
 
 ## Remarks
 
-A **`mutable`** specifier was used in a declaration, but the specifier is not allowed in this context.
+A **`mutable`** specifier was used in a declaration, but the specifier is not allowed in this context. It can only be applied to non-static, non-const, and non-reference data members. For more information, see [Mutable Data Members](../../cpp/mutable-data-members-cpp.md).
 
-The **`mutable`** specifier can be applied only to names of class data members, and cannot be applied to names declared **`const`** or **`static`**, and cannot be applied to reference members.
+A **`consteval`** specifier was used on a [destructor](../../cpp/destructors-cpp.md), allocation function, or deallocation function.
 
-## Example
+## Example: `mutable`
 
-The following example shows how C2178 may occur, and how to fix it.
+The following example shows how C2178 may occur with the **`mutable`** specifier, and how to resolve it:
 
 ```cpp
-// C2178.cpp
-// compile with: cl /c /W4 C2178.cpp
+// C2178_mutable.cpp
+// compile with: /c
 
-class S {
-    mutable const int i; // C2178
-    // To fix, declare either const or mutable, not both.
+struct S
+{
+    mutable const int i;   // C2178, remove mutable or const to resolve
 };
 
-mutable int x = 4; // C2178
-// To fix, remove mutable keyword
+mutable int x = 4;   // C2178, remove mutable to resolve
+```
+
+## Example: `consteval`
+
+The following example shows how C2178 may occur with the **`consteval`** specifier. To resolve this error, remove all **`consteval`** specifiers:
+
+```cpp
+// C2178_consteval.cpp
+// compile with: /c /std:c++20
+
+#include <cstddef>
+
+struct S
+{
+    consteval ~S() {}   // C2178
+
+    consteval static void* operator new(std::size_t size);   // C2178
+    consteval static void operator delete(void* ptr);        // C2178
+};
 ```
