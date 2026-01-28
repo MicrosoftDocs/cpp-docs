@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C3187"
 description: "Learn more about: Compiler Error C3187"
-ms.date: 08/15/2025
+ms.date: 01/28/2026
 f1_keywords: ["C3187"]
 helpviewer_keywords: ["C3187"]
 ---
@@ -20,12 +20,18 @@ To correct this error, move the identifier inside the body of a function.
 The following example generates C3187:
 
 ```cpp
-// C3187.cpp
 // compile with: /c
 
-auto global = __func__;   // C3187, usage in global scope
+#include <iostream>
 
+auto global = __func__;   // C3187, usage in global scope
 void func(const char* f = __func__);   // C3187, usage in parameter list
+
+// correct usage inside a function
+void test()
+{
+    std::cout << __func__; // outputs: test
+}
 ```
 
 ## See also
