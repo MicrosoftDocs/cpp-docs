@@ -33,7 +33,7 @@ A `zoned_time` always refers to a valid time zone and represents a point in time
 |[`get_time_zone`](#get_time_zone) | Gets the [time_zone](time-zone-class.md) stored in this `zoned_time`. |
 |[`operator=`](#op_=)| Assign the value of another `zoned_time`, or another `zoned_time`'s `local_time` or `sys_time`, to this `zoned_time`.|
 |[`operator local_time`](#op_local_time)| Combines the `zoned_time`'s time zone with the stored time point to produce the local time in that time zone.|
-|[`operator sys_time`](#op_local_time)| Gets the time stored in this `zoned_time` without applying the time zone. |
+|[`operator sys_time`](#op_sys_time)| Gets the time stored in this `zoned_time` without applying the time zone. |
 
 ## Non-members
 

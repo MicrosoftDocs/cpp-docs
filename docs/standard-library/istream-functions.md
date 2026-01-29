@@ -37,7 +37,8 @@ A stream.
 Skips white space in the stream.
 
 ```cpp
-template class<Elem, Tr> basic_istream<Elem, Tr>& ws(basic_istream<Elem, Tr>& _Istr);
+template <class Elem, class Tr>
+basic_istream<Elem, Tr>& ws(basic_istream<Elem, Tr>& _Istr);
 ```
 
 ### Parameters
