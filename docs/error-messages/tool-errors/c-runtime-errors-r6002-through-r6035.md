@@ -23,6 +23,8 @@ The C Runtime library (CRT) may report a runtime error when your app is loaded o
 | [C Runtime Error R6019](c-runtime-error-r6019.md) | unable to open console device |
 | [C Runtime Error R6024](c-runtime-error-r6024.md) | not enough space for _onexit/atexit table |
 | [C Runtime Error R6025](c-runtime-error-r6025.md) | pure virtual function call |
+| [C Runtime Error R6026](c-runtime-error-r6026.md) | not enough space for stdio initialization |
+| [C Runtime Error R6027](c-runtime-error-r6027.md) | not enough space for lowio initialization |
 | [C Runtime Error R6028](c-runtime-error-r6028.md) | unable to initialize heap |
 | [C Runtime Error R6030](c-runtime-error-r6030.md) | CRT not initialized |
 | [C Runtime Error R6031](c-runtime-error-r6031.md) | Attempt to initialize the CRT more than once. This indicates a bug in your application. |
