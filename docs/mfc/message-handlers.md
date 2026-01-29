@@ -13,7 +13,7 @@ Writing message handlers accounts for a large proportion of your work in writing
 
 What does the handler for a message do It does whatever you want done in response to that message. You can create the handlers by using the [Class Wizard](reference/mfc-class-wizard.md) of the class, and then fill in the handler's code using the source code editor.
 
-You can use all of the facilities of Microsoft Visual C++ and MFC to write your handlers. For a list of all classes, see [Class Library Overview](class-library-overview.md) in the *MFC Reference*.
+You can use all of the facilities of Visual Studio and MFC to write your handlers. For a list of all classes, see [Class Library Overview](class-library-overview.md) in the *MFC Reference*.
 
 ## See also
 

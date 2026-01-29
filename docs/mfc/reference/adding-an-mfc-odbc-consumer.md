@@ -13,7 +13,7 @@ An MFC ODBC consumer consists of an ODBC recordset class and data bindings neces
 
 1. In Class View, right-click the project. On the shortcut menu, click **Add** and then click **Add Class**.
 
-1. In the Visual C++ folder, double-click the **MFC ODBC Consumer** icon or select it and click **Open**.
+1. In the Visual Studio folder, double-click the **MFC ODBC Consumer** icon or select it and click **Open**.
 
    The MFC ODBC Consumer Wizard opens.
 

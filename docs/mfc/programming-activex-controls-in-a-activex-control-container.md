@@ -44,7 +44,7 @@ Once the Circ control is inserted into the project (step 1), insert an instance 
 
 ## Modifications to the Project
 
-To enable the Container application to access the Circ control, Visual C++ automatically adds the wrapper class (`CCirc`) implementation file (.CPP) to the Container project and the wrapper class header (.H) file to the dialog box header file:
+To enable the Container application to access the Circ control, Visual Studio automatically adds the wrapper class (`CCirc`) implementation file (.CPP) to the Container project and the wrapper class header (.H) file to the dialog box header file:
 
 [!code-cpp[NVC_MFC_AxCont#1](../mfc/codesnippet/cpp/programming-activex-controls-in-a-activex-control-container_1.h)]
 
@@ -59,7 +59,7 @@ These functions can then be called from other of the application's procedures us
 
 ## <a name="_core_member_variable_modifications_to_the_project"></a> Member Variable Modifications to the Project
 
-Once the ActiveX control has been added to the project and embedded in a dialog box container, it can be accessed by other parts of the project. The easiest way to access the control is to [create a member variable](../mfc/activex-control-containers-connecting-an-activex-control-to-a-member-variable.md) of the dialog class, `CContainerDlg` (step 2), that is of the same type as the wrapper class added to the project by Visual C++. You can then use the member variable to access the embedded control at any time.
+Once the ActiveX control has been added to the project and embedded in a dialog box container, it can be accessed by other parts of the project. The easiest way to access the control is to [create a member variable](../mfc/activex-control-containers-connecting-an-activex-control-to-a-member-variable.md) of the dialog class, `CContainerDlg` (step 2), that is of the same type as the wrapper class added to the project by Visual Studio. You can then use the member variable to access the embedded control at any time.
 
 When the **Add Member Variable** dialog box adds the *m_circctl* member variable to the project, it also adds the following lines to the header file (.H) of the `CContainerDlg` class:
 

@@ -44,7 +44,7 @@ The technical notes below are listed numerically, with the most recently written
 |38|[MFC/OLE IUnknown Implementation](../mfc/tn038-mfc-ole-iunknown-implementation.md)|
 |37|[Multithreaded MFC 2.1 Applications](../mfc/tn037-multithreaded-mfc-2-1-applications.md)|
 |36|[Using CFormView with AppWizard and ClassWizard](../mfc/tn036-using-cformview-with-appwizard-and-classwizard.md)|
-|35|[Using Multiple Resource Files and Header Files with Visual C++](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)|
+|35|[Using Multiple Resource Files and Header Files with Visual Studio](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)|
 |33|[DLL Version of MFC](../mfc/tn033-dll-version-of-mfc.md)|
 |32|[MFC Exception Mechanism](../mfc/tn032-mfc-exception-mechanism.md)|
 |31|[Control Bars](../mfc/tn031-control-bars.md)|

@@ -11,7 +11,7 @@ MFC provides two classes to create toolbars: [CToolBar](reference/ctoolbar-class
 
 `CToolBarCtrl` usually results in a smaller executable, and you may prefer to use `CToolBarCtrl` if you do not intend to integrate the toolbar into the MFC architecture. If you plan to use `CToolBarCtrl` and integrate the toolbar into the MFC architecture, you must take additional care to communicate toolbar control manipulations to MFC. This communication is not difficult; however, it is additional work that is unneeded when you use `CToolBar`.
 
-Visual C++ provides two ways to take advantage of the toolbar common control.
+Visual Studio provides two ways to take advantage of the toolbar common control.
 
 - Create the toolbar using `CToolBar`, and then call [CToolBar::GetToolBarCtrl](reference/ctoolbar-class.md#gettoolbarctrl) to get access to the `CToolBarCtrl` member functions.
 

@@ -56,7 +56,7 @@ The dialog shows the application type, set to Console Application (.exe). Under 
 ## To create an MFC forms or dialog-based application
 
 1. From the Visual Studio main menu, choose **File** > **New** > **Project**.
-1. Under the **Installed** templates, choose **Visual C++** > **MFC/ATL**. If you don't see these, use the Visual Studio Installer to add MFC/ATL functionality. You can access the installer from the Visual Studio menu via **Tools** > **Get Tools and Features...** In the installer, select **Individual components** and search for **mfc** and then select the appropriate library for your machine such as **Visual C++ MFC for x86 and x64 with Spectre Mitigations**.
+1. Under the **Installed** templates, choose **C++** > **MFC/ATL**. If you don't see these, use the Visual Studio Installer to add MFC/ATL functionality. You can access the installer from the Visual Studio menu via **Tools** > **Get Tools and Features...** In the installer, select **Individual components** and search for **mfc** and then select the appropriate library for your machine such as **C++ MFC for x86 and x64 with Spectre Mitigations**.
 1. Choose **MFC App** from the center pane.
 1. Modify the configuration values as needed, then press **OK**.
 
@@ -71,7 +71,7 @@ The dialog shows the various settings set to their default, such as the applicat
 An MFC console application is a command-line program that uses MFC libraries but runs in the console window.
 
 1. From the main menu, choose **File** > **New** > **Project**.
-1. Under the **Installed** templates, choose **Visual C++** > **Windows Desktop**.
+1. Under the **Installed** templates, choose **C++** > **Windows Desktop**.
 1. From the center pane, choose **Windows Desktop Wizard**.
 1. Modify the project name as needed, then press **OK** to open the **Windows Desktop Wizard**.
 1. Check the **MFC Headers** box and set other values as needed, then press **OK**.
@@ -87,7 +87,7 @@ The dialog shows the application type set to Console Application (.exe). Under a
 ## To create an MFC forms or dialog-based application
 
 1. From the main menu, choose **File** > **New** > **Project**.
-1. Under the **Installed** templates, choose **Visual C++** > **MFC**.
+1. Under the **Installed** templates, choose **C++** > **MFC**.
 1. Choose **MFC Application** from the center pane.
 1. Click **Next** to start the **MFC Application Wizard**.
 
@@ -102,7 +102,7 @@ The dialog lists the current project settings such as: tabbed multiple document 
 An MFC console application is a command-line program that uses MFC libraries but runs in the console window.
 
 1. From the main menu, choose **File** > **New** > **Project**.
-1. Under the **Installed** templates, choose **Visual C++** > **Win32**.
+1. Under the **Installed** templates, choose **C++** > **Win32**.
 1. Choose **Win32 Console Application** from the center pane.
 1. Modify the project name as needed, then press **OK**.
 1. On the second page of the wizard, check the **Add common headers for MFC** box and set other values as needed, then press **Finish**.

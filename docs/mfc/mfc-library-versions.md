@@ -100,7 +100,7 @@ Debugger files that have the same base name and a .pdb extension are also availa
 
 The MFC shared DLLs also follow a structured naming convention. This makes it easier to know which DLL or library you should be using for which purpose.
 
-The MFC DLLs have *version* numbers that indicate binary compatibility. Use MFC DLLs that have the same version as your other libraries and compiler toolset to guarantee compatibility within a project.
+The MFC DLLs have *version* numbers that indicate binary compatibility. Use MFC DLLs that have the same version as your other libraries and compiler build tools to guarantee compatibility within a project.
 
 |DLL|Description|
 |---------|-----------------|
@@ -117,7 +117,7 @@ The import libraries needed to build applications or MFC extension DLLs that use
 
 If you are dynamically linking to the shared DLL version of MFC, whether it is from an application or from an MFC extension DLL, you must include the matching MFC*version*.DLL or MFC*version*U.DLL when you deploy your product.
 
-For a list of Visual C++ DLLs that can be distributed with your applications, see [Distributable Code for Microsoft Visual Studio 2017 and Microsoft Visual Studio 2017 SDK (Includes Utilities and BuildServer Files)](/visualstudio/productinfo/2017-redistribution-vs) or [Distributable Code for Visual Studio 2019](/visualstudio/releases/2019/redistribution).
+For a list of Visual Studio DLLs that can be distributed with your applications, see [Distributable Code for Microsoft Visual Studio 2017 and Microsoft Visual Studio 2017 SDK (Includes Utilities and BuildServer Files)](/visualstudio/productinfo/2017-redistribution-vs) or [Distributable Code for Visual Studio 2019](/visualstudio/releases/2019/redistribution).
 
 For more information on MBCS and Unicode support in MFC, see [Unicode and Multibyte Character Set (MBCS) Support](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md).
 

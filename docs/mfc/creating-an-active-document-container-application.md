@@ -14,7 +14,7 @@ The simplest and most recommended way to create an active document container app
 
 1. From the **File** menu, click **Project**from the **New** submenu.
 
-1. From the left pane, click **Visual C++** project type.
+1. From the left pane, click **MicrosoftVisual Studio** project type.
 
 1. Select **MFC Application** from the right pane.
 

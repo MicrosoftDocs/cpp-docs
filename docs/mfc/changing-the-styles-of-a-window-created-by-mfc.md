@@ -12,7 +12,7 @@ In its version of the `WinMain` function, MFC registers several standard window 
 
 ## <a name="_core_changing_styles_in_a_new_mfc_application"></a> Changing Styles in a New MFC Application
 
-If you're using Visual C++ 2.0 or later, you can change the default window styles in the Application Wizard when you create your application. In the Application Wizard's User Interface Features page, you can change styles for your main frame window and MDI child windows. For either window type, you can specify its frame thickness (thick or thin) and any of the following:
+If you're using Microsoft C++ 2.0 or later, you can change the default window styles in the Application Wizard when you create your application. In the Application Wizard's User Interface Features page, you can change styles for your main frame window and MDI child windows. For either window type, you can specify its frame thickness (thick or thin) and any of the following:
 
 - Whether the window has Minimize or Maximize controls.
 

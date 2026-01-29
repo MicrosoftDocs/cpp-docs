@@ -17,7 +17,7 @@ Controls are objects that users can interact with to enter or manipulate data. T
 
 ## Windows Common Controls
 
-The Windows operating system has always provided a number of Windows common controls. These control objects are programmable, and the Visual C++ dialog editor supports adding them to your dialog boxes. The Microsoft Foundation Class Library (MFC) supplies classes that encapsulate each of these controls, as shown in the table [Windows Common Controls and MFC Classes](#_core_windows_common_controls_and_mfc_classes). (Some items in the table have related topics that describe them further. For controls that lack topics, see the documentation for the MFC class.)
+The Windows operating system has always provided a number of Windows common controls. These control objects are programmable, and the Visual Studio dialog editor supports adding them to your dialog boxes. The Microsoft Foundation Class Library (MFC) supplies classes that encapsulate each of these controls, as shown in the table [Windows Common Controls and MFC Classes](#_core_windows_common_controls_and_mfc_classes). (Some items in the table have related topics that describe them further. For controls that lack topics, see the documentation for the MFC class.)
 
 Class [CWnd](reference/cwnd-class.md) is the base class of all window classes, including all of the control classes.
 

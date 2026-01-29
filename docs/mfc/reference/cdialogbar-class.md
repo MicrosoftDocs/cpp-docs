@@ -39,7 +39,7 @@ Creating and using a dialog bar is similar to creating and using a `CFormView` o
 For more information on `CDialogBar`, see the article [Dialog Bars](../../mfc/dialog-bars.md) and [Technical Note 31](../../mfc/tn031-control-bars.md), Control Bars.
 
 > [!NOTE]
-> In the current release, a `CDialogBar` object cannot host Windows Forms controls. For more information about Windows Forms controls in Visual C++, see [Using a Windows Form User Control in MFC](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
+> In the current release, a `CDialogBar` object cannot host Windows Forms controls. For more information about Windows Forms controls in Visual Studio, see [Using a Windows Form User Control in MFC](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
 ## Inheritance Hierarchy
 

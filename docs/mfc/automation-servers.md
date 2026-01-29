@@ -20,7 +20,7 @@ By exposing application functionality through a common, well-defined interface, 
 
 ## <a name="_core_support_for_automation_servers"></a> Support for Automation Servers
 
-Visual C++ and the MFC framework provide extensive support for Automation servers. They handle much of the overhead involved in making an Automation server, so you can focus your efforts on the functionality of your application.
+Visual Studio and the MFC framework provide extensive support for Automation servers. They handle much of the overhead involved in making an Automation server, so you can focus your efforts on the functionality of your application.
 
 The framework's principal mechanism for supporting Automation is the dispatch map, a set of macros that expands into the declarations and calls needed to expose methods and properties for OLE. A typical dispatch map looks like this:
 
