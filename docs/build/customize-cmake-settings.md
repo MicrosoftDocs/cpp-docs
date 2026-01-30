@@ -17,7 +17,7 @@ For Visual Studio 2019 to 2022, select your version by using the version selecto
 
 ::: moniker-end
 
-::: moniker range="<=msvc-170"
+::: moniker range=">=msvc-160 <=msvc-170"
 
 Visual Studio uses a CMake configuration file to drive CMake generation and build. *`CMakePresets.json`* is supported by Visual Studio 2019 version 16.10 or later and is the recommended CMake configuration file. *`CMakePresets.json`* is supported directly by CMake and can be used to drive CMake generation and build from Visual Studio, from VS Code, in a Continuous Integration pipeline, and from the command line on Windows, Linux, and Mac. For more information on *`CMakePresets.json`*, see [Configure and build with CMake Presets](cmake-presets-vs.md).
 
@@ -168,6 +168,50 @@ JSON IntelliSense helps you edit the *`CMakeSettings.json`* file:
 The JSON editor also informs you when you choose incompatible settings.
 
 For more information about each of the properties in the file, see [CMakeSettings.json schema reference](cmakesettings-reference.md).
+
+::: moniker-end
+
+::: moniker range="<=msvc-150"
+
+Visual Studio 2017 provides several CMake configurations that define how CMake is invoked to create the CMake cache for a given project. To add a new configuration, select the configuration drop-down in the toolbar and choose **Manage Configurations**:
+
+   ![Screenshot of Manage configurations selected in the drop-down.](media/cmake-manage-configurations.png)
+
+You can choose from the list of predefined configurations:
+
+   ![Add Configuration to CMake Settings dialog list of predefined configurations.](media/cmake-configurations.png)
+
+The first time you select a configuration, Visual Studio creates a *`CMakeSettings.json`* file in your project's root folder. This file is used to re-create the CMake cache file, for example after a **Clean** operation.
+
+To add another configuration, right-click *`CMakeSettings.json`* and choose **Add Configuration**.
+
+   ![Screenshot of the shortcut menu with Add configuration selected.](media/cmake-add-configuration.png "CMake Add Configuration")
+
+You can also edit the file using the **CMake Settings Editor**. Right-click on *`CMakeSettings.json`* in **Solution Explorer** and choose **Edit CMake Settings**. Or, select **Manage Configurations** from the configuration drop-down at the top of the editor window.
+
+You can also directly edit *`CMakeSettings.json`* to create custom configurations. The following example shows a sample configuration, which you can use as a starting point:
+
+```json
+    {
+      "name": "x86-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x86" ],
+      "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+      "installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": ""
+    },
+```
+
+JSON IntelliSense helps you edit the *`CMakeSettings.json`* file:
+
+   :::image type="complex" source="media/cmake-json-intellisense.png" alt-text="Screenshot of the CMake JSON IntelliSense pop-up in the editor.":::
+   The JSON IntelliSense pop-up for "configurations" shows buildCommandArgs, buildRoot, cmakeCommandArgs, configurationType, among several others.
+   :::image-end:::
+    
+For more information about each of the properties in the file, see [`CMakeSettings.json` schema reference](cmakesettings-reference.md).
 
 ::: moniker-end
 
