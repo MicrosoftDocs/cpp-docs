@@ -7,7 +7,7 @@ ms.assetid: efbe73c1-4ca4-4613-aac2-30d916e92c0e
 ---
 # Form Views (MFC)
 
-You can add forms to any Visual Studio application that supports the MFC libraries, including a [forms-based application](reference/creating-a-forms-based-mfc-application.md) (one whose view class is derived from `CFormView`). If you did not initially create your application to support forms, Visual Studio will add this support for you when you insert a new form. In an SDI or MDI application, which implements the default [document/view architecture](document-view-architecture.md), when the user chooses the **New** command (by default, on the **File** menu), Visual Studio prompts the user to choose from the available forms.
+You can add forms to any Visual C++ application that supports the MFC libraries, including a [forms-based application](reference/creating-a-forms-based-mfc-application.md) (one whose view class is derived from `CFormView`). If you did not initially create your application to support forms, Visual Studio will add this support for you when you insert a new form. In an SDI or MDI application, which implements the default [document/view architecture](document-view-architecture.md), when the user chooses the **New** command (by default, on the **File** menu), Visual Studio prompts the user to choose from the available forms.
 
 With an SDI application, when the user chooses the **New** command, the current instance of the form continues to run but a new instance of the application with the selected form is created if one is not found. In an MDI application, the current instance of the form continues to run when the user chooses the **New** command.
 

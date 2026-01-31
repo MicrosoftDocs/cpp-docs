@@ -57,7 +57,7 @@ The MFC implementation of dockable toolbars does not provide some of the extende
 
 ## <a name="_core_dynamically_resizing_the_toolbar"></a> Dynamically Resizing the Toolbar
 
-As of Visual Studio version 4.0, you can make it possible for users of your application to resize floating toolbars dynamically. Typically, a toolbar has a long, linear shape, displayed horizontally. But you can change the toolbar's orientation and its shape. For example, when the user docks a toolbar against one of the vertical sides of the frame window, the shape changes to a vertical layout. It's also possible to reshape the toolbar into a rectangle with multiple rows of buttons.
+As of Visual C++ version 4.0, you can make it possible for users of your application to resize floating toolbars dynamically. Typically, a toolbar has a long, linear shape, displayed horizontally. But you can change the toolbar's orientation and its shape. For example, when the user docks a toolbar against one of the vertical sides of the frame window, the shape changes to a vertical layout. It's also possible to reshape the toolbar into a rectangle with multiple rows of buttons.
 
 You can:
 

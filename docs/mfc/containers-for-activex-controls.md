@@ -21,7 +21,7 @@ Applications that support ActiveX control containment include:
 
 - Visual Basic 4.x and greater
 
-- Microsoft C++ 4.x and greater
+- Visual C++ 4.x and greater
 
 - Access 95 and greater
 

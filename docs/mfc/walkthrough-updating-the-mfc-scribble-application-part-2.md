@@ -11,7 +11,7 @@ ms.assetid: 602df5c2-17d4-4cd9-8cf6-dff652c4cae5
 
 ## Prerequisites
 
-[Visual Studio C++ Samples](../overview/visual-cpp-samples.md)
+[Visual C++ Samples](../overview/visual-cpp-samples.md)
 
 ## <a name="top"></a> Sections
 

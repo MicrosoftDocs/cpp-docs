@@ -20,7 +20,7 @@ A type library contains a binary description of the interfaces exposed by a comp
 
 1. From the shortcut menu, select **Add** > **New Item**.
 
-1. In the **Add New Item** dialog, select **Installed** packages and then select **Visual Studio**.
+1. In the **Add New Item** dialog, select **Installed** packages and then select **Visual C++**.
 
 1. In the Templates pane, select **MFC Class from Typelib**, and then select **Add** to display the [Add Class from Typelib Wizard](../../mfc/reference/add-class-from-typelib-wizard.md).
 

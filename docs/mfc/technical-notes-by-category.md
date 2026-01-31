@@ -79,7 +79,7 @@ Technical notes are divided into the following categories. For a numerical listi
 [TN023: Standard MFC Resources](../mfc/tn023-standard-mfc-resources.md)\
 [TN024: MFC-Defined Messages and Resources](../mfc/tn024-mfc-defined-messages-and-resources.md)\
 [TN028: Context-Sensitive Help Support](../mfc/tn028-context-sensitive-help-support.md)\
-[TN035: Using Multiple Resource Files and Header Files with Visual Studio](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)\
+[TN035: Using Multiple Resource Files and Header Files with Visual C++](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)\
 [TN036: Using CFormView with AppWizard and ClassWizard](../mfc/tn036-using-cformview-with-appwizard-and-classwizard.md)\
 [TN070: MFC Window Class Names](../mfc/tn070-mfc-window-class-names.md)
 

@@ -53,7 +53,7 @@ These steps vary depending on which version of Visual Studio you are using. To s
 
 1. Use the **MFC Application Wizard** to create a new MFC application. To run the wizard, from the **File** menu select **New**, and then select **Project**. The **New Project** dialog box will be displayed.
 
-1. In the **New Project** dialog box, expand the **Visual Studio** node in the **Project types** pane and select **MFC**. Then, in the **Templates** pane, select **MFC Application**. Type a name for the project, such as `MFCShellControls` and click **OK**.
+1. In the **New Project** dialog box, expand the **Visual C++** node in the **Project types** pane and select **MFC**. Then, in the **Templates** pane, select **MFC Application**. Type a name for the project, such as `MFCShellControls` and click **OK**.
 
    After **MFC Application Wizard** displays, use the following options:
 
@@ -200,7 +200,7 @@ The wizard automatically creates an application that has a standard menu bar, a 
 
 - The wizard created an Outlook bar with both a **Folders** pane and a **Calendar** pane. It probably doesn't make sense to have a **Calendar** pane in an **Explorer** window, so remove that pane now.
 
-- The `CMFCShellListCtrl` supports viewing files in different modes, such as **Large Icons**, **Small Icons**, **List**, and **Details**. Update your application to implement this functionality. Hint: see [Visual Studio C++ Samples](../overview/visual-cpp-samples.md).
+- The `CMFCShellListCtrl` supports viewing files in different modes, such as **Large Icons**, **Small Icons**, **List**, and **Details**. Update your application to implement this functionality. Hint: see [Visual C++ Samples](../overview/visual-cpp-samples.md).
 
 ## See also
 
