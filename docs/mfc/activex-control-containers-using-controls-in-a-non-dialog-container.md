@@ -7,7 +7,7 @@ ms.assetid: 46f195b0-b8ca-4409-8cca-fbfaf2c9ab9f
 ---
 # ActiveX Control Containers: Using Controls in a Non-Dialog Container
 
-In some applications, such as an SDI or MDI application, you will want to embed a control in a window of the application. The **Create** member function of the wrapper class, inserted by Visual C++, can create an instance of the control dynamically, without the need for a dialog box.
+In some applications, such as an SDI or MDI application, you will want to embed a control in a window of the application. The **Create** member function of the wrapper class, inserted by Visual Studio, can create an instance of the control dynamically, without the need for a dialog box.
 
 The **Create** member function has the following parameters:
 

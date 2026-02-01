@@ -80,7 +80,7 @@ Note that a control is not responsible for obtaining access to the storage mediu
 
 ## <a name="_core_installing_activex_control_classes_and_tools"></a> Installing ActiveX Control Classes and Tools
 
-When you install Visual C++, the MFC ActiveX control classes and retail and debug ActiveX control run-time DLLs are automatically installed if ActiveX controls are selected in Setup (they are selected by default).
+When you install Visual Studio, the MFC ActiveX control classes and retail and debug ActiveX control run-time DLLs are automatically installed if ActiveX controls are selected in Setup (they are selected by default).
 
 By default, the ActiveX control classes and tools are installed in the following subdirectories under \Program Files\Microsoft Visual Studio .NET:
 

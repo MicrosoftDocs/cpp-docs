@@ -35,7 +35,7 @@ A form view is essentially a view that contains controls. These controls are lai
 
 When you're [Creating a Forms-Based Application](../../mfc/reference/creating-a-forms-based-mfc-application.md), you can base its view class on `CFormView`, making it a forms-based application.
 
-You can also insert new [Form Topics](../../mfc/form-views-mfc.md) into document-view-based applications. Even if your application didn't initially support forms, Visual C++ will add this support when you insert a new form.
+You can also insert new [Form Topics](../../mfc/form-views-mfc.md) into document-view-based applications. Even if your application didn't initially support forms, Visual Studio will add this support when you insert a new form.
 
 The MFC Application Wizard and the Add Class command are the preferred methods for creating forms-based applications. If you need to create a forms-based application without using these methods, see [Creating a Forms-Based Application](../../mfc/reference/creating-a-forms-based-mfc-application.md).
 

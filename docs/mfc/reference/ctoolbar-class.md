@@ -52,7 +52,7 @@ The buttons can act like pushbuttons, check-box buttons, or radio buttons. `CToo
 
 [`CToolBar::GetToolBarCtrl`](#gettoolbarctrl), a member function new to MFC 4.0, allows you to take advantage of the Windows common control's support for toolbar customization and additional functionality. `CToolBar` member functions give you most of the functionality of the Windows common controls; however, when you call `GetToolBarCtrl`, you can give your toolbars even more of the characteristics of Windows 95/98 toolbars. When you call `GetToolBarCtrl`, it will return a reference to a `CToolBarCtrl` object. See [`CToolBarCtrl`](../../mfc/reference/ctoolbarctrl-class.md) for more information about designing toolbars using Windows common controls. For more general information about common controls, see [Common Controls](/windows/win32/Controls/common-controls-intro) in the Windows SDK.
 
-Visual C++ provides you with two methods to create a toolbar. To create a toolbar resource using the Resource Editor, follow these steps:
+Visual Studio provides you with two methods to create a toolbar. To create a toolbar resource using the Resource Editor, follow these steps:
 
 1. Create a toolbar resource.
 

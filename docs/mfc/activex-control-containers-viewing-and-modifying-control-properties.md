@@ -7,7 +7,7 @@ ms.assetid: 14ce5152-742b-4e0d-a9ab-c7b456e32918
 ---
 # ActiveX Control Containers: Viewing and Modifying Control Properties
 
-When you insert an ActiveX control into a project, it is useful to view and change the properties supported by the ActiveX control. This article discusses how to use the Visual C++ resource editor to do this.
+When you insert an ActiveX control into a project, it is useful to view and change the properties supported by the ActiveX control. This article discusses how to use the Visual Studio resource editor to do this.
 
 If your ActiveX control container application uses embedded controls, you can view and modify the control's properties while in the resource editor. You can also use the resource editor to set property values during design time. The resource editor then automatically saves these values in the project's resource file. Any instance of the control will then have its properties initialized to these values.
 

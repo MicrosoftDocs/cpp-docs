@@ -30,7 +30,7 @@ Creating and using `CSocket` and `CAsyncSocket` objects is described in [Windows
 
 ## <a name="_core_mfc_socket_samples_and_windows_sockets_dlls"></a> Windows Sockets DLLs
 
-The Microsoft Windows operating systems supply the Windows Sockets dynamic-link libraries (DLL). Visual C++ supplies the appropriate header files and libraries and the Windows Sockets specification.
+The Microsoft Windows operating systems supply the Windows Sockets dynamic-link libraries (DLL). Visual Studio supplies the appropriate header files and libraries and the Windows Sockets specification.
 
 For more information about Windows Sockets, see:
 

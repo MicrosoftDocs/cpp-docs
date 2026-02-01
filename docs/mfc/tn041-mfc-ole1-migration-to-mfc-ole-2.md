@@ -276,7 +276,7 @@ At this point, OCLIENT is a functional OLE container application. It is possible
 
 One of the most interesting features of OLE is in-place activation (or "Visual Editing"). This feature allows the server application to take over portions of the container's user interface to provided a more seamless editing interface for the user. To implement in-place activation to OCLIENT, some special resources need to be added, as well as some additional code. These resources and the code are normally provided by AppWizard — in fact, much of the code here was borrowed directly from a fresh AppWizard application with "Container" support.
 
-First of all, it is necessary to add a menu resource to be used when there is an item which is in-place active. You can create this extra menu resource in Visual C++ by copying the IDR_OCLITYPE resource and removing all but the File and Window pop-ups. Two separator bars are inserted between the File and Window pop-ups to indicate the separation of groups (it should look like: `File || Window`). For more information on what these separators mean and how the server and container menus are merged see [Menus and Resources: Menu Merging](../mfc/menus-and-resources-menu-merging.md).
+First of all, it is necessary to add a menu resource to be used when there is an item which is in-place active. You can create this extra menu resource in Visual Studio by copying the IDR_OCLITYPE resource and removing all but the File and Window pop-ups. Two separator bars are inserted between the File and Window pop-ups to indicate the separation of groups (it should look like: `File || Window`). For more information on what these separators mean and how the server and container menus are merged see [Menus and Resources: Menu Merging](../mfc/menus-and-resources-menu-merging.md).
 
 Once you have these menus created, you need to let the framework know about them. This is done by calling `CDocTemplate::SetContainerInfo` for the document template before you add it to the document template list in your InitInstance. The new code to register the document template looks like this:
 
@@ -292,7 +292,7 @@ pTemplate->SetContainerInfo(IDR_OLECLITYPE_INPLACE);
 AddDocTemplate(pTemplate);
 ```
 
-The IDR_OLECLITYPE_INPLACE resource is the special in-place resource created in Visual C++.
+The IDR_OLECLITYPE_INPLACE resource is the special in-place resource created in Visual Studio.
 
 To enable in-place activation, there are some things that need to change in both the `CView` (CMainView) derived class as well as the `COleClientItem` derived class (CRectItem). All of these overrides are provided by AppWizard and most of the implementation will come directly from a default AppWizard application.
 
@@ -338,7 +338,7 @@ BOOL CRectItem::OnChangeItemPosition(const CRect& rectPos)
 
 At this point, there is enough code to allow an item to be in-place activated and to deal with sizing and moving the item when it is active, but no code will allow the user to exit the editing session. Although some servers will provide this functionality themselves by handling the escape key, it is suggested that containers provide two ways to deactivate an item: (1) by clicking outside the item, and (2) by pressing the ESCAPE key.
 
-For the ESCAPE key, add an accelerator with Visual C++ that maps the VK_ESCAPE key to a command, ID_CANCEL_EDIT is added to the resources. The handler for this command follows:
+For the ESCAPE key, add an accelerator with Visual Studio that maps the VK_ESCAPE key to a command, ID_CANCEL_EDIT is added to the resources. The handler for this command follows:
 
 ```cpp
 // The following command handler provides the standard
@@ -512,7 +512,7 @@ BOOL COLEServerApp::InitInstance()
 
 You will notice that the code above refers to a new resource ID, IDR_HIERSVRTYPE_SRVR_EMB. This is the menu resource to be used when a document that is embedded in another container is edited. In MFC/OLE1 the menu items specific to editing an embedded item were modified on the fly. Using an entirely different menu structure when editing an embedded item instead of editing a file-based document makes it much easier to provide different user interfaces for these two separate modes. As you'll see later, an entirely separate menu resource is used when editing an embedded object in-place.
 
-To create this resource, load the resource script into Visual C++ and copy the existing IDR_HIERSVRTYPE menu resource. Rename the new resource to IDR_HIERSVRTYPE_SRVR_EMB (this is the same naming convention that AppWizard uses). Next change "File Save" to "File Update"; give it command ID ID_FILE_UPDATE. Also change "File Save As" to "File Save Copy As"; give it command ID ID_FILE_SAVE_COPY_AS. The framework provides the implementation of both of these commands.
+To create this resource, load the resource script into Visual Studio and copy the existing IDR_HIERSVRTYPE menu resource. Rename the new resource to IDR_HIERSVRTYPE_SRVR_EMB (this is the same naming convention that AppWizard uses). Next change "File Save" to "File Update"; give it command ID ID_FILE_UPDATE. Also change "File Save As" to "File Save Copy As"; give it command ID ID_FILE_SAVE_COPY_AS. The framework provides the implementation of both of these commands.
 
 ```Output
 \hiersvr\svritem.h(60) : error C2433: 'OLESTATUS' : 'virtual' not permitted on data declarations
@@ -629,9 +629,9 @@ To add "Visual Editing" (or in-place activation) to this server application, the
 
 - You need to tell the framework about these special resources and classes.
 
-The menu resource is easy to create. Run Visual C++, copy the menu resource IDR_HIERSVRTYPE to a menu resource called IDR_HIERSVRTYPE_SRVR_IP. Modify the menu so that only the Edit and Help menu popups are left. Add two separators to the menu in between the Edit and Help menus (it should look like: `Edit || Help`). For more information on what these separators mean and how the server and container menus are merged, see [Menus and Resources: Menu Merging](../mfc/menus-and-resources-menu-merging.md).
+The menu resource is easy to create. Run Visual Studio, copy the menu resource IDR_HIERSVRTYPE to a menu resource called IDR_HIERSVRTYPE_SRVR_IP. Modify the menu so that only the Edit and Help menu popups are left. Add two separators to the menu in between the Edit and Help menus (it should look like: `Edit || Help`). For more information on what these separators mean and how the server and container menus are merged, see [Menus and Resources: Menu Merging](../mfc/menus-and-resources-menu-merging.md).
 
-The bitmap for the subset toolbar can be easily created by copying the one from a fresh AppWizard generated application with a "Server" option checked. This bitmap can then be imported into Visual C++. Be sure to give the bitmap an ID of IDR_HIERSVRTYPE_SRVR_IP.
+The bitmap for the subset toolbar can be easily created by copying the one from a fresh AppWizard generated application with a "Server" option checked. This bitmap can then be imported into Visual Studio. Be sure to give the bitmap an ID of IDR_HIERSVRTYPE_SRVR_IP.
 
 The class derived from `COleIPFrameWnd` can be copied from an AppWizard generated application with server support as well. Copy both files, IPFRAME.CPP and IPFRAME.H and add them to the project. Make sure that the `LoadBitmap` call refers to IDR_HIERSVRTYPE_SRVR_IP, the bitmap created in the previous step.
 

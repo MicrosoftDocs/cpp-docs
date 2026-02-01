@@ -18,7 +18,7 @@ The following table shows MFC's view classes and their relationships to one anot
 |[CEditView](reference/ceditview-class.md)|A simple view based on the Windows edit box control. Allows entering and editing text and can be used as the basis for a simple text editor application. See also `CRichEditView`.|
 |[CRichEditView](reference/cricheditview-class.md)|A view containing a [CRichEditCtrl](reference/cricheditctrl-class.md) object. This class is analogous to `CEditView`, but unlike `CEditView`, `CRichEditView` handles formatted text.|
 |[CListView](reference/clistview-class.md)|A view containing a [CListCtrl](reference/clistctrl-class.md) object.|
-|[CTreeView](reference/ctreeview-class.md)|A view containing a [CTreeCtrl](reference/ctreectrl-class.md) object, for views that resemble the Solution Explorer window in Visual C++.|
+|[CTreeView](reference/ctreeview-class.md)|A view containing a [CTreeCtrl](reference/ctreectrl-class.md) object, for views that resemble the Solution Explorer window in Visual Studio.|
 |[CScrollView](reference/cscrollview-class.md)|Base class of `CFormView`, `CRecordView`, and `CDaoRecordView`. Implements scrolling the view's contents.|
 |[CFormView](reference/cformview-class.md)|A form view, a view that contains controls. A forms-based application provides one or more such form interfaces.|
 |[CHtmlView](reference/chtmlview-class.md)|A Web browser view with which the application's user can browse sites on the World Wide Web, as well as folders in the local file system and on a network. The Web browser view can also work as an Active document container.|

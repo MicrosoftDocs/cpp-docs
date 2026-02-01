@@ -13,7 +13,7 @@ ms.assetid: a7883b46-23f7-4870-ac3a-804aed9258b5
 
 This note describes the standard command implementations provided by MFC 2.0. Read [Technical Note 21](../mfc/tn021-command-and-message-routing.md) first because it describes the mechanisms used to implement many of the standard commands.
 
-This description assumes knowledge of the MFC architectures, APIs, and common programming practice. Documented as well as undocumented "implementation only" APIs are described. This is not a place to start learning about the features of or how to program in MFC. Refer to Visual C++ for more general information and for details of documented APIs.
+This description assumes knowledge of the MFC architectures, APIs, and common programming practice. Documented as well as undocumented "implementation only" APIs are described. This is not a place to start learning about the features of or how to program in MFC. Refer to Visual Studio for more general information and for details of documented APIs.
 
 ## The Problem
 

@@ -23,7 +23,7 @@ As another example, a word processor might expose its spell-checking functionali
 
 More important is the support Automation provides to users and solution providers. By exposing application functionality through a common, well-defined interface, Automation makes it possible to build comprehensive solutions in a single general programming language, such as Microsoft Visual Basic, instead of in diverse application-specific macro languages.
 
-Many commercial applications, such as Microsoft Excel and Microsoft Visual C++, allow you to automate much of their functionality. For example, in Visual C++, you can write VBScript macros to automate builds, aspects of code editing, or debugging tasks.
+Many commercial applications, such as Microsoft Excel and Visual Studio, allow you to automate much of their functionality. For example, in Visual Studio, you can write VBScript macros to automate builds, aspects of code editing, or debugging tasks.
 
 ## <a name="_core_passing_parameters_in_automation"></a> Passing Parameters in Automation
 

@@ -395,7 +395,7 @@ CDumpContext afxDump;
 
 `afxDump` is a predefined [CDumpContext](../../mfc/reference/cdumpcontext-class.md) object that allows you to send `CDumpContext` information to the debugger output window or to a debug terminal. Typically, you supply `afxDump` as a parameter to `CObject::Dump`.
 
-Under Windows NT and all versions of Windows, `afxDump` output is sent to the Output-Debug window of Visual C++ when you debug your application.
+Under Windows NT and all versions of Windows, `afxDump` output is sent to the Output-Debug window of Visual Studio when you debug your application.
 
 This variable is defined only in the Debug version of MFC. For more information on `afxDump`, see [Debugging MFC Applications](/visualstudio/debugger/mfc-debugging-techniques).
 

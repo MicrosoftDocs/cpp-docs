@@ -12,13 +12,13 @@ This note describes the ID naming and numbering conventions that MFC 2.0 uses fo
 
 The MFC ID naming and numbering conventions are intended to meet the following requirements:
 
-- Provide a consistent ID-naming standard used across the MFC library and MFC applications that are supported by the Visual C++ resource editor. This makes it easier for the programmer to interpret the type and origin of a resource from its ID.
+- Provide a consistent ID-naming standard used across the MFC library and MFC applications that are supported by the Visual Studio resource editor. This makes it easier for the programmer to interpret the type and origin of a resource from its ID.
 
 - Emphasize the strong 1-to-1 relationship between certain types of IDs.
 
 - Conform to already widely used standards for naming IDs in Windows.
 
-- Partition the ID-numbering space. ID numbers can be assigned by the programmer, MFC, Windows, and Visual C++-edited resources. Appropriate partitioning will help avoid duplication of ID numbers.
+- Partition the ID-numbering space. ID numbers can be assigned by the programmer, MFC, Windows, and Visual Studio-edited resources. Appropriate partitioning will help avoid duplication of ID numbers.
 
 ## The ID Prefix Naming Convention
 

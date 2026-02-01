@@ -11,7 +11,7 @@ MFC provides two classes to create rebars: [CReBar](reference/crebar-class.md) a
 
 `CReBarCtrl` is a wrapper class for the Win32 rebar control, and therefore may be easier to implement if you do not intend to integrate the rebar into the MFC architecture. If you plan to use `CReBarCtrl` and integrate the rebar into the MFC architecture, you must take additional care to communicate rebar control manipulations to MFC. This communication is not difficult; however, it is additional work that is unneeded when you use `CReBar`.
 
-Visual C++ provides two ways to take advantage of the rebar common control.
+Visual Studio provides two ways to take advantage of the rebar common control.
 
 - Create the rebar using `CReBar`, and then call [CReBar::GetReBarCtrl](reference/crebar-class.md#getrebarctrl) to get access to the `CReBarCtrl` member functions.
 

@@ -47,7 +47,7 @@ The docking, floating, and tool tips calls are optional. You can remove those li
 
 ## <a name="_core_editing_the_toolbar_resource"></a> Editing the Toolbar Resource
 
-The default toolbar you get with the Application Wizard is based on an **RT_TOOLBAR** custom resource, introduced in MFC version 4.0. You can edit this resource with the [toolbar editor](../windows/toolbar-editor.md). The editor lets you easily add, delete, and rearrange buttons. It contains a graphical editor for the buttons that is very similar to the general graphics editor in Visual C++. If you edited toolbars in previous versions of Visual C++, you'll find the task much easier now.
+The default toolbar you get with the Application Wizard is based on an **RT_TOOLBAR** custom resource, introduced in MFC version 4.0. You can edit this resource with the [toolbar editor](../windows/toolbar-editor.md). The editor lets you easily add, delete, and rearrange buttons. It contains a graphical editor for the buttons that is very similar to the general graphics editor in Visual Studio. If you edited toolbars in previous versions of Visual Studio, you'll find the task much easier now.
 
 To connect a toolbar button to a command, you give the button a command ID, such as `ID_MYCOMMAND`. Specify the command ID in the button's property page in the toolbar editor. Then create a handler function for the command (see [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md) for more information).
 

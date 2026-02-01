@@ -31,7 +31,7 @@ Although OLE Automation allows you to implement an `IDispatch` interface, a VTBL
 
 A dual interface is really just a custom interface derived from `IDispatch`. The most straightforward way to implement dual-interface support in a `CCmdTarget`-based class is to first implement the normal dispatch interface on your class using MFC and ClassWizard, then add the custom interface later. For the most part, your custom interface implementation will simply delegate back to the MFC `IDispatch` implementation.
 
-First, modify the ODL file for your server to define dual interfaces for your objects. To define a dual interface, you must use an interface statement, instead of the `DISPINTERFACE` statement that the Visual C++ wizards generate. Rather than removing the existing `DISPINTERFACE` statement, add a new interface statement. By retaining the `DISPINTERFACE` form, you can continue to use ClassWizard to add properties and methods to your object, but you must add the equivalent properties and methods to your interface statement.
+First, modify the ODL file for your server to define dual interfaces for your objects. To define a dual interface, you must use an interface statement, instead of the `DISPINTERFACE` statement that the Visual Studio wizards generate. Rather than removing the existing `DISPINTERFACE` statement, add a new interface statement. By retaining the `DISPINTERFACE` form, you can continue to use ClassWizard to add properties and methods to your object, but you must add the equivalent properties and methods to your interface statement.
 
 An interface statement for a dual interface must have the *OLEAUTOMATION* and *DUAL* attributes, and the interface must be derived from `IDispatch`. You can use the [GUIDGEN](../overview/visual-cpp-samples.md) sample to create a **IID** for the dual interface:
 
@@ -275,7 +275,7 @@ To add the **UUID** definitions from the MkTypLib-generated header file to your 
 
 ## Specifying the Correct Object Class Name in the Type Library
 
-The wizards shipped with Visual C++ incorrectly use the implementation class name to specify the coclass in the server's ODL file for OLE-creatable classes. While this will work, the implementation class name is probably not the class name you want users of your object to use. To specify the correct name, open the ODL file, locate each coclass statement, and replace the implementation class name with the correct external name.
+The wizards shipped with Visual Studio incorrectly use the implementation class name to specify the coclass in the server's ODL file for OLE-creatable classes. While this will work, the implementation class name is probably not the class name you want users of your object to use. To specify the correct name, open the ODL file, locate each coclass statement, and replace the implementation class name with the correct external name.
 
 Note that when the coclass statement is changed, the variable names of **CLSID**s in the MkTypLib-generated header file will change accordingly. You will need to update your code to use the new variable names.
 
