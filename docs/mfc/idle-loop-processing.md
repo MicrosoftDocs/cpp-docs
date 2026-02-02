@@ -32,7 +32,7 @@ Another method for performing idle processing in an application involves embeddi
 
 [!code-cpp[NVC_MFCDocView#8](codesnippet/cpp/idle-loop-processing_1.cpp)]
 
-This code, embedded in a function, loops as long as there is idle processing to do. Within that loop, a nested loop repeatedly calls `PeekMessage`. As long as that call returns a nonzero value, the loop calls `CWinThread::PumpMessage` to perform normal message translation and dispatching. Although `PumpMessage` is undocumented, you can examine its source code in the ThrdCore.Cpp file in the \atlmfc\src\mfc directory of your Visual C++ installation.
+This code, embedded in a function, loops as long as there is idle processing to do. Within that loop, a nested loop repeatedly calls `PeekMessage`. As long as that call returns a nonzero value, the loop calls `CWinThread::PumpMessage` to perform normal message translation and dispatching. Although `PumpMessage` is undocumented, you can examine its source code in the ThrdCore.Cpp file in the \atlmfc\src\mfc directory of your Visual Studio installation.
 
 Once the inner loop ends, the outer loop performs idle processing with one or more calls to `OnIdle`. The first call is for MFC's purposes. You can make additional calls to `OnIdle` to do your own background work.
 

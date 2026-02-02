@@ -8,7 +8,7 @@ ms.topic: concept-article
 ---
 # Making and Using Controls
 
-You make most controls for dialog boxes in the Visual C++ [dialog editor](../windows/dialog-editor.md). But you can also create controls in any dialog box or window.
+You make most controls for dialog boxes in the Visual Studio [dialog editor](../windows/dialog-editor.md). But you can also create controls in any dialog box or window.
 
 ## What do you want to know more about
 

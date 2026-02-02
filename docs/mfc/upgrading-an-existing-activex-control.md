@@ -48,7 +48,7 @@ CODEBASE="http://example.contoso.com/mycontrol.ocx#version=4,
     1086"
 ```
 
-This solution downloads only the control's .ocx file, and requires any supporting DLLs to already be installed on the client machine. This will work for Internet Explorer and MFC ActiveX controls built with Visual C++, because Internet Explorer ships with the supporting DLLs for Visual C++ controls. If another Internet browser that is ActiveX control-capable is used to view this control, this solution will not work.
+This solution downloads only the control's .ocx file, and requires any supporting DLLs to already be installed on the client machine. This will work for Internet Explorer and MFC ActiveX controls built with Visual Studio, because Internet Explorer ships with the supporting DLLs for Visual Studio controls. If another Internet browser that is ActiveX control-capable is used to view this control, this solution will not work.
 
 ### Using the CODEBASE Tag with an INF File
 
@@ -158,7 +158,7 @@ HKEY_CLASSES_ROOT\CLSID\{06889605-B8D0-101A-91F1-00608CEAD5B3}\Implemented Categ
 
 If you want to use a licensed control on a Web page, you must verify that the license agreement allows its use on the Internet and create a license package file (LPK) for it.
 
-A licensed ActiveX control will not load properly in an HTML page if the computer running Internet Explorer is not licensed to use the control. For example, if a licensed control was built using Visual C++, the HTML page using the control will load properly on the computer where the control was built, but it will not load on a different computer unless licensing information is included.
+A licensed ActiveX control will not load properly in an HTML page if the computer running Internet Explorer is not licensed to use the control. For example, if a licensed control was built using Visual Studio, the HTML page using the control will load properly on the computer where the control was built, but it will not load on a different computer unless licensing information is included.
 
 To use a licensed ActiveX control in Internet Explorer, you must check the vendor's license agreement to verify that the license for the control permits:
 

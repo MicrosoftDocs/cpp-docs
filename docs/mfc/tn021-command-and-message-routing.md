@@ -13,7 +13,7 @@ ms.assetid: b5952c8b-123e-406c-a36d-a6ac7c6df307
 
 This note describes the command routing and dispatch architecture as well as advanced topics in general window message routing.
 
-Please refer to Visual C++ for general details on the architectures described here, especially the distinction between Windows messages, control notifications, and commands. This note assumes you are very familiar with the issues described in the printed documentation and only addresses very advanced topics.
+Please refer to Visual Studio for general details on the architectures described here, especially the distinction between Windows messages, control notifications, and commands. This note assumes you are very familiar with the issues described in the printed documentation and only addresses very advanced topics.
 
 ## Command Routing and Dispatch MFC 1.0 Functionality Evolves to MFC 2.0 Architecture
 
@@ -29,7 +29,7 @@ This functionality has been generalized and extended in MFC 2.0 to allow command
 
 ## Command IDs
 
-See Visual C++ for an explanation of the command routing and binding process. [Technical Note 20](../mfc/tn020-id-naming-and-numbering-conventions.md) contains information on ID naming.
+See Visual Studio for an explanation of the command routing and binding process. [Technical Note 20](../mfc/tn020-id-naming-and-numbering-conventions.md) contains information on ID naming.
 
 We use the generic prefix "ID_" for command IDs. Command IDs are >= 0x8000. The message line or status bar will show the command description string if there is a STRINGTABLE resource with the same IDs as the command ID.
 
@@ -71,7 +71,7 @@ Maintaining the enabled/checked state of all a program's menu items all the time
 
 `CFrameWnd` also handles the WM_ENTERIDLE message to describe the current menu item selected on the status bar (also known as the message line).
 
-An application's menu structure, edited by Visual C++, is used to represent the potential commands available at WM_INITMENUPOPUP time. ON_UPDATE_COMMAND_UI handlers can modify the state or text of a menu, or for advanced uses (like the File MRU list or the OLE Verbs pop-up menu), actually modify the menu structure before the menu is drawn.
+An application's menu structure, edited by Visual Studio, is used to represent the potential commands available at WM_INITMENUPOPUP time. ON_UPDATE_COMMAND_UI handlers can modify the state or text of a menu, or for advanced uses (like the File MRU list or the OLE Verbs pop-up menu), actually modify the menu structure before the menu is drawn.
 
 The same sort of ON_UPDATE_COMMAND_UI processing is done for toolbars (and other control bars) when the application enters its idle loop. See the *Class Library Reference* and [Technical Note 31](../mfc/tn031-control-bars.md) for more information on control bars.
 

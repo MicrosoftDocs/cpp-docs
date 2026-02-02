@@ -414,7 +414,7 @@ This function is provided for backward compatibility. New applications should us
 
 `AfxInitRichEdit` loads `RICHED32.DLL` to initialize version 1.0 of the rich edit control. To use version 2.0 and 3.0 of the rich edit control, `RICHED20.DLL` needs to be loaded. It's loaded by making a call to [`AfxInitRichEdit2`](#afxinitrichedit2).
 
-To update rich edit controls in existing Visual C++ applications to version 2.0, open the .RC file as text, change the class name of each rich edit control from "`RICHEDIT`" to "`RichEdit20a`". Then replace the call to `AfxInitRichEdit` with `AfxInitRichEdit2`.
+To update rich edit controls in existing Visual Studio applications to version 2.0, open the .RC file as text, change the class name of each rich edit control from "`RICHEDIT`" to "`RichEdit20a`". Then replace the call to `AfxInitRichEdit` with `AfxInitRichEdit2`.
 
 This function also initializes the common controls library, if the library hasn't already been initialized for the process. If you use the rich edit control directly from your MFC application, call this function to assure that MFC has properly initialized the rich edit control runtime. If you call the `Create` method of [`CRichEditCtrl`](../../mfc/reference/cricheditctrl-class.md), [`CRichEditView`](../../mfc/reference/cricheditview-class.md), or [`CRichEditDoc`](../../mfc/reference/cricheditdoc-class.md), you typically don't need to call this function, but in some cases it might be necessary.
 

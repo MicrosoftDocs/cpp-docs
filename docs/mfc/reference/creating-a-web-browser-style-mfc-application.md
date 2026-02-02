@@ -28,7 +28,7 @@ The WebBrowser control supports Web browsing through hyperlinks and Uniform Reso
 
 Because `CHtmlView` simply implements the Microsoft Web browser control, its support for printing isn't like other [`CView`](../../mfc/reference/cview-class.md)-derived classes. Rather, the WebBrowser control implements the printer user interface and printing. As a result, `CHtmlView` doesn't support print preview, and the framework doesn't provide for other printing support functions: for example, [`CView::OnPreparePrinting`](../../mfc/reference/cview-class.md#onprepareprinting), [`CView::OnBeginPrinting`](../../mfc/reference/cview-class.md#onbeginprinting), and [`CView::OnEndPrinting`](../../mfc/reference/cview-class.md#onendprinting), which are available in other MFC applications.
 
-`CHtmlView` acts as a wrapper for the Web browser control, which gives your application a view onto a Web or an HTML page. The wizard creates an override to the [`OnInitialUpdate`](../../mfc/reference/cview-class.md#oninitialupdate) function in the view class, providing a navigational link to the Microsoft Visual C++ Web site:
+`CHtmlView` acts as a wrapper for the Web browser control, which gives your application a view onto a Web or an HTML page. The wizard creates an override to the [`OnInitialUpdate`](../../mfc/reference/cview-class.md#oninitialupdate) function in the view class, providing a navigational link to the Visual Studio Web site:
 
 ```cpp
 void CWebView::OnInitialUpdate()

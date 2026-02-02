@@ -24,7 +24,7 @@ The base class for form-based applications is [`CFormView`](cformview-class.md).
 
 Even if you use a base class such as [`CView`](cview-class.md), you can later make your applications forms-based by [adding an MFC class](adding-an-mfc-class.md) derived from `CFormView`.
 
-Once you finish with the wizard, your project opens, and if you selected `CFormView` (or a class that inherits from `CFormView`) as your base class or if you created a dialog-based application, Visual C++ opens the dialog editor. At this point, you are ready to design your first form.
+Once you finish with the wizard, your project opens, and if you selected `CFormView` (or a class that inherits from `CFormView`) as your base class or if you created a dialog-based application, Visual Studio opens the dialog editor. At this point, you are ready to design your first form.
 
 ### To begin creating a forms-based MFC executable
 
