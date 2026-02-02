@@ -21,7 +21,7 @@ MAPI needs to read the file to send the attachment. If the application keeps its
 
 #### To implement a Send Mail command with MFC
 
-1. Use the Visual C++ menu editor to add a menu item whose command ID is ID_FILE_SEND_MAIL.
+1. Use the Visual Studio menu editor to add a menu item whose command ID is ID_FILE_SEND_MAIL.
 
    This command ID is provided by the framework in AFXRES.H. The command can be added to any menu, but it is usually added to the **File** menu.
 

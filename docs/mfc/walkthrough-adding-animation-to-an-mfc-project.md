@@ -7,7 +7,7 @@ ms.assetid: 004f832c-9fd5-4f88-9ca9-ae65dececdc2
 ---
 # Walkthrough: Adding Animation to an MFC Project
 
-This walkthrough teaches how to add a basic animated object to a Visual C++, Microsoft Foundation Class Library (MFC) project.
+This walkthrough teaches how to add a basic animated object to a Visual Studio, Microsoft Foundation Class Library (MFC) project.
 
 The walkthrough shows how to accomplish these tasks:
 

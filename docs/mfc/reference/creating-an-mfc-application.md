@@ -56,7 +56,7 @@ The dialog shows the application type, set to Console Application (.exe). Under 
 ## To create an MFC forms or dialog-based application
 
 1. From the Visual Studio main menu, choose **File** > **New** > **Project**.
-1. Under the **Installed** templates, choose **Visual C++** > **MFC/ATL**. If you don't see these, use the Visual Studio Installer to add MFC/ATL functionality. You can access the installer from the Visual Studio menu via **Tools** > **Get Tools and Features...** In the installer, select **Individual components** and search for **mfc** and then select the appropriate library for your machine such as **Visual C++ MFC for x86 and x64 with Spectre Mitigations**.
+1. Under the **Installed** templates, choose **Visual C++** > **MFC/ATL**. If you don't see these, use the Visual Studio Installer to add MFC/ATL functionality. You can access the installer from the Visual Studio menu via **Tools** > **Get Tools and Features...** In the installer, select **Individual components** and search for **mfc** and then select the appropriate library for your machine such as **C++ MFC for x86 and x64 with Spectre Mitigations**.
 1. Choose **MFC App** from the center pane.
 1. Modify the configuration values as needed, then press **OK**.
 

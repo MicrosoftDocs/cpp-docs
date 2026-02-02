@@ -159,9 +159,9 @@ The default toolbar supplied by AppWizard is based on an RT_TOOLBAR custom resou
 
 ## RT_DLGINIT Resource Format
 
-One MFC private resource format is used to store extra dialog initialization information. This includes the initial strings stored in a combo box. The format of this resource is not designed to be manually edited, but is handled by Visual C++.
+One MFC private resource format is used to store extra dialog initialization information. This includes the initial strings stored in a combo box. The format of this resource is not designed to be manually edited, but is handled by Visual Studio.
 
-Visual C++ and this RT_DLGINIT resource are not required to use the related features of MFC since there are API alternative to using the information in the resource. Using Visual C++ makes it much easier to write, maintain, and translate your application in the long run.
+Visual Studio and this RT_DLGINIT resource are not required to use the related features of MFC since there are API alternative to using the information in the resource. Using Visual Studio makes it much easier to write, maintain, and translate your application in the long run.
 
 The basic structure of a RT_DLGINIT resource is as follows:
 
@@ -186,7 +186,7 @@ A repeated section contains the control ID to send the message to, the Message #
 SendDlgItemMessage(<Control ID>, <Message #>, 0, &<Data>);
 ```
 
-This is a very general format, allowing any Windows messages and data content. The Visual C++ resource editor and MFC only support a limited subset of Windows messages: CB_ADDSTRING for the initial list-choices for combo boxes (the data is a text string).
+This is a very general format, allowing any Windows messages and data content. The Visual Studio resource editor and MFC only support a limited subset of Windows messages: CB_ADDSTRING for the initial list-choices for combo boxes (the data is a text string).
 
 ## See also
 

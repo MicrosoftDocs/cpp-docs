@@ -1643,7 +1643,7 @@ Specifies the last value returned by the [callback function](callback-functions-
 
 For each object of a given type, the callback function that you pass is called with the information for that object. The system calls the callback function until there are no more objects or the callback function returns 0.
 
-New features of Microsoft Visual C++ let you use an ordinary function as the function passed to `EnumObjects`. The address passed to `EnumObjects` is a pointer to a function exported with **`EXPORT`** and with the Pascal calling convention. In protect-mode applications, you don't have to create this function with the Windows `MakeProcInstance` function or free the function after use with the `FreeProcInstance` Windows function.
+New features of Visual Studio let you use an ordinary function as the function passed to `EnumObjects`. The address passed to `EnumObjects` is a pointer to a function exported with **`EXPORT`** and with the Pascal calling convention. In protect-mode applications, you don't have to create this function with the Windows `MakeProcInstance` function or free the function after use with the `FreeProcInstance` Windows function.
 
 You also don't have to export the function name in an **`EXPORTS`** statement in your application's module-definition file. You can instead use the **`EXPORT`** function modifier, as in
 
@@ -5336,7 +5336,7 @@ Specifies the outcome of the `SetAbortProc` function. Some of the following valu
 
 If an application is to allow the print job to be canceled during spooling, it must set the abort function before the print job is started with the [`StartDoc`](#startdoc) member function. The Print Manager calls the abort function during spooling to allow the application to cancel the print job or to process out-of-disk-space conditions. If no abort function is set, the print job will fail if there isn't enough disk space for spooling.
 
-The features of Microsoft Visual C++ simplify the creation of the callback function passed to `SetAbortProc`. The address passed to the `EnumObjects` member function is a pointer to a function exported with `__declspec(dllexport)` and with the **`__stdcall`** calling convention.
+The features of Visual Studio simplify the creation of the callback function passed to `SetAbortProc`. The address passed to the `EnumObjects` member function is a pointer to a function exported with `__declspec(dllexport)` and with the **`__stdcall`** calling convention.
 
 You also don't have to export the function name in an **`EXPORTS`** statement in your application's module-definition file. You can instead use the **`EXPORT`** function modifier, as in
 
