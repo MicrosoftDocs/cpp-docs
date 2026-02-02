@@ -100,7 +100,7 @@ Debugger files that have the same base name and a .pdb extension are also availa
 
 The MFC shared DLLs also follow a structured naming convention. This makes it easier to know which DLL or library you should be using for which purpose.
 
-The MFC DLLs have *version* numbers that indicate binary compatibility. Use MFC DLLs that have the same version as your other libraries and compiler toolset to guarantee compatibility within a project.
+The MFC DLLs have *version* numbers that indicate binary compatibility. Use MFC DLLs that have the same version as your other libraries and compiler build tools to guarantee compatibility within a project.
 
 |DLL|Description|
 |---------|-----------------|

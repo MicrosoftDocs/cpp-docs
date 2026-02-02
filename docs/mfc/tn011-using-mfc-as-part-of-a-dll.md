@@ -17,7 +17,7 @@ If both a DLL and an application want to use MFC, both have a choice to either u
 
 regular MFC DLLs have several advantages:
 
-- The application that uses the DLL does not have to use MFC and does not have to be a Visual C++ application.
+- The application that uses the DLL does not have to use MFC and does not have to be a Visual Studio application.
 
 - With regular MFC DLLs that statically link to MFC, the size of the DLL depends only on the MFC and C runtime routines that are used and linked.
 
@@ -63,7 +63,7 @@ The `DllMain` function that MFC provides will call the [CWinApp::ExitInstance](.
 
 ## Linking Your DLL
 
-With regular MFC DLLs that statically link to MFC, you must link your DLL with Nafxcwd.lib or Nafxcw.lib and with the version of the C runtimes named Libcmt.lib. These libraries are pre-built and may be installed by specifying them when you run Visual C++ setup.
+With regular MFC DLLs that statically link to MFC, you must link your DLL with Nafxcwd.lib or Nafxcw.lib and with the version of the C runtimes named Libcmt.lib. These libraries are pre-built and may be installed by specifying them when you run Visual Studio setup.
 
 ## Sample Code
 

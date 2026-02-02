@@ -19,7 +19,7 @@ Like any program for the Windows operating system, your framework application ha
 To initialize the application, `WinMain` calls your application object's `InitApplication` and `InitInstance` member functions. To run the application's message loop, `WinMain` calls the **Run** member function. On termination, `WinMain` calls the application object's `ExitInstance` member function.
 
 > [!NOTE]
-> Names shown in **bold** in this documentation indicate elements supplied by the Microsoft Foundation Class Library and Visual C++. Names shown in `monospaced` type indicate elements that you create or override.
+> Names shown in **bold** in this documentation indicate elements supplied by the Microsoft Foundation Class Library and Visual Studio. Names shown in `monospaced` type indicate elements that you create or override.
 
 ## See also
 

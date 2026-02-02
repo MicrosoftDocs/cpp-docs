@@ -9,7 +9,7 @@ ms.topic: concept-article
 ---
 # Using Your Old Toolbars
 
-If you have used previous versions of Visual C++ to create customized toolbars, the new implementation of class [CToolBar](../mfc/reference/ctoolbar-class.md) could cause you problems. So that you don't have to give up your old toolbars to use the new functionality, the old implementation is still supported.
+If you have used previous versions of Visual Studio to create customized toolbars, the new implementation of class [CToolBar](../mfc/reference/ctoolbar-class.md) could cause you problems. So that you don't have to give up your old toolbars to use the new functionality, the old implementation is still supported.
 
 The DOCKTOOL sample does not use the old-style toolbars, only the new-style toolbars.
 

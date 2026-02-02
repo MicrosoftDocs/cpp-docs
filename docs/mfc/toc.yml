@@ -1493,7 +1493,7 @@ items:
       href: tn032-mfc-exception-mechanism.md
     - name: "TN033: DLL version of MFC"
       href: tn033-dll-version-of-mfc.md
-    - name: "TN035: Using multiple resource files and header files with Visual C++"
+    - name: "TN035: Using multiple resource files and header files with Visual Studio"
       href: tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md
     - name: "TN036: Using CFormView with AppWizard and ClassWizard"
       href: tn036-using-cformview-with-appwizard-and-classwizard.md

@@ -16,7 +16,7 @@ This wizard page describes the current [application settings for the MFC DLL pro
 
 To change these defaults, click **Application Settings** in the left column of the wizard and make changes in that page of the MFC DLL Wizard.
 
-After you create an MFC DLL project, you can add objects or controls to your project using Visual C++ [code wizards](../../ide/adding-functionality-with-code-wizards-cpp.md).
+After you create an MFC DLL project, you can add objects or controls to your project using Visual Studio [code wizards](../../ide/adding-functionality-with-code-wizards-cpp.md).
 
 You can perform the following tasks and types of enhancements to a basic MFC DLL project:
 

@@ -85,7 +85,7 @@ The Z property is given a **DISPID** with a zero **HIWORD** since it is defined 
 
 ## Advanced MFC Dispatch Map Features
 
-There are a number of additional features that ClassWizard does not support with this release of Visual C++. ClassWizard supports `DISP_FUNCTION`, `DISP_PROPERTY`, and `DISP_PROPERTY_EX` which define a method, member variable property, and get/set member function property, respectively. These capabilities are usually all that is needed to create most automation servers.
+There are a number of additional features that ClassWizard does not support with this release of Visual Studio. ClassWizard supports `DISP_FUNCTION`, `DISP_PROPERTY`, and `DISP_PROPERTY_EX` which define a method, member variable property, and get/set member function property, respectively. These capabilities are usually all that is needed to create most automation servers.
 
 The following additional macros can be used when the ClassWizard supported macros are not adequate: `DISP_PROPERTY_NOTIFY`, and `DISP_PROPERTY_PARAM`.
 
