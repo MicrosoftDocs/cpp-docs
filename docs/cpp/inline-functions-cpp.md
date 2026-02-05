@@ -1,7 +1,7 @@
 ---
 title: "Inline Functions (C++)"
 description: "The C++ inline keyword can be used to suggest inline functions to the compiler."
-ms.date: 12/07/2023
+ms.date: 02/05/2026
 f1_keywords: ["__forceinline_cpp", "__inline_cpp", "inline_cpp", "__inline", "_inline", "__forceinline", "_forceinline"]
 helpviewer_keywords: ["inline functions [C++], class members"]
 ---
@@ -13,11 +13,45 @@ In theory, using inline functions can make your program faster because they elim
 
 Inline code substitution is done at the compiler's discretion. For example, the compiler won't inline a function if its address is taken or if the compiler decides it's too large.
 
-A function defined in the body of a class declaration is implicitly an inline function.
+## The `inline` keyword and the One Definition Rule (ODR)
 
-## Example
+The original meaning of **`inline`** is a hint to the compiler to prefer code expansion at the call site over function call instructions. This remains one of the meanings of **`inline`**.
 
-In the following class declaration, the `Account` constructor is an inline function because it is defined in the body of the class declaration. The member functions `GetBalance`, `Deposit`, and `Withdraw` are specified `inline` in their definitions. The `inline` keyword is optional in the function declarations in the class declaration.
+However, the **`inline`** keyword also has implications for the One Definition Rule (ODR). Normally, a function can only be defined once across all translation units. When a function is marked **`inline`**, it can be defined in multiple translation units (typically via a header file), provided that all definitions are identical. The linker then selects one definition and discards the duplicates rather than reporting an error.
+
+This dual nature of **`inline`**—as both an optimization hint and an ODR mechanism—can cause confusion. The ODR aspect is a practical necessity where the same header (containing an inline function definition) may be included in multiple source files.
+
+## Implicitly inline functions
+
+Certain functions are implicitly **`inline`** without requiring the keyword:
+
+- **Functions defined at class scope**: A function defined in the body of a class declaration is implicitly an inline function. This allows small accessor functions and efficient abstractions to be defined directly in class definitions without incurring function call overhead—a priority since the early days of C++.
+
+- **`constexpr` functions**: Functions declared **`constexpr`** (introduced in C++11) are implicitly **`inline`**. Because **`constexpr`** functions are typically defined in header files to allow compile-time evaluation, they must follow the same ODR rules as inline functions.
+
+- **`consteval` functions**: Functions declared **`consteval`** (introduced in C++20) are implicitly **`inline`**.
+
+## Inline variables (C++17)
+
+C++17 extended the **`inline`** keyword to variables. An **`inline`** variable can be defined in multiple translation units, and like inline functions, the linker selects one definition and discards the rest. This extension applies to the ODR aspect of **`inline`**, not the code-expansion aspect, which only applies to functions.
+
+Inline variables are useful for defining constants or static data members in header files:
+
+```cpp
+// constants.h
+inline constexpr double pi = 3.14159265358979323846;
+
+struct MyClass
+{
+    static inline int instanceCount = 0;  // Can be defined in header
+};
+```
+
+Before C++17, such variables required a separate definition in a single source file to avoid linker errors.
+
+## Example: Inline class member functions
+
+In the following class declaration, the `Account` constructor is an inline function because it's defined in the body of the class declaration. The member functions `GetBalance`, `Deposit`, and `Withdraw` are specified **`inline`** in their definitions. The **`inline`** keyword is optional in the function declarations in the class declaration.
 
 ```cpp
 // account.h
