@@ -53,7 +53,7 @@ The first time that you load a `.vcxproj` project that targets an earlier versio
 
 ### Start the upgrade
 
-Once the Modernize agent is active, you can instruct it via a prompt to upgrade your MSVC Build Tools, or select the already constructed prompt from the list shown in the window. If you launched the agent directly in the GitHub Copilot Chat window by mentioning @Modernize in your prompt, you probably don't need to provide any additional prompting.
+Once the Modernize agent is active, you can instruct it via a prompt to upgrade your MSVC Build Tools, or select the already constructed prompt from the list shown in the window. If you launched the agent directly in the GitHub Copilot Chat window by mentioning `@Modernize` in your prompt, you probably don't need to provide more prompting.
 
 :::row:::
 :::column:::
@@ -83,13 +83,13 @@ Once the Modernize agent is active, you can instruct it via a prompt to upgrade 
 
 ### Assessment stage
 
-The agent first assesses what kinds of problems show up after upgrading. If you didn't already upgrade the project, the agent guides you through that process before creating its assessment. After ensuring that your project is upgraded, the agent builds your codebase, analyzes the reported warnings and errors, and generates an `assessment.md` file that describes the problems that it found, their severity, and other useful information. This is your opportunity to tell the agent any additional context that could help it make a plan.
+The agent first assesses what kinds of problems show up after upgrading. If you didn't already upgrade the project, the agent guides you through that process before creating its assessment. After ensuring that your project is upgraded, the agent builds your codebase, analyzes the reported warnings and errors, and generates an `assessment.md` file that describes the problems that it found, their severity, and other useful information. This is your opportunity to tell the agent any other context that could help it make a plan.
 
-One of the things you might choose to do here is to tell the agent not to fix certain discovered problems, because you know that resolving them involves some strategic decisions or because they were preexisting warnings that you decided are acceptable for your project. You should carefully read through the plan, making sure to provide that additional context where it is needed. Once you approve the assessment, the agent moves on to creating a concrete plan on addressing the problems.
+One of the things you might choose to do here is to tell the agent not to fix certain discovered problems, because you know that resolving them involves some strategic decisions or because they were preexisting warnings that you decided are acceptable for your project. You should carefully read through the plan, making sure to provide that extra context where it is needed. Once you approve the assessment, the agent moves on to creating a concrete plan on addressing the problems.
 
 ### Planning stage
 
-Based on the approved assessment and any additional context or instructions you provide, the agent creates a `plan.md` file that proposes a detailed plan for resolving each of the identified problems. If the agent produces a plan that doesn't match your organization's coding style or practices, you can provide that guidance to the agent and have it solve the problem differently. After you agree on the plan, the agent moves to the execution stage.
+Based on the approved assessment and any other context or instructions you provide, the agent creates a `plan.md` file that proposes a detailed plan for resolving each of the identified problems. If the agent produces a plan that doesn't match your organization's coding style or practices, you can provide that guidance to the agent and have it solve the problem differently. After you agree on the plan, the agent moves to the execution stage.
 
 ### Execution stage
 
