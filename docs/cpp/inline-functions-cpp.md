@@ -106,7 +106,7 @@ The **`__forceinline`** keyword (or [`[msvc::forceinline]`](/cpp/cpp/attributes#
 
 The compiler treats the inline expansion options and keywords as suggestions. There's no guarantee that functions will be inlined. You can't force the compiler to inline a particular function, even with the **`__forceinline`** keyword. When you compile with **`/clr`**, the compiler won't inline a function if there are security attributes applied to the function.
 
-For compatibility with previous versions, **`_inline`** and **`_forceinline`** are synonyms for **`__inline`** and **`__forceinline`**, respectively, unless compiler option [`/Za` \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
+For compatibility with previous versions, **`_inline`** and **`_forceinline`** are synonyms for **`__inline`** and **`__forceinline`** (two leading underscores), respectively, unless compiler option [`/Za` \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 The **`inline`** keyword tells the compiler that inline expansion is preferred. However, the compiler can ignore it. Two cases where this behavior can happen are:
 
@@ -176,11 +176,16 @@ Recursive functions can be replaced with inline code to a depth specified by the
 
 The C++ Standard defines a common set of attributes. It also allows compiler vendors to define their own attributes within a vendor-specific (in our case, `msvc`) namespace. The following Microsoft-specific attributes can be used to control inlining behavior: 
 
-[`[msvc::forceinline]`](/cpp/cpp/attributes#msvcforceinline): Has the same meaning as **`__forceinline`**.\
-[`[msvc::forceinline_calls]`](/cpp/cpp/attributes#msvcforceinline_calls): Can be placed on or before a statement or block to cause the inline heuristic to force-inline all calls in that statement or block.\
-[`[msvc::flatten]`](/cpp/cpp/attributes#msvcflatten): Similar to `[[msvc::forceinline_calls]]`, but recursively force-inlines all calls in the scope it's applied to until no calls are left.\
-[`[msvc::noinline]`](/cpp/cpp/attributes#msvcnoinline): When placed before a function declaration, has the same meaning as `__declspec(noinline)`.\
-[`[msvc::noinline_calls]`](/cpp/cpp/attributes#msvcnoinline_calls): Can be placed before any statement or block to turn off inlining for all calls in the scope it's applied to.
+## Microsoft-specific attributes for controlling inlining behavior
+
+
+|Attribute | Meaning |
+|---------|---------|
+| [`[msvc::forceinline]`](/cpp/cpp/attributes#msvcforceinline)| Has the same meaning as **`__forceinline`**.|
+| [`[msvc::forceinline_calls]`](/cpp/cpp/attributes#msvcforceinline_calls) | Can be placed on or before a statement or block to cause the inline heuristic to force-inline all calls in that statement or block.|
+| [`[msvc::flatten]`](/cpp/cpp/attributes#msvcflatten) | Similar to `[[msvc::forceinline_calls]]`, but recursively force-inlines all calls in the scope it's applied to until no calls are left. |
+| [`[msvc::noinline]`](/cpp/cpp/attributes#msvcnoinline) | When placed before a function declaration, has the same meaning as `__declspec(noinline)`. |
+| [`[msvc::noinline_calls]`](/cpp/cpp/attributes#msvcnoinline_calls) | Can be placed before any statement or block to turn off inlining for all calls in the scope it's applied to. |
 
 **END Microsoft Specific**
 
