@@ -11,13 +11,13 @@ The **`inline`** keyword suggests that the compiler substitute the code within t
 
 In theory, using inline functions can make your program faster because they eliminate the overhead associated with function calls. Calling a function requires pushing the return address on the stack, pushing arguments onto the stack, jumping to the function body, and then executing a return instruction when the function finishes. This process is eliminated by inlining the function. The compiler also has different opportunities to optimize functions expanded inline versus those that aren't. A tradeoff of inline functions is that the overall size of your program can increase.
 
-Inline code substitution is done at the compiler's discretion. For example, the compiler won't inline a function if its address is taken or if the compiler decides it's too large.
+Inline code substitution is done at the compiler's discretion. For example, the compiler doesn't inline a function if its address is taken or if the compiler decides it's too large.
 
 ## The `inline` keyword and the One Definition Rule (ODR)
 
 The original meaning of **`inline`** is a hint to the compiler to prefer code expansion at the call site over function call instructions. This remains one of the meanings of **`inline`**.
 
-However, the **`inline`** keyword also has implications for the One Definition Rule (ODR). Normally, a function can only be defined once across all translation units. When a function is marked **`inline`**, it can be defined in multiple translation units (typically via a header file), provided that all definitions are identical. The linker then selects one definition and discards the duplicates rather than reporting an error.
+However, the **`inline`** keyword also has implications for the One Definition Rule (ODR). Normally, a function can only be defined once across all translation units. When a function is marked **`inline`**, it can be defined in multiple translation units (typically via a header file) if all the definitions are identical. The linker then selects one definition and discards the duplicates rather than reporting an error.
 
 This dual nature of **`inline`**—as both an optimization hint and an ODR mechanism—can cause confusion. The ODR aspect is a practical necessity where the same header (containing an inline function definition) may be included in multiple source files.
 
@@ -94,7 +94,7 @@ inline double Account::Withdraw(double amount)
 
 A given inline member function must be declared the same way in every compilation unit. There must be exactly one definition of an inline function.
 
-A class member function defaults to external linkage unless a definition for that function contains the **`inline`** specifier. The preceding example shows that you don't have to declare these functions explicitly with the **`inline`** specifier. Using **`inline`** in the function definition suggests to the compiler that it be treated as an inline function. However, you can't redeclare a function as **`inline`** after a call to that function.
+A class member function defaults to external linkage unless a definition for that function contains the **`inline`** specifier. The preceding example shows that you don't have to declare these functions explicitly with the **`inline`** specifier. Using **`inline`** in the function definition suggests to the compiler to treat it as an inline function. However, you can't redeclare a function as **`inline`** after a call to that function.
 
 ## `inline`, `__inline`, and `__forceinline`
 
@@ -177,7 +177,6 @@ Recursive functions can be replaced with inline code to a depth specified by the
 The C++ Standard defines a common set of attributes. It also allows compiler vendors to define their own attributes within a vendor-specific (in our case, `msvc`) namespace. The following Microsoft-specific attributes can be used to control inlining behavior: 
 
 ## Microsoft-specific attributes for controlling inlining behavior
-
 
 |Attribute | Meaning |
 |---------|---------|
@@ -275,8 +274,8 @@ int main()
 
 Here are some of the differences between the macro and the inline function:
 
-- Macros are always expanded inline. However, an inline function is only inlined when the compiler determines it is the optimal thing to do.
-- The macro may result in unexpected behavior, which can lead to subtle bugs. For example, the expression `mult1(2 + 2, 3 + 3)` expands to `2 + 2 * 3 + 3` which evaluates to 11, but the expected result is 24. A seemingly valid fix is to add parentheses around both arguments of the function macro, resulting in `#define mult2(a, b) (a) * (b)`, which will solve the issue at hand but can still cause surprising behavior when part of a larger expression. That was demonstrated in the preceding example, and the problem could be addressed by defining the macro as such `#define mult3(a, b) ((a) * (b))`.
+- Macros are always expanded inline. However, an inline function is only inlined when the compiler determines it's the optimal thing to do.
+- The macro may result in unexpected behavior, which can lead to subtle bugs. For example, the expression `mult1(2 + 2, 3 + 3)` expands to `2 + 2 * 3 + 3` which evaluates to 11, but the expected result is 24. A seemingly valid fix is to add parentheses around both arguments of the function macro, resulting in `#define mult2(a, b) (a) * (b)`, which solves the issue at hand but can still cause surprising behavior when part of a larger expression. That was demonstrated in the preceding example, and the problem could be addressed by defining the macro as such `#define mult3(a, b) ((a) * (b))`.
 - An inline function is subject to semantic processing by the compiler, whereas the preprocessor expands macros without that same benefit. Macros aren't type-safe, whereas functions are.
 - Expressions passed as arguments to inline functions are evaluated once. In some cases, expressions passed as arguments to macros can be evaluated more than once. For example, consider the following:
 
