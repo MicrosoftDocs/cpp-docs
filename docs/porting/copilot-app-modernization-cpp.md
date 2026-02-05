@@ -29,7 +29,7 @@ GitHub Copilot app modernization for C++ is enabled by default. To disable or ex
 1. Select (to enable) or clear (to disable) the checkbox for **Enable GitHub Copilot app modernization for C++ (preview)**.
 1. Restart Visual Studio for the setting change to take effect.
 
-![Screenshot of the settings to enable GitHub Copilot app modernization for C++.](media/enable-copilot-app-modernization-cpp.png "enable GitHub Copilot app modernization for C++")
+:::image type="content" source="media/enable-copilot-app-modernization-cpp.png" alt-text="Screenshot of Visual Studio Options dialog. GitHub > Copilot > C/C++ settings are visible. The app modernization for C++ checkbox is enabled.":::
 
 ## Upgrade your codebase by using GitHub Copilot app modernization for C++
 
@@ -41,7 +41,7 @@ GitHub Copilot app modernization is an agent that operates inside the GitHub Cop
 
 - **From the Solution Explorer context menu**: Right-click on the solution or a loaded project in the Solution Explorer, and choose **Modernize** from the context menu. This automatically launches a GitHub Copilot Chat window, activates the Modernize agent, and provides you with relevant prompts to choose from to get you started.
 
-![Screenshot of the context menu to start GitHub Copilot app modernization.](media/copilot-app-modernization-context-menu.png "Start GitHub Copilot app modernization")
+:::image type="content" source="media/copilot-app-modernization-context-menu.png" alt-text="Screenshot of Visual Studio Solution Explorer showing a right-click context menu with Modernize selected to start the Copilot agent.":::
 
 - **From GitHub Copilot Chat**: Open the GitHub Copilot Chat Window by selecting **View > GitHub Copilot Chat**. After the GitHub Copilot Chat window opens, mention `@Modernize` in a prompt to activate the Modernize agent. For example, type this prompt:
 
@@ -70,12 +70,12 @@ Once the Modernize agent is active, you can instruct it via a prompt to upgrade 
 :::row:::
 :::column:::
 
-![Screenshot of GitHub Copilot app modernization window with MSVC upgrade ice breaker for an MSBuild project.](media/app-modernization-msbuild-ice-breaker.png "GitHub Copilot app modernization window")
+:::image type="content" source="media/app-modernization-msbuild-ice-breaker.png" alt-text="Screenshot of GitHub Copilot Chat window. The dropdown is set to App Modernization experience and Upgrade MSVC Build Tools to the latest version is highlighted.":::
 
 :::column-end:::
 :::column:::
 
-![Screenshot of GitHub Copilot app modernization window with MSVC upgrade ice breaker for a CMake project.](media/app-modernization-cmake-ice-breaker.png "GitHub Copilot app modernization window")
+:::image type="content" source="media/app-modernization-cmake-ice-breaker.png" alt-text="Screenshot of GitHub Copilot Chat window. The dropdown is set to App Modernization experience and Resolve build issues by migrating to modern alternatives is highlighted":::
 
 :::column-end:::
 :::row-end:::
