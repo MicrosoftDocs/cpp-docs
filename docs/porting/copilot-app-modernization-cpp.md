@@ -49,7 +49,7 @@ GitHub Copilot app modernization is an agent that operates inside the GitHub Cop
 
 #### For MSBuild-based codebases targeting an earlier version of MSVC Build Tools
 
-The first time that you load a `.vcxproj` project that targets an earlier version of the MSVC Build Tools, you see an option to [upgrade project settings to use a newer version of the MSVC Build Tools](https://learn.microsoft.com/visualstudio/install/setup-assistant). If you retarget any of your projects to a new version of MSVC Build Tools and GitHub Copilot app modernization for C++ is enabled, you receive an infobar in Visual Studio prompting you to use GitHub Copilot app modernization for C++ to resolve any newly introduced build problems. Selecting **Run GitHub Copilot app modernization for C++** launches the GitHub Copilot Chat window, activates the Modernize agent, and provides you with relevant prompts to choose from to get you started.
+The first time that you load a `.vcxproj` project that targets an earlier version of the MSVC Build Tools, you see an option to [upgrade project settings to use a newer version of the MSVC Build Tools](/visualstudio/install/setup-assistant). If you retarget any of your projects to a new version of MSVC Build Tools and GitHub Copilot app modernization for C++ is enabled, you receive an infobar in Visual Studio prompting you to use GitHub Copilot app modernization for C++ to resolve any newly introduced build problems. Selecting **Run GitHub Copilot app modernization for C++** launches the GitHub Copilot Chat window, activates the Modernize agent, and provides you with relevant prompts to choose from to get you started.
 
 ### Start the upgrade
 
