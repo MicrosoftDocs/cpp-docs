@@ -25,7 +25,7 @@ This dual nature of **`inline`**—as both an optimization hint and an ODR mecha
 
 Certain functions are implicitly **`inline`** without requiring the keyword:
 
-- **Functions defined at class scope**: A function defined in the body of a class declaration is implicitly an inline function. This allows small accessor functions and efficient abstractions to be defined directly in class definitions without incurring function call overhead—a priority since the early days of C++.
+- **Functions defined at class scope**: A function defined in the body of a class declaration is implicitly an inline function. This allows small accessor functions and to be defined directly in class definitions without incurring function call overhead—a priority since the early days of C++.
 
 - **`constexpr` functions**: Functions declared **`constexpr`** (introduced in C++11) are implicitly **`inline`**. Because **`constexpr`** functions are typically defined in header files to allow compile-time evaluation, they must follow the same ODR rules as inline functions.
 
@@ -33,7 +33,7 @@ Certain functions are implicitly **`inline`** without requiring the keyword:
 
 ## Inline variables (C++17)
 
-C++17 extended the **`inline`** keyword to variables. An **`inline`** variable can be defined in multiple translation units, and like inline functions, the linker selects one definition and discards the rest. This extension applies to the ODR aspect of **`inline`**, not the code-expansion aspect, which only applies to functions.
+C++17 extended the **`inline`** keyword to variables. An **`inline`** variable can be defined in multiple translation units, and like inline functions, the linker selects one definition and discards the rest.
 
 Inline variables are useful for defining constants or static data members in header files:
 
@@ -102,7 +102,7 @@ The **`inline`** and **`__inline`** specifiers suggest to the compiler that it i
 
 The insertion, called *inline expansion* or *inlining*, occurs only if the compiler's own cost-benefit analysis shows it's worthwhile. Inline expansion minimizes the function-call overhead at the potential cost of larger code size.
 
-The **`__forceinline`** keyword overrides the cost-benefit analysis and relies on the judgment of the programmer instead. Exercise caution when using **`__forceinline`**. Indiscriminate use of **`__forceinline`** can result in larger code with only marginal performance gains or, in some cases, even performance losses (because of the increased paging of a larger executable, for example).
+The **`__forceinline`** keyword (or [`[msvc::forceinline]`](/cpp/cpp/attributes#msvcforceinline) attribute) overrides the cost-benefit analysis and relies on the judgment of the programmer instead. Exercise caution when using **`__forceinline`**. Indiscriminate use of **`__forceinline`** can result in larger code with only marginal performance gains or, in some cases, even performance losses (because of the increased paging of a larger executable, for example).
 
 The compiler treats the inline expansion options and keywords as suggestions. There's no guarantee that functions will be inlined. You can't force the compiler to inline a particular function, even with the **`__forceinline`** keyword. When you compile with **`/clr`**, the compiler won't inline a function if there are security attributes applied to the function.
 
@@ -173,6 +173,14 @@ If the compiler can't inline a function declared with **`__forceinline`**, it ge
 - The function is defined externally, in an included library or another translation unit, or is a virtual call target or indirect call target. The compiler can't identify non-inlined code that it can't find in the current translation unit.
 
 Recursive functions can be replaced with inline code to a depth specified by the [`inline_depth`](../preprocessor/inline-depth.md) pragma, up to a maximum of 16 calls. After that depth, recursive function calls are treated as calls to an instance of the function.  The depth to which recursive functions are examined by the inline heuristic can't exceed 16. The [`inline_recursion`](../preprocessor/inline-recursion.md) pragma controls the inline expansion of a function currently under expansion. See the [Inline-Function Expansion](../build/reference/ob-inline-function-expansion.md) (/Ob) compiler option for related information.
+
+The C++ Standard defines a common set of attributes. It also allows compiler vendors to define their own attributes within a vendor-specific (in our case, `msvc`) namespace. The following Microsoft-specific attributes can be used to control inlining behavior: 
+
+[`[msvc::forceinline]`](/cpp/cpp/attributes#msvcforceinline): Has the same meaning as **`__forceinline`**.\
+[`[msvc::forceinline_calls]`](/cpp/cpp/attributes#msvcforceinline_calls): Can be placed on or before a statement or block to cause the inline heuristic to force-inline all calls in that statement or block.\
+[`[msvc::flatten]`](/cpp/cpp/attributes#msvcflatten): Similar to `[[msvc::forceinline_calls]]`, but recursively force-inlines all calls in the scope it's applied to until no calls are left.\
+[`[msvc::noinline]`](/cpp/cpp/attributes#msvcnoinline): When placed before a function declaration, has the same meaning as `__declspec(noinline)`.\
+[`[msvc::noinline_calls]`](/cpp/cpp/attributes#msvcnoinline_calls): Can be placed before any statement or block to turn off inlining for all calls in the scope it's applied to.
 
 **END Microsoft Specific**
 
@@ -306,4 +314,9 @@ In this example, the function `increment` is called twice as the expression `sqr
 ## See also
 
 [`noinline`](../cpp/noinline.md)\
-[`auto_inline`](../preprocessor/auto-inline.md)
+[`auto_inline`](../preprocessor/auto-inline.md)\
+[`[msvc::forceinline]`](/cpp/cpp/attributes#msvcforceinline)\
+[`[msvc::forceinline_calls]`](/cpp/cpp/attributes#msvcforceinline_calls)\
+[`[msvc::flatten]`](/cpp/cpp/attributes#msvcflatten)\
+[`[msvc::nolinline]`](/cpp/cpp/attributes#msvcnoinline)\
+[`[msvc::nolinline_calls]`](/cpp/cpp/attributes#msvcnoinline_calls)
