@@ -1,7 +1,7 @@
 ---
 title: "Inline Functions (C++)"
 description: "The C++ inline keyword can be used to suggest inline functions to the compiler."
-ms.date: 12/07/2023
+ms.date: 02/05/2026
 f1_keywords: ["__forceinline_cpp", "__inline_cpp", "inline_cpp", "__inline", "_inline", "__forceinline", "_forceinline"]
 helpviewer_keywords: ["inline functions [C++], class members"]
 ---
@@ -11,13 +11,47 @@ The **`inline`** keyword suggests that the compiler substitute the code within t
 
 In theory, using inline functions can make your program faster because they eliminate the overhead associated with function calls. Calling a function requires pushing the return address on the stack, pushing arguments onto the stack, jumping to the function body, and then executing a return instruction when the function finishes. This process is eliminated by inlining the function. The compiler also has different opportunities to optimize functions expanded inline versus those that aren't. A tradeoff of inline functions is that the overall size of your program can increase.
 
-Inline code substitution is done at the compiler's discretion. For example, the compiler won't inline a function if its address is taken or if the compiler decides it's too large.
+Inline code substitution is done at the compiler's discretion. For example, the compiler doesn't inline a function if its address is taken or if the compiler decides it's too large.
 
-A function defined in the body of a class declaration is implicitly an inline function.
+## The `inline` keyword and the One Definition Rule (ODR)
 
-## Example
+The original meaning of **`inline`** is a hint to the compiler to prefer code expansion at the call site over function call instructions. This remains one of the meanings of **`inline`**.
 
-In the following class declaration, the `Account` constructor is an inline function because it is defined in the body of the class declaration. The member functions `GetBalance`, `Deposit`, and `Withdraw` are specified `inline` in their definitions. The `inline` keyword is optional in the function declarations in the class declaration.
+However, the **`inline`** keyword also has implications for the One Definition Rule (ODR). Normally, a function can only be defined once across all translation units. When a function is marked **`inline`**, it can be defined in multiple translation units (typically via a header file) if all the definitions are identical. The linker then selects one definition and discards the duplicates rather than reporting an error.
+
+This dual nature of **`inline`**—as both an optimization hint and an ODR mechanism—can cause confusion. The ODR aspect is a practical necessity where the same header (containing an inline function definition) may be included in multiple source files.
+
+## Implicitly inline functions
+
+Certain functions are implicitly **`inline`** without requiring the keyword:
+
+- **Functions defined at class scope**: A function defined in the body of a class declaration is implicitly an inline function. This allows small accessor functions and to be defined directly in class definitions without incurring function call overhead—a priority since the early days of C++.
+
+- **`constexpr` functions**: Functions declared **`constexpr`** (introduced in C++11) are implicitly **`inline`**. Because **`constexpr`** functions are typically defined in header files to allow compile-time evaluation, they must follow the same ODR rules as inline functions.
+
+- **`consteval` functions**: Functions declared **`consteval`** (introduced in C++20) are implicitly **`inline`**.
+
+## Inline variables (C++17)
+
+C++17 extended the **`inline`** keyword to variables. An **`inline`** variable can be defined in multiple translation units, and like inline functions, the linker selects one definition and discards the rest.
+
+Inline variables are useful for defining constants or static data members in header files:
+
+```cpp
+// constants.h
+inline constexpr double pi = 3.14159265358979323846;
+
+struct MyClass
+{
+    static inline int instanceCount = 0;  // Can be defined in header
+};
+```
+
+Before C++17, such variables required a separate definition in a single source file to avoid linker errors.
+
+## Example: Inline class member functions
+
+In the following class declaration, the `Account` constructor is an inline function because it's defined in the body of the class declaration. The member functions `GetBalance`, `Deposit`, and `Withdraw` are specified **`inline`** in their definitions. The **`inline`** keyword is optional in the function declarations in the class declaration.
 
 ```cpp
 // account.h
@@ -60,7 +94,7 @@ inline double Account::Withdraw(double amount)
 
 A given inline member function must be declared the same way in every compilation unit. There must be exactly one definition of an inline function.
 
-A class member function defaults to external linkage unless a definition for that function contains the **`inline`** specifier. The preceding example shows that you don't have to declare these functions explicitly with the **`inline`** specifier. Using **`inline`** in the function definition suggests to the compiler that it be treated as an inline function. However, you can't redeclare a function as **`inline`** after a call to that function.
+A class member function defaults to external linkage unless a definition for that function contains the **`inline`** specifier. The preceding example shows that you don't have to declare these functions explicitly with the **`inline`** specifier. Using **`inline`** in the function definition suggests to the compiler to treat it as an inline function. However, you can't redeclare a function as **`inline`** after a call to that function.
 
 ## `inline`, `__inline`, and `__forceinline`
 
@@ -68,11 +102,11 @@ The **`inline`** and **`__inline`** specifiers suggest to the compiler that it i
 
 The insertion, called *inline expansion* or *inlining*, occurs only if the compiler's own cost-benefit analysis shows it's worthwhile. Inline expansion minimizes the function-call overhead at the potential cost of larger code size.
 
-The **`__forceinline`** keyword overrides the cost-benefit analysis and relies on the judgment of the programmer instead. Exercise caution when using **`__forceinline`**. Indiscriminate use of **`__forceinline`** can result in larger code with only marginal performance gains or, in some cases, even performance losses (because of the increased paging of a larger executable, for example).
+The **`__forceinline`** keyword (or [`[msvc::forceinline]`](/cpp/cpp/attributes#msvcforceinline) attribute) overrides the cost-benefit analysis and relies on the judgment of the programmer instead. Exercise caution when using **`__forceinline`**. Indiscriminate use of **`__forceinline`** can result in larger code with only marginal performance gains or, in some cases, even performance losses (because of the increased paging of a larger executable, for example).
 
 The compiler treats the inline expansion options and keywords as suggestions. There's no guarantee that functions will be inlined. You can't force the compiler to inline a particular function, even with the **`__forceinline`** keyword. When you compile with **`/clr`**, the compiler won't inline a function if there are security attributes applied to the function.
 
-For compatibility with previous versions, **`_inline`** and **`_forceinline`** are synonyms for **`__inline`** and **`__forceinline`**, respectively, unless compiler option [`/Za` \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
+For compatibility with previous versions, **`_inline`** and **`_forceinline`** are synonyms for **`__inline`** and **`__forceinline`** (two leading underscores), respectively, unless compiler option [`/Za` \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 The **`inline`** keyword tells the compiler that inline expansion is preferred. However, the compiler can ignore it. Two cases where this behavior can happen are:
 
@@ -139,6 +173,18 @@ If the compiler can't inline a function declared with **`__forceinline`**, it ge
 - The function is defined externally, in an included library or another translation unit, or is a virtual call target or indirect call target. The compiler can't identify non-inlined code that it can't find in the current translation unit.
 
 Recursive functions can be replaced with inline code to a depth specified by the [`inline_depth`](../preprocessor/inline-depth.md) pragma, up to a maximum of 16 calls. After that depth, recursive function calls are treated as calls to an instance of the function.  The depth to which recursive functions are examined by the inline heuristic can't exceed 16. The [`inline_recursion`](../preprocessor/inline-recursion.md) pragma controls the inline expansion of a function currently under expansion. See the [Inline-Function Expansion](../build/reference/ob-inline-function-expansion.md) (/Ob) compiler option for related information.
+
+The C++ Standard defines a common set of attributes. It also allows compiler vendors to define their own attributes within a vendor-specific (in our case, `msvc`) namespace. The following Microsoft-specific attributes can be used to control inlining behavior: 
+
+## Microsoft-specific attributes for controlling inlining behavior
+
+|Attribute | Meaning |
+|---------|---------|
+| [`[msvc::forceinline]`](/cpp/cpp/attributes#msvcforceinline)| Has the same meaning as **`__forceinline`**.|
+| [`[msvc::forceinline_calls]`](/cpp/cpp/attributes#msvcforceinline_calls) | Can be placed on or before a statement or block to cause the inline heuristic to force-inline all calls in that statement or block.|
+| [`[msvc::flatten]`](/cpp/cpp/attributes#msvcflatten) | Similar to `[[msvc::forceinline_calls]]`, but recursively force-inlines all calls in the scope it's applied to until no calls are left. |
+| [`[msvc::noinline]`](/cpp/cpp/attributes#msvcnoinline) | When placed before a function declaration, has the same meaning as `__declspec(noinline)`. |
+| [`[msvc::noinline_calls]`](/cpp/cpp/attributes#msvcnoinline_calls) | Can be placed before any statement or block to turn off inlining for all calls in the scope it's applied to. |
 
 **END Microsoft Specific**
 
@@ -228,8 +274,8 @@ int main()
 
 Here are some of the differences between the macro and the inline function:
 
-- Macros are always expanded inline. However, an inline function is only inlined when the compiler determines it is the optimal thing to do.
-- The macro may result in unexpected behavior, which can lead to subtle bugs. For example, the expression `mult1(2 + 2, 3 + 3)` expands to `2 + 2 * 3 + 3` which evaluates to 11, but the expected result is 24. A seemingly valid fix is to add parentheses around both arguments of the function macro, resulting in `#define mult2(a, b) (a) * (b)`, which will solve the issue at hand but can still cause surprising behavior when part of a larger expression. That was demonstrated in the preceding example, and the problem could be addressed by defining the macro as such `#define mult3(a, b) ((a) * (b))`.
+- Macros are always expanded inline. However, an inline function is only inlined when the compiler determines it's the optimal thing to do.
+- The macro may result in unexpected behavior, which can lead to subtle bugs. For example, the expression `mult1(2 + 2, 3 + 3)` expands to `2 + 2 * 3 + 3` which evaluates to 11, but the expected result is 24. A seemingly valid fix is to add parentheses around both arguments of the function macro, resulting in `#define mult2(a, b) (a) * (b)`, which solves the issue at hand but can still cause surprising behavior when part of a larger expression. That was demonstrated in the preceding example, and the problem could be addressed by defining the macro as such `#define mult3(a, b) ((a) * (b))`.
 - An inline function is subject to semantic processing by the compiler, whereas the preprocessor expands macros without that same benefit. Macros aren't type-safe, whereas functions are.
 - Expressions passed as arguments to inline functions are evaluated once. In some cases, expressions passed as arguments to macros can be evaluated more than once. For example, consider the following:
 
@@ -272,4 +318,9 @@ In this example, the function `increment` is called twice as the expression `sqr
 ## See also
 
 [`noinline`](../cpp/noinline.md)\
-[`auto_inline`](../preprocessor/auto-inline.md)
+[`auto_inline`](../preprocessor/auto-inline.md)\
+[`[msvc::forceinline]`](/cpp/cpp/attributes#msvcforceinline)\
+[`[msvc::forceinline_calls]`](/cpp/cpp/attributes#msvcforceinline_calls)\
+[`[msvc::flatten]`](/cpp/cpp/attributes#msvcflatten)\
+[`[msvc::nolinline]`](/cpp/cpp/attributes#msvcnoinline)\
+[`[msvc::nolinline_calls]`](/cpp/cpp/attributes#msvcnoinline_calls)
