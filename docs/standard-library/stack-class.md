@@ -377,7 +377,7 @@ int main( )
    stack <int> s1;
 
    s1.push( 1 );
-   s1.push( 2 );
+   s1.push( 3 );
 
    int& i = s1.top( );
    const int& ii = s1.top( );
@@ -385,13 +385,13 @@ int main( )
    cout << "The top integer of the stack s1 is "
         << i << "." << endl;
    i--;
-   cout << "The next integer down is "<< ii << "." << endl;
+   cout << "The updated top integer is " << ii << "." << endl;
 }
 ```
 
 ```Output
-The top integer of the stack s1 is 2.
-The next integer down is 1.
+The top integer of the stack s1 is 3.
+The updated top integer is 2.
 ```
 
 ## <a name="value_type"></a> `value_type`
