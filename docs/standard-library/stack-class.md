@@ -385,7 +385,7 @@ int main( )
    cout << "The top integer of the stack s1 is "
         << i << "." << endl;
    i--;
-   cout << "The updated top integer is "<< ii << "." << endl;
+   cout << "The updated top integer is " << ii << "." << endl;
 }
 ```
 
