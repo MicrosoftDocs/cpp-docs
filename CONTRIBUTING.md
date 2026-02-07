@@ -1,8 +1,8 @@
 # Contributing
 
-Thank you for your interest in contributing to the Visual C++ documentation!
+Thank you for your interest in contributing to the Microsoft C++ documentation!
 
-In this topic, you'll see the basic process for adding or updating content in the [Visual C++ documentation site](https://learn.microsoft.com/cpp/).
+In this topic, you'll see the basic process for adding or updating content in the [Microsoft C++ documentation site](https://learn.microsoft.com/cpp/).
 
 In this topic, we'll cover:
 
@@ -43,7 +43,7 @@ docs
 
 **Step 5:** Submit a Pull Request (PR) from your branch to `MicrosoftDocs/cpp-docs/main`.
 
-The Visual C++ team will review your PR and let you know if the change looks good or if there are any other updates/changes necessary in order to approve it.
+The Microsoft C++ docs team will review your PR and let you know if the change looks good or if there are any other updates/changes necessary in order to approve it.
 
 **Step 6:** Make any necessary updates to your branch as discussed with the team.
 
@@ -53,7 +53,7 @@ On a certain cadence, we push all commits from main branch into the live branch 
 
 ## DOs and DON'Ts
 
-Below is a short list of guiding rules that you should keep in mind when you are contributing to the Visual C++ documentation.
+Below is a short list of guiding rules that you should keep in mind when you are contributing to the Microsoft C++ documentation.
 
 - **DON'T** surprise us with big pull requests.
 - **DO** read the [style guide](./styleguide/template.md) and [voice and tone](./styleguide/voice-tone.md) guidelines.
