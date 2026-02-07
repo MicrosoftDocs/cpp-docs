@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: runtime_error Class"
-title: "runtime_error Class"
-ms.date: "09/09/2021"
+title: "runtime_error class"
+description: "Learn more about: runtime_error class"
+ms.date: 09/09/2021
 f1_keywords: ["stdexcept/std::runtime_error"]
 helpviewer_keywords: ["runtime_error class"]
-ms.assetid: 4d0227bf-847b-45a2-a320-2351ebf98368
 ---
-# runtime_error Class
+# `runtime_error` class
 
 The class serves as the base class for all exceptions thrown to report errors presumably detectable only when the program executes.
 
@@ -18,13 +17,12 @@ public:
     explicit runtime_error(const string& message);
 
     explicit runtime_error(const char *message);
-
 };
 ```
 
 ## Remarks
 
-The value returned by `what()` is a copy of `message.data()`. For more information, see [`what`](../standard-library/exception-class.md) and [`data`](../standard-library/basic-string-class.md#data).
+The value returned by `what()` is a copy of `message.data()`. For more information, see [`what`](exception-class.md) and [`data`](basic-string-class.md#data).
 
 ## Example
 
@@ -49,19 +47,20 @@ int main()
       cerr << "Type: " << typeid(e).name() << endl;
    }
 }
-/* Output:
+```
+
+```Output
 Caught: bad locale name
 Type: class std::runtime_error
-*/
 ```
 
 ## Requirements
 
-**Header:** \<stdexcept>
+**Header:** `<stdexcept>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 
-[exception Class](../standard-library/exception-class.md)\
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[`exception` class](exception-class.md)\
+[Thread Safety in the C++ Standard Library](thread-safety-in-the-cpp-standard-library.md)

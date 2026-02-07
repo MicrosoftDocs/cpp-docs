@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4247"
 title: "Linker Tools Warning LNK4247"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4247"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4247"]
 helpviewer_keywords: ["LNK4247"]
-ms.assetid: 085d7fdf-9eaf-4641-8473-6eaadd073c7b
 ---
 # Linker Tools Warning LNK4247
 
-entry point 'decorated_function_name' already has a thread attribute; 'attribute' ignored
+> entry point 'decorated_function_name' already has a thread attribute; 'attribute' ignored
+
+## Remarks
 
 An entry point, specified with [/ENTRY (Entry-Point Symbol)](../../build/reference/entry-entry-point-symbol.md), had a threading attribute, but [/CLRTHREADATTRIBUTE (Set CLR Thread Attribute)](../../build/reference/clrthreadattribute-set-clr-thread-attribute.md) was also specified, with a different threading model.
 
@@ -26,7 +27,9 @@ To resolve this warning:
 
 - Change the attribute in source, such that, it agrees with the value passed to /CLRTHREADATTRIBUTE.
 
-The following sample generates LNK4247
+## Example
+
+The following example generates LNK4247
 
 ```cpp
 // LNK4247.cpp

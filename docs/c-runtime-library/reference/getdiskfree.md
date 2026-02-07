@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: _getdiskfree"
 title: "_getdiskfree"
+description: "Learn more about: _getdiskfree"
 ms.date: 05/11/2022
 api_name: ["_getdiskfree", "_o__getdiskfree"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
@@ -66,7 +66,7 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 
 ```C
 // crt_getdiskfree.c
-// compile with: /c
+
 #include <windows.h>
 #include <direct.h>
 #include <stdio.h>

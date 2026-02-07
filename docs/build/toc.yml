@@ -83,7 +83,7 @@ items:
 - name: "Header units"
   expanded: false
   items:
-    - name: "Walkthrough: Build and import header units in Visual C++ projects"
+    - name: "Walkthrough: Build and import header units in Microsoft C++ projects"
       href: ../build/walkthrough-header-units.md
     - name: "Walkthrough: Import STL libraries as header units"
       href: ../build/walkthrough-import-stl-header-units.md
@@ -552,7 +552,7 @@ items:
                       href: ../build/reference/fp-name-dot-pch-file.md
                     - name: /FR, /Fr (Create .Sbr file)
                       href: ../build/reference/fr-fr-create-dot-sbr-file.md
-                    - name: /FU (Name forced
+                    - name: "/FU (Name forced #using file)"
                       href: ../build/reference/fu-name-forced-hash-using-file.md
                     - name: /Fx (Merge injected code)
                       href: ../build/reference/fx-merge-injected-code.md

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: /c (Compile Without Linking)"
 title: "/c (Compile Without Linking)"
-ms.date: "11/04/2016"
+description: "Learn more about: /c (Compile Without Linking)"
+ms.date: 11/04/2016
 f1_keywords: ["/c"]
 helpviewer_keywords: ["suppress link", "cl.exe compiler, compiling without linking", "-c compiler option [C++]", "c compiler option [C++]", "/c compiler option [C++]"]
-ms.assetid: 8017fc3d-e5dd-4668-a1f7-3120daa95d20
 ---
 # /c (Compile Without Linking)
 
@@ -34,13 +33,13 @@ Any internal project created in the development environment uses the **/c** opti
 
 The following command line creates the object files FIRST.obj and SECOND.obj. THIRD.obj is ignored.
 
-```
+```cmd
 CL /c FIRST.C SECOND.C THIRD.OBJ
 ```
 
 To create an executable file, you must invoke LINK:
 
-```
+```cmd
 LINK first.obj second.obj third.obj /OUT:filename.exe
 ```
 

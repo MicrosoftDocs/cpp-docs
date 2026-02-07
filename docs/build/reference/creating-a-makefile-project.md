@@ -30,7 +30,13 @@ The output file that you specify in the project has no effect on the name that t
 
 ### To create a makefile project in Visual Studio
 
-1. From the Visual Studio main menu, choose **File** > **New** > **Project** and type "makefile" into the search box. If you see more than one project template, select from the options depending on your target platform.
+1. From the Visual Studio main menu, choose **File** > **New** > **Project/Solution**.
+
+    :::image type="content" source="media/file-new-project.png" alt-text="Screenshot of the File > New > Project/Solution menu item.":::
+
+1. Type *makefile* into the search box. If you see more than one project template, select the option for your target platform.
+
+    :::image type="content" source="media/create-project.png" alt-text="Screenshot of the Create a new project dialog. The Create a new project text field text box contains the text: makefile.":::
 
 1. **Windows only**: In the Makefile project **Debug Configuration Settings** page, provide the command, output, clean, and rebuild information for debug and retail builds. Choose **Next** if you want to specify different settings for a Release configuration.
 

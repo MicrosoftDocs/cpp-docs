@@ -1,18 +1,18 @@
 ---
-title: "Walkthrough: Use Address Sanitizer Continue On Error to find memory safety issues"
-description: "Learn how to use Address Sanitizer continue on error to find memory safety errors in your app."
+title: "Walkthrough: Use AddressSanitizer Continue On Error to find memory safety issues"
+description: "Learn how to use AddressSanitizer continue on error to find memory safety errors in your app."
 ms.date: 07/31/2023
 f1_keywords: ["AddressSanitizer", "Continue On Error"]
 helpviewer_keywords: ["ASan", "AddressSanitizer", "Address Sanitizer", "compiling for AddressSanitizer", "Continue On Error", "ASAN continue on error", "Address Sanitizer continue on error"]
 ---
 
-# Walkthrough: Use Address Sanitizer Continue On Error to find memory safety issues
+# Walkthrough: Use AddressSanitizer Continue On Error to find memory safety issues
 
 In this walkthrough, create checked builds that find and report memory safety errors.
 
-Memory safety errors like out-of-bounds memory reads and writes, using memory after it has been freed, `NULL` pointer dereferences, and so on, are a top concern for C/C++ code. Address Sanitizer (ASAN) is a compiler and runtime technology that exposes these kinds of hard-to-find bugs, and does it with zero false positives. For an overview of ASAN, see [AddressSanitizer](asan.md).
+Memory safety errors like out-of-bounds memory reads and writes, using memory after it has been freed, `NULL` pointer dereferences, and so on, are a top concern for C/C++ code. AddressSanitizer (ASAN) is a compiler and runtime technology that exposes these kinds of hard-to-find bugs, and does it with zero false positives. For an overview of ASAN, see [AddressSanitizer](asan.md).
 
-Continue On Error (COE) is a new ASAN feature that automatically diagnoses and reports memory safety errors as your app runs. When your program exits, a summary of unique memory safety errors is output to `stdout`, `stderr`, or to a log file of your choice. When you create a standard C++ checked build with `-fsanitizer=address`, calls to allocators, deallocators such as `free`, `memcpy`, `memset`, and so on, are forwarded to the ASAN runtime. The ASAN runtime provides the same semantics for these functions, but monitors what happens with the memory. ASAN diagnoses and reports hidden memory safety errors, with zero false positives, as your app runs.
+Continue On Error (COE) is a new ASAN feature that automatically diagnoses and reports memory safety errors as your app runs. When your program exits, a summary of unique memory safety errors is output to `stdout`, `stderr`, or to a log file of your choice. When you create a standard C++ checked build with `-fsanitize=address`, calls to allocators, deallocators such as `free`, `memcpy`, `memset`, and so on, are forwarded to the ASAN runtime. The ASAN runtime provides the same semantics for these functions, but monitors what happens with the memory. ASAN diagnoses and reports hidden memory safety errors, with zero false positives, as your app runs.
 
 A significant advantage of COE is that, unlike the previous ASAN behavior, your program doesn't stop running when the first memory error is found. Instead, ASAN notes the error, and your app continues to run. After your app exits, a summary of all the memory issues is output.
 
@@ -44,21 +44,21 @@ Create the example:
     ```cpp
     #include <stdio.h>
     #include <stdlib.h>
-    
+
     void BadFunction(int *pointer)
     {
         free(pointer);
         free(pointer); // double-free!
     }
-    
+
     int main(int argc, const char *argv[])
     {
         int *pointer = static_cast<int *>(malloc(4));
         BadFunction(pointer);
-    
+
         // Normally we'd crash before this, but with COE we can see heap-use-after-free error as well
         printf("\n\n******* Pointer value: %d\n", *pointer);
-    
+
         return 1;
     }
     ```
@@ -67,7 +67,7 @@ In the preceding code, `pointer` is freed twice. This is a contrived example, bu
 
 Create a build of the preceding code with COE turned on with the following steps:
 
-1. Compile the code in the developer command prompt you opened earlier: `cl -fsanitize=address -Zi doublefree.cpp`. The `-fsanitize=address` switch turns on ASAN, and `-Zi` creates a separate PDB file that address sanitizer uses to display memory error location information.
+1. Compile the code in the developer command prompt you opened earlier: `cl -fsanitize=address -Zi doublefree.cpp`. The `-fsanitize=address` switch turns on ASAN, and `-Zi` creates a separate PDB file that AddressSanitizer uses to display memory error location information.
 1. Send ASAN output to `stdout` by setting the `ASAN_OPTIONS` environment variable in the developer command prompt as follows: `set ASAN_OPTIONS=continue_on_error=1`
 1. Run the test code with: `doublefree.exe`
 
@@ -181,24 +181,24 @@ Create the example:
 1. In that directory, create a source file, for example, `coe.cpp`, and paste the following code:
 
     ```cpp
-    #include <stdlib.h> 
-    
+    #include <stdlib.h>
+
     char* func(char* buf, size_t sz)
-    { 
-        char* local = (char*)malloc(sz); 
-        for (auto ii = 0; ii <= sz; ii++) // bad loop exit test 
+    {
+        char* local = (char*)malloc(sz);
+        for (auto ii = 0; ii <= sz; ii++) // bad loop exit test
         {
-            local[ii] = ~buf[ii]; // Two memory safety errors 
+            local[ii] = ~buf[ii]; // Two memory safety errors
         }
-     
-        return local; 
-    } 
-    
-    char buffer[10] = {0,1,2,3,4,5,6,7,8,9}; 
-    
+
+        return local;
+    }
+
+    char buffer[10] = {0,1,2,3,4,5,6,7,8,9};
+
     int main()
-    {   
-        char* inverted_buf= func(buffer, 10); 
+    {
+        char* inverted_buf= func(buffer, 10);
     }
     ```
 
@@ -213,7 +213,7 @@ Errors are only observable if the page following the allocation is unmapped, or 
 
 Create a build of the preceding code with COE turned on:
 
-1. Compile the code with `cl -fsanitize=address -Zi coe.cpp`. The `-fsanitize=address` switch turns on ASAN, and `-Zi` creates a separate PDB file that address sanitizer uses to display memory error location information.
+1. Compile the code with `cl -fsanitize=address -Zi coe.cpp`. The `-fsanitize=address` switch turns on ASAN, and `-Zi` creates a separate PDB file that AddressSanitizer uses to display memory error location information.
 1. Send ASAN output to `stdout` by setting the `ASAN_OPTIONS` environment variable in the developer command prompt as follows: `set ASAN_OPTIONS=continue_on_error=1`
 1. Run the test code with: `coe.exe`
 
@@ -263,7 +263,7 @@ File: C:\Users\xxx\Desktop\COE\coe.cpp
 	Raw HitCnt: 1  On Reference: 1-byte-write-heap-buffer-overflow 
 ```
 
-The default Address Sanitizer runtime behavior terminates the app after reporting the first error it finds. It doesn't allow the "bad" machine instruction to execute. The new Address Sanitizer runtime diagnoses and reports errors, but then executes subsequent instructions.
+The default AddressSanitizer runtime behavior terminates the app after reporting the first error it finds. It doesn't allow the "bad" machine instruction to execute. The new AddressSanitizer runtime diagnoses and reports errors, but then executes subsequent instructions.
 
 COE tries to automatically return control back to the application after reporting each memory safety error. There are situations when it can't, such as when there's a memory access violation (AV) or a failed memory allocation. COE doesn't continue after access violations that the program's structured exception handling doesn't catch. If COE can't return execution to the app, a `CONTINUE CANCELLED - Deadly Signal. Shutting down.` message is output.
 
@@ -339,7 +339,7 @@ int main()
 
 In `main()` a large number is passed to `foo_redundant`, which is ultimately passed to `_alloca()`, which causes `_alloca()` to fail.
 
-This example outputs `pass` when compiled without ASAN (that is, no `-fsanitize=address` switch) but outputs `fail` when compiled with ASAN turned on (that is, with the `-fsanitize=address` switch). That's because without ASAN, the exception code matches `RET_STACK_EXCEPTION` so `cnt` is set to 1. It behaves differently when compiled with ASAN on because the thrown exception is an Address Sanitizer error instead: dynamic-stack-buffer-overflow. That means the code returns `RET_OTHER_EXCEPTION` instead of `RET_STACK_EXCEPTION` so `cnt` isn't set to 1.
+This example outputs `pass` when compiled without ASAN (that is, no `-fsanitize=address` switch) but outputs `fail` when compiled with ASAN turned on (that is, with the `-fsanitize=address` switch). That's because without ASAN, the exception code matches `RET_STACK_EXCEPTION` so `cnt` is set to 1. It behaves differently when compiled with ASAN on because the thrown exception is an AddressSanitizer error instead: dynamic-stack-buffer-overflow. That means the code returns `RET_OTHER_EXCEPTION` instead of `RET_STACK_EXCEPTION` so `cnt` isn't set to 1.
 
 ## Other benefits
 

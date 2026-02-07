@@ -20,7 +20,7 @@ Control containers typically take two forms in a project:
 
 The ActiveX control container interacts with the control via exposed [methods](mfc-activex-controls-methods.md) and [properties](mfc-activex-controls-properties.md). These methods and properties, which can be accessed and modified by the control container, are accessed through a wrapper class in the ActiveX control container project. The embedded ActiveX control can also interact with the container by firing (sending) [events](mfc-activex-controls-events.md) to notify the container that an action has occurred. The control container can choose to act upon these notifications or not.
 
-Additional articles discuss several topics, from creating an ActiveX control container project to basic implementation issues related to ActiveX control containers built with Visual C++:
+Additional articles discuss several topics, from creating an ActiveX control container project to basic implementation issues related to ActiveX control containers built with Visual Studio:
 
 - [Creating an MFC ActiveX Control Container](reference/creating-an-mfc-activex-control-container.md)
 
@@ -42,7 +42,7 @@ Additional articles discuss several topics, from creating an ActiveX control con
 
 For more information about using ActiveX controls in a dialog box, see the [Dialog Editor](../windows/dialog-editor.md) topics.
 
-For a list of articles that explain the details of developing ActiveX controls using Visual C++ and the MFC ActiveX control classes, see [MFC ActiveX controls](mfc-activex-controls.md). The articles are grouped by functional categories.
+For a list of articles that explain the details of developing ActiveX controls using Visual Studio and the MFC ActiveX control classes, see [MFC ActiveX controls](mfc-activex-controls.md). The articles are grouped by functional categories.
 
 ## See also
 

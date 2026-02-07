@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3022"
 title: "Compiler Error C3022"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3022"
+ms.date: 11/04/2016
 f1_keywords: ["C3022"]
 helpviewer_keywords: ["C3022"]
-ms.assetid: 9f1d444c-6c6e-48d9-9346-69128390aa33
 ---
 # Compiler Error C3022
 
-'clause' : invalid schedule kind of 'value' on OpenMP 'directive' directive
+> 'clause' : invalid schedule kind of 'value' on OpenMP 'directive' directive
+
+## Remarks
 
 An unsupported value was passed to a clause.
 
-The following sample generates C3022:
+## Example
+
+The following example generates C3022:
 
 ```cpp
 // C3022.cpp

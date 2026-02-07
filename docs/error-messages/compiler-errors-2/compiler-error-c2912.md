@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2912"
 title: "Compiler Error C2912"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2912"
+ms.date: 11/04/2016
 f1_keywords: ["C2912"]
 helpviewer_keywords: ["C2912"]
-ms.assetid: bd55cecd-ab1a-4636-ab8a-a00393fe7b3d
 ---
 # Compiler Error C2912
 
-explicit specialization 'declaration' is not a specialization of a function template
+> explicit specialization 'declaration' is not a specialization of a function template
+
+## Remarks
 
 You cannot specialize a non-template function.
 
-The following sample generates C2912:
+## Examples
+
+The following example generates C2912:
 
 ```cpp
 // C2912.cpp

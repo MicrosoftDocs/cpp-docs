@@ -1,6 +1,6 @@
-// Initialize the storage of the list box to be 256 strings with
-// about 10 characters per string, performance improvement.
-int n = m_myListBox.InitStorage(256, 16 * sizeof(TCHAR));
+// Reserve space in the list box for 256 additional strings with
+// about 15 characters per string.
+int n = m_myListBox.InitStorage(256, 256 * (15 + 1) * sizeof(TCHAR));
 ASSERT(n != LB_ERRSPACE);
 
 // Add 256 items to the list box.

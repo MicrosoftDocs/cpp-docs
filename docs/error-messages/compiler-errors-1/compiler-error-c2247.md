@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2247"
 title: "Compiler Error C2247"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2247"
+ms.date: 11/04/2016
 f1_keywords: ["C2247"]
 helpviewer_keywords: ["C2247"]
-ms.assetid: 72efa03e-615e-4ef9-aede-0a98654b20fd
 ---
 # Compiler Error C2247
 
-'identifier' not accessible because 'class' uses 'specifier' to inherit from 'class'
+> 'identifier' not accessible because 'class' uses 'specifier' to inherit from 'class'
+
+## Remarks
 
 `identifier` is inherited from a class declared with private or protected access.
 
-The following sample generates C2247:
+## Examples
+
+The following example generates C2247:
 
 ```cpp
 // C2247.cpp

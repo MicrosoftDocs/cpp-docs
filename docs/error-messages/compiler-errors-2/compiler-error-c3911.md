@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C3911"
 title: "Compiler Error C3911"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3911"
+ms.date: 11/04/2016
 f1_keywords: ["C3911"]
 helpviewer_keywords: ["C3911"]
-ms.assetid: b786da59-0e99-479d-bc0d-551126e940f2
 ---
 # Compiler Error C3911
 
-'event_accessor_method': function must have type 'signature'
+> 'event_accessor_method': function must have type 'signature'
+
+## Remarks
 
 An event's accessor method was not properly declared.
 
 For more information, see [event](../../extensions/event-cpp-component-extensions.md).
 
-The following sample generates C3911:
+## Example
+
+The following example generates C3911:
 
 ```cpp
 // C3911.cpp

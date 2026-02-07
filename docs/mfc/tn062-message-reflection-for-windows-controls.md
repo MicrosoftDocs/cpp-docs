@@ -90,7 +90,7 @@ This simple example creates a reusable control called `CYellowEdit`. The control
 
    You must have an application in which to develop the reusable control. If you don't have an existing application to use, create a dialog-based application using AppWizard.
 
-2. With your project loaded into Visual C++, use ClassWizard to create a new class called `CYellowEdit` based on `CEdit`.
+2. With your project loaded into Visual Studio, use ClassWizard to create a new class called `CYellowEdit` based on `CEdit`.
 
 3. Add three member variables to your `CYellowEdit` class. The first two will be *COLORREF* variables to hold the text color and the background color. The third will be a `CBrush` object that will hold the brush for painting the background. The `CBrush` object allows you to create the brush once, merely referencing it after that, and to destroy the brush automatically when the `CYellowEdit` control is destroyed.
 

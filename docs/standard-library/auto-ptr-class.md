@@ -20,8 +20,7 @@ For more information about `throw()` and exception handling, see [Exception Spec
 class auto_ptr {
     typedef Type element_type;
     explicit auto_ptr(Type* ptr = 0) throw();
-    auto_ptr(auto_ptr<Type>& right) throw()
-        ;
+    auto_ptr(auto_ptr<Type>& right) throw();
     template <class Other>
     operator auto_ptr<Other>() throw();
     template <class Other>

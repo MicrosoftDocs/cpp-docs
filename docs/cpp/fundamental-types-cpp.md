@@ -1,10 +1,9 @@
 ---
+title: "Built-in types (C++)"
 description: "Learn more about: Built-in types (C++)"
-title: "Built-in types  (C++)"
 ms.date: 07/22/2020
 f1_keywords: ["__int128_cpp", "__wchar_t_cpp", "char_cpp", "char8_t_cpp", "char16_t_cpp", "char32_t_cpp", "double_cpp", "float_cpp", "int_cpp", "long_cpp", "long_double_cpp", "short_cpp", "signed_cpp", "unsigned_cpp", "unsigned_int_cpp", "wchar_t_cpp"]
 helpviewer_keywords: ["specifiers [C++], type", "float keyword [C++]", "char keyword [C++]", "__wchar_t keyword [C++]", "signed types [C++], summary of data types", "Integer data type [C++], C++ data types", "arithmetic operations [C++], types", "int data type", "unsigned types [C++], summary of data types", "short data type [C++]", "double data type [C++], summary of types", "long long keyword [C++]", "long double keyword [C++]", "unsigned types [C++]", "signed types [C++]", "void keyword [C++]", "storage [C++], basic type", "integral types, C++", "wchar_t keyword [C++]", "floating-point numbers [C++], C++ data types", "long keyword [C++]", "type specifiers [C++]", "integral types", "long keyword [C++]", "storing types [C++]", "data types [C++], void"]
-ms.assetid: 58b0106a-0406-4b74-a430-7cbd315c0f89
 ---
 # Built-in types (C++)
 
@@ -14,11 +13,11 @@ Built-in types (also called *fundamental types*) are specified by the C++ langua
 
 The [`void`](void-cpp.md) type describes an empty set of values. No variable of type **`void`** can be specified. The **`void`** type is used primarily to declare functions that return no values or to declare generic pointers to untyped or arbitrarily typed data. Any expression can be explicitly converted or cast to type **`void`**. However, such expressions are restricted to the following uses:
 
-- An expression statement. (For more information, see [Expressions](expressions-cpp.md).)
+- An expression statement. For more information, see [Expressions](expressions-cpp.md).
 
-- The left operand of the comma operator. (For more information, see [Comma Operator](comma-operator.md).)
+- The left operand of the comma operator. For more information, see [Comma Operator](comma-operator.md).
 
-- The second or third operand of the conditional operator (`? :`). (For more information, see [Expressions with the Conditional Operator](conditional-operator-q.md).)
+- The second or third operand of the conditional operator (`? :`). For more information, see [Expressions with the Conditional Operator](conditional-operator-q.md).
 
 ## std::nullptr_t
 

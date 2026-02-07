@@ -7,7 +7,7 @@ ms.assetid: 14d0c552-29db-480e-80c1-7ea89d6d8e9c
 ---
 # `.vcxproj` and `.props` file structure
 
-[MSBuild](../msbuild-visual-cpp.md) is the default project system in Visual Studio; when you choose **File** > **New Project** in Visual C++ you're creating an MSBuild project whose settings are stored in an XML project file that has the extension *`.vcxproj`*. The project file may also import *`.props`* files and *`.targets`* files where settings can be stored.
+[MSBuild](../msbuild-visual-cpp.md) is the default project system in Visual Studio; when you choose **File** > **New Project**, in most cases you're creating an MSBuild project whose settings are stored in an XML project file that has the extension *`.vcxproj`*. The project file may also import *`.props`* files and *`.targets`* files where settings can be stored.
 
 If you intend to maintain your project properties in the IDE, we recommend you only create and modify your *`.vcxproj`* projects in the IDE, and avoid manual edits to the files. In most cases, you never need to manually edit the project file. Manual edits may break the project connections required to modify project settings in the Visual Studio property pages, and can cause build errors that are difficult to debug and repair. For more information about using the property pages, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
@@ -125,18 +125,11 @@ The following snippet shows a project configuration. In this example, 'Debug|x64
 The IDE expects to find a project configuration for any combination of `Configuration` and `Platform` values used in all `ProjectConfiguration` items. Often, it means that a project might have meaningless project configurations to fulfill this requirement. For instance, if a project has these configurations:
 
 - Debug|Win32
-
+- Retail|x64
+- Debug|x64
 - Retail|Win32
 
-- Special 32-bit Optimization|Win32
-
-then it must also have these configurations, even though "Special 32-bit Optimization" is meaningless for x64:
-
-- Debug|x64
-
-- Retail|x64
-
-- Special 32-bit Optimization|x64
+Then if you add a new configuration to the project, say "Special 32-bit Optimization|Win32", then you must also add the configuration "Special 32-bit Optimization|x64", even though "Special 32-bit Optimization" is meaningless for x64.
 
 You can disable the build and deploy commands for any configuration in the **Solution Configuration Manager**.
 
@@ -195,7 +188,7 @@ The `PropertySheets` group contains the imports for user property sheets. These 
 <PropertyGroup Label="UserMacros" />
 ```
 
-`UserMacros` contains properties you create as variables that are used to customize your build process. For example, you can define a user macro to define your custom output path as $(CustomOutputPath) and use it to define other variables. This property group houses such properties. In Visual Studio, this group isn't populated in the project file because Visual C++ doesn't support user macros for configurations. User macros are supported in property sheets.
+`UserMacros` contains properties you create as variables that are used to customize your build process. For example, you can define a user macro to define your custom output path as $(CustomOutputPath) and use it to define other variables. This property group houses such properties. In Visual Studio, this group isn't populated in the project file because Microsoft C++ doesn't support user macros for configurations. User macros are supported in property sheets.
 
 ### Per-configuration PropertyGroup elements
 

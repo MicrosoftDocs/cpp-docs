@@ -20,7 +20,7 @@ ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
 ---
 # Code analysis for C/C++ overview
 
-The C/C++ Code Analysis tool provides information about possible defects in your C/C++ source code. Common coding errors reported by the tool include buffer overruns, uninitialized memory, null pointer dereferences, and memory and resource leaks. The tool can also run checks against the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+The Microsoft C++ Code Analysis tool provides information about possible defects in your C/C++ source code. Common coding errors reported by the tool include buffer overruns, uninitialized memory, null pointer dereferences, and memory and resource leaks. The tool can also run checks against the [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines).
 
 ## IDE (integrated development environment) integration
 

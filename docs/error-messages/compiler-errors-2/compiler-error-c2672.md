@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2672"
 title: "Compiler Error C2672"
-ms.date: "10/24/2017"
+description: "Learn more about: Compiler Error C2672"
+ms.date: 10/24/2017
 f1_keywords: ["C2672"]
 helpviewer_keywords: ["C2672"]
-ms.assetid: 7e86338a-2d4b-40fe-9dd2-ac6886f3f31a
 ---
 # Compiler Error C2672
 
 > '*function*': no matching overloaded function found
+
+## Remarks
 
 The compiler could not find an overloaded function that matches the specified function. No function was found that takes matching parameters, or no matching function has the required accessibility in context.
 

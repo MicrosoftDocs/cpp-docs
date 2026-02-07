@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3027"
 title: "Compiler Error C3027"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3027"
+ms.date: 11/04/2016
 f1_keywords: ["C3027"]
 helpviewer_keywords: ["C3027"]
-ms.assetid: 6562a5c2-2f28-4b36-91ca-2a64c0f0501a
 ---
 # Compiler Error C3027
 
-'clause' : arithmetic or pointer expression expected
+> 'clause' : arithmetic or pointer expression expected
+
+## Remarks
 
 A clause that requires an arithmetic or pointer expression was passed another kind of expression.
 
 ## Example
 
-The following sample generates C3027:
+The following example generates C3027:
 
 ```cpp
 // C3027.cpp

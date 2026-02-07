@@ -17,7 +17,7 @@ You can improve the quality of your application by running code analysis regular
 
 1. Optionally, in the **Configuration** and **Platform** lists, choose the build configuration and target platform.
 
-1. To run code analysis every time the project is built using the selected configuration, select the **Enable Code Analysis on Build** check box. You can also run code analysis manually by opening the **Analyze** menu and then choosing **Run Code Analysis on** *ProjectName* or **Run Code Analysis on File**.
+1. To run code analysis every time the project is built using the selected configuration, select **Configuration Properties** > **Code Analysis**, then select the **Enable Code Analysis on Build** check box. You can also run code analysis manually by opening the **Analyze** menu and then choosing **Run Code Analysis on** *ProjectName* or **Run Code Analysis on File**.
 
 1. Choose the [rule set](using-rule-sets-to-specify-the-cpp-rules-to-run.md) that you want to use or create a [custom rule set](using-rule-sets-to-specify-the-cpp-rules-to-run.md#to-create-a-rule-set-in-a-text-editor). If using LLVM/clang-cl, see [Using Clang-Tidy in Visual Studio](clang-tidy.md) to configure Clang-Tidy analysis options.
 
@@ -27,25 +27,25 @@ Visual Studio includes these standard sets of rules for native code:
 
 | Rule Set | Description |
 |--|--|
-| **C++ Core Check Arithmetic Rules** | These rules enforce checks related to [arithmetic operations from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es-expressions-and-statements). |
-| **C++ Core Check Bounds Rules** | These rules enforce the [Bounds profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile). |
-| **C++ Core Check Class Rules** | These rules enforce checks related to [classes from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c-classes-and-class-hierarchies). |
-| **C++ Core Check Concurrency Rules** | These rules enforce checks related to [concurrency from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#cpcon-concurrency). |
-| **C++ Core Check Const Rules** | These rules enforce [const-related checks from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability). |
-| **C++ Core Check Declaration Rules** | These rules enforce checks related to [declarations from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i-interfaces). |
-| **C++ Core Check Enum Rules** | These rules enforce [enum-related checks from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-enum). |
+| **C++ Core Check Arithmetic Rules** | These rules enforce checks related to [arithmetic operations from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#es-expressions-and-statements). |
+| **C++ Core Check Bounds Rules** | These rules enforce the [Bounds profile of the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#probounds-bounds-safety-profile). |
+| **C++ Core Check Class Rules** | These rules enforce checks related to [classes from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c-classes-and-class-hierarchies). |
+| **C++ Core Check Concurrency Rules** | These rules enforce checks related to [concurrency from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#cpcon-concurrency). |
+| **C++ Core Check Const Rules** | These rules enforce [const-related checks from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#con-constants-and-immutability). |
+| **C++ Core Check Declaration Rules** | These rules enforce checks related to [declarations from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#i-interfaces). |
+| **C++ Core Check Enum Rules** | These rules enforce [enum-related checks from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-enum). |
 | **C++ Core Check Experimental Rules** | These rules collect some experimental checks. Eventually, we expect these checks to be moved to other rulesets or removed completely. |
-| **C++ Core Check Function Rules** | These rules enforce checks related to [functions from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f-functions). |
-| **C++ Core Check GSL Rules** | These rules enforce checks related to the [Guidelines Support Library from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-gsl). |
-| **C++ Core Check Lifetime Rules** | These rules enforce the [Lifetime profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prolifetime-lifetime-safety-profile). |
-| **C++ Core Check Owner Pointer Rules** | These rules enforce resource-management checks related to [`owner<T>` from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management). |
-| **C++ Core Check Raw Pointer Rules** | These rules enforce resource-management checks related to [raw pointers from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management). |
-| **C++ Core Check Rules** | These rules enforce a subset of the checks from the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c-core-guidelines). Use this ruleset to include all of the C++ Core Check rules except the Enum and Experimental rulesets. |
-| **C++ Core Check Shared Pointer Rules** | These rules enforce resource-management checks related to [types with shared pointer semantics from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management). |
-| **C++ Core Check STL Rules** | These rules enforce checks related to the [C++ Standard Library from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-stdlib). |
-| **C++ Core Check Style Rules** | These rules enforce checks related to use of [expressions and statements from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es-expressions-and-statements). |
-| **C++ Core Check Type Rules** | These rules enforce the [Type profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile). |
-| **C++ Core Check Unique Pointer Rules** | These rules enforce resource-management checks related to types with [unique pointer semantics from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management). |
+| **C++ Core Check Function Rules** | These rules enforce checks related to [functions from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#f-functions). |
+| **C++ Core Check GSL Rules** | These rules enforce checks related to the [Guidelines Support Library from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-gsl). |
+| **C++ Core Check Lifetime Rules** | These rules enforce the [Lifetime profile of the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#prolifetime-lifetime-safety-profile). |
+| **C++ Core Check Owner Pointer Rules** | These rules enforce resource-management checks related to [`owner<T>` from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#r-resource-management). |
+| **C++ Core Check Raw Pointer Rules** | These rules enforce resource-management checks related to [raw pointers from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#r-resource-management). |
+| **C++ Core Check Rules** | These rules enforce a subset of the checks from the [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c-core-guidelines). Use this ruleset to include all of the C++ Core Check rules except the Enum and Experimental rulesets. |
+| **C++ Core Check Shared Pointer Rules** | These rules enforce resource-management checks related to [types with shared pointer semantics from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#r-resource-management). |
+| **C++ Core Check STL Rules** | These rules enforce checks related to the [C++ Standard Library from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-stdlib). |
+| **C++ Core Check Style Rules** | These rules enforce checks related to use of [expressions and statements from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#es-expressions-and-statements). |
+| **C++ Core Check Type Rules** | These rules enforce the [Type profile of the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#prosafety-type-safety-profile). |
+| **C++ Core Check Unique Pointer Rules** | These rules enforce resource-management checks related to types with [unique pointer semantics from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#r-resource-management). |
 | **Concurrency Check Rules** | These rules enforce a set of Win32 concurrency pattern checks in C++. |
 | **Concurrency Rules** | Adds concurrency rules from C++ Core Guidelines to **Concurrency Check Rules**. |
 | **Microsoft Native Minimum Rules** | These rules focus on the most critical problems in your native code, including potential security holes and application crashes. We recommend you include this rule set in any custom rule set you create for your native projects. |
@@ -92,7 +92,7 @@ To run code analysis on a file:
 
 1. In the **Build** menu, choose **Run Code Analysis on File** or press **Ctrl+Shift+Alt+F7**.
 
-   The project or solution is compiled and code analysis runs. Results appear in the Error List window.
+The project or solution is compiled and code analysis runs. Results appear in the **Error List** window.
 
 ## Analyze and resolve code analysis warnings
 

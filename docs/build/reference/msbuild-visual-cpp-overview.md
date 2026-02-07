@@ -84,7 +84,7 @@ To use MSBuild effectively, it helps to know which properties and targets are us
 
 ### `PlatformToolset` property
 
-The `PlatformToolset` property determines which MSVC toolset is used in the build. By default, the current toolset is used. When this property is set, its value gets concatenated with literal strings to form the path. It's the directory that contains the property and target files required to build a project for a particular platform. The platform toolset must be installed to build by using that platform toolset version.
+The `PlatformToolset` property determines which Microsoft C++ (MSVC) toolset is used in the build. By default, the current toolset is used. When this property is set, its value gets concatenated with literal strings to form the path. It's the directory that contains the property and target files required to build a project for a particular platform. The platform toolset must be installed to build by using that platform toolset version.
 
 For example, set the `PlatformToolset` property to `v140` to use Visual Studio 2015 tools and libraries to build your application:
 

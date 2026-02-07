@@ -1,30 +1,31 @@
 ---
-title: "AddressSanitizer language, build, and debugging reference"
-description: "Technical description of building for the AddressSanitizer"
+title: "MSVC AddressSanitizer language, build, and debugging reference"
+description: "Technical description of building for the MSVC AddressSanitizer"
 ms.date: 02/05/2024
 f1_keywords: ["__SANITIZE_ADDRESS__", "ASAN_VCASAN_DEBUGGING"]
-helpviewer_keywords: ["ASan reference", "AddressSanitizer reference", "Address Sanitizer reference"]
+helpviewer_keywords: ["ASan reference", "MSVC AddressSanitizer reference", "MSVC Address Sanitizer reference"]
 ---
-# AddressSanitizer language, build, and debugging reference
+# MSVC AddressSanitizer language, build, and debugging reference
 
-This article describes the AddressSanitizer language specification, compiler options, linker options, and the options that control Visual Studio debugger integration specific to the AddressSanitizer.
+This article describes the MSVC AddressSanitizer language specification, compiler options, linker options, and the options that control Visual Studio debugger integration specific to the MSVC AddressSanitizer.
 
-For more information on the AddressSanitizer runtime, see the [runtime reference](asan-runtime.md). It includes information on intercepted functions and how to hook custom allocators. For more information on saving crash dumps from AddressSanitizer failures, see the [crash dump reference](asan-offline-crash-dumps.md).
+For more information on the MSVC AddressSanitizer runtime, see the [runtime reference](asan-runtime.md). It includes information on intercepted functions and how to hook custom allocators. For more information on saving crash dumps from MSVC AddressSanitizer failures, see the [crash dump reference](asan-offline-crash-dumps.md).
 
 ## Language specification
 
 ### `__SANITIZE_ADDRESS__`
 
-The `__SANITIZE_ADDRESS__` preprocessor macro is defined as `1` when [`/fsanitize=address`](../build/reference/fsanitize.md) is set. This macro is useful for advanced users to conditionally specify source code for the presence of the AddressSanitizer runtime.
+The `__SANITIZE_ADDRESS__` preprocessor macro is defined as `1` when [`/fsanitize=address`](../build/reference/fsanitize.md) is set. This macro is useful to conditionally specify source code for the presence of the MSVC AddressSanitizer runtime.
 
 ```cpp
 #include <cstdio>
 
-int main() {
+int main()
+{
     #ifdef __SANITIZE_ADDRESS__
-        printf("Address sanitizer enabled");
+        printf("MSVC AddressSanitizer enabled");
     #else
-        printf("Address sanitizer not enabled");
+        printf("MSVC AddressSanitizer not enabled");
     #endif
     return 1;
 }
@@ -35,19 +36,30 @@ int main() {
 The [`__declspec(no_sanitize_address)`](../cpp/no-sanitize-address.md) specifier can be used to selectively disable the sanitizer on functions, local variables, or global variables. This `__declspec` affects _compiler_ behavior, not _runtime_ behavior.
 
 ```cpp
-__declspec(no_sanitize_address)
-void test1() {
+#ifdef __SANITIZE_ADDRESS__
+// no_sanitize_address is only defined when compiling with MSVC AddressSanitizer.
+// Guard against this by checking if `__SANITIZE_ADDRESS__` is defined.
+#define NO_SANITIZE_ADDRESS __declspec(no_sanitize_address)
+#else
+#define NO_SANITIZE_ADDRESS
+#endif
+
+NO_SANITIZE_ADDRESS
+void test1()
+{
     int x[100];
     x[100] = 5; // ASan exception not caught
 }
 
-void test2() {
-    __declspec(no_sanitize_address) int x[100];
+void test2()
+{
+    NO_SANITIZE_ADDRESS int x[100];
     x[100] = 5; // ASan exception not caught
 }
 
-__declspec(no_sanitize_address) int g[100];
-void test3() {
+NO_SANITIZE_ADDRESS int g[100];
+void test3()
+{
     g[100] = 5; // ASan exception not caught
 }
 ```
@@ -56,11 +68,11 @@ void test3() {
 
 ### `/fsanitize=address` compiler option
 
-The [**`/fsanitize=address`**](../build/reference/fsanitize.md) compiler option instruments memory references in your code to catch memory safety errors at runtime. The instrumentation hooks loads, stores, scopes, `alloca`, and CRT functions. It can detect hidden bugs such as out-of-bounds, use-after-free, use-after-scope, and so on. For a nonexhaustive list of errors detected at runtime, see [AddressSanitizer error examples](asan-error-examples.md).
+The [**`/fsanitize=address`**](../build/reference/fsanitize.md) compiler option instruments memory references in your code to catch memory safety errors at runtime. The instrumentation hooks loads, stores, scopes, `alloca`, and CRT functions. It can detect hidden bugs such as out-of-bounds, use-after-free, use-after-scope, and so on. For a nonexhaustive list of errors detected at runtime, see [MSVC AddressSanitizer error examples](asan-error-examples.md).
 
 **`/fsanitize=address`** is compatible with all existing C++ or C optimization levels (for example, **`/Od`**, **`/O1`**, **`/O2`**, and **`/O2 /GL`**). The code produced with this option works with static and dynamic CRTs (for example, **`/MD`**, **`/MDd`**, **`/MT`**, and **`/MTd`**). This compiler option can be used to create an .EXE or .DLL targeting x86 or x64. Debug information is required for optimal formatting of call stacks. This compiler option isn't supported with profile guided optimization.
 
-For examples of code that demonstrates several kinds of error detection, see [AddressSanitizer error examples](asan-error-examples.md).
+For examples of code that demonstrates several kinds of error detection, see [MSVC AddressSanitizer error examples](asan-error-examples.md).
 
 ### `/fsanitize=fuzzer` compiler option (experimental)
 
@@ -95,7 +107,7 @@ If you specify **`/NODEFAULTLIB`** and you don't specify one of these libraries,
 
 ### `/fsanitize-address-use-after-return` compiler option (experimental)
 
-By default, the MSVC compiler (unlike Clang) doesn't generate code to allocate frames in the heap to catch use-after-return errors. To catch these errors using AddressSanitizer, you must:
+By default, the MSVC compiler (unlike Clang) doesn't generate code to allocate frames in the heap to catch use-after-return errors. To catch these errors using MSVC AddressSanitizer, you must:
 
 1. Compile using the [`/fsanitize-address-use-after-return`](../build/reference/fsanitize.md) option.
 2. Before executing your program, run `set ASAN_OPTIONS=detect_stack_use_after_return=1` to set the runtime check option.
@@ -120,38 +132,37 @@ Using **`/fsanitize-address-asan-compat-lib`** to link a newer compiler with an 
 
 ### `/INFERASANLIBS[:NO]` linker option
 
-The **`/fsanitize=address`** compiler option marks objects to specify which AddressSanitizer library to link into your executable. The libraries have names that begin with *`clang_rt.asan*`*. The [`/INFERASANLIBS`](../build/reference/inferasanlibs.md) linker option (on by default) links these libraries from their default locations automatically. Here are the libraries chosen and automatically linked in.
+The **`/fsanitize=address`** compiler option marks objects to specify which MSVC AddressSanitizer library to link into your executable. The libraries have names that begin with *`clang_rt.asan*`*. The [`/INFERASANLIBS`](../build/reference/inferasanlibs.md) linker option (on by default) links these libraries from their default locations automatically. Here are the libraries chosen and automatically linked in.
 
 > [!NOTE]
 > In the following table, *`{arch}`* is either *`i386`* or *`x86_64`*.
 > These libraries use Clang conventions for architecture names. MSVC conventions are normally `x86` and `x64` rather than `i386` and `x86_64`. They refer to the same architectures.
 
-| CRT option | AddressSanitizer runtime library (.lib) | Address runtime binary (.dll)
+| CRT option | MSVC AddressSanitizer runtime library (.lib) | Address runtime binary (.dll)
 |--|--|--|
-| `/MT` or `/MTd` | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_static_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
-| `/MD` or `/MDd` | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_dynamic_runtime_thunk-{arch}`* | *`clang_rt.asan_dynamic-{arch}`*
+| `/MT` or `/MTd` | *`clang_rt.asan_dynamic-{arch}.lib`*, *`/wholearchive:clang_rt.asan_static_runtime_thunk-{arch}.lib`* | *`clang_rt.asan_dynamic-{arch}.dll`*
+| `/MD` or `/MDd` | *`clang_rt.asan_dynamic-{arch}.lib`*, *`/wholearchive:clang_rt.asan_dynamic_runtime_thunk-{arch}.lib`* | *`clang_rt.asan_dynamic-{arch}.dll`*
 
-The linker option [`/INFERASANLIBS:NO`](../build/reference/inferasanlibs.md) prevents the linker from linking a *`clang_rt.asan*`* library file from the default location. Add the library path in your build scripts if you use this option. Otherwise, the linker reports an unresolved external symbol error.
+The linker option [`/INFERASANLIBS:NO`](../build/reference/inferasanlibs.md) prevents the linker from linking a *`clang_rt.asan*`* library file from the default location. Add the library path in your build scripts if you use this option. Otherwise, the linker reports an unresolved external symbol error. The runtime thunk libraries **must** be linked with the `/wholearchive` option applied.
 
 **Previous Versions**
 
-Prior to Visual Studio 17.7 Preview 3, statically linked (**`/MT`** or **`/MTd`**) builds didn't use a DLL dependency. Instead, the AddressSanitizer runtime was statically linked into the user's EXE. DLL projects would then load exports from the user's EXE to access ASan functionality. Also, dynamically linked projects (**`/MD`** or **`/MTd`**) used different libraries and DLLs depending on whether the project was configured for debug or release. For more information about these changes and their motivations, see [MSVC Address Sanitizer – One DLL for all Runtime Configurations](https://devblogs.microsoft.com/cppblog/msvc-address-sanitizer-one-dll-for-all-runtime-configurations/).
+Prior to Visual Studio 17.7 Preview 3, statically linked (**`/MT`** or **`/MTd`**) builds didn't use a DLL dependency. Instead, the MSVC AddressSanitizer runtime was statically linked into the user's EXE. DLL projects would then load exports from the user's EXE to access ASan functionality. Also, dynamically linked projects (**`/MD`** or **`/MTd`**) used different libraries and DLLs depending on whether the project was configured for debug or release. For more information about these changes and their motivations, see [MSVC AddressSanitizer – One DLL for all Runtime Configurations](https://devblogs.microsoft.com/cppblog/msvc-address-sanitizer-one-dll-for-all-runtime-configurations/).
 
-
-| CRT runtime option | DLL or EXE | AddressSanitizer runtime libraries |
+| CRT runtime option | DLL or EXE | MSVC AddressSanitizer runtime libraries |
 |--|--|--|
-| **`/MT`** | EXE | *`clang_rt.asan-{arch}`*, *`clang_rt.asan_cxx-{arch}`* |
-| **`/MT`** | DLL | *`clang_rt.asan_dll_thunk-{arch}`* |
-| **`/MD`** | Either | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_dynamic_runtime_thunk-{arch}`* |
-| **`/MTd`**  | EXE | *`clang_rt.asan_dbg-{arch}`*, *`clang_rt.asan_dbg_cxx-{arch}`* |
-| **`/MTd`**  | DLL | *`clang_rt.asan_dbg_dll_thunk-{arch}`* |
-| **`/MDd`**  | Either | *`clang_rt.asan_dbg_dynamic-{arch}`*, *`clang_rt.asan_dbg_dynamic_runtime_thunk-{arch}`* |
+| **`/MT`** | EXE | *`/wholearchive:clang_rt.asan-{arch}.lib`*, *`clang_rt.asan_cxx-{arch}.lib`* |
+| **`/MT`** | DLL | *`/wholearchive:clang_rt.asan_dll_thunk-{arch}.lib`* |
+| **`/MD`** | Either | *`clang_rt.asan_dynamic-{arch}.lib`*, *`/wholearchive:clang_rt.asan_dynamic_runtime_thunk-{arch}.lib`* |
+| **`/MTd`**  | EXE | *`/wholearchive:clang_rt.asan_dbg-{arch}.lib`*, *`clang_rt.asan_cxx_dbg-{arch}.lib`* |
+| **`/MTd`**  | DLL | *`/wholearchive:clang_rt.asan_dbg_dll_thunk-{arch}.lib`* |
+| **`/MDd`**  | Either | *`/wholearchive:clang_rt.asan_dbg_dynamic-{arch}.lib`*, *`clang_rt.asan_dbg_dynamic_runtime_thunk-{arch}.lib`* |
 
 ## Visual Studio integration
 
 ### `/fno-sanitize-address-vcasan-lib` compiler option
 
-The **`/fsanitize=address`** option links in extra libraries for an improved Visual Studio debugging experience when an AddressSanitizer exception is thrown. These libraries are called **VCAsan**. The libraries enable Visual Studio to display AddressSanitizer errors on your source code. They also enable the executable to generate crash dumps when an AddressSanitizer error report is created. For more information, see [Visual Studio AddressSanitizer extended functionality library](asan-debugger-integration.md).
+The **`/fsanitize=address`** option links in extra libraries for an improved Visual Studio debugging experience when an MSVC AddressSanitizer exception is thrown. These libraries are called **VCAsan**. The libraries enable Visual Studio to display MSVC AddressSanitizer errors on your source code. They also enable the executable to generate crash dumps when an MSVC AddressSanitizer error report is created. For more information, see [Visual Studio MSVC AddressSanitizer extended functionality library](asan-debugger-integration.md).
 
 The library chosen depends on the compiler options, and is automatically linked in.
 
@@ -179,10 +190,10 @@ To enable this behavior, run the command `set ASAN_VCASAN_DEBUGGING=1` before yo
 
 ## See also
 
-[AddressSanitizer overview](asan.md)\
-[AddressSanitizer known issues](asan-known-issues.md)\
-[AddressSanitizer runtime reference](asan-runtime.md)\
-[AddressSanitizer shadow bytes](asan-shadow-bytes.md)\
-[AddressSanitizer cloud or distributed testing](asan-offline-crash-dumps.md)\
-[AddressSanitizer debugger integration](asan-debugger-integration.md)\
-[AddressSanitizer error examples](asan-error-examples.md)
+[MSVC AddressSanitizer overview](asan.md)\
+[MSVC AddressSanitizer known issues](asan-known-issues.md)\
+[MSVC AddressSanitizer runtime reference](asan-runtime.md)\
+[MSVC AddressSanitizer shadow bytes](asan-shadow-bytes.md)\
+[MSVC AddressSanitizer cloud or distributed testing](asan-offline-crash-dumps.md)\
+[MSVC AddressSanitizer debugger integration](asan-debugger-integration.md)\
+[MSVC AddressSanitizer error examples](asan-error-examples.md)

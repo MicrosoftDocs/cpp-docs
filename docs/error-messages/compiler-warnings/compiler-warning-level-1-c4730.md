@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Warning (Level 1) C4730"
 title: "Compiler Warning (Level 1) C4730"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (Level 1) C4730"
+ms.date: 11/04/2016
 f1_keywords: ["C4730"]
 helpviewer_keywords: ["C4730"]
-ms.assetid: 11303e3f-162b-4b19-970a-479686123a68
 ---
 # Compiler Warning (Level 1) C4730
 
-'main' : mixing _m64 and floating point expressions may result in incorrect code
+> 'main' : mixing _m64 and floating point expressions may result in incorrect code
+
+## Remarks
 
 A function uses [__m64](../../cpp/m64.md) and **`float`**/**`double`** types. Because the MMX and floating-point registers share the same physical register space (cannot be used simultaneously), using **`__m64`** and **`float`**/**`double`** types in the same function can result in data corruption, possibly causing an exception.
 
 To safely use **`__m64`** types and floating-point types in the same function, each instruction that uses one of the types should be separated by the **_m_empty()** (for MMX) or **_m_femms()** (for 3DNow!) intrinsic.
 
-The following sample generates C4730:
+## Example
+
+The following example generates C4730:
 
 ```cpp
 // C4730.cpp

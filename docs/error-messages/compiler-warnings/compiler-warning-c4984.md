@@ -1,7 +1,7 @@
 ---
-description: "Learn more about: Compiler Warning C4984"
 title: "Compiler Warning C4984"
-ms.date: "08/19/2019"
+description: "Learn more about: Compiler Warning C4984"
+ms.date: 08/19/2019
 f1_keywords: ["C4984"]
 helpviewer_keywords: ["C4984"]
 ---
@@ -19,7 +19,7 @@ This warning is available starting in Visual Studio 2017 version 15.3. For infor
 
 ## Example
 
-This sample generates C4984, and shows ways to fix it:
+This example generates C4984, and shows ways to fix it:
 
 ```cpp
 // C4984.cpp

@@ -1,13 +1,15 @@
 ---
 title: "Error: stack-use-after-return"
-description: "Learn about the stack-use-after-return Address Sanitizer error."
+description: "Learn about the stack-use-after-return AddressSanitizer error."
 ms.date: 03/02/2021
 f1_keywords: ["stack-use-after-return"]
 helpviewer_keywords: ["stack-use-after-return error", "AddressSanitizer error stack-use-after-return"]
 ---
 # Error: `stack-use-after-return`
 
-> Address Sanitizer Error: Use of stack memory after return
+> AddressSanitizer Error: Use of stack memory after return
+
+## Remarks
 
 This check requires code generation that's activated by an extra compiler option, [`/fsanitize-address-use-after-return`](../build/reference/fsanitize.md), and by setting the environment variable `ASAN_OPTIONS=detect_stack_use_after_return=1`.
 
@@ -109,11 +111,11 @@ ASAN is a form of dynamic analysis, which means it can only detect bad code that
 
 ## See also
 
-[AddressSanitizer overview](./asan.md)\
-[AddressSanitizer known issues](./asan-known-issues.md)\
-[AddressSanitizer build and language reference](./asan-building.md)\
-[AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
-[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
-[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-error-examples.md)
+[AddressSanitizer overview](asan.md)\
+[AddressSanitizer known issues](asan-known-issues.md)\
+[AddressSanitizer build and language reference](asan-building.md)\
+[AddressSanitizer runtime reference](asan-runtime.md)\
+[AddressSanitizer shadow bytes](asan-shadow-bytes.md)\
+[AddressSanitizer cloud or distributed testing](asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](asan-debugger-integration.md)\
+[AddressSanitizer error examples](asan-error-examples.md)

@@ -9,7 +9,7 @@ ARM64EC is an application binary interface (ABI) that enables ARM64 binaries to 
 
 For more information on the x64 and ARM64 ABIs, see [Overview of x64 ABI conventions](x64-software-conventions.md) and [Overview of ARM64 ABI conventions](arm64-windows-abi-conventions.md).
 
-ARM64EC doesn't solve memory model differences between x64 and ARM based architectures. For more information, see [Common Visual C++ ARM migration issues](common-visual-cpp-arm-migration-issues.md).
+ARM64EC doesn't solve memory model differences between x64 and ARM based architectures. For more information, see [Common Microsoft C++ ARM migration issues](common-visual-cpp-arm-migration-issues.md).
 
 ## Definitions
 
@@ -188,5 +188,5 @@ The ARM64EC toolchain currently doesn't support `__vectorcall`. The compiler emi
 ## See also
 
 [Understanding ARM64EC ABI and assembly code](/windows/arm/arm64ec-abi)\
-[Common Visual C++ ARM migration issues](common-visual-cpp-arm-migration-issues.md)\
+[Common Microsoft C++ ARM migration issues](common-visual-cpp-arm-migration-issues.md)\
 [Decorated names](./reference/decorated-names.md)

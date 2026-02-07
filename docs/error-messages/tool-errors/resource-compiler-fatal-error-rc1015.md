@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Resource Compiler Fatal Error RC1015"
 title: "Resource Compiler Fatal Error RC1015"
-ms.date: "11/04/2016"
+description: "Learn more about: Resource Compiler Fatal Error RC1015"
+ms.date: 11/04/2016
 f1_keywords: ["RC1015"]
 helpviewer_keywords: ["RC1015"]
-ms.assetid: 23f187e1-5538-40b5-9042-edd2888f55c2
 ---
 # Resource Compiler Fatal Error RC1015
 
-cannot open include file 'filename'
+> cannot open include file 'filename'
+
+## Remarks
 
 The given include file does not exist, could not be opened, or was not found.
 

@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C2261"
 title: "Compiler Error C2261"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2261"
+ms.date: 11/04/2016
 f1_keywords: ["C2261"]
 helpviewer_keywords: ["C2261"]
-ms.assetid: 60969482-9e83-49b5-9631-a04bc844da12
 ---
 # Compiler Error C2261
 
-'string' : assembly reference is invalid and cannot be resolved
+> 'string' : assembly reference is invalid and cannot be resolved
+
+## Remarks
 
 A value was not valid.
 
@@ -18,7 +19,7 @@ For more on the correct syntax when specifying friend assemblies, see [Friend As
 
 ## Example
 
-The following sample generates C2261.
+The following example generates C2261.
 
 ```cpp
 // C2261.cpp

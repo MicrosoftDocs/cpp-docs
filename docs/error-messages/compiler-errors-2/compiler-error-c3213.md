@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3213"
 title: "Compiler Error C3213"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3213"
+ms.date: 11/04/2016
 f1_keywords: ["C3213"]
 helpviewer_keywords: ["C3213"]
-ms.assetid: 1f079e36-b3e9-40f8-8e95-08eeba3adc82
 ---
 # Compiler Error C3213
 
-base class 'base_type' is less accessible than 'derived_type'
+> base class 'base_type' is less accessible than 'derived_type'
+
+## Remarks
 
 A type that will be visible from an assembly must use publicly visible base classes.
 
-The following sample generates C3213:
+## Example
+
+The following example generates C3213:
 
 ```cpp
 // C3213.cpp

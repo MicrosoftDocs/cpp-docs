@@ -416,9 +416,9 @@ A full rebuild is required after these changes are made.
 
 ### Building the Samples
 
-Most of the MFC sample programs can be built from Visual C++ or from a shared NMAKE-compatible MAKEFILE from the command line.
+Most of the MFC sample programs can be built from Visual Studio or from a shared NMAKE-compatible MAKEFILE from the command line.
 
-To convert any of these samples to use *`MFCxx.DLL`*, you can load the MAK file into the Visual C++ and set the Project options as described above. If you're using the NMAKE build, you can specify `AFXDLL=1` on the NMAKE command line and that will build the sample using the shared MFC libraries.
+To convert any of these samples to use *`MFCxx.DLL`*, you can load the MAK file into the Visual Studio and set the Project options as described above. If you're using the NMAKE build, you can specify `AFXDLL=1` on the NMAKE command line and that will build the sample using the shared MFC libraries.
 
 The MFC Advanced Concepts sample [DLLHUSK](../overview/visual-cpp-samples.md) is built with the DLL version of MFC. This sample not only illustrates how to build an application linked with *`MFCxx.DLL`*, but it also illustrates other features of the MFC DLL packaging option such as MFC extension DLLs described later in this technical note.
 
@@ -426,7 +426,7 @@ The MFC Advanced Concepts sample [DLLHUSK](../overview/visual-cpp-samples.md) is
 
 The release versions of the DLLs (*`MFCxx.DLL`* and *`MFCxxU.DLL`*) are freely redistributable. The debug versions of the DLLs are not freely redistributable and should be used only during the development of your application.
 
-The debug DLLs are provided with debugging information. By using the Visual C++ debugger, you can trace execution of both your application and the DLL. The Release DLLs (*`MFCxx.DLL`* and *`MFCxxU.DLL`*) don't contain debugging information.
+The debug DLLs are provided with debugging information. By using the Visual Studio debugger, you can trace execution of both your application and the DLL. The Release DLLs (*`MFCxx.DLL`* and *`MFCxxU.DLL`*) don't contain debugging information.
 
 If you customize or rebuild the DLLs, then you should call them something other than "MFCxx". The MFC SRC file *`MFCDLL.MAK`* describes build options and contains the logic for renaming the DLL. Renaming the files is necessary, since these DLLs are potentially shared by many MFC applications. Having your custom version of the MFC DLLs replace the ones installed on the system may break another MFC application using the shared MFC DLLs.
 

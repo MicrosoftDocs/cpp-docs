@@ -8,7 +8,7 @@ dev_langs:
 ---
 # Use the C++ Core Guidelines checkers
 
-The C++ Core Guidelines are a portable set of guidelines, rules, and best practices about coding in C++ created by C++ experts and designers. Visual Studio currently supports a subset of these rules as part of its code analysis tools for C++. The core guideline checkers are installed by default in Visual Studio 2017 and Visual Studio 2019. They're [available as a NuGet package for Visual Studio 2015](#vs2015_corecheck).
+The C++ Core Guidelines are a portable set of guidelines, rules, and best practices about coding in C++ created by C++ experts and designers. Visual Studio currently supports a subset of these rules as part of its Microsoft C++ Code Analysis tools. The core guideline checkers are installed by default in Visual Studio 2017 and Visual Studio 2019. They're [available as a NuGet package for Visual Studio 2015](#vs2015_corecheck).
 
 ## The C++ Core Guidelines Project
 
@@ -39,7 +39,7 @@ To enable more Core Check rules, open the dropdown list and choose which rule se
 
 A subset of C++ Core Check rules is included in the Microsoft Native Recommended rule set. It's the ruleset that runs by default when Microsoft code analysis is enabled.
 
-### To enable code analysis on your project:
+### To enable code analysis on your project
 
 1. Open the  **Property Pages** dialog for your project.
 
@@ -111,43 +111,43 @@ The C++ Core Guidelines are there to help you write better and safer code. Howev
 As new rules are added to the C++ Core Guidelines Checker, the number of warnings that are produced for pre-existing code might increase. You can use predefined rule sets to filter which kinds of rules to enable. You'll find reference articles for most rules under
 [Visual Studio C++ Core Check Reference](code-analysis-for-cpp-corecheck.md).
 
-- **Arithmetic Rules**: Rules to detect arithmetic [overflow](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow), [signed-unsigned operations](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned), and [bit manipulation](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative).<sup>15.6</sup>
+- **Arithmetic Rules**: Rules to detect arithmetic [overflow](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Res-overflow), [signed-unsigned operations](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Res-unsigned), and [bit manipulation](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Res-nonnegative).<sup>15.6</sup>
 
-- **Bounds Rules**: Enforce the [Bounds profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).<sup>15.3</sup>
+- **Bounds Rules**: Enforce the [Bounds profile of the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#probounds-bounds-safety-profile).<sup>15.3</sup>
 
-- **Class Rules**: A few rules that focus on proper use of special member functions and virtual specifications. They're a subset of the checks recommended for [classes and class hierarchies](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class).<sup>15.5</sup>
+- **Class Rules**: A few rules that focus on proper use of special member functions and virtual specifications. They're a subset of the checks recommended for [classes and class hierarchies](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-class).<sup>15.5</sup>
 
-- **Concurrency Rules**: A single rule, which catches bad guard object declarations. For more information, see [guidelines related to concurrency](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency).<sup>15.5</sup>
+- **Concurrency Rules**: A single rule, which catches bad guard object declarations. For more information, see [guidelines related to concurrency](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-concurrency).<sup>15.5</sup>
 
-- **Const Rules**: Enforce [const-related checks from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).<sup>15.3</sup>
+- **Const Rules**: Enforce [const-related checks from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#con-constants-and-immutability).<sup>15.3</sup>
 
-- **Declaration Rules**: A couple of rules from the [interfaces guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) that focus on how global variables are declared.<sup>15.5</sup>
+- **Declaration Rules**: A couple of rules from the [interfaces guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-interfaces) that focus on how global variables are declared.<sup>15.5</sup>
 
-- **Enum Rules**: These rules enforce [enum-related checks from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-enum).<sup>16.3</sup>
+- **Enum Rules**: These rules enforce [enum-related checks from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-enum).<sup>16.3</sup>
 
 - **Experimental Rules** These are experimental C++ Core Check rules that are useful but not ready for everyday use. Try them out and [provide feedback](https://aka.ms/feedback/suggest?space=62).<sup>16.0</sup>
 
-- **Function Rules**: Two checks that help with adoption of the **`noexcept`** specifier. They're part of the guidelines for [clear function design and implementation](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions).<sup>15.5</sup>
+- **Function Rules**: Two checks that help with adoption of the **`noexcept`** specifier. They're part of the guidelines for [clear function design and implementation](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-functions).<sup>15.5</sup>
 
-- **GSL Rules**: These rules enforce checks related to the [Guidelines Support Library from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-gsl).<sup>15.7</sup>
+- **GSL Rules**: These rules enforce checks related to the [Guidelines Support Library from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-gsl).<sup>15.7</sup>
 
-- **Lifetime Rules**: These rules enforce the [Lifetime profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prolifetime-lifetime-safety-profile).<sup>15.7</sup>
+- **Lifetime Rules**: These rules enforce the [Lifetime profile of the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#prolifetime-lifetime-safety-profile).<sup>15.7</sup>
 
-- **Owner Pointer Rules**: Enforce [resource-management checks related to owner\<T> from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).<sup>15.3</sup>
+- **Owner Pointer Rules**: Enforce [resource-management checks related to owner\<T> from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#r-resource-management).<sup>15.3</sup>
 
-- **Raw Pointer Rules**: Enforce [resource-management checks related to raw pointers from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).<sup>15.3</sup>
+- **Raw Pointer Rules**: Enforce [resource-management checks related to raw pointers from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#r-resource-management).<sup>15.3</sup>
 
-- **Shared pointer Rules**: It's part of [resource management](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) guidelines enforcement.<sup>15.5</sup> We added a few rules specific to how shared pointers are passed into functions or used locally.
+- **Shared pointer Rules**: It's part of [resource management](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-resource) guidelines enforcement.<sup>15.5</sup> We added a few rules specific to how shared pointers are passed into functions or used locally.
 
-- **STL Rules**: These rules enforce checks related to the [C++ Standard Library (STL) from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-stdlib).<sup>15.7</sup>
+- **STL Rules**: These rules enforce checks related to the [C++ Standard Library (STL) from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-stdlib).<sup>15.7</sup>
 
-- **Style Rules**: One simple but important check, which bans use of [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto).<sup>15.5</sup> It's the first step to improve your coding style and use of expressions and statements in C++.
+- **Style Rules**: One simple but important check, which bans use of [goto](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Res-goto).<sup>15.5</sup> It's the first step to improve your coding style and use of expressions and statements in C++.
 
-- **Type Rules**: Enforce the [Type profile of the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).<sup>15.3</sup>
+- **Type Rules**: Enforce the [Type profile of the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#prosafety-type-safety-profile).<sup>15.3</sup>
 
-- **Unique Pointer Rules**: Enforce [resource-management checks related to types with unique pointer semantics from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).<sup>15.3</sup>
+- **Unique Pointer Rules**: Enforce [resource-management checks related to types with unique pointer semantics from the C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#r-resource-management).<sup>15.3</sup>
 
-- **C++ Core Check Rules**: This rule set contains all the currently implemented checks from the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c-core-guidelines), except for the Experimental rules.
+- **C++ Core Check Rules**: This rule set contains all the currently implemented checks from the [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c-core-guidelines), except for the Experimental rules.
 
 <sup>15.3</sup> These rules first appeared in Visual Studio 2017 version 15.3\
 <sup>15.5</sup> These rules first appeared in Visual Studio 2017 version 15.5\
@@ -305,7 +305,7 @@ The Guideline Support Library (GSL) is designed to help you follow the Core Guid
 
 ## <a name="vs2015_corecheck"></a> Use the C++ Core Check guidelines in Visual Studio 2015 projects
 
-If you use Visual Studio 2015, the C++ Core Check code analysis rule sets aren't installed by default. Other steps are needed before you can enable the C++ Core Check code analysis tools in Visual Studio 2015. Microsoft provides support for Visual Studio 2015 projects by using a NuGet package. The package is named Microsoft.CppCoreCheck, and it's available at [http://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck). This package requires you have at least Visual Studio 2015 with Update 1 installed.
+If you use Visual Studio 2015, the C++ Core Check code analysis rule sets aren't installed by default. Other steps are needed before you can enable the C++ Core Check code analysis tools in Visual Studio 2015. Microsoft provides support for Visual Studio 2015 projects by using a NuGet package. The package is named Microsoft.CppCoreCheck, and it's available at [https://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck). This package requires you have at least Visual Studio 2015 with Update 1 installed.
 
 The package also installs another package as a dependency, the header-only Guideline Support Library (GSL). The GSL is also available on GitHub at [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 

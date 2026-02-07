@@ -29,7 +29,7 @@ Clip-art resources are additional resources that the framework does not depend o
 
 - Prompts.rc: Contains menu-prompt string resources for each predefined command, such as "Create a new document" for ID_FILE_NEW.
 
-- Commdlg.rc: A Visual C++ compatible .rc file that contains the standard COMMDLG dialog templates.
+- Commdlg.rc: A Visual Studio compatible .rc file that contains the standard COMMDLG dialog templates.
 
 Standard framework resources are resources with AFX-defined IDs that the framework depends on for internal implementations. You will rarely need to change these AFX-defined resources. If you do, you should follow the procedure outlined later in this topic.
 
@@ -47,7 +47,7 @@ The following framework resources are contained in the MFC\INCLUDE directory:
 
 #### To use a clip-art binary resource
 
-1. Open your application's resource file in Visual C++.
+1. Open your application's resource file in Visual Studio.
 
 1. Open Common.rc. This file contains all the binary clip-art resources. This may take some time because the Common.rc file is compiled.
 
@@ -76,7 +76,7 @@ In some rare cases you might want to customize the contents of the standard fram
 
 ##### To customize the contents of a standard resource file
 
-1. Open the resource file in Visual C++.
+1. Open the resource file in Visual Studio.
 
 1. Using the Resource Set Includes command, remove the `#include` for the standard .rc file that you want to customize. For example, to customize the print-preview toolbar, remove the `#include "afxprint.rc"` line.
 

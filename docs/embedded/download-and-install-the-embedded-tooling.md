@@ -15,6 +15,9 @@ ms.topic: install-set-up-deploy
 
 In Visual Studio 2022 and later versions, you can use the Visual Studio IDE on Windows to edit and debug embedded projects. Use tools such as the [Peripheral View](./peripheral-view.md), [RTOS View](./rtos-view.md), and the [Serial Monitor](./serial-monitor.md) to help interact with and debug your embedded projects.
 
+> [!IMPORTANT]
+> Starting with Visual Studio 2026 (version 18.0), the Mobile development with C++ workload for iOS and Android, as well as the Embedded and IoT tools (RTOS Viewer, Serial Monitor, Peripheral Viewer, and ST Project Import), are no longer supported and will be removed in a future update. The Android NDKs included in the Mobile development with C++ workload remain supported.
+
 To use the embedded development tools in Visual Studio, you must install the required **Linux and embedded development with C++** workload.
 
 ## To install the Linux and embedded development with C++ workload
@@ -25,7 +28,7 @@ To use the embedded development tools in Visual Studio, you must install the req
 
 1. Open the Visual Studio Installer. In Visual Studio Installer, choose **Modify** next to your installation of Visual Studio, and then select the **Workloads** tab. Scroll down to **Other toolsets** and select the **Linux and embedded development with C++** workload.
 
-   ![Screenshot showing the Visual C++ for Linux Development workload item in Visual Studio Installer.](media/linux-and-embedded-workload.png)
+   ![Screenshot showing the Microsoft C++ for Linux Development workload item in Visual Studio Installer.](media/linux-and-embedded-workload.png)
 
 1. Choose **Modify** to continue with the installation.
 

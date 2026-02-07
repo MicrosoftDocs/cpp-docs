@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: <new>"
 title: "<new>"
-ms.date: "11/04/2016"
+description: "Learn more about: <new>"
+ms.date: 11/04/2016
 f1_keywords: ["<new>"]
 helpviewer_keywords: ["new header"]
-ms.assetid: 218e2a15-34e8-4ef3-9122-1e90eccf8559
 ---
 # `<new>`
 
@@ -33,7 +32,7 @@ Some of the functions declared in this header are replaceable. The implementatio
 |Name|Description|
 |-|-|
 |[new_handler](../standard-library/new-typedefs.md#new_handler)|A type that points to a function suitable for use as a new handler.|
-|[hardware_constructive_interference_size](../standard-library/new-typedefs.md#hardware_destructive_interference_size)||
+|[hardware_constructive_interference_size](../standard-library/new-typedefs.md#hardware_constructive_interference_size)||
 |[hardware_destructive_interference_size](../standard-library/new-typedefs.md#hardware_destructive_interference_size)||
 
 ### Functions

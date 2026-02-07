@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: /P (Preprocess to a File)"
 title: "/P (Preprocess to a File)"
-ms.date: "11/04/2016"
+description: "Learn more about: /P (Preprocess to a File)"
+ms.date: 11/04/2016
 f1_keywords: ["VC.Project.VCCLCompilerTool.GeneratePreprocessedFile", "/p", "VC.Project.VCCLWCECompilerTool.GeneratePreprocessedFile"]
 helpviewer_keywords: ["/P compiler option [C++]", "-P compiler option [C++]", "P compiler option [C++]", "output files, preprocessor", "preprocessing output files"]
-ms.assetid: 123ee54f-8219-4a6f-9876-4227023d83fc
 ---
 # /P (Preprocess to a File)
 
@@ -40,7 +39,7 @@ The **/P** option suppresses compilation. It does not produce an .obj file, even
 
 The following command line preprocesses `ADD.C`, preserves comments, adds `#line` directives, and writes the result to a file, `ADD.I`:
 
-```
+```cmd
 CL /P /C ADD.C
 ```
 

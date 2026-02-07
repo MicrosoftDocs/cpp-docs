@@ -114,8 +114,8 @@ Tests that do deeper verification and take longer to run, such as static analysi
 **Key tools** Be aware of and use the following:
 
 - [Code analysis documentation - C++ and .NET](/visualstudio/code-quality/)
-- [`/analyze` - Visual C++ compiler](../build/reference/analyze-code-analysis.md)
-- [`/W4` and `/WX` - Visual C++ compiler](../build/reference/compiler-option-warning-level.md)
+- [`/analyze` - Microsoft C++ compiler](../build/reference/analyze-code-analysis.md)
+- [`/W4` and `/WX` - Microsoft C++ compiler](../build/reference/compiler-option-warning-level.md)
 - [Use the C++ Core Guidelines Checkers](using-the-cpp-core-guidelines-checkers.md)
 - [CodeQL | GitHub](https://codeql.github.com/)
 - [Binskim user guide | GitHub](https://github.com/microsoft/binskim/blob/main/docs/UserGuide.md)
@@ -123,7 +123,7 @@ Tests that do deeper verification and take longer to run, such as static analysi
 
 Notes:
 
-- `/analyze` enables static analysis of C++ code at compile time to identify critical security and reliability code vulnerabilities. It should be enabled throughout a C++ program's entire development timeline. Start by enabling at least the "Microsoft Native Recommended" by default as a minimum baseline. Then consult the documentation for how to specify more rules, especially the C++ Core Guidelines rules, as required by your engineering policies. The source code Static Analysis capability is available in both the Visual C++ IDE and in the command-line Build Tools.
+- `/analyze` enables static analysis of C++ code at compile time to identify critical security and reliability code vulnerabilities. It should be enabled throughout a C++ program's entire development timeline. Start by enabling at least the "Microsoft Native Recommended" by default as a minimum baseline. Then consult the documentation for how to specify more rules, especially the C++ Core Guidelines rules, as required by your engineering policies. The source code Static Analysis capability is available in both the Visual Studio IDE and in the command-line Build Tools.
 - `/W4` and `/WX` should be enabled wherever possible, to ensure you compile your code cleanly at high warning levels (`W4`) and treat warnings as errors that must be fixed (`WX`). These options enable finding uninitialized data errors that other static analysis tools can't check, because the errors only become visible after the compiler back-end performs interprocedural analysis and inlining.
 - BinSkim binary analysis ensures that projects enable a broad range of security features. BinSkim generates PDBs and other outputs that make it easier to verify chain-of-custody and to respond efficiently to security issues. Microsoft recommends running the BinSkim tool to analyze all executable binaries (`.sys`, `.dll` or `.exe`) produced for or consumed by your programs.  The BinSkim User Guide includes a list of supported security standards. Microsoft recommends that you fix all issues reported as "errors" by the BinSkim tool. Issues reported as "warnings" should be evaluated selectively, because resolving them can have performance implications or might not be necessary.
 
@@ -249,14 +249,14 @@ Binaries shouldn't link to insecure libraries and dependencies. Development team
 
 Compilation should enable strong code provenance guarantees to help detect and prevent introduction of backdoors and other malicious code. The resulting data, also critical to debugging and investigation, should be archived for all software releases to drive efficient security response if they're compromised. The following compiler switches generate information that is critical to a security response:
 
-- [`/ZH:SHA_SHA256` in Visual C++](../build/reference/zh.md) - Ensures that a cryptographically secure algorithm is used to generate all PDB source file hashes.
-- [`/Zi`, `/ZI` (Debug Information Format) in Visual C++](../build/reference/z7-zi-zi-debug-information-format.md) - In addition to publishing stripped symbols for collecting crash data and other public use scenarios, ensure that builds produce and archive private PDBs for all released binaries. Binary analysis tools require full symbols to verify whether many security mitigations were enabled at compile-time. Private symbols are critical in security response, and lower debugging and investigation costs when engineers are racing to assess and limit damage when an exploit happens.
-- [`/SOURCELINK` in Visual C++ Linker - Include Sourcelink file in PDB](../build/reference/sourcelink.md): Source link is a language- and source-control agnostic system providing source debugging for binaries. Source debugging greatly increases the efficiency the range of prerelease security validations and post-release incident response.
+- [`/ZH:SHA_SHA256` in Microsoft C++](../build/reference/zh.md) - Ensures that a cryptographically secure algorithm is used to generate all PDB source file hashes.
+- [`/Zi`, `/ZI` (Debug Information Format) in Microsoft C++](../build/reference/z7-zi-zi-debug-information-format.md) - In addition to publishing stripped symbols for collecting crash data and other public use scenarios, ensure that builds produce and archive private PDBs for all released binaries. Binary analysis tools require full symbols to verify whether many security mitigations were enabled at compile-time. Private symbols are critical in security response, and lower debugging and investigation costs when engineers are racing to assess and limit damage when an exploit happens.
+- [`/SOURCELINK` in Microsoft C++ Linker - Include Sourcelink file in PDB](../build/reference/sourcelink.md): Source link is a language- and source-control agnostic system providing source debugging for binaries. Source debugging greatly increases the efficiency the range of prerelease security validations and post-release incident response.
 
 **Enable compiler errors to prevent issues at code authoring time**
 
 Compilation should enable security-relevant compiler checks as breaking errors, for example:
-- [`/sdl` in Visual C++ - Enable additional security checks](https://aka.ms/AdditionalSecurityChecks) elevates many security-relevant warnings into errors and enables advanced secure code-generation features.
+- [`/sdl` in Microsoft C++ - Enable additional security checks](https://aka.ms/AdditionalSecurityChecks) elevates many security-relevant warnings into errors and enables advanced secure code-generation features.
 - [BinSkim BA2007.EnableCriticalCompilerWarnings | GitHub](https://github.com/microsoft/binskim/blob/main/src/BinSkim.Rules/PERules/BA2007.EnableCriticalCompilerWarnings.cs) maintains a list of Microsoft-recommended C/C++ compiler warnings that should always be enabled and elevated to errors.
 
 **Mark binaries as compatible with OS runtime security mitigations**
@@ -401,7 +401,7 @@ Modify your build(s) to support continuous creation of executables that use LibF
 
 **Summary**
 
-Within the scope of Microsoft Visual C++ on Windows, Microsoft recommends:
+Within the scope of Microsoft C++ on Windows, Microsoft recommends:
 
 - Prefer TypeScript, JavaScript, and ASP.NET for web applications.
 - Don't write web extensions in C++. Microsoft has deprecated ActiveX.

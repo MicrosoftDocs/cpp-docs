@@ -15,7 +15,7 @@ This article discusses using the **Properties** window (in **Class View**) to in
 > [!NOTE]
 > This article uses a dialog-based ActiveX control container project named Container and an embedded control named Circ as examples in the procedures and code.
 
-Using the Events button in the **Properties** window (in **Class View**), you can create a map of events that can occur in your ActiveX control container application. This map, called an "event sink map,'' is created and maintained by Visual C++ when you add event handlers to the control container class. Each event handler, implemented with an event map entry, maps a specific event to a container event handler member function. This event handler function is called when the specified event is fired by the ActiveX control object.
+Using the Events button in the **Properties** window (in **Class View**), you can create a map of events that can occur in your ActiveX control container application. This map, called an "event sink map,'' is created and maintained by Visual Studio when you add event handlers to the control container class. Each event handler, implemented with an event map entry, maps a specific event to a container event handler member function. This event handler function is called when the specified event is fired by the ActiveX control object.
 
 For more information on event sink maps, see [Event Sink Maps](reference/event-sink-maps.md) in the *Class Library Reference*.
 

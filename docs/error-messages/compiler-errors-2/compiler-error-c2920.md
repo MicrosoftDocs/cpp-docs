@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2920"
 title: "Compiler Error C2920"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2920"
+ms.date: 11/04/2016
 f1_keywords: ["C2920"]
 helpviewer_keywords: ["C2920"]
-ms.assetid: 0a4cb2de-00a0-4209-8160-c7ce6ed7d9ab
 ---
 # Compiler Error C2920
 
-redefinition : 'class' : class template or generic has already been declared as 'type'
+> redefinition : 'class' : class template or generic has already been declared as 'type'
+
+## Remarks
 
 A generic or template class has multiple declarations, which are not equivalent. To fix this error, use different names for different types, or remove the redefinition of the type name.
 
-The following sample generates C2920 and shows how to fix it:
+## Examples
+
+The following example generates C2920 and shows how to fix it:
 
 ```cpp
 // C2920.cpp

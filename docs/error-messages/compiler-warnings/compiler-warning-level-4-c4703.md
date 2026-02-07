@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4703"
 title: "Compiler Warning (level 4) C4703"
+description: "Learn more about: Compiler Warning (level 4) C4703"
 ms.date: 08/30/2022
 f1_keywords: ["C4703"]
 helpviewer_keywords: ["C4703"]
-ms.assetid: 5dad454e-69e3-4931-9168-050a861c05f8
 ---
 # Compiler Warning (level 4) C4703
 

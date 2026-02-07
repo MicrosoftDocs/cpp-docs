@@ -7,7 +7,7 @@ ms.assetid: e4feea1a-8360-4ccb-9b84-507f1ccd9ef3
 ---
 # Dialog Boxes
 
-Applications for Windows frequently communicate with the user through dialog boxes. Class [CDialog](reference/cdialog-class.md) provides an interface for managing dialog boxes, the Visual C++ dialog editor makes it easy to design dialog boxes and create their dialog-template resources, and Code wizards simplify the process of initializing and validating the controls in a dialog box and of gathering the values entered by the user.
+Applications for Windows frequently communicate with the user through dialog boxes. Class [CDialog](reference/cdialog-class.md) provides an interface for managing dialog boxes, the Visual Studio dialog editor makes it easy to design dialog boxes and create their dialog-template resources, and Code wizards simplify the process of initializing and validating the controls in a dialog box and of gathering the values entered by the user.
 
 Dialog boxes contain controls, including:
 

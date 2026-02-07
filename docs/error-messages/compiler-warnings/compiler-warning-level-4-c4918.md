@@ -1,16 +1,19 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4918"
 title: "Compiler Warning (level 4) C4918"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4918"
+ms.date: 11/04/2016
 f1_keywords: ["C4918"]
 helpviewer_keywords: ["C4918"]
-ms.assetid: 1bcf6d35-3467-4aa8-b2ef-cb33f4e70238
 ---
 # Compiler Warning (level 4) C4918
 
-'character' : invalid character in pragma optimization list
+> 'character' : invalid character in pragma optimization list
+
+## Remarks
 
 An unknown character was found in the optimization list of an [optimize](../../preprocessor/optimize.md) pragma statement.
+
+## Example
 
 For example, the following statement generates C4918:
 

@@ -16,7 +16,7 @@ postfix-expression --
 
 ## Remarks
 
-C++ provides prefix and postfix increment and decrement operators; this section describes only the postfix increment and decrement operators. (For more information, see [Prefix Increment and Decrement Operators](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md).) The difference between the two is that in the postfix notation, the operator appears after *postfix-expression*, whereas in the prefix notation, the operator appears before *expression.* The following example shows a postfix-increment operator:
+C++ provides prefix and postfix increment and decrement operators; this section describes only the postfix increment and decrement operators. For more information, see [Prefix Increment and Decrement Operators](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md). The difference between the two is that in the postfix notation, the operator appears after *postfix-expression*, whereas in the prefix notation, the operator appears before *expression.* The following example shows a postfix-increment operator:
 
 ```cpp
 i++;

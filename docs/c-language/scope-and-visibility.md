@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Scope and Visibility"
 title: "Scope and Visibility"
-ms.date: "11/04/2016"
+description: "Learn more about: Scope and Visibility"
+ms.date: 11/04/2016
 helpviewer_keywords: ["scope, levels", "visibility", "file scope [C++]"]
-ms.assetid: a019eb7c-66ed-46a7-bc9f-89a963930a56
 ---
 # Scope and Visibility
 
@@ -15,7 +14,7 @@ All identifiers except labels have their scope determined by the level at which 
 The declarator or type specifier for an identifier with file scope appears outside any block or list of parameters and is accessible from any place in the translation unit after its declaration. Identifier names with file scope are often called "global" or "external." The scope of a global identifier begins at the point of its definition or declaration and terminates at the end of the translation unit.
 
 **Function scope**\
-A label is the only kind of identifier that has function scope. A label is declared implicitly by its use in a statement. Label names must be unique within a function. (For more information about labels and label names, see [The goto and Labeled Statements](../c-language/goto-and-labeled-statements-c.md).)
+A label is the only kind of identifier that has function scope. A label is declared implicitly by its use in a statement. Label names must be unique within a function. For more information about labels and label names, see [The goto and Labeled Statements](../c-language/goto-and-labeled-statements-c.md).
 
 **Block scope**\
 The declarator or type specifier for an identifier with block scope appears inside a block or within the list of formal parameter declarations in a function definition. It is visible only from the point of its declaration or definition to the end of the block containing its declaration or definition. Its scope is limited to that block and to any blocks nested in that block and ends at the curly brace that closes the associated block. Such identifiers are sometimes called "local variables."

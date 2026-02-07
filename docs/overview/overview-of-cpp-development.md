@@ -1,6 +1,6 @@
 ---
 title: "Overview of C++ development in Visual Studio"
-description: "The Visual Studio IDE supports C++ development on Windows, Linux, Android and iOS with a code editor, debugger, test frameworks, static analyzers, and other programming tools."
+description: "The Visual Studio IDE supports C++ development on Windows and Linux with a code editor, debugger, test frameworks, static analyzers, and other programming tools."
 ms.date: 12/02/2019
 helpviewer_keywords: ["Visual C++, development tools"]
 author: "tylermsft"
@@ -110,7 +110,7 @@ For more information, see [Verifying Code by Using Unit Tests](/visualstudio/tes
 
 ## Analyze
 
-Visual Studio includes static code analysis tools that can detect potential problems in your source code. These tools include an implementation of the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md) rules checkers. For more information, see [Code analysis for C/C++ overview](../code-quality/code-analysis-for-c-cpp-overview.md).
+Visual Studio includes static code analysis tools that can detect potential problems in your source code. These tools include an implementation of the [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines) rules checkers. For more information, see [Code analysis for C/C++ overview](../code-quality/code-analysis-for-c-cpp-overview.md).
 
 ## Deploy completed applications
 

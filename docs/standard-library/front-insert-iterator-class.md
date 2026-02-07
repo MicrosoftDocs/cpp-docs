@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: front_insert_iterator Class"
 title: "front_insert_iterator Class"
+description: "Learn more about: front_insert_iterator Class"
 ms.date: 06/15/2022
 f1_keywords: ["iterator/std::front_insert_iterator", "iterator/std::front_insert_iterator::container_type", "iterator/std::front_insert_iterator::reference"]
 helpviewer_keywords: ["std::front_insert_iterator [C++]", "std::front_insert_iterator [C++], container_type", "std::front_insert_iterator [C++], reference"]
-ms.assetid: a9a9c075-136a-4419-928b-c4871afa033c
 ms.custom: devdivchpfy22
 ---
 
@@ -254,11 +253,11 @@ int main( )
 
    list<int> L1;
    front_insert_iterator<list<int> > iter ( L1 );
-*iter = 10;
+   *iter = 10;
    iter++;
-*iter = 20;
+   *iter = 20;
    iter++;
-*iter = 30;
+   *iter = 30;
    iter++;
 
    list <int>::iterator vIter;
@@ -316,11 +315,11 @@ int main( )
 
    list<int> L1;
    front_insert_iterator<list<int> > iter ( L1 );
-*iter = 10;
+   *iter = 10;
    iter++;
-*iter = 20;
+   *iter = 20;
    iter++;
-*iter = 30;
+   *iter = 30;
    iter++;
 
    list <int>::iterator vIter;

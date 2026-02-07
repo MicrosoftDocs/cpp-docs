@@ -128,7 +128,7 @@ A **`<Rule>`** element is the root node in the XML file. It can have many attrib
 
   - `Label=""` indicates that when the properties are written as `ItemDefinition` metadata, the label of the parent ItemDefinitionGroup will be empty (every MSBuild element can have a Label). Visual Studio 2017 and later use labeled groups to navigate the .vcxproj project file. The groups that contain most `Rule` properties have an empty string as a label.
 
-  - `HasConfigurationCondition="true"` tells the project system to affix a configuration condition to the value so that it takes effect only for the current project configuration (the condition could be affixed to the parent group or the value itself). For example,  open the property pages off the project node and set the value of the property **Treat Warnings As Error** under **Configuration Properties > C/C++ General** to "Yes". The following value is written to the project file. Notice the configuration condition attached to the parent ItemDefinitionGroup.
+  - `HasConfigurationCondition="true"` tells the project system to affix a configuration condition to the value so that it takes effect only for the current project configuration (the condition could be affixed to the parent group or the value itself). For example, open the property pages off the project node and set the value of the property **Treat Warnings As Error** under **Configuration Properties > C/C++ General** to "Yes". The following value is written to the project file. Notice the configuration condition attached to the parent ItemDefinitionGroup.
 
     ```xml
     <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

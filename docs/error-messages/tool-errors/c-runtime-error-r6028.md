@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: C Runtime Error R6028"
 title: "C Runtime Error R6028"
-ms.date: "11/04/2016"
+description: "Learn more about: C Runtime Error R6028"
+ms.date: 11/04/2016
 f1_keywords: ["R6028"]
 helpviewer_keywords: ["R6028"]
-ms.assetid: 81e99079-4388-4244-a4f7-4641c508871c
 ---
 # C Runtime Error R6028
 
-unable to initialize heap
+> unable to initialize heap
+
+## Remarks
 
 > [!NOTE]
 > If you encounter this error message while running an app, the app was shut down because it has an internal memory problem. There are many possible reasons for this error, but often it's caused by an extremely low memory condition, a bug in the program, or by defective hardware drivers.

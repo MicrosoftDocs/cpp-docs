@@ -1,20 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C3408"
 title: "Compiler Error C3408"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3408"
+ms.date: 11/04/2016
 f1_keywords: ["C3408"]
 helpviewer_keywords: ["C3408"]
-ms.assetid: 1f5ea979-fb1e-4214-b310-6fd6ca8249b1
 ---
 # Compiler Error C3408
 
-'attribute': attribute is not allowed on template definitions
+> 'attribute': attribute is not allowed on template definitions
+
+## Remarks
 
 Attributes cannot be applied to template definitions.
 
 ## Example
 
-The following sample generates C3408.
+The following example generates C3408.
 
 ```cpp
 // C3408.cpp

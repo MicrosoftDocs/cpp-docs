@@ -1,13 +1,15 @@
 ---
 title: "Compiler Warning (level 1) C4799"
 description: "Learn more about: Compiler Warning (level 1) C4799"
-ms.date: "03/28/2025"
+ms.date: 03/28/2025
 f1_keywords: ["C4799"]
 helpviewer_keywords: ["C4799"]
 ---
 # Compiler Warning (level 1) C4799
 
 > function '*function*' has no EMMS instruction
+
+## Remarks
 
 The function has at least one MMX instruction, but does not have an `EMMS` instruction. When a multimedia instruction is used, an `EMMS` instruction or [`_mm_empty`](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#text=_mm_empty) intrinsic should also be used to clear the multimedia tag word at the end of the MMX code.
 

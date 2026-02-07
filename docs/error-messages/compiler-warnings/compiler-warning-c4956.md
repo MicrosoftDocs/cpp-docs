@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Compiler Warning C4956"
 title: "Compiler Warning C4956"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning C4956"
+ms.date: 11/04/2016
 f1_keywords: ["C4956"]
 helpviewer_keywords: ["C4956"]
-ms.assetid: 9154f2d1-d49f-4e07-90d2-0e9bc028011a
 ---
 # Compiler Warning C4956
 
@@ -20,7 +19,7 @@ This warning is issued as an error and can be disabled with the [warning](../../
 
 ## Example
 
-The following sample generates C4956:
+The following example generates C4956:
 
 ```cpp
 // C4956.cpp

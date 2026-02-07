@@ -19,7 +19,7 @@ The Cut, Copy, and Paste commands are only meaningful in certain contexts. The C
 
 The Microsoft Foundation Class Library does provide Clipboard support for text editing with the `CEdit` and `CEditView` classes. The OLE classes also simplify implementing Clipboard operations that involve OLE items. For more information on the OLE classes, see [Clipboard: Using the OLE Clipboard Mechanism](clipboard-using-the-ole-clipboard-mechanism.md).
 
-Implementing other Edit menu commands, such as Undo (**ID_EDIT_UNDO**) and Redo (**ID_EDIT_REDO**), is also left to you. If your application does not support these commands, you can easily delete them from your resource file using the Visual C++ resource editors.
+Implementing other Edit menu commands, such as Undo (**ID_EDIT_UNDO**) and Redo (**ID_EDIT_REDO**), is also left to you. If your application does not support these commands, you can easily delete them from your resource file using the Visual Studio resource editors.
 
 ## What do you want to know more about
 

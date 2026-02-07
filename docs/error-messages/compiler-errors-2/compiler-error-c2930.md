@@ -1,20 +1,23 @@
 ---
-description: "Learn more about: Compiler Error C2930"
 title: "Compiler Error C2930"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2930"
+ms.date: 11/04/2016
 f1_keywords: ["C2930"]
 helpviewer_keywords: ["C2930"]
-ms.assetid: f07eecd1-e5d1-4518-bd89-b1fd2a003a17
 ---
 # Compiler Error C2930
 
-'class' : type-class-id redefined as an enumerator of 'enum identifier'
+> 'class' : type-class-id redefined as an enumerator of 'enum identifier'
+
+## Remarks
 
 You cannot use a generic or template class as a member of an enumeration.
 
 This error can be caused if braces are improperly matched.
 
-The following sample generates C2930:
+## Examples
+
+The following example generates C2930:
 
 ```cpp
 // C2930.cpp

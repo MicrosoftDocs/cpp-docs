@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: C Runtime Error R6002"
 title: "C Runtime Error R6002"
-ms.date: "11/04/2016"
+description: "Learn more about: C Runtime Error R6002"
+ms.date: 11/04/2016
 f1_keywords: ["R6002"]
 helpviewer_keywords: ["R6002"]
-ms.assetid: 8fbbe65a-9c43-459e-8342-e1f6d1cef7d0
 ---
 # C Runtime Error R6002
 
-floating-point support not loaded
+> floating-point support not loaded
+
+## Remarks
 
 The necessary floating-point library was not linked.
 

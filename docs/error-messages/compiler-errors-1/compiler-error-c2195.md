@@ -1,18 +1,21 @@
 ---
-description: "Learn more about: Compiler Error C2195"
 title: "Compiler Error C2195"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2195"
+ms.date: 11/04/2016
 f1_keywords: ["C2195"]
 helpviewer_keywords: ["C2195"]
-ms.assetid: 9f9f035c-9c51-4173-a8ea-c6f907fc5c63
 ---
 # Compiler Error C2195
 
-'identifier' : is a data segment
+> 'identifier' : is a data segment
+
+## Remarks
 
 The `code_seg` pragma uses a segment name used with the `data_seg` pragma.
 
-The following sample generates C2195:
+## Example
+
+The following example generates C2195:
 
 ```cpp
 // C2195.cpp

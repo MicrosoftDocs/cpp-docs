@@ -7,7 +7,9 @@ helpviewer_keywords: ["LNK2033"]
 ---
 # Linker Tools Error LNK2033
 
-unresolved typeref token (token) for 'type'
+> unresolved typeref token (token) for 'type'
+
+## Remarks
 
 A type doesn't have a definition in MSIL metadata.
 
@@ -19,7 +21,7 @@ For more information, see [/clr (Common Language Runtime Compilation)](../../bui
 
 ## Example
 
-The following sample generates LNK2033.
+The following example generates LNK2033.
 
 ```cpp
 // LNK2033.cpp

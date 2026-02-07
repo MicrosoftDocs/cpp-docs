@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Error C3487"
 title: "Compiler Error C3487"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C3487"
+ms.date: 11/04/2016
 f1_keywords: ["C3487"]
 helpviewer_keywords: ["C3487"]
-ms.assetid: 39bda474-4418-4a79-98bf-2b22fa92eaaa
 ---
 # Compiler Error C3487
 
-'return type': all return expressions must deduce to the same type: previously it was 'return type'
+> 'return type': all return expressions must deduce to the same type: previously it was 'return type'
+
+## Remarks
 
 A lambda must specify its return type unless it contains a single return statement. If a lambda contains multiple return statements, they must all have the same type.
 

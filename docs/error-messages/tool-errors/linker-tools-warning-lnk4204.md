@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Linker Tools Warning LNK4204"
 title: "Linker Tools Warning LNK4204"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker Tools Warning LNK4204"
+ms.date: 11/04/2016
 f1_keywords: ["LNK4204"]
 helpviewer_keywords: ["LNK4204"]
-ms.assetid: 14adda20-0cbe-407b-90f6-9f81c93530e2
 ---
 # Linker Tools Warning LNK4204
 
-'filename' is missing debugging information for referencing module; linking object as if no debug info
+> 'filename' is missing debugging information for referencing module; linking object as if no debug info
+
+## Remarks
 
 The .pdb file has an erroneous signature. The linker will continue to link the object without debug information. You may want to recompile the object file using the [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) option.
 

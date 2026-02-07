@@ -1,14 +1,15 @@
 ---
-description: "Learn more about: Compiler Warning (level 4) C4512"
 title: "Compiler Warning (level 4) C4512"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Warning (level 4) C4512"
+ms.date: 11/04/2016
 f1_keywords: ["C4512"]
 helpviewer_keywords: ["C4512"]
-ms.assetid: afb68995-684a-4be5-a73a-38d7a16dc030
 ---
 # Compiler Warning (level 4) C4512
 
-'class' : assignment operator could not be generated
+> 'class' : assignment operator could not be generated
+
+## Remarks
 
 The compiler cannot generate an assignment operator for the given class. No assignment operator was created.
 
@@ -28,7 +29,7 @@ You can resolve the C4512 warning for your code in one of three ways:
 
 ## Example
 
-The following sample generates C4512.
+The following example generates C4512.
 
 ```cpp
 // C4512.cpp
