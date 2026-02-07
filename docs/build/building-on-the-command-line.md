@@ -208,7 +208,7 @@ Leave this parameter out to use libraries without Spectre mitigations. Use the v
 
 Open the Properties dialog for a developer command prompt shortcut to see the command target used. For example, the target for the **x64 Native Tools Command Prompt for VS 2019** shortcut is something similar to:
 
-```
+```cmd
 %comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars64.bat"
 ```
 
@@ -217,7 +217,7 @@ Open the Properties dialog for a developer command prompt shortcut to see the co
 
 Open the Properties dialog for a developer command prompt shortcut to see the command target used. For example, the target for the **x64 Native Tools Command Prompt for VS 2017** shortcut is something similar to:
 
-```
+```cmd
 %comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"
 ```
 
@@ -226,7 +226,7 @@ Open the Properties dialog for a developer command prompt shortcut to see the co
 
 Open the Properties dialog for a developer command prompt shortcut to see the command target used. For example, the target for the **VS2015 x64 Native Tools Command Prompt** shortcut is something similar to:
 
-```
+```cmd
 %comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64
 ```
 
@@ -236,21 +236,21 @@ The architecture-specific batch files set the *`architecture`* parameter and cal
 
 ::: moniker range=">= msvc-160"
 
-```
+```cmd
 %comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64_arm uwp -vcvars_ver=14.29
 ```
 
 ::: moniker-end
 ::: moniker range="= msvc-150"
 
-```
+```cmd
 %comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64_arm uwp -vcvars_ver=14.19
 ```
 
 ::: moniker-end
 ::: moniker range="< msvc-150"
 
-```
+```cmd
 %comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64 -vcvars_ver=14.0
 ```
 
