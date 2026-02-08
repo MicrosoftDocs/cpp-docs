@@ -14,7 +14,7 @@ Access controls enable you to separate the [`public`](../cpp/public-cpp.md) inte
 class Point
 {
 public:
-    Point( int, int ) // Declare public constructor.;
+    Point( int, int ); // Declare public constructor.
     Point();// Declare public default constructor.
     int &x( int ); // Declare public accessor.
     int &y( int ); // Declare public accessor.
