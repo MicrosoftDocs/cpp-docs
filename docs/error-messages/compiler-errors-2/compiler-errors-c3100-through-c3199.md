@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Compiler errors C3100 Through C3199"
 title: "Compiler errors C3100 Through C3199"
+description: "Learn more about: Compiler errors C3100 Through C3199"
 ms.date: 06/01/2022
 f1_keywords: ["C3102", "C3105", "C3107", "C3108", "C3109", "C3111", "C3112", "C3119", "C3122", "C3123", "C3124", "C3125", "C3127", "C3128", "C3129", "C3143", "C3144", "C3146", "C3147", "C3148", "C3151", "C3158", "C3164", "C3165", "C3169", "C3177", "C3178", "C3184", "C3186", "C3188", "C3191", "C3193"]
 helpviewer_keywords: ["C3102", "C3105", "C3107", "C3108", "C3109", "C3111", "C3112", "C3119", "C3122", "C3123", "C3124", "C3125", "C3127", "C3128", "C3129", "C3143", "C3144", "C3146", "C3147", "C3148", "C3151", "C3158", "C3164", "C3165", "C3169", "C3177", "C3178", "C3184", "C3186", "C3188", "C3191", "C3193"]
@@ -102,7 +102,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C3184 | Obsolete. |
 | [Compiler error C3185](compiler-error-c3185.md) | 'typeid': used on managed/WinRT type '*type*', use '*operator*' instead |
 | Compiler error C3186 | Obsolete. |
-| [Compiler error C3187](compiler-error-c3187.md) | '*identifier*': is only available within the body of a function |
+| [Compiler error C3187](compiler-error-c3187.md) | '`__func__`': is only available within the body of a function |
 | Compiler error C3188 | Obsolete. |
 | [Compiler error C3189](compiler-error-c3189.md) | 'typeid<*declarator*>': this syntax is no longer supported, use::typeid instead (Obsolete in Visual Studio 2022.) |
 | [Compiler error C3190](compiler-error-c3190.md) | '*declarator*' with the provided template arguments is not the explicit instantiation of any member function of '*type*' |
