@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: C Pragmas"
 title: "C Pragmas"
+description: "Learn more about: C Pragmas"
 ms.date: 07/26/2020
 helpviewer_keywords: ["pragmas, C/C++"]
-ms.assetid: 3d6d36b4-d565-4632-a4cd-e39aeaded5ad
 ---
 # C Pragmas
 
@@ -59,7 +58,7 @@ A *pragma* instructs the compiler to perform a particular action at compile time
     :::column-end:::
 :::row-end:::
 
-See [Pragma Directives and the `__Pragma` Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md) for a description of the Microsoft C compiler pragmas.
+See [Pragma directives and the `__pragma` and `_Pragma` keywords](../preprocessor/pragma-directives-and-the-pragma-keyword.md) for a description of the Microsoft C compiler pragmas.
 
 **END Microsoft Specific**
 
