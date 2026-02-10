@@ -3,14 +3,14 @@
 # For more information, see https://learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata
 # For valid values of ms.service, ms.prod, and ms.topic, see https://learn.microsoft.com/en-us/help/platform/metadata-taxonomies
 
-title:       # Add a title for the browser tab
-description: # Add a meaningful description for search results
+title: /Zc:u8EscapeEncoding (numeric escape sequence encoding in u8 strings)
+description: /Zc:u8EscapeEncoding (numeric escape sequence encoding in u8 strings)
 author:      Rastaban # GitHub alias
 ms.author:   philc # Microsoft alias
-ms.service:  # Add the ms.service or ms.prod value
-# ms.prod:   # To use ms.prod, uncomment it and delete ms.service
-ms.topic:    # Add the ms.topic value
+ms.service: visual-cpp
+ms.topic: article
 ms.date:     02/10/2026
+ms.subservice: cpp-lang
 ---
 # /Zc:u8EscapeEncoding (numeric escape sequence encoding in u8 strings)
 
