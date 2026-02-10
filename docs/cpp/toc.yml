@@ -644,6 +644,8 @@ items:
                   href: ../cpp/thiscall.md
                 - name: __vectorcall
                   href: ../cpp/vectorcall.md
+                - name: __preserve_none
+                  href: ../cpp/preserve-none.md
             - name: "Calling example: Function prototype and call"
               items: 
                 - name: "Calling example: Function prototype and call"
