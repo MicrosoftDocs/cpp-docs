@@ -31,6 +31,7 @@ The following calling conventions are supported by the Visual C/C++ compiler.
 |[__fastcall](../cpp/fastcall.md)|Callee|Stored in registers, then pushed on stack|
 |[__thiscall](../cpp/thiscall.md)|Callee|Pushed on stack; **`this`** pointer stored in ECX|
 |[__vectorcall](../cpp/vectorcall.md)|Callee|Stored in registers, then pushed on stack in reverse order (right to left)|
+|[__preserve_none](../cpp/preservenone.md)|Callee|Stored in registers only|
 
 For related information, see [Obsolete Calling Conventions](../cpp/obsolete-calling-conventions.md).
 
