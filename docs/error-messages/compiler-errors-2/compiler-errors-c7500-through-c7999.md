@@ -241,7 +241,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C7740 | cannot jump to case label |
 | Compiler error C7741 | ABI inconsistency: '*function*' was originally assumed to use '`C`' return semantics but now it requires '`C++`' return semantics |
 | [Compiler error C7742](compiler-error-c7742.md) | '*identifier*': a forward declaration of an enum can only use a simple identifier |
-| Compiler error C7743 | `__preserve_none` calling convention is not supported |
+| Compiler error C7743 | [`__preserve_none` calling convention](../../cpp/preserve-none.md) is not supported |
 | Compiler error C7800 | duplicate explicit instantiation definition of '*name*' |
 | Compiler error C7801 | '*function*': if one declaration of '*identifier*' has the '`[[msvc::disptach]]`' attribute then all functions must have the attribute |
 | Compiler error C7802 | '*identifier*': a capability must resolve to an enumerator |

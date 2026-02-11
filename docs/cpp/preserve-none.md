@@ -1,3 +1,10 @@
+---
+description: "Learn more about: __preserve_none"
+title: "__preserve_none"
+ms.date: 02/11/2026
+f1_keywords: ["__preserve_none", "register spilling", "non preserving calling convention"]
+helpviewer_keywords: ["__preserve_none keyword"]
+---
 # __preserve_none
 
 **Microsoft Specific**
@@ -62,6 +69,6 @@ typedef int (__preserve_none *callback_ptr)(void* context, int value, int flags)
 
 ## See also
 
-[Argument Passing and Naming Conventions](argument-passing-and-naming-conventions?view=msvc-170)  
-[x64 Calling Convention](../build/x64-calling-convention?view=msvc-170)  
-[Keywords](keywords-cpp?view=msvc-170)
+[Argument Passing and Naming Conventions](argument-passing-and-naming-conventions.md)  
+[x64 Calling Convention](../build/x64-calling-convention.md)  
+[Keywords](keywords-cpp.md)  
