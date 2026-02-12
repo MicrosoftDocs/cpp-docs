@@ -29,7 +29,7 @@ The following list shows the behavior of this calling convention.
 | Stack alignment | The stack must maintain 16-byte alignment. |
 | Frame pointer | The `rbp` register and frame chain follow the [/Gy switch](../build/reference/gy-enable-function-level-linking.md) settings. |
 | Stack-maintenance responsibility | The callee is responsible for cleaning up its own stack space. |
-| Shadow space | A 32-byte shadow space is reserved on the stack to maintain compatibility with profilers and debugging tools. *(Shadow space is a reserved area on the stack where register parameters can be spilled if needed. It's typically 32-bytes (4 registers × 8 bytes each) reserved by the caller for the first 4 register parameters.)* |
+| Shadow space | 32 bytes are reserved on the stack as a shadow space to maintain compatibility with profilers and debugging tools. *(Shadow space is a reserved area on the stack where register parameters can be spilled if needed. It's typically 32 bytes (4 registers × 8 bytes each) that the caller reserves for the first four register parameters.)* |
 | Floating-point support | Floating-point parameters aren't supported. |
 | Name-decoration convention | Function names are decorated with @@_A suffix. |
 | Case-translation convention | No case translation performed. |
