@@ -12,13 +12,13 @@ helpviewer_keywords: ["__preserve_none keyword"]
 > [!IMPORTANT]
 > The **`__preserve_none`** calling convention is experimental and subject to change.
 
-The **`__preserve_none`** calling convention specifies that arguments to functions are to be passed in registers, with most general-purpose registers treated as volatile. This calling convention is only supported for C programs and only applies to the x64 architecture.
+The **`__preserve_none`** calling convention specifies that arguments to functions are to be passed in registers, with most general-purpose registers treated as volatile. This calling convention is only supported for C programs and only applies to x64 code.
 
 This calling convention is designed to minimize register spilling and improve performance.
 
-The following list shows the implementation of this calling convention.
+The following list shows the behavior of this calling convention.
 
-| Element | Implementation |
+| Element | Behavior |
 |---------|----------------|
 | Argument-passing order | Arguments are passed in up to 10 registers in the following order: r13, r14, r15, rbx, rsi, rdi, r9, r8, rdx, rcx. If a hidden parameter is required for struct returns, it is passed in r13 (the first parameter register), reducing available parameter registers to 9. Registers r10-r12 are reserved for various CRT and Windows runtimes. All parameters must be passed through registers; stack-based parameters are not currently supported. |
 | Register allocation strategy | To help minimize register spilling, the allocator assigns r9, r8, rdx, and rcx only after other registers have been used. |
@@ -69,6 +69,6 @@ typedef int (__preserve_none *callback_ptr)(void* context, int value, int flags)
 
 ## See also
 
-[Argument Passing and Naming Conventions](argument-passing-and-naming-conventions.md)  
-[x64 Calling Convention](../build/x64-calling-convention.md)  
+[Argument Passing and Naming Conventions](argument-passing-and-naming-conventions.md)\
+[x64 Calling Convention](../build/x64-calling-convention.md)\
 [Keywords](keywords-cpp.md)  

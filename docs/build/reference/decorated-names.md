@@ -53,11 +53,11 @@ The form of decoration for a C function depends on the calling convention used i
 
 | Calling convention | Decoration |
 |--|--|
-| **`__cdecl`** | Leading underscore (**`_`**) |
-| **`__stdcall`** | Leading underscore (**`_`**) and a trailing at sign (**`@`**) followed by the number of bytes in the parameter list in decimal |
-| **`__fastcall`** | Leading and trailing at signs (**`@`**) followed by a decimal number representing the number of bytes in the parameter list |
-| **`__vectorcall`** | Two trailing at signs (**`@@`**) followed by a decimal number of bytes in the parameter list |
-| **`__preserve_none`** | Two trailing at signs, an underscore and the 'A' character (**`@@_A`**) |
+| [**`__cdecl`**](../../cpp/cdecl.md) | Leading underscore (**`_`**) |
+| [**`__stdcall`**](../../cpp/stdcall.md) | Leading underscore (**`_`**) and a trailing at sign (**`@`**) followed by the number of bytes in the parameter list in decimal |
+| [**`__fastcall`**](../../cpp/fastcall.md) | Leading and trailing at signs (**`@`**) followed by a decimal number representing the number of bytes in the parameter list |
+| [**`__vectorcall`**](../../cpp/vectorcall.md) | Two trailing at signs (**`@@`**) followed by a decimal number of bytes in the parameter list |
+| [**`__preserve_none`**](../../cpp/preserve-none.md) | Two trailing at signs, an underscore and the 'A' character (**`@@_A`**) |
 
 For ARM64EC functions with C linkage (whether compiled as C or by using `extern "C"`), a **`#`** is prepended to the decorated name.
 
