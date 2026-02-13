@@ -21,7 +21,7 @@ ms.assetid: 53a5e9e5-1a33-40b5-9dea-7f669b479329
 &emsp;*`attribute`*<sup>1</sup> *`attribute-seq`*<sub>opt</sub><sup>1</sup>
 
 *`attribute`*<sup>1, 2</sup>: one of\
-&emsp;**`__asm`** **`__based`** **`__cdecl`** **`__clrcall`** **`__fastcall`** **`__inline`** **`__stdcall`** **`__thiscall`** **`__vectorcall`**
+&emsp;**`__asm`** **`__based`** **`__cdecl`** **`__clrcall`** **`__fastcall`** **`__inline`** **`__stdcall`** **`__thiscall`** **`__vectorcall`** **`__preserve_none`**
 
 *`init-declarator-list`*:\
 &emsp;*`init-declarator`*\
@@ -209,7 +209,7 @@ ms.assetid: 53a5e9e5-1a33-40b5-9dea-7f669b479329
 &emsp;**`_Static_assert`** **`(`** *`constant-expression`* **`,`** *`string-literal`* **`)`** **`;`**
 
 <sup>1</sup> This grammar element is Microsoft-specific.\
-<sup>2</sup> For more information about these elements, see [`__asm`](../assembler/inline/asm.md), [`__clrcall`](../cpp/clrcall.md), [`__stdcall`](../cpp/stdcall.md), [`__based`](../cpp/based-grammar.md), [`__fastcall`](../cpp/fastcall.md), [`__thiscall`](../cpp/thiscall.md), [`__cdecl`](../cpp/cdecl.md), [`__inline`](../cpp/inline-functions-cpp.md), and [`__vectorcall`](../cpp/vectorcall.md).\
+<sup>2</sup> For more information about these elements, see [`__asm`](../assembler/inline/asm.md), [`__clrcall`](../cpp/clrcall.md), [`__stdcall`](../cpp/stdcall.md), [`__based`](../cpp/based-grammar.md), [`__fastcall`](../cpp/fastcall.md), [`__thiscall`](../cpp/thiscall.md), [`__cdecl`](../cpp/cdecl.md), [`__inline`](../cpp/inline-functions-cpp.md), [`__preserve_none`](../cpp/preserve-none.md) and [`__vectorcall`](../cpp/vectorcall.md).\
 <sup>3</sup> This style is obsolete.
 
 ## See also
