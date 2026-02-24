@@ -13,17 +13,17 @@ Visual C++ 6.0 supplies ActiveX controls that you can use in applications that y
 > [!NOTE]
 > Visual C++ 6.0 is no longer supported by Microsoft.
 
-For a list of the redistributable Visual C++ 6.0 ActiveX controls, see Common\Redist\Redist.txt on Disc 1 of the Visual C++ 6.0 product CD.
+For a list of the redistributable Visual C++ 6.0 ActiveX controls, see `Common\Redist\Redist.txt` on Disc 1 of the Visual C++ 6.0 product CD.
 
-When you distribute applications, you must install and register the `.ocx` for the ActiveX control (by using Regsvr32.exe). You should also make sure that the target computer has current versions of the following system files (an asterisk indicates that the file must be registered):
+When you distribute applications, you must install and register the `.ocx` for the ActiveX control (by using `Regsvr32.exe`). The target computer also must have current versions of the following system files (an asterisk indicates that the file must be registered):
 
-- Asycfilt.dll
-- Comcat.dll \*
-- Oleaut32.dll \*
-- Olepro32.dll \*
-- Stdole2.tlb
+- `Asycfilt.dll`
+- `Comcat.dll`\*
+- `Oleaut32.dll`\*
+- `Olepro32.dll`\*
+- `Stdole2.tlb`
 
-If these DLLs aren't available on the target system, you must get them updated by using the prescribed mechanism for updating the corresponding operating system.
+If these dynamic link libraries (DLLs) aren't available on the target system, you must get them updated by using the prescribed mechanism for updating the corresponding operating system.
 
 When you use an ActiveX control that connects to a database, you also need to replicate the data source name on the target computer. You can do this task programmatically with functions such as `ConfigDSN`.
 
