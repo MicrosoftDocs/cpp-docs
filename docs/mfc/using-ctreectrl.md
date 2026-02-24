@@ -3,10 +3,12 @@ description: "Learn more about: Using CTreeCtrl"
 title: "Using CTreeCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CTreeCtrl class [MFC], about CTreeCtrl", "tree controls [MFC], using"]
-ms.assetid: 6a262f2c-3540-43e5-b03f-e4b6f9cb0325
 ms.topic: concept-article
 ---
 # Using CTreeCtrl
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A tree control, represented by the class [CTreeCtrl](../mfc/reference/ctreectrl-class.md), is a window that displays a hierarchical list of items, such as the headings in a document, the entries in an index, or the files and directories on a disk. Each item consists of a label and an optional bitmapped image, and each item can have a list of subitems associated with it. By clicking an item, the user can expand and collapse the associated list of subitems. The directory tree in the left-hand pane of File Explorer is an example of a tree control.
 

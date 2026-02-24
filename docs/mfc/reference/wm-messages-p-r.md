@@ -4,9 +4,11 @@ title: "WM_ Messages: P - R"
 ms.date: "11/04/2016"
 f1_keywords: ["ON_WM_RBUTTONUP", "ON_WM_PALETTECHANGED", "ON_WM_RBUTTONDBLCLK", "ON_WM_QUERYENDSESSION", "ON_WM_PARENTNOTIFY", "ON_WM_PALETTEISCHANGING", "ON_WM_QUERYOPEN", "ON_WM_PAINT", "ON_WM_QUERYNEWPALETTE", "ON_WM_RBUTTONDOWN", "ON_WM_RENDERALLFORMATS", "ON_WM_PAINTCLIPBOARD", "ON_WM_RENDERFORMAT", "ON_WM_QUERYDRAGICON"]
 helpviewer_keywords: ["ON_WM_RENDERFORMAT [MFC]", "ON_WM_QUERYOPEN [MFC]", "ON_WM_RBUTTONDOWN [MFC]", "ON_WM_PAINTCLIPBOARD [MFC]", "ON_WM_QUERYNEWPALETTE [MFC]", "ON_WM_RBUTTONUP [MFC]", "ON_WM_PARENTNOTIFY [MFC]", "ON_WM_RBUTTONDBLCLK [MFC]", "ON_WM_PALETTECHANGED [MFC]", "ON_WM_PALETTEISCHANGING [MFC]", "ON_WM_QUERYDRAGICON [MFC]", "ON_WM_PAINT [MFC]", "ON_WM_RENDERALLFORMATS [MFC]", "ON_WM_QUERYENDSESSION [MFC]", "WM_ messages"]
-ms.assetid: f46962e5-8329-4f1f-9b4d-fdad2a5ce1f8
 ---
 # WM_ Messages: P - R
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following map entries correspond to the function prototypes:
 

@@ -4,9 +4,11 @@ title: "Editing a Message Handler"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.editing.msghandler"]
 helpviewer_keywords: ["message handlers [MFC]", "message handling [MFC], editing handlers"]
-ms.assetid: 7babb496-1f14-43b1-a14d-2e54402a92e2
 ---
 # Editing a Message Handler
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Once you have defined a message handler, you can go to the member function's definition to add or modify code.
 

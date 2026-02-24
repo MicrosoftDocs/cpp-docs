@@ -3,10 +3,12 @@ description: "Learn more about: Using CComboBoxEx"
 title: "Using CComboBoxEx"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["combo boxes [MFC], extended", "extended combo boxes [MFC], about extended combo boxes", "combo boxes [MFC], CComboBoxEx class", "CComboBox class [MFC], extended"]
-ms.assetid: c23cbfe8-75d2-4f98-a753-c942416eda52
 ms.topic: concept-article
 ---
 # Using CComboBoxEx
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The extended combo box control is an extension of the standard combo box control that provides native support for item images. These images can be used to indicate the status of individual items in the combo box, such as the currently selected and unselected items. To make item images easily accessible, the control provides image list support.
 

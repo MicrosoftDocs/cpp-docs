@@ -4,9 +4,11 @@ title: "Dialog Data Exchange Functions for CRecordView and CDaoRecordView"
 ms.date: "09/17/2019"
 f1_keywords: ["AFXDAO/DDX_FieldCBIndex", "AFXDAO/DDX_FieldCBString", "AFXDAO/DDX_FieldCBStringExact", "AFXDAO/DDX_FieldCheck", "AFXDAO/DDX_FieldLBIndex", "AFXDAO/DDX_FieldLBString", "AFXDAO/DDX_FieldLBStringExact", "AFXDAO/DDX_FieldRadio", "AFXDAO/DDX_FieldScroll", "AFXDAO/DDX_FieldText"]
 helpviewer_keywords: ["DDX_Field functions [MFC]", "ODBC [MFC], dialog data exchange (DDX) support", "DDX (dialog data exchange) [MFC], database support", "DDX (dialog data exchange) [MFC], functions", "databases [MFC], dialog data exchange (DDX) support", "DAO [MFC], dialog data exchange (DDX) support"]
-ms.assetid: 0d8cde38-3a2c-4100-9589-ac80a7b1ce91
 ---
 # Dialog Data Exchange Functions for CRecordView and CDaoRecordView
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This topic lists the DDX_Field functions used to exchange data between a [CRecordset](../../mfc/reference/crecordset-class.md) and a [CRecordView](../../mfc/reference/crecordview-class.md) form or a [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) and a [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) form. DAO is used with Access databases and is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete.
 

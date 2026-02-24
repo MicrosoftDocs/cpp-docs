@@ -3,9 +3,11 @@ description: "Learn more about: Exception Processing"
 title: "Exception Processing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["macros [MFC], exception handling", "DAO (Data Access Objects), exceptions [MFC]", "OLE exceptions [MFC], MFC functions", "exceptions [MFC], processing", "exception macros [MFC]", "termination functions, MFC", "MFC, exceptions", "exceptions [MFC], MFC throwing functions"]
-ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
 ---
 # Exception Processing
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 When a program executes, a number of abnormal conditions and errors called "exceptions" can occur. These may include running out of memory, resource allocation errors, and failure to find files.
 

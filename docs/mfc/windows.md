@@ -3,9 +3,11 @@ description: "Learn more about: Windows"
 title: "Windows"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["objects [MFC], window", "windows [MFC]", "MFC, windows", "window objects [MFC], MFC Framework"]
-ms.assetid: dd92bf34-842e-40fe-8aea-3028b55314d5
 ---
 # Windows
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This family of articles covers window objects in the MFC framework. All MFC windows derive from class [CWnd](../mfc/reference/cwnd-class.md), including frame windows, views, dialog boxes, and controls.
 

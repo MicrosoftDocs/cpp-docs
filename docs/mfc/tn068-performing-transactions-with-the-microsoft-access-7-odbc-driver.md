@@ -4,9 +4,11 @@ title: "TN068: Performing Transactions with the Microsoft Access 7 ODBC Driver"
 ms.date: "06/28/2018"
 f1_keywords: ["vc.data.odbc"]
 helpviewer_keywords: ["TN068 [MFC]", "transactions [MFC], calling BeginTrans", "transactions [MFC], Microsoft Access"]
-ms.assetid: d3f8f5d9-b118-4194-be36-a1aefb630c45
 ---
 # TN068: Performing Transactions with the Microsoft Access 7 ODBC Driver
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

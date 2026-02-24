@@ -3,9 +3,11 @@ description: "Learn more about: Standard Commands"
 title: "Standard Commands"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["File menu", "identifiers [MFC], command IDs", "command IDs, standard commands", "OLE commands", "commands [MFC], standard", "standard command IDs", "Window menu commands", "standard commands", "View menu commands", "Edit menu standard commands", "Help [MFC], menus", "programmer-defined IDs [MFC]"]
-ms.assetid: 88cf3ab4-79b3-4ac6-9365-8ac561036fbf
 ---
 # Standard commands
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The framework defines many standard command messages. The IDs for these commands typically take the form **`ID_<Source>_<Item>`**, where `<Source>` is usually a menu name and `<Item>` is a menu item. For example, the command ID for the **New** command on the **File** menu is `ID_FILE_NEW`. Standard command IDs are shown in bold type in the documentation. Programmer-defined IDs are shown in a font that's different from the surrounding text.
 

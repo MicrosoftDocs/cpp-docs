@@ -4,9 +4,11 @@ title: "OLE Initialization"
 ms.date: "11/04/2016"
 f1_keywords: ["afxdisp/AfxOleInit", "afxdisp/AfxEnableControlContainer"]
 helpviewer_keywords: ["OLE initialization"]
-ms.assetid: aa8a54a7-24c3-4344-b2c6-dbcf6084fa31
 ---
 # OLE Initialization
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Before an application can use OLE system services, it must initialize the OLE system DLLs and verify that the DLLs are the correct version. The `AfxOleInit` function initializes the OLE system DLLs.
 

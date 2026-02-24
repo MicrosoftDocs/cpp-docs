@@ -7,6 +7,9 @@ helpviewer_keywords: ["ON_WM_COMPACTING [MFC]", "ON_WM_COMPAREITEM [MFC]", "ON_W
 ---
 # `WM_` Message Handlers: A - C
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The following map entries on the left correspond to the function prototypes on the right:
 
 |Map entry|Function prototype|

@@ -3,10 +3,12 @@ description: "Learn more about: TN048: Writing ODBC Setup and Administration Pro
 title: "TN048: Writing ODBC Setup and Administration Programs for MFC Database Applications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["installing ODBC", "ODBC, installing", "setup, ODBC setup programs", "TN048", "ODBC, and MFC", "MFC, database applications"]
-ms.assetid: d456cdd4-0513-4a51-80c0-9132b66115ce
 ms.topic: install-set-up-deploy
 ---
 # TN048: Writing ODBC Setup and Administration Programs for MFC Database Applications
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

@@ -3,9 +3,11 @@ description: "Learn more about: Settings for the Progress Control"
 title: "Settings for the Progress Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CProgressCtrl class [MFC], settings", "progress controls [MFC], settings"]
-ms.assetid: f4616e91-74fa-4000-ba0d-d3ddc0ee075b
 ---
 # Settings for the Progress Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The basic settings for the progress control ([CProgressCtrl](../mfc/reference/cprogressctrl-class.md)) are the range and current position. The range represents the entire duration of the operation. The current position represents the progress that your application has made toward completing the operation. Any changes to the range or position cause the progress control to redraw itself.
 

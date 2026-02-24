@@ -3,10 +3,12 @@ description: "Learn more about: Using CSpinButtonCtrl"
 title: "Using CSpinButtonCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["up-down controls [MFC], spin button control", "up-down controls", "spin button control", "CSpinButtonCtrl class [MFC], using"]
-ms.assetid: a91db36b-e11e-42ef-8e89-51915cc486d2
 ms.topic: concept-article
 ---
 # Using CSpinButtonCtrl
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The *spin button* control (also known as an *up-down* control) provides a pair of arrows that a user can click to adjust a value. This value is known as the *current position*. The position stays within the range of the spin button. When the user clicks the up arrow, the position moves toward the maximum; and when the user clicks the down arrow, the position moves toward the minimum.
 

@@ -4,9 +4,11 @@ title: "Generated Classes, MFC Application Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.exe.classes"]
 helpviewer_keywords: ["MFC Application Wizard, generated classes"]
-ms.assetid: 5f33209c-7f01-4f72-8c1c-6f02f507ba9f
 ---
 # Generated Classes, MFC Application Wizard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This topic lists the names of base classes and files that your project generates. By default, the names are based on the project name that you specified in the **New Project Dialog Box**. You can change most of these names, as described here:
 

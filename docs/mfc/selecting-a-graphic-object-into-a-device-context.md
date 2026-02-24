@@ -3,10 +3,12 @@ description: "Learn more about: Selecting a Graphic Object into a Device Context
 title: "Selecting a Graphic Object into a Device Context"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["graphic objects [MFC], selecting into device context", "SelectObject method [MFC]", "GDI objects [MFC], device contexts", "lifetime, graphic objects [MFC]", "device contexts, selecting graphic objects into", "device contexts, graphic objects [MFC]"]
-ms.assetid: cf54a330-63ef-421f-83eb-90ec7bd82eef
 ms.topic: concept-article
 ---
 # Selecting a Graphic Object into a Device Context
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This topic applies to using graphic objects in a window's device context. After you [create a drawing object](../mfc/one-stage-and-two-stage-construction-of-objects.md), you must select it into the device context in place of the default object stored there:
 

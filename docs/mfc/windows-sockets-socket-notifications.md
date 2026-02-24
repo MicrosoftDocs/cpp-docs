@@ -3,9 +3,11 @@ description: "Learn more about: Windows Sockets: Socket Notifications"
 title: "Windows Sockets: Socket Notifications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows Sockets [MFC], notifications", "notifications [MFC], socket", "sockets [MFC], notifications"]
-ms.assetid: 87d5bf70-6e77-49a9-9a64-aaadee2ad018
 ---
 # Windows Sockets: Socket Notifications
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article describes the notification functions in the socket classes. These member functions are callback functions that the framework calls to notify your socket object of important events. The notification functions are:
 

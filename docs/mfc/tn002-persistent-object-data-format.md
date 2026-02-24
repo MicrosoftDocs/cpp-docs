@@ -6,6 +6,9 @@ helpviewer_keywords: ["VERSIONABLE_SCHEMA macro [MFC]", "persistent object data"
 ---
 # TN002: Persistent Object Data Format
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 This note describes the MFC routines that support persistent C++ objects and the format of the object data when it is stored in a file. This applies only to classes with the [DECLARE_SERIAL](../mfc/reference/run-time-object-model-services.md#declare_serial) and [IMPLEMENT_SERIAL](../mfc/reference/run-time-object-model-services.md#implement_serial) macros.
 
 ## The Problem

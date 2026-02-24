@@ -6,6 +6,9 @@ helpviewer_keywords: ["CAsyncSocket class [MFC], programming model", "Windows So
 ---
 # Windows Sockets: Using Class `CAsyncSocket`
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 This article explains how to use class [`CAsyncSocket`](reference/casyncsocket-class.md). This class encapsulates the Windows Sockets API at a very low level. `CAsyncSocket` is for use by programmers who know network communications in detail but want the convenience of callbacks for notification of network events. Based on this assumption, this article provides only basic instruction. You should probably consider using `CAsyncSocket` if you want Windows Sockets' ease of dealing with multiple network protocols in an MFC application but don't want to sacrifice flexibility. You might also feel that you can get better efficiency by programming the communications more directly yourself than you could using the more general alternative model of class `CSocket`.
 
 `CAsyncSocket` is documented in the *MFC Reference*. Visual Studio also supplies the Windows Sockets specification, located in the Windows SDK. The details are left to you. Visual Studio doesn't supply a sample application for `CAsyncSocket`.

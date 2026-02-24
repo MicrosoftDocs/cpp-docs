@@ -3,9 +3,11 @@ description: "Learn more about: Sequence of Operations for Creating OLE Applicat
 title: "Sequence of Operations for Creating OLE Applications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE applications [MFC], creating", "OLE applications [MFC]", "applications [OLE], creating", "applications [OLE]"]
-ms.assetid: 84b0f606-36c1-4253-9cea-44427f0074b9
 ---
 # Sequence of Operations for Creating OLE Applications
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following table shows your role and the framework's role in creating OLE linking and embedding applications. These represent options available rather than a sequence of steps to perform.
 

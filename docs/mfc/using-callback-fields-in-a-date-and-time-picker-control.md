@@ -4,10 +4,12 @@ title: "Using Callback Fields in a Date and Time Picker Control"
 ms.date: "11/04/2016"
 f1_keywords: ["DTN_FORMATQUERY", "DTN_FORMAT"]
 helpviewer_keywords: ["DateTimePicker control [MFC], callback fields", "callback fields in CDateTimeCtrl class [MFC]", "CDateTimeCtrl class [MFC], callback fields", "CDateTimeCtrl class [MFC], handling DTN_FORMAT and DTN_FORMATQ", "DTN_FORMATQUERY notification [MFC]", "DTN_FORMAT notification [MFC]", "DateTimePicker control [MFC]"]
-ms.assetid: 404f4ba9-cba7-4718-9faa-bc6b274a723f
 ms.topic: concept-article
 ---
 # Using Callback Fields in a Date and Time Picker Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 In addition to the standard format characters that define date and time picker fields, you can customize your output by specifying certain parts of a custom format string as callback fields. To declare a callback field, include one or more "X" characters (ASCII Code 88) anywhere in the body of the format string. For example, the following string "'Today is: 'yy'/'MM'/'dd' (Day 'X')'"causes the date and time picker control to display the current value as the year followed by the month, date, and finally the day of the year.
 

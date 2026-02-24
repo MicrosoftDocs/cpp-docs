@@ -3,9 +3,11 @@ description: "Learn more about: Support for Activation Contexts in the MFC Modul
 title: "Support for Activation Contexts in the MFC Module State"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["activation contexts [MFC]", "activation contexts [MFC], MFC support"]
-ms.assetid: 1e49eea9-3620-46dd-bc5f-d664749567c7
 ---
 # Support for Activation Contexts in the MFC Module State
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 MFC creates an activation context using a manifest resource provided by the user module. For more information on how activation contexts are created, see the following topics:
 

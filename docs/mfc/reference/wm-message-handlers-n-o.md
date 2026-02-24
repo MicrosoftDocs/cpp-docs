@@ -4,9 +4,11 @@ title: "WM_ Message Handlers: N - O"
 ms.date: "11/04/2016"
 f1_keywords: ["ON_WM_NCHITTEST", "ON_WM_NCLBUTTONDOWN", "ON_WM_NCCALCSIZE", "ON_WM_NCLBUTTONUP", "ON_WM_NCPAINT", "ON_WM_NCMBUTTONUP", "ON_WM_NCCREATE", "ON_WM_NCACTIVATE", "ON_WM_NCMOUSEMOVE", "ON_WM_NCRBUTTONDBLCLK", "ON_WM_NCLBUTTONDBLCLK", "ON_WM_NCDESTROY", "ON_WM_NCMBUTTONDBLCLK", "ON_WM_NCRBUTTONDOWN", "ON_WM_NCRBUTTONUP", "ON_WM_NCMBUTTONDOWN"]
 helpviewer_keywords: ["ON_WM_NCCALCSIZE [MFC]", "ON_WM_NCMBUTTONDOWN [MFC]", "ON_WM_NCRBUTTONDBLCLK [MFC]", "ON_WM_NCMBUTTONDBLCLK [MFC]", "ON_WM_NCLBUTTONDBLCLK [MFC]", "ON_WM_NCDESTROY [MFC]", "ON_WM_NCRBUTTONDOWN [MFC]", "ON_WM_NCLBUTTONDOWN [MFC]", "ON_WM_NCCREATE [MFC]", "ON_WM_NCRBUTTONUP [MFC]", "ON_WM_NCLBUTTONUP [MFC]", "ON_WM_NCPAINT [MFC]", "ON_WM_NCACTIVATE [MFC]", "ON_WM_NCHITTEST [MFC]", "ON_WM_NCMOUSEMOVE [MFC]", "ON_WM_NCMBUTTONUP [MFC]", "WM_ messages"]
-ms.assetid: 4efd1cda-b642-4e8b-89e8-73255fa70d77
 ---
 # WM_ Message Handlers: N - O
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following map entries on the left correspond to the function prototypes on the right:
 

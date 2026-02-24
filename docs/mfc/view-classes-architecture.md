@@ -3,9 +3,11 @@ description: "Learn more about: View Classes (Architecture)"
 title: "View Classes (Architecture)"
 ms.date: "09/17/2019"
 helpviewer_keywords: ["form and record views [MFC]", "view classes [MFC]", "control views [MFC]", "view classes [MFC], architecture"]
-ms.assetid: 8894579a-1436-441e-b985-83711061e495
 ---
 # View Classes (Architecture)
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 `CView` and its derived classes are child windows that represent the client area of a frame window. Views show data and accept input for a document.
 

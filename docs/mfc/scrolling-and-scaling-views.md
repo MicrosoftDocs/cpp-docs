@@ -3,10 +3,12 @@ description: "Learn more about: Scrolling and Scaling Views"
 title: "Scrolling and Scaling Views"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["message handlers [MFC]", "scaling views [MFC]", "message handling [MFC], scroll bars in view class [MFC]", "scroll bars [MFC], messages", "scrolling views [MFC]"]
-ms.assetid: f98a3421-c336-407e-97ee-dbb2ffd76fbd
 ms.topic: concept-article
 ---
 # Scrolling and Scaling Views
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 MFC supports views that scroll and views that are automatically scaled to the size of the frame window that displays them. Class `CScrollView` supports both kinds of views.
 

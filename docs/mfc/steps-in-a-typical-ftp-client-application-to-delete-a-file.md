@@ -3,10 +3,12 @@ description: "Learn more about: Steps in a Typical FTP Client Application to Del
 title: "Steps in a Typical FTP Client Application to Delete a File"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Internet client applications [MFC], FTP delete", "WinInet classes [MFC], FTP", "FTP (File Transfer Protocol) [MFC], client applications", "Internet applications [MFC], FTP client applications"]
-ms.assetid: 2c347a96-c0a4-4827-98fe-668406e552bc
 ms.topic: how-to
 ---
 # Steps in a Typical FTP Client Application to Delete a File
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following table shows the steps you might perform in a typical FTP client application that deletes a file.
 

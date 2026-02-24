@@ -8,7 +8,8 @@ ms.topic: concept-article
 
 This article describes the standard processes and conventions that one function (the caller) uses to make calls into another function (the callee) in x64 code.
 
-For more information about the `__vectorcall` calling convention, see [__vectorcall](../cpp/vectorcall.md).
+For more information about the `__vectorcall` calling convention, see [__vectorcall](../cpp/vectorcall.md).  
+For more information about the `__preserve_none` calling convention, see [__preserve_none](../cpp/preserve-none.md).
 
 ## Calling convention defaults
 

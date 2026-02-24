@@ -3,10 +3,12 @@ description: "Learn more about: Using the MFC source files"
 title: "Using the MFC source files"
 ms.date: "08/19/2019"
 helpviewer_keywords: ["public members", "source files", "MFC, source files", "MFC source files", "comments, MFC", "private member access", "protected member access", "source files, MFC"]
-ms.assetid: 3230e8fb-3b69-4ddf-9538-365ac7ea5e72
 ms.topic: concept-article
 ---
 # Using the MFC source files
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The Microsoft Foundation Class (MFC) Library supplies full source code. Header files (.h) are in the *\atlmfc\include* directory. Implementation files (.cpp) are in the *\atlmfc\src\mfc* directory.
 

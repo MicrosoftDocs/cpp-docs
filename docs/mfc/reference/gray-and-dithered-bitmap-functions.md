@@ -4,9 +4,11 @@ title: "Gray and Dithered Bitmap Functions"
 ms.date: "11/19/2018"
 f1_keywords: ["AFXWIN/AfxDrawGrayBitmap", "AFXWIN/AfxGetGrayBitmap", "AFXWIN/AfxDrawDitheredBitmap", "AFXWIN/AfxGetDitheredBitmap"]
 helpviewer_keywords: ["gray and dithered bitmap functions [MFC]"]
-ms.assetid: cb139a77-b85e-4504-9d93-24156ad77a41
 ---
 # Gray and Dithered Bitmap Functions
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 **Gray Bitmap Functions**
 

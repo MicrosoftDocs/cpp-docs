@@ -3,10 +3,12 @@ description: "Learn more about: TN054: Calling DAO Directly While Using MFC DAO 
 title: "TN054: Calling DAO Directly While Using MFC DAO Classes"
 ms.date: "09/17/2019"
 helpviewer_keywords: ["MFC, DAO and", "passwords [MFC], calling DAO", "security [MFC], DAO", "DAO (Data Access Objects), calling directly", "DAO (Data Access Objects), security", "security [MFC]", "TN054", "DAO (Data Access Objects), and MFC"]
-ms.assetid: f7de7d85-8d6c-4426-aa05-2e617c0da957
 ms.custom: sfi-ropc-nochange
 ---
 # TN054: Calling DAO Directly While Using MFC DAO Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > DAO is used with Access databases and is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete. The Visual Studio environment and wizards do not support DAO (although the DAO classes are included and you can still use them). Microsoft recommends that you use [OLE DB Templates](../data/oledb/ole-db-templates.md) or [ODBC and MFC](../data/odbc/odbc-and-mfc.md) for new projects. You should only use DAO in maintaining existing applications.

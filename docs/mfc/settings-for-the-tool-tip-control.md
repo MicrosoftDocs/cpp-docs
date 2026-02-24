@@ -3,9 +3,11 @@ description: "Learn more about: Settings for the Tool Tip Control"
 title: "Settings for the Tool Tip Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["tool tips [MFC], activating", "CToolTipCtrl class [MFC], settings"]
-ms.assetid: ff8c5c46-2047-403a-bd98-ffec3d21ee3a
 ---
 # Settings for the Tool Tip Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 You can set the tool tip control ([CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md)) to be either active or inactive. When you set it to be active, the tool tip control appears when the cursor is on a tool. When you set it to be inactive, the tool tip control does not appear, even if the cursor is on a tool. Call [Activate](../mfc/reference/ctooltipctrl-class.md#activate) to activate or deactivate a tool tip control.
 

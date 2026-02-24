@@ -3,9 +3,11 @@ description: "Learn more about: Tree Control Item Labels"
 title: "Tree Control Item Labels"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["tree controls [MFC], item labels", "labels, CTreeCtrl items", "CTreeCtrl class [MFC], item labels", "item labels, tree controls", "item labels"]
-ms.assetid: fe834107-1a25-4280-aced-774c11565805
 ---
 # Tree Control Item Labels
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 You typically specify the text of an item's label when adding the item to the tree control ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)). The `InsertItem` member function can pass a [TVITEM](/windows/win32/api/commctrl/ns-commctrl-tvitemw) structure that defines the item's properties, including a string containing the text of the label. `InsertItem` has several overloads that can be called with various combinations of parameters.
 

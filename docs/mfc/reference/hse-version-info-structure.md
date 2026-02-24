@@ -4,9 +4,11 @@ title: "HSE_VERSION_INFO Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["HSE_VERSION_INFO"]
 helpviewer_keywords: ["HSE_VERSION_INFO structure [MFC]"]
-ms.assetid: 4837312d-68c8-4d05-9afa-1934d7d49b20
 ---
 # HSE_VERSION_INFO Structure
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This structure is pointed to by the *pVer* parameter in the `CHttpServer::GetExtensionVersion` member function. It provides the ISA version number and a text description of the ISA.
 

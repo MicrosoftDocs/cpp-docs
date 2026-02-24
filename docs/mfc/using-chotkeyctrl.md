@@ -3,10 +3,12 @@ description: "Learn more about: Using CHotKeyCtrl"
 title: "Using CHotKeyCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["keys, hot and CHotKeyCtrl", "CHotKeyCtrl class [MFC], using", "hot key controls"]
-ms.assetid: 9b207117-d848-4224-8888-c3d197bb0c95
 ms.topic: concept-article
 ---
 # Using CHotKeyCtrl
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A hot key control, represented by class [CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md), is a window that displays a text representation of the key combination the user types into it, such as CTRL+SHIFT+Q. It also maintains an internal representation of this key in the form of a virtual key code and a set of flags that represent the shift state. The hot key control does not actually set the hot key — doing that is up to your program. (For a list of standard virtual key codes, see Winuser.h.)
 

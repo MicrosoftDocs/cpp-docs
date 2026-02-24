@@ -3,9 +3,11 @@ description: "Learn more about: Tool Tips in Windows Not Derived from CFrameWnd"
 title: "Tool Tips in Windows Not Derived from CFrameWnd"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["enabling tool tips [MFC]", "TOOLTIPTEXT structure [MFC]", "Help [MFC], tool tips for controls", "TTN_NEEDTEXT message [MFC]", "controls [MFC], tool tips", "handler functions [MFC], tool tips"]
-ms.assetid: cad5ef0f-02e3-4151-ad0d-3d42e6932b0e
 ---
 # Tool Tips in Windows Not Derived from CFrameWnd
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article family covers enabling tool tips for controls contained in a window that is not derived from [CFrameWnd](../mfc/reference/cframewnd-class.md). The article [Toolbars Tool Tips](../mfc/toolbar-tool-tips.md) provides information about tool tips for controls in a `CFrameWnd`.
 

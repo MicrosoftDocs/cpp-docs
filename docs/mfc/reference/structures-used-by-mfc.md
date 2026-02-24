@@ -3,9 +3,11 @@ description: "Learn more about: Structures Used by MFC"
 title: "Structures Used by MFC"
 ms.date: "12/03/2018"
 helpviewer_keywords: ["structures", "structures, MFC"]
-ms.assetid: 2168fcc6-e800-4814-aabf-0bca86ff790d
 ---
 # Structures Used by MFC
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following table lists structures that are called from various member functions. For further information on individual structure usage, refer to the classes and member functions noted in the See Also list for each structure.
 

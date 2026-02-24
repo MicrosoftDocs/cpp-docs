@@ -3,9 +3,11 @@ description: "Learn more about: Walkthroughs (MFC)"
 title: "Walkthroughs (MFC)"
 ms.date: "09/20/2018"
 helpviewer_keywords: ["MFC Feature Pack, walkthroughs"]
-ms.assetid: 20d5756f-ad58-46f4-8b6c-c7a1020b72eb
 ---
 # Walkthroughs (MFC)
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This section contains articles that walk you through various tasks associated with new MFC library features.
 

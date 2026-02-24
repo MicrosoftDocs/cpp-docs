@@ -4,9 +4,11 @@ title: "Message Types Associated with User-Interface Objects"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.uiobject.msgs"]
 helpviewer_keywords: ["message types and user interface objects [MFC]"]
-ms.assetid: 681ee1a7-f6e6-4ea0-9fc6-1fb53a35516e
 ---
 # Message Types Associated with User-Interface Objects
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following table shows the types of objects with which you work, and the types of messages associated with them.
 

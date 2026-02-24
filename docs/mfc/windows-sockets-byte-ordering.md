@@ -3,9 +3,11 @@ description: "Learn more about: Windows Sockets: Byte Ordering"
 title: "Windows Sockets: Byte Ordering"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["byte order issues in sockets programming", "sockets [MFC], byte order issues", "Windows Sockets [MFC], byte order issues"]
-ms.assetid: 8a787a65-f9f4-4002-a02f-ac25a5dace5d
 ---
 # Windows Sockets: Byte Ordering
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article and two companion articles explain several issues in Windows Sockets programming. This article covers byte ordering. The other issues are covered in the articles: [Windows Sockets: Blocking](../mfc/windows-sockets-blocking.md) and [Windows Sockets: Converting Strings](../mfc/windows-sockets-converting-strings.md).
 

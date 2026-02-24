@@ -4,9 +4,11 @@ title: "TN017: Destroying window objects"
 ms.date: 06/03/2022
 f1_keywords: ["vc.objects"]
 helpviewer_keywords: ["destroying windows", "TN017", "PostNcDestroy method [MFC]"]
-ms.assetid: 5bf208a5-5683-439b-92a1-547c5ded26cd
 ---
 # TN017: Destroying window objects
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This note describes the use of the [`CWnd::PostNcDestroy`](../mfc/reference/cwnd-class.md#postncdestroy) method. Use this method if you want to do customized allocation of `CWnd`-derived objects. This note also explains why you should use [`CWnd::DestroyWindow`](../mfc/reference/cwnd-class.md#destroywindow) to destroy a C++ Windows object instead of the **`delete`** operator.
 

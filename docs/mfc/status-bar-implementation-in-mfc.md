@@ -4,9 +4,11 @@ title: "Status Bar Implementation in MFC"
 ms.date: "11/19/2018"
 f1_keywords: ["COldStatusBar"]
 helpviewer_keywords: ["status bars [MFC], implementing in MFC", "CStatusBarCtrl class [MFC], and MFC status bars", "CStatusBar class [MFC], and CStatusBarCtrl class [MFC]", "CStatusBarCtrl class [MFC], and CStatusBar class [MFC]", "status bars [MFC], backward compatibility", "status bars [MFC], old with COldStatusBar class [MFC]", "COldStatusBar class [MFC]", "status bars [MFC], and CStatusBarCtrl class", "CStatusBar class [MFC], and MFC status bars", "status indicators", "status bars [MFC], Windows 95 implementation"]
-ms.assetid: be5cd876-38e3-4d5c-b8cb-16d57a16a142
 ---
 # Status Bar Implementation in MFC
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A [CStatusBar](../mfc/reference/cstatusbar-class.md) object is a control bar with a row of text output panes. The output panes are commonly used as message lines and as status indicators. Examples include the menu help-message lines that briefly explain the selected menu command and the indicators that show the status of the SCROLL LOCK, NUM LOCK, and other keys.
 

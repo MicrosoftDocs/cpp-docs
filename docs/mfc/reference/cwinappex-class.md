@@ -7,6 +7,9 @@ helpviewer_keywords: ["CWinAppEx [MFC], CWinAppEx", "CWinAppEx [MFC], CleanState
 ---
 # `CWinAppEx` class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 `CWinAppEx` handles the application state, saves the state to the registry, loads the state from the registry, initializes application managers, and provides links to those same application managers.
 
 For more detail, see the source code located in the `mfc` folder of your Visual Studio installation. For example, `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\atlmfc\src\mfc`.

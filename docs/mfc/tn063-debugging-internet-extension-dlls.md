@@ -4,9 +4,11 @@ title: "TN063: Debugging Internet MFC extension DLLs"
 ms.date: "11/04/2016"
 f1_keywords: ["vs.debug.dlls"]
 helpviewer_keywords: ["IIS [MFC], debugging DLLs", "TN063 [MFC]", "DLLs [MFC], Internet extension"]
-ms.assetid: 7012d592-9d2f-491a-b417-48e5c2a7680f
 ---
 # TN063: Debugging Internet MFC extension DLLs
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This information is obsolete and has been removed.
 

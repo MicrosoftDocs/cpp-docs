@@ -3,9 +3,11 @@ description: "Learn more about: Windows Sockets: Ports and Socket Addresses"
 title: "Windows Sockets: Ports and Socket Addresses"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ports [MFC], definition", "Windows Sockets [MFC], ports", "Windows Sockets [MFC], addresses", "ports [MFC]", "addresses [MFC], socket", "sockets [MFC], addresses", "sockets [MFC], ports"]
-ms.assetid: e050261a-9285-4f31-a1c5-6c8033af5b4a
 ---
 # Windows Sockets: Ports and Socket Addresses
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains the terms "port" and "address" as used with Windows Sockets.
 

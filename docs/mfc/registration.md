@@ -3,9 +3,11 @@ description: "Learn more about: Registration"
 title: "Registration"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["servers [MFC], initializing", "initializing servers [MFC]", "OLE, registration", "installing servers [MFC]", "registry [MFC], OLE item database", "registration databases [MFC]", "servers [MFC], installing", "OLE server applications [MFC], registering servers"]
-ms.assetid: 991d5684-72c1-4f9e-a09a-9184ed12bbb9
 ---
 # Registration
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 When a user wants to insert an OLE item into an application, OLE presents a list of object types to choose from. OLE gets this list from the system registration database, which contains information provided by all server applications. When a server registers itself, the entries it puts into the system registration database (the Registry) describe each type of object it supplies, file extensions, and the path to itself, among other information.
 

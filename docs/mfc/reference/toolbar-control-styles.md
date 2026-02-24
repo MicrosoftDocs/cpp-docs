@@ -3,9 +3,11 @@ description: "Learn more about: ToolBar Control Styles"
 title: "ToolBar Control Styles"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ToolBar control styles [MFC]"]
-ms.assetid: 0f717eb9-fa32-4263-b852-809238863feb
 ---
 # ToolBar Control Styles
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md) has a set of style flags that determine the appearance and behavior of the button. You can set a combination of these flags by calling [CMFCToolBarButton::SetStyle](../../mfc/reference/cmfctoolbarbutton-class.md#setstyle). This topic lists the style flag values and their meanings.
 

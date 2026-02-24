@@ -3,9 +3,11 @@ description: "Learn more about: Serialization: Making a Serializable Class"
 title: "Serialization: Making a Serializable Class"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["serializable class [MFC]", "DECLARE_SERIAL macro [MFC]", "default constructor [MFC]", "VERSIONABLE_SCHEMA macro [MFC]", "classes [MFC], derived", "IMPLEMENT_SERIAL macro [MFC]", "no-arguments constructor [MFC]", "Serialize method, overriding", "defaults [MFC], constructor", "CObject class [MFC], deriving serializable classes", "constructors [MFC], defining with no arguments", "serialization [MFC], serializable classes", "no default constructor"]
-ms.assetid: 59a14d32-1cc8-4275-9829-99639beee27c
 ---
 # Serialization: Making a Serializable Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Five main steps are required to make a class serializable. They are listed below and explained in the following sections:
 

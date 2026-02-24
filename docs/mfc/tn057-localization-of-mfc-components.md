@@ -3,9 +3,11 @@ description: "Learn more about: TN057: Localization of MFC Components"
 title: "TN057: Localization of MFC Components"
 ms.date: "06/28/2018"
 helpviewer_keywords: ["components [MFC], localizing", "TN057", "resources [MFC], localization", "localization [MFC], MFC resources", "localization [MFC], MFC components", "MFC DLLs [MFC], localizing", "DLLs [MFC], localizing MFC", "localization [MFC], resources"]
-ms.assetid: 5376d329-bd45-41bd-97f5-3d895a9a0af5
 ---
 # TN057: Localization of MFC Components
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

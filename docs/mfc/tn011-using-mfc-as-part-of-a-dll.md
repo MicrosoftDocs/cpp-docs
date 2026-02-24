@@ -3,9 +3,11 @@ description: "Learn more about: TN011: Using MFC as Part of a DLL"
 title: "TN011: Using MFC as Part of a DLL"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["_USRDLL symbol", "USRDLLs, compiler switches", "TN011", "DLLs [MFC], linking", "MFC DLLs [MFC], linking regular MFC DLLs to MFC"]
-ms.assetid: 76753e9c-59dc-40f6-b6a7-f6bb9a7c4190
 ---
 # TN011: Using MFC as Part of a DLL
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This note describes regular MFC DLLs, which allow you to use the MFC library as part of a Windows dynamic-link library (DLL). It assumes that you are familiar with Windows DLLs and how to build them. For information about MFC extension DLLs, with which you can create extensions to the MFC library, see [DLL Version of MFC](../mfc/tn033-dll-version-of-mfc.md).
 

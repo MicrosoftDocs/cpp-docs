@@ -7,6 +7,9 @@ helpviewer_keywords: ["UpdateTabs method [MFC]", "Start method [MFC]", "IsLast m
 ---
 # Internal Classes
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The following classes are used internally in MFC. For completeness, this section describes these internal classes, but they aren't intended to be used directly in your code.
 
 ## In This Section

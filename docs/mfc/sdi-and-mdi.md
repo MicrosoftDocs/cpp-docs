@@ -3,9 +3,11 @@ description: "Learn more about: SDI and MDI"
 title: "SDI and MDI"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["frame windows [MFC], SDI applications", "frame windows [MFC], MDI applications", "MFC, windows", "single document interface (SDI) [MFC], applications", "MDI [MFC], vs. SDI"]
-ms.assetid: bb7239d9-4759-4f63-bfff-44a04b48c067
 ---
 # SDI and MDI
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 MFC makes it easy to work with both single-document interface (SDI) and multiple-document interface (MDI) applications.
 

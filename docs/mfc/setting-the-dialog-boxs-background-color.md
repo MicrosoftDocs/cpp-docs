@@ -7,6 +7,9 @@ ms.topic: concept-article
 ---
 # Setting the Dialog Box's Background Color
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 You can set the background color of your dialog boxes by handling `WM_CTLCOLOR` messages for the dialog box window. The color you set is used for only the specified dialog box.
 
 For example, the following code fragment sets the background color of the dialog box to dark grey. The `OnCtlColor` member function is called whenever the dialog box is redrawn:

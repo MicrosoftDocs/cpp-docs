@@ -4,9 +4,11 @@ title: "Defining a Message Handler for a Reflected Message"
 ms.date: "09/07/2019"
 f1_keywords: ["vc.codewiz.defining.msg.msghandler"]
 helpviewer_keywords: ["messages [MFC], reflected", "message handling [MFC], reflected messages"]
-ms.assetid: 5a403528-58c5-46e7-90d5-4a77f0ab9b9c
 ---
 # Defining a Message Handler for a Reflected Message
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Once you have created a new MFC control class, you can define message handlers for it. Reflected message handlers allow your control class to handle its own messages before the message is received by the parent. You can use the MFC [CWnd::SendMessage](../../mfc/reference/cwnd-class.md#sendmessage) function to send messages from your control to a parent window.
 

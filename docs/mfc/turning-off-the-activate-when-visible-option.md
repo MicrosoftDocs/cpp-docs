@@ -3,10 +3,12 @@ description: "Learn more about: Turning off the Activate When Visible Option"
 title: "Turning off the Activate When Visible Option"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], activate options", "Activate When Visible option [MFC]"]
-ms.assetid: 8f7ddc5a-a7a6-4da8-bcb9-1b569f0ecb48
 ms.topic: concept-article
 ---
 # Turning off the Activate When Visible Option
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A control has two basic states: active and inactive. Traditionally, these states were distinguished by whether the control had a window. An active control had a window; an inactive control did not. With the introduction of windowless activation, this distinction is no longer universal, but still applies to many controls.
 

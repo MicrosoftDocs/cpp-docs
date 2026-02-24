@@ -4,9 +4,11 @@ title: "CUIntArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CUIntArray", "AFXCOLL/CUIntArray", "AFXCOLL/CUIntArray::CUIntArray", "AFXCOLL/CUIntArray::Add", "AFXCOLL/CUIntArray::Append", "AFXCOLL/CUIntArray::Copy", "AFXCOLL/CUIntArray::ElementAt", "AFXCOLL/CUIntArray::FreeExtra", "AFXCOLL/CUIntArray::GetAt", "AFXCOLL/CUIntArray::GetCount", "AFXCOLL/CUIntArray::GetData", "AFXCOLL/CUIntArray::GetSize", "AFXCOLL/CUIntArray::GetUpperBound", "AFXCOLL/CUIntArray::InsertAt", "AFXCOLL/CUIntArray::IsEmpty", "AFXCOLL/CUIntArray::RemoveAll", "AFXCOLL/CUIntArray::RemoveAt", "AFXCOLL/CUIntArray::SetAt", "AFXCOLL/CUIntArray::SetAtGrow", "AFXCOLL/CUIntArray::SetSize"]
 helpviewer_keywords: ["CUIntArray [MFC], CUIntArray", "CUIntArray [MFC], Add", "CUIntArray [MFC], Append", "CUIntArray [MFC], Copy", "CUIntArray [MFC], ElementAt", "CUIntArray [MFC], FreeExtra", "CUIntArray [MFC], GetAt", "CUIntArray [MFC], GetCount", "CUIntArray [MFC], GetData", "CUIntArray [MFC], GetSize", "CUIntArray [MFC], GetUpperBound", "CUIntArray [MFC], InsertAt", "CUIntArray [MFC], IsEmpty", "CUIntArray [MFC], RemoveAll", "CUIntArray [MFC], RemoveAt", "CUIntArray [MFC], SetAt", "CUIntArray [MFC], SetAtGrow", "CUIntArray [MFC], SetSize"]
-ms.assetid: d71f3d8f-ef9f-4e48-9b69-7782c0e2ddf7
 ---
 # CUIntArray Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Supports arrays of unsigned integers.
 

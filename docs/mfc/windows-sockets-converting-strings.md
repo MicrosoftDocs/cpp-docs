@@ -3,9 +3,11 @@ description: "Learn more about: Windows Sockets: Converting Strings"
 title: "Windows Sockets: Converting Strings"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows Sockets [MFC], multibyte character string conversion", "sockets [MFC], multibyte character string conversion issues", "string conversion, multibyte character strings"]
-ms.assetid: 9df522b5-6b23-41e0-bb96-e4e623baf141
 ---
 # Windows Sockets: Converting Strings
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article and two companion articles explain several issues in Windows Sockets programming. This article covers converting strings. The other issues are covered in [Windows Sockets: Blocking](../mfc/windows-sockets-blocking.md) and [Windows Sockets: Byte Ordering](../mfc/windows-sockets-byte-ordering.md).
 

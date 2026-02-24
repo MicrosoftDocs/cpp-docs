@@ -3,9 +3,11 @@ description: "Learn more about: Servers: Implementing Server Documents"
 title: "Servers: Implementing Server Documents"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE server applications [MFC], managing server documents", "OLE server applications [MFC], implementing OLE servers", "servers, server documents", "server documents [MFC], implementing"]
-ms.assetid: cca1451a-ad09-47ed-b56e-bccd78fc86d1
 ---
 # Servers: Implementing Server Documents
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains the steps you must take to successfully implement a server document if you did not specify the OLE Server option in the application wizard.
 

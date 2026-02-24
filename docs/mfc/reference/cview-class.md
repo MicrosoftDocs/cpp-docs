@@ -4,9 +4,11 @@ title: "CView Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CView", "AFXWIN/CView", "AFXWIN/CView::CView", "AFXWIN/CView::DoPreparePrinting", "AFXWIN/CView::GetDocument", "AFXWIN/CView::IsSelected", "AFXWIN/CView::OnDragEnter", "AFXWIN/CView::OnDragLeave", "AFXWIN/CView::OnDragOver", "AFXWIN/CView::OnDragScroll", "AFXWIN/CView::OnDrop", "AFXWIN/CView::OnDropEx", "AFXWIN/CView::OnInitialUpdate", "AFXWIN/CView::OnPrepareDC", "AFXWIN/CView::OnScroll", "AFXWIN/CView::OnScrollBy", "AFXWIN/CView::OnActivateFrame", "AFXWIN/CView::OnActivateView", "AFXWIN/CView::OnBeginPrinting", "AFXWIN/CView::OnDraw", "AFXWIN/CView::OnEndPrinting", "AFXWIN/CView::OnEndPrintPreview", "AFXWIN/CView::OnPreparePrinting", "AFXWIN/CView::OnPrint", "AFXWIN/CView::OnUpdate"]
 helpviewer_keywords: ["CView [MFC], CView", "CView [MFC], DoPreparePrinting", "CView [MFC], GetDocument", "CView [MFC], IsSelected", "CView [MFC], OnDragEnter", "CView [MFC], OnDragLeave", "CView [MFC], OnDragOver", "CView [MFC], OnDragScroll", "CView [MFC], OnDrop", "CView [MFC], OnDropEx", "CView [MFC], OnInitialUpdate", "CView [MFC], OnPrepareDC", "CView [MFC], OnScroll", "CView [MFC], OnScrollBy", "CView [MFC], OnActivateFrame", "CView [MFC], OnActivateView", "CView [MFC], OnBeginPrinting", "CView [MFC], OnDraw", "CView [MFC], OnEndPrinting", "CView [MFC], OnEndPrintPreview", "CView [MFC], OnPreparePrinting", "CView [MFC], OnPrint", "CView [MFC], OnUpdate"]
-ms.assetid: 9cff3c56-7564-416b-b9a4-71a9254ed755
 ---
 # `CView` Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides the basic functionality for user-defined view classes.
 

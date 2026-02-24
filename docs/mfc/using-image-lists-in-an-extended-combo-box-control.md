@@ -3,10 +3,12 @@ description: "Learn more about: Using Image Lists in an Extended Combo Box Contr
 title: "Using Image Lists in an Extended Combo Box Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["image lists [MFC], combo boxes", "extended combo boxes [MFC], images", "images [MFC], combo box items"]
-ms.assetid: dfff25fe-af70-47a2-8032-3901d1e6842d
 ms.topic: how-to
 ---
 # Using Image Lists in an Extended Combo Box Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The main feature of extended combo box controls is the ability to associate images from an image list with individual items in a combo box control. Each item is able to display three different images: one for its selected state, one for its nonselected state, and a third for an overlay image.
 

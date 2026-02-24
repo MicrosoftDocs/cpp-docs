@@ -4,9 +4,11 @@ title: "Special CWinApp Services"
 ms.date: "11/04/2016"
 f1_keywords: ["LoadStdProfileSettings", "EnableShellOpen"]
 helpviewer_keywords: ["files [MFC], most recently used", "DragAcceptFiles method [MFC]", "MRU lists", "GDI+, initializing for MFC", "GDI+, suppressing background thread [MFC]", "CWinApp class [MFC], shell registration", "application objects [MFC], services", "CWinApp class [MFC], initializing GDI+", "MFC, shell registration", "CWinApp class [MFC], File Manager drag and drop", "LoadStdProfileSettings method [MFC]", "MFC, most-recently-used file list", "RegisterShellFileTypes method [MFC]", "drag and drop [MFC], files", "registering file types", "Shell, registering file types", "services, provided by CWinApp", "CWinApp class [MFC], recently used documents", "CWinApp class [MFC], services", "files [MFC], drag and drop", "EnableShellOpen method [MFC]", "registry [MFC], most recently used files", "MFC, file operations", "registration [MFC], shell"]
-ms.assetid: 0480cd01-f629-4249-b221-93432d95b431
 ---
 # Special CWinApp Services
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Besides running the message loop and giving you an opportunity to initialize the application and clean up after it, [CWinApp](../mfc/reference/cwinapp-class.md) provides several other services.
 

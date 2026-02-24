@@ -4,9 +4,11 @@ title: "Template Classes for Arrays, Lists, and Maps"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.template"]
 helpviewer_keywords: ["arrays [MFC], classes", "template classes [MFC], for arrays/lists and maps", "list classes [MFC]", "map classes [MFC]", "template classes [MFC]"]
-ms.assetid: a8331c4b-068a-48f8-a629-b8449601e121
 ---
 # Template Classes for Arrays, Lists, and Maps
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 These collection classes are templates whose parameters determine the types of the objects stored in the aggregates. The `CArray`, `CMap`, and `CList` classes use global helper functions that must usually be customized. For more information about these helper functions, see [Collection Class Helpers](../mfc/reference/collection-class-helpers.md). The typed pointer classes are wrappers for other classes in the class library. By using these wrappers, you enlist the compiler's type-checking to help you avoid errors. For more information on using these classes, see [Collections](../mfc/collections.md).
 

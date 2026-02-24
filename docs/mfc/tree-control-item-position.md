@@ -3,9 +3,11 @@ description: "Learn more about: Tree Control Item Position"
 title: "Tree Control Item Position"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CTreeCtrl class [MFC], item position", "item position in tree controls", "tree controls [MFC], item position", "position, CTreeCtrl items"]
-ms.assetid: cd264344-2cf9-4d90-9ea8-c6900b6f60e7
 ---
 # Tree Control Item Position
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 An item's initial position is set when the item is added to the tree control ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) by using the `InsertItem` member function. The member function call specifies the handle of the parent item and the handle of the item after which the new item is to be inserted. The second handle must identify either a child item of the given parent or one of these values: `TVI_FIRST`, `TVI_LAST`, or `TVI_SORT`.
 

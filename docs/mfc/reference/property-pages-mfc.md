@@ -3,9 +3,11 @@ description: "Learn more about: Property Pages (MFC)"
 title: "Property Pages (MFC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["property page data transfer functions in MFC", "property pages [MFC], global MFC functions"]
-ms.assetid: 734f88bc-c776-4136-9b0e-f45c761a45c1
 ---
 # Property Pages (MFC)
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Property pages display the current values of specific OLE control properties in a customizable, graphical interface for viewing and editing by supporting a data-mapping mechanism based on dialog data exchange (DDX).
 

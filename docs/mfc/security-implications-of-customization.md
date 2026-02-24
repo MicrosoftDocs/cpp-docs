@@ -3,9 +3,11 @@ description: "Learn more about: Security Implications of Customization"
 title: "Security Implications of Customization"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["security, MFC Feature Pack", "MFC Feature Pack, security"]
-ms.assetid: 9be96b12-be38-43bd-a133-5d671265f7a1
 ---
 # Security Implications of Customization
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This topic discusses a potential security weakness in MFC.
 

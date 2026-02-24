@@ -3,10 +3,12 @@ description: "Learn more about: Testing Internet Applications"
 title: "Testing Internet Applications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Web applications [MFC], testing", "debugging Web applications [MFC], testing applications", "testing [MFC], Internet applications", "debugging [MFC], Web applications", "Internet debugging and testing"]
-ms.assetid: ac4c74e3-d4ad-4e19-8f6c-e270de067f01
 ms.topic: concept-article
 ---
 # Testing Internet Applications
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 There are some unique testing challenges on the Internet, especially for applications running on a Web server. Your initial testing will probably be done using a single-user client connecting to a test server. This will be useful for debugging your code.
 

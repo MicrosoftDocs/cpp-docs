@@ -3,10 +3,12 @@ description: "Learn more about: Using Slider Controls"
 title: "Using Slider Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CSliderCtrl class [MFC], using", "slider controls", "slider controls [MFC], using"]
-ms.assetid: 2b1a8ac8-2b17-41e1-aa24-83c1fd737049
 ms.topic: concept-article
 ---
 # Using Slider Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Typical usage of an slider control follows the pattern below:
 

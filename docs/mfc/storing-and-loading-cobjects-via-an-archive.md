@@ -3,10 +3,12 @@ description: "Learn more about: Storing and Loading CObjects via an Archive"
 title: "Storing and Loading CObjects via an Archive"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CObjects [MFC], loading through archives", "CArchive class [MFC], storing and loading objects", "Serialize method, vs. CArchive operators", "CObject class [MFC], CArchive objects", "CObjects [MFC]"]
-ms.assetid: a829b6dd-bc31-47e0-8108-fbb946722db9
 ms.topic: concept-article
 ---
 # Storing and Loading CObjects via an Archive
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Storing and loading `CObject`s via an archive requires extra consideration. In certain cases, you should call the `Serialize` function of the object, where the `CArchive` object is a parameter of the `Serialize` call, as opposed to using the **<\<** or **>>** operator of the `CArchive`. The important fact to keep in mind is that the `CArchive` **>>** operator constructs the `CObject` in memory based on `CRuntimeClass` information previously written to the file by the storing archive.
 

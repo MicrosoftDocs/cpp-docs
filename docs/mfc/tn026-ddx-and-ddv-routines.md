@@ -4,9 +4,11 @@ title: "TN026: DDX and DDV Routines"
 ms.date: "06/28/2018"
 f1_keywords: ["DDX", "DDV"]
 helpviewer_keywords: ["DDX (dialog data exchange), procedures", "TN026", "DDV (dialog data validation), procedures"]
-ms.assetid: c2eba87a-4b47-4083-b28b-e2fa77dfb4c4
 ---
 # TN026: DDX and DDV Routines
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

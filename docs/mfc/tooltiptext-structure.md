@@ -4,9 +4,11 @@ title: "TOOLTIPTEXT Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["TOOLTIPTEXT"]
 helpviewer_keywords: ["TOOLTIPTEXT structure [MFC]", "tool tips [MFC], notifications"]
-ms.assetid: 547591bf-80f5-400e-a2a7-0708cfffbb5d
 ---
 # TOOLTIPTEXT Structure
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 In writing your [tool tip notification handler](../mfc/handling-ttn-needtext-notification-for-tool-tips.md), you need to use the **TOOLTIPTEXT** structure. The members of the **TOOLTIPTEXT** structure are:
 

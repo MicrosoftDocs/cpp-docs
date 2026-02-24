@@ -3,9 +3,11 @@ description: "Learn more about: Tree Control Image Lists"
 title: "Tree Control Image Lists"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["images [MFC], lists in tree controls", "tree controls [MFC], image lists", "CTreeCtrl class [MFC], image lists"]
-ms.assetid: f560c4f2-20d2-4d28-ac33-4017e65fb0a6
 ---
 # Tree Control Image Lists
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Each item in a tree control ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) can have a pair of bitmapped images associated with it. The images appear on the left side of an item's label. One image is displayed when the item is selected, and the other is displayed when the item is not selected. For example, an item might display an open folder when it is selected and a closed folder when it is not selected.
 

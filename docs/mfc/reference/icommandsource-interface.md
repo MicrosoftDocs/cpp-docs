@@ -7,6 +7,9 @@ helpviewer_keywords: ["ICommandSource interface [MFC]"]
 ---
 # ICommandSource Interface
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Manages commands sent from a command source object to a user control.
 
 ## Syntax

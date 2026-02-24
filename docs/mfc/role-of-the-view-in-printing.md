@@ -3,9 +3,11 @@ description: "Learn more about: Role of the View in Printing"
 title: "Role of the View in Printing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["views [MFC], printing", "OnDraw method [MFC], and printing", "printing [MFC], OnDraw method [MFC]", "printing [MFC], views", "CView class [MFC], role in printing", "printing views [MFC]"]
-ms.assetid: 8d4a3c8e-1fce-4edc-b608-94cb5f3e487e
 ---
 # Role of the View in Printing
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Your view also plays two important roles in printing its associated document.
 

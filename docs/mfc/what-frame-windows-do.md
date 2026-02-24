@@ -3,9 +3,11 @@ description: "Learn more about: What Frame Windows Do"
 title: "What Frame Windows Do"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["frame windows [MFC], about frame windows", "frame windows [MFC], tasks", "MFC, frame windows"]
-ms.assetid: 1148a952-6786-4622-b5a8-68a2d7eae584
 ---
 # What Frame Windows Do
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Besides simply framing a view, frame windows are responsible for numerous tasks involved in coordinating the frame with its view and with the application. [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md) and [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md) inherit from [CFrameWnd](../mfc/reference/cframewnd-class.md), so they have `CFrameWnd` capabilities as well as new capabilities that they add. Examples of child windows include views, controls such as buttons and list boxes, and control bars, including toolbars, status bars, and dialog bars.
 

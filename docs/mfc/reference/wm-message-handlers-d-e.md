@@ -4,9 +4,11 @@ title: "WM_ Message Handlers: D - E"
 ms.date: "11/04/2016"
 f1_keywords: ["ON_WM_ERASEBKGND", "ON_WM_DEVICECHANGE", "ON_WM_ENTERIDLE", "ON_WM_DESTROYCLIPBOARD", "ON_WM_DESTROY", "ON_WM_DEADCHAR", "ON_WM_DELETEITEM", "ON_WM_DROPFILES", "ON_WM_DEVMODECHANGE", "ON_WM_ENDSESSION", "ON_WM_ENABLE", "ON_WM_DRAWITEM", "ON_WM_DRAWCLIPBOARD"]
 helpviewer_keywords: ["ON_WM_ENTERIDLE [MFC]", "ON_WM_DESTROYCLIPBOARD [MFC]", "ON_WM_DEADCHAR [MFC]", "ON_WM_DEVMODECHANGE [MFC]", "ON_WM_ERASEBKGND [MFC]", "ON_WM_DESTROY [MFC]", "ON_WM_DRAWCLIPBOARD [MFC]", "ON_WM_ENDSESSION [MFC]", "ON_WM_DRAWITEM [MFC]", "ON_WM_ENABLE [MFC]", "ON_WM_DROPFILES [MFC]", "ON_WM_DELETEITEM [MFC]", "ON_WM_DEVICECHANGE [MFC]", "WM_ messages [MFC]"]
-ms.assetid: 56fb89c8-68a8-4adf-883e-a9f63bf677e9
 ---
 # WM_ Message Handlers: D - E
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following map entries on the left correspond to the function prototypes on the right:
 

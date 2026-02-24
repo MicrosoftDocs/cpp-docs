@@ -3,10 +3,12 @@ description: "Learn more about: Using Custom Format Strings in a Date and Time P
 title: "Using Custom Format Strings in a Date and Time Picker Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CDateTimeCtrl class [MFC], display styles", "DateTimePicker control [MFC], display styles", "DateTimePicker control [MFC]"]
-ms.assetid: 7d577f03-6ca0-4597-9093-50b78f304719
 ms.topic: concept-article
 ---
 # Using Custom Format Strings in a Date and Time Picker Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 By default, date and time picker controls provide three format types (each format corresponding to a unique style) for displaying the current date or time:
 

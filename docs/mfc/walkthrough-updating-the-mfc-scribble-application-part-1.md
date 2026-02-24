@@ -3,9 +3,11 @@ description: "Learn more about: Walkthrough: Updating the MFC Scribble Applicati
 title: "Walkthrough: Updating the MFC Scribble Application (Part 1)"
 ms.date: "09/09/2019"
 helpviewer_keywords: ["examples [MFC], update existing application", "ribbon UI, porting to", "Office Fluent UI, porting to", "samples [MFC], update existing application", "MFC Feature Pack, update existing application", "walkthroughs [MFC], update existing application"]
-ms.assetid: aa6330d3-6cfc-4c79-8fcb-0282263025f7
 ---
 # Walkthrough: Updating the MFC Scribble Application (Part 1)
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This walkthrough demonstrates how to modify an existing MFC application to use the Ribbon user interface. Visual Studio supports both the Office 2007 Ribbon and the Windows 7 Scenic Ribbon. For more information about the Ribbon user interface, see [Ribbons](/windows/win32/uxguide/cmd-ribbons).
 

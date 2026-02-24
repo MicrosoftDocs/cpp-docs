@@ -4,9 +4,11 @@ title: "Variant Parameter Type Constants"
 ms.date: "11/04/2016"
 f1_keywords: ["VTS_YPOS_HIMETRIC", "VTS_PICTURE", "VTS_FONT", "VTS_XPOS_HIMETRIC", "VTS_XPOS_PIXELS", "VTS_XSIZE_HIMETRIC", "VTS_YPOS_PIXELS", "VTS_TRISTATE", "VTS_HANDLE", "VTS_YSIZE_HIMETRIC", "VTS_COLOR", "VTS_OPTEXCLUSIVE", "VTS_YSIZE_PIXELS", "VTS_XSIZE_PIXELS"]
 helpviewer_keywords: ["VTS_XPOS_HIMETRIC constant [MFC]", "VTS_FONT constant [MFC]", "VTS_XPOS_PIXELS constant [MFC]", "VTS_COLOR constant [MFC]", "Variants [MFC]", "VTS_YPOS_PIXELS constant [MFC]", "VTS_YSIZE_HIMETRIC constant [MFC]", "VTS_YPOS_HIMETRIC constant [MFC]", "Variants, parameter type constants", "Variant data constants [MFC]", "VTS_PICTURE constant [MFC]", "VTS_TRISTATE constant [MFC]", "VTS_XSIZE_HIMETRIC constant [MFC]", "VTS_HANDLE constant [MFC]", "VTS_XSIZE_PIXELS constant [MFC]", "VTS_OPTEXCLUSIVE constant [MFC]", "VTS_YSIZE_PIXELS constant [MFC]"]
-ms.assetid: de99c7a9-7aae-4dc4-b723-40c6380543ab
 ---
 # Variant Parameter Type Constants
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This topic lists new constants that indicate variant parameter types designed for use with the OLE control classes of the Microsoft Foundation Class Library.
 

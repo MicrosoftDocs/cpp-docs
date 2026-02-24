@@ -3,9 +3,11 @@ description: "Learn more about: DAO Database Engine Initialization and Terminati
 title: "DAO Database Engine Initialization and Termination"
 ms.date: "09/17/2019"
 helpviewer_keywords: ["DAO (Data Access Objects), termination", "DAO (Data Access Objects), initialization"]
-ms.assetid: a7edf31c-e7c2-4f3e-aada-63c3e48781da
 ---
 # DAO Database Engine Initialization and Termination
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 DAO is used with Access databases and is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete. When using MFC DAO objects, the DAO database engine must first be initialized and then terminated before your application or DLL quits. Two functions, `AfxDaoInit` and `AfxDaoTerm`, perform these tasks.
 

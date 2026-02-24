@@ -3,10 +3,12 @@ description: "Learn more about: Using CTabCtrl"
 title: "Using CTabCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CTabCtrl class [MFC], using", "tab controls [MFC], using"]
-ms.assetid: 6bda6798-0085-4c09-a5ea-fe0e97af5c95
 ms.topic: concept-article
 ---
 # Using CTabCtrl
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A "tab control" is analogous to the dividers in a notebook or the labeled folders in a file cabinet. Use the tab control, represented by class [CTabCtrl](../mfc/reference/ctabctrl-class.md), to show multiple pages of information or controls to a user, one at a time, in a format that suggests a peer or logical relationship between each page.
 

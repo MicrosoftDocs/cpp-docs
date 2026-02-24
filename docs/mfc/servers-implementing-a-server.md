@@ -3,9 +3,11 @@ description: "Learn more about: Servers: Implementing a Server"
 title: "Servers: Implementing a Server"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["servers, implementing", "OLE server applications [MFC], implementing OLE servers"]
-ms.assetid: 5bd57e8e-3b23-4f23-9597-496fac2d24b5
 ---
 # Servers: Implementing a Server
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains the code the MFC Application Wizard creates for a visual editing server application. If you are not using the application wizard, this article lists the areas where you must write code to implement a server application.
 

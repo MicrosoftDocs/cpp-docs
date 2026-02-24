@@ -3,10 +3,12 @@ description: "Learn more about: Using CReBarCtrl"
 title: "Using CReBarCtrl"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["child windows [MFC], rebar controls", "combo boxes [MFC], in rebar controls", "rebar controls"]
-ms.assetid: 2c0aeec2-ffc3-44b8-97b5-0f56e116a338
 ms.topic: concept-article
 ---
 # Using CReBarCtrl
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A rebar control acts as a container for child windows. These child windows, often other controls, are assigned to a rebar control band. A rebar control can contain one or more bands, with each band having any combination of a gripper bar, a bitmap, a text label, and a child window. However, bands cannot contain more than one child window.
 

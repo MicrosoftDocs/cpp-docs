@@ -3,9 +3,11 @@ description: "Learn more about: Technical Notes by Number"
 title: "Technical Notes by Number"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.tables.mfc.technotes"]
-ms.assetid: aaa449be-9167-4510-a490-af872c4f60a2
 ---
 # Technical Notes by Number
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The technical notes below are listed numerically, with the most recently written technical note first. For a listing by category, see [Technical Notes by Category](../mfc/technical-notes-by-category.md).
 

@@ -3,10 +3,12 @@ description: "Learn more about: TN061: ON_NOTIFY and WM_NOTIFY Messages"
 title: "TN061: ON_NOTIFY and WM_NOTIFY Messages"
 ms.date: "06/28/2018"
 helpviewer_keywords: ["ON_NOTIFY_EX message [MFC]", "TN061", "ON_NOTIFY message [MFC]", "ON_NOTIFY_EX_RANGE message [MFC]", "ON_NOTIFY_RANGE message [MFC]", "notification messages", "WM_NOTIFY message"]
-ms.assetid: 04a96dde-7049-41df-9954-ad7bb5587caf
 ms.topic: reference
 ---
 # TN061: ON_NOTIFY and WM_NOTIFY Messages
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

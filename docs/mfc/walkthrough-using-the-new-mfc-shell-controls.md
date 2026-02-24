@@ -3,9 +3,11 @@ description: "Learn more about: Walkthrough: Using the New MFC Shell Controls"
 title: "Walkthrough: Using the New MFC Shell Controls"
 ms.date: 10/27/2021
 helpviewer_keywords: ["shell controls (MFC)"]
-ms.assetid: f0015caa-199d-4aaf-9501-5a239fce9095
 ---
 # Walkthrough: Using the New MFC Shell Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 In this walkthrough, you'll create an application that resembles File Explorer. You'll create a window that has two panes. The left pane will hold a [CMFCShellTreeCtrl](../mfc/reference/cmfcshelltreectrl-class.md) object that displays your Desktop in a hierarchical view. The right pane will hold a [CMFCShellListCtrl](../mfc/reference/cmfcshelllistctrl-class.md) that shows the files in the folder that is selected in the left pane.
 

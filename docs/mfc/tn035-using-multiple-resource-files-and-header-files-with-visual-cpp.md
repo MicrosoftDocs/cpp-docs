@@ -4,9 +4,11 @@ title: "TN035: Using multiple resource files and header files with Visual Studio
 ms.date: "11/04/2016"
 f1_keywords: ["vc.resources"]
 helpviewer_keywords: ["resource files, multiple", "TN035"]
-ms.assetid: 1f08ce5e-a912-44cc-ac56-7dd93ad73fb6
 ---
 # TN035: Using multiple resource files and header files with Visual Studio
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

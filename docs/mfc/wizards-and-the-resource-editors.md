@@ -3,9 +3,11 @@ description: "Learn more about: Wizards and the Resource Editors"
 title: "Wizards and the Resource Editors"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["application wizards [MFC], and MFC", "MFC, resource editors", "resource editors, MFC", "MFC Application Wizard", "editors [MFC], resource", "wizards [MFC]", "wizards [MFC], MFC programming", "MFC, wizards", "Class View tool, managing Windows messages"]
-ms.assetid: f5dd4d13-9dc1-4a49-b6bf-5b3cb45fa8ba
 ---
 # Wizards and the Resource Editors
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Visual Studio includes several wizards for use in MFC programming, along with many integrated resource editors. For ActiveX controls programming, the [ActiveX Control Wizard](../mfc/reference/mfc-activex-control-wizard.md) serves a purpose much like that of the MFC Application Wizard. While you can write MFC applications without most of these tools, the tools greatly simplify and speed your work.
 

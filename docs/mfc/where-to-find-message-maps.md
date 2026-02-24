@@ -3,9 +3,11 @@ description: "Learn more about: Where to Find Message Maps"
 title: "Where to Find Message Maps"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["macros, message map", "locating message maps", "message classes [MFC], finding", "message-map macros"]
-ms.assetid: bf59fbc8-b222-42d3-b5d3-0a79aa3cb923
 ---
 # Where to Find Message Maps
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 When you create a new skeleton application with the Application Wizard, the Application Wizard writes a message map for each command-target class it creates for you. This includes your derived application, document, view, and frame-window classes. Some of these message maps already have the entries supplied by the Application Wizard for certain messages and predefined commands, and some are just placeholders for handlers that you will add.
 

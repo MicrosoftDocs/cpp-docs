@@ -4,9 +4,11 @@ title: "MFC Add Class Wizard"
 ms.date: "09/06/2019"
 f1_keywords: ["vc.codewiz.class.mfc.simple.overview"]
 helpviewer_keywords: ["MFC Add Class Wizard", "wizards [MFC]"]
-ms.assetid: ad3b0989-d307-43b2-9417-3f9a78889024
 ---
 # MFC Add Class Wizard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Use this code wizard to add a class to an existing MFC project, or to add a class to an ATL project that supports MFC. You can also add MFC classes to Win32 projects that have MFC support. The features you specified when you created your project determine the options available in this dialog box. To access the wizard, click on **Add Class** in [Class Wizard](mfc-class-wizard.md).
 

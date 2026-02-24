@@ -3,9 +3,11 @@ description: "Learn more about: Tree Control Notification Messages"
 title: "Tree Control Notification Messages"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["notifications [MFC], tree controls", "messages [MFC], notification", "CTreeCtrl class [MFC], notifications", "notifications [MFC], CTreeCtrl", "tree controls [MFC], notification messages"]
-ms.assetid: ac7013b4-91dd-4668-bd75-439ca0680ef9
 ---
 # Tree Control Notification Messages
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A tree control ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) sends the following notification messages as WM_NOTIFY messages:
 

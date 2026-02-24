@@ -3,10 +3,12 @@ description: "Learn more about: Writing an Internet Client Application Using MFC
 title: "Writing an Internet Client Application Using MFC WinInet Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Internet client applications [MFC]", "WinInet classes [MFC], programming", "Internet client applications [MFC], writing", "Internet applications [MFC], WinInet", "Internet applications [MFC], client applications", "MFC, Internet applications"]
-ms.assetid: a2c4a40c-a94e-4b3e-9dbf-f8a8dc8e5428
 ms.topic: concept-article
 ---
 # Writing an Internet Client Application Using MFC WinInet Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The basis of every Internet client application is the Internet session. MFC implements Internet sessions as objects of class [CInternetSession](../mfc/reference/cinternetsession-class.md). Using this class, you can create one Internet session or several simultaneous sessions.
 

@@ -4,9 +4,11 @@ title: "Declaring a Variable Based on Your New Control Class"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.classes.control.variable"]
 helpviewer_keywords: ["variables [MFC], control classes", "control classes [MFC], variables", "classes [MFC], declaring variables based on"]
-ms.assetid: 5722dc38-c0eb-40bd-93da-67a808140d03
 ---
 # Declaring a Variable Based on Your New Control Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Once you have created an MFC control class, you can declare a variable based on it. To provide a context for the new variable, you must open the dialog editor and edit the dialog box in which you want to use your reusable control. Also, the dialog box must already have a class associated with it. For information on using the dialog editor, see [Dialog Editor](../../windows/dialog-editor.md).
 

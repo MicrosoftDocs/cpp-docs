@@ -4,9 +4,11 @@ title: "ICommandTarget Interface"
 ms.date: "11/04/2016"
 f1_keywords: ["ICommandTarget", "AFXWINFORMS/ICommandTarget", "AFXWINFORMS/ICommandTarget::Initialize"]
 helpviewer_keywords: ["ICommandTarget interface [MFC]"]
-ms.assetid: dd9927f6-3479-4e7c-8ef9-13206cf901f3
 ---
 # ICommandTarget Interface
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides a user control with an interface to receive commands from a command source object.
 

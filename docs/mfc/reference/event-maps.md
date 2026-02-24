@@ -3,9 +3,11 @@ description: "Learn more about: Event Maps"
 title: "Event Maps"
 ms.date: "09/07/2019"
 helpviewer_keywords: ["event maps [MFC]"]
-ms.assetid: 1ed53aee-bc53-43cd-834a-6fb935c0d29b
 ---
 # Event Maps
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Whenever a control wishes to notify its container that some action (determined by the control developer) has happened (such as a keystroke, mouse click, or a change to the control's state) it calls an event-firing function. This function notifies the control container that some important action has occurred by firing the related event.
 

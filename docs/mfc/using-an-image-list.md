@@ -3,10 +3,12 @@ description: "Learn more about: Using an Image List"
 title: "Using an Image List"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["lists [MFC], image", "CImageList class [MFC], using", "image lists [MFC]"]
-ms.assetid: e0aed188-a1e6-400e-9f51-033d61c5541f
 ms.topic: concept-article
 ---
 # Using an Image List
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Typical usage of an image list follows the pattern below:
 

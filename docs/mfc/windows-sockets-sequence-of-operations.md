@@ -3,9 +3,11 @@ description: "Learn more about: Windows Sockets: Sequence of Operations"
 title: "Windows Sockets: Sequence of Operations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows Sockets [MFC], operations", "Windows Sockets [MFC], stream sockets", "sockets [MFC], stream sockets", "sockets [MFC], operations", "stream sockets [MFC]"]
-ms.assetid: 43ce76f5-aad3-4247-b8a6-16cc7d012796
 ---
 # Windows Sockets: Sequence of Operations
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article illustrates, side by side, the sequence of operations for a server socket and a client socket. Because the sockets use `CArchive` objects, they are necessarily [stream sockets](../mfc/windows-sockets-stream-sockets.md).
 

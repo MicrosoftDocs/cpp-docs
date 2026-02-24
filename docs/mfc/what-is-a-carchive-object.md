@@ -3,11 +3,13 @@ description: "Learn more about: What Is a CArchive Object"
 title: "What Is a CArchive Object"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["archive objects [MFC]", "archives [MFC], for serialization", "buffers, serializable objects", "CArchive class [MFC], about CArchive class [MFC]", "buffering, serializable objects"]
-ms.assetid: 843f1825-288d-4d89-a1fa-70e1f92d9b8b
 ms.custom: intro-overview
 ms.topic: concept-article
 ---
 # What Is a CArchive Object
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A `CArchive` object provides a type-safe buffering mechanism for writing or reading serializable objects to or from a `CFile` object. Usually the `CFile` object represents a disk file; however, it can also be a memory file (`CSharedFile` object), perhaps representing the Clipboard.
 

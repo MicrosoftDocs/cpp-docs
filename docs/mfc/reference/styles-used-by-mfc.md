@@ -6,6 +6,9 @@ helpviewer_keywords: ["button objects (CButton), button styles", "button styles 
 ---
 # Styles Used by MFC
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Use the following style flags to specify window or control appearance and behavior when you create the corresponding MFC object. In most cases, these styles are set in the *`dwStyle`* parameter of the class `Create` function.
 
 ## <a name="button-styles"></a> Button styles

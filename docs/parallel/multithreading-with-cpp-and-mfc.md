@@ -3,10 +3,12 @@ description: "Learn more about: Multithreading with C++ and MFC"
 title: "Multithreading with C++ and MFC"
 ms.date: "08/27/2018"
 helpviewer_keywords: ["MFC [C++], multithreading", "threading [C++], MFC", "worker threads [C++]", "synchronization classes [C++]", "synchronization [C++], multithreading", "threading [MFC], about threading", "CWinThread class, purpose of", "multithreading [C++], MFC", "threading [MFC]", "user interface threads [C++]"]
-ms.assetid: 979605f8-3988-44b5-ac9c-b8cce7fcce14
 ms.topic: concept-article
 ---
 # Multithreading with C++ and MFC
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The Microsoft Foundation Class (MFC) library provides support for multithreaded applications. This topic describes processes and threads and the MFC approach to multithreading.
 

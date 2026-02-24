@@ -6,6 +6,9 @@ helpviewer_keywords: ["Customize dialog box, adding controls", "toolbars [MFC], 
 ---
 # Walkthrough: Putting Controls On Toolbars
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 This article describes how to add a toolbar button that contains a Windows control to a toolbar. In MFC, a toolbar button must be a [`CMFCToolBarButton` Class](reference/cmfctoolbarbutton-class.md)-derived class, for example [`CMFCToolBarComboBoxButton` Class](reference/cmfctoolbarcomboboxbutton-class.md), [`CMFCToolBarEditBoxButton` Class](reference/cmfctoolbareditboxbutton-class.md), [`CMFCDropDownToolbarButton` Class](reference/cmfcdropdowntoolbarbutton-class.md), or [`CMFCToolBarMenuButton` Class](reference/cmfctoolbarmenubutton-class.md).
 
 ## Adding Controls to Toolbars

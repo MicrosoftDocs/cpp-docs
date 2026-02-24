@@ -3,10 +3,12 @@ description: "Learn more about: Using an Image List with a Rebar Control"
 title: "Using an Image List with a Rebar Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["image lists [MFC], rebar controls", "rebar controls [MFC], image lists"]
-ms.assetid: 1a5836ac-019a-46aa-8741-b35c3376b839
 ms.topic: how-to
 ---
 # Using an Image List with a Rebar Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Each rebar band can contain, among other things, an image from an associated image list. The following procedure details the necessary steps for displaying an image in a rebar band.
 

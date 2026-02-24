@@ -3,10 +3,12 @@ description: "Learn more about: Using CToolTipCtrl"
 title: "Using CToolTipCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CToolTipCtrl class [MFC], creating tool tips", "CToolTipCtrl class"]
-ms.assetid: 8fc58a04-4792-4223-a092-d349d11344da
 ms.topic: concept-article
 ---
 # Using CToolTipCtrl
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The [CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md) class encapsulates the functionality of a tool tip control, a small pop-up window that displays a single line of text describing the purpose of a tool in an application. A tool tip is hidden most of the time, appearing only when the user puts the cursor on a tool and leaves it there for approximately one-half second. The tool tip appears near the cursor and disappears when the user clicks a mouse button or moves the cursor off of the tool.
 

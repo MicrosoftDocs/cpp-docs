@@ -4,9 +4,11 @@ title: "Simple Data Type Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.data"]
 helpviewer_keywords: ["scalar classes [MFC]", "data classes [MFC]", "simple data type classes [MFC]"]
-ms.assetid: 0d591d68-0a33-49e9-8a6d-90c90de5c16a
 ---
 # Simple Data Type Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following classes encapsulate drawing coordinates, character strings, and time and date information, allowing convenient use of C++ syntax. These objects are used widely as parameters to the member functions of Windows classes in the class library. Because `CPoint`, `CSize`, and `CRect` correspond to the **POINT**, **SIZE**, and **RECT** structures, respectively, in the Windows SDK, you can use objects of these C++ classes wherever you can use these C-language structures. The classes provide useful interfaces through their member functions. `CStringT` provides very flexible dynamic character strings. `CTime`, `COleDateTime`, `CTimeSpan`, and `COleTimeSpan` represent time and date values. For more information about these classes, see the article [Date and Time](../atl-mfc-shared/date-and-time.md).
 

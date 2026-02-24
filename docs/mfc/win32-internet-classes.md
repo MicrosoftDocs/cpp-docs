@@ -4,9 +4,11 @@ title: "Win32 Internet Classes"
 ms.date: "09/12/2018"
 f1_keywords: ["vc.classes.win32"]
 helpviewer_keywords: ["Internet classes [MFC]", "WinInet classes [MFC], classes", "Win32 [MFC], Internet classes", "Windows API [MFC], Internet classes"]
-ms.assetid: b49601d5-3025-4068-9408-316b54ee4375
 ---
 # Win32 Internet Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 MFC wraps the Win32 Internet (WinInet) and ActiveX technology to make Internet programming easier.
 

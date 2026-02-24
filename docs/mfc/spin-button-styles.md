@@ -3,9 +3,11 @@ description: "Learn more about: Spin Button Styles"
 title: "Spin Button Styles"
 ms.date: "09/09/2019"
 helpviewer_keywords: ["styles [MFC], CSpinButtonCtrl", "CSpinButtonCtrl class [MFC], styles", "styles [MFC], spin button control", "spin button control, styles"]
-ms.assetid: fb4a7f6f-9182-47be-bccf-0728fdc5332f
 ---
 # Spin Button Styles
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Many of the settings for a spin button ([CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)) are controlled by styles. You can set the following styles using the [Class Wizard](reference/mfc-class-wizard.md).
 

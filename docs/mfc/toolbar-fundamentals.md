@@ -4,9 +4,11 @@ title: "Toolbar Fundamentals"
 ms.date: "11/04/2016"
 f1_keywords: ["RT_TOOLBAR"]
 helpviewer_keywords: ["embedding toolbar in frame window class [MFC]", "application wizards [MFC], installing default application toolbars", "toolbars [MFC], creating", "resources [MFC], toolbar", "toolbar controls [MFC], toolbars created using Application Wizard", "toolbar controls [MFC], command ID", "RT_TOOLBAR resource [MFC]", "toolbars [MFC], adding default using Application Wizard", "LoadBitmap method [MFC], toolbars", "Toolbar editor [MFC], Application Wizard", "command IDs [MFC], toolbar buttons", "SetButtons method [MFC]", "CToolBar class [MFC], default toolbars in Application Wizard", "frame window classes [MFC], toolbar embedded in", "LoadToolBar method [MFC]"]
-ms.assetid: cc00aaff-8a56-433b-b0c0-b857d76b4ffd
 ---
 # Toolbar Fundamentals
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article describes the fundamental MFC implementation that lets you add a default toolbar to your application by selecting an option in the Application Wizard. Topics covered include:
 

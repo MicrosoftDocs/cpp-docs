@@ -3,9 +3,11 @@ description: "Learn more about: Sequence of Operations for Building MFC Applicat
 title: "Sequence of Operations for Building MFC Applications"
 ms.date: "09/09/2019"
 helpviewer_keywords: ["applications [MFC], developing"]
-ms.assetid: 6973c714-fe20-48c6-926b-de88356b3a3d
 ---
 # Sequence of Operations for Building MFC Applications
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following table explains the general sequence you might typically follow as you develop your MFC application.
 

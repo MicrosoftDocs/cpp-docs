@@ -4,9 +4,11 @@ title: "TN062: Message Reflection for Windows Controls"
 ms.date: "06/28/2018"
 f1_keywords: ["vc.controls.messages"]
 helpviewer_keywords: ["ON_WM_VKEYTOITEM_REFLECT macro [MFC]", "ON_WM_DRAWITEM_REFLECT macro [MFC]", "ON_WM_VSCROLL_REFLECT macro [MFC]", "ON_NOTIFY_REFLECT message [MFC]", "ON_CONTROL_REFLECT_EX macro [MFC]", "ON_UPDATE_COMMAND_UI_REFLECT macro [MFC]", "ON_NOTIFY_REFLECT_EX message [MFC]", "ON_WM_HSCROLL_REFLECT macro [MFC]", "message reflection [MFC]", "ON_WM_COMPAREITEM_REFLECT macro [MFC]", "ON_WM_MEASUREITEM_REFLECT macro [MFC]", "ON_NOTIFY message [MFC]", "WM_COMMAND [MFC]", "WM_CTLCOLOR message [MFC]", "TN062 [MFC]", "ON_WM_CHARTOITEM_REFLECT macro [MFC]", "ON_WM_CTLCOLOR_REFLECT macro [MFC]", "ON_WM_DELETEITEM_REFLECT macro [MFC]", "notification messages [MFC]", "ON_WM_PARENTNOTIFY_REFLECT macro [MFC]", "WM_NOTIFY message [MFC]", "ON_CONTROL_REFLECT macro"]
-ms.assetid: 53efb0ba-fcda-4fa0-a3c7-14e0b78fb494
 ---
 # TN062: Message Reflection for Windows Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

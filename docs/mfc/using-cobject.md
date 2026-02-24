@@ -3,10 +3,12 @@ description: "Learn more about: Using CObject"
 title: "Using CObject"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["examples [MFC], CObject", "root base class for MFC", "derived classes [MFC], from CObject", "MFC, base class", "CObject class [MFC]"]
-ms.assetid: d0cd19bb-2856-4b41-abbc-620fd64cb223
 ms.topic: concept-article
 ---
 # Using CObject
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 [CObject](../mfc/reference/cobject-class.md) is the root base class for most of the Microsoft Foundation Class Library (MFC). The `CObject` class contains many useful features that you may want to incorporate into your own program objects, including serialization support, run-time class information, and object diagnostic output. If you derive your class from `CObject`, your class can exploit these `CObject` features.
 

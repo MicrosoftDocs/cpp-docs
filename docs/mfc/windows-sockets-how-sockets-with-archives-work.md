@@ -3,9 +3,11 @@ description: "Learn more about: Windows Sockets: How Sockets with Archives Work"
 title: "Windows Sockets: How Sockets with Archives Work"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["Windows Sockets [MFC], synchronous", "sockets [MFC], synchronous operation", "sockets [MFC], with archives", "synchronous state socket", "Windows Sockets [MFC], with archives", "two-state socket object"]
-ms.assetid: d8ae4039-391d-44f0-a19b-558817affcbb
 ---
 # Windows Sockets: How Sockets with Archives Work
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains how a [CSocket](../mfc/reference/csocket-class.md) object, a [CSocketFile](../mfc/reference/csocketfile-class.md) object, and a [CArchive](../mfc/reference/carchive-class.md) object are combined to simplify sending and receiving data through a Windows Socket.
 

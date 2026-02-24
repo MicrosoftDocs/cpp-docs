@@ -4,9 +4,11 @@ title: "TN031: Control Bars"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.controls.bars"]
 helpviewer_keywords: ["control bars [MFC], styles", "CStatusBar class [MFC], Tech Note 31 usage", "CControlBar class [MFC], Tech Note 31 usage", "CControlBar class [MFC], deriving from", "control bars [MFC], classes [MFC]", "CDialogBar class [MFC], Tech Note 31 usage", "CToolBar class [MFC], Tech Note 31 usage", "TN031", "styles [MFC], control bars"]
-ms.assetid: 8cb895c0-40ea-40ef-90ee-1dd29f34cfd1
 ---
 # TN031: Control Bars
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

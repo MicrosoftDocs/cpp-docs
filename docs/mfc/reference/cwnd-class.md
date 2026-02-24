@@ -7,6 +7,9 @@ helpviewer_keywords: ["CWnd [MFC], CWnd", "CWnd [MFC], accDoDefaultAction", "CWn
 ---
 # `CWnd` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Provides the base functionality of all window classes in the Microsoft Foundation Class Library.
 
 ## Syntax

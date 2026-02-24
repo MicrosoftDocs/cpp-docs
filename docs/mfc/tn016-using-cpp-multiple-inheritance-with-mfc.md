@@ -4,9 +4,11 @@ title: "TN016: Using C++ Multiple Inheritance with MFC"
 ms.date: "06/28/2018"
 f1_keywords: ["vc.inheritance"]
 helpviewer_keywords: ["TN016", "MI (Multiple Inheritance)", "multiple inheritance, MFC support for"]
-ms.assetid: 4ee27ae1-1410-43a5-b111-b6af9b84535d
 ---
 # TN016: Using C++ Multiple Inheritance with MFC
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This note describes how to use multiple inheritance (MI) with the Microsoft Foundation Classes. The use of MI is not required with MFC. MI is not used in any MFC classes and is not required to write a class library.
 

@@ -3,10 +3,12 @@ description: "Learn more about: Using CRichEditCtrl"
 title: "Using CRichEditCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["rich edit controls [MFC], using", "CRichEditCtrl class [MFC], using"]
-ms.assetid: e400c6ed-563e-4d4c-ab3b-a3f0aa20273b
 ms.topic: concept-article
 ---
 # Using CRichEditCtrl
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A rich edit control is a window in which the user can enter and edit text. The text can be assigned character and paragraph formatting, and can include embedded OLE objects. The rich edit control is represented in MFC by the [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md) class.
 

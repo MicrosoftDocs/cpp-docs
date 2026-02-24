@@ -4,9 +4,11 @@ title: "CWinFormsControl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CWinFormsControl", "AFXWINFORMS/CWinFormsControl", "AFXWINFORMS/CWinFormsControl::CWinFormsControl", "AFXWINFORMS/CWinFormsControl::CreateManagedControl", "AFXWINFORMS/CWinFormsControl::GetControl", "AFXWINFORMS/CWinFormsControl::GetControlHandle"]
 helpviewer_keywords: ["CWinFormsControl [MFC], CWinFormsControl", "CWinFormsControl [MFC], CreateManagedControl", "CWinFormsControl [MFC], GetControl", "CWinFormsControl [MFC], GetControlHandle"]
-ms.assetid: 6406dd7b-fb89-4a18-ac3a-c010d6b6289a
 ---
 # CWinFormsControl Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides the basic functionality for hosting of a Windows Forms control.
 

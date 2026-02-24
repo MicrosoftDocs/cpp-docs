@@ -3,9 +3,11 @@ description: "Learn more about: Slider Control Styles"
 title: "Slider Control Styles"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["slider controls [MFC], styles", "CSliderCtrl class [MFC], styles", "styles [MFC], CSliderCtrl", "styles [MFC], slider controls"]
-ms.assetid: 64c491fc-5af1-4f97-ae30-854071b3dc02
 ---
 # Slider Control Styles
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Slider controls ([CSliderCtrl](../mfc/reference/csliderctrl-class.md)) can have either a vertical or horizontal orientation. They can have tick marks on either side, both sides, or neither. They can also be used to specify a range of consecutive values. These properties are controlled by using slider control styles, which you specify when you create the slider control.
 

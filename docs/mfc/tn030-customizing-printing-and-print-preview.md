@@ -4,9 +4,11 @@ title: "TN030: Customizing Printing and Print Preview"
 ms.date: "06/28/2018"
 f1_keywords: ["vc.print"]
 helpviewer_keywords: ["TN030", "customizing printing and print preview", "printing [MFC], views", "printing views [MFC]", "print preview [MFC], customizing"]
-ms.assetid: 32744697-c91c-41b6-9a12-b8ec01e0d438
 ---
 # TN030: Customizing Printing and Print Preview
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

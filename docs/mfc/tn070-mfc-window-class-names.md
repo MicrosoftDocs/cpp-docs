@@ -3,9 +3,11 @@ description: "Learn more about: TN070: MFC Window Class Names"
 title: "TN070: MFC Window Class Names"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["window class names [MFC]", "TN070 [MFC]"]
-ms.assetid: 90617912-dd58-4a7c-9082-ced71736d7cd
 ---
 # TN070: MFC Window Class Names
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

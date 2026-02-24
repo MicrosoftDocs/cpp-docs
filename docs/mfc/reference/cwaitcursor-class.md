@@ -4,9 +4,11 @@ title: "CWaitCursor Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CWaitCursor", "AFXWIN/CWaitCursor", "AFXWIN/CWaitCursor::CWaitCursor", "AFXWIN/CWaitCursor::Restore"]
 helpviewer_keywords: ["CWaitCursor [MFC], CWaitCursor", "CWaitCursor [MFC], Restore"]
-ms.assetid: 5dfae2ff-d7b6-4383-b0ad-91e0868c67b3
 ---
 # CWaitCursor Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides a one-line way to show a wait cursor, which is usually displayed as an hourglass, while you're doing a lengthy operation.
 

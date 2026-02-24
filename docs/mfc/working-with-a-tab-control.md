@@ -3,10 +3,12 @@ description: "Learn more about: Working with a Tab Control"
 title: "Working with a Tab Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CTabCtrl class [MFC], using", "tab controls [MFC], working with", "tab controls [MFC], using"]
-ms.assetid: 819488e3-4944-44b7-9483-195edb8e0aed
 ms.topic: concept-article
 ---
 # Working with a Tab Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The easiest way to use a tab control ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) is by adding it to a dialog template resource with the dialog editor. You can also use a tab control by itself. MFC calls `InitCommonControls` for you. The key tasks are as follows:
 

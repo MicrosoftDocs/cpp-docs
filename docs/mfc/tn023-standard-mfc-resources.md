@@ -3,9 +3,11 @@ description: "Learn more about: TN023: Standard MFC Resources"
 title: "TN023: Standard MFC Resources"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["resources [MFC]", "TN023", "standard resources"]
-ms.assetid: 60af8415-c576-4c2f-a711-ca5da0b9a1f2
 ---
 # TN023: Standard MFC Resources
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This note describes the standard resources provided with and needed by the MFC library.
 

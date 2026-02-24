@@ -3,9 +3,11 @@ description: "Learn more about: Windows Sockets: Blocking"
 title: "Windows Sockets: Blocking"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["sockets [MFC], blocking mode", "Windows Sockets [MFC], Windows platforms", "Windows Sockets [MFC], blocking mode", "sockets [MFC], behavior on different Windows platforms", "blocking mode sockets"]
-ms.assetid: 10aca9b1-bfba-41a8-9c55-ea8082181e63
 ---
 # Windows Sockets: Blocking
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article and two companion articles explain several issues in Windows Sockets programming. This article covers blocking. The other issues are covered in the articles: [Windows Sockets: Byte Ordering](../mfc/windows-sockets-byte-ordering.md) and [Windows Sockets: Converting Strings](../mfc/windows-sockets-converting-strings.md).
 

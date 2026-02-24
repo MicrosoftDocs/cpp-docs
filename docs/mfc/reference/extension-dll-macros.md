@@ -6,6 +6,9 @@ helpviewer_keywords: ["module macros in MFC"]
 ---
 # Macros and functions for managing DLLs
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 | Name | Description |
 |--|--|
 | [`AFX_EXT_CLASS`](#afx_ext_class)] | Exports classes. |

@@ -3,9 +3,11 @@ description: "Learn more about: Type Casting of MFC Class Objects"
 title: "Type Casting of MFC Class Objects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["macros [MFC], type casting", "pointers [MFC], type casting", "type casts [MFC]", "casting types [MFC]", "macros [MFC], casting pointers"]
-ms.assetid: e138465e-c35f-4e84-b788-bd200ccf2f0e
 ---
 # Type Casting of MFC Class Objects
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Type casting macros provide a way to cast a given pointer to a pointer that points to an object of specific class, with or without checking that the cast is legal.
 

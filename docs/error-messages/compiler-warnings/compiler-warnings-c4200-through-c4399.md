@@ -113,7 +113,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |Compiler warning (level 1) C4321|automatically generating an IID for interface '*interface*'|
 |Compiler warning (level 1) C4322|automatically generating a CLSID for class '*class*'|
 |Compiler warning (level 1) C4323|re-using registered CLSID for class '*class*'|
-|[Compiler warning (level 4) C4324](compiler-warning-level-4-c4324.md)|'*structname*': structure was padded due to alignment specifier|
+|[Compiler warning (level 4) C4324](compiler-warning-level-4-c4324.md)|'*type*': structure was padded due to alignment specifier|
 |[Compiler warning (level 1) C4325](compiler-warning-level-1-c4325.md)|attributes for standard section '*section*' ignored|
 |[Compiler warning (level 1) C4326](compiler-warning-level-1-c4326.md)|return type of '*function*' should be '*type1*' instead of '*type2*'|
 |Compiler warning C4327|'*assignment*': indirection alignment of LHS ('*alignment1*') is greater than RHS ('*alignment2*')|

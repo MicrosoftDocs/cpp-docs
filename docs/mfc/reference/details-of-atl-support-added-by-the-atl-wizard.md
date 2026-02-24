@@ -4,13 +4,16 @@ title: "Details of ATL Support Added by the ATL Wizard"
 ms.date: "08/20/2019"
 f1_keywords: ["vc.codewiz.atl.support"]
 helpviewer_keywords: ["MFC, ATL support", "ATL, MFC projects"]
-ms.assetid: aa66bad0-008f-4886-94c1-2a0a0d04bce4
 ---
+
 # Details of ATL Support Added by the ATL Wizard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) and Active Template Library (ATL) libraries continue to be supported. However, we're no longer adding features or updating the documentation.
 
 ::: moniker range=">=msvc-160"
 
-When you [add ATL support to an existing MFC executable or DLL](../../mfc/reference/adding-atl-support-to-your-mfc-project.md), Visual Studio adds a header file called *framework.h* by default, which contains `#include` and `#define` preprocessor directives to enable the use of ATL in your project. No additional files or classes are added, as was done in previous versions of Visual Studio.
+When you [add ATL support to an existing MFC executable or DLL](../../mfc/reference/adding-atl-support-to-your-mfc-project.md), Visual Studio adds a header file called `framework.h` by default, which contains `#include` and `#define` preprocessor directives to enable the use of ATL in your project. No additional files or classes are added, as was done in previous versions of Visual Studio.
 
 ::: moniker-end
 

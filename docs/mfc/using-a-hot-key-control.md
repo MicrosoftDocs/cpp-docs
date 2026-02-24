@@ -3,10 +3,12 @@ description: "Learn more about: Using a Hot Key Control"
 title: "Using a Hot Key Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CHotKeyCtrl class [MFC], using", "hot key controls"]
-ms.assetid: cdd6524b-cc43-447f-b151-164273559685
 ms.topic: concept-article
 ---
 # Using a Hot Key Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Typical usage of a hot key control follows the pattern below:
 

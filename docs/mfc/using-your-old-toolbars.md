@@ -4,10 +4,12 @@ title: "Using Your Old Toolbars"
 ms.date: "11/04/2016"
 f1_keywords: ["COldToolBar"]
 helpviewer_keywords: ["toolbars [MFC], backward compatibility", "COldToolBar class [MFC]"]
-ms.assetid: 3543257c-8547-43f0-a66a-ee641dc1cf89
 ms.topic: concept-article
 ---
 # Using Your Old Toolbars
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 If you have used previous versions of Visual Studio to create customized toolbars, the new implementation of class [CToolBar](../mfc/reference/ctoolbar-class.md) could cause you problems. So that you don't have to give up your old toolbars to use the new functionality, the old implementation is still supported.
 

@@ -4,9 +4,11 @@ title: "TN065: Dual-Interface Support for OLE Automation Servers"
 ms.date: "06/28/2018"
 f1_keywords: ["vc.ole"]
 helpviewer_keywords: ["dual interfaces [MFC], OLE Automation", "TN065 [MFC]", "ACDUAL sample [MFC]", "Automation servers [MFC], dual-interface support"]
-ms.assetid: b5c8ed09-2f7f-483c-80fc-2a47ad896063
 ---
 # TN065: Dual-Interface Support for OLE Automation Servers
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

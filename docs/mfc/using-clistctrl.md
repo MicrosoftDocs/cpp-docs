@@ -3,10 +3,12 @@ description: "Learn more about: Using CListCtrl"
 title: "Using CListCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CListCtrl class [MFC], using"]
-ms.assetid: 20d6a5d6-8f07-4ddf-975f-ea2dfebcc835
 ms.topic: concept-article
 ---
 # Using CListCtrl
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Use a list control to display any arrangement of icons with labels, as in File Explorer, or columnar lists of text, with or without icons. For a description of the four possible "views" (not to be confused with MFC views) you can have in a list control — icon view, small icon view, list view, and report view — see Views in the [CListCtrl](../mfc/reference/clistctrl-class.md) class overview.
 

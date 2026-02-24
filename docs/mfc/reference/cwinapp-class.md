@@ -7,6 +7,9 @@ helpviewer_keywords: ["CWinApp [MFC], CWinApp", "CWinApp [MFC], AddDocTemplate",
 ---
 # CWinApp Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The base class from which you derive a Windows application object.
 
 ## Syntax

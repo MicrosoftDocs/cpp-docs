@@ -3,9 +3,11 @@ description: "Learn more about: Handlers for WM_ Messages"
 title: "Handlers for WM_ Messages"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["WM_ messages [MFC]"]
-ms.assetid: cad81690-90bf-4f77-943f-a435e7563bdd
 ---
 # Handlers for WM_ Messages
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following topics correspond to the map entries.
 

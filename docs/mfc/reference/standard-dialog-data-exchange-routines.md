@@ -6,6 +6,9 @@ helpviewer_keywords: ["standard dialog, data exchange routines"]
 ---
 # Standard Dialog Data Exchange Routines
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 This topic lists the standard dialog data exchange (DDX) routines used for common MFC dialog controls.
 
 > [!NOTE]

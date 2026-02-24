@@ -3,9 +3,11 @@ description: "Learn more about: User Interface Elements (MFC)"
 title: "User Interface Elements (MFC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, user interface", "user interfaces, creating", "user interfaces"]
-ms.assetid: f5daf2c1-bc08-4b71-9b03-da2c0aab5764
 ---
 # User Interface Elements (MFC)
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 For information about how to create the user interface for your application by using the Microsoft Foundation Class (MFC) Library, see the following topics.
 

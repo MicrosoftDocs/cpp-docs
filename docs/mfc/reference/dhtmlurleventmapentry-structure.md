@@ -4,9 +4,11 @@ title: "DHtmlUrlEventMapEntry Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["DHtmlUrlEventMapEntry"]
 helpviewer_keywords: ["DHtmlUrlEventMapEntry structure [MFC]"]
-ms.assetid: 43117c1f-1a51-406c-aa2f-fea647080049
 ---
 # DHtmlUrlEventMapEntry Structure
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `DHtmlUrlEventMapEntry` structure provides multi-URL event map support.
 

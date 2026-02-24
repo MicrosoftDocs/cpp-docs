@@ -7,6 +7,9 @@ helpviewer_keywords: ["CWindowDC [MFC], CWindowDC", "CWindowDC [MFC], m_hWnd"]
 ---
 # CWindowDC Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Derived from `CDC`.
 
 ## Syntax

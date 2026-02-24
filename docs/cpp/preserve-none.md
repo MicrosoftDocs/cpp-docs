@@ -21,10 +21,10 @@ The following list shows the behavior of this calling convention.
 | Element | Behavior |
 |---------|----------------|
 | Argument-passing order | Arguments are passed in up to 10 registers in the following order: `r13`, `r14`, `r15`, `rbx`, `rsi`, `rdi`, `r9`, `r8`, `rdx`, `rcx`. If a hidden parameter is required for struct returns, it's passed in `r13` (the first parameter register), reducing available parameter registers to 9. Registers `r10`-`r12` are reserved for various CRT and Windows runtimes. All parameters must be passed through registers; stack-based parameters aren't currently supported. |
-| Register allocation strategy | To help minimize register spilling, the allocator assigns `r9`, `r8`, `rdx`, and `rcx` only after other registers have been used. |
+| Register allocation strategy | To help minimize register spilling when calling functions with different calling conventions, the allocator assigns `rcx`, `rdx`, `r8`, and `r9` only after other registers have been used, since those registers are used first by the [__vectorcall](vectorcall.md) and [__cdecl](cdecl.md) calling conventions. |
 | Argument limit | Functions are restricted to a maximum of 10 parameters. An error is generated if this limit is exceeded. |
 | Return value convention | Follows the regular x64 calling convention rules. Scalar return values are returned in `rax`. Structs of size 1, 2, 4, or 8 bytes are returned through the `rax` register. For structs of other sizes, a pointer to memory allocated by the caller and passed through the hidden parameter is returned in `rax`. |
-| Volatile registers | All general-purpose registers except `rsp` (stack pointer) and `rbp` (base pointer) are treated as volatile and don't need to be preserved across function calls. While `r10` and `r11` are volatile, they aren't used for parameter passing to maintain compatibility with existing programs. |
+| Volatile registers | All general-purpose registers except `r12`, `rsp` (stack pointer) and `rbp` (base pointer) are treated as volatile and don't need to be preserved across function calls. While `r10` and `r11` are volatile, they aren't used for parameter passing to maintain compatibility with existing programs. |
 | Nonvolatile registers | Only `rsp`, `rbp`, and `r12` are nonvolatile. |
 | Stack alignment | The stack must maintain 16-byte alignment. |
 | Frame pointer | The `rbp` register and frame chain follow the [/Gy switch](../build/reference/gy-enable-function-level-linking.md) settings. |

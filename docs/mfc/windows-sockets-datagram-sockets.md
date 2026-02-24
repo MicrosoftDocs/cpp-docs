@@ -3,9 +3,11 @@ description: "Learn more about: Windows Sockets: Datagram Sockets"
 title: "Windows Sockets: Datagram Sockets"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["sockets [MFC], datagram", "Windows Sockets [MFC], bi-directional data flow", "datagram sockets [MFC]", "Windows Sockets [MFC], datagram", "sockets [MFC], bi-directional data flow"]
-ms.assetid: bec16a1c-74c0-4ff9-8c18-c2d87897d264
 ---
 # Windows Sockets: Datagram Sockets
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article describes datagram sockets, one of the two Windows Socket types available. (The other type is the [stream socket](../mfc/windows-sockets-stream-sockets.md).)
 
