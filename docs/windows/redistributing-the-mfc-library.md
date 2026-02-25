@@ -1,28 +1,28 @@
 ---
-description: "Learn More About: Redistribute the MFC Library"
-title: Learn more about redistributing the MFC library.
+title: Redistribute the MFC Library
+description: Learn more about how to redistribute the MFC Library.
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, redistributing", "redistributing MFC library"]
 ms.assetid: 72714ce1-385e-4c1c-afa5-96b03e873866
 ms.topic: concept-article
 ---
 
-# Redistribute the MFC library
+# Redistribute the MFC Library
 
-If you dynamically link your application to the Microsoft Foundation Class (MFC) library, you must redistribute the matching MFC dynamic link library (DLL). For example, if your MFC app is built by using the version of MFC that ships with Visual Studio 2015, you must redistribute `mfc140.dll` or `mfc140u.dll`, depending on whether your app is compiled for narrow characters or Unicode support.
+If you dynamically link your application to the Microsoft Foundation Class (MFC) Library, you must redistribute the matching MFC dynamic-link library (DLL). For example, if your MFC app is built by using the version of MFC that ships with Visual Studio 2015, you must redistribute `mfc140.dll` or `mfc140u.dll`, depending on whether your app is compiled for narrow characters or Unicode support.
 
 > [!NOTE]
 > The `mfc140.dll` files were omitted from the redistributable files directory in Visual Studio 2015 RTM. You can use the versions installed by Visual Studio 2015 in the `Windows\system32 and Windows\syswow64` directories instead.
 
-Because all MFC DLLs use the shared version of the C runtime library (CRT), you might also need to redistribute the CRT. The version of MFC that ships with Visual Studio 2015 uses the Universal CRT library, which is distributed as part of Windows 10 and Windows 11. To run an MFC application built by using Visual Studio 2015 on earlier versions of Windows, you must redistribute the Universal CRT.
+Because all MFC DLLs use the shared version of the Microsoft C Runtime Library (CRT), you might also need to redistribute the CRT. The version of MFC that ships with Visual Studio 2015 uses the Universal CRT Library, which is distributed as part of Windows 10 and Windows 11. To run an MFC application built by using Visual Studio 2015 on earlier versions of Windows, you must redistribute the Universal CRT.
 
 For information on how to redistribute the Universal CRT as an operating system component or by using local deployment, see [Introducing the Universal CRT](https://devblogs.microsoft.com/cppblog/introducing-the-universal-crt/). To download the Universal CRT for central deployment on supported versions of Windows, see [Windows 10 Universal C Runtime](https://www.microsoft.com/download/details.aspx?id=48234).
 
 You can find redistributable architecture-specific versions of `ucrtbase.dll` for local deployment in the Windows SDK. By default, Visual Studio installs these versions in `C:\Program Files (x86)\Windows Kits\10\Redist\ucrt\DLLs\` in an architecture-specific subdirectory.
 
-If your app is built by using an earlier version of the MFC library, you must redistribute the matching CRT DLL from the redistributable files directory. For example, if your MFC application is built by using the Visual Studio 2013 (vc120) toolset, you must redistribute the `msvcr120.dll`. You also have to redistribute the matching `mfc`<version>`u.dll` or `mfc`<version>`.dll`.
+If your app is built by using an earlier version of the MFC Library, you must redistribute the matching CRT DLL from the redistributable files directory. For example, if your MFC application is built by using the Visual Studio 2013 (vc120) toolset, you must redistribute the `msvcr120.dll`. You also have to redistribute the matching `mfc`<version>`u.dll` or `mfc`<version>`.dll`.
 
-If you statically link your application to MFC (that is, if you specify **Use MFC in a Static Library** on the **General** tab in the **Property Pages** dialog), you don't have to redistribute an MFC DLL. Although static linking might work for testing and internal deployment of applications, we recommend that you don't use it to redistribute MFC. For more information about the recommended strategies for deploying Visual C++ libraries, see [Choose a deployment method](choosing-a-deployment-method.md).
+If you statically link your application to MFC (in the **Property Pages** dialog, on the **General** tab, select **Use MFC in a Static Library**), you don't have to redistribute an MFC DLL. Although static linking might work for testing and internal deployment of applications, we recommend that you don't use it to redistribute MFC. For more information about the recommended strategies for deploying Visual C++ libraries, see [Choose a deployment method](choosing-a-deployment-method.md).
 
 If your application uses the MFC classes that implement the WebBrowser control (for example, [CHtmlView class](../mfc/reference/chtmlview-class.md) or [CHtmlEditView class](../mfc/reference/chtmleditview-class.md)), we recommend that you also install the most current version of Internet Explorer so that the target computer has the most current common control files. (At a minimum, Internet Explorer 4.0 is required.) Information about how to install Internet Explorer components is available in "Article 185375: How to Create a Single EXE Install of Internet Explorer" on the Microsoft Support website.
 

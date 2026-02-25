@@ -1,6 +1,6 @@
 ---
-description: "Learn More About: Redistribute Visual C++ ActiveX Controls"
-title: Learn more about redistributing Visual C++ ActiveX controls.
+title: Redistribute Visual C++ ActiveX Controls
+description: Learn more about how to redistribute Visual C++ ActiveX controls.
 ms.date: "11/04/2016"
 helpviewer_keywords: ["controls [C++], redistributing", "controls [C++], distributing"]
 ms.assetid: eefbb7e4-d28c-4c35-98bf-d9540cfaae83
@@ -23,7 +23,7 @@ When you distribute applications, you must install and register the `.ocx` for t
 - `Olepro32.dll`\*
 - `Stdole2.tlb`
 
-If these dynamic link libraries (DLLs) aren't available on the target system, you must get them updated by using the prescribed mechanism for updating the corresponding operating system.
+If these dynamic-link libraries (DLLs) aren't available on the target system, you must get them updated by using the prescribed mechanism for updating the corresponding operating system.
 
 When you use an ActiveX control that connects to a database, you also need to replicate the data source name on the target computer. You can do this task programmatically with functions such as `ConfigDSN`.
 

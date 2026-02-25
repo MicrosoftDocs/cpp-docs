@@ -1,6 +1,6 @@
 ---
 title: Redistribute Visual C++ Files
-description: Visual Studio includes redistributable libraries and components that you can deploy with your app.
+description: Learn about Visual Studio redistributable libraries and components that you can deploy with your app.
 ms.date: 01/15/2025
 helpviewer_keywords: ["application deployment [C++], file redistributing", "redistributing applications [C++]", "deploying applications [C++], file redistributing", "file redistribution [C++]", "redistributing applications [C++], about redistributing applications"]
 ms.topic: concept-article
@@ -40,7 +40,7 @@ To view the "REDIST list" that's referenced in the "Distributable Code" section 
 
 ::: moniker-end
 
-For more information about redistributable files, see [Determine which dynamic link libraries (DLLs) to redistribute](determining-which-dlls-to-redistribute.md) and [Deployment examples](deployment-examples.md).
+For more information about redistributable files, see [Determine which dynamic-link libraries (DLLs) to redistribute](determining-which-dlls-to-redistribute.md) and [Deployment examples](deployment-examples.md).
 
 ## Locate the redistributable files
 

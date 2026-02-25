@@ -1,6 +1,6 @@
 ---
-description: "Learn More About: Redistribute Components by Using Merge Modules"
-title: Learn more about redistributing components by using merge modules.
+title: Redistribute Components by Using Merge Modules
+description: Learn more about how to redistribute components by using merge modules.
 ms.date: 06/08/2022
 helpviewer_keywords: ["merge modules, using", "redistributing applications, using merge modules"]
 ms.assetid: 93b84211-bf9b-4a78-9f22-474ac2ef7840
@@ -15,7 +15,7 @@ ms.topic: concept-article
 >
 > When you use a redistributable package for central deployment, you aren't responsible for tracking and updating the runtime libraries as part of your application maintenance. The Microsoft Update service updates these libraries for you. Otherwise, an update to the runtime library files requires you to update and redeploy your `.msi` installer. Your app could be vulnerable to bugs or security issues until you do.
 
-Visual Studio includes [merge modules](/windows/win32/Msi/about-merge-modules) (`.msm` files) for each Visual C++ component that's licensed for redistribution with an application. There are separate versions of the merge modules for each target platform. When a merge module is compiled into a Windows Installer setup file, it enables the deployment of Visual C++ Redistributable files to that specific platform. You can't include merge modules for different versions of the same dynamic link library (DLL) in one installer. In your installer setup file, specify that the merge modules are prerequisites for your application.
+Visual Studio includes [merge modules](/windows/win32/Msi/about-merge-modules) (`.msm` files) for each Visual C++ component that's licensed for redistribution with an application. There are separate versions of the merge modules for each target platform. When a merge module is compiled into a Windows Installer setup file, it enables the deployment of Visual C++ Redistributable files to that specific platform. You can't include merge modules for different versions of the same dynamic-link library (DLL) in one installer. In your installer setup file, specify that the merge modules are prerequisites for your application.
 
 You can use merge modules for either [central deployment](deployment-in-visual-cpp.md#central-deployment) or [local deployment](deployment-in-visual-cpp.md#local-deployment). Users can't install centrally deployed files unless they have administrator rights. Local deployment might allow a nonadministrator to install and run your app, but at the cost of independent serviceability.
 
