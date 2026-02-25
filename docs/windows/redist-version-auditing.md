@@ -20,16 +20,16 @@ For more information about the versions of VC Runtime that are no longer support
 
 ## Enable NTFS file auditing to determine VC Runtime usage
 
-This article provides the steps to manually enable NTFS file auditing and review audit events to determine which applications are calling the unsupported versions of the VC Runtime. Because there are several files that can be used by an application, this article also shows how to use the PowerShell [`Get-Acl`](/powershell/module/microsoft.powershell.security/get-acl) and [`Set-Acl`](/powershell/module/microsoft.powershell.security/set-acl) cmdlets to update auditing permissions. For more information about how to configure audit policies for a file, see [Apply a basic audit policy on a file or folder](/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder).
+This article provides the steps to manually enable NTFS file auditing and review audit events to determine which applications are calling the unsupported versions of the VC Runtime. Because there are several files that an application can use, this article also shows how to use the PowerShell [`Get-Acl`](/powershell/module/microsoft.powershell.security/get-acl) and [`Set-Acl`](/powershell/module/microsoft.powershell.security/set-acl) cmdlets to update auditing permissions. For more information about how to configure audit policies for a file, see [Apply a basic audit policy on a file or folder](/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder).
 
 ### Manually enable object access auditing on the system
 
-Object access must be enabled before you enable file level auditing:
+Object access must be enabled before you enable file-level auditing:
 
-1. Open the **Local Group Policy Editor** by pressing `Windows` + `R` to open the **Run** dialog. Then type `gpedit.msc` and press **Enter**.
+1. Select **Windows**+**R** to open the **Run** dialog. Then enter **gpedit.msc** and select **Enter** to open **Local Group Policy Editor**.
 1. Go to **Computer Configuration** > **Windows Settings** > **Security Settings** > **Advanced Audit Policy Configuration** > **System Audit Policies** > **Object Access**.
 1. Double-click **Audit File System**. In the **Audit File System Properties** dialog, select **Configure the following audit events** > **Success** > **OK**.
-1. Close the **Local Group Policy Editor**.
+1. Close **Local Group Policy Editor**.
 
 Alternatively, you can use `auditpol.exe` to enable object access:
 
@@ -43,27 +43,27 @@ To monitor which process accesses a VC Runtime file, enable auditing on the VC R
 1. Right-click the file that you want to audit, select **Properties**, and then select the **Security** tab. For more information about finding installed VC Runtime files, see [VC Runtime installed locations](#vcruntime_install_location).
 1. Select **Advanced**.
 1. In the **Advanced Security Settings** dialog, select the **Auditing** tab and then select **Continue**.
-1. To add a new auditing rule, select **Add**. In the **Auditing Entry** dialog, select a principal, and then enter the name of the user or group you want to add, such as **(Everyone)**. Then select **OK**.
+1. To add a new auditing rule, select **Add**. In the **Auditing Entry** dialog, select a principal, and then enter the name of the user or group that you want to add, such as **(Everyone)**. Then select **OK**.
 1. In **Type**, ensure that **Success** is selected.
 1. Select **Show advance permissions** > **Clear all** > **Traverse folder / execute file** > **OK**.
-1. There should now be a new row in the **Auditing** entries matching what you selected. Select **OK**.
+1. Observe that a new row in the **Auditing** entries matches what you selected. Select **OK**.
 1. In the **Properties** dialog, select **OK**.
 
 The audit rule is now enabled for the file.
 
 ### Manually review audit logs
 
-NTFS file auditing generates ["Event 4663: An attempt was made to access an object"](/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4663) for each file that includes the audit permission and is accessed by a process.
+NTFS file auditing generates [Event 4663: An attempt was made to access an object](/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4663) for each file that includes the audit permission and is accessed by a process.
 
-1. Open the **Event Viewer** by selecting **Windows** + **R** to open the **Run** dialog. Then enter **eventvwr.msc** and select **Enter**.
+1. Select **Windows**+**R** to open the **Run** dialog. Then enter **eventvwr.msc** and select **Enter** to open **Event Viewer**.
 1. Go to the **Security** logs in the **Event Viewer** by expanding **Windows Logs** > **Security**. The results pane lists security events.
-1. Find the audit events by choosing **Filter Current Log...** in the **Actions** pane. Narrow down the events to **Event ID 4663 (Audit Success for the File System Category)** by entering **4663** into the **Includes/Excludes Event IDs** text box.
+1. Find the audit events by choosing **Filter Current Log...** in the **Actions** pane. To narrow down the events to **Event ID 4663 (Audit Success for the File System Category)**, enter **4663** in the **Includes/Excludes Event IDs** text box.
 
-For an example of a File Access Auditing Event 4663, see ["4663(S): An attempt was made to access an object."](/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4663).
+For a File Access Auditing Event 4663 example, see [4663(S): An attempt was made to access an object.](/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4663).
 
 ### Use PowerShell to audit VC Runtime usage
 
-To update File Auditing Permissions with PowerShell, follow these steps:
+To update file auditing permissions with PowerShell, follow these steps:
 
 1. Define the [file system audit rule](/dotnet/api/system.security.accesscontrol.filesystemauditrule.-ctor) to apply to the files.
 1. Obtain a file's security descriptor with [`Get-Acl`](/powershell/module/microsoft.powershell.security/get-acl).
@@ -122,7 +122,7 @@ ForEach-Object {
 
 ### PowerShell: View file audit events
 
-PowerShell provides `Get-WinEvent` to get event records for various event logs, as shown in the following PowerShell code that lists all of the Auditing Event 4663 records over the past 24 hours:
+PowerShell provides `Get-WinEvent` to get event records for various event logs, as shown in the following PowerShell code that lists all of the File Access Auditing Event 4663 records over the past 24 hours:
 
 ```powershell
 function Get-AuditEntries {
@@ -171,15 +171,15 @@ ResourceAttributes : S:AI
 
 ### Next steps after auditing VC Runtime usage
 
-After you determine which processes use the VC Runtime files, or which applications installed the VC Redistributable, uninstall those applications or upgrade them to newer versions that don't depend on unsupported VC Runtimes.
+After you determine which processes use the VC Runtime files, or which applications installed the Visual C++ Redistributable, uninstall those applications or upgrade them to newer versions that don't depend on unsupported VC Runtimes.
 
-Some Microsoft applications require legacy versions of the VC Runtime. For details, see [Visual C++ Redistributable and Runtime Libraries FAQ | Microsoft Learn](/lifecycle/faq/visual-c-faq).
+Some Microsoft applications require legacy versions of the VC Runtime. For more information, see the [Visual C++ Redistributable and Runtime Libraries FAQ](/lifecycle/faq/visual-c-faq).
 
 <a id="vcruntime_install_location"></a>
 
 ## VC Runtime installation locations
 
-Here is where each version of the VC Runtime is installed:
+The following table lists where each version of the VC Runtime is installed.
 
 | Visual Studio version| Installed locations|
 | ------------- | ------------- |
