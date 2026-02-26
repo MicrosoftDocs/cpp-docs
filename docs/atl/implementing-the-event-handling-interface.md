@@ -3,10 +3,11 @@ description: "Learn more about: Implementing the Event Handling Interface"
 title: "Implementing the Event Handling Interface"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, event handling", "event handling, ATL", "interfaces, event and event sink"]
-ms.assetid: eb2a5b33-88dc-4ce3-bee0-c5c38ea050d7
 ms.topic: concept-article
 ---
 # Implementing the Event Handling Interface
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 ATL helps you with all three elements required for handling events: implementing the event interface, advising the event source, and unadvising the event source. The precise steps you'll need to take depend on the type of the event interface and the performance requirements of your application.
 

@@ -4,9 +4,10 @@ title: "CComAggObject Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComAggObject", "ATLCOM/ATL::CComAggObject", "ATLCOM/ATL::CComAggObject::CComAggObject", "ATLCOM/ATL::CComAggObject::AddRef", "ATLCOM/ATL::CComAggObject::CreateInstance", "ATLCOM/ATL::CComAggObject::FinalConstruct", "ATLCOM/ATL::CComAggObject::FinalRelease", "ATLCOM/ATL::CComAggObject::QueryInterface", "ATLCOM/ATL::CComAggObject::Release", "ATLCOM/ATL::CComAggObject::m_contained"]
 helpviewer_keywords: ["aggregate objects [C++], in ATL", "aggregation [C++], ATL objects", "CComAggObject class"]
-ms.assetid: 7aa90d69-d399-477b-880d-e2cdf0ef7881
 ---
 # CComAggObject Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements the [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface for an aggregated object. By definition, an aggregated object is contained within an outer object. The `CComAggObject` class is similar to the [CComObject Class](../../atl/reference/ccomobject-class.md), except that it exposes an interface that is directly accessible to external clients.
 

@@ -3,10 +3,11 @@ description: "Learn more about: Adding a Property Page (ATL Tutorial, Part 6)"
 title: "Adding a Property Page (ATL Tutorial, Part 6)"
 ms.custom: "get-started-article"
 ms.date: "09/27/2018"
-ms.assetid: df80d255-e7ea-49d9-b940-3f012e90cf9b
 ms.topic: tutorial
 ---
 # Adding a Property Page (ATL Tutorial, Part 6)
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 > [!NOTE]
 > The ATL OLE DB Provider wizard is not available in Visual Studio 2019 and later.

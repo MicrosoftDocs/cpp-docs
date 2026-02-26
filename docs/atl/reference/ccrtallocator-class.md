@@ -4,9 +4,10 @@ title: "CCRTAllocator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CCRTAllocator", "ATLCORE/ATL::CCRTAllocator", "ATLCORE/ATL::CCRTAllocator::Allocate", "ATLCORE/ATL::CCRTAllocator::Free", "ATLCORE/ATL::CCRTAllocator::Reallocate"]
 helpviewer_keywords: ["CCRTAllocator class"]
-ms.assetid: 3e1b8cb0-859a-41ab-8e93-6f0b5ceca49d
 ---
 # CCRTAllocator Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods for managing memory using CRT memory routines.
 

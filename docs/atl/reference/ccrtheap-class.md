@@ -4,9 +4,10 @@ title: "CCRTHeap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CCRTHeap", "ATLMEM/ATL::CCRTHeap", "ATLMEM/ATL::CCRTHeap::Allocate", "ATLMEM/ATL::CCRTHeap::Free", "ATLMEM/ATL::CCRTHeap::GetSize", "ATLMEM/ATL::CCRTHeap::Reallocate"]
 helpviewer_keywords: ["CCRTHeap class"]
-ms.assetid: 321bd6c5-1856-4ff7-8590-95044a1209f7
 ---
 # CCRTHeap Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) using the CRT heap functions.
 

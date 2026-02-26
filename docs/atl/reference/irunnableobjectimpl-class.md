@@ -4,9 +4,10 @@ title: "IRunnableObjectImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IRunnableObjectImpl", "ATLCTL/ATL::IRunnableObjectImpl", "ATLCTL/ATL::IRunnableObjectImpl::GetRunningClass", "ATLCTL/ATL::IRunnableObjectImpl::IsRunning", "ATLCTL/ATL::IRunnableObjectImpl::LockRunning", "ATLCTL/ATL::IRunnableObjectImpl::Run", "ATLCTL/ATL::IRunnableObjectImpl::SetContainedObject"]
 helpviewer_keywords: ["containers, running controls", "IRunnableObjectImpl class", "IRunnableObject, ATL implementation", "controls [ATL], running", "controls [C++], container running in ATL"]
-ms.assetid: 305c7c3b-889e-49dd-aca1-34379c1b9931
 ---
 # IRunnableObjectImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements `IUnknown` and provides a default implementation of the [IRunnableObject](/windows/win32/api/objidl/nn-objidl-irunnableobject) interface.
 

@@ -7,6 +7,8 @@ helpviewer_keywords: ["VARIANT macro", "CComVariant class", "VARIANT macro, ATL"
 ---
 # `CComVariant` class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 This class wraps the `VARIANT` type, providing a member indicating the type of data stored.
 
 ## Syntax

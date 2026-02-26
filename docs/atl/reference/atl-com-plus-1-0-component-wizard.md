@@ -3,9 +3,10 @@ description: "Learn more about: ATL COM+ 1.0 Component Wizard"
 title: "ATL COM+ 1.0 Component Wizard"
 ms.date: "05/08/2019"
 helpviewer_keywords: ["ATL projects, adding components"]
-ms.assetid: 11670681-8671-4122-96a4-2e52f8dadce0
 ---
 # ATL COM+ 1.0 Component Wizard
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 ::: moniker range=">=msvc-160"
 

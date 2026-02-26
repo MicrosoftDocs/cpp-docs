@@ -3,9 +3,10 @@ description: "Learn more about: Aggregation"
 title: "Aggregation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["aggregation [C++]", "aggregate objects [C++]"]
-ms.assetid: 7125bb8e-b269-4b50-9bba-295b467a54cc
 ---
 # Aggregation
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 There are times when an object's implementor would like to take advantage of the services offered by another, prebuilt object. Furthermore, it would like this second object to appear as a natural part of the first. COM achieves both of these goals through containment and aggregation.
 

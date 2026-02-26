@@ -7,6 +7,8 @@ helpviewer_keywords: ["snap-ins, property pages", "snap-ins", "property pages, A
 ---
 # CSnapInPropertyPageImpl Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 This class provides methods for implementing a snap-in property page object.
 
 > [!IMPORTANT]

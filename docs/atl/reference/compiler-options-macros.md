@@ -7,6 +7,8 @@ helpviewer_keywords: ["compiler options, macros"]
 ---
 # Compiler Options Macros
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 These macros control specific compiler features.
 
 |Macro|Description|

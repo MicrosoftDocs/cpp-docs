@@ -4,9 +4,10 @@ title: "CHeapPtr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CHeapPtr", "ATLCORE/ATL::CHeapPtr", "ATLCORE/ATL::CHeapPtr::CHeapPtr", "ATLCORE/ATL::CHeapPtr::Allocate", "ATLCORE/ATL::CHeapPtr::Reallocate"]
 helpviewer_keywords: ["CHeapPtr class"]
-ms.assetid: e5c5bfd4-9bf1-4164-8a83-8155fe253454
 ---
 # CHeapPtr Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 A smart pointer class for managing heap pointers.
 

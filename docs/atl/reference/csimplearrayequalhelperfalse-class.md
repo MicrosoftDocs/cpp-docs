@@ -4,9 +4,10 @@ title: "CSimpleArrayEqualHelperFalse Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSimpleArrayEqualHelperFalse", "ATLSIMPCOLL/ATL::CSimpleArrayEqualHelperFalse", "ATLSIMPCOLL/ATL::CSimpleArrayEqualHelperFalse::IsEqual"]
 helpviewer_keywords: ["CSimpleArrayEqualHelperFalse class"]
-ms.assetid: 6918af6f-d23d-49eb-8482-c44272f5ffeb
 ---
 # CSimpleArrayEqualHelperFalse Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class is a helper for the [CSimpleArray](../../atl/reference/csimplearray-class.md) class.
 

@@ -4,9 +4,10 @@ title: "CComObjectRoot Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComObjectRoot", "atlcom/ATL::CComObjectRoot"]
 helpviewer_keywords: ["CComObjectRoot class"]
-ms.assetid: f8797c38-6e73-4f67-85c2-71654cffa8eb
 ---
 # CComObjectRoot Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This typedef of [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md) is templatized on the default threading model of the server.
 

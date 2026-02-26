@@ -4,9 +4,10 @@ title: "CDefaultCompareTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDefaultCompareTraits", "ATLCOLL/ATL::CDefaultCompareTraits", "ATLCOLL/ATL::CDefaultCompareTraits::CompareElements", "ATLCOLL/ATL::CDefaultCompareTraits::CompareElementsOrdered"]
 helpviewer_keywords: ["CDefaultCompareTraits class"]
-ms.assetid: a17e2740-e7b4-48f2-aeb7-c80ce84b63f7
 ---
 # CDefaultCompareTraits Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides default element comparison functions.
 

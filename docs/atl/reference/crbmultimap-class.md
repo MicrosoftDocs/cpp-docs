@@ -4,9 +4,10 @@ title: "CRBMultiMap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CRBMultiMap", "ATLCOLL/ATL::CRBMultiMap", "ATLCOLL/ATL::CRBMultiMap::CRBMultiMap", "ATLCOLL/ATL::CRBMultiMap::FindFirstWithKey", "ATLCOLL/ATL::CRBMultiMap::GetNextValueWithKey", "ATLCOLL/ATL::CRBMultiMap::GetNextWithKey", "ATLCOLL/ATL::CRBMultiMap::Insert", "ATLCOLL/ATL::CRBMultiMap::RemoveKey"]
 helpviewer_keywords: ["CRBMultiMap class"]
-ms.assetid: 94d3ec0c-3e30-4ab7-a101-d8da4fb8add3
 ---
 # CRBMultiMap Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class represents a mapping structure that allows each key can be associated with more than one value, using a Red-Black binary tree.
 

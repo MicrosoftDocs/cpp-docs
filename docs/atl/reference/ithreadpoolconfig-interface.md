@@ -4,9 +4,10 @@ title: "IThreadPoolConfig Interface"
 ms.date: "11/04/2016"
 f1_keywords: ["IThreadPoolConfig", "ATLUTIL/ATL::IThreadPoolConfig", "ATLUTIL/ATL::GetSize", "ATLUTIL/ATL::GetTimeout", "ATLUTIL/ATL::SetSize", "ATLUTIL/ATL::SetTimeout"]
 helpviewer_keywords: ["IThreadPoolConfig interface"]
-ms.assetid: 69e642bf-6925-46e6-9a37-cce52231b1cc
 ---
 # IThreadPoolConfig Interface
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This interface provides methods for configuring a thread pool.
 

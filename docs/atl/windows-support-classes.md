@@ -4,9 +4,10 @@ title: "Windows Support Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["ATL, windows", "windows [C++], ATL"]
-ms.assetid: 750b14d5-d787-4d2b-9728-ac199ccad489
 ---
 # Windows Support Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The following classes provide support for windows:
 

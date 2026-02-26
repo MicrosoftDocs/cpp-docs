@@ -4,9 +4,10 @@ title: "CAutoVectorPtr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAutoVectorPtr", "ATLBASE/ATL::CAutoVectorPtr", "ATLBASE/ATL::CAutoVectorPtr::CAutoVectorPtr", "ATLBASE/ATL::CAutoVectorPtr::Allocate", "ATLBASE/ATL::CAutoVectorPtr::Attach", "ATLBASE/ATL::CAutoVectorPtr::Detach", "ATLBASE/ATL::CAutoVectorPtr::Free", "ATLBASE/ATL::CAutoVectorPtr::m_p"]
 helpviewer_keywords: ["CAutoVectorPtr class"]
-ms.assetid: 0030362b-6bc4-4a47-9b5b-3c3899dceab4
 ---
 # CAutoVectorPtr Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class represents a smart pointer object using vector new and delete operators.
 

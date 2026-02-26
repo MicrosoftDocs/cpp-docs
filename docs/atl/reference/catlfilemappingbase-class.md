@@ -4,9 +4,10 @@ title: "CAtlFileMappingBase Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAtlFileMappingBase", "ATLFILE/ATL::CAtlFileMappingBase", "ATLFILE/ATL::CAtlFileMappingBase::CAtlFileMappingBase", "ATLFILE/ATL::CAtlFileMappingBase::CopyFrom", "ATLFILE/ATL::CAtlFileMappingBase::GetData", "ATLFILE/ATL::CAtlFileMappingBase::GetHandle", "ATLFILE/ATL::CAtlFileMappingBase::GetMappingSize", "ATLFILE/ATL::CAtlFileMappingBase::MapFile", "ATLFILE/ATL::CAtlFileMappingBase::MapSharedMem", "ATLFILE/ATL::CAtlFileMappingBase::OpenMapping", "ATLFILE/ATL::CAtlFileMappingBase::Unmap"]
 helpviewer_keywords: ["CAtlFileMappingBase class"]
-ms.assetid: be555723-2790-4f57-a8fb-be4d68460775
 ---
 # CAtlFileMappingBase Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class represents a memory-mapped file.
 

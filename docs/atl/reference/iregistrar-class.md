@@ -4,9 +4,10 @@ title: "IRegistrar Interface"
 ms.date: "02/01/2017"
 f1_keywords: ["IRegistrar", "ATLIFASE/ATL::IRegistrar", "ATLIFASE/ATL::IRegistrar::ResourceRegisterSz", "ATLIFASE/ATL::IRegistrar::ResourceUnregisterSz", "ATLIFASE/ATL::IRegistrar::FileRegister", "ATLIFASE/ATL::IRegistrar::FileUnregister", "ATLIFASE/ATL::IRegistrar::StringRegister", "ATLIFASE/ATL::IRegistrar::StringUnregister", "ATLIFASE/ATL::IRegistrar::ResourceRegister", "ATLIFASE/ATL::IRegistrar::ResourceUnregister"]
 helpviewer_keywords: ["Iregistrar Interface"]
-ms.assetid: e88c04b7-0c93-4ae8-aeb9-ecd78f87421e
 ---
 # IRegistrar Interface
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This interface is defined in atliface.h and is used internally by CAtlModule member functions such as [UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced).
 

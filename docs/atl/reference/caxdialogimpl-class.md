@@ -4,9 +4,10 @@ title: "CAxDialogImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAxDialogImpl", "ATLWIN/ATL::CAxDialogImpl", "ATLWIN/ATL::CAxDialogImpl::AdviseSinkMap", "ATLWIN/ATL::CAxDialogImpl::Create", "ATLWIN/ATL::CAxDialogImpl::DestroyWindow", "ATLWIN/ATL::CAxDialogImpl::DoModal", "ATLWIN/ATL::CAxDialogImpl::EndDialog", "ATLWIN/ATL::CAxDialogImpl::GetDialogProc", "ATLWIN/ATL::CAxDialogImpl::GetIDD", "ATLWIN/ATL::CAxDialogImpl::IsDialogMessage", "ATLWIN/ATL::CAxDialogImpl::m_bModal"]
 helpviewer_keywords: ["CAxDialogImpl class", "ATL, dialog boxes"]
-ms.assetid: 817df483-3fa8-44e7-8487-72ba0881cd27
 ---
 # CAxDialogImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements a dialog box (modal or modeless) that hosts ActiveX controls.
 

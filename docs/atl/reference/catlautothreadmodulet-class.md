@@ -4,9 +4,10 @@ title: "CAtlAutoThreadModuleT Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAtlAutoThreadModuleT", "ATLBASE/ATL::CAtlAutoThreadModuleT", "ATLBASE/ATL::CAtlAutoThreadModuleT::GetDefaultThreads"]
 helpviewer_keywords: ["CAtlAutoThreadModuleT class"]
-ms.assetid: ae1667c6-3fb8-47bc-b35d-9ea5e9896d7f
 ---
 # CAtlAutoThreadModuleT Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods for implementing a thread-pooled, apartment-model COM server.
 

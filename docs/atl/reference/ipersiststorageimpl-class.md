@@ -7,6 +7,8 @@ helpviewer_keywords: ["storage, ATL", "IPersistStorageImpl class"]
 ---
 # IPersistStorageImpl Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 This class implements the [IPersistStorage](/windows/win32/api/objidl/nn-objidl-ipersiststorage) interface.
 
 > [!IMPORTANT]

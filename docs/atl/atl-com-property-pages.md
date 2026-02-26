@@ -3,9 +3,10 @@ description: "Learn more about: ATL COM Property Pages"
 title: "ATL COM Property Pages"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["property pages, COM", "ATL COM objects", "COM property pages", "property pages, ATL", "COM objects, ATL", "ATL property pages"]
-ms.assetid: 663c7caa-2e5e-4b5c-b8ea-fd434ceb1654
 ---
 # ATL COM Property Pages
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 COM property pages provide a user interface for setting the properties (or calling the methods) of one or more COM objects. Property pages are used extensively by ActiveX controls for providing rich user interfaces that allow control properties to be set at design time.
 

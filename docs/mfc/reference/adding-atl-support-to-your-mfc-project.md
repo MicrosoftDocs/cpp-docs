@@ -8,8 +8,8 @@ helpviewer_keywords: ["MFC, ATL support", "ATL, MFC projects"]
 # Adding ATL Support to Your MFC Project
 
 >[!NOTE]
-> The Microsoft Foundation Classes (MFC) and Active Template Library (ATL) libraries continue to be supported. However, we're no longer adding features or updating the documentation.
-> Active Template Library (ATL) support applies only to simple COM objects added to an MFC executable or DLL project. You can add other COM objects (including ActiveX controls) to MFC projects, but the objects might not operate as expected.
+> The Microsoft Foundation Classes (MFC) library and Active Template Library (ATL) continue to be supported. However, we're no longer adding features or updating the documentation.
+> ATL support applies only to simple COM objects added to an MFC executable or DLL project. You can add other COM objects (including ActiveX controls) to MFC projects, but the objects might not operate as expected.
 
 If you have already created an MFC-based application, then you can add support for the Active Template Library (ATL) easily by using the IDE.
 

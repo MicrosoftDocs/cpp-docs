@@ -3,9 +3,10 @@ description: "Learn more about: ATL Connection Point Example"
 title: "ATL Connection Point Example"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["connection points [C++], examples", "examples [ATL]"]
-ms.assetid: a49721b7-f308-43de-8868-f662a94bc81a
 ---
 # ATL Connection Point Example
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 This example shows an object that supports [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) as an outgoing interface:
 

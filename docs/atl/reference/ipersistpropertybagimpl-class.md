@@ -4,9 +4,10 @@ title: "IPersistPropertyBagImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IPersistPropertyBagImpl", "ATLCOM/ATL::IPersistPropertyBagImpl", "ATLCOM/ATL::IPersistPropertyBagImpl::GetClassID", "ATLCOM/ATL::IPersistPropertyBagImpl::InitNew", "ATLCOM/ATL::IPersistPropertyBagImpl::Load", "ATLCOM/ATL::IPersistPropertyBagImpl::Save"]
 helpviewer_keywords: ["IPersistPropertyBagImpl class"]
-ms.assetid: 712af24d-99f8-40f2-9811-53b3ff6e5b19
 ---
 # IPersistPropertyBagImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements `IUnknown` and allows an object to save its properties to a client-supplied property bag.
 

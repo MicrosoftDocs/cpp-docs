@@ -4,9 +4,10 @@ title: "IObjectWithSiteImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IObjectWithSiteImpl", "ATLCOM/ATL::IObjectWithSiteImpl", "ATLCOM/ATL::IObjectWithSiteImpl::GetSite", "ATLCOM/ATL::IObjectWithSiteImpl::SetChildSite", "ATLCOM/ATL::IObjectWithSiteImpl::SetSite", "ATLCOM/ATL::IObjectWithSiteImpl::m_spUnkSite"]
 helpviewer_keywords: ["IObjectWithSiteImpl class"]
-ms.assetid: 4e1f774f-bc3d-45ee-9a1c-c3533a511588
 ---
 # IObjectWithSiteImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods allowing an object to communicate with its site.
 

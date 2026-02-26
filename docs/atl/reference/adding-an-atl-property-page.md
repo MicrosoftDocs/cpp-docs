@@ -3,9 +3,10 @@ description: "Learn more about: Adding an ATL Property Page"
 title: "Adding an ATL Property Page"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["property pages, adding", "ATL projects, adding property pages", "controls [ATL], property pages"]
-ms.assetid: ddf92b49-42a2-46d2-b6b8-d37baedebeca
 ---
 # Adding an ATL Property Page
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 > [!NOTE]
 > The ATL Property Page wizard is not available in Visual Studio 2019 and later.

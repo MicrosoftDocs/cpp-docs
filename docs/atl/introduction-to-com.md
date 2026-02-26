@@ -4,10 +4,11 @@ title: "Introduction to COM"
 ms.custom: "index-page"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["COM"]
-ms.assetid: 120735d9-db71-4ad3-a730-ce576ea2354e
 ms.topic: concept-article
 ---
 # Introduction to COM
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 COM is the fundamental "object model" on which ActiveX Controls and OLE are built. COM allows an object to expose its functionality to other components and to host applications. It defines both how the object exposes itself and how this exposure works across processes and across networks. COM also defines the object's life cycle.
 

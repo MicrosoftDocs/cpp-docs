@@ -4,9 +4,10 @@ title: "IConnectionPointImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IConnectionPointImpl", "ATLCOM/ATL::IConnectionPointImpl", "ATLCOM/ATL::IConnectionPointImpl::Advise", "ATLCOM/ATL::IConnectionPointImpl::EnumConnections", "ATLCOM/ATL::IConnectionPointImpl::GetConnectionInterface", "ATLCOM/ATL::IConnectionPointImpl::GetConnectionPointContainer", "ATLCOM/ATL::IConnectionPointImpl::Unadvise", "ATLCOM/ATL::IConnectionPointImpl::m_vec"]
 helpviewer_keywords: ["connection points [C++], implementing", "IConnectionPointImpl class"]
-ms.assetid: 27992115-3b86-45dd-bc9e-54f32876c557
 ---
 # IConnectionPointImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements a connection point.
 

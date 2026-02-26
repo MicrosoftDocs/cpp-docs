@@ -3,9 +3,10 @@ description: "Learn more about: ATL Event Handling Summary"
 title: "ATL Event Handling Summary"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["event handling, implementing"]
-ms.assetid: e8b47ef0-0bdc-47ff-9dd6-34df11dde9a2
 ---
 # ATL Event Handling Summary
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 In general, handling COM events is a relatively simple process. There are three main steps:
 

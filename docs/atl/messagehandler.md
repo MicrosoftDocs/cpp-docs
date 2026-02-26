@@ -4,9 +4,10 @@ title: "MessageHandler"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["MessageHandler function"]
-ms.assetid: 8a0acf97-1b0d-4226-91b9-75446634a03c
 ---
 # MessageHandler
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 `MessageHandler` is the name of the function identified by the second parameter of the MESSAGE_HANDLER macro in your message map.
 

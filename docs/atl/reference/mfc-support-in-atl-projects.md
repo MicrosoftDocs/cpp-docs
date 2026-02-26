@@ -4,9 +4,10 @@ title: "MFC Support in ATL Projects"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.atl.addmfc"]
 helpviewer_keywords: ["ATL projects, MFC support"]
-ms.assetid: f90b4276-cb98-4c11-902c-9ebcfe6f954b
 ---
 # MFC Support in ATL Projects
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 If you select **Support MFC** in the ATL Project Wizard, your project declares the application as an MFC application object (class). The project initializes the MFC library and instantiates a class (class *ProjName*) that is derived from [CWinApp](../../mfc/reference/cwinapp-class.md).
 

@@ -4,9 +4,10 @@ title: "CComObjectNoLock Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComObjectNoLock", "ATLCOM/ATL::CComObjectNoLock", "ATLCOM/ATL::CComObjectNoLock::CComObjectNoLock", "ATLCOM/ATL::CComObjectNoLock::AddRef", "ATLCOM/ATL::CComObjectNoLock::QueryInterface", "ATLCOM/ATL::CComObjectNoLock::Release"]
 helpviewer_keywords: ["CComObjectNoLock class"]
-ms.assetid: 288c6506-7da8-4127-8d58-7f4bd779539a
 ---
 # CComObjectNoLock Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements `IUnknown` for a nonaggregated object, but does not increment the module lock count in the constructor.
 

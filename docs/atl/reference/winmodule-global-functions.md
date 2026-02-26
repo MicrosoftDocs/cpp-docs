@@ -3,9 +3,10 @@ description: "Learn more about: WinModule Global Functions"
 title: "WinModule Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlbase/ATL::AtlWinModuleAddCreateWndData", "atlbase/ATL::AtlWinModuleExtractCreateWndData"]
-ms.assetid: 8ce45a5b-26a7-491f-9096-c09ceca5f2c2
 ---
 # WinModule Global Functions
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These functions provide support for `_AtlCreateWndData` structure operations.
 

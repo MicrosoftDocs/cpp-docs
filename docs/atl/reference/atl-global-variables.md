@@ -4,9 +4,10 @@ title: "ATL Global Variables"
 ms.date: "12/06/2017"
 f1_keywords: ["ATLBASE/_pAtlModule"]
 helpviewer_keywords: ["global variables, ATL", "_pAtlModule"]
-ms.assetid: e881a319-99ca-4f5d-8a0b-34b3dcd0f37f
 ---
 # ATL Global Variables
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 ## _pAtlModule
 

@@ -4,9 +4,10 @@ title: "IAxWinAmbientDispatchEx Interface"
 ms.date: "11/04/2016"
 f1_keywords: ["IAxWinAmbientDispatchEx", "ATLIFACE/ATL::IAxWinAmbientDispatchEx", "ATLIFACE/ATL::SetAmbientDispatch"]
 helpviewer_keywords: ["IAxWinAmbientDispatchEx interface"]
-ms.assetid: 2c25e079-6128-4278-bc72-b2c6195ba7ef
 ---
 # IAxWinAmbientDispatchEx Interface
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This interface implements supplemental ambient properties for a hosted control.
 

@@ -4,9 +4,10 @@ title: "CPrivateObjectSecurityDesc Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPrivateObjectSecurityDesc", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::ConvertToAutoInherit", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Create", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Get", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Set"]
 helpviewer_keywords: ["CPrivateObjectSecurityDesc class"]
-ms.assetid: 2c4bbb13-bf99-4833-912a-197f6815bb5d
 ---
 # CPrivateObjectSecurityDesc Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class represents a private object security descriptor object.
 

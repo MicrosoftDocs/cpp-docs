@@ -3,10 +3,11 @@ description: "Learn more about: Programming with CComBSTR (ATL)"
 title: "Programming with CComBSTR (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CComBSTR class, programming with", "Unicode, using CComBSTR [ATL]"]
-ms.assetid: d3bd0851-d132-4be9-9c4c-6ccba17acb2b
 ms.topic: concept-article
 ---
 # Programming with CComBSTR (ATL)
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The ATL class [CComBSTR](../atl/reference/ccombstr-class.md) provides a wrapper around the BSTR data type. While `CComBSTR` is a useful tool, there are several situations that require caution.
 

@@ -4,9 +4,10 @@ title: "CComHeap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComHeap", "ATLCOMMEM/ATL::CComHeap", "ATLCOMMEM/ATL::CComHeap::Allocate", "ATLCOMMEM/ATL::CComHeap::Free", "ATLCOMMEM/ATL::CComHeap::GetSize", "ATLCOMMEM/ATL::CComHeap::Reallocate"]
 helpviewer_keywords: ["CComHeap class"]
-ms.assetid: c74183ce-98ae-46fb-b186-93ea4cf0222b
 ---
 # `CComHeap` Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements [`IAtlMemMgr`](../../atl/reference/iatlmemmgr-class.md) using the COM memory allocation functions.
 

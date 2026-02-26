@@ -3,10 +3,11 @@ description: "Learn more about: Adding a Control (ATL Tutorial, Part 2)"
 title: "Adding a Control (ATL Tutorial, Part 2)"
 ms.custom: "get-started-article"
 ms.date: "08/19/2019"
-ms.assetid: c9575a75-1064-41f1-9697-7aada560c669
 ms.topic: tutorial
 ---
 # Adding a Control (ATL Tutorial, Part 2)
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 In this step, you add a control to your project, build it, and test it on a Web page.
 

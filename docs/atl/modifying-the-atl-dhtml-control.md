@@ -3,10 +3,11 @@ description: "Learn more about: Modifying the ATL DHTML Control"
 title: "Modifying the ATL DHTML Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["HTML controls, modifying", "DHTML controls", "DHTML controls, modifying"]
-ms.assetid: c053f35f-8629-4600-9595-721f5956777a
 ms.topic: how-to
 ---
 # Modifying the ATL DHTML Control
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The ATL Control Wizard provides starter code so you can build and run the control, and so you can see how the methods are written in the project files and how the DHTML calls into the control's C++ code using the dispatch methods. You can add any dispatch method to the interface. Then, you can call the methods in the HTML resource.
 

@@ -4,9 +4,10 @@ title: "CComQIPtr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComQIPtr", "ATLCOMCLI/ATL::CComQIPtr", "ATLCOMCLI/ATL::CComQIPtr::CComQIPtr"]
 helpviewer_keywords: ["CComQIPtr class"]
-ms.assetid: 969cacb5-05b6-4af4-b683-24911d70242d
 ---
 # CComQIPtr Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 A smart pointer class for managing COM interface pointers.
 

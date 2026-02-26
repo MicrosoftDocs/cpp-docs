@@ -4,9 +4,10 @@ title: "CommandHandler"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["CommandHandler function"]
-ms.assetid: 662bc7bf-4a10-42b3-986d-d8bae4f63551
 ---
 # CommandHandler
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 `CommandHandler` is the function identified by the third parameter of the COMMAND_HANDLER macro in your message map.
 

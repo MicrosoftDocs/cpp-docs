@@ -4,9 +4,10 @@ title: "CLocalHeap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CLocalHeap", "ATLMEM/ATL::CLocalHeap", "ATLMEM/ATL::CLocalHeap::Allocate", "ATLMEM/ATL::CLocalHeap::Free", "ATLMEM/ATL::CLocalHeap::GetSize", "ATLMEM/ATL::CLocalHeap::Reallocate"]
 helpviewer_keywords: ["CLocalHeap class"]
-ms.assetid: 1ffa87a5-5fc8-4f8d-8809-58e87e963bd2
 ---
 # CLocalHeap Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) using the Win32 local heap functions.
 

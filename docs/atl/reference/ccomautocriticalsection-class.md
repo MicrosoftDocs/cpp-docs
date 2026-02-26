@@ -4,9 +4,10 @@ title: "CComAutoCriticalSection Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComAutoCriticalSection", "ATLCORE/ATL::CComAutoCriticalSection", "ATLCORE/ATL::CComAutoCriticalSection::CComAutoCriticalSection"]
 helpviewer_keywords: ["CComAutoCriticalSection class"]
-ms.assetid: 491a9d90-3398-4f90-88f5-fd2172a46b30
 ---
 # CComAutoCriticalSection Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 `CComAutoCriticalSection` provides methods for obtaining and releasing ownership of a critical section object.
 

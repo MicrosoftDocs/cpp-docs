@@ -3,10 +3,11 @@ description: "Learn more about: Using a Window"
 title: "Using a Window (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, windows", "CWindow class, about CWindow class", "windows [C++], ATL"]
-ms.assetid: b3b9cc8e-4287-486b-b080-38852bc2943a
 ms.topic: concept-article
 ---
 # Using a Window
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 Class [CWindow](../atl/reference/cwindow-class.md) allows you to use a window. Once you attach a window to a `CWindow` object, you can then call `CWindow` methods to manipulate the window. `CWindow` also contains an HWND operator to convert a `CWindow` object to an HWND. Thus you can pass a `CWindow` object to any function that requires a handle to a window. You can easily mix `CWindow` method calls and Win32 function calls, without creating any temporary objects.
 

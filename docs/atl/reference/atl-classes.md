@@ -6,6 +6,8 @@ helpviewer_keywords: ["classes [C++], ATL", "ATL, classes"]
 ---
 # ATL classes and structs
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 The Active Template Library (ATL) includes the following classes and structs. To find a particular class by category, see the [ATL Class Overview](../../atl/atl-class-overview.md).
 
 |Class / struct|Description|Header file|

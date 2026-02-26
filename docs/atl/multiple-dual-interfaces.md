@@ -4,9 +4,10 @@ title: "Multiple Dual Interfaces"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["multiple dual interfaces", "COM_INTERFACE_ENTRY2 macro", "dual interfaces, exposing multiple", "multiple dual interfaces, exposing with ATL", "IDispatchImpl class, multiple dual interfaces", "COM_INTERFACE_ENTRY_IID macro"]
-ms.assetid: 7fea86e6-247f-4063-be6e-85588a9e3719
 ---
 # Multiple Dual Interfaces
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 You may want to combine the advantages of a dual interface (that is, the flexibility of both vtable and late binding, thus making the class available to scripting languages as well as C++) with the techniques of multiple inheritance.
 

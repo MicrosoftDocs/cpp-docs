@@ -4,9 +4,10 @@ title: "CComSafeDeleteCriticalSection Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComSafeDeleteCriticalSection", "ATLCORE/ATL::CComSafeDeleteCriticalSection", "ATLCORE/ATL::CComSafeDeleteCriticalSection::CComSafeDeleteCriticalSection", "ATLCORE/ATL::CComSafeDeleteCriticalSection::Init", "ATLCORE/ATL::CComSafeDeleteCriticalSection::Lock", "ATLCORE/ATL::CComSafeDeleteCriticalSection::Term", "ATLCORE/ATL::m_bInitialized"]
 helpviewer_keywords: ["CComSafeDeleteCriticalSection class"]
-ms.assetid: 4d2932c4-ba8f-48ec-8664-1db8bed01314
 ---
 # CComSafeDeleteCriticalSection Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods for obtaining and releasing ownership of a critical section object.
 

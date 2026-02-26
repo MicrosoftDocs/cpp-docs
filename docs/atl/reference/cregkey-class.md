@@ -7,6 +7,8 @@ helpviewer_keywords: ["CRegKey class", "ATL, registry", "registry, deleting valu
 ---
 # `CRegKey` Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 This class provides methods for manipulating entries in the system registry.
 
 > [!IMPORTANT]

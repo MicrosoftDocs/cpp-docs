@@ -4,9 +4,10 @@ title: "ASP, ATL Active Server Page Component Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.class.atl.asp.asp"]
 helpviewer_keywords: ["ATL Active Server Page Component Wizard, ASP"]
-ms.assetid: 4d8cafd6-5e12-4461-8911-29288896af3c
 ---
 # ASP, ATL Active Server Page Component Wizard
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 Use this page of the ATL Active Server Page Component Wizard to specify optional settings for handling information and state related to your ASP component.
 

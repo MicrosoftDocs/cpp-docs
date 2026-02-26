@@ -4,9 +4,10 @@ title: "Data Types Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["data types classes [C++]", "data types [C++], classes"]
-ms.assetid: 29882bab-9174-4dfa-8227-ccfeba80b865
 ---
 # Data Types Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The following classes wrap C++ data types:
 

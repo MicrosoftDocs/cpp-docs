@@ -3,10 +3,11 @@ description: "Learn more about: Implementing a Dialog Box"
 title: "Implementing a Dialog Box"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CSimpleDialog class, implementing dialog boxes in ATL", "dialog boxes, ATL", "CAxDialogImpl class, implementing dialog boxes in ATL", "ATL, dialog boxes"]
-ms.assetid: 478525f2-aa6a-435a-b162-68fc8aa98a8e
 ms.topic: how-to
 ---
 # Implementing a Dialog Box
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 There are two ways to add a dialog box to your ATL project: use the ATL Dialog Wizard or add it manually.
 

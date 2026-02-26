@@ -4,9 +4,10 @@ title: "UI Support Classes  (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["user interfaces, support classes", "user interfaces, ATL classes"]
-ms.assetid: 313dfc95-308a-4118-b919-5a3c3673b865
 ---
 # UI Support Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The following classes provide general UI support:
 

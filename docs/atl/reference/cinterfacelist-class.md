@@ -4,9 +4,10 @@ title: "CInterfaceList Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CInterfaceList", "ATLCOLL/ATL::CInterfaceList", "ATLCOLL/ATL::CInterfaceList::CInterfaceList"]
 helpviewer_keywords: ["CInterfaceList class"]
-ms.assetid: 2077764d-25e5-4b3d-96c8-08a287bbcd25
 ---
 # CInterfaceList Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods useful when constructing a list of COM interface pointers.
 

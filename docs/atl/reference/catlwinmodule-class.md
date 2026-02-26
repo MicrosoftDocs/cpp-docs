@@ -4,9 +4,10 @@ title: "CAtlWinModule Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAtlWinModule", "ATLBASE/ATL::CAtlWinModule", "ATLBASE/ATL::CAtlWinModule::CAtlWinModule", "ATLBASE/ATL::CAtlWinModule::AddCreateWndData", "ATLBASE/ATL::CAtlWinModule::ExtractCreateWndData"]
 helpviewer_keywords: ["CAtlWinModule class"]
-ms.assetid: 7ec844af-0f68-4a34-b0c8-9de50a025df0
 ---
 # CAtlWinModule Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides support for ATL windowing components.
 

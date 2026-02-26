@@ -7,6 +7,8 @@ helpviewer_keywords: ["CComCurrency class"]
 ---
 # `CComCurrency` Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 `CComCurrency` has methods and operators for creating and managing a `CURRENCY` object.
 
 ## Syntax

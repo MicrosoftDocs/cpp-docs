@@ -3,9 +3,10 @@ description: "Learn more about: Adding an ATL OLE DB Consumer"
 title: "Adding an ATL OLE DB Consumer"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["ATL OLE DB consumers"]
-ms.assetid: f940a513-4e42-4148-b521-dd0d7dc89fa2
 ---
 # Adding an ATL OLE DB Consumer
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 ::: moniker range=">=msvc-160"
 

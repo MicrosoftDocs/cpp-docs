@@ -3,10 +3,11 @@ description: "Learn more about: Implementing a Window with CWindowImpl"
 title: "Implementing a Window with CWindowImpl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, windows", "windows [C++], subclassing", "windows [C++], superclassing", "windows [C++], ATL", "subclassing ATL window classes", "superclassing, ATL"]
-ms.assetid: 3fc40550-f1d6-4702-8b7c-4cf682b6a855
 ms.topic: how-to
 ---
 # Implementing a Window with CWindowImpl
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 To implement a window, derive a class from `CWindowImpl`. In your derived class, declare a message map and the message handler functions. You can now use your class in three different ways:
 

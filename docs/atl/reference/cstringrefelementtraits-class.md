@@ -4,9 +4,10 @@ title: "CStringRefElementTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CStringRefElementTraits", "ATLCOLL/ATL::CStringRefElementTraits", "ATLCOLL/ATL::CStringRefElementTraits::CompareElements", "ATLCOLL/ATL::CStringRefElementTraits::CompareElementsOrdered", "ATLCOLL/ATL::CStringRefElementTraits::Hash"]
 helpviewer_keywords: ["CStringRefElementTraits class"]
-ms.assetid: cc15062d-5627-46cc-ac2b-1744afdc2dbd
 ---
 # CStringRefElementTraits Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides static functions related to strings stored in collection class objects. The string objects are dealt with as references.
 

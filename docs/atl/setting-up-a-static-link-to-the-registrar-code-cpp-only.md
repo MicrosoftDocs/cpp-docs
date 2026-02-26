@@ -3,10 +3,11 @@ title: "Setting up a static link to the Registrar code (C++ only)"
 description: "How to statically link C++ code to the ATL Registrar code."
 ms.date: 09/03/2020
 helpviewer_keywords: ["statically linking to ATL Registrar code", "linking [C++], to ATL Registrar code"]
-ms.assetid: 835f5885-87a6-48fa-91e6-60988ee65538
 ms.topic: how-to
 ---
 # Setting up a static link to the Registrar code (C++ Only)
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 C++ clients can create a static link to the Registrar's code. Static linking of the Registrar's parser adds approximately 5K to a release build.
 

@@ -4,9 +4,10 @@ title: "CAtlMap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAtlMap", "ATLCOLL/ATL::CAtlMap", "ATLCOLL/ATL::CAtlMap::KINARGTYPE", "ATLCOLL/ATL::CAtlMap::KOUTARGTYPE", "ATLCOLL/ATL::CAtlMap::VINARGTYPE", "ATLCOLL/ATL::CAtlMap::VOUTARGTYPE", "ATLCOLL/ATL::CPair::m_key", "ATLCOLL/ATL::CPair::m_value", "ATLCOLL/ATL::CAtlMap::CAtlMap", "ATLCOLL/ATL::CAtlMap::AssertValid", "ATLCOLL/ATL::CAtlMap::DisableAutoRehash", "ATLCOLL/ATL::CAtlMap::EnableAutoRehash", "ATLCOLL/ATL::CAtlMap::GetAt", "ATLCOLL/ATL::CAtlMap::GetCount", "ATLCOLL/ATL::CAtlMap::GetHashTableSize", "ATLCOLL/ATL::CAtlMap::GetKeyAt", "ATLCOLL/ATL::CAtlMap::GetNext", "ATLCOLL/ATL::CAtlMap::GetNextAssoc", "ATLCOLL/ATL::CAtlMap::GetNextKey", "ATLCOLL/ATL::CAtlMap::GetNextValue", "ATLCOLL/ATL::CAtlMap::GetStartPosition", "ATLCOLL/ATL::CAtlMap::GetValueAt", "ATLCOLL/ATL::CAtlMap::InitHashTable", "ATLCOLL/ATL::CAtlMap::IsEmpty", "ATLCOLL/ATL::CAtlMap::Lookup", "ATLCOLL/ATL::CAtlMap::Rehash", "ATLCOLL/ATL::CAtlMap::RemoveAll", "ATLCOLL/ATL::CAtlMap::RemoveAtPos", "ATLCOLL/ATL::CAtlMap::RemoveKey", "ATLCOLL/ATL::CAtlMap::SetAt", "ATLCOLL/ATL::CAtlMap::SetOptimalLoad", "ATLCOLL/ATL::CAtlMap::SetValueAt"]
 helpviewer_keywords: ["CAtlMap class"]
-ms.assetid: 5e2fe028-8e6d-4686-93df-1433d2080ec3
 ---
 # CAtlMap Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods for creating and managing a map object.
 

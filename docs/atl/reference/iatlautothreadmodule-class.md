@@ -4,9 +4,10 @@ title: "IAtlAutoThreadModule Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IAtlAutoThreadModule", "atlbase/ATL::IAtlAutoThreadModule"]
 helpviewer_keywords: ["IAtlAutoThreadModule class"]
-ms.assetid: fcb58cf9-a427-4be9-89eb-04e1ab5cc3a1
 ---
 # IAtlAutoThreadModule Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class represents an interface to a `CreateInstance` method.
 

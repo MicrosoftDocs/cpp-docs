@@ -4,9 +4,10 @@ title: "CComEnumOnSTL Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComEnumOnSTL", "atlcom/ATL::CComEnumOnSTL"]
 helpviewer_keywords: ["CComEnumOnSTL class"]
-ms.assetid: befe1a44-7a00-4f28-9a2e-cc0fa526643c
 ---
 # CComEnumOnSTL Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class defines a COM enumerator object based on a C++ Standard Library collection.
 

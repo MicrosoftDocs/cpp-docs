@@ -4,9 +4,10 @@ title: "IPropertyPageImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IPropertyPageImpl", "ATLCTL/ATL::IPropertyPageImpl", "ATLCTL/ATL::IPropertyPageImpl::IPropertyPageImpl", "ATLCTL/ATL::IPropertyPageImpl::Activate", "ATLCTL/ATL::IPropertyPageImpl::Apply", "ATLCTL/ATL::IPropertyPageImpl::Deactivate", "ATLCTL/ATL::IPropertyPageImpl::GetPageInfo", "ATLCTL/ATL::IPropertyPageImpl::Help", "ATLCTL/ATL::IPropertyPageImpl::IsPageDirty", "ATLCTL/ATL::IPropertyPageImpl::Move", "ATLCTL/ATL::IPropertyPageImpl::SetDirty", "ATLCTL/ATL::IPropertyPageImpl::SetObjects", "ATLCTL/ATL::IPropertyPageImpl::SetPageSite", "ATLCTL/ATL::IPropertyPageImpl::Show", "ATLCTL/ATL::IPropertyPageImpl::TranslateAccelerator", "ATLCTL/ATL::IPropertyPageImpl::m_bDirty", "ATLCTL/ATL::IPropertyPageImpl::m_dwDocString", "ATLCTL/ATL::IPropertyPageImpl::m_dwHelpContext", "ATLCTL/ATL::IPropertyPageImpl::m_dwHelpFile", "ATLCTL/ATL::IPropertyPageImpl::m_dwTitle", "ATLCTL/ATL::IPropertyPageImpl::m_nObjects", "ATLCTL/ATL::IPropertyPageImpl::m_pPageSite", "ATLCTL/ATL::IPropertyPageImpl::m_ppUnk", "ATLCTL/ATL::IPropertyPageImpl::m_size"]
 helpviewer_keywords: ["property pages", "IPropertyPage ATL implementation", "IPropertyPageImpl class"]
-ms.assetid: f9b7c8b1-7a04-4eab-aa63-63efddb740fa
 ---
 # IPropertyPageImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements `IUnknown` and provides a default implementation of the [IPropertyPage](/windows/win32/api/ocidl/nn-ocidl-ipropertypage) interface.
 

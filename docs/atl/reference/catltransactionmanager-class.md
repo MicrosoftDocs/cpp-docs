@@ -7,6 +7,8 @@ helpviewer_keywords: ["CAtlTransactionManager class"]
 ---
 # CAtlTransactionManager Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 CAtlTransactionManager class provides a wrapper to Kernel Transaction Manager (KTM) functions.
 
 > [!IMPORTANT]

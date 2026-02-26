@@ -4,9 +4,10 @@ title: "IServiceProviderImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IServiceProviderImpl", "ATLCOM/ATL::IServiceProviderImpl", "ATLCOM/ATL::IServiceProviderImpl::QueryService"]
 helpviewer_keywords: ["IServiceProviderImpl class", "IServiceProvider interface, ATL implementation"]
-ms.assetid: 251254d3-c4ce-40d7-aee0-3d676d1d72f2
 ---
 # IServiceProviderImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides a default implementation of the `IServiceProvider` interface.
 

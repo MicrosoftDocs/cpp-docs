@@ -4,9 +4,10 @@ title: "Composite Controls Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["composite controls, C++", "composite controls classes"]
-ms.assetid: 9e8d65c4-d631-4500-a28b-6d42c35aba26
 ---
 # Composite Controls Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The following class provides support for creating composite controls
 

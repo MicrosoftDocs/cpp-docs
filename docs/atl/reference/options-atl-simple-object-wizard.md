@@ -4,9 +4,10 @@ title: "Options, ATL Simple Object Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.class.atl.simple.options"]
 helpviewer_keywords: ["ATL Simple Object Wizard, options"]
-ms.assetid: 125fe179-942d-4181-8b82-33e92e1fd779
 ---
 # Options, ATL Simple Object Wizard
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 Use this page of the ATL Simple Object Wizard to design for increased efficiency and error support for the object.
 

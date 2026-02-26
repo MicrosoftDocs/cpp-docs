@@ -3,9 +3,10 @@ description: "Learn more about: Adding an ATL Control"
 title: "Adding an ATL Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL projects, adding controls", "controls [ATL], adding to projects"]
-ms.assetid: 10223e7e-fdb7-4163-80c6-44aeafa8e6ce
 ---
 # Adding an ATL Control
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 Use this wizard to add a user interface object to a project that supports interfaces for all potential containers. To support these interfaces, the project must have been created as an ATL application or as an MFC application that contains ATL support. You can use the [ATL Project Wizard](../../atl/reference/atl-project-wizard.md) to create an ATL application, or [add an ATL object to your MFC application](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) to implement ATL support for an MFC application.
 

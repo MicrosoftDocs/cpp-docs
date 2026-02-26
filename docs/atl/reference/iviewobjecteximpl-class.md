@@ -4,9 +4,10 @@ title: "IViewObjectExImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IViewObjectExImpl", "ATLCTL/ATL::IViewObjectExImpl", "ATLCTL/ATL::IViewObjectExImpl::Draw", "ATLCTL/ATL::IViewObjectExImpl::Freeze", "ATLCTL/ATL::IViewObjectExImpl::GetAdvise", "ATLCTL/ATL::IViewObjectExImpl::GetColorSet", "ATLCTL/ATL::IViewObjectExImpl::GetExtent", "ATLCTL/ATL::IViewObjectExImpl::GetNaturalExtent", "ATLCTL/ATL::IViewObjectExImpl::GetRect", "ATLCTL/ATL::IViewObjectExImpl::GetViewStatus", "ATLCTL/ATL::IViewObjectExImpl::QueryHitPoint", "ATLCTL/ATL::IViewObjectExImpl::QueryHitRect", "ATLCTL/ATL::IViewObjectExImpl::SetAdvise", "ATLCTL/ATL::IViewObjectExImpl::Unfreeze"]
 helpviewer_keywords: ["ActiveX controls [C++], drawing", "IViewObjectEx ATL implementation", "advise sinks", "IViewObjectExImpl class"]
-ms.assetid: ad6de760-1ee5-4883-b033-ae57beffc369
 ---
 # IViewObjectExImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements `IUnknown` and provides default implementations of the [IViewObject](/windows/win32/api/oleidl/nn-oleidl-iviewobject), [IViewObject2](/windows/win32/api/oleidl/nn-oleidl-iviewobject2), and [IViewObjectEx](/windows/win32/api/ocidl/nn-ocidl-iviewobjectex) interfaces.
 

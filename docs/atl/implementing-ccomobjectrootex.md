@@ -3,10 +3,11 @@ description: "Learn more about: Implementing CComObjectRootEx"
 title: "Implementing CComObjectRootEx"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CComObjectRoot class, implementing", "CComObjectRootEx class"]
-ms.assetid: 79630c44-f2df-4e9e-b730-400a0ebfbd2b
 ms.topic: concept-article
 ---
 # Implementing CComObjectRootEx
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 [CComObjectRootEx](../atl/reference/ccomobjectrootex-class.md) is essential; all ATL objects must have one instance of `CComObjectRootEx` or [CComObjectRoot](../atl/reference/ccomobjectroot-class.md) in their inheritance. `CComObjectRootEx` provides the default `QueryInterface` mechanism based on COM map entries.
 

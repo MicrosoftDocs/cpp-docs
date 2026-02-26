@@ -3,10 +3,11 @@ description: "Learn more about: Creating an ATL DHTML Control"
 title: "Creating an ATL DHTML Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["HTML controls, creating", "DHTML controls", "DHTML controls, creating"]
-ms.assetid: 1d8f0ede-7d8b-4959-976e-b4d0e2a87f5a
 ms.topic: how-to
 ---
 # Creating an ATL DHTML Control
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The ATL Control Wizard automates the process of creating a DHTML control. It generates the necessary resource files, including an HTML file containing sample code.
 

@@ -3,10 +3,11 @@ description: "Learn more about: Design Principles for Collection and Enumerator 
 title: "Designing Collection and Enumerator Interfaces (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["enumerator interfaces", "collection interfaces"]
-ms.assetid: ea19a39e-6333-41a1-be62-5435c236640e
 ms.topic: concept-article
 ---
 # Design Principles for Collection and Enumerator Interfaces
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 There are different design principles behind each type of interface:
 

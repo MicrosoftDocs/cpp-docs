@@ -4,10 +4,11 @@ title: "Introduction to COM and ATL"
 ms.custom: "index-page"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["COM, and ATL", "ATL, COM", "COM objects, ATL"]
-ms.assetid: 35d6ae9c-abbb-42f0-9344-33f3c19ac3ce
 ms.topic: concept-article
 ---
 # Introduction to COM and ATL
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 This section provides a brief introduction to COM and ATL.
 

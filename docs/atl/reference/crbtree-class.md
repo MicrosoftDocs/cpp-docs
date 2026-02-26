@@ -4,9 +4,10 @@ title: "CRBTree Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CRBTree", "ATLCOLL/ATL::CRBTree", "ATLCOLL/ATL::CRBTree::KINARGTYPE", "ATLCOLL/ATL::CRBTree::KOUTARGTYPE", "ATLCOLL/ATL::CRBTree::VINARGTYPE", "ATLCOLL/ATL::CRBTree::VOUTARGTYPE", "ATLCOLL/ATL::CRBTree::FindFirstKeyAfter", "ATLCOLL/ATL::CRBTree::GetAt", "ATLCOLL/ATL::CRBTree::GetCount", "ATLCOLL/ATL::CRBTree::GetHeadPosition", "ATLCOLL/ATL::CRBTree::GetKeyAt", "ATLCOLL/ATL::CRBTree::GetNext", "ATLCOLL/ATL::CRBTree::GetNextAssoc", "ATLCOLL/ATL::CRBTree::GetNextKey", "ATLCOLL/ATL::CRBTree::GetNextValue", "ATLCOLL/ATL::CRBTree::GetPrev", "ATLCOLL/ATL::CRBTree::GetTailPosition", "ATLCOLL/ATL::CRBTree::GetValueAt", "ATLCOLL/ATL::CRBTree::IsEmpty", "ATLCOLL/ATL::CRBTree::RemoveAll", "ATLCOLL/ATL::CRBTree::RemoveAt", "ATLCOLL/ATL::CRBTree::SetValueAt"]
 helpviewer_keywords: ["CRBTree class"]
-ms.assetid: a1b1cb63-38e4-4fc2-bb28-f774d1721760
 ---
 # CRBTree Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods for creating and utilizing a Red-Black tree.
 

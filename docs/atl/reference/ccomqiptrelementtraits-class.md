@@ -4,9 +4,10 @@ title: "CComQIPtrElementTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComQIPtrElementTraits", "ATLCOLL/ATL::CComQIPtrElementTraits", "ATLCOLL/ATL::CComQIPtrElementTraits::INARGTYPE"]
 helpviewer_keywords: ["CComQIPtrElementTraits class"]
-ms.assetid: 9df9250a-5413-4362-b133-332932a597c4
 ---
 # CComQIPtrElementTraits Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods, static functions, and typedefs useful when creating collections of COM interface pointers.
 

@@ -4,9 +4,10 @@ title: "IEnumOnSTLImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IEnumOnSTLImpl", "ATLCOM/ATL::IEnumOnSTLImpl", "ATLCOM/ATL::IEnumOnSTLImpl::Clone", "ATLCOM/ATL::IEnumOnSTLImpl::Init", "ATLCOM/ATL::IEnumOnSTLImpl::Next", "ATLCOM/ATL::IEnumOnSTLImpl::Reset", "ATLCOM/ATL::IEnumOnSTLImpl::Skip", "ATLCOM/ATL::IEnumOnSTLImpl::m_iter", "ATLCOM/ATL::IEnumOnSTLImpl::m_pcollection", "ATLCOM/ATL::IEnumOnSTLImpl::m_spUnk"]
 helpviewer_keywords: ["IEnumOnSTLImpl class"]
-ms.assetid: 1789e77b-88b8-447d-a490-806b918912ce
 ---
 # IEnumOnSTLImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class defines an enumerator interface based on a C++ Standard Library collection.
 

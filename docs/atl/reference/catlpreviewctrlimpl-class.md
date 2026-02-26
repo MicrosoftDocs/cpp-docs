@@ -4,9 +4,10 @@ title: "CAtlPreviewCtrlImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAtlPreviewCtrlImpl", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::CAtlPreviewCtrlImpl", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::Create", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::Destroy", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::Focus", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::OnPaint", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::Redraw", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::SetHost", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::SetPreviewVisuals", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::SetRect", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::DoPaint", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::m_plf", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::m_clrBack", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::m_clrText"]
 helpviewer_keywords: ["CAtlPreviewCtrlImpl class"]
-ms.assetid: 39b3299e-07e4-4abc-9b6e-b54bfa3b0802
 ---
 # CAtlPreviewCtrlImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class is an ATL implementation of a window that is placed on a host window provided by the Shell  for Rich Preview.
 

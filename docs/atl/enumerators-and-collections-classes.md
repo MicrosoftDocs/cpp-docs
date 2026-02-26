@@ -4,9 +4,10 @@ title: "Enumerators and Collections Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["enumerators, ATL classes"]
-ms.assetid: fcd093b2-98bf-444d-94ab-9a55520a5051
 ---
 # Enumerators and Collections Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The following classes provide support for COM collections and enumerations:
 

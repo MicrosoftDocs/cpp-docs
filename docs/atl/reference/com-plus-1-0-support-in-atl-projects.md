@@ -4,9 +4,10 @@ title: "COM+ 1.0 Support in ATL Projects"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.ATL.MTS"]
 helpviewer_keywords: ["ATL projects, COM+ 1.0 support"]
-ms.assetid: 51fb08ac-d632-4657-a4e0-d3f989f0b6f8
 ---
 # COM+ 1.0 Support in ATL Projects
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 You can use the [ATL Project Wizard](../../atl/reference/creating-an-atl-project.md) to create a project with basic support for COM+ 1.0 components.
 

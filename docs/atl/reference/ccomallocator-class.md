@@ -4,9 +4,10 @@ title: "CComAllocator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComAllocator", "ATLBASE/ATL::CComAllocator", "ATLBASE/ATL::CComAllocator::Allocate", "ATLBASE/ATL::CComAllocator::Free", "ATLBASE/ATL::CComAllocator::Reallocate"]
 helpviewer_keywords: ["CComAllocator class"]
-ms.assetid: 0cd706fd-0c7b-42d3-9054-febe2966fc8e
 ---
 # CComAllocator Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods for managing memory using COM memory routines.
 

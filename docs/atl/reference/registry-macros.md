@@ -4,9 +4,10 @@ title: "Registry Macros"
 ms.date: "08/19/2019"
 f1_keywords: ["ATLBASE/_ATL_STATIC_REGISTRY", "ATLBASE/DECLARE_LIBID", "ATLBASE/DECLARE_NO_REGISTRY", "ATLBASE/DECLARE_REGISTRY", "ATLBASE/DECLARE_REGISTRY_APPID_RESOURCEID", "ATLBASE/DECLARE_REGISTRY_RESOURCE", "ATLBASE/DECLARE_REGISTRY_RESOURCEID", "_ATL_STATIC_REGISTRY", "DECLARE_LIBID", "DECLARE_NO_REGISTRY", "DECLARE_REGISTRY", "DECLARE_REGISTRY_APPID_RESOURCEID", "DECLARE_REGISTRY_RESOURCE", "DECLARE_REGISTRY_RESOURCEID"]
 helpviewer_keywords: ["registry, ATL macros"]
-ms.assetid: 3ee041da-c63b-42a4-89cf-2a4b2a6f81ae
 ---
 # Registry Macros
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These macros define useful type library and registry facilities.
 

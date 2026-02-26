@@ -4,9 +4,10 @@ title: "CComAutoThreadModule Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComAutoThreadModule", "ATLBASE/ATL::CComAutoThreadModule", "ATLBASE/ATL::CreateInstance", "ATLBASE/ATL::GetDefaultThreads", "ATLBASE/ATL::Init", "ATLBASE/ATL::Lock", "ATLBASE/ATL::Unlock", "ATLBASE/ATL::dwThreadID", "ATLBASE/ATL::m_Allocator", "ATLBASE/ATL::m_nThreads", "ATLBASE/ATL::m_pApartments"]
 helpviewer_keywords: ["CComAutoThreadModule class", "apartment model modules"]
-ms.assetid: 13063ea5-a57e-4aac-97d3-227137262811
 ---
 # CComAutoThreadModule Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 As of ATL 7.0, `CComAutoThreadModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.
 

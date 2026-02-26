@@ -4,9 +4,10 @@ title: "CContainedWindowT Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CContainedWindowT", "ATLWIN/ATL::CContainedWindowT", "ATLWIN/ATL::CContainedWindowT::CContainedWindowT", "ATLWIN/ATL::CContainedWindowT::Create", "ATLWIN/ATL::CContainedWindowT::DefWindowProc", "ATLWIN/ATL::CContainedWindowT::GetCurrentMessage", "ATLWIN/ATL::CContainedWindowT::RegisterWndSuperclass", "ATLWIN/ATL::CContainedWindowT::SubclassWindow", "ATLWIN/ATL::CContainedWindowT::SwitchMessageMap", "ATLWIN/ATL::CContainedWindowT::UnsubclassWindow", "ATLWIN/ATL::CContainedWindowT::WindowProc", "ATLWIN/ATL::CContainedWindowT::m_dwMsgMapID", "ATLWIN/ATL::CContainedWindowT::m_lpszClassName", "ATLWIN/ATL::CContainedWindowT::m_pfnSuperWindowProc", "ATLWIN/ATL::CContainedWindowT::m_pObject"]
 helpviewer_keywords: ["CContainedWindow class", "contained windows", "CContainedWindowT class"]
-ms.assetid: cde0ca36-9347-4068-995a-d294dae57ca9
 ---
 # CContainedWindowT Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements a window contained within another object.
 

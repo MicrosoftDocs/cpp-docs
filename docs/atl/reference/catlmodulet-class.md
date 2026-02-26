@@ -4,9 +4,10 @@ title: "CAtlModuleT Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAtlModuleT", "ATLBASE/ATL::CAtlModuleT", "ATLBASE/ATL::CAtlModuleT::CAtlModuleT", "ATLBASE/ATL::CAtlModuleT::InitLibId", "ATLBASE/ATL::CAtlModuleT::RegisterAppId", "ATLBASE/ATL::CAtlModuleT::RegisterServer", "ATLBASE/ATL::CAtlModuleT::UnregisterAppId", "ATLBASE/ATL::CAtlModuleT::UnregisterServer", "ATLBASE/ATL::CAtlModuleT::UpdateRegistryAppId"]
 helpviewer_keywords: ["CAtlModuleT class"]
-ms.assetid: 9b74d02f-9117-47b1-a05e-c5945f83dd2b
 ---
 # CAtlModuleT Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements an ATL module.
 

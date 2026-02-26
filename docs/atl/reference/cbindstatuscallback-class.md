@@ -4,9 +4,10 @@ title: "CBindStatusCallback Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CBindStatusCallback", "ATLCTL/ATL::CBindStatusCallback", "ATLCTL/ATL::CBindStatusCallback::CBindStatusCallback", "ATLCTL/ATL::CBindStatusCallback::Download", "ATLCTL/ATL::CBindStatusCallback::GetBindInfo", "ATLCTL/ATL::CBindStatusCallback::GetPriority", "ATLCTL/ATL::CBindStatusCallback::OnDataAvailable", "ATLCTL/ATL::CBindStatusCallback::OnLowResource", "ATLCTL/ATL::CBindStatusCallback::OnObjectAvailable", "ATLCTL/ATL::CBindStatusCallback::OnProgress", "ATLCTL/ATL::CBindStatusCallback::OnStartBinding", "ATLCTL/ATL::CBindStatusCallback::OnStopBinding", "ATLCTL/ATL::CBindStatusCallback::StartAsyncDownload", "ATLCTL/ATL::CBindStatusCallback::m_dwAvailableToRead", "ATLCTL/ATL::CBindStatusCallback::m_dwTotalRead", "ATLCTL/ATL::CBindStatusCallback::m_pFunc", "ATLCTL/ATL::CBindStatusCallback::m_pT", "ATLCTL/ATL::CBindStatusCallback::m_spBindCtx", "ATLCTL/ATL::CBindStatusCallback::m_spBinding", "ATLCTL/ATL::CBindStatusCallback::m_spMoniker", "ATLCTL/ATL::CBindStatusCallback::m_spStream"]
 helpviewer_keywords: ["asynchronous data transfer [C++]", "data transfer [C++]", "data transfer [C++], asynchronous", "CBindStatusCallback class"]
-ms.assetid: 0f5da276-6031-4418-b2a9-a4750ef29e77
 ---
 # CBindStatusCallback Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements the `IBindStatusCallback` interface.
 

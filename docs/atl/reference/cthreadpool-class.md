@@ -7,6 +7,8 @@ helpviewer_keywords: ["CThreadPool class"]
 ---
 # CThreadPool Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 This class provides a pool of worker threads that process a queue of work items.
 
 ## Syntax

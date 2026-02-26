@@ -4,9 +4,10 @@ title: "Interfaces (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["COM interfaces", "interfaces, COM"]
-ms.assetid: de6c8b12-6230-4fdc-af66-a28b91d5ee55
 ---
 # Interfaces (ATL)
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 An interface is the way in which an object exposes its functionality to the outside world. In COM, an interface is a table of pointers (like a C++ vtable) to functions implemented by the object. The table represents the interface, and the functions to which it points are the methods of that interface. An object can expose as many interfaces as it chooses.
 

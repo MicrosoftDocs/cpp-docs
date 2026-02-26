@@ -4,9 +4,10 @@ title: "Event Handling Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlbase/ATL::AtlWaitWithMessageLoop"]
 helpviewer_keywords: ["event handling, global functions", "global functions, event handling"]
-ms.assetid: fd674470-3def-47c3-be1c-894fa85f13e8
 ---
 # Event Handling Global Functions
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This function provides an event handler.
 

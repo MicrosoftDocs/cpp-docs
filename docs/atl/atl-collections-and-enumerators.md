@@ -3,9 +3,10 @@ description: "Learn more about: ATL Collections and Enumerators"
 title: "ATL Collections and Enumerators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["enumerator interfaces", "collections, ATL classes", "enumerators, ATL classes", "collection interfaces"]
-ms.assetid: b2d37119-3ab2-4e0a-b65b-f377f07e4098
 ---
 # ATL Collections and Enumerators
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 A `collection` is a COM object that provides an interface that allows access to a group of data items (raw data or other objects). An interface that follows the standards for providing access to a group of objects is known as a *collection interface*.
 

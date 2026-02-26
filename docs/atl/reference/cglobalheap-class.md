@@ -4,9 +4,10 @@ title: "CGlobalHeap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CGlobalHeap", "ATLMEM/ATL::CGlobalHeap", "ATLMEM/ATL::CGlobalHeap::Allocate", "ATLMEM/ATL::CGlobalHeap::Free", "ATLMEM/ATL::CGlobalHeap::GetSize", "ATLMEM/ATL::CGlobalHeap::Reallocate"]
 helpviewer_keywords: ["CGlobalHeap class"]
-ms.assetid: e348d838-3aa7-4bee-a1b3-cd000c99f834
 ---
 # CGlobalHeap Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) using the Win32 global heap functions.
 

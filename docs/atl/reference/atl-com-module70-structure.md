@@ -4,9 +4,10 @@ title: "_ATL_COM_MODULE70 Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::_ATL_COM_MODULE70", "ATL._ATL_COM_MODULE70", "_ATL_COM_MODULE70"]
 helpviewer_keywords: ["_ATL_COM_MODULE70 structure", "ATL_COM_MODULE70 structure"]
-ms.assetid: 5b0b2fd0-bdeb-4c7e-8870-78fa69ace6e6
 ---
 # _ATL_COM_MODULE70 Structure
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 Used by COM-related code in ATL.
 

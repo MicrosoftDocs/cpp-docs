@@ -3,9 +3,10 @@ description: "Learn more about: ATL Connection Point Classes"
 title: "ATL Connection Point Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CFirePropNotifyEvent class, connection point classes", "connection points [C++], ATL classes", "ATL, connection points", "CComDynamicUnkArray class, connection point classes", "CFirePropNotifyEvent class", "CComUnkArray class, connection point classes"]
-ms.assetid: 9582ba71-7ace-4df4-9c9b-1b0636953efc
 ---
 # ATL Connection Point Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 ATL uses the following classes to support connection points:
 

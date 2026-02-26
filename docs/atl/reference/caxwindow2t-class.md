@@ -4,9 +4,10 @@ title: "CAxWindow2T Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAxWindow2T", "ATLWIN/ATL::CAxWindow2T", "ATLWIN/ATL::CAxWindow2T::CAxWindow2T", "ATLWIN/ATL::CAxWindow2T::Create", "ATLWIN/ATL::CAxWindow2T::CreateControlLic", "ATLWIN/ATL::CAxWindow2T::CreateControlLicEx", "ATLWIN/ATL::CAxWindow2T::GetWndClassName"]
 helpviewer_keywords: ["CAxWindow2 class"]
-ms.assetid: b87bc943-7991-4537-b902-2138d7f4d837
 ---
 # CAxWindow2T Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods for manipulating a window that hosts an ActiveX control, and also has support for hosting licensed ActiveX controls.
 

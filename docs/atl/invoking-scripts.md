@@ -3,10 +3,11 @@ description: "Learn more about: Invoking Scripts"
 title: "Invoking Scripts (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["StringRegister method", "scripts, invoking registry in ATL"]
-ms.assetid: eabd41ee-586b-4266-9e92-5aaad04b73a4
 ms.topic: concept-article
 ---
 # Invoking Scripts
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 [Using Replaceable Parameters (The Registrar's Preprocessor)](../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md) discusses replacement maps and mentions the Registrar method **AddReplacement**. The Registrar has eight other methods specific to scripting, and all are described in the following table.
 

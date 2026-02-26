@@ -4,9 +4,10 @@ title: "CAtlExeModuleT Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAtlExeModuleT", "ATLBASE/ATL::CAtlExeModuleT", "ATLBASE/ATL::CAtlExeModuleT::CAtlExeModuleT", "ATLBASE/ATL::CAtlExeModuleT::InitializeCom", "ATLBASE/ATL::CAtlExeModuleT::ParseCommandLine", "ATLBASE/ATL::CAtlExeModuleT::PostMessageLoop", "ATLBASE/ATL::CAtlExeModuleT::PreMessageLoop", "ATLBASE/ATL::CAtlExeModuleT::RegisterClassObjects", "ATLBASE/ATL::CAtlExeModuleT::RevokeClassObjects", "ATLBASE/ATL::CAtlExeModuleT::Run", "ATLBASE/ATL::CAtlExeModuleT::RunMessageLoop", "ATLBASE/ATL::CAtlExeModuleT::UninitializeCom", "ATLBASE/ATL::CAtlExeModuleT::Unlock", "ATLBASE/ATL::CAtlExeModuleT::WinMain", "ATLBASE/ATL::CAtlExeModuleT::m_bDelayShutdown", "ATLBASE/ATL::CAtlExeModuleT::m_dwPause", "ATLBASE/ATL::CAtlExeModuleT::m_dwTimeOut"]
 helpviewer_keywords: ["CAtlExeModuleT class"]
-ms.assetid: 82245f3d-91d4-44fa-aa86-7cc7fbd758d9
 ---
 # CAtlExeModuleT Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class represents the module for an application.
 

@@ -4,9 +4,10 @@ title: "Interfaces, ATL Control Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.class.atl.control.interfaces"]
 helpviewer_keywords: ["ATL Control Wizard, interfaces"]
-ms.assetid: 971eadcd-6a1e-46f2-b8fe-ee6b53dfe3ea
 ---
 # Interfaces, ATL Control Wizard
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This page of the wizard identifies the interfaces that the control supports. By default, the supported interfaces are those typically used by most containers.
 

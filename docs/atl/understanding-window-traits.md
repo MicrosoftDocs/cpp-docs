@@ -3,10 +3,11 @@ description: "Learn more about: Understanding Window Traits"
 title: "ATL Window Traits"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["window traits"]
-ms.assetid: c90cf850-9e91-49da-9cf3-ad4efb30347d
 ms.topic: concept-article
 ---
 # Understanding Window Traits
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 Window traits classes provide a simple method for standardizing the styles used for the creation of an ATL window object. Window traits are accepted as template parameters by [CWindowImpl](../atl/reference/cwindowimpl-class.md) and other ATL window classes as a way of providing default window styles at the class level.
 

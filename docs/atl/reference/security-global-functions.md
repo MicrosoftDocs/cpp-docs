@@ -4,9 +4,10 @@ title: "Security Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlsecurity/ATL::AtlGetDacl", "atlsecurity/ATL::AtlSetDacl", "atlsecurity/ATL::AtlGetGroupSid", "atlsecurity/ATL::AtlSetGroupSid", "atlsecurity/ATL::AtlGetOwnerSid", "atlsecurity/ATL::AtlSetOwnerSid", "atlsecurity/ATL::AtlGetSacl", "atlsecurity/ATL::AtlSetSacl", "atlsecurity/ATL::AtlGetSecurityDescriptor"]
 helpviewer_keywords: ["SIDs [C++], modifying SID objects", "ACL object global functions", "security IDs [C++]"]
-ms.assetid: 6a584bfe-16b7-47f4-8439-9c789c41567a
 ---
 # Security Global Functions
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These functions provide support for modifying SID and ACL objects.
 

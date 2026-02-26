@@ -4,9 +4,10 @@ title: "CComClassFactoryAutoThread Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComClassFactoryAutoThread", "ATLCOM/ATL::CComClassFactoryAutoThread", "ATLCOM/ATL::CComClassFactoryAutoThread::CreateInstance", "ATLCOM/ATL::CComClassFactoryAutoThread::LockServer"]
 helpviewer_keywords: ["CComClassFactoryAutoThread class"]
-ms.assetid: 22008042-533f-4dd9-bf7e-191ee571f9a1
 ---
 # CComClassFactoryAutoThread Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements the [IClassFactory](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory) interface, and allows objects to be created in multiple apartments.
 

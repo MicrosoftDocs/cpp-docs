@@ -4,9 +4,10 @@ title: "CSecurityAttributes Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSecurityAttributes", "ATLSECURITY/ATL::CSecurityAttributes", "ATLSECURITY/ATL::CSecurityAttributes::CSecurityAttributes", "ATLSECURITY/ATL::CSecurityAttributes::Set"]
 helpviewer_keywords: ["CSecurityAttributes class"]
-ms.assetid: a094880c-52e1-4a28-97ff-752d5869908e
 ---
 # CSecurityAttributes Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class is a thin wrapper for the security attributes structure.
 

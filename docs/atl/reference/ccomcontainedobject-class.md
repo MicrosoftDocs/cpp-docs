@@ -4,9 +4,10 @@ title: "CComContainedObject Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComContainedObject", "ATLCOM/ATL::CComContainedObject", "ATLCOM/ATL::CComContainedObject::CComContainedObject", "ATLCOM/ATL::CComContainedObject::AddRef", "ATLCOM/ATL::CComContainedObject::GetControllingUnknown", "ATLCOM/ATL::CComContainedObject::QueryInterface", "ATLCOM/ATL::CComContainedObject::Release"]
 helpviewer_keywords: ["aggregate objects [C++], in ATL", "aggregation [C++], ATL objects", "CComContainedObject class"]
-ms.assetid: e8616b41-c200-47b8-bf2c-fb9f713ebdad
 ---
 # CComContainedObject Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) by delegating to the owner object's `IUnknown`.
 

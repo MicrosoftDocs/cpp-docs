@@ -4,9 +4,10 @@ title: "File Handling Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["file classes [C++]"]
-ms.assetid: 94355eb1-daa3-4825-b183-7392b3899561
 ---
 # File Handling Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 These classes provide methods for handling files, temporary files, and memory-mapped files.
 

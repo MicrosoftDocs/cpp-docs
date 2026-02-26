@@ -3,9 +3,10 @@ description: "Learn more about: CAtlServiceModuleT::Start Function"
 title: "CAtlServiceModuleT::Start Function"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Start method"]
-ms.assetid: b5193a23-41bc-42d2-8d55-3eb43dc62238
 ---
 # CAtlServiceModuleT::Start Function
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 When the service is run, `_tWinMain` calls `CAtlServiceModuleT::WinMain`, which in turn calls `CAtlServiceModuleT::Start`.
 

@@ -4,9 +4,10 @@ title: "CRBMap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CRBMap", "ATLCOLL/ATL::CRBMap", "ATLCOLL/ATL::CRBMap::CRBMap", "ATLCOLL/ATL::CRBMap::Lookup", "ATLCOLL/ATL::CRBMap::RemoveKey", "ATLCOLL/ATL::CRBMap::SetAt"]
 helpviewer_keywords: ["CRBMap class"]
-ms.assetid: 658e94dc-e835-4356-aed1-1513e1f66969
 ---
 # CRBMap Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class represents a mapping structure, using a Red-Black binary tree.
 

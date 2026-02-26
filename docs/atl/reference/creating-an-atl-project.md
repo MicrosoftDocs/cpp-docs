@@ -4,9 +4,10 @@ title: "Creating an ATL Project"
 ms.date: "05/06/2019"
 f1_keywords: ["vc.appwiz.ATL.project"]
 helpviewer_keywords: ["ATL projects, creating", "ATL70.DLL", "_ATL_MIN_CRT macro", "distributing files with ATL components"]
-ms.assetid: 061d5f98-f669-440e-9380-42f017a0f9e8
 ---
 # Creating an ATL Project
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 The easiest way to create an ATL project is to use the ATL Project Wizard, located in the **Win32 Projects** folder of the **New Project** dialog box.
 

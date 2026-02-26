@@ -4,9 +4,10 @@ title: "ISpecifyPropertyPagesImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ISpecifyPropertyPagesImpl", "ATLCOM/ATL::ISpecifyPropertyPagesImpl", "ATLCOM/ATL::ISpecifyPropertyPagesImpl::GetPages"]
 helpviewer_keywords: ["property pages, CLSIDs associated with", "ISpecifyPropertyPages", "ISpecifyPropertyPagesImpl class"]
-ms.assetid: 4e4b9795-b656-4d56-9b8c-85941e7731f9
 ---
 # ISpecifyPropertyPagesImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements `IUnknown` and provides a default implementation of the [ISpecifyPropertyPages](/windows/win32/api/ocidl/nn-ocidl-ispecifypropertypages) interface.
 

@@ -3,10 +3,11 @@ description: "Learn more about: Understanding Backus-Naur form (BNF) syntax"
 title: "ATL Registrar and Backus-Naur form (BNF) syntax"
 ms.date: "05/14/2019"
 helpviewer_keywords: ["BNF notation", "Backus-Naur form (BNF) syntax"]
-ms.assetid: 994bbef0-9077-4aa8-bdfe-b7e830af9acc
 ms.topic: concept-article
 ---
 # Understanding Backus-Naur form (BNF) syntax
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The scripts used by the ATL Registrar are described in this topic using BNF syntax, which uses the notation shown in the following table.
 

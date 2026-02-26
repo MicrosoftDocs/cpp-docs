@@ -4,9 +4,10 @@ title: "CAcl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAcl", "ATLSECURITY/ATL::CAcl", "ATLSECURITY/ATL::CAcl::CAccessMaskArray", "ATLSECURITY/ATL::CAcl::CAceFlagArray", "ATLSECURITY/ATL::CAcl::CAceTypeArray", "ATLSECURITY/ATL::CAcl::CAcl", "ATLSECURITY/ATL::CAcl::GetAceCount", "ATLSECURITY/ATL::CAcl::GetAclEntries", "ATLSECURITY/ATL::CAcl::GetAclEntry", "ATLSECURITY/ATL::CAcl::GetLength", "ATLSECURITY/ATL::CAcl::GetPACL", "ATLSECURITY/ATL::CAcl::IsEmpty", "ATLSECURITY/ATL::CAcl::IsNull", "ATLSECURITY/ATL::CAcl::RemoveAce", "ATLSECURITY/ATL::CAcl::RemoveAces", "ATLSECURITY/ATL::CAcl::SetEmpty", "ATLSECURITY/ATL::CAcl::SetNull"]
 helpviewer_keywords: ["CAcl class"]
-ms.assetid: 20bcb9af-dc1c-4737-b923-3864776680d6
 ---
 # CAcl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class is a wrapper for an `ACL` (access-control list) structure.
 

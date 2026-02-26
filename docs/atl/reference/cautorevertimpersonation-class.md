@@ -4,9 +4,10 @@ title: "CAutoRevertImpersonation Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAutoRevertImpersonation", "ATLSECURITY/ATL::CAutoRevertImpersonation", "ATLSECURITY/ATL::CAutoRevertImpersonation::CAutoRevertImpersonation", "ATLSECURITY/ATL::CAutoRevertImpersonation::Attach", "ATLSECURITY/ATL::CAutoRevertImpersonation::Detach", "ATLSECURITY/ATL::CAutoRevertImpersonation::GetAccessToken"]
 helpviewer_keywords: ["CAutoRevertImpersonation class"]
-ms.assetid: 43732849-1940-4bd4-9d52-7a5698bb8838
 ---
 # CAutoRevertImpersonation Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class reverts [CAccessToken](../../atl/reference/caccesstoken-class.md) objects to a nonimpersonating state when it goes out of scope.
 

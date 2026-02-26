@@ -4,9 +4,10 @@ title: "Win32ThreadTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["Win32ThreadTraits", "ATLBASE/ATL::Win32ThreadTraits", "ATLBASE/ATL::Win32ThreadTraits::CreateThread"]
 helpviewer_keywords: ["threading [ATL], Windows threads", "threading [ATL], creation functions", "Win32ThreadTraits class"]
-ms.assetid: 50279c38-eae1-4301-9ea6-97ccea580f3e
 ---
 # Win32ThreadTraits Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides the creation function for a Windows thread. Use this class if the thread will not use CRT functions.
 

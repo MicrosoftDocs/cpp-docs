@@ -4,9 +4,10 @@ title: "IPropertyPage2Impl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IPropertyPage2Impl", "ATLCTL/ATL::IPropertyPage2Impl", "ATLCTL/ATL::IPropertyPage2Impl::EditProperty"]
 helpviewer_keywords: ["property pages", "IPropertyPage2 ATL implementation", "IPropertyPage2Impl class"]
-ms.assetid: e89fbe90-203a-47f0-a5de-23616697e1ce
 ---
 # IPropertyPage2Impl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements `IUnknown` and inherits the default implementation of [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md).
 

@@ -4,9 +4,10 @@ title: "ATL Control Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.class.atl.control.overview"]
 helpviewer_keywords: ["ATL projects, adding controls", "controls [ATL], adding to projects", "ATL Control Wizard"]
-ms.assetid: 991f8e72-ffbc-4382-a4ce-e255acfba5b6
 ---
 # ATL Control Wizard
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 Inserts into an ATL project (or an MFC project with ATL support) an ATL control. You can use this wizard to insert one of three kinds of controls:
 

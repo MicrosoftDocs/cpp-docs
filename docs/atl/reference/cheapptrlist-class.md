@@ -4,9 +4,10 @@ title: "CHeapPtrList Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CHeapPtrList", "ATLCOLL/ATL::CHeapPtrList", "ATLCOLL/ATL::CHeapPtrList::CHeapPtrList"]
 helpviewer_keywords: ["CHeapPtrList class"]
-ms.assetid: cc70e585-362a-4007-81db-c705eb181226
 ---
 # CHeapPtrList Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods useful when constructing a list of heap pointers.
 

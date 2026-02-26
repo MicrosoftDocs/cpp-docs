@@ -3,10 +3,11 @@ description: "Learn more about: Displaying Assertions"
 title: "Displaying Assertions"
 ms.date: "05/05/2019"
 helpviewer_keywords: ["debugging [ATL], displaying assertions", "assertions, displaying", "debugging assertions", "assertions, debugging"]
-ms.assetid: fa353fe8-4656-4384-a5d2-8866bc977f06
 ms.topic: concept-article
 ---
 # Displaying Assertions
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 If the client connected to your service appears to stop responding, the service may have asserted and displayed a message box that you are not able to see. You can confirm this by using the Visual Studio debugger to debug your code (see [Using Task Manager](../atl/using-task-manager.md) earlier in this section).
 

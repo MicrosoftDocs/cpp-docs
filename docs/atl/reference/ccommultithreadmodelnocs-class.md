@@ -4,9 +4,10 @@ title: "CComMultiThreadModelNoCS Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComMultiThreadModelNoCS", "ATLBASE/ATL::CComMultiThreadModelNoCS", "ATLBASE/ATL::CComMultiThreadModelNoCS::AutoCriticalSection", "ATLBASE/ATL::CComMultiThreadModelNoCS::CriticalSection", "ATLBASE/ATL::CComMultiThreadModelNoCS::ThreadModelNoCS", "ATLBASE/ATL::CComMultiThreadModelNoCS::Decrement", "ATLBASE/ATL::CComMultiThreadModelNoCS::Increment"]
 helpviewer_keywords: ["ATL, multithreading", "CComMultiThreadModelNoCS class", "threading [ATL]"]
-ms.assetid: 2b3f7a45-fd72-452c-aaf3-ccdaa621c821
 ---
 # CComMultiThreadModelNoCS Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 `CComMultiThreadModelNoCS` provides thread-safe methods for incrementing and decrementing the value of a variable, without critical section locking or unlocking functionality.
 

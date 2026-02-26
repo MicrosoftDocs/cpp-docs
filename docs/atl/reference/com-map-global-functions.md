@@ -4,9 +4,10 @@ title: "COM Map Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlbase/ATL::AtlInternalQueryInterface", "atlbase/ATL::InlineIsEqualIUnknown"]
 helpviewer_keywords: ["COM interfaces, COM map global functions"]
-ms.assetid: b9612d30-eb23-46ef-8093-d56f237d3cf1
 ---
 # COM Map Global Functions
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These functions provide support for COM Map `IUnknown` implementations.
 

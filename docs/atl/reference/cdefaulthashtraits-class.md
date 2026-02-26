@@ -4,9 +4,10 @@ title: "CDefaultHashTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDefaultHashTraits", "ATLCOLL/ATL::CDefaultHashTraits", "ATLCOLL/ATL::CDefaultHashTraits::Hash"]
 helpviewer_keywords: ["CDefaultHashTraits class"]
-ms.assetid: d8ec4b37-6d58-447b-a0c1-8580c5b1ab85
 ---
 # CDefaultHashTraits Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides a static function for calculating hash values.
 

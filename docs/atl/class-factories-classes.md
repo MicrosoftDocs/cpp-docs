@@ -4,9 +4,10 @@ title: " ATL Class Factories Classes"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["class factories", "class factories, ATL classes"]
-ms.assetid: 1d8c2ae2-2c37-452c-a02d-1ecbdd309f84
 ---
 # Class Factories Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The following classes implement or support a class factory:
 

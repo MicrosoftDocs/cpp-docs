@@ -4,9 +4,10 @@ title: "Utility Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["utility classes"]
-ms.assetid: 33d5da9d-89a5-49f9-a873-a26499299d17
 ---
 # Utility Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The following MFC-independent utility classes are provided:
 

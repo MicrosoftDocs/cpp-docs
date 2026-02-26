@@ -4,9 +4,10 @@ title: "_ATL_WIN_MODULE70 Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["_ATL_WIN_MODULE70", "ATL::_ATL_WIN_MODULE70", "ATL._ATL_WIN_MODULE70"]
 helpviewer_keywords: ["_ATL_WIN_MODULE70 structure", "ATL_WIN_MODULE70 structure"]
-ms.assetid: a0aaf3ea-ca77-46ec-bd53-4dfb61dffbea
 ---
 # _ATL_WIN_MODULE70 Structure
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 Used by windowing code in ATL.
 

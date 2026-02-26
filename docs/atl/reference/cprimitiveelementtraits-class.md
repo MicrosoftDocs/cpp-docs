@@ -4,9 +4,10 @@ title: "CPrimitiveElementTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPrimitiveElementTraits", "ATLCOLL/ATL::CPrimitiveElementTraits", "ATLCOLL/ATL::CPrimitiveElementTraits::INARGTYPE", "ATLCOLL/ATL::CPrimitiveElementTraits::OUTARGTYPE"]
 helpviewer_keywords: ["CPrimitiveElementTraits class"]
-ms.assetid: 21c1cea8-2c5a-486c-b65c-85490f3ed4e6
 ---
 # CPrimitiveElementTraits Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides default methods and functions for a collection class composed of primitive data types.
 

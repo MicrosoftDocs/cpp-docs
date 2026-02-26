@@ -3,10 +3,11 @@ description: "Learn more about: Example: Implementing a Property Page"
 title: "Implementing a Property Page (ATL)"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["property pages, implementing"]
-ms.assetid: c30b67fe-ce08-4249-ae29-f3060fa8d61e
 ms.topic: how-to
 ---
 # Example: Implementing a Property Page
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 ::: moniker range=">=msvc-160"
 

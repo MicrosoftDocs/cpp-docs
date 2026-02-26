@@ -3,9 +3,10 @@ description: "Learn more about: ATL Copy Policy Classes"
 title: "ATL Copy Policy Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["data [C++], ATL", "classes [C++], copy policy", "copy policy classes [C++]", "_Copy class", "_CopyInterface class"]
-ms.assetid: 06704b68-d318-4c5d-a65b-71457fe9d00d
 ---
 # ATL Copy Policy Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 Copy policy classes are [utility classes](../atl/utility-classes.md) used to initialize, copy, and delete data. Copy policy classes allow you to define copy semantics for any type of data, and to define conversions between different data types.
 

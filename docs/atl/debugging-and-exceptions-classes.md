@@ -4,9 +4,10 @@ title: "Debugging and Exceptions Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["debugging and exceptions classes"]
-ms.assetid: d42d7649-9721-4a1a-8b38-d983a649fdb9
 ---
 # Debugging and Exceptions Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 These classes provide support for exception handling and debugging.
 

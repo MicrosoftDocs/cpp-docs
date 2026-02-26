@@ -4,9 +4,10 @@ title: "CDynamicChain Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDynamicChain", "ATLWIN/ATL::CDynamicChain", "ATLWIN/ATL::CDynamicChain::CDynamicChain", "ATLWIN/ATL::CDynamicChain::CallChain", "ATLWIN/ATL::CDynamicChain::RemoveChainEntry", "ATLWIN/ATL::CDynamicChain::SetChainEntry"]
 helpviewer_keywords: ["message maps, chaining", "chaining message maps", "CDynamicChain class"]
-ms.assetid: f084b2be-0e77-4836-973d-ae278a1e9da8
 ---
 # CDynamicChain Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods supporting the dynamic chaining of message maps.
 

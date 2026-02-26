@@ -4,9 +4,10 @@ title: "IAxWinHostWindow Interface"
 ms.date: "11/04/2016"
 f1_keywords: ["IAxWinHostWindow", "ATLIFACE/ATL::IAxWinHostWindow", "ATLIFACE/ATL::AttachControl", "ATLIFACE/ATL::CreateControl", "ATLIFACE/ATL::CreateControlEx", "ATLIFACE/ATL::QueryControl", "ATLIFACE/ATL::SetExternalDispatch", "ATLIFACE/ATL::SetExternalUIHandler"]
 helpviewer_keywords: ["IAxWinHostWindow interface"]
-ms.assetid: 9821c035-cd52-4c46-b58a-9278064f09b4
 ---
 # IAxWinHostWindow Interface
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This interface provides methods for manipulating a control and its host object.
 

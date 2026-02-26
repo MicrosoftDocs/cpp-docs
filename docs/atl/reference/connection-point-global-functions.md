@@ -4,9 +4,10 @@ title: "Connection Point Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlbase/ATL::AtlAdvise", "atlbase/ATL::AtlUnadvise", "atlbase/ATL::AtlAdviseSinkMap"]
 helpviewer_keywords: ["connection points [C++], global functions"]
-ms.assetid: bcb4bf50-2155-4e20-b8bb-f2908b03a6e7
 ---
 # Connection Point Global Functions
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These functions provide support for connection points and sink maps.
 

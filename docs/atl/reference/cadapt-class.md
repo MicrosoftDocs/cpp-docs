@@ -4,9 +4,10 @@ title: "CAdapt Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAdapt", "ATLCOMCLI/ATL::CAdapt", "ATLCOMCLI/ATL::CAdapt::CAdapt", "ATLCOMCLI/ATL::CAdapt::m_T"]
 helpviewer_keywords: ["address-of operator", "adapter objects", "& operator, address-of operator", "CAdapt class"]
-ms.assetid: 0bb695a5-72fe-43d1-8f39-7e4da6e34765
 ---
 # CAdapt Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This template is used to wrap classes that redefine the address-of operator to return something other than the address of the object.
 

@@ -4,9 +4,10 @@ title: "IProvideClassInfo2Impl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IProvideClassInfo2Impl", "ATLCOM/ATL::IProvideClassInfo2Impl", "ATLCOM/ATL::IProvideClassInfo2Impl::IProvideClassInfo2Impl", "ATLCOM/ATL::IProvideClassInfo2Impl::GetClassInfo", "ATLCOM/ATL::IProvideClassInfo2Impl::GetGUID", "ATLCOM/ATL::IProvideClassInfo2Impl::_tih"]
 helpviewer_keywords: ["IProvideClassInfo2Impl class", "IProvideClassInfo2 ATL implementation", "class information, ATL"]
-ms.assetid: d74956e8-9c69-4cba-b99d-ca1ac031bb9d
 ---
 # IProvideClassInfo2Impl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides a default implementation of the [IProvideClassInfo](/windows/win32/api/ocidl/nn-ocidl-iprovideclassinfo) and [IProvideClassInfo2](/windows/win32/api/ocidl/nn-ocidl-iprovideclassinfo2) methods.
 

@@ -4,9 +4,10 @@ title: "Options, ATL Active Server Page Component Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.class.atl.asp.options"]
 helpviewer_keywords: ["ATL Active Server Page Component Wizard, options"]
-ms.assetid: 54f34e26-53c7-4456-9675-cb86e356bde0
 ---
 # Options, ATL Active Server Page Component Wizard
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 Use this page of the ATL Active Server Page Component Wizard to design for increased efficiency and error support for the object.
 

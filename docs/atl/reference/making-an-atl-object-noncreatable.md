@@ -4,9 +4,10 @@ title: "Making an ATL Object Noncreatable"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.ATL.objects"]
 helpviewer_keywords: ["noncreatable ATL objects", "ATL projects, noncreatable objects"]
-ms.assetid: 80d0bca2-dea0-4801-9a85-6243124437f6
 ---
 # Making an ATL Object Noncreatable
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 You can change the attributes of an ATL-based COM object so that a client cannot directly create the object. In this case, the object would be returned through a method call on another object rather than created directly.
 

@@ -4,9 +4,10 @@ title: "CComCriticalSection Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComCriticalSection", "ATLCORE/ATL::CComCriticalSection", "ATLCORE/ATL::CComCriticalSection::CComCriticalSection", "ATLCORE/ATL::CComCriticalSection::Init", "ATLCORE/ATL::CComCriticalSection::Lock", "ATLCORE/ATL::CComCriticalSection::Term", "ATLCORE/ATL::CComCriticalSection::Unlock", "ATLCORE/ATL::CComCriticalSection::m_sec"]
 helpviewer_keywords: ["CComCriticalSection class"]
-ms.assetid: 44e1edd2-90be-4bfe-9739-58e8b419e7d1
 ---
 # CComCriticalSection Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods for obtaining and releasing ownership of a critical section object.
 

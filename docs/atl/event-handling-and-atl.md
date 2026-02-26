@@ -3,9 +3,10 @@ description: "Learn more about: Event Handling and ATL"
 title: "Event Handling and ATL"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["event handling, about event handling"]
-ms.assetid: e4812b0d-6fdd-4e8c-bdb8-378a25c7bde2
 ---
 # Event Handling and ATL
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 This section shows how to sink events using ATL. It covers the principles of COM event handling and the specifics of sinking events using the support provided by ATL.
 

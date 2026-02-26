@@ -7,6 +7,8 @@ helpviewer_keywords: ["CAtlTemporaryFile class"]
 ---
 # CAtlTemporaryFile Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 This class provides methods for the creation and use of a temporary file.
 
 > [!IMPORTANT]

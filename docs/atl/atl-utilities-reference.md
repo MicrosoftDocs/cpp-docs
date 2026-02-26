@@ -5,6 +5,8 @@ ms.date: 11/04/2016
 ---
 # ATL utilities reference
 
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
+
 ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl/reference/cpatht-class.md) and [CUrl](../atl/reference/curl-class.md). A thread pool, [CThreadPool](../atl/reference/cthreadpool-class.md), can be used in your applications. This code can be found in atlpath.h and atlutil.h.
 
 ## Classes

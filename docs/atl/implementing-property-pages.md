@@ -3,10 +3,11 @@ description: "Learn more about: Implementing Property Pages"
 title: "Implementing Property Pages"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["IPropertyPage2 class", "IPropertyPage class", "property pages, implementing"]
-ms.assetid: 62f29440-33a7-40eb-a1ef-3634c95f640c
 ms.topic: how-to
 ---
 # Implementing Property Pages
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 ::: moniker range=">=msvc-160"
 

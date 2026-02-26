@@ -4,9 +4,10 @@ title: "CAutoVectorPtrElementTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAutoVectorPtrElementTraits", "ATLCOLL/ATL::CAutoVectorPtrElementTraits", "ATLCOLL/ATL::CAutoVectorPtrElementTraits::INARGTYPE", "ATLCOLL/ATL::CAutoVectorPtrElementTraits::OUTARGTYPE"]
 helpviewer_keywords: ["CAutoVectorPtrElementTraits class"]
-ms.assetid: 16b81a56-55fb-46ca-b376-66a1884231a6
 ---
 # CAutoVectorPtrElementTraits Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods, static functions, and typedefs useful when creating collections of smart pointers using vector new and delete operators.
 

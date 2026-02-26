@@ -4,9 +4,10 @@ title: "_ATL_FUNC_INFO Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["_ATL_FUNC_INFO", "ATL::_ATL_FUNC_INFO", "ATL._ATL_FUNC_INFO"]
 helpviewer_keywords: ["_ATL_FUNC_INFO structure", "ATL_FUNC_INFO structure"]
-ms.assetid: 441ebe2c-f971-47de-9f52-a258e8d6f88e
 ---
 # _ATL_FUNC_INFO Structure
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 Contains type information used to describe a method or property on a dispinterface.
 

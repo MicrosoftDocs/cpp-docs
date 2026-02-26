@@ -9,7 +9,7 @@ helpviewer_keywords: ["MFC, ATL support", "ATL, MFC projects"]
 # Details of ATL Support Added by the ATL Wizard
 
 >[!NOTE]
-> The Microsoft Foundation Classes (MFC) and Active Template Library (ATL) libraries continue to be supported. However, we're no longer adding features or updating the documentation.
+> The Microsoft Foundation Classes (MFC) library and Active Template Library (ATL) continue to be supported. However, we're no longer adding features or updating the documentation.
 
 ::: moniker range=">=msvc-160"
 

@@ -3,9 +3,10 @@ description: "Learn more about: COM+ 1.0, ATL COM+ 1.0 Component Wizard"
 title: "COM+ 1.0, ATL COM+ 1.0 Component Wizard"
 ms.date: "05/09/2019"
 f1_keywords: ["vc.codewiz.class.atl.mts.options"]
-ms.assetid: 2fbe259c-6be1-4d0e-9cfe-721c75c97cb1
 ---
 # COM+ 1.0, ATL COM+ 1.0 Component Wizard
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 ::: moniker range=">=msvc-160"
 

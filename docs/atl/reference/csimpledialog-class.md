@@ -4,9 +4,10 @@ title: "CSimpleDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSimpleDialog", "ATLWIN/ATL::CSimpleDialog", "ATLWIN/ATL::CSimpleDialog::DoModal"]
 helpviewer_keywords: ["CSimpleDialog class", "CSimpleDialog class, modal dialog boxes in ATL", "dialog boxes, modal", "modal dialog boxes, ATL"]
-ms.assetid: 2ae65cc9-4f32-4168-aecd-200b4a480fdf
 ---
 # CSimpleDialog Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements a basic modal dialog box.
 

@@ -4,9 +4,10 @@ title: "CNoWorkerThread Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CNoWorkerThread", "ATLUTIL/ATL::CNoWorkerThread", "ATLUTIL/ATL::CNoWorkerThread::AddHandle", "ATLUTIL/ATL::CNoWorkerThread::AddTimer", "ATLUTIL/ATL::CNoWorkerThread::GetThreadHandle", "ATLUTIL/ATL::CNoWorkerThread::GetThreadId", "ATLUTIL/ATL::CNoWorkerThread::Initialize", "ATLUTIL/ATL::CNoWorkerThread::RemoveHandle", "ATLUTIL/ATL::CNoWorkerThread::Shutdown"]
 helpviewer_keywords: ["CNoWorkerThread class"]
-ms.assetid: 29f06bae-b658-4aac-9c14-331e996d25d1
 ---
 # CNoWorkerThread Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 Use this class as the argument for the `MonitorClass` template parameter to cache classes if you want to disable dynamic cache maintenance.
 

@@ -4,9 +4,10 @@ title: "ATL Dialog Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.class.atl.dlg.overview"]
 helpviewer_keywords: ["ATL projects, adding dialog resources", "ATL Dialog Wizard"]
-ms.assetid: b0b9ace5-83c9-40d3-82c3-eb6293f10583
 ---
 # ATL Dialog Wizard
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This wizard inserts into the project an ATL dialog box object, derived from [CAxDialogImpl](../../atl/reference/caxdialogimpl-class.md). A dialog box derived from `CAxDialogImpl` can host ActiveX controls.
 

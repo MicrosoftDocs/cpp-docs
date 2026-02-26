@@ -4,9 +4,10 @@ title: "CSocketAddr Class"
 ms.date: "10/22/2018"
 f1_keywords: ["CSocketAddr", "ATLSOCKET/ATL::CSocketAddr", "ATLSOCKET/ATL::CSocketAddr::CSocketAddr", "ATLSOCKET/ATL::CSocketAddr::FindAddr", "ATLSOCKET/ATL::CSocketAddr::FindINET4Addr", "ATLSOCKET/ATL::CSocketAddr::FindINET6Addr", "ATLSOCKET/ATL::CSocketAddr::GetAddrInfo", "ATLSOCKET/ATL::CSocketAddr::GetAddrInfoList"]
 helpviewer_keywords: ["CSocketAddr class"]
-ms.assetid: 2fb2d8a7-899e-4a36-a342-cc9f4fcdd68c
 ---
 # CSocketAddr Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods for converting host names to host addresses, supporting both IPv4 and IPV6 formats.
 

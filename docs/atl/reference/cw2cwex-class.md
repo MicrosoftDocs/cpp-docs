@@ -4,9 +4,10 @@ title: "CW2CWEX Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CW2CWEX", "ATLCONV/ATL::CW2CWEX", "ATLCONV/ATL::CW2CWEX::CW2CWEX", "ATLCONV/ATL::CW2CWEX::m_psz"]
 helpviewer_keywords: ["CW2CWEX class"]
-ms.assetid: d654b22b-05a6-410f-a0ec-9a2cbbb4cca7
 ---
 # CW2CWEX Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class is used by the string conversion macros CW2CTEX and CT2CWEX, and the typedef CW2W.
 

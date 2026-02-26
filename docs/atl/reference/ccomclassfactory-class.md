@@ -4,9 +4,10 @@ title: "CComClassFactory Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComClassFactory", "ATLCOM/ATL::CComClassFactory", "ATLCOM/ATL::CComClassFactory::CreateInstance", "ATLCOM/ATL::CComClassFactory::LockServer"]
 helpviewer_keywords: ["CComClassFactory class"]
-ms.assetid: e56dacf7-d5c4-4c42-aef4-a86d91981a1b
 ---
 # CComClassFactory Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements the [IClassFactory](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory) interface.
 

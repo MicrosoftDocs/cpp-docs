@@ -3,10 +3,11 @@ description: "Learn more about: Modifying the ATL Project"
 title: "Modifying the ATL Project"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["controls [ATL], adding to composite controls", "Dialog editor, working with composite controls", "composite controls, adding controls"]
-ms.assetid: 59984518-748f-4b8b-875f-3e97d22d0b0f
 ms.topic: concept-article
 ---
 # Modifying the ATL Project
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 At this point, your composite control project implements the necessary objects for your composite control. The next step is to add any controls that the composite control will contain and handle any necessary events.
 

@@ -4,9 +4,10 @@ title: "CDialogImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDialogImpl", "ATLWIN/ATL::CDialogImpl", "ATLWIN/ATL::Create", "ATLWIN/ATL::DestroyWindow", "ATLWIN/ATL::DoModal", "ATLWIN/ATL::EndDialog", "ATLWIN/ATL::GetDialogProc", "ATLWIN/ATL::MapDialogRect", "ATLWIN/ATL::OnFinalMessage", "ATLWIN/ATL::DialogProc", "ATLWIN/ATL::StartDialogProc"]
 helpviewer_keywords: ["dialog boxes, ATL", "CDialogImpl class"]
-ms.assetid: d430bc7b-8a28-4ad3-9507-277bdd2c2c2e
 ---
 # CDialogImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods for creating a modal or modeless dialog box.
 

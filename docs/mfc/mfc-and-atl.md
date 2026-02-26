@@ -8,7 +8,7 @@ ms.custom: intro-overview
 # MFC and ATL
 
 >[!NOTE]
-> The Microsoft Foundation Classes (MFC) and Active Template Library (ATL) libraries continue to be supported. However, we're no longer adding features or updating the documentation.
+> The Microsoft Foundation Classes (MFC) library and Active Template Library (ATL) continue to be supported. However, we're no longer adding features or updating the documentation.
 
 The Microsoft Foundation Classes (MFC) provide a C++ object-oriented wrapper over Win32 for rapid development of native desktop applications. The Active Template Library (ATL) is a wrapper library that simplifies COM development and is used extensively for creating ActiveX controls.
 

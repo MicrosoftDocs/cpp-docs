@@ -4,9 +4,10 @@ title: "IOleObjectImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IOleObjectImpl", "ATLCTL/ATL::IOleObjectImpl", "ATLCTL/ATL::IOleObjectImpl::Advise", "ATLCTL/ATL::IOleObjectImpl::Close", "ATLCTL/ATL::IOleObjectImpl::DoVerb", "ATLCTL/ATL::IOleObjectImpl::DoVerbDiscardUndo", "ATLCTL/ATL::IOleObjectImpl::DoVerbHide", "ATLCTL/ATL::IOleObjectImpl::DoVerbInPlaceActivate", "ATLCTL/ATL::IOleObjectImpl::DoVerbOpen", "ATLCTL/ATL::IOleObjectImpl::DoVerbPrimary", "ATLCTL/ATL::IOleObjectImpl::DoVerbShow", "ATLCTL/ATL::IOleObjectImpl::DoVerbUIActivate", "ATLCTL/ATL::IOleObjectImpl::EnumAdvise", "ATLCTL/ATL::IOleObjectImpl::EnumVerbs", "ATLCTL/ATL::IOleObjectImpl::GetClientSite", "ATLCTL/ATL::IOleObjectImpl::GetClipboardData", "ATLCTL/ATL::IOleObjectImpl::GetExtent", "ATLCTL/ATL::IOleObjectImpl::GetMiscStatus", "ATLCTL/ATL::IOleObjectImpl::GetMoniker", "ATLCTL/ATL::IOleObjectImpl::GetUserClassID", "ATLCTL/ATL::IOleObjectImpl::GetUserType", "ATLCTL/ATL::IOleObjectImpl::InitFromData", "ATLCTL/ATL::IOleObjectImpl::IsUpToDate", "ATLCTL/ATL::IOleObjectImpl::OnPostVerbDiscardUndo", "ATLCTL/ATL::IOleObjectImpl::OnPostVerbHide", "ATLCTL/ATL::IOleObjectImpl::OnPostVerbInPlaceActivate", "ATLCTL/ATL::IOleObjectImpl::OnPostVerbOpen", "ATLCTL/ATL::IOleObjectImpl::OnPostVerbShow", "ATLCTL/ATL::IOleObjectImpl::OnPostVerbUIActivate", "ATLCTL/ATL::IOleObjectImpl::OnPreVerbDiscardUndo", "ATLCTL/ATL::IOleObjectImpl::OnPreVerbHide", "ATLCTL/ATL::IOleObjectImpl::OnPreVerbInPlaceActivate", "ATLCTL/ATL::IOleObjectImpl::OnPreVerbOpen", "ATLCTL/ATL::IOleObjectImpl::OnPreVerbShow", "ATLCTL/ATL::IOleObjectImpl::OnPreVerbUIActivate", "ATLCTL/ATL::IOleObjectImpl::SetClientSite", "ATLCTL/ATL::IOleObjectImpl::SetColorScheme", "ATLCTL/ATL::IOleObjectImpl::SetExtent", "ATLCTL/ATL::IOleObjectImpl::SetHostNames", "ATLCTL/ATL::IOleObjectImpl::SetMoniker", "ATLCTL/ATL::IOleObjectImpl::Unadvise", "ATLCTL/ATL::IOleObjectImpl::Update"]
 helpviewer_keywords: ["ActiveX controls [C++], communication between container and control", "IOleObject, ATL implementation", "IOleObjectImpl class"]
-ms.assetid: 59750b2d-1633-4a51-a4c2-6455b6b90c45
 ---
 # IOleObjectImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements `IUnknown` and is the principal interface through which a container communicates with a control.
 

@@ -3,10 +3,11 @@ description: "Learn more about: Implementing a C++ Standard Library-Based Collec
 title: "Implementing a C++ Standard Library-Based Collection"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ICollectionOnSTLImpl interface"]
-ms.assetid: 6d49f819-1957-4813-b074-3f12c494d8ca
 ms.topic: how-to
 ---
 # Implementing a C++ Standard Library-Based Collection
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 ATL provides the `ICollectionOnSTLImpl` interface to enable you to quickly implement C++ Standard Library-based collection interfaces on your objects. To understand how this class works, you will work through a simple example (below) that uses this class to implement a read-only collection aimed at Automation clients.
 

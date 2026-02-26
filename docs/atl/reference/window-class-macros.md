@@ -3,9 +3,10 @@ description: "Learn more about: Window Class Macros"
 title: "Window Class Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlwin/ATL::DECLARE_WND_CLASS", "atlwin/ATL::DECLARE_WND_SUPERCLASS", "atlwin/ATL::DECLARE_WND_CLASS_EX", "ATLWIN/DECLARE_WND_CLASS", "ATLWIN/DECLARE_WND_SUPERCLASS", "ATLWIN/DECLARE_WND_CLASS_EX"]
-ms.assetid: ce18681a-2bab-4453-9895-0f3ea47c2b24
 ---
 # Window Class Macros
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These macros define window class utilities.
 

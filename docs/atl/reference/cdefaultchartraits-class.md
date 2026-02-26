@@ -4,9 +4,10 @@ title: "CDefaultCharTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDefaultCharTraits", "ATLCOLL/ATL::CDefaultCharTraits", "ATLCOLL/ATL::CDefaultCharTraits::CharToLower", "ATLCOLL/ATL::CDefaultCharTraits::CharToUpper"]
 helpviewer_keywords: ["CDefaultCharTraits class"]
-ms.assetid: f94a3934-597f-401d-8513-ed6924ae069a
 ---
 # CDefaultCharTraits Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides two static functions for converting characters between uppercase and lowercase.
 

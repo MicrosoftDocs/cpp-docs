@@ -4,9 +4,10 @@ title: "_ATL_MODULE70 Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["_ATL_MODULE70", "ATL::_ATL_MODULE70", "ATL._ATL_MODULE70"]
 helpviewer_keywords: ["ATL_MODULE70 structure", "_ATL_MODULE70 structure"]
-ms.assetid: b059b2c8-dfd1-4ac9-b07d-39df638cc7b3
 ---
 # _ATL_MODULE70 Structure
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 Contains data used by every ATL module.
 

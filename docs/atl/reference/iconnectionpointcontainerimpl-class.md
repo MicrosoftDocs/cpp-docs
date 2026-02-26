@@ -4,9 +4,10 @@ title: "IConnectionPointContainerImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IConnectionPointContainerImpl", "ATLCOM/ATL::IConnectionPointContainerImpl", "ATLCOM/ATL::IConnectionPointContainerImpl::EnumConnectionPoints", "ATLCOM/ATL::IConnectionPointContainerImpl::FindConnectionPoint"]
 helpviewer_keywords: ["connectable objects", "connection points [C++], container", "IConnectionPointContainerImpl class"]
-ms.assetid: 10db5a8d-8be9-4d9d-8a82-8ab9ffe3e9d6
 ---
 # IConnectionPointContainerImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements a connection point container to manage a collection of [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md) objects.
 

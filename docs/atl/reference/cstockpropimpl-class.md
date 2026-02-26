@@ -7,6 +7,8 @@ helpviewer_keywords: ["CStockPropImpl class", "controls [ATL], stock properties"
 ---
 # CStockPropImpl Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 This class provides methods for supporting stock property values.
 
 > [!IMPORTANT]

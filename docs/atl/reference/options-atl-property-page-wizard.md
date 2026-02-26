@@ -4,9 +4,10 @@ title: "Options, ATL Property Page Wizard"
 ms.date: "05/09/2019"
 f1_keywords: ["vc.codewiz.class.atl.ppg.options"]
 helpviewer_keywords: ["ATL Property Page Wizard, options"]
-ms.assetid: a7107779-b2ea-4f99-b84b-7f3e0c504bc8
 ---
 # Options, ATL Property Page Wizard
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 ::: moniker range=">=msvc-160"
 
