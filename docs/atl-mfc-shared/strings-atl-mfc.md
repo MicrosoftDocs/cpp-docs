@@ -6,6 +6,8 @@ helpviewer_keywords: ["const char pointers", "strings [C++], in ATL", "MFC [C++]
 ---
 # Strings (ATL/MFC)
 
+[!INCLUDE[product-lifecycle-status](./includes/lifecycle-note.md)]
+
 Nearly all programs work with string data. Visual C++ provides several ways to manage this string data.
 
 ## In This Section

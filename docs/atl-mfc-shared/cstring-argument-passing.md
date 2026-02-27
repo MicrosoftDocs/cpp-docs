@@ -6,6 +6,8 @@ helpviewer_keywords: ["strings [C++], as function input/output", "argument passi
 ---
 # `CString` Argument Passing
 
+[!INCLUDE[product-lifecycle-status](./includes/lifecycle-note.md)]
+
 This article explains how to pass [`CString`](../atl-mfc-shared/reference/cstringt-class.md) objects to functions and how to return `CString` objects from functions.
 
 ## <a name="_core_cstring_argument.2d.passing_conventions"></a> `CString` Argument-Passing Conventions

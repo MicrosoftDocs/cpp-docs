@@ -7,6 +7,8 @@ helpviewer_keywords: ["LPPOINT structure", "POINT structure", "CPoint class"]
 ---
 # `CPoint` Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 Similar to the Windows `POINT` structure.
 
 ## Syntax

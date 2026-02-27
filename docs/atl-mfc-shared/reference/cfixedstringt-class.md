@@ -4,9 +4,10 @@ title: "CFixedStringT Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CFixedStringT", "CSTRINGT/ATL::CFixedStringT", "CSTRINGT/ATL::CFixedStringT::CFixedStringT"]
 helpviewer_keywords: ["CFixedStringT class", "shared classes, CFixedStringT"]
-ms.assetid: 6d4171ba-3104-493a-a6cc-d515f4ba9a4b
 ---
 # CFixedStringT Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class represents a string object with a fixed character buffer.
 

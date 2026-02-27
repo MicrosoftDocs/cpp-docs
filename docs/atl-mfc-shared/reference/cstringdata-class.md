@@ -4,9 +4,10 @@ title: "CStringData Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CStringData", "ATLSIMPSTR/ATL::CStringData", "ATLSIMPSTR/ATL::AddRef", "ATLSIMPSTR/ATL::data", "ATLSIMPSTR/ATL::IsLocked", "ATLSIMPSTR/ATL::IsShared", "ATLSIMPSTR/ATL::Lock", "ATLSIMPSTR/ATL::Release", "ATLSIMPSTR/ATL::Unlock", "ATLSIMPSTR/ATL::nAllocLength", "ATLSIMPSTR/ATL::nDataLength", "ATLSIMPSTR/ATL::nRefs", "ATLSIMPSTR/ATL::pStringMgr"]
 helpviewer_keywords: ["CStringData class", "shared classes, CStringData"]
-ms.assetid: 4e31b5ca-3dbe-4fd5-b692-8211fbfb2593
 ---
 # CStringData Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class represents the data of a string object.
 

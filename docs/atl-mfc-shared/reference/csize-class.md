@@ -7,6 +7,8 @@ helpviewer_keywords: ["SIZE", "dimensions, MFC", "dimensions", "CSize class"]
 ---
 # CSize Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 Similar to the Windows [SIZE](/windows/win32/api/windef/ns-windef-size) structure, which implements a relative coordinate or position.
 
 ## Syntax

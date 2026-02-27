@@ -3,9 +3,10 @@ description: "Learn more about: Implementation of a Custom String Manager (Advan
 title: "Implementation of a Custom String Manager (Advanced Method)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["IAtlStringMgr class, using"]
-ms.assetid: 64ab7da9-47c1-4c4a-9cd7-4cc37e7f3f57
 ---
 # Implementation of a Custom String Manager (Advanced Method)
+
+[!INCLUDE[product-lifecycle-status](./includes/lifecycle-note.md)]
 
 In specialized situations, you might want to implement a custom string manager that does more than just change which heap is used to allocate memory. In this situation, you must manually implement the [IAtlStringMgr](../atl-mfc-shared/reference/iatlstringmgr-class.md) interface as your custom string manager.
 

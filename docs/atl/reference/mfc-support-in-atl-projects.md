@@ -7,7 +7,8 @@ helpviewer_keywords: ["ATL projects, MFC support"]
 ---
 # MFC Support in ATL Projects
 
-[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library and Active Template Library (ATL) continue to be supported. However, we're no longer adding features or updating the documentation.
 
 If you select **Support MFC** in the ATL Project Wizard, your project declares the application as an MFC application object (class). The project initializes the MFC library and instantiates a class (class *ProjName*) that is derived from [CWinApp](../../mfc/reference/cwinapp-class.md).
 

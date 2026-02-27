@@ -7,6 +7,8 @@ helpviewer_keywords: ["strings [C++], in ATL", "shared classes, CStringT", "CStr
 ---
 # `CStringT` Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 This class represents a **`CStringT`** object.
 
 ## Syntax

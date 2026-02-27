@@ -4,9 +4,10 @@ title: "IAtlStringMgr Class"
 ms.date: "10/18/2018"
 f1_keywords: ["IAtlStringMgr", "ATLSIMPSTR/ATL::IAtlStringMgr", "ATLSIMPSTR/ATL::Allocate", "ATLSIMPSTR/ATL::Clone", "ATLSIMPSTR/ATL::Free", "ATLSIMPSTR/ATL::GetNilString", "ATLSIMPSTR/ATL::Reallocate"]
 helpviewer_keywords: ["shared classes, IAtlStringMgr", "memory, managing", "IAtlStringMgr class"]
-ms.assetid: 722f0346-a770-4aa7-8f94-177be8dba823
 ---
 # IAtlStringMgr Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class represents the interface to a `CStringT` memory manager.
 

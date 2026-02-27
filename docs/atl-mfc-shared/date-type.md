@@ -4,9 +4,10 @@ title: "DATE Type"
 ms.date: "11/04/2016"
 f1_keywords: ["DATE"]
 helpviewer_keywords: ["Date data type, implementing", "Date data type", "DATE type", "Date data type, about Date data type", "MFC, date and time", "hour values representation"]
-ms.assetid: 695853ed-b614-4575-b793-b8c287372038
 ---
 # DATE Type
+
+[!INCLUDE[product-lifecycle-status](./includes/lifecycle-note.md)]
 
 The DATE type is implemented using an 8-byte floating-point number. Days are represented by whole number increments starting with 30 December 1899, midnight as time zero. Hour values are expressed as the absolute value of the fractional part of the number. The following table illustrates several dates along with their DATE type numeric equivalent:
 

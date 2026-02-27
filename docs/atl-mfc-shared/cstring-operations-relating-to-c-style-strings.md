@@ -3,9 +3,10 @@ description: "Learn more about: CString Operations Relating to C-Style Strings"
 title: "CString Operations Relating to C-Style Strings"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CString objects, basic operations", "MFC [C++], string handling class", "string conversion [C++], C-style strings", "strings [C++], string operations", "standard run-time library string functions", "null values, Null-terminated string conversion", "string functions", "strings [C++], in C", "string arguments", "C-style strings", "strings [C++], class CString", "casting CString objects"]
-ms.assetid: 5048de8a-5298-4891-b8a0-c554b5a3ac1b
 ---
 # `CString` Operations Relating to C-Style Strings
+
+[!INCLUDE[product-lifecycle-status](./includes/lifecycle-note.md)]
 
 A [`CString`](../atl-mfc-shared/using-cstring.md) object contains character string data. `CString` inherits the set of the [methods and operators](../atl-mfc-shared/reference/cstringt-class.md) that are defined in the class template [`CStringT`](../atl-mfc-shared/reference/cstringt-class.md) to work with string data. (`CString` is a **`typedef`** that specializes `CStringT` to work with the kind of character data that `CString` supports.)
 

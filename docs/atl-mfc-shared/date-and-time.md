@@ -6,6 +6,8 @@ helpviewer_keywords: ["time, MFC programming", "time", "MFC, date and time", "da
 ---
 # Date and Time
 
+[!INCLUDE[product-lifecycle-status](./includes/lifecycle-note.md)]
+
 MFC supports several different ways of working with dates and times:
 
 - Support for the Automation [`DATE` data type](../atl-mfc-shared/date-type.md). `DATE` supports date, time, and date/time values. The [`COleDateTime`](../atl-mfc-shared/reference/coledatetime-class.md) and [`COleDateTimeSpan`](../atl-mfc-shared/reference/coledatetimespan-class.md) classes encapsulate this functionality. They work with the [`COleVariant`](../mfc/reference/colevariant-class.md) class using Automation support.

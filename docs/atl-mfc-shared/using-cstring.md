@@ -3,9 +3,10 @@ description: "Learn more about: Using CString"
 title: "Using CString"
 ms.date: "06/18/2018"
 helpviewer_keywords: ["CString objects, C++ string manipulation", "CString objects, reference counting", "CString class (Visual C++)"]
-ms.assetid: ed018aaf-8b10-46f9-828c-f9c092dc7609
 ---
 # Using `CString`
+
+[!INCLUDE[product-lifecycle-status](./includes/lifecycle-note.md)]
 
 The topics in this section describe how to program with `CString`. For reference documentation about the `CString` class, see the documentation for [`CStringT`](../atl-mfc-shared/reference/cstringt-class.md).
 
