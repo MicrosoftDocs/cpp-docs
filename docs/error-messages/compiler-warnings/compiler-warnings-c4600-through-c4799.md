@@ -134,6 +134,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |Compiler warning C4734|More than 64k line numbers in a COFF debug info section; stop emitting COFF debug line numbers for module 'module'|
 |Compiler warning C4735|`align_function` attribute argument '*argument*' is not a power of two and is not positive. Ignoring attribute|
 |Compiler warning C4736|`align_function` attribute ignored because `/Gy` was not specified|
+|Compiler warning C4737| Unable to perform required tail call. Performance may be degraded. See [`[[msvc::musttail]]`](https://learn.microsoft.com/cpp/cpp/attributes#msvcmusttail)|
 |[Compiler warning (Level 3) C4738](compiler-warning-level-3-c4738.md)|storing 32-bit float result in memory, possible loss of performance|
 |[Compiler warning (level 1) C4739](compiler-warning-level-1-c4739.md)|reference to variable 'var' exceeds its storage space|
 |[Compiler warning (Level 4) C4740](compiler-warning-level-4-c4740.md)|flow in or out of inline asm code suppresses global optimization|
