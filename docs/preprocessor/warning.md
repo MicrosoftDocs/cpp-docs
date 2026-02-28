@@ -29,7 +29,8 @@ The following warning-specifier parameters are available.
 | `disable` | Don't issue the specified warning messages. The optional **`justification`** property is allowed. |
 | `error` | Report the specified warnings as errors. |
 | `once` | Display the specified message(s) only one time. |
-| `suppress` | Pushes the current state of the pragma on the stack, disables the specified warning for the next line, and then pops the warning stack so that the pragma state is reset. The optional **`justification`** property is allowed. |
+| `suppress` | Pushes the current state of the pragma on the stack, disables the specified warning for the next line, and then pops the warning stack so that the pragma state is reset. |
+| **`justification`** is optional and was introduced in Visual Studio 2022 version 17.14. |
 
 The following code statement illustrates that a *`warning-number-list`* parameter can contain multiple warning numbers, and that multiple *`warning-specifier`* parameters can be specified in the same pragma directive.
 
@@ -43,7 +44,7 @@ However, when the **`justification`** field is present, only one warning number 
 #pragma warning( disable : 4507, justification : "This warning is disabled" )
 ```
 
-The **`justification`** fields allows you to explain why a warning is being disable or
+The **`justification`** fields allows you to explain why a warning is being disabled or
 suppressed. The **`justification`** field is only supported for the **`disable`** and **`suppress`** *`warning-specifier`*. This value will appear in the Static Analysis Results Interchange Format ([SARIF](https://sarif.info/)) output when the `/analyze:log:includesuppressed` option is specified. Its value is a UTF-8 encoded narrow string literal. To generate a SARIF file, use the `/analyze:log:format:sarif` compiler option.
 
 This directive is functionally equivalent to the following code:
