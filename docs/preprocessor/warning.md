@@ -44,8 +44,8 @@ However, when the **`justification`** field is present, only one warning number 
 #pragma warning( disable : 4507, justification : "This warning is disabled" )
 ```
 
-The **`justification`** fields allows you to explain why a warning is being disabled or
-suppressed. The **`justification`** field is only supported for the **`disable`** and **`suppress`** *`warning-specifier`*. This value will appear in the Static Analysis Results Interchange Format ([SARIF](https://sarif.info/)) output when the `/analyze:log:includesuppressed` option is specified. Its value is a UTF-8 encoded narrow string literal. To generate a SARIF file, use the `/analyze:log:format:sarif` compiler option.
+Use the **`justification`** field to explain why a warning is being disabled or
+suppressed. The **`justification`** field is only supported for the **`disable`** and **`suppress`** *`warning-specifier`*. The justification appears in the Static Analysis Results Interchange Format ([SARIF](https://sarif.info/)) output when the `/analyze:log:includesuppressed` option is specified. Its value is a UTF-8 encoded narrow string literal. To generate a SARIF file, use the `/analyze:log:format:sarif` compiler option.
 
 This directive is functionally equivalent to the following code:
 
@@ -118,8 +118,8 @@ When you write header files, you can use `push` and `pop` to guarantee that warn
 **Choosing between `#pragma warning` and `[[gsl::suppress]]`**
 
 Both `#pragma warning(suppress)` and `[[gsl::suppress]]` offer fine-grained control over warning suppression:
-- `[[gsl::suppress]]` only suppresses warnings emitted by Microsoft C++ Code Analysis. Use it with the C++ Core Guidelines checks which can be applied to a scope or a specific declaration.
-- `#pragma warning(suppress)` can be used for any compiler warning. It’s particularly useful when you need to suppress a warning in a specific code block without altering the code’s structure significantly.
+- `[[gsl::suppress]]` only suppresses warnings emitted by Microsoft C++ Code Analysis. Use it with the C++ Core Guidelines checks, which can be applied to a scope or a specific declaration.
+- `#pragma warning(suppress)` can be used for any compiler warning. It’s useful when you need to suppress a warning in a specific code block without altering the code’s structure significantly.
 
 Whenever possible, we recommend using [`[[gsl::suppress]]`](../cpp/attributes.md#gslsuppresstag--justification-narrow-string-literal) for suppressing Microsoft C++ Code Analysis warnings.
 
