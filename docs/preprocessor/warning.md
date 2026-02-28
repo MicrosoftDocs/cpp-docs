@@ -30,7 +30,7 @@ The following warning-specifier parameters are available.
 | `error` | Report the specified warnings as errors. |
 | `once` | Display the specified message(s) only one time. |
 | `suppress` | Pushes the current state of the pragma on the stack, disables the specified warning for the next line, and then pops the warning stack so that the pragma state is reset. |
-| **`justification`** is optional and was introduced in Visual Studio 2022 version 17.14. |
+| `justification` | Optional string describing the reason for disabling or suppressing the warning. Introduced in Visual Studio 2022 version 17.14. |
 
 The following code statement illustrates that a *`warning-number-list`* parameter can contain multiple warning numbers, and that multiple *`warning-specifier`* parameters can be specified in the same pragma directive.
 
@@ -121,10 +121,10 @@ Both `#pragma warning(suppress)` and `[[gsl::suppress]]` offer fine-grained cont
 - `[[gsl::suppress]]` only suppresses warnings emitted by Microsoft C++ Code Analysis. Use it with the C++ Core Guidelines checks, which can be applied to a scope or a specific declaration.
 - `#pragma warning(suppress)` can be used for any compiler warning. It’s useful when you need to suppress a warning in a specific code block without altering the code’s structure significantly.
 
-Whenever possible, we recommend using [`[[gsl::suppress]]`](../cpp/attributes.md#gslsuppresstag--justification-narrow-string-literal) for suppressing Microsoft C++ Code Analysis warnings.
+Whenever possible, use [`[[gsl::suppress]]`](../cpp/attributes.md#gslsuppresstag--justification-narrow-string-literal) for suppressing Microsoft C++ Code Analysis warnings.
 
 For more information about compiler options that help you suppress warnings, see [`/FI`](../build/reference/fi-name-forced-include-file.md) and [`/w`](../build/reference/compiler-option-warning-level.md).
 
 ## See also
 
-[Pragma directives and the `__pragma` and `_Pragma` keywords](./pragma-directives-and-the-pragma-keyword.md)
+[Pragma directives and the `__pragma` and `_Pragma` keywords](pragma-directives-and-the-pragma-keyword.md)
