@@ -14,7 +14,7 @@ If you dynamically link your application to the Microsoft Foundation Class (MFC)
 > [!NOTE]
 > The `mfc140.dll` files were omitted from the redistributable files directory in Visual Studio 2015 RTM. You can use the versions installed by Visual Studio 2015 in the `Windows\system32 and Windows\syswow64` directories instead.
 
-Because all MFC DLLs use the shared version of the Microsoft C Runtime Library (CRT), you might also need to redistribute the CRT. The version of MFC that ships with Visual Studio 2015 uses the Universal CRT Library, which is distributed as part of Windows 10 and Windows 11. To run an MFC application built by using Visual Studio 2015 on earlier versions of Windows, you must redistribute the Universal CRT.
+Because all MFC DLLs use the shared version of the Microsoft C Runtime (CRT) Library, you might also need to redistribute the CRT. The version of MFC that ships with Visual Studio 2015 uses the Universal CRT Library, which is distributed as part of Windows 10 and Windows 11. To run an MFC application built by using Visual Studio 2015 on earlier versions of Windows, you must redistribute the Universal CRT.
 
 For information on how to redistribute the Universal CRT as an operating system component or by using local deployment, see [Introducing the Universal CRT](https://devblogs.microsoft.com/cppblog/introducing-the-universal-crt/). To download the Universal CRT for central deployment on supported versions of Windows, see [Windows 10 Universal C Runtime](https://www.microsoft.com/download/details.aspx?id=48234).
 
