@@ -20,7 +20,7 @@ For information on how to redistribute the Universal CRT as an operating system 
 
 You can find redistributable architecture-specific versions of `ucrtbase.dll` for local deployment in the Windows SDK. By default, Visual Studio installs these versions in `C:\Program Files (x86)\Windows Kits\10\Redist\ucrt\DLLs\` in an architecture-specific subdirectory.
 
-If your app is built by using an earlier version of the MFC Library, you must redistribute the matching CRT DLL from the redistributable files directory. For example, if your MFC application is built by using the Visual Studio 2013 (vc120) toolset, you must redistribute the `msvcr120.dll`. You also have to redistribute the matching `mfc`<version>`u.dll` or `mfc`<version>`.dll`.
+If your app is built by using an earlier version of the MFC Library, you must redistribute the matching CRT DLL from the redistributable files directory. For example, if your MFC application is built by using the Visual Studio 2013 (vc120) toolset, you must redistribute the `msvcr120.dll`. You also have to redistribute the matching `mfc<version>u.dll` or `mfc<version>.dll`.
 
 If you statically link your application to MFC (in the **Property Pages** dialog, on the **General** tab, select **Use MFC in a Static Library**), you don't have to redistribute an MFC DLL. Although static linking might work for testing and internal deployment of applications, we recommend that you don't use it to redistribute MFC. For more information about the recommended strategies for deploying Visual C++ libraries, see [Choose a deployment method](choosing-a-deployment-method.md).
 
@@ -36,7 +36,7 @@ You can redistribute MFC by using either `VCRedist_*architecture*.exe` or merge 
 
 ## Installation of localized MFC components
 
-If you decide to localize your application by installing an MFC localization DLL, you must use the redistributable merge files (`.msm`). For example, if you want to localize your application on an x86 computer, you must merge `Microsoft_VC`<version>`_MFCLOC_x86.msm` into the installation package for an x86 computer.
+If you decide to localize your application by installing an MFC localization DLL, you must use the redistributable merge files (`.msm`). For example, if you want to localize your application on an x86 computer, you must merge `Microsoft_VC<version>_MFCLOC_x86.msm` into the installation package for an x86 computer.
 
 The redistributable `.msm` files contain the DLLs that are used for localization. There's one DLL for each supported language. The installation process installs these DLLs in the `%windir%\system32\` folder on the target computer.
 
