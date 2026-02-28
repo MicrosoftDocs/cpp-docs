@@ -8,7 +8,7 @@ ms.topic: concept-article
 ---
 # Redistribute an ATL application
 
-Starting in Visual Studio 2012, Active Template Library (ATL) is a header-only library. ATL projects don't have a dynamic link to an ATL option. No redistributable ATL library is required.
+Beginning with Visual Studio 2012, Active Template Library (ATL) is a header-only library. ATL projects don't have a dynamic link to an ATL option. No redistributable ATL library is required.
 
 If you redistribute an ATL executable application, you must register the `.exe` file (and any controls inside it). Use the following command:
 
@@ -16,7 +16,7 @@ If you redistribute an ATL executable application, you must register the `.exe` 
 filename /regserver
 ```
 
-where `filename` is the name of the executable file.
+Where `filename` is the name of the executable file.
 
 In Visual Studio 2010, you can build an ATL project for a `MinDependency` or a `MinSize` configuration:
 
@@ -33,7 +33,7 @@ If you redistribute an ATL executable application, you must register the `.exe` 
 filename /regserver
 ```
 
-where `filename` is the name of the executable file.
+Where `filename` is the name of the executable file.
 
 ## Related content
 

@@ -224,9 +224,9 @@ From the log files, make a note of the VC Redist version causing the issue. Two 
 ## <a name="old-vcredist-versions"></a> Download old versions of the Visual C++ Redistributable installer
 
 > [!WARNING]
-> Never install a Visual C++ Redistributable installer that wasn't downloaded from a Microsoft site. Never install a Visual C++ Redistributable installer that isn't signed by Microsoft.
+> Never install a Visual C++ Redistributable installer that wasn't downloaded from a Microsoft site. Never install a Visual C++ Redistributable installer that Microsoft didn't sign.
 
-Download the VC Redist installer from [Welcome to Dev Essentials](https://my.visualstudio.com/Downloads) page. Search for Visual C++ Redistributable on the downloads page.
+Download the VC Redist installer from the [Welcome to Dev Essentials](https://my.visualstudio.com/Downloads) page. Search for Visual C++ Redistributable on the downloads page.
 
 For the latest supported VC Redist version for each version of Visual Studio, see [Microsoft Redistributable Visual C++ latest supported downloads](/cpp/windows/latest-supported-vc-redist).
 

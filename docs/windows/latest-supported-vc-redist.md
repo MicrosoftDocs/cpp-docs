@@ -63,7 +63,7 @@ Download other versions, including long-term servicing release channel versions,
 
 - Some of the downloads that are mentioned in this article are currently available on [my.visualstudio.com](https://my.visualstudio.com/). Sign in by using a Visual Studio subscription account so that you can access the download links. If you're asked for credentials, use your existing Visual Studio subscription account. Or to create a free account. select [No account? Create one!](https://my.visualstudio.com/).
 - The Visual C++ v14 Redistributable doesn't have separate packages for different languages. License terms for different languages are available at [Microsoft Software License Terms](https://aka.ms/VCRedistLicense).
-- Visual Studio 2017 and later share the same redistributable files. Any apps built by Microsoft Visual C++ (MSVC) Build Tools v14.* available in Visual Studio 2017, 2019, 2022, or 2026 can use the latest Visual C++ v14 Redistributable. The version of the Redistributable installed on the machine must be the same or later than the version of the MSVC Build Tools used to create your application. For more information about which version of the Redistributable to install, see [Determine which dynamic-link-libraries (DLLs) to redistribute](determining-which-dlls-to-redistribute.md). For more information about binary compatibility, see [C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md).
+- Visual Studio 2017 and later share the same redistributable files. Any apps built by MSVC Build Tools v14.* available in Visual Studio 2017, 2019, 2022, or 2026 can use the latest Visual C++ v14 Redistributable. The version of the Redistributable installed on the machine must be the same or later than the version of the MSVC Build Tools used to create your application. For more information about which version of the Redistributable to install, see [Determine which dynamic-link libraries (DLLs) to redistribute](determining-which-dlls-to-redistribute.md). For more information about binary compatibility, see [C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md).
 - The latest version of the Visual C++ v14 Redistributable included with Visual Studio 2026 supports only the following operating systems:
   * Windows 10 and 11
   * Windows Server 2016, 2019, 2022, and 2025
@@ -76,14 +76,14 @@ When Visual Studio 2015 support ended, the v14 runtime was binary compatible wit
 
 ### Visual Studio 2015 (VC++ 14.0) (no longer supported)
 
-To download the latest available version of Visual C++ Redistributable for Visual Studio 2015, see the [Visual Studio Subscriptions](https://my.visualstudio.com/) website. On the **Downloads** tab, search for **Visual C++ Redistributable for Visual Studio 2015**.
+To download the latest available version of Visual C++ Redistributable for Visual Studio 2015, see the [Welcome to Dev Essentials](https://my.visualstudio.com/) page. On the **Downloads** tab, search for **Visual C++ Redistributable for Visual Studio 2015**.
 
 The latest version of Visual C++ Redistributable for Visual Studio 2015 is `14.0.24212.0` and is available for ARM64, X86, and X64 architectures.
 
 ### Visual Studio 2013 (VC++ 12.0) (no longer supported)
 
 These links download the latest available en-US Microsoft Visual C++ Redistributable Packages for Visual Studio 2013.
-You can download other versions and languages from [Update for Visual C++ 2013 Redistributable Package](https://support.microsoft.com/topic/update-for-visual-c-2013-redistributable-package-d8ccd6a5-4e26-c290-517b-8da6cfdf4f10) or from the [Visual Studio Subscriptions](https://my.visualstudio.com/) website.
+You can download other versions and languages from [Update for Visual C++ 2013 Redistributable Package](https://support.microsoft.com/topic/update-for-visual-c-2013-redistributable-package-d8ccd6a5-4e26-c290-517b-8da6cfdf4f10) or from the [Welcome to Dev Essentials](https://my.visualstudio.com/) page.
 
 | Architecture |   Version    | Link |
 | ------------ | :----------: | ------------------------------------------------------: |
