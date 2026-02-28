@@ -44,7 +44,7 @@ However, when the **`justification`** field is present, only one warning number 
 ```
 
 The **`justification`** fields allows you to explain why a warning is being disable or
-suppressed. The **`justification`** field is only supported for the **`disable`** and **`suppress`** *`warning-specifier`*. This value will appear in the SARIF output when the `/analyze:log:includesuppressed` option is specified. Its value is a UTF-8 encoded narrow string literal.
+suppressed. The **`justification`** field is only supported for the **`disable`** and **`suppress`** *`warning-specifier`*. This value will appear in the Static Analysis Results Interchange Format ([SARIF](https://sarif.info/)) output when the `/analyze:log:includesuppressed` option is specified. Its value is a UTF-8 encoded narrow string literal. To generate a SARIF file, use the `/analyze:log:format:sarif` compiler option.
 
 This directive is functionally equivalent to the following code:
 

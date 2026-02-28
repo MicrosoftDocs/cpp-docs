@@ -81,7 +81,7 @@ The `[[noreturn]]` attribute specifies that a function never returns; in other w
 
 This Microsoft-specific attribute, introduced in Visual Studio 2022 version 17.14, suppresses warnings from checkers that enforce [Guidelines Support Library (GSL)](https://github.com/Microsoft/GSL) rules in code. The attribute can be applied to a statement, a block, or a declaration.
 
-`<tag>` is a string that specifies the name of the rule to suppress. The optional `justification` field allows you to explain why a warning is being disabled or suppressed. This value will appear in the SARIF output when the `/analyze:log:includesuppressed` option is specified. Its value is a UTF-8 encoded narrow string literal. 
+`<tag>` is a string that specifies the name of the rule to suppress. The optional `justification` field allows you to explain why a warning is being disabled or suppressed. This value will appear in the Static Analysis Results Interchange Format ([SARIF](https://sarif.info/)) output when the `/analyze:log:includesuppressed` option is specified. Its value is a UTF-8 encoded narrow string literal. To generate a SARIF file, use the `/analyze:log:format:sarif` compiler option.
 
 Example:
 
