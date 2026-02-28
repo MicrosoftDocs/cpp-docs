@@ -79,9 +79,11 @@ The `[[noreturn]]` attribute specifies that a function never returns; in other w
 
 ### `[[gsl::suppress(<tag> [, justification: <narrow-string-literal>])]]`
 
-`<tag>` is a string that specifies the name of the rule to suppress. The optional `justification` field allows you to explain why a warning is being disabled or suppressed. This value will appear in the SARIF output when the `/analyze:log:includesuppressed` option is specified. Its value is a UTF-8 encoded narrow string literal. The `[[gsl::suppress]]` attribute is available in Visual Studio 2022 version 17.14 and later versions.
+This Microsoft-specific attribute, introduced in Visual Studio 2022 version 17.14, suppresses warnings from checkers that enforce [Guidelines Support Library (GSL)](https://github.com/Microsoft/GSL) rules in code. The attribute can be applied to a statement, a block, or a declaration.
 
-The Microsoft-specific `[[gsl::suppress]]` attribute is used to suppress warnings from checkers that enforce [Guidelines Support Library (GSL)](https://github.com/Microsoft/GSL) rules in code. For example, consider this code snippet:
+`<tag>` is a string that specifies the name of the rule to suppress. The optional `justification` field allows you to explain why a warning is being disabled or suppressed. This value will appear in the SARIF output when the `/analyze:log:includesuppressed` option is specified. Its value is a UTF-8 encoded narrow string literal. 
+
+Example:
 
 ```cpp
 int main()
@@ -96,15 +98,21 @@ int main()
 }
 ```
 
-The example raises these warnings:
+This example raises these warnings:
 
 - [C26494](../code-quality/c26494.md) (Type Rule 5: Always initialize an object.)
-
 - [C26485](../code-quality/c26485.md) (Bounds Rule 3: No array to pointer decay.)
-
 - [C26481](../code-quality/c26481.md) (Bounds Rule 1: Don't use pointer arithmetic. Use span instead.)
 
-The first two warnings fire when you compile this code with the CppCoreCheck code analysis tool installed and activated. But the third warning doesn't fire because of the attribute. You can suppress the entire bounds profile by writing `[[gsl::suppress("bounds")]]` without including a specific rule number. The C++ Core Guidelines are designed to help you write better and safer code. The suppress attribute makes it easy to turn off the warnings when they aren't wanted.
+The first two warnings occur when you compile this code with the CppCoreCheck code analysis tool installed and activated. But the third warning doesn't fire because of the attribute. You can suppress the entire bounds profile by writing `[[gsl::suppress("bounds")]]` without including a specific rule number. The C++ Core Guidelines are designed to help you write better and safer code. The suppress attribute makes it easy to turn off the warnings when they aren't wanted.
+
+**Choosing between `#pragma warning` and `[[gsl::suppress]]`**
+
+Both `#pragma warning(suppress)` and `[[gsl::suppress]]` offer fine-grained control over warning suppression:
+- `[[gsl::suppress]]` only suppresses warnings emitted by Microsoft C++ Code Analysis. Use it with the C++ Core Guidelines checks which can be applied to a scope or a specific declaration.
+- `#pragma warning(suppress)` can be used for any compiler warning. It’s particularly useful when you need to suppress a warning in a specific code block without altering the code’s structure significantly.
+
+Whenever possible, we recommend using `[[gsl::suppress]]` for suppressing Microsoft C++ Code Analysis warnings.
 
 ### `[[msvc::flatten]]`
 

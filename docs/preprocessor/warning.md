@@ -114,6 +114,14 @@ When you write header files, you can use `push` and `pop` to guarantee that warn
 #pragma warning( pop )
 ```
 
+**Choosing between `#pragma warning` and `[[gsl::suppress]]`**
+
+Both `#pragma warning(suppress)` and `[[gsl::suppress]]` offer fine-grained control over warning suppression:
+- `[[gsl::suppress]]` only suppresses warnings emitted by Microsoft C++ Code Analysis. Use it with the C++ Core Guidelines checks which can be applied to a scope or a specific declaration.
+- `#pragma warning(suppress)` can be used for any compiler warning. It’s particularly useful when you need to suppress a warning in a specific code block without altering the code’s structure significantly.
+
+Whenever possible, we recommend using [`[[gsl::suppress]]`](../cpp/attributes.md#gslsuppresstag--justification-narrow-string-literal) for suppressing Microsoft C++ Code Analysis warnings.
+
 For more information about compiler options that help you suppress warnings, see [`/FI`](../build/reference/fi-name-forced-include-file.md) and [`/w`](../build/reference/compiler-option-warning-level.md).
 
 ## See also
