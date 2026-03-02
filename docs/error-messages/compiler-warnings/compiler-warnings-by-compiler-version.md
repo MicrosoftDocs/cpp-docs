@@ -12,6 +12,7 @@ These versions of the compiler introduced new warnings:
 
 | Product | Compiler version number |
 |--|--|
+| Visual Studio 2022 version 17.14 | 19.44 |
 | Visual Studio 2022 version 17.13 | 19.43 |
 | Visual Studio 2022 version 17.12 | 19.42 |
 | Visual Studio 2022 version 17.11 | 19.41 |
@@ -62,6 +63,14 @@ You can specify only the major number, the major and minor numbers, or the major
 The following sections list the warnings introduced by each version of Visual C++ that you can suppress by using the **`/Wv`** compiler option. The **`/Wv`** option can't suppress warnings that aren't listed, which predate the specified versions of the compiler.
 
 ::: moniker range=">= msvc-170"
+
+## Warnings introduced in Visual Studio 2022 version 17.14 (compiler version 19.44)
+
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.43`**.
+
+| Warning | Message |
+|--|--|
+| C4862 | justification property is not allowed with more than one warning number |
 
 ## Warnings introduced in Visual Studio 2022 version 17.13 (compiler version 19.43)
 
