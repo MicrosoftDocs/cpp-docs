@@ -1,23 +1,38 @@
 ---
-description: "Learn more about: Compiler Error C2469"
 title: "Compiler Error C2469"
-ms.date: "11/04/2016"
+description: "Learn more about: Compiler Error C2469"
+ms.date: 2/27/2026
 f1_keywords: ["C2469"]
 helpviewer_keywords: ["C2469"]
-ms.assetid: 3814bdff-581a-4d3e-8b47-8de6887cea69
 ---
 # Compiler Error C2469
 
-'operator': cannot allocate 'type' object
+> '`new`': cannot allocate '`void`' objects
 
-An operator was passed an invalid type.
+## Remarks
 
-The following sample generates C2469:
+The [`new` operator](../../cpp/new-operator-cpp.md) allocates memory and constructs an object of the specified type. Since `void` isn't a constructible type, use `::operator new(size)` to allocate raw memory without object construction.
+
+## Example: Wrong allocation type
 
 ```cpp
-// C2469.cpp
-int main() {
-   int *i = new void;   // C2469
-   int *i = new int;   // OK
+// compile with /c
+int main()
+{
+    void* ptr1 = new void;   // C2469
+    int*  ptr2 = new int;    // OK
+}
+```
+
+## Example: Allocate untyped memory
+
+To allocate untyped memory, use `::operator new`:
+
+```cpp
+// compile with /c
+int main()
+{
+    void* ptr1 = new void;            // C2469
+    void* ptr2 = ::operator new(4);   // OK
 }
 ```
