@@ -26,7 +26,7 @@ This article provides the steps to manually enable NTFS file auditing and review
 
 Object access must be enabled before you enable file-level auditing:
 
-1. Select **Windows**+**R** to open the **Run** dialog. Then enter **gpedit.msc** and select **Enter** to open **Local Group Policy Editor**.
+1. Select **Windows**+**R** to open the **Run** dialog. Then enter `gpedit.msc` and select **Enter** to open **Local Group Policy Editor**.
 1. Go to **Computer Configuration** > **Windows Settings** > **Security Settings** > **Advanced Audit Policy Configuration** > **System Audit Policies** > **Object Access**.
 1. Double-click **Audit File System**. In the **Audit File System Properties** dialog, select **Configure the following audit events** > **Success** > **OK**.
 1. Close **Local Group Policy Editor**.
@@ -55,7 +55,7 @@ The audit rule is now enabled for the file.
 
 NTFS file auditing generates [Event 4663: An attempt was made to access an object](/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4663) for each file that includes the audit permission and is accessed by a process.
 
-1. Select **Windows**+**R** to open the **Run** dialog. Then enter **eventvwr.msc** and select **Enter** to open **Event Viewer**.
+1. Select **Windows**+**R** to open the **Run** dialog. Then enter `eventvwr.msc` and select **Enter** to open **Event Viewer**.
 1. Go to the **Security** logs in the **Event Viewer** by expanding **Windows Logs** > **Security**. The results pane lists security events.
 1. Find the audit events by choosing **Filter Current Log...** in the **Actions** pane. To narrow down the events to **Event ID 4663 (Audit Success for the File System Category)**, enter **4663** in the **Includes/Excludes Event IDs** text box.
 
