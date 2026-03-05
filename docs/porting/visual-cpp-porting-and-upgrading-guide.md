@@ -61,7 +61,7 @@ ms.author: twhitney
 
 - [⬆️ Upgrading C++ Projects to Visual Studio 2026](https://devblogs.microsoft.com/cppblog/upgrading-c-projects-to-visual-studio-2026/)
 - [⬆️ Upgrade projects from earlier versions](upgrading-projects-from-earlier-versions-of-visual-cpp.md)
-- [🤖 Upgrade with an AI agent (preview)](copilot-app-modernization-cpp.md)
+- [🤖 Upgrade with an AI agent (preview)](copilot-modernization-cpp.md)
 - [🛠️ IDE tools for upgrading C++ code](ide-tools-for-upgrading-code.md)
 - [🔄 Upgrade to Universal CRT](upgrade-your-code-to-the-universal-crt.md)
 - [🔧 Update WINVER and _WIN32_WINNT](modifying-winver-and-win32-winnt.md)
