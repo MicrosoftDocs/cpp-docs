@@ -15,7 +15,7 @@ If you experience any problems, make sure that you're installing the [latest ver
 
 ## Collect failure logs
 
-The first step to diagnose an problem with the Visual C++ Redistributable installer is to collect its failure logs.
+The first step to diagnose a problem with the Visual C++ Redistributable installer is to collect its failure logs.
 
 1. Download the [Microsoft Visual Studio and .NET Log Collection Tool](<https://aka.ms/vscollect>).
 1. Run `Collect.exe`.
@@ -245,7 +245,7 @@ You might be able to find installers for older versions through a Bing search. O
 
 The list of [common problems](#common-problems) was collected from feedback reported to Microsoft through the [Developer Community](<https://developercommunity.visualstudio.com/>).
 
-If you encounter an problem not found in that section, or if the steps in this troubleshooting guide don't resolve your problem, use the [Report a Problem](<https://developercommunity.visualstudio.com/cpp/report>) form to create a new feedback item.
+If you encounter a problem not found in that section, or if the steps in this troubleshooting guide don't resolve your problem, use the [Report a Problem](<https://developercommunity.visualstudio.com/cpp/report>) form to create a new feedback item.
 
 Your report must include the following information about your environment:
 
