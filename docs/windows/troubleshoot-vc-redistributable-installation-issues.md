@@ -1,39 +1,39 @@
 ---
-title: "Troubleshoot Visual C++ Redistributable installation issues"
-description: "Provide steps to diagnose and resolve issues when installing the Visual C++ Redistributable."
+title: Troubleshoot Visual C++ Redistributable Installation Problems
+description: This article provides steps to help you diagnose and resolve problems when you install the Visual C++ Redistributable.
 author: vicroms
 ms.author: viromer
 ms.date: 02/12/2026
 ms.topic: troubleshooting-general
 helpviewer_keywords: [ "redist", "vcredist", "Visual [C++] redistributable", "VC Redist" ]
 ---
-# Troubleshoot Visual C++ Redistributable installation issues
+# Troubleshoot Visual C++ Redistributable installation problems
 
-This guide is for users experiencing issues installing Visual C++ Runtime components using the Visual Studio (VS) Installer or the Visual C++ Redistributable (VC Redist) installer.
+This article is for users who experience problems when they install Visual C++ Runtime components by using the Visual Studio Installer or the Visual C++ Redistributable (VC Redist) installer.
 
-If you experience any issues, start by ensuring you're installing the [latest version of the Visual C++ Redistributable](latest-supported-vc-redist.md).
+If you experience any problems, make sure that you're installing the [latest version of the Visual C++ Redistributable](latest-supported-vc-redist.md).
 
 ## Collect failure logs
 
-The first step to diagnose an issue with the Visual C++ Redistributable installer is to collect its failure logs.
+The first step to diagnose a problem with the Visual C++ Redistributable installer is to collect its failure logs.
 
 1. Download the [Microsoft Visual Studio and .NET Log Collection Tool](<https://aka.ms/vscollect>).
 1. Run `Collect.exe`.
 1. Extract the contents of `%TEMP%/vscollect.zip`.
 
-Once you extract `vscollect.zip`, the VC Redist logs are located inside the `Temp` folder. The relevant log files are prefixed with the pattern `dd_vcredist_<arch>_yyyyMMddHHmmss`.
+After you extract `vscollect.zip`, the VC Redist logs are located inside the `Temp` folder. The relevant log files are prefixed with the pattern `dd_vcredist_<arch>_yyyyMMddHHmmss`.
 
-Search the VC Redist logs for terms like "Error", "Failed", or "System Error" and consult the [Common Errors](#common-errors-at-a-glance) to identify the issue.
+Search the VC Redist logs for terms like "Error," "Failed," or "System Error," and consult the [Common errors at a glance](#common-errors-at-a-glance) section to identify the problem.
 
 ### Other log locations
 
-The VC Redist installer is often executed as a prerequisite of other products. In such cases, the installation log might be found in a different path.
+The VC Redist installer is often run as a prerequisite of other products. In such cases, you might find the installation log in a different path.
 
 For example, [Configuration Manager](/intune/configmgr/core/understand/introduction) upgrades VC Redist as part of its own upgrade process by running `vcredist_x64.exe` with the `/l` option that overrides the default log location.
 
-In such cases, the path to the logs can be found by reading that product's own logs:
+In such cases, you can find the path to the logs by reading that product's own logs.
 
-**Example: Configuration Manager logs**
+#### Example: Configuration Manager logs
 
 `<ConfigMgr_Installation_Directory>\Logs\cmupdate.log`
 
@@ -47,20 +47,19 @@ In such cases, the path to the logs can be found by reading that product's own l
 
 ## General troubleshooting steps when using the Visual C++ Redistributable installer
 
-This section describes general troubleshooting methods you can try to resolve issues with the VC Redist installer.
+This section describes general troubleshooting methods that you can try to resolve problems with the VC Redist installer.
 
 ### Disable antivirus software temporarily
 
 Antivirus software often blocks installation of VC Redist components.
 
 1. Turn off Windows Defender real-time protection.
-1. Disable any corporate endpoint protection temporarily (Symantec, McAfee, etc.).
+1. Disable any corporate endpoint protection temporarily (such as Symantec or McAfee).
 1. Retry the installation.
 1. Reenable any disabled protection software.
 
 > [!WARNING]
-> Re-enable any disabled protection software after completing these steps.
-
+> Reenable any disabled protection software after you finish these steps.
 
 ### Run the Visual C++ Redistributable installer as administrator
 
@@ -71,18 +70,18 @@ File-access failures are heavily correlated with insufficient permissions.
 
 ### Check for Windows updates
 
-On rare occasions, outdated system components can cause installation issues.
+On rare occasions, outdated system components can cause installation problems.
 
 1. Go to Windows Update and install all pending updates.
-2. Reboot your PC.
-3. Retry the installation.
+1. Reboot your PC.
+1. Retry the installation.
 
 ## General troubleshooting steps when using Visual Studio Installer
 
 ### Manually install Visual C++ Redistributable
 
 > [!NOTE]
-> The VS Installer might prompt for a reboot when VC Redist is installed separately.
+> The Visual Studio Installer might prompt for a restart when VC Redist is installed separately.
 
 1. Download the [latest VC Redist installer](latest-supported-vc-redist.md).
 1. Run the VC Redist installer.
@@ -93,84 +92,82 @@ If the manual installation fails, follow the [general troubleshooting steps for 
 ### Clear the Visual Studio Installer cache
 
 1. Open `%ProgramData%\Microsoft\VisualStudio\Packages`.
-1. Delete all files inside the folder to force the Visual Studio Installer to regenerate them.
+1. Delete all the files inside the folder to force the Visual Studio Installer to regenerate them.
 1. Retry the Visual Studio Installer.
 
 ### Repair the Visual Studio Installer
 
 1. Open the **Settings** app.
-1. Search for **Installed Apps** using the search bar at the top of the window.
+1. Enter **Installed Apps** in the search bar at the top of the window.
 1. Search for **Visual Studio Installer**.
-1. Click on the "**...**" button and select **Modify**.
-1. Select the option to **Repair** the Visual Studio Installer.
-1. Retry the VS installation.
+1. Select the ellipsis (**...**), and then select **Modify**.
+1. Select the **Repair** option to repair the Visual Studio Installer.
+1. Retry the Visual Studio installation.
 
 ### Delete the Visual Studio Installer folder
 
 > [!WARNING]
-> This method requires that you have the Visual Studio Installer Setup downloaded (VisualStudioSetup.exe).
-> You can download the Visual Studio Installer Setup from <https://my.visualstudio.com>.
+> This method requires that you have the Visual Studio Installer Setup downloaded (`VisualStudioSetup.exe`). You can download the Visual Studio Installer Setup from <https://my.visualstudio.com>.
 
-This method helps in case the installer metadata is corrupted, deleting the installer folder forces the Visual Studio Installer to regenerate it.
+This method helps if the installer metadata is corrupted. Deleting the installer folder forces the Visual Studio Installer to regenerate it.
 
-1. Download `VisualStudioSetup.exe` from <https://my.visualstudio.com>.
-1. Delete the folder `C:\Program Files (x86)\Microsoft Visual Studio\Installer`, you might be prompted to run this operation as administrator.
+1. Download `VisualStudioSetup.exe` from the [Welcome to Dev Essentials](https://my.visualstudio.com) page.
+1. Delete the folder `C:\Program Files (x86)\Microsoft Visual Studio\Installer`. You might be prompted to run this operation as an administrator.
 1. Run `VisualStudioSetup.exe`.
 
-## Common issues
+## Common problems
 
 ### Common errors at a glance
 
 * [Generic installation failure (return code 1603)](#generic-installation-failure)
 * [Access denied (return code 5)](#access-denied)
 * [File is locked (return code 32)](#file-is-locked)
-* [Corrupt or invliad installer package (return code 1620)](#corrupt-or-invalid-installer-package)
+* [Corrupt or invalid installer package (return code 1620)](#corrupt-or-invalid-installer-package)
 * [Older version can't be removed (return code 1714)](#older-version-cant-be-removed)
 
 ### Generic installation failure
 
 Return code 1603 indicates a generic installation failure produced by the Windows Installer during the installation of the Visual C++ Runtime components.
 
-Because many factors can produce a 1603 code, the code by itself doesn't provide enough information to diagnose the cause of the issue.
-Often, the log files produced by the VC Redist installer contain relevant information that might lead to a solution or workaround.
+Because many factors can produce a 1603 code, the code by itself doesn't provide enough information to diagnose the cause of the problem. Often, the log files produced by the VC Redist installer contain relevant information that might lead to a solution or workaround.
 
-The [Common issues](#common-issues) section describes examples of how to diagnose common installation errors and steps that might resolve them.
-If your issue isn't found here, then follow the instructions to [report an issue in the Visual C++ Redistributable installer](#report-a-visual-c-redistributable-installation-problem).
+The [Common problems](#common-problems) section describes examples of how to diagnose common installation errors and steps that might resolve them.
+If your problem isn't found here, follow the instructions to [report a problem in the Visual C++ Redistributable installer](#report-a-visual-c-redistributable-installation-problem).
 
 ### Access denied
 
-Installation fails with error code 5. This error code typically indicates a permissions issue; specifically, an access denied issue.
+Installation fails with error code 5. This error code typically indicates a permissions problem. Specifically, the problem is access denied.
 
-**Steps to resolve**
+#### Steps to resolve
 
 1. Disable antivirus, group policies, and firewalls temporarily.
 1. Run the VC Redist installer.
-1. Re-enable any disabled protection software.
+1. Reenable any disabled protection software.
 
-If the installation fails, try to run the VC Redist installer as administrator.
+If the installation fails, try to run the VC Redist installer as an administrator.
 
 ### File is locked
 
 Installation fails with error code 32. Files in use by another process, interference from antivirus software, group policies, or corrupted files are common causes.
 
-**Steps to resolve**
+#### Steps to resolve
 
 1. Close any running software in your PC.
-1. Try the methods in [General troubleshooting steps](#general-troubleshooting-steps-when-using-the-visual-c-redistributable-installer).
+1. Try the methods in the [General troubleshooting steps when using Visual Studio Installer](#general-troubleshooting-steps-when-using-the-visual-c-redistributable-installer) section.
 
 If the installation fails, try to restart your PC to release any locked files.
 
 ### Corrupt or invalid installer package
 
-Installation fails with error code 1620. This error code indicates that a Windows Installer package (MSI) couldn't be opened, likely due to corruption or invalid files.
+Installation fails with error code 1620. This error code indicates that a Windows Installer package (MSI) couldn't be opened. The problem is likely because of corruption or invalid files.
 
 The presence of these error messages indicates a corrupted cache.
 
-- Error code 1620: indicates that the Windows Installer package couldn't be opened.
-- Error code 0x80091007: several payloads failed verification due to hash mismatches.
-- Error code 0x80070654: occurs when an MSI package fails to execute.
+- **Error code 1620**: Indicates that the Windows Installer package couldn't be opened.
+- **Error code 0x80091007**: Indicates that several payloads failed verification because of hash mismatches.
+- **Error code 0x80070654**: Occurs when an MSI package fails to run.
 
-**Steps to resolve**
+#### Steps to resolve
 
 Try the steps in the [General troubleshooting steps when using Visual Studio Installer](#general-troubleshooting-steps-when-using-visual-studio-installer).
 
@@ -180,7 +177,7 @@ Installation fails with the error code 1714. This error code indicates a corrupt
 
 The presence of these error messages indicates a corrupted cache.
 
-In `dd_vcredist_<arch>_<timestamp>.log`
+In `dd_vcredist_<arch>_<timestamp>.log`:
 
 ```log
 Error 0x80070003: Failed to get size of pseudo bundle: C:\ProgramData\Package Cache\{43d1ce82-6f55-4860-a938-20e5deb28b98}\VC_redist.x64.exe
@@ -203,38 +200,37 @@ Product: Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.40.33816 -- Error 17
 Error 1714. The older version of Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.40.33816 cannot be removed.  Contact your technical support group.  System Error 1612.
 ```
 
-In `VSSetupEvents.txt`
+In `VSSetupEvents.txt`:
 
 ```log
 Error 1714. The older version of Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.40.33816 cannot be removed.  Contact your technical support group.  System Error 1612.] [(NULL)] [(NULL)] [(NULL)] [(NULL)] [(NULL)] []
 ```
 
-**Steps to resolve**
+#### Steps to resolve
 
-From the log files, take note of the VC Redist version causing the issue.
+From the log files, make a note of the VC Redist version causing the problem. Two methods are available to resolve the problem:
 
-Method 1: Use the Windows Installer.
+- **Method 1:** Use the Windows Installer.
 
-1. Try using the Windows Installer to manually remove the old VC Redist version. If prompted, let the Windows Installer Troubleshooter attempt to fix the issue.
-1. Retry the installation.
+   1. Try using the Windows Installer to manually remove the old VC Redist version. If prompted, let the Windows Installer Troubleshooter attempt to fix the problem.
+   1. Retry the installation.
 
-Method 2: Manually remove the old version.
+- **Method 2:** Manually remove the old version.
 
-1. Download the VC Redist installer for the old version. Follow the [steps to download and old version of the VC Redist installer](#old-vcredist-versions)
-1. Run the installer to uninstall the old VC Redist.
-1. Retry the installation.
+   1. Download the VC Redist installer for the old version. Follow the [steps to download an old version of the VC Redist installer](#old-vcredist-versions).
+   1. Run the installer to uninstall the old VC Redist.
+   1. Retry the installation.
 
 ## <a name="old-vcredist-versions"></a> Download old versions of the Visual C++ Redistributable installer
 
 > [!WARNING]
-> Never install a Visual C++ Redistributable installer that wasn't downloaded from a Microsoft site.
-> Never install a Visual C++ Redistributable installer that isn't signed by Microsoft.
+> Never install a Visual C++ Redistributable installer that wasn't downloaded from a Microsoft site. Never install a Visual C++ Redistributable installer that Microsoft didn't sign.
 
-Download the VC Redist installer from [my.visualstudio.com](<https://my.visualstudio.com/Downloads>). Search for Visual C++ Redistributable on the downloads page.
+Download the VC Redist installer from the [Welcome to Dev Essentials](https://my.visualstudio.com/Downloads) page. Search for Visual C++ Redistributable on the downloads page.
 
-The latest supported VC Redist version for each version of Visual Studio can be found in [this article](/cpp/windows/latest-supported-vc-redist).
+For the latest supported VC Redist version for each version of Visual Studio, see [Microsoft Redistributable Visual C++ latest supported downloads](/cpp/windows/latest-supported-vc-redist).
 
-Links for older or legacy versions:
+The following table lists links for older or legacy versions.
 
 | Version range  | Download link template                                        | Example                                                        |
 |----------------|---------------------------------------------------------------|----------------------------------------------------------------|
@@ -243,27 +239,26 @@ Links for older or legacy versions:
 | 14.20 to 14.29 | `https://aka.ms/vs/16/release/<version>/VC_redist.<arch>.exe` | <https://aka.ms/vs/16/release/14.28.29914/VC_Redist.x86.exe>   |
 | 14.10 to 14.19 | `https://aka.ms/vs/15/release/<version>/VC_redist.<arch>.exe` | <https://aka.ms/vs/15/release/14.12.25810/VC_redist.x64.exe>   |
 
-You might be able to find installers for older versions through a Bing search.
-Only download VC Redist installers from a Microsoft site. Only install packages signed by Microsoft.
+You might be able to find installers for older versions through a Bing search. Only download VC Redist installers from a Microsoft site. Only install packages signed by Microsoft.
 
 ## Report a Visual C++ Redistributable installation problem
 
-The list of [common issues](#common-issues) was collected from feedback reported to Microsoft through [Developer Community](<https://developercommunity.visualstudio.com/>).
+The list of [common problems](#common-problems) was collected from feedback reported to Microsoft through the [Developer Community](<https://developercommunity.visualstudio.com/>).
 
-If you encounter an issue not found in that section, or if the steps in this troubleshooting guide don't resolve your issue, use the [Report a Problem](<https://developercommunity.visualstudio.com/cpp/report>) form to create a new feedback item.
+If you encounter a problem not found in that section, or if the steps in this troubleshooting guide don't resolve your problem, use the [Report a Problem](<https://developercommunity.visualstudio.com/cpp/report>) form to create a new feedback item.
 
 Your report must include the following information about your environment:
 
-- Version of VC Redist you're trying to install.
-- If upgrading, version of previously installed VC Redist installations.
-- If installing through the Visual Studio Installer, version of the VS Installer.
-- Logs collected by following the steps in the [Collect failure logs](#collect-failure-logs) section.
+- The version of VC Redist you're trying to install.
+- If you're upgrading, the version of previously installed VC Redist installations.
+- If you're installing through the Visual Studio Installer, the version of the Visual Studio Installer.
+- The logs collected when you follow the steps in the [Collect failure logs](#collect-failure-logs) section.
 
-Feedback without this information, especially without logs, is nonactionable and may be closed if additional information isn't submitted promptly.
+Feedback without this information, especially without logs, is nonactionable and might be closed if more information isn't submitted promptly.
 
-## See also
+## Related content
 
-[Latest supported Visual C++ Redistributable downloads](latest-supported-vc-redist.md)\
-[C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md)\
-[How to audit Visual C++ Runtime version usage](redist-version-auditing.md)\
-[Lifecycle FAQ - Visual C++ Redistributable and runtime libraries](/lifecycle/faq/visual-c-faq)
+- [Latest supported Visual C++ Redistributable downloads](latest-supported-vc-redist.md)
+- [C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md)
+- [Audit Visual C++ Runtime version usage](redist-version-auditing.md)
+- [Lifecycle FAQ: Visual C++ Redistributable and Runtime libraries](/lifecycle/faq/visual-c-faq)
