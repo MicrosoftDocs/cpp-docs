@@ -20,14 +20,14 @@ class ostream_iterator
 
 ### Parameters
 
-*Type*\
+*`Type`*\
 The type of object to be inserted into the output stream.
 
-*CharType*\
+*`CharType`*\
 The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is **`char`**.
 
-*Traits*\
-The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is `char_traits`\< *CharType>.*
+*`Traits`*\
+The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is `char_traits<CharType>`.*
 
 The ostream_iterator class must satisfy the requirements for an output iterator. Algorithms can be written directly to output streams using an `ostream_iterator`.
 
@@ -55,7 +55,7 @@ The ostream_iterator class must satisfy the requirements for an output iterator.
 
 ## Requirements
 
-**Header:** \<iterator>
+**Header:** `<iterator>`
 
 **Namespace:** `std`
 
@@ -99,16 +99,17 @@ int main( )
 *intOut = 20;
 *intOut = 30;
 }
-/* Output:
+```
+
+```output
 The integers written to the output stream
 by intOut are:
 10
 20
 30
-*/
 ```
 
-## <a name="op_star"></a> `ostream_iterator::operator*`
+## <a name="op_star"></a> ostream_iterator::operator*
 
 Dereferencing operator used to implement the output iterator expression `*ii = x`.
 
@@ -122,7 +123,7 @@ A reference to the `ostream_iterator`.
 
 ### Remarks
 
-The requirements for an output iterator that the `ostream_iterator` must satisfy require only the expression \* *ii* = *t* be valid and says nothing about the **`operator`** or the `operator=` on their own. The member operator in this implementation returns **`*this`**.
+The requirements for an output iterator that the `ostream_iterator` must satisfy require only the expression `*ii = t` be valid and says nothing about the **`operator`** or the `operator=` on their own. The member operator in this implementation returns `*this`.
 
 ### Example
 
@@ -150,7 +151,6 @@ int main( )
    *intOut = 30;
 }
 ```
-
 ```output
 Elements written to output stream:
 10
@@ -173,7 +173,7 @@ A reference to the `ostream_iterator`.
 
 ### Remarks
 
-These member operators both return **`*this`**.
+These member operators both return `*this`.
 
 ### Example
 
@@ -224,11 +224,11 @@ The value of the object of type `Type` to be inserted into the output stream.
 
 ### Return Value
 
-The operator inserts *`val`* into the output stream associated with the object, followed by the delimiter specified in the [`ostream_iterator` constructor](#ostream_iterator) (if any), and then returns a reference to the `ostream_iterator`.
+The operator inserts *`val`* into the output stream associated with the object, followed by the delimiter specified in the [`ostream_iterator constructor`](#ostream_iterator) (if any), and then returns a reference to the `ostream_iterator`.
 
 ### Remarks
 
-The requirements for an output iterator that the `ostream_iterator` must satisfy require only the expression `*ii = t` be valid and says nothing about the `operator*` or the `operator=` on their own. This member operator returns **`*this`**.
+The requirements for an output iterator that the `ostream_iterator` must satisfy require only the expression `*ii = t` be valid and says nothing about the operator or the operator= on their own. This member operator returns `*this`.
 
 ### Example
 
@@ -256,7 +256,6 @@ int main( )
    *intOut = 30;
 }
 ```
-
 ```output
 Elements written to output stream:
 10
@@ -269,8 +268,7 @@ Elements written to output stream:
 Constructs an `ostream_iterator` that is initialized and delimited to write to the output stream.
 
 ```cpp
-ostream_iterator(
-    ostream_type& _Ostr);
+ostream_iterator(ostream_type& _Ostr);
 
 ostream_iterator(
     ostream_type& _Ostr,
@@ -331,7 +329,8 @@ int main( )
    cout << endl;
 }
 ```
-```output
+
+```ouput
 10
 20
 Elements output without delimiter: 123456
@@ -348,7 +347,7 @@ typedef basic_ostream<CharType, Traits> ostream_type;
 
 ### Remarks
 
-The type is a synonym for [`basic_ostream`](../standard-library/basic-ostream-class.md)< `CharType`, `Traits`>, a stream class of the iostream hierarchy that defines objects that can be used for writing.
+The type is a synonym for [`basic_ostream`](../standard-library/basic-ostream-class.md)`<CharType, Traits>`, a stream class of the iostream hierarchy that defines objects that can be used for writing.
 
 ### Example
 
@@ -407,6 +406,6 @@ by intOut are:
 
 ## See also
 
-[\<iterator>](../standard-library/iterator.md)\
+[`<iterator>`](../standard-library/iterator.md)\
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
 [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
