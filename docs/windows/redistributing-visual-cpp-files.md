@@ -49,7 +49,7 @@ To deploy redistributable files, you can use the redistributable packages instal
 The easiest way to locate the redistributable files is by using environment variables set in a developer command prompt. In Visual Studio 2022, the redistributable files are in the `%VCINSTALLDIR%Redist\MSVC\v143` folder. In the latest version of Visual Studio 2019, you can find the redistributable files in the `%VCINSTALLDIR%Redist\MSVC\v142` folder. In both Visual Studio 2017 and Visual Studio 2019, the files are also found in `%VCToolsRedistDir%`. In Visual Studio 2015, you can find these files in `%VCINSTALLDIR%redist\<locale>`, where `<locale>` is the locale of the redistributable packages.
 
 In Visual Studio 2022 and 2019, merge module files are part of an optional installable component named *Visual C++ \<version> Redistributable merge modules* in the Visual Studio Installer. The merge modules are installed by default as part of a C++ install in Visual Studio 2017 and Visual Studio 2015. When they're installed in Visual Studio 2022, you can find the redistributable merge modules in `%VCINSTALLDIR%Redist\MSVC\v143\MergeModules`.
-`
+
 In the latest version of Visual Studio 2019, the redistributable merge modules are found in `%VCINSTALLDIR%Redist\MSVC\v142\MergeModules`. In both Visual Studio 2019 and Visual Studio 2017, they're also found in `%VCToolsRedistDir%MergeModules`. In Visual Studio 2015, they're found in `Program Files [(x86)]\Common Files\Merge Modules`.
 
 ## Install the redistributable packages
