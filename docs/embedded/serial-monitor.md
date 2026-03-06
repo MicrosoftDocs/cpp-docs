@@ -41,9 +41,9 @@ To activate the Serial Monitor window, select **Tools** from the menu bar and th
 
 To install Serial Monitor in Visual Studio Code, open the extensions marketplace and then search for **Serial Monitor**. Select **Install**.
 
-To activate the Serial Monitor window, select **Terminal** from the menu bar and choose **New Terminal**. Then select **Serial Monitor** from the tabs.
+To activate the Serial Monitor window, select **Terminal** from the menu bar and choose **New Terminal**. Then, select **Serial Monitor** from the tabs.
 
-:::image type="content" source="media/media/serial-monitor-vscode.png" alt-text="Screenshot of the VS Code Serial Monitor window.":::
+:::image type="content" source="media/serial-monitor-vscode.png" alt-text="Screenshot of the VS Code Serial Monitor window.":::
 
 ## Capabilities
 
