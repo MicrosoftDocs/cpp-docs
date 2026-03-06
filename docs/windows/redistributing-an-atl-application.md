@@ -16,7 +16,7 @@ If you redistribute an ATL executable application, you must register the `.exe` 
 filename /regserver
 ```
 
-Where `filename` is the name of the executable file.
+The name of the executable file is `filename`.
 
 In Visual Studio 2010, you can build an ATL project for a `MinDependency` or a `MinSize` configuration:
 
@@ -33,7 +33,7 @@ If you redistribute an ATL executable application, you must register the `.exe` 
 filename /regserver
 ```
 
-Where `filename` is the name of the executable file.
+The name of the executable file is `filename`.
 
 ## Related content
 

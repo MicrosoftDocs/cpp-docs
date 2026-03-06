@@ -14,13 +14,13 @@ If you dynamically link your application to the Microsoft Foundation Class (MFC)
 > [!NOTE]
 > The `mfc140.dll` files were omitted from the redistributable files directory in Visual Studio 2015 RTM. You can use the versions installed by Visual Studio 2015 in the `Windows\system32 and Windows\syswow64` directories instead.
 
-Because all MFC DLLs use the shared version of the Microsoft C Runtime (CRT) Library, you might also need to redistribute the CRT. The version of MFC that ships with Visual Studio 2015 uses the Universal CRT Library, which is distributed as part of Windows 10 and Windows 11. To run an MFC application built by using Visual Studio 2015 on earlier versions of Windows, you must redistribute the Universal CRT.
+Because all MFC DLLs use the shared version of the Microsoft C runtime library, you might also need to redistribute the C runtime. The version of MFC that ships with Visual Studio 2015 uses the Universal C runtime library, which is distributed as part of Windows 10 and Windows 11. To run an MFC application built by using Visual Studio 2015 on earlier versions of Windows, you must redistribute the Universal C runtime.
 
-For information on how to redistribute the Universal CRT as an operating system component or by using local deployment, see [Introducing the Universal CRT](https://devblogs.microsoft.com/cppblog/introducing-the-universal-crt/). To download the Universal CRT for central deployment on supported versions of Windows, see [Windows 10 Universal C Runtime](https://www.microsoft.com/download/details.aspx?id=48234).
+For information on how to redistribute the Universal C runtime as an operating system component or by using local deployment, see [Introducing the Universal C runtime](https://devblogs.microsoft.com/cppblog/introducing-the-universal-crt/). To download the Universal C runtime for central deployment on supported versions of Windows, see [Windows 10 Universal C runtime](https://www.microsoft.com/download/details.aspx?id=48234).
 
 You can find redistributable architecture-specific versions of `ucrtbase.dll` for local deployment in the Windows SDK. By default, Visual Studio installs these versions in `C:\Program Files (x86)\Windows Kits\10\Redist\ucrt\DLLs\` in an architecture-specific subdirectory.
 
-If your app is built by using an earlier version of the MFC Library, you must redistribute the matching CRT DLL from the redistributable files directory. For example, if your MFC application is built by using the Visual Studio 2013 (vc120) toolset, you must redistribute the `msvcr120.dll`. You also have to redistribute the matching `mfc<version>u.dll` or `mfc<version>.dll`.
+If your app is built by using an earlier version of the MFC Library, you must redistribute the matching C runtime DLL from the redistributable files directory. For example, if your MFC application is built by using the Visual Studio 2013 (vc120) toolset, you must redistribute the `msvcr120.dll`. You also have to redistribute the matching `mfc<version>u.dll` or `mfc<version>.dll`.
 
 If you statically link your application to MFC (in the **Property Pages** dialog, on the **General** tab, select **Use MFC in a Static Library**), you don't have to redistribute an MFC DLL. Although static linking might work for testing and internal deployment of applications, we recommend that you don't use it to redistribute MFC. For more information about the recommended strategies for deploying Visual C++ libraries, see [Choose a deployment method](choosing-a-deployment-method.md).
 
@@ -30,7 +30,7 @@ If your application uses the MFC database classes (for example, [CRecordset clas
 
 If your MFC application uses Windows Forms controls, you must redistribute `mfcmifc80.dll` with your application. This DLL is a strong-name-signed .NET assembly. You can redistribute it with an application in its application local folder. You can also deploy it to the Global Assembly Cache (GAC) by using the [Gacutil.exe (Global Assembly Cache Tool)](/dotnet/framework/tools/gacutil-exe-gac-tool).
 
-If you redistribute an MFC DLL, make sure to redistribute the retail version and not the debug version. Debug versions of the DLLs aren't redistributable. The names of debug versions of the MFC DLLs end with a "d", for example, `Mfc140d.dll`.
+If you redistribute an MFC DLL, make sure to redistribute the retail version and not the debug version. Debug versions of the DLLs aren't redistributable. The names of debug versions of the MFC DLLs end with a "d"; for example, `Mfc140d.dll`.
 
 You can redistribute MFC by using either `VCRedist_*architecture*.exe` or merge modules that are installed with Visual Studio. You can also deploy the MFC DLL to the same folder as your application. For more information about how to redistribute MFC, see [Redistribute Visual C++ files](redistributing-visual-cpp-files.md).
 

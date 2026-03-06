@@ -15,7 +15,7 @@ Visual C++ 6.0 supplies ActiveX controls that you can use in applications that y
 
 For a list of the redistributable Visual C++ 6.0 ActiveX controls, see `Common\Redist\Redist.txt` on Disc 1 of the Visual C++ 6.0 product CD.
 
-When you distribute applications, you must install and register the `.ocx` for the ActiveX control (by using `Regsvr32.exe`). The target computer also must have current versions of the following system files (an asterisk indicates that the file must be registered):
+When you distribute applications, you must install and register the `.ocx` for the ActiveX control (by using `Regsvr32.exe`). The target computer also must have current versions of the following system files. (An asterisk indicates that the file must be registered.)
 
 - `Asycfilt.dll`
 - `Comcat.dll`\*
@@ -29,7 +29,7 @@ When you use an ActiveX control that connects to a database, you also need to re
 
 Some redistributable ActiveX controls have more dependencies. For each `.ocx` file in the Os\System folder on the Visual C++ 6.0 product CD, there's also a `.dep` file. For each `.ocx` file that you want to redistribute, look for one or more USES entries in the corresponding `.dep` file.
 
-If a file is listed, you must ensure that the file is on the target computer. Any DLLs directly supporting an `.ocx` file must be registered. (For `Regsvr32.exe` to succeed, the target computer must first contain all the DLLs that the control statically loads.) Furthermore, if a DLL that's listed as a dependency also has a `.dep` file in the Os\System folder on the Visual C++ 6.0 CD, you must also investigate that `.dep` file for USES entries.
+If a file is listed, you must ensure that the file is on the target computer. Any DLLs directly supporting an `.ocx` file must be registered. (For `Regsvr32.exe` to succeed, the target computer must first contain all the DLLs that the control statically loads.) Also, if a DLL that's listed as a dependency also has a `.dep` file in the Os\System folder on the Visual C++ 6.0 CD, you must also investigate that `.dep` file for USES entries.
 
 ## Related content
 

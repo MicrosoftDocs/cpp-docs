@@ -8,13 +8,13 @@ ms.topic: concept-article
 # Redistribute Visual C++ files
 
 > [!NOTE]
-> Are you here because you're looking for a download of one of the Visual C++ Runtime files? Go to the [latest supported Visual C++ Redistributable downloads](latest-supported-vc-redist.md) page.
+> Are you here because you're looking for a download of one of the Visual C++ runtime files? Go to the [latest supported Visual C++ Redistributable downloads](latest-supported-vc-redist.md) page.
 
 ## Redistributable files and licensing
 
-Distribution of the Visual C++ Runtime Redistributable Package, merge modules, and individual binaries is limited to licensed Visual Studio users and is subject to Microsoft Software License Terms.
+Distribution of the Visual C++ Runtime Redistributable package, merge modules, and individual binaries is limited to licensed Visual Studio users and is subject to Microsoft Software License Terms.
 
-When you deploy an application, you must also deploy the files that are required to support it. If any of these files are provided by Microsoft, check whether you're permitted to redistribute them. You can find a link to the Visual Studio license terms in the IDE. In the **About Microsoft Visual Studio** dialog, select the **License Terms** link. You can also download the relevant Microsoft Software License Terms and licenses from the Visual Studio [License Directory](https://visualstudio.microsoft.com/license-terms/).
+When you deploy an application, you must also deploy the files that are required to support it. If Microsoft provides any of these files, check whether you're permitted to redistribute them. You can find a link to the Visual Studio license terms in the IDE. In the **About Microsoft Visual Studio** dialog, select the **License Terms** link. You can also download the relevant Microsoft Software License Terms and licenses from the Visual Studio [License Directory](https://visualstudio.microsoft.com/license-terms/).
 
 ::: moniker range="msvc-170"
 
@@ -48,15 +48,15 @@ To deploy redistributable files, you can use the redistributable packages instal
 
 The easiest way to locate the redistributable files is by using environment variables set in a developer command prompt. In Visual Studio 2022, the redistributable files are in the `%VCINSTALLDIR%Redist\MSVC\v143` folder. In the latest version of Visual Studio 2019, you can find the redistributable files in the `%VCINSTALLDIR%Redist\MSVC\v142` folder. In both Visual Studio 2017 and Visual Studio 2019, the files are also found in `%VCToolsRedistDir%`. In Visual Studio 2015, you can find these files in `%VCINSTALLDIR%redist\<locale>`, where `<locale>` is the locale of the redistributable packages.
 
-In Visual Studio 2022 and 2019, merge module files are part of an optional installable component named Visual C++ \<version> Redistributable MSMs in the Visual Studio Installer. The merge modules are installed by default as part of a C++ install in Visual Studio 2017 and Visual Studio 2015. When they're installed in Visual Studio 2022, you can find the redistributable merge modules in `%VCINSTALLDIR%Redist\MSVC\v143\MergeModules`.
-
+In Visual Studio 2022 and 2019, merge module files are part of an optional installable component named Visual C++ \<version> Redistributable merge modules in the Visual Studio Installer. The merge modules are installed by default as part of a C++ install in Visual Studio 2017 and Visual Studio 2015. When they're installed in Visual Studio 2022, you can find the redistributable merge modules in `%VCINSTALLDIR%Redist\MSVC\v143\MergeModules`.
+`
 In the latest version of Visual Studio 2019, the redistributable merge modules are found in `%VCINSTALLDIR%Redist\MSVC\v142\MergeModules`. In both Visual Studio 2019 and Visual Studio 2017, they're also found in `%VCToolsRedistDir%MergeModules`. In Visual Studio 2015, they're found in `Program Files [(x86)]\Common Files\Merge Modules`.
 
 ## Install the redistributable packages
 
-The Visual C++ Redistributable Packages install and register all Visual C++ libraries. If you use one, run it as a prerequisite on the target system before you install your application. We recommend that you use these packages for your deployments because they enable automatic updating of the Visual C++ libraries. For an example that shows how to use these packages, see [Walkthrough: Deploy a Visual C++ application by using the Visual C++ Redistributable Package](deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package.md).
+The Visual C++ Redistributable packages install and register all Visual C++ libraries. If you use one, run it as a prerequisite on the target system before you install your application. We recommend that you use these packages for your deployments because they enable automatic updating of the Visual C++ libraries. For an example that shows how to use these packages, see [Walkthrough: Deploy a Visual C++ application by using the Visual C++ Redistributable package](deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package.md).
 
-Each Visual C++ Redistributable Package checks for the existence of a more recent version on the machine. If a more recent version is found, the package isn't installed. In Visual Studio 2015 or later, redistributable packages display an error message stating that setup failed. If a package uses the `/quiet` flag to run, no error message appears. In either case, the Microsoft installer logs the error, and an error result is returned to the caller.
+Each Visual C++ Redistributable package checks for the existence of a more recent version on the machine. If a more recent version is found, the package isn't installed. In Visual Studio 2015 or later, redistributable packages display an error message stating that setup failed. If a package uses the `/quiet` flag to run, no error message appears. In either case, the Microsoft installer logs the error, and an error result is returned to the caller.
 
 In Visual Studio 2015 and later, you can avoid this error by checking the registry to find out if a more recent version is installed. The current installed version number is stored in the `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\VC\Runtimes\{x86|x64|arm64}` key.
 
@@ -79,7 +79,7 @@ vc_redist.x64.exe /install /passive /norestart
 ## Install the redistributable merge modules
 
 > [!IMPORTANT]
-> Merge modules (`.msm` files) for Visual C++ Redistributable files are deprecated. We don't recommend that you use them for application deployment. Instead, we recommend central deployment of the Visual C++ Redistributable Package. Central deployment by a redistributable package makes it possible for Microsoft to service runtime library files independently. An uninstall of your app can't affect other applications that also use central deployment.
+> Merge modules (`.msm` files) for Visual C++ Redistributable files are deprecated. We don't recommend that you use them for application deployment. Instead, we recommend central deployment of the Visual C++ Redistributable package. Central deployment by a redistributable package makes it possible for Microsoft to service runtime library files independently. An uninstall of your app can't affect other applications that also use central deployment.
 >
 > When you use a redistributable package for central deployment, you aren't responsible for tracking and maintaining the runtime libraries. Otherwise, an update to the runtime library files requires you to update and redeploy your *`.msi`* installer. Your app could be vulnerable to bugs or security issues until you do.
 

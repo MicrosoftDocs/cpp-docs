@@ -14,7 +14,7 @@ ms.topic: how-to
 
 # Audit Visual C++ Runtime version usage
 
-The Microsoft Visual C++ Redistributable and the Visual Studio C++ Runtime (collectively, "VC Runtime") are critical components of many applications. Across your network, machines might still be running applications that install and use an out-of-support version of the VC Runtime. You can use NTFS file auditing to identify such usage as a step toward replacing those applications with ones that use a supported version of the VC Runtime. This article walks you through setting up NTFS file auditing, provides troubleshooting tips, and highlights the benefits of regular audits.
+The Microsoft Visual C++ Redistributable and the Visual Studio C++ runtime (collectively, "VC Runtime") are critical components of many applications. Across your network, machines might still be running applications that install and use an out-of-support version of the VC Runtime. You can use NTFS file auditing to identify such usage as a step toward replacing those applications with ones that use a supported version of the VC Runtime. This article walks you through setting up NTFS file auditing, provides troubleshooting tips, and highlights the benefits of regular audits.
 
 For more information about the versions of VC Runtime that are no longer supported, see [Microsoft Visual C++ Redistributable latest supported downloads](latest-supported-vc-redist.md).
 
@@ -59,7 +59,7 @@ NTFS file auditing generates [Event 4663: An attempt was made to access an objec
 1. Go to the **Security** logs in the **Event Viewer** by expanding **Windows Logs** > **Security**. The results pane lists security events.
 1. Find the audit events by choosing **Filter Current Log...** in the **Actions** pane. To narrow down the events to **Event ID 4663 (Audit Success for the File System Category)**, enter **4663** in the **Includes/Excludes Event IDs** text box.
 
-For a File Access Auditing Event 4663 example, see [4663(S): An attempt was made to access an object.](/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4663).
+For a File Access Auditing Event 4663 example, see [4663(S): An attempt was made to access an object](/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4663).
 
 ### Use PowerShell to audit VC Runtime usage
 
@@ -173,7 +173,7 @@ ResourceAttributes : S:AI
 
 After you determine which processes use the VC Runtime files, or which applications installed the Visual C++ Redistributable, uninstall those applications or upgrade them to newer versions that don't depend on unsupported VC Runtimes.
 
-Some Microsoft applications require legacy versions of the VC Runtime. For more information, see the [Visual C++ Redistributable and Runtime Libraries FAQ](/lifecycle/faq/visual-c-faq).
+Some Microsoft applications require legacy versions of the VC Runtime. For more information, see the [Visual C++ Redistributable and runtime libraries FAQ](/lifecycle/faq/visual-c-faq).
 
 <a id="vcruntime_install_location"></a>
 
@@ -191,7 +191,7 @@ The following table lists where each version of the VC Runtime is installed.
 
 ## Related content
 
-- [Redistribute Visual C++ files](redistributing-visual-cpp-files.md)\
-- [The latest supported Visual C++ downloads](latest-supported-vc-redist.md)\
-- [Lifecycle FAQ: Visual C++ Redistributable and Runtime Libraries](/lifecycle/faq/visual-c-faq)\
+- [Redistribute Visual C++ files](redistributing-visual-cpp-files.md)
+- [The latest supported Visual C++ downloads](latest-supported-vc-redist.md)
+- [Lifecycle FAQ: Visual C++ Redistributable and runtime libraries](/lifecycle/faq/visual-c-faq)
 - [C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md)
