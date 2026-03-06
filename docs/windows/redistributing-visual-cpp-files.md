@@ -1,6 +1,6 @@
 ---
 title: Redistribute Visual C++ Files
-description: Learn about Visual Studio redistributable libraries and components that you can deploy with your app.
+description: Learn about Visual Studio Redistributable libraries and components that you can deploy with your app.
 ms.date: 01/15/2025
 helpviewer_keywords: ["application deployment [C++], file redistributing", "redistributing applications [C++]", "deploying applications [C++], file redistributing", "file redistribution [C++]", "redistributing applications [C++], about redistributing applications"]
 ms.topic: concept-article
@@ -8,7 +8,7 @@ ms.topic: concept-article
 # Redistribute Visual C++ files
 
 > [!NOTE]
-> Are you here because you're looking for a download of one of the Visual C++ runtime files? Go to the [latest supported Visual C++ Redistributable downloads](latest-supported-vc-redist.md) page.
+> Are you here because you're looking for a download of one of the Visual C++ Runtime files? Go to the [latest supported Visual C++ Redistributable downloads](latest-supported-vc-redist.md) page.
 
 ## Redistributable files and licensing
 
@@ -48,7 +48,7 @@ To deploy redistributable files, you can use the redistributable packages instal
 
 The easiest way to locate the redistributable files is by using environment variables set in a developer command prompt. In Visual Studio 2022, the redistributable files are in the `%VCINSTALLDIR%Redist\MSVC\v143` folder. In the latest version of Visual Studio 2019, you can find the redistributable files in the `%VCINSTALLDIR%Redist\MSVC\v142` folder. In both Visual Studio 2017 and Visual Studio 2019, the files are also found in `%VCToolsRedistDir%`. In Visual Studio 2015, you can find these files in `%VCINSTALLDIR%redist\<locale>`, where `<locale>` is the locale of the redistributable packages.
 
-In Visual Studio 2022 and 2019, merge module files are part of an optional installable component named Visual C++ \<version> Redistributable merge modules in the Visual Studio Installer. The merge modules are installed by default as part of a C++ install in Visual Studio 2017 and Visual Studio 2015. When they're installed in Visual Studio 2022, you can find the redistributable merge modules in `%VCINSTALLDIR%Redist\MSVC\v143\MergeModules`.
+In Visual Studio 2022 and 2019, merge module files are part of an optional installable component named *Visual C++ \<version> Redistributable merge modules* in the Visual Studio Installer. The merge modules are installed by default as part of a C++ install in Visual Studio 2017 and Visual Studio 2015. When they're installed in Visual Studio 2022, you can find the redistributable merge modules in `%VCINSTALLDIR%Redist\MSVC\v143\MergeModules`.
 `
 In the latest version of Visual Studio 2019, the redistributable merge modules are found in `%VCINSTALLDIR%Redist\MSVC\v142\MergeModules`. In both Visual Studio 2019 and Visual Studio 2017, they're also found in `%VCToolsRedistDir%MergeModules`. In Visual Studio 2015, they're found in `Program Files [(x86)]\Common Files\Merge Modules`.
 
@@ -93,13 +93,13 @@ It's also possible to directly install the Redistributable DLLs in the *applicat
 
 If Windows can't find one of the Redistributable DLLs required by your application, it might display a message similar to this one: "This application has failed to start because *library*.dll was not found. Reinstalling the application may fix this problem."
 
-To resolve this kind of error, make sure that your application installer builds correctly. Verify that the Redistributable libraries get deployed correctly on the target system. For more information, see [Understand the dependencies of a Visual C++ application](understanding-the-dependencies-of-a-visual-cpp-application.md).
+To resolve this kind of error, make sure that your application installer builds correctly. Verify that the redistributable libraries get deployed correctly on the target system. For more information, see [Understand the dependencies of a Visual C++ application](understanding-the-dependencies-of-a-visual-cpp-application.md).
 
 ## Related content
 
-- [Redistribute by using merge modules](redistributing-components-by-using-merge-modules.md) describes how to use Visual C++ Redistributable merge modules to install the Visual C++ runtime libraries as shared DLLs in the `%windir%\system32\` folder.
+- [Redistribute by using merge modules](redistributing-components-by-using-merge-modules.md) describes how to use Visual C++ Redistributable merge modules to install the Visual C++ Runtime libraries as shared DLLs in the `%windir%\system32\` folder.
 - [Redistribute Visual C++ ActiveX controls](redistributing-visual-cpp-activex-controls.md) describes how to redistribute an application that uses ActiveX controls.
-- [Redistribute the Microsoft Foundation Class (MFC) library](redistributing-the-mfc-library.md) describes how to redistribute an application that uses MFC.
+- [Redistribute the Microsoft Foundation Class (MFC) Library](redistributing-the-mfc-library.md) describes how to redistribute an application that uses MFC.
 - [Redistribute an Active Template Library (ATL) application](redistributing-an-atl-application.md) describes how to redistribute an application that uses an ATL. In Visual Studio 2012 and later, no ATL library is required.
 - [Deployment examples](deployment-examples.md) links to examples that demonstrate how to deploy Visual C++ applications.
 - [Deploy desktop applications](deploying-native-desktop-applications-visual-cpp.md) introduces Visual C++ deployment concepts and technologies.

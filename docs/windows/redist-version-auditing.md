@@ -14,7 +14,7 @@ ms.topic: how-to
 
 # Audit Visual C++ Runtime version usage
 
-The Microsoft Visual C++ Redistributable and the Visual Studio C++ runtime (collectively, "VC Runtime") are critical components of many applications. Across your network, machines might still be running applications that install and use an out-of-support version of the VC Runtime. You can use NTFS file auditing to identify such usage as a step toward replacing those applications with ones that use a supported version of the VC Runtime. This article walks you through setting up NTFS file auditing, provides troubleshooting tips, and highlights the benefits of regular audits.
+Microsoft Visual C++ Redistributable and Visual Studio C++ Runtime (collectively, "VC Runtime") are critical components of many applications. Across your network, machines might still be running applications that install and use an out-of-support version of the VC Runtime. You can use NTFS file auditing to identify such usage as a step toward replacing those applications with ones that use a supported version of the VC Runtime. This article walks you through setting up NTFS file auditing, provides troubleshooting tips, and highlights the benefits of regular audits.
 
 For more information about the versions of VC Runtime that are no longer supported, see [Microsoft Visual C++ Redistributable latest supported downloads](latest-supported-vc-redist.md).
 
@@ -173,7 +173,7 @@ ResourceAttributes : S:AI
 
 After you determine which processes use the VC Runtime files, or which applications installed the Visual C++ Redistributable, uninstall those applications or upgrade them to newer versions that don't depend on unsupported VC Runtimes.
 
-Some Microsoft applications require legacy versions of the VC Runtime. For more information, see the [Visual C++ Redistributable and runtime libraries FAQ](/lifecycle/faq/visual-c-faq).
+Some Microsoft applications require legacy versions of the VC Runtime. For more information, see the [Visual C++ Redistributable and Runtime libraries FAQ](/lifecycle/faq/visual-c-faq).
 
 <a id="vcruntime_install_location"></a>
 
@@ -193,5 +193,5 @@ The following table lists where each version of the VC Runtime is installed.
 
 - [Redistribute Visual C++ files](redistributing-visual-cpp-files.md)
 - [The latest supported Visual C++ downloads](latest-supported-vc-redist.md)
-- [Lifecycle FAQ: Visual C++ Redistributable and runtime libraries](/lifecycle/faq/visual-c-faq)
+- [Lifecycle FAQ: Visual C++ Redistributable and Runtime libraries](/lifecycle/faq/visual-c-faq)
 - [C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md)

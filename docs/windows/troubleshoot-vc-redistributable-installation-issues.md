@@ -9,7 +9,7 @@ helpviewer_keywords: [ "redist", "vcredist", "Visual [C++] redistributable", "VC
 ---
 # Troubleshoot Visual C++ Redistributable installation problems
 
-This article is for users who experience problems when they install Visual C++ runtime components by using the Visual Studio Installer or the Visual C++ Redistributable (VC Redist) installer.
+This article is for users who experience problems when they install Visual C++ Runtime components by using the Visual Studio Installer or the Visual C++ Redistributable (VC Redist) installer.
 
 If you experience any problems, make sure that you're installing the [latest version of the Visual C++ Redistributable](latest-supported-vc-redist.md).
 
@@ -127,7 +127,7 @@ This method helps if the installer metadata is corrupted. Deleting the installer
 
 ### Generic installation failure
 
-Return code 1603 indicates a generic installation failure produced by the Windows Installer during the installation of the Visual C++ runtime components.
+Return code 1603 indicates a generic installation failure produced by the Windows Installer during the installation of the Visual C++ Runtime components.
 
 Because many factors can produce a 1603 code, the code by itself doesn't provide enough information to diagnose the cause of the problem. Often, the log files produced by the VC Redist installer contain relevant information that might lead to a solution or workaround.
 
@@ -254,11 +254,11 @@ Your report must include the following information about your environment:
 - If you're installing through the Visual Studio Installer, the version of the Visual Studio Installer.
 - The logs collected when you follow the steps in the [Collect failure logs](#collect-failure-logs) section.
 
-Feedback without this information, especially without logs, is non-actionable and might be closed if more information isn't submitted promptly.
+Feedback without this information, especially without logs, is nonactionable and might be closed if more information isn't submitted promptly.
 
 ## Related content
 
 - [Latest supported Visual C++ Redistributable downloads](latest-supported-vc-redist.md)
 - [C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md)
-- [Audit Visual C++ runtime version usage](redist-version-auditing.md)
-- [Lifecycle FAQ: Visual C++ Redistributable and runtime libraries](/lifecycle/faq/visual-c-faq)
+- [Audit Visual C++ Runtime version usage](redist-version-auditing.md)
+- [Lifecycle FAQ: Visual C++ Redistributable and Runtime libraries](/lifecycle/faq/visual-c-faq)
