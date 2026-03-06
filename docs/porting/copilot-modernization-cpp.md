@@ -7,7 +7,7 @@ author: michaelbprice
 ms.author: miprice
 ---
 
-# Using GitHub Copilot app modernization for C++
+# Using GitHub Copilot modernization for C++
 
 GitHub Copilot modernization for C++ helps you upgrade C++ projects to newer MSVC Build Tools versions. If necessary, Copilot will upgrade your project's settings to use the latest MSVC, and then conduct a thorough assessment of the impact of those changes after executing a build. It develops a plan on how to address each identified problem. Once you approve the plan, the agent completes a sequence of tasks and validates that any changes resolved the identified problems. If there remains work to be done, the agent continues iterating until the problems are resolved or you discontinue the conversation.
 
@@ -49,7 +49,7 @@ GitHub Copilot modernization is an agent that operates inside the GitHub Copilot
 
 #### For MSBuild-based codebases targeting an earlier version of MSVC Build Tools
 
-The first time that you load a `.vcxproj` project that targets an earlier version of the MSVC Build Tools, you see an option to [upgrade project settings to use a newer version of the MSVC Build Tools](/visualstudio/install/setup-assistant). If you retarget any of your projects to a new version of MSVC Build Tools and GitHub Copilot app modernization for C++ is enabled, you receive an infobar in Visual Studio prompting you to use GitHub Copilot modernization for C++ to resolve any newly introduced build problems. Selecting **Run GitHub Copilot modernization for C++** launches the GitHub Copilot Chat window, activates the Modernize agent, and provides you with relevant prompts to choose from to get you started.
+The first time that you load a `.vcxproj` project that targets an earlier version of the MSVC Build Tools, you see an option to [upgrade project settings to use a newer version of the MSVC Build Tools](/visualstudio/install/setup-assistant). If you retarget any of your projects to a new version of MSVC Build Tools and GitHub Copilot modernization for C++ is enabled, you receive an infobar in Visual Studio prompting you to use GitHub Copilot modernization for C++ to resolve any newly introduced build problems. Selecting **Run GitHub Copilot modernization for C++** launches the GitHub Copilot Chat window, activates the Modernize agent, and provides you with relevant prompts to choose from to get you started.
 
 ### Start the upgrade
 
