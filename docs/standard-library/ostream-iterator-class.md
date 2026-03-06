@@ -35,31 +35,31 @@ The ostream_iterator class must satisfy the requirements for an output iterator.
 
 |Constructor|Description|
 |-|-|
-|[ostream_iterator](#ostream_iterator)|Constructs an `ostream_iterator` that is initialized and delimited to write to the output stream.|
+|[`ostream_iterator`](#ostream_iterator)|Constructs an `ostream_iterator` that is initialized and delimited to write to the output stream.|
 
 ### Typedefs
 
 |Type name|Description|
 |-|-|
-|[char_type](#char_type)|A type that provides for the character type of the `ostream_iterator`.|
-|[ostream_type](#ostream_type)|A type that provides for the stream type of the `ostream_iterator`.|
-|[traits_type](#traits_type)|A type that provides for the character traits type of the `ostream_iterator`.|
+|[`char_type`](#char_type)|A type that provides for the character type of the `ostream_iterator`.|
+|[`ostream_type`](#ostream_type)|A type that provides for the stream type of the `ostream_iterator`.|
+|[`traits_type`](#traits_type)|A type that provides for the character traits type of the `ostream_iterator`.|
 
 ### Operators
 
 |Operator|Description|
 |-|-|
-|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression \* `i` = `x`.|
-|[operator++](#op_add_add)|A nonfunctional increment operator that returns an `ostream_iterator` to the same object it addressed before the operation was called.|
-|[operator=](#op_eq)|Assignment operator used to implement the output iterator expression \* `i` = `x` for writing to an output stream.|
+|[`operator*`](#op_star)|Dereferencing operator used to implement the output iterator expression `*i = x`.|
+|[`operator++`](#op_add_add)|A nonfunctional increment operator that returns an `ostream_iterator` to the same object it addressed before the operation was called.|
+|[`operator=`](#op_eq)|Assignment operator used to implement the output iterator expression `*i = x` for writing to an output stream.|
 
 ## Requirements
 
 **Header:** \<iterator>
 
-**Namespace:** std
+**Namespace:** `std`
 
-## <a name="char_type"></a> ostream_iterator::char_type
+## <a name="char_type"></a> `ostream_iterator::char_type`
 
 A type that provides for the character type of the iterator.
 
@@ -108,9 +108,9 @@ by intOut are:
 */
 ```
 
-## <a name="op_star"></a> ostream_iterator::operator*
+## <a name="op_star"></a> `ostream_iterator::operator*`
 
-Dereferencing operator used to implement the output iterator expression \* *ii* = *x*.
+Dereferencing operator used to implement the output iterator expression `*ii = x`.
 
 ```cpp
 ostream_iterator<Type, CharType, Traits>& operator*();
@@ -149,15 +149,16 @@ int main( )
    *intOut = 20;
    *intOut = 30;
 }
-/* Output:
+```
+
+```output
 Elements written to output stream:
 10
 20
 30
-*/
 ```
 
-## <a name="op_add_add"></a> ostream_iterator::operator++
+## <a name="op_add_add"></a> `ostream_iterator::operator++`
 
 A nonfunctional increment operator that returns an `ostream_iterator` to the same object it addressed before the operation was called.
 
@@ -199,17 +200,18 @@ int main( )
    *intOut = 20;
    *intOut = 30;
 }
-/* Output:
+```
+
+```output
 Elements written to output stream:
 10
 20
 30
-*/
 ```
 
-## <a name="op_eq"></a> ostream_iterator::operator=
+## <a name="op_eq"></a> `ostream_iterator::operator=`
 
-Assignment operator used to implement the output_iterator expression \* `i` = `x` for writing to an output stream.
+Assignment operator used to implement the output_iterator expression `*i = x` for writing to an output stream.
 
 ```cpp
 ostream_iterator<Type, CharType, Traits>& operator=(const Type& val);
@@ -217,16 +219,16 @@ ostream_iterator<Type, CharType, Traits>& operator=(const Type& val);
 
 ### Parameters
 
-*val*\
+*`val`*\
 The value of the object of type `Type` to be inserted into the output stream.
 
 ### Return Value
 
-The operator inserts *val* into the output stream associated with the object, followed by the delimiter specified in the [ostream_iterator constructor](#ostream_iterator) (if any), and then returns a reference to the `ostream_iterator`.
+The operator inserts *`val`* into the output stream associated with the object, followed by the delimiter specified in the [`ostream_iterator` constructor](#ostream_iterator) (if any), and then returns a reference to the `ostream_iterator`.
 
 ### Remarks
 
-The requirements for an output iterator that the `ostream_iterator` must satisfy require only the expression \* `ii` = `t` be valid and says nothing about the operator or the operator= on their own. This member operator returns **`*this`**.
+The requirements for an output iterator that the `ostream_iterator` must satisfy require only the expression `*ii = t` be valid and says nothing about the `operator*` or the `operator=` on their own. This member operator returns **`*this`**.
 
 ### Example
 
@@ -253,15 +255,16 @@ int main( )
    *intOut = 20;
    *intOut = 30;
 }
-/* Output:
+```
+
+```output
 Elements written to output stream:
 10
 20
 30
-*/
 ```
 
-## <a name="ostream_iterator"></a> ostream_iterator::ostream_iterator
+## <a name="ostream_iterator"></a> `ostream_iterator::ostream_iterator`
 
 Constructs an `ostream_iterator` that is initialized and delimited to write to the output stream.
 
@@ -276,17 +279,17 @@ ostream_iterator(
 
 ### Parameters
 
-*_Ostr*\
-The output stream of type [ostream_iterator::ostream_type](#ostream_type) to be iterated over.
+*`_Ostr`*\
+The output stream of type [`ostream_iterator::ostream_type`](#ostream_type) to be iterated over.
 
-*_Delimiter*\
+*`_Delimiter`*\
 The delimiter that is inserted into the output stream between values.
 
 ### Remarks
 
 The first constructor initializes the output stream pointer with `&_Ostr`. The delimiter string pointer designates an empty string.
 
-The second constructor initializes the output stream pointer with `&_Ostr` and the delimiter string pointer with *_Delimiter*.
+The second constructor initializes the output stream pointer with `&_Ostr` and the delimiter string pointer with *`_Delimiter`*.
 
 ### Example
 
@@ -327,15 +330,15 @@ int main( )
           ostream_iterator<int> ( cout, " : " ) );
    cout << endl;
 }
-/* Output:
+```
+```output
 10
 20
 Elements output without delimiter: 123456
 Elements output with delimiter: 1 : 2 : 3 : 4 : 5 : 6 :
-*/
 ```
 
-## <a name="ostream_type"></a> ostream_iterator::ostream_type
+## <a name="ostream_type"></a> `ostream_iterator::ostream_type`
 
 A type that provides for the stream type of the iterator.
 
@@ -345,13 +348,13 @@ typedef basic_ostream<CharType, Traits> ostream_type;
 
 ### Remarks
 
-The type is a synonym for [basic_ostream](../standard-library/basic-ostream-class.md)< `CharType`, `Traits`>, a stream class of the iostream hierarchy that defines objects that can be used for writing.
+The type is a synonym for [`basic_ostream`](../standard-library/basic-ostream-class.md)< `CharType`, `Traits`>, a stream class of the iostream hierarchy that defines objects that can be used for writing.
 
 ### Example
 
-See [ostream_iterator](#ostream_iterator) for an example of how to declare and use `ostream_type`.
+See [`ostream_iterator`](#ostream_iterator) for an example of how to declare and use `ostream_type`.
 
-## <a name="traits_type"></a> ostream_iterator::traits_type
+## <a name="traits_type"></a> `ostream_iterator::traits_type`
 
 A type that provides for the character traits type of the iterator.
 
@@ -392,13 +395,14 @@ int main( )
 *intOut = 10;
 *intOut = 100;
 }
-/* Output:
+```
+
+```output
 The integers written to output stream
 by intOut are:
 1
 10
 100
-*/
 ```
 
 ## See also
