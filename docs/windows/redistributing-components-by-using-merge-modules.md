@@ -38,7 +38,7 @@ When you use merge modules, you must track and regularly service your applicatio
 
 ## Where to find merge module files
 
-In Visual Studio 2022 and 2019, merge module files are part of an optional installable component named *C++ \<version> Redistributable merge modules* in the Visual Studio Installer. The merge modules are installed by default as part of a C++ installation in Visual Studio 2017 and Visual Studio 2015. When the merge modules are installed in Visual Studio 2022, you can find the Visual C++ Redistributable merge modules in `%VCINSTALLDIR%Redist\MSVC\v143\MergeModules`.
+In Visual Studio 2022 and 2019, merge module files are part of an optional installable component named **C++ \<version> Redistributable MSM** in the Visual Studio Installer. The merge modules are installed by default as part of a C++ installation in Visual Studio 2017 and Visual Studio 2015. When the merge modules are installed in Visual Studio 2022, you can find the Visual C++ Redistributable merge modules in `%VCINSTALLDIR%Redist\MSVC\v143\MergeModules`.
 
 In the latest version of Visual Studio 2019, the merge modules are in `%VCINSTALLDIR%Redist\MSVC\v142\MergeModules`. In both Visual Studio 2019 and Visual Studio 2017, they're also found in `%VCToolsRedistDir%MergeModules`. In Visual Studio 2015, they're found in `Program Files [(x86)]\Common Files\Merge Modules`. For more information and a link to a list of redistributable merge modules, see [Redistribute Visual C++ files](redistributing-visual-cpp-files.md).
 
