@@ -21,7 +21,3 @@ typedef T3 const_reference;
 ## Remarks
 
 It is described here as a synonym for the unspecified type `T3` (typically `Alloc::const_reference`).
-
-## See also
-
-[Sample Container Class](../standard-library/sample-container-class.md)

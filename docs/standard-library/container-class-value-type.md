@@ -21,7 +21,3 @@ typedef T4 value_type;
 ## Remarks
 
 It is described here as a synonym for the unspecified type `T4` (typically `Alloc::value_type`).
-
-## See also
-
-[Sample Container Class](../standard-library/sample-container-class.md)

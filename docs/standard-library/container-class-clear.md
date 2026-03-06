@@ -17,7 +17,3 @@ Calls [erase](../standard-library/container-class-erase.md)([begin](../standard-
 ```cpp
 void clear();
 ```
-
-## See also
-
-[Sample Container Class](../standard-library/sample-container-class.md)

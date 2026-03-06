@@ -21,7 +21,3 @@ typedef T6 const_iterator;
 ## Remarks
 
 It is described here as a synonym for the unspecified type `T6`.
-
-## See also
-
-[Sample Container Class](../standard-library/sample-container-class.md)

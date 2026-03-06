@@ -19,7 +19,3 @@ const_iterator begin() const;
 
 iterator begin();
 ```
-
-## See also
-
-[Sample Container Class](../standard-library/sample-container-class.md)

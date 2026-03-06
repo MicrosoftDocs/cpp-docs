@@ -21,7 +21,3 @@ typedef T1 difference_type;
 ## Remarks
 
 It is described here as a synonym for the unspecified type `T1` (typically `Alloc::difference_type`).
-
-## See also
-
-[Sample Container Class](../standard-library/sample-container-class.md)

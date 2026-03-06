@@ -17,7 +17,3 @@ Returns the length of the controlled sequence, in constant time regardless of th
 ```cpp
 size_type size() const;
 ```
-
-## See also
-
-[Sample Container Class](../standard-library/sample-container-class.md)

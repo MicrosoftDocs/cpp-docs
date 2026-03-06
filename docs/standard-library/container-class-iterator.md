@@ -21,7 +21,3 @@ typedef T5 iterator;
 ## Remarks
 
 It is described here as a synonym for the unspecified type `T5`. An object of type `iterator` can be cast to an object of type [const_iterator](../standard-library/container-class-const-iterator.md).
-
-## See also
-
-[Sample Container Class](../standard-library/sample-container-class.md)

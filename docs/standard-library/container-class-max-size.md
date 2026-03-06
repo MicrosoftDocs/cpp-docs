@@ -17,7 +17,3 @@ Returns the length of the longest sequence that the object can control, in const
 ```cpp
 size_type max_size() const;
 ```
-
-## See also
-
-[Sample Container Class](../standard-library/sample-container-class.md)

@@ -17,7 +17,3 @@ Returns **`true`** for an empty controlled sequence.
 ```cpp
 bool empty() const;
 ```
-
-## See also
-
-[Sample Container Class](../standard-library/sample-container-class.md)

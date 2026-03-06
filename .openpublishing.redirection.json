@@ -13764,6 +13764,71 @@
       "source_path": "docs/overview/whats-new-cpp-docs.md",
       "redirect_url": "../../cpp/overview/what-s-new-for-visual-cpp-in-visual-studio",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/sample-container.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/sample-container-class.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/sample-container-classes.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/sample-container-member-functions.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/sample-container-members.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/sample-container-operators.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/sample-container-specialized-template-functions.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/sample-container-typedefs.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/operator-equality-sample-container.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/operator-greater-than-sample-container.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/operator-less-or-equal-sample-container.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/operator-less-than-sample-container.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/swap-sample-container.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
     }
   ]
 }

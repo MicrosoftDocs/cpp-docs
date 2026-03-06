@@ -19,7 +19,3 @@ const_reverse_iterator rbegin() const;
 
 reverse_iterator rbegin();
 ```
-
-## See also
-
-[Sample Container Class](../standard-library/sample-container-class.md)

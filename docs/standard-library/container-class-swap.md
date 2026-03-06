@@ -23,7 +23,3 @@ void swap(Container& right);
 ## Remarks
 
 If `*this.get_allocator == right.get_allocator`, it does a swap in constant time. Otherwise, it performs element assignments and constructor calls proportional to the number of elements in the two controlled sequences.
-
-## See also
-
-[Sample Container Class](../standard-library/sample-container-class.md)

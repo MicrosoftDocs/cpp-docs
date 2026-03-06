@@ -21,7 +21,3 @@ typedef T0 size_type;
 ## Remarks
 
 It is described here as a synonym for the unspecified type `T0` (typically `Alloc::size_type`).
-
-## See also
-
-[Sample Container Class](../standard-library/sample-container-class.md)
