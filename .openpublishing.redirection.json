@@ -13829,6 +13829,111 @@
       "source_path": "docs/standard-library/swap-sample-container.md",
       "redirect_url": "/cpp/standard-library/stl-containers",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/operator-greater-or-equal.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/operator-inequality.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/container-class-begin.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/container-class-clear.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/container-class-const-iterator.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/container-class-const-reference.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/container-class-const-reverse-iterator.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/container-class-difference-type.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/container-class-empty.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/container-class-end.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/container-class-erase.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/container-class-iterator.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/container-class-max-size.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/container-class-rbegin.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/container-class-reference.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/container-class-rend.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/container-class-reverse-iterator.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/container-class-size.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/container-class-size-type.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/container-class-swap.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/standard-library/container-class-value-type.md",
+      "redirect_url": "/cpp/standard-library/stl-containers",
+      "redirect_document_id": false
     }
   ]
 }
