@@ -37,6 +37,10 @@ The [`/VERSION`](version-version-information.md) option tells the linker to put 
 
 Enables incremental linking. ([`/INCREMENTAL, /INCREMENTAL:NO`](incremental-link-incrementally.md))
 
+### Incremental Link Database File
+
+Specifies incremental link database file location. ([`/ILK:[name]`](ilk-name-incremental-database-file.md))
+
 ### Suppress Startup Banner
 
 The [`/NOLOGO`](nologo-suppress-startup-banner-linker.md) option prevents display of the copyright message and version number.
@@ -223,6 +227,10 @@ The [`/MAPINFO`](mapinfo-include-information-in-mapfile.md) option tells the lin
 
 [`/ASSEMBLYDEBUG`](assemblydebug-add-debuggableattribute.md) emits the `DebuggableAttribute` attribute with debug information tracking and disables JIT optimizations.
 
+### Support C++ Dynamic Debugging
+
+(Preview) Set linker flag [`/DYNAMICDEOPT`](dynamic-deopt-linker.md) to turn on [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging). Place deoptimized breakpoints and step in anywhere with on-demand function deoptimization. Use this mode for debugging optimized code.
+
 ## System Property Page
 
 ### SubSystem
@@ -318,6 +326,10 @@ Specifies link-time code generation. ([`/LTCG`](ltcg-link-time-code-generation.m
 - **Profile Guided Optimization - Instrument** - Use [profile guided optimization](../profile-guided-optimizations.md) with `:PGINSTRUMENT`.
 - **Profile Guided Optimization - Optimization** - Specifies that the linker should use the profile data created after running the instrumented binary to create an optimized image.
 - **Profile Guided Optimization - Update** - Allows and tracks list of input files to be added or modified from what was specified in the `:PGINSTRUMENT` phase.
+
+### Link Time Code Generation Object File
+
+Specifies *`.iobj`* file location. ([`/LTCGOUT:[name]`](ltcgout.md))
 
 ## Embedded IDL Property Page
 
@@ -503,6 +515,10 @@ The [`/ALIGN`](align-section-alignment.md) option specifies the alignment of eac
 - **Enabled** - Enable **`/CLRSupportLastError`**.
 - **Disabled** - Disable **`/CLRSupportLastError`**.
 - **System DLLs Only** - Enable **`/CLRSupportLastError`** for system DLLs only.
+
+### CET Shadow Stack Compatible
+
+Specifies whether to mark an executable image as compatible with Control-flow Enforcement Technology (CET) Shadow Stack. ([`/CETCOMPAT`](cetcompat.md))
 
 ### Image Has Safe Exception Handlers
 
