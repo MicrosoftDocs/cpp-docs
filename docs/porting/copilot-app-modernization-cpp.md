@@ -29,7 +29,7 @@ GitHub Copilot modernization for C++ is enabled by default. To disable or explic
 1. Select (to enable) or clear (to disable) the checkbox for **Enable GitHub Copilot modernization for C++ (preview)**.
 1. Restart Visual Studio for the setting change to take effect.
 
-:::image type="content" source="media/enable-copilot-app-modernization-cpp.png" alt-text="Screenshot of Visual Studio Options dialog. GitHub > Copilot > C/C++ settings are visible. The modernization for C++ checkbox is enabled.":::
+:::image type="content" source="media/enable-copilot-app-modernization-cpp.png" alt-text="Screenshot of Visual Studio Options dialog. GitHub > Copilot > C/C++ settings are visible. The modernization for C++ checkbox is enabled." lightbox="media/enable-copilot-app-modernization-cpp.png":::
 
 ## Upgrade your codebase by using GitHub Copilot modernization for C++
 
@@ -75,7 +75,7 @@ Once the Modernize agent is active, you can instruct it via a prompt to upgrade 
 :::column-end:::
 :::column:::
 
-:::image type="content" source="media/app-modernization-cmake-ice-breaker.png" alt-text="Screenshot of GitHub Copilot Chat window. The dropdown is set to Modernize experience and Resolve build issues by migrating to modern alternatives is highlighted":::
+:::image type="content" source="media/app-modernization-cmake-ice-breaker.png" alt-text="Screenshot of GitHub Copilot Chat window. The dropdown is set to Modernize experience and Resolve build issues by migrating to modern alternatives is highlighted.":::
 
 :::column-end:::
 :::row-end:::
