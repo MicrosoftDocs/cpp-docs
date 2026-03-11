@@ -21,7 +21,6 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | **C++03/11 Core language features** | **Supported** |
 | &emsp;Everything else | VS 2015 <sup>[A](#note_A)</sup> |
 | &emsp;Two-phase name lookup | VS 2017 15.7 <sup>[B](#note_B)</sup> |
-| &emsp;[`CN2634 Expression SFINAE`](https://wg21.link/N2634) | VS 2017 15.7 |
 | &emsp;[`CWG 1213 Value category of arrays and subscripts`](https://cplusplus.github.io/CWG/issues/1213.html) | VS 2022 17.14 |
 | &emsp;[`N2634 Expression SFINAE`](https://wg21.link/N2634) | VS 2017 15.7 |
 | &emsp;[`N1653 C99 preprocessor`](https://wg21.link/N1653) | VS 2019 16.6 <sup>[C](#note_C)</sup> |
