@@ -1,7 +1,7 @@
 ---
 title: "Microsoft C/C++ language conformance"
 description: "Microsoft C and C++ conformance updates by Visual Studio version."
-ms.date: 11/10/2025
+ms.date: 03/10/2026
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ---
@@ -21,6 +21,8 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | **C++03/11 Core language features** | **Supported** |
 | &emsp;Everything else | VS 2015 <sup>[A](#note_A)</sup> |
 | &emsp;Two-phase name lookup | VS 2017 15.7 <sup>[B](#note_B)</sup> |
+| &emsp;[`CN2634 Expression SFINAE`](https://wg21.link/N2634) | VS 2017 15.7 |
+| &emsp;[`CWG 1213 Value category of arrays and subscripts`](https://cplusplus.github.io/CWG/issues/1213.html) | VS 2022 17.14 |
 | &emsp;[`N2634 Expression SFINAE`](https://wg21.link/N2634) | VS 2017 15.7 |
 | &emsp;[`N1653 C99 preprocessor`](https://wg21.link/N1653) | VS 2019 16.6 <sup>[C](#note_C)</sup> |
 | **C++03/11 Core language features (Defect reports)** | **Supported** |
@@ -219,6 +221,7 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[`P2513R4 char8_t Compatibility and Portability Fix`](https://wg21.link/p2513r4) | VS 2022 17.4 <sup>[DR](#note_DR)</sup> |
 | &emsp;[`P2579R0 Mitigation strategies for P2036 "Changing scope for lambda trailing-return-type"`](https://wg21.link/p2579r0) | MSVC Build Tools version 14.50 <sup>[24](#note_24)</sup> |
 | &emsp;[`P2582R1 Wording for class template argument deduction from inherited constructors`](https://wg21.link/p2582r1) | no |
+| &emsp;[`P2589R1 static operator[]`](https://wg21.link/p2589r1) | VS 2022 17.14 <sup>[23](#note_23)</sup> |
 
 ## C++ Standard library features
 
