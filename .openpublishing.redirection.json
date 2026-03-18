@@ -1,6 +1,566 @@
 {
   "redirections": [
     {
+      "source_path": "docs/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/cpp-amp-overview.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/cpp-amp-overview",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/graphics-cpp-amp.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/graphics-cpp-amp",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/using-accelerator-and-accelerator-view-objects.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/using-cpp-amp-in-windows-store-apps.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/using-cpp-amp-in-windows-store-apps",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/using-lambdas-function-objects-and-restricted-functions.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/using-lambdas-function-objects-and-restricted-functions",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/using-tiles.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/using-tiles",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/walkthrough-debugging-a-cpp-amp-application.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/walkthrough-matrix-multiplication.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/walkthrough-matrix-multiplication",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/accelerator-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/accelerator-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/accelerator-view-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/accelerator-view-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/accelerator-view-removed-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/accelerator-view-removed-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/adopt-d3d-access-lock-t-structure.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/adopt-d3d-access-lock-t-structure",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/array-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/array-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/array-view-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/array-view-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/completion-future-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/completion-future-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/concurrency-direct3d-namespace-functions-amp.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/concurrency-direct3d-namespace-functions-amp",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/concurrency-direct3d-namespace.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/concurrency-direct3d-namespace",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/concurrency-fast-math-namespace-functions.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/concurrency-fast-math-namespace-functions",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/concurrency-fast-math-namespace.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/concurrency-fast-math-namespace",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/concurrency-graphics-direct3d-namespace-functions.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/concurrency-graphics-direct3d-namespace-functions",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/concurrency-graphics-direct3d-namespace.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/concurrency-graphics-direct3d-namespace",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/concurrency-graphics-namespace-enums.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/concurrency-graphics-namespace-enums",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/concurrency-graphics-namespace-functions.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/concurrency-graphics-namespace-functions",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/concurrency-graphics-namespace.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/concurrency-graphics-namespace",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/concurrency-namespace-constants-amp.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/concurrency-namespace-constants-amp",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/concurrency-namespace-cpp-amp.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/concurrency-namespace-cpp-amp",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/concurrency-namespace-enums-amp.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/concurrency-namespace-enums-amp",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/concurrency-namespace-functions-amp.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/concurrency-namespace-functions-amp",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/concurrency-namespace-operators-amp.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/concurrency-namespace-operators-amp",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/concurrency-precise-math-namespace-functions.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/concurrency-precise-math-namespace-functions",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/concurrency-precise-math-namespace.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/concurrency-precise-math-namespace",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/double-2-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/double-2-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/double-3-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/double-3-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/double-4-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/double-4-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/extent-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/extent-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/float-2-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/float-2-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/float-3-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/float-3-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/float-4-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/float-4-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/index-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/index-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/int-2-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/int-2-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/int-3-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/int-3-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/int-4-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/int-4-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/invalid-compute-domain-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/invalid-compute-domain-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/norm-2-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/norm-2-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/norm-3-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/norm-3-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/norm-4-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/norm-4-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/norm-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/norm-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/out-of-memory-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/out-of-memory-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/reference-cpp-amp.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/reference-cpp-amp",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/runtime-exception-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/runtime-exception-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/sampler-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/sampler-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/scoped-d3d-access-lock-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/scoped-d3d-access-lock-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/short-vector-structure.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/short-vector-structure",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/short-vector-traits-structure.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/short-vector-traits-structure",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/texture-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/texture-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/texture-view-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/texture-view-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/tile-barrier-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/tile-barrier-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/tiled-extent-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/tiled-extent-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/tiled-index-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/tiled-index-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/uint-2-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/uint-2-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/uint-3-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/uint-3-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/uint-4-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/uint-4-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/uninitialized-object-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/uninitialized-object-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/unorm-2-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/unorm-2-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/unorm-3-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/unorm-3-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/unorm-4-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/unorm-4-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/unorm-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/unorm-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/unsupported-feature-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/unsupported-feature-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
+      "source_path": "docs/parallel/amp/reference/writeonly-texture-view-class.md",
+      "redirect_url": "/previous-versions/cpp/parallel/amp/reference/writeonly-texture-view-class",
+      "redirect_document_id": false,
+      "monikers": [
+        "msvc-170"
+      ]
+    },
+    {
       "source_path": "docs/windows/desktop-applications-visual-cpp.md",
       "redirect_url": "/cpp/windows/overview-of-windows-programming-in-cpp",
       "redirect_document_id": true
