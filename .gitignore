@@ -10,6 +10,7 @@ _themes.VS.Modern/
 #.github/
 .openpublishing.buildcore.ps1
 .vscode/
+.squad/
 
 # Documentation build
 /docs/vcppdocs
