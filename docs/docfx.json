@@ -6,15 +6,15 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "group": "group-vc2015",
-        "src": ".",
         "exclude": [
           "**/2019/**",
           "**/2017/**",
           "**/obj/**",
           "vcppdocs/**",
           "**/includes/**"
-        ]
+        ],
+        "src": ".",
+        "group": "group-vc2015"
       }
     ],
     "resource": [
@@ -25,13 +25,13 @@
           "**/*.gif",
           "**/*.svg"
         ],
-        "group": "group-vc2015",
-        "src": ".",
         "exclude": [
           "**/obj/**",
           "vcppdocs/**",
           "**/includes/**"
-        ]
+        ],
+        "src": ".",
+        "group": "group-vc2015"
       }
     ],
     "overwrite": [],
@@ -63,9 +63,9 @@
     },
     "fileMetadata": {
       "feedback_help_link_url": {
-         "dotnet/*.md": "https://learn.microsoft.com/en-us/answers/tags/308/dotnetcli",
-         "ide/*.md": "https://learn.microsoft.com/en-us/answers/tags/176/vs",
-         "windows/*.md": "https://learn.microsoft.com/en-us/answers/tags/184/windows-app-sdk"
+        "dotnet/*.md": "https://learn.microsoft.com/en-us/answers/tags/308/dotnetcli",
+        "ide/*.md": "https://learn.microsoft.com/en-us/answers/tags/176/vs",
+        "windows/*.md": "https://learn.microsoft.com/en-us/answers/tags/184/windows-app-sdk"
       },
       "ms.tgt_pltfrm": {
         "linux/**.md": "Linux"
@@ -175,7 +175,7 @@
         "c-runtime-library/**.md": "3650-days",
         "c-runtime-library/**.yml": "3650-days",
         "cpp/**.md": "1095-days",
-	"cpp/**.yml": "1095-days",
+        "cpp/**.yml": "1095-days",
         "cppcx/**.md": "3650-days",
         "cppcx/**.yml": "3650-days",
         "cross-platform/**.md": "1825-days",
@@ -342,17 +342,22 @@
         "text/**.yml": "twhitney",
         "windows/**.md": "twhitney",
         "windows/**.yml": "twhitney"
+      },
+      "exclude_monikers": {
+        "parallel/amp/**/*.{md,yml,yaml}": [
+          "msvc-170"
+        ]
       }
     },
     "template": [],
+    "markdownEngineName": "markdig",
     "xref": [],
-    "dest": "vcppdocs",
     "groups": {
       "group-vc2015": {
-        "moniker_range": ">= msvc-140",
-        "dest": "vcppdocs-2015"
+        "dest": "vcppdocs-2015",
+        "moniker_range": ">= msvc-140"
       }
     },
-    "markdownEngineName": "markdig"
+    "dest": "vcppdocs"
   }
 }
