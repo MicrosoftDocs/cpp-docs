@@ -62,6 +62,27 @@ The **`/ZI`** option forces both the [`/Gy` (Enable Function-Level Linking)](gy-
 
 1. Modify the **Debug Information Format** property. Choose **OK** to save your changes.
 
+### To set this compiler option in a project file
+
+To set the debug information format in a `.vcxproj` project file, use the `<DebugInformationFormat>` property within a `<ClCompile>` item definition. The following table shows the MSBuild XML values and their corresponding compiler options:
+
+| MSBuild XML value | Compiler option | Description |
+|---|---|---|
+| `None` | *(none)* | No debug information |
+| `OldStyle` | **`/Z7`** | C7-compatible debug information |
+| `ProgramDatabase` | **`/Zi`** | Program database (PDB) |
+| `EditAndContinue` | **`/ZI`** | PDB with Edit and Continue support |
+
+For example, to set the debug information format to program database in a release configuration:
+
+```xml
+<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+  <ClCompile>
+    <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+  </ClCompile>
+</ItemDefinitionGroup>
+```
+
 ### To set this compiler option programmatically
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DebugInformationFormat%2A>.
