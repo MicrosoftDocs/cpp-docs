@@ -61,7 +61,7 @@ Classes that simplify the writing of programs that use data parallelism or task 
 Reference for the Microsoft implementation of the OpenMP API.
 
 [Proxy library](https://github.com/microsoft/proxy)\
-A header-only C++20 library for using polymorphism in C++ without inheritance. For API reference information, see [Proxy 3 Specifications](https://microsoft.github.io/proxy/docs/specifications.html)
+A header-only C++20 library for using polymorphism in C++ without inheritance. For API reference information, see [Proxy 4 Specifications](https://github.com/microsoft/proxy/tree/main/docs/spec#readme)
 
 [SafeInt library](../safeint/safeint-library.md)\
 A portable library that can be used with MSVC, GCC, or Clang to help prevent integer overflows.
