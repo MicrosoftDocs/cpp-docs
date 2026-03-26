@@ -8,6 +8,9 @@ monikerRange: '>=msvc-170'
 ---
 # Serial Monitor
 
+> [!NOTE]
+> This article is no longer maintained. It references a non-Microsoft extension and might not reflect the current state of the Serial Monitor 2 extension.
+
 ## Overview
 
 The Serial Monitor allows users to configure, monitor, and communicate with serial ports.
