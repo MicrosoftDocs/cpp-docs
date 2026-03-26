@@ -1,7 +1,7 @@
 ---
 title: "C/C++ Project Properties (Visual Studio)"
 description: "Reference guide to the Visual Studio Microsoft C/C++ project Property Pages properties."
-ms.date: 6/9/2023
+ms.date: 3/26/2026
 ms.topic: "article"
 f1_keywords: ["VC.Project.VCCLCompilerTool.AdditionalModuleDirectories", "VC.Project.VCCLCompilerTool.ScanSourceForModuleDependencies"]
 ---
