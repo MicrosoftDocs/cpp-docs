@@ -69,7 +69,7 @@ To set the debug information format in a `.vcxproj` project file, use the `<Debu
 | MSBuild XML value | Compiler option | Description |
 |---|---|---|
 | `None` | *(none)* | No debug information |
-| `OldStyle` | **`/Z7`** | C7-compatible debug information |
+| `OldStyle` | **`/Z7`** | Full symbolic debug information embedded in .obj files, no PDB |
 | `ProgramDatabase` | **`/Zi`** | Program database (PDB) |
 | `EditAndContinue` | **`/ZI`** | PDB with Edit and Continue support |
 
