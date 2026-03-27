@@ -23,7 +23,7 @@ Specifies that the executable shouldn't be marked compatible with CET Shadow Sta
 
 Control-flow Enforcement Technology (CET) Shadow Stack is a computer processor feature. It provides capabilities to defend against return-oriented programming (ROP) based malware attacks. For more information, see [A Technical Look at Intel's Control-flow Enforcement Technology](https://software.intel.com/content/www/us/en/develop/articles/technical-look-control-flow-enforcement-technology.html).
 
-The **`/CETCOMPAT`** linker option tells the linker to mark the binary as CET Shadow Stack-compatible. **`/CETCOMPAT:NO`** marks the binary as not compatible with CET Shadow Stack. If both options are specified on the command line, the last one specified is used. This switch is currently only applicable to x86 and x64 architectures.
+The **`/CETCOMPAT`** linker option tells the linker to mark the binary as CET Shadow Stack-compatible. **`/CETCOMPAT:NO`** marks the binary as not compatible with CET Shadow Stack. If both options are specified on the command line, the last one specified is used. This switch is currently only applicable to the x64 architecture.
 
 The **`/CETCOMPAT`** option is available beginning in Visual Studio 2019.
 
