@@ -346,7 +346,8 @@
       "exclude_monikers": {
         "parallel/amp/**/*.{md,yml,yaml}": [
           "msvc-170",
-          "msvc-180"
+          "msvc-180",
+          "msvc-140"
         ]
       }
     },
