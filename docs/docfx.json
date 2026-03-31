@@ -347,7 +347,8 @@
         "parallel/amp/**/*.{md,yml,yaml}": [
           "msvc-170",
           "msvc-180",
-          "msvc-140"
+          "msvc-140",
+          "msvc-150"
         ]
       }
     },
