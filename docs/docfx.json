@@ -342,14 +342,6 @@
         "text/**.yml": "twhitney",
         "windows/**.md": "twhitney",
         "windows/**.yml": "twhitney"
-      },
-      "exclude_monikers": {
-        "parallel/amp/**/*.{md,yml,yaml}": [
-          "msvc-170",
-          "msvc-180",
-          "msvc-140",
-          "msvc-150"
-        ]
       }
     },
     "template": [],
