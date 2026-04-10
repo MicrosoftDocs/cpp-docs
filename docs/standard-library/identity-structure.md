@@ -10,6 +10,9 @@ ms.assetid: 990756fd-7969-4b39-ad7e-0878e8dac8fd
 
 A struct that provides a type definition as the template parameter.
 
+> [!NOTE]
+> This Microsoft-specific `identity` structure from `<utility>` is deprecated and may not be available in all versions of Visual Studio. In C++20 and later, use `std::identity` from [`<functional>`](functional.md) instead, which is the standard-conforming equivalent.
+
 ## Syntax
 
 ```cpp
