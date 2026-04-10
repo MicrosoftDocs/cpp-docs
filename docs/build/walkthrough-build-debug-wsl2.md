@@ -24,10 +24,10 @@ CMake Presets integration in Visual Studio supports the WSL 2 toolset. To learn 
 
 ## Install the build tools
 
-Install the tools necessary to build and debug on WSL 2. You'll install a recent version of CMake using Visual Studio's CMake binary deployment in a later step.
+Install the tools necessary to build and debug on WSL 2. You install a recent version of CMake using Visual Studio's CMake binary deployment in a later step.
 
 1. Install WSL and a WSL 2 distro by following the instructions at [Install WSL](/windows/wsl/install-win10).
-1. In the Visual Studio installer, verify that **C++ CMake tools for Linux** is installed. To do that, choose **Modify** for your version of Visual Studio. Under the **Individual components** tab, search for **C++ CMake tools for Linux and Mac** and make sure it is selected and installed. This component is required for Visual Studio to detect your WSL installations.
+1. In the Visual Studio installer, verify that **C++ CMake tools for Linux** is installed. To do that, choose **Modify** for your version of Visual Studio. Under the **Individual components** tab, search for **C++ CMake tools for Linux and Mac** and make sure it's selected and installed. This component is required for Visual Studio to detect your WSL installations.
 1. Assuming your distro uses `apt` (this walkthrough uses Ubuntu), use the following commands to install the required build tools on your WSL 2 distro:
 
     ```bash
@@ -35,7 +35,7 @@ Install the tools necessary to build and debug on WSL 2. You'll install a recent
     sudo apt install cmake g++ gdb make ninja-build rsync zip
     ```
 
-    The `apt` commands above install:
+    Which installs:
     
     * A C++ compiler
     * `gdb`
@@ -55,9 +55,9 @@ Visual Studio defines a CMake project as a folder with a `CMakeLists.txt` file a
     :::image type="content" source="media/vs2022-get-started.png" alt-text="Screenshot of the Visual Studio 2022 get started dialog box.":::
     The available options are: Clone a repository, Open a project or solution, Open a local folder, Create a new project, or Continue without code.":::
 
-4. In the **Search for templates** textbox, type "cmake".  Choose the **CMake Project** type and select **Next**. Give the project a name and location, and then select **Create**.
+4. In the **Search for templates** textbox, type "cmake". Choose the **CMake Project** type and select **Next**. Give the project a name and location, and then select **Create**.
 
-5. Enable Visual Studio's CMake Presets integration. Select **Tools** > **Options** > **CMake** > **General**. Select **Prefer using CMake Presets for configure, build, and test**, then select **OK**. Instead, you could have added a `CMakePresets.json` file to the root of the project. For more information, see [Enable CMake Presets integration](cmake-presets-vs.md#enable-cmakepresets-json-integration).
+5. Enable Visual Studio's CMake Presets integration. Select **Tools** > **Options** > **CMake** > **General**. Select **Prefer using CMake Presets for configure, build, and test**, then select **OK**. Alternatively, you could add a `CMakePresets.json` file to the root of the project. For more information, see [Enable CMake Presets integration](cmake-presets-vs.md#enable-cmakepresets-json-integration).
 
     :::image type="complex" source="media/cmake-general-prefer-cmake-presets.png" alt-text="Screenshot of the Visual Studio project options. Cmake > General is selected.":::
     In the CMake configuration file group, 'Use CMake Presets if available, otherwise use CMakeSettings.json' is called out and is selected.
@@ -70,7 +70,7 @@ Visual Studio defines a CMake project as a folder with a `CMakeLists.txt` file a
     :::image type="content" source="media/vs2022-target-system-dropdown.png" alt-text="Screenshot of the Visual Studio target system dropdown. WSL2: Ubuntu-20.04 is the selected.":::
 
     > [!NOTE]
-    > If Visual Studio starts to configure your project automatically, read step 11 to manage CMake binary deployment, and then continue to the step below. To customize this behavior, see [Modify automatic configuration and cache notifications](cmake-presets-vs.md#modify-automatic-configuration-and-cache-notifications).
+    > If Visual Studio starts to configure your project automatically, read step 11 to manage CMake binary deployment, and then continue to the following step. To customize this behavior, see [Modify automatic configuration and cache notifications](cmake-presets-vs.md#modify-automatic-configuration-and-cache-notifications).
 
 8. Use the dropdown in the middle to select your active Configure Preset. Configure Presets tell Visual Studio how to invoke CMake and generate the underlying build system. In step 7, the active Configure Preset is the **linux-default** Preset created by Visual Studio. To create a custom Configure Preset, select **Manage Configurations…** For more information about Configure Presets, see [Select a Configure Preset](cmake-presets-vs.md#select-a-configure-preset) and [Edit Presets](cmake-presets-vs.md#edit-presets).
 
@@ -134,7 +134,7 @@ If you have a MSBuild-based Linux project, then you can upgrade to the WSL 2 too
 
 :::image type="content" source="media/wsl-platform-toolset-selection.png" alt-text="Screenshot of a Visual Studio dropdown with Platform Toolset selected, and to the right, another dropdown with WSL2 Toolset selected.":::
 
-If you're targeting a WSL 2 distribution and you don't want to use the WSL 2 toolset, then in the **Platform Toolset** dropdown, select the **GCC for Windows Subsystem for Linux** or **Clang for Windows Subsystem for Linux** toolset. If either of these toolsets are selected, Visual Studio doesn't maintain a copy of your source files in the WSL file system and instead accesses source files over the mounted Windows drive (`/mnt/`…). System headers are still automatically copied to the Windows file system to provide a native IntelliSense experience. Customize the headers that are included or excluded from this copy in **Property Pages** > **General**.
+If you're targeting a WSL 2 distribution and you don't want to use the WSL 2 toolset, then in the **Platform Toolset** dropdown, select the **GCC for Windows Subsystem for Linux** or **Clang for Windows Subsystem for Linux** toolset. If either of these toolsets are selected, Visual Studio doesn't maintain a copy of your source files in the WSL file system, and instead accesses source files over the mounted Windows drive (`/mnt/`…). System headers are still automatically copied to the Windows file system to provide a native IntelliSense experience. Customize the headers that are included or excluded from this copy in **Property Pages** > **General**.
 
 In most cases, it's best to use the WSL 2 toolset with WSL 2 distributions because WSL 2 is slower when project files are stored in the Windows file system. To learn more, see [Comparing WSL 1 and WSL 2](/windows/wsl/compare-versions).
 

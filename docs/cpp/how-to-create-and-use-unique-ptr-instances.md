@@ -3,16 +3,17 @@ description: "Learn more about: How to: Create and use unique_ptr instances"
 title: "How to: Create and use unique_ptr instances"
 ms.custom: "how-to"
 ms.date: 04/10/2026
+ai-usage: ai-assisted
 ---
 # How to: Create and use unique_ptr instances
 
-A [unique_ptr](../standard-library/unique-ptr-class.md) does not share its pointer. It cannot be copied to another `unique_ptr`, passed by value to a function, or used in any C++ Standard Library algorithm that requires copies to be made. A `unique_ptr` can only be moved. This means that the ownership of the memory resource is transferred to another `unique_ptr` and the original `unique_ptr` no longer owns it. We recommend that you restrict an object to one owner, because multiple ownership adds complexity. When you need a smart pointer for a plain C++ object, use `unique_ptr`, and when you construct a `unique_ptr`, use the [`make_unique`](../standard-library/memory-functions.md#make_unique) helper function.
+A [unique_ptr](../standard-library/unique-ptr-class.md) doesn't share its pointer. It can't be copied to another `unique_ptr`, passed by value to a function, or used in any C++ Standard Library algorithm that requires copies to be made. A `unique_ptr` can only be moved. This means that the ownership of the memory resource is transferred to another `unique_ptr` and the original `unique_ptr` no longer owns it. We recommend that you restrict an object to one owner, because multiple ownership adds complexity. When you need a smart pointer for a plain C++ object, use `unique_ptr`, and when you construct a `unique_ptr`, use the [`make_unique`](../standard-library/memory-functions.md#make_unique) helper function.
 
 The following diagram illustrates the transfer of ownership between two `unique_ptr` instances.
 
 ![Diagram that shows moving the ownership of a unique pointer.](media/unique_ptr.png)
 
-`unique_ptr` is defined in the `<memory>` header in the C++ Standard Library. It is exactly as efficient as a raw pointer and can be used in C++ Standard Library containers. The addition of `unique_ptr` instances to C++ Standard Library containers is efficient because the move constructor of the `unique_ptr` eliminates the need for a copy operation.
+`unique_ptr` is defined in the `<memory>` header in the C++ Standard Library. It's exactly as efficient as a raw pointer and can be used in C++ Standard Library containers. The addition of `unique_ptr` instances to C++ Standard Library containers is efficient because the move constructor of the `unique_ptr` eliminates the need for a copy operation.
 
 To use `unique_ptr` and `make_unique`, include the `<memory>` header. The following examples each compile and run as standalone programs.
 
@@ -69,7 +70,7 @@ Engine destroyed
 
 ## Example 4
 
-You can use [make_unique](../standard-library/memory-functions.md#make_unique) to create a `unique_ptr` to an array. `make_unique<int[]>(5)` creates a 5-element array that is value-initialized to zero. You can't pass individual element values to `make_unique`, so assign them after creation.
+You can use [make_unique](../standard-library/memory-functions.md#make_unique) to create a `unique_ptr` to an array. `make_unique<int[]>(5)` creates a five element array that is value-initialized to zero. You can't pass individual element values to `make_unique`, so assign them after creation.
 
 [!code-cpp[stl_smart_pointers#213](codesnippet/CPP/how-to-create-and-use-unique-ptr-instances_4.cpp)]
 
