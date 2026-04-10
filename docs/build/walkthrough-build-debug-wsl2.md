@@ -27,6 +27,7 @@ CMake Presets integration in Visual Studio supports the WSL 2 toolset. To learn 
 Install the tools necessary to build and debug on WSL 2. You'll install a recent version of CMake using Visual Studio's CMake binary deployment in a later step.
 
 1. Install WSL and a WSL 2 distro by following the instructions at [Install WSL](/windows/wsl/install-win10).
+1. In the Visual Studio installer, verify that **C++ CMake tools for Linux** is installed. To do that, choose **Modify** for your version of Visual Studio. Under the **Individual components** tab, search for **C++ CMake tools for Linux and Mac** and make sure it is selected and installed. This component is required for Visual Studio to detect your WSL installations.
 1. Assuming your distro uses `apt` (this walkthrough uses Ubuntu), use the following commands to install the required build tools on your WSL 2 distro:
 
     ```bash

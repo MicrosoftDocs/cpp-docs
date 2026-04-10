@@ -1,9 +1,17 @@
-    // Create a unique_ptr to an array of 5 integers.
-    auto p = make_unique<int[]>(5);
+// Compile with: cl /EHsc /std:c++17
 
-    // Initialize the array.
-    for (int i = 0; i < 5; ++i)
-    {
+#include <iostream>
+#include <memory>
+
+int main() {
+    // Create a unique_ptr to an array of 5 integers.
+    // The elements are value-initialized to 0.
+    auto p = std::make_unique<int[]>(5);
+
+    // Assign values to the array elements.
+    for (int i = 0; i < 5; ++i) {
         p[i] = i;
-        wcout << p[i] << endl;
+        std::cout << p[i] << "\n";
     }
+    // The array is automatically deleted when p goes out of scope.
+}
