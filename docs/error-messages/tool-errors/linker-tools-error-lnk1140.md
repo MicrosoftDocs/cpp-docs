@@ -11,16 +11,13 @@ helpviewer_keywords: ["LNK1140"]
 
 ## Remarks
 
-The project exceeds the maximum number of modules allowed in a program database (PDB) file. This limit was originally 4,096 modules and was later increased to 65,535.
+The project exceeds the maximum number of modules allowed in a program database (PDB) file. This limit was originally 4,096 modules and was later increased to 65,533.
 
-This error can also occur when other PDB size limits are exceeded, such as very large symbol tables or an excessive number of type records.
+This error can also occur when other PDB size limits are exceeded, such as too many symbols or an excessive number of types.
 
 ### To fix by using the following possible solutions
 
 1. Relink using [/PDB:NONE](../../build/reference/pdb-use-program-database.md).
-
 1. Compile some modules without debugging information.
-
 1. Reduce the number of modules.
-
 1. Split your project into multiple smaller libraries or DLLs.

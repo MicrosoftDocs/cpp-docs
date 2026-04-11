@@ -1,24 +1,25 @@
 ---
 title: "scoped_lock Class"
 description: "Learn more about: scoped_lock Class"
-ms.date: 11/04/2016
+ms.date: 04/10/2026
 f1_keywords: ["mutex/std::scoped_lock"]
+ai-usage: ai-generated
 ---
 # scoped_lock Class
 
-The `scoped_lock` class is an RAII (Resource Acquisition Is Initialization) wrapper that acquires one or more mutexes on construction and releases them on destruction. When multiple mutexes are provided, they are locked using a deadlock-avoidance algorithm (equivalent to `std::lock`), which prevents deadlocks regardless of the order in which different threads lock the same set of mutexes. Introduced in C++17.
+The `scoped_lock` class acquires one or more mutexes on construction and releases them on destruction. When multiple mutexes are provided, a deadlock-avoidance algorithm (equivalent to `std::lock`) is used to prevent deadlocks. Introduced in C++17.
 
 ## Syntax
 
 ```cpp
 template <class... MutexTypes>
 class scoped_lock {
-    using mutex_type = Mutex; // If MutexTypes... consists of the single type Mutex
+    using mutex_type = Mutex;
     explicit scoped_lock(MutexTypes&... m);
     explicit scoped_lock(MutexTypes&... m, adopt_lock_t);
     ~scoped_lock();
-    scoped_lock(const scoped_lock&) = delete;
-    scoped_lock& operator=(const scoped_lock&) = delete;
+    scoped_lock(const scoped_lock&) = delete; // prevent creating a new scoped_lock by copying an existing one
+    scoped_lock& operator=(const scoped_lock&) = delete; // prevent assigning one scoped_lock to another
 };
 ```
 
@@ -27,6 +28,8 @@ class scoped_lock {
 The `scoped_lock` class manages locking and unlocking of one or more mutexes throughout a scope. When you create a `scoped_lock` object, it acquires ownership of the mutexes passed to it. When the `scoped_lock` object is destroyed (for example, when it goes out of scope), the mutexes are released. This ensures that mutexes are always properly released, even if an exception is thrown.
 
 If you need to lock only a single mutex, consider using [`lock_guard`](lock-guard-class.md) or [`unique_lock`](unique-lock-class.md). Use `scoped_lock` when you need to lock multiple mutexes simultaneously without risk of deadlock.
+
+The `scoped_lock` class isn't copyable.
 
 ### Constructors
 
@@ -88,13 +91,13 @@ int main()
 
 ## Requirements
 
-**Header:** \<mutex>
+**Header:** `<mutex>`
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 
 [Header files reference](../standard-library/header-files-reference.md)\
-[`lock_guard` Class](lock-guard-class.md)\
-[`unique_lock` Class](unique-lock-class.md)\
+[`lock_guard` class](lock-guard-class.md)\
+[`unique_lock` class](unique-lock-class.md)\
 [`<mutex>`](mutex.md)

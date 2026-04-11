@@ -123,9 +123,9 @@ See [Behavior summary](#behavior-summary) for details.
 Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`snprintf`** is no longer identical to **`_snprintf`**. The **`snprintf`** behavior is now C99 standard conformant. The differences are:
 
 - **`snprintf`** always null-terminates the buffer (even when truncating), and returns the total number of characters that would have been written if the buffer were large enough (not counting the null-terminator).
-- **`_snprintf`** does **not** null-terminate the buffer when the output is truncated, and returns **-1** when truncation occurs.
+- **`_snprintf`** doesn't null-terminate the buffer when the output is truncated, and returns `-1` when truncation occurs.
 
-Because `_snprintf` doesn't write a null-terminator when it truncates, it can fit one more data character into the same buffer size. However, the resulting string is not null-terminated, so you must handle termination yourself.
+Because `_snprintf` doesn't write a null-terminator when it truncates, it can fit one more character into the same buffer size. However, the resulting string is not null-terminated, so you must handle termination yourself.
 
 - **`snprintf`** and the **`_snprintf`** family of functions format and store *`count`* or fewer characters in *`buffer`*.
 - **`snprintf`** always stores a terminating `NULL` character, truncating the output if necessary.
