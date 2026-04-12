@@ -97,7 +97,6 @@ int main()
 
 ## See also
 
-[Header files reference](../standard-library/header-files-reference.md)\
 [`lock_guard` class](lock-guard-class.md)\
 [`unique_lock` class](unique-lock-class.md)\
 [`<mutex>`](mutex.md)

@@ -25,7 +25,6 @@ The linker tools LINK, LIB, DUMPBIN, and EDITBIN share a common executable that 
 | [Linker Tools Error LNK1120](linker-tools-error-lnk1120.md) | *number* unresolved externals |
 | [Linker Tools Error LNK1123](linker-tools-error-lnk1123.md) | failure during conversion to COFF: file invalid or corrupt |
 | [Linker Tools Error LNK1127](linker-tools-error-lnk1127.md) | library is corrupt |
-| Linker Tools Error LNK1131 | no library specified |
 | [Linker Tools Error LNK1136](linker-tools-error-lnk1136.md) | invalid or corrupt file |
 | [Linker Tools Error LNK1140](linker-tools-error-lnk1140.md) | too many modules for program database; link with /PDB:NONE |
 | [Linker Tools Error LNK1141](linker-tools-error-lnk1141.md) | failure during build of exports file |
