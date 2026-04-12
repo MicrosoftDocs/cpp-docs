@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: identity Structure"
 title: "identity Structure"
-ms.date: "11/04/2016"
+ms.date: 04/11/2026
 f1_keywords: ["utility/std::identity"]
 helpviewer_keywords: ["identity class", "identity structure"]
 ai-usage: ai-assisted
@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 `std::identity` (introduced in C++20) is a function object whose `operator()` returns its argument unchanged.
 
-Many standard library APIs take a callable argument such as a projection or transformation function. If you need to pass a callable but don't want to change the data, pass `std::identity`. This is common in ranges algorithms. Most `<algorithm>` ranges overloads have a projection parameter that defaults to `std::identity{}`.
+Many standard library APIs take a callable argument such as a projection or transformation function. If you need to pass a callable but don't want to change the data, pass `std::identity`. This is common in ranges algorithms. Many `<algorithm>` ranges overloads have a projection parameter that defaults to `std::identity{}`.
 
 ### Syntax
 
@@ -32,7 +32,7 @@ struct identity
 
 The `is_transparent` member type is a tag that marks `std::identity` as a transparent function object. Its presence indicates that algorithms can perform comparisons or projections without needing to convert types to a common form first. This is useful for associative containers and algorithms that support heterogeneous lookup, allowing them to compare different types directly without constructing temporary objects. 
 
-### Example
+### Examples
 
 ```cpp
 #include <algorithm>
@@ -65,8 +65,6 @@ int main()
     // Output: 1 1 2 3 4 5 6 9
 }
 ```
-
-### Why `is_transparent` matters
 
 This example searches a `std::vector<std::string>` with a `std::string_view` key. Because `std::identity` has the `is_transparent` member, the algorithm knows to compare these types directly. This way the key doesn't get converted to a temporary `std::string` just to do the comparison.
 
