@@ -68,9 +68,13 @@ The version number is stored in the `REG_SZ` string value `Version` and also in 
 
 The Visual C++ Redistributable supports several command-line options. The `/?`, `/h`, or `/help` options display a dialog that lists the available options. You can specify `/install` to install, `/repair` to repair, or `/uninstall` to uninstall the Redistributable. The `/layout` option copies the complete contents of the Redistributable in the current directory.
 
-By default, the Redistributable installs its contents and prompts the user for information and whether to restart after installation. You can specify the `/passive` option, which displays a progress bar but doesn't otherwise require user interaction (however, a license acceptance dialog may still appear if the Redistributable hasn't been installed before). You can also specify a `/quiet` option, which doesn't display a user interface or require any user interaction, including no license dialog. Use `/quiet` for fully unattended installations. The `/norestart` option suppresses any attempts to restart. By default, a log file is created in `%TEMP%`. You can use `/log filename.txt` to log to a specific file.
+By default, the Redistributable installs its contents and prompts the user for information and whether to restart after installation. You can modify this behavior with the following options:
+- `/passive`: shows a progress bar but doesn't otherwise require user interaction (however, a license acceptance dialog may still appear if the Redistributable hasn't been installed before).
+- `/quiet`: doesn't display a user interface or require any user interaction, including no license dialog. Use `/quiet` for fully unattended installations.
+- `norestart`: suppresses any attempts to restart. By default, a log file is created in `%TEMP%`.
+- `/log filename.txt` to log to a specific file.
 
-This example command installs the x64 Redistributable. It shows installation progress but doesn't require user interaction or a restart:
+This example command installs the x64 Redistributable. It shows installation progress but doesn't require user interaction (aside from a license acceptance dialog) or a restart:
 
 ```cmd
 vc_redist.x64.exe /install /passive /norestart
