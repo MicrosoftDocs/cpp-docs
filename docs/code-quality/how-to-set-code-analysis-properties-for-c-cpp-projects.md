@@ -18,9 +18,6 @@ ms.assetid: 7af52097-6d44-4785-9b9f-43b7a7d447d7
 
 You can configure which rules the code analysis tool uses to analyze the code in each configuration of your project. In addition, you can direct code analysis to suppress warnings from code that was generated and added to your project by a third-party tool.
 
-> [!NOTE]
-> In recent versions of Visual Studio, the legacy **Code Analysis** property page in the project properties dialog may appear empty or show a deprecation notice. Use the individual settings described below to configure code analysis. For CMake projects, use `CMakeSettings.json` or `CMakePresets.json` instead.
-
 ## Code Analysis Property Page
 
 The **Code Analysis** property page contains all code analysis configuration settings for an MSBuild project. To open the code analysis property page for a project in **Solution Explorer**, right-click the project and then click **Properties**. Next, expand **Configuration Properties** and select the **Code Analysis** tab.
