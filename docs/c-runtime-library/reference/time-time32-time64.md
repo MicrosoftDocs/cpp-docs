@@ -34,7 +34,9 @@ Returns the time as seconds elapsed since midnight, January 1, 1970, or -1 if th
 
 The **`time`** function returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, Coordinated Universal Time (UTC), according to the system clock. The return value is stored in the location given by *`destTime`*. This parameter may be `NULL`, in which case the return value isn't stored.
 
-**`time`** is a wrapper for **`_time64`** and **`time_t`** is, by default, equivalent to **`__time64_t`**. If you need to force the compiler to interpret **`time_t`** as the old 32-bit **`time_t`**, you can define `_USE_32BIT_TIME_T`. We don't recommend `_USE_32BIT_TIME_T`, because your application may fail after January 18, 2038; the use of this macro isn't allowed on 64-bit platforms.
+**`time_t`** is defined in `<time.h>` and `<ctime>`. It represents time as an integer count of seconds. It's equivalent to **`__time64_t`** by default, which is a 64-bit signed integer that supports dates through 23:59:59, December 31, 3000 UTC. If you need the compiler to interpret **`time_t`** as the old 32-bit **`time_t`**, define `_USE_32BIT_TIME_T`. We don't recommend `_USE_32BIT_TIME_T` because your application may fail after January 18, 2038. This macro isn't allowed on 64-bit platforms.
+
+**`time`** is a wrapper for **`_time64`**.
 
 > [!Note]
 > When you use Windows SDK version 10.0.26100.6901 and Visual Studio 2026 or later together, `time` is no longer `static inline` (internal linkage). Instead, it's `inline` (external linkage).\
