@@ -60,5 +60,5 @@ The **`/ZH`** option is available in Visual Studio 2019 version 16.4 and later.
 ## See also
 
 [Compiler options](compiler-options.md)\
-[Debug Interface Access SDK](/visualstudio/debugger/debug-interface-access/idiasourcefile-get-checksumtype)\
+[Debug Interface Access SDK - IDiaSourceFile::get_checksumType](/visualstudio/debugger/debug-interface-access/idiasourcefile-get-checksumtype)\
 [Source server](/windows/win32/debug/source-server-and-source-indexing)
