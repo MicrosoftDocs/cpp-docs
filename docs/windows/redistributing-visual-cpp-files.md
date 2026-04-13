@@ -74,7 +74,7 @@ By default, the Redistributable installs its contents and prompts the user for i
 - `norestart`: suppresses any attempts to restart. By default, a log file is created in `%TEMP%`.
 - `/log filename.txt` to log to a specific file.
 
-This example command installs the x64 Redistributable. It shows installation progress but doesn't require user interaction aside from a license acceptance dialog or a restart:
+This example command installs the x64 Redistributable. It shows installation progress but doesn't require user interaction aside from a restart:
 
 ```cmd
 vc_redist.x64.exe /install /passive /norestart
