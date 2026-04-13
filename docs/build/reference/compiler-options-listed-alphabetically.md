@@ -251,7 +251,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/Zc:zeroSizeArrayNew[-]`](zc-zerosizearraynew.md) | Call member `new`/`delete` for zero-size arrays of objects (on by default). |
 | [`/Ze`](za-ze-disable-language-extensions.md) | Deprecated. Enables C89 language extensions. |
 | [`/Zf`](zf.md) | Improves PDB generation time in parallel builds. |
-| [`/ZH:[MD5|SHA1|SHA_256]`](zh.md) | Specifies MD5, SHA-1, or SHA-256 for checksums in debug info. |
+| [`/ZH:[MD5|SHA1|SHA_256|SHA384|SHA512]`](zh.md) | Specifies MD5, SHA-1, SHA-256, SHA-384, or SHA-512 for checksums in debug info. |
 | [`/ZI`](z7-zi-zi-debug-information-format.md) | Includes debug information in a program database compatible with Edit and Continue. (x86 only) |
 | [`/Zi`](z7-zi-zi-debug-information-format.md) | Generates complete debugging information. |
 | [`/Zl`](zl-omit-default-library-name.md) | Removes the default library name from the *`.obj`* file. |
