@@ -73,7 +73,8 @@ By default, the Redistributable installs its contents and prompts the user for i
 - `/quiet`: doesn't display a user interface or require any user interaction. Use `/quiet` for fully unattended installations.
 - `/norestart`: suppresses any attempts to restart. By default, a log file is created in `%TEMP%`.
 - `/log filename.txt` to log to a specific file.
-If you are not running from an elevated command prompt, in any of these cases you'll need to respond to a User Account Control prompt to allow the installer to run with administrative privileges.
+
+If you aren't running from an elevated command prompt, you'll need to respond to a User Account Control prompt to allow the installer to run with administrative privileges.
 
 This example command installs the x64 Redistributable. It shows installation progress but doesn't require user interaction aside from a restart:
 
