@@ -8,12 +8,12 @@ ai-usage: ai-assisted
 ---
 # `identity` Structure
 
+`std::identity` (introduced in C++20) is a function object whose `operator()` returns its argument unchanged.
+
 > [!NOTE]
 > There's a Microsoft-specific `identity` structure from `<utility>` that is deprecated and isn't available in later versions of Visual Studio. For C++20 and later, use `std::identity` from [`<functional>`](functional.md) instead, which is the standard-conforming equivalent described below.
 
 ## `std::identity` (C++20)
-
-`std::identity` (introduced in C++20) is a function object whose `operator()` returns its argument unchanged.
 
 Many standard library APIs take a callable argument such as a projection or transformation function. If you need to pass a callable but don't want to change the data, pass `std::identity`. This is common in ranges algorithms. Many `<algorithm>` ranges overloads have a projection parameter that defaults to `std::identity{}`.
 
