@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2002"]
 ---
 # Compiler Error C2002
 
-> invalid wide-character constant
+> expected an ordinary string literal
 
 ## Remarks
 

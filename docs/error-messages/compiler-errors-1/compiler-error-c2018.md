@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2018"]
 ---
 # Compiler Error C2018
 
-> unknown character 'hexnumber'
+> character 'U+*value*' is not permitted here
 
 ## Remarks
 

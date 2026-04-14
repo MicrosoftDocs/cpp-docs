@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2043"]
 ---
 # Compiler Error C2043
 
-> illegal break
+> break statement not within loop or switch statement
 
 ## Remarks
 

@@ -7,11 +7,11 @@ helpviewer_keywords: ["C4709"]
 ---
 # Compiler Warning (level 4) C4709
 
-> comma operator within array index expression
+> comma operator within a subscript expression
 
 ## Remarks
 
-When a comma occurs in an array index expression, the compiler uses the value after the last comma.
+When a comma occurs in a subscript expression, the compiler uses the value after the last comma.
 
 ## Example
 

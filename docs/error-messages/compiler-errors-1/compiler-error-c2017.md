@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2017"]
 ---
 # Compiler Error C2017
 
-> illegal escape sequence
+> unknown escape sequence
 
 ## Remarks
 

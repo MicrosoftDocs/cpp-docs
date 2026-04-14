@@ -15,8 +15,8 @@ The articles in this section of the documentation explain a subset of the error 
 
 | Error | Message |
 |--|--|
-| [Compiler error C2001](compiler-error-c2001.md) | newline in constant |
-| [Compiler error C2002](compiler-error-c2002.md) | invalid wide-character constant |
+| [Compiler error C2001](compiler-error-c2001.md) | newline in string literal |
+| [Compiler error C2002](compiler-error-c2002.md) | expected an ordinary string literal |
 | [Compiler error C2003](compiler-error-c2003.md) | expected 'defined id' |
 | [Compiler error C2004](compiler-error-c2004.md) | expected 'defined(id)' |
 | [Compiler error C2005](compiler-error-c2005.md) | #line expected a line number, found '*token*' |
@@ -31,8 +31,8 @@ The articles in this section of the documentation explain a subset of the error 
 | [Compiler error C2014](compiler-error-c2014.md) | preprocessor command must start as first nonwhite space |
 | [Compiler error C2015](compiler-error-c2015.md) | too many characters in constant |
 | [Compiler error C2016](compiler-error-c2016.md) | C requires that a struct or union has at least one member |
-| [Compiler error C2017](compiler-error-c2017.md) | illegal escape sequence |
-| [Compiler error C2018](compiler-error-c2018.md) | unknown character '0x*value*' |
+| [Compiler error C2017](compiler-error-c2017.md) | unknown escape sequence |
+| [Compiler error C2018](compiler-error-c2018.md) | character 'U+*value*' is not permitted here |
 | [Compiler error C2019](compiler-error-c2019.md) | expected preprocessor directive, found '*character*' |
 | [Compiler error C2020](compiler-error-c2020.md) | '*member*': '*class*' member redefinition |
 | [Compiler error C2021](compiler-error-c2021.md) | expected exponent value, not '*character*' |
@@ -57,7 +57,7 @@ The articles in this section of the documentation explain a subset of the error 
 | [Compiler error C2040](compiler-error-c2040.md) | '*operator*': '*identifier1*' differs in levels of indirection from '*identifier2*' |
 | [Compiler error C2041](compiler-error-c2041.md) | illegal digit '*character*' for base '*number*' |
 | [Compiler error C2042](compiler-error-c2042.md) | signed/unsigned keywords mutually exclusive |
-| [Compiler error C2043](compiler-error-c2043.md) | illegal break |
+| [Compiler error C2043](compiler-error-c2043.md) | break statement not within loop or `switch` statement |
 | [Compiler error C2044](compiler-error-c2044.md) | illegal continue |
 | [Compiler error C2045](compiler-error-c2045.md) | '*identifier*': label redefined |
 | [Compiler error C2046](compiler-error-c2046.md) | illegal case |

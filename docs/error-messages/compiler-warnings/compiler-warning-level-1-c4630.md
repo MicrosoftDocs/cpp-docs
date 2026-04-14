@@ -7,7 +7,7 @@ helpviewer_keywords: ["C4630"]
 ---
 # Compiler Warning (level 1) C4630
 
-> 'symbol' : 'extern' storage class specifier illegal on member definition
+> '*symbol*': '*extern*' storage-class specifier cannot be applied to a member
 
 ## Remarks
 

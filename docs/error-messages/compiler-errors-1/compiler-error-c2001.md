@@ -7,7 +7,7 @@ helpviewer_keywords: ["C2001"]
 ---
 # Compiler Error C2001
 
-> newline in constant
+> newline in string literal
 
 ## Remarks
 

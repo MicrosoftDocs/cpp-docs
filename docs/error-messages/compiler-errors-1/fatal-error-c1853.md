@@ -7,7 +7,7 @@ helpviewer_keywords: ["C1853"]
 ---
 # Fatal Error C1853
 
-> '*filename*' precompiled header file is from a previous version of the compiler, or the precompiled header is C++ and you are using it from C (or vice versa)
+> '*file*' precompiled header file is from a different version of the compiler, or the precompiled header is C++ and you are using it from C (or vice versa)
 
 ## Remarks
 

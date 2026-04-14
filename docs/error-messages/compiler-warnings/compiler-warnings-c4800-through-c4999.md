@@ -64,11 +64,18 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 | Compiler warning (level 4) C4860 | '*object name*': compiler zero initialized '*number*' bytes of storage |
 | Compiler warning (level 4) C4861 | compiler zero initialized '*number*' bytes of storage |
 | Compiler warning (level 1) C4862 | justification property is not allowed with more than one warning number |
+|Compiler warning (level 1) C4863|unknown property in `#pragma warning`: '*property*'|
+|Compiler warning (level 4) C4864|expected '`template`' keyword before dependent template name|
+|Compiler warning (level 4, off) C4865|the underlying type of '*type*' will change when '`/Zc:enumTypes`' is specified on the command line|
 | [Compiler warning (level 4) C4866](c4866.md) | compiler may not enforce left-to-right evaluation order for call to *operator_name* |
 | [Compiler warning (level 1, error) C4867](compiler-warning-c4867.md) |'*function name*': non-standard syntax; use '`&`' to create a pointer to member|
 | [Compiler warning (level 4) C4868](compiler-warning-c4868.md) | '*file*(*line_number*)' compiler may not enforce left-to-right evaluation order in braced initialization list |
 | Compiler warning (level 3) C4869 | '`nodiscard`' may only be applied to classes, enumerations, and functions |
 | Compiler warning (level 2) C4872 | floating point division by zero detected when compiling the call graph for the `concurrency::parallel_for_each` at: '*location*' |
+|Compiler warning (level 4, off) C4873|'*identifier*' cannot be a function template|
+|Compiler warning (level 4) C4874|assignment used as a condition|
+|Compiler warning (level 1) C4875|a non-string literal argument to `[[gsl::suppress]]` is deprecated and will be removed in a future release|
+|Compiler warning (level 1) C4876|incomplete or invalid multi-byte character in string literal. Use an escape sequence to preserve these byte values.|
 | Compiler warning (level 1) C4880 | casting from '*const type_1*' to '*type_2*': casting away constness from a pointer or reference may result in undefined behavior in an `amp` restricted function |
 | Compiler warning (level 4) C4881 | the constructor and/or the destructor will not be invoked for `tile_static` variable '*variable-name*' |
 | Compiler warning (level 1) C4882 | passing functors with non-const call operators to `concurrency::parallel_for_each` is deprecated |

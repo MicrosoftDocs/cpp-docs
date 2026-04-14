@@ -178,6 +178,8 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C7660 | '%s': requires '%s' command line option(s) |
 | Compiler error C7661 | header-name '%s' has an ambiguous resolution to header '%s' |
 | Compiler error C7662 | '%$S': a coroutine cannot be constexpr or consteval |
+|Compiler error C7663|'*version*': unsupported ABI version; using default|
+|Compiler error C7664|'*operator*': ordered comparison of pointer and integer zero ('*type*' and '*type*')|
 | Compiler error C7665 | '*operator*': you cannot assign to '`this`' as it is not an lvalue |
 | Compiler error C7666 | you cannot apply '*operator*' to '`this`' as it is not an lvalue |
 | Compiler error C7667 | no global `operator delete` function found |
@@ -242,6 +244,33 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C7741 | ABI inconsistency: '*function*' was originally assumed to use '`C`' return semantics but now it requires '`C++`' return semantics |
 | [Compiler error C7742](compiler-error-c7742.md) | '*identifier*': a forward declaration of an enum can only use a simple identifier |
 | Compiler error C7743 | [`__preserve_none` calling convention](../../cpp/preserve-none.md) is not supported |
+|Compiler error C7744|escape sequence '*sequence*' out of range|
+|Compiler error C7745|attribute `[[msvc::musttail]]` may only be applied to return statements that return a function call expression|
+|Compiler error C7746|'*symbol*': cannot appear in its own initializer|
+|Compiler error C7747|a type name cannot include the '*specifier*' specifier|
+|Compiler error C7748|a type name cannot include the '`__declspec(`*specifier*`)`' specifier|
+|Compiler error C7749|'*identifier*': a lambda template parameter cannot have the same name as a capture|
+|Compiler error C7750|'*identifier*': a lambda parameter cannot have the same name as a capture|
+|Compiler error C7751|'*function*': overriding virtual function has different ref-qualifier from base class virtual member function '*function*'|
+|Compiler error C7752|call stack overflow due to excessive template instantiation|
+|Compiler error C7753|ill-formed conversion-function-id|
+|Compiler error C7754|'*type*' a type cannot be defined as a return or parameter type|
+|Compiler error C7755|'*function*': noexcept-specifier depends on itself|
+|Compiler error C7756|'*symbol*': declaration attached to module '*name*' conflicts with '*name*' attached to the global module|
+|Compiler error C7757|an array of unknown size cannot be initialized by an empty initializer|
+|Compiler error C7758|'*type*': cannot be used as the type of an explicit object parameter for a lambda|
+|Compiler error C7759|linkage specification is not allowed on an explicit specialization, an explicit instantiation or an export declaration|
+|Compiler error C7760|export declaration is not allowed on an explicit specialization, an explicit instantiation, a partial specialization or an export declaration|
+|Compiler error C7762|'`\`*escape sequence*`{`' not terminated with '`}`'|
+|Compiler error C7763|empty delimited escape sequence|
+|Compiler error C7765|'`\o`' not followed by '`{`'|
+|Compiler error C7766|incomplete universal character name *name*|
+|Compiler error C7767|incomplete named universal character|
+|Compiler error C7768|'*name*' is not a valid Unicode character name: names are sensative to casing and whitespace|
+|Compiler error C7769|unable to look up Unicode character name, Unicode name support is missing on host machine|
+|Compiler error C7770|invalid `[[`*attribute*`]]` attribute|
+|Compiler error C7771|ill-formed attribute `[[`*attribute*`]]`|
+|Compiler error C7772|invalid string literal|
 | Compiler error C7800 | duplicate explicit instantiation definition of '*name*' |
 | Compiler error C7801 | '*function*': if one declaration of '*identifier*' has the '`[[msvc::disptach]]`' attribute then all functions must have the attribute |
 | Compiler error C7802 | '*identifier*': a capability must resolve to an enumerator |
@@ -249,6 +278,12 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C7804 | '*identifier*': cannot find a matching default dispatch function |
 | Compiler error C7806 | support for the '`msvc::dispatch`' attribute requires '`/experimental:loadTimeSelection`' |
 | Compiler error C7807 | expecting a narrow string literal |
+|Compiler error C7808|'*identifier*': a non-default dispatch function cannot be declared with '*keyword*'|
+|Compiler error C7809|'*identifier*': a non-default dispatch function cannot have any default arguments|
+|Compiler error C7810|decltype cannot be used in declarative nested name specifiers|
+|Compiler error C7811|value of intrinsic immediate argument '*argument number*' is out of range '*number* - *number*'|
+|Compiler error C7812|a non-default dispatch function cannot be declared to have `'C'` linkage|
+|Compiler error C7813|'*attribute*': attribute only applies for x64 target|
 
 ## See also
 

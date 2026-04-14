@@ -41,7 +41,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 1, no longer emitted) C4627](compiler-warning-level-1-c4627.md)|'`identifier`': skipped when looking for precompiled header use|
 |[Compiler warning (level 1, off) C4628](compiler-warning-level-1-c4628.md)|digraphs not supported with `-Ze`. Character sequence '*digraph*' not interpreted as alternate token for '*token*'|
 |[Compiler warning (level 4, no longer emitted) C4629](compiler-warning-level-4-c4629.md)|digraph used, character sequence '*digraph*' interpreted as token '*char*' (insert a space between the two characters if this is not what you intended)|
-|[Compiler warning (level 1) C4630](compiler-warning-level-1-c4630.md)|'*symbol*': '*extern*' storage-class specifier illegal on member definition|
+|[Compiler warning (level 1) C4630](compiler-warning-level-1-c4630.md)|'*symbol*': '*extern*' storage-class specifier cannot be applied to a member|
 |Compiler warning (level 2) C4631|`MSXML` or `XPath` unavailable, XML document comments will not be processed. *reason*|
 |[Compiler warning (level 1) C4632](compiler-warning-level-1-c4632.md)|XML document comment: *file* - access denied: *reason*|
 |[Compiler warning (level 3 and level 4) C4633](compiler-warning-level-3-c4633.md)|XML document comment *target*: error: *reason*|
@@ -108,7 +108,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 4) C4702](compiler-warning-level-4-c4702.md)|unreachable code|
 |[Compiler warning (level 4) C4703](compiler-warning-level-4-c4703.md)|potentially uninitialized local pointer variable '*identifier*' used|
 |[Compiler warning (level 4) C4706](compiler-warning-level-4-c4706.md)|assignment used as a condition|
-|[Compiler warning (level 4) C4709](compiler-warning-level-4-c4709.md)|comma operator within array index expression|
+|[Compiler warning (level 4) C4709](compiler-warning-level-4-c4709.md)|comma operator within a subscript expression|
 |[Compiler warning (level 4, off) C4710](compiler-warning-level-4-c4710.md)|'*function*': function not inlined|
 |[Compiler warning (level 1) C4711](compiler-warning-level-1-c4711.md)|function 'function' selected for automatic inline expansion|
 |[Compiler warning (level 4) C4714](compiler-warning-level-4-c4714.md)|function '*function*' marked as `__forceinline` not inlined|
