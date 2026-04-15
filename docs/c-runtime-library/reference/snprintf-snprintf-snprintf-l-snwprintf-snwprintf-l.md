@@ -109,7 +109,7 @@ For more information, see [Format specification syntax: `printf` and `wprintf` f
 
 ## Return value
 
-The number of characters that which would have been written to the buffer if `count` was ignored. The count doesn't include the terminating `NULL` character.
+The number of characters that would have been written to the buffer if `count` was ignored. The count doesn't include the terminating `NULL` character.
 
 Let **`len`** be the length of the formatted data string, not including the terminating `NULL`.\
 For all functions, if `len < count`, then **`len`** characters are stored in *`buffer`*, a null-terminator is appended, and the number of characters written, not including the terminating `NULL`, is returned.
@@ -120,7 +120,12 @@ See [Behavior summary](#behavior-summary) for details.
 
 ## Remarks
 
-Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`snprintf`** is no longer identical to **`_snprintf`**. The **`snprintf`** behavior is now C99 standard conformant. The difference is that if you run out of buffer, `snprintf` null-terminates the end of the buffer and returns the number of characters that would have been required whereas `_snprintf` doesn't null-terminate the buffer and returns -1. Also, `_snprintf()` includes one more character in the output because it doesn't null-terminate the buffer.
+Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`snprintf`** is no longer identical to **`_snprintf`**. The **`snprintf`** behavior is now C99 standard conformant. The differences are:
+
+- **`snprintf`** always null-terminates the buffer (even when truncating), and returns the total number of characters that would have been written if the buffer were large enough (not counting the null-terminator).
+- **`_snprintf`** doesn't null-terminate the buffer when the output is truncated, and returns `-1` when truncation occurs.
+
+Because `_snprintf` doesn't write a null-terminator when it truncates, it can fit one more character into the same buffer size. However, the resulting string is not null-terminated, so you must handle termination yourself.
 
 - **`snprintf`** and the **`_snprintf`** family of functions format and store *`count`* or fewer characters in *`buffer`*.
 - **`snprintf`** always stores a terminating `NULL` character, truncating the output if necessary.
