@@ -62,7 +62,7 @@ The **`localtime_s`** function converts a time stored as a [`time_t`](../standar
 > [!NOTE]
 > The target environment should try to determine whether daylight saving time is in effect.
 
-The Microsoft-specific **`localtime_s`** has a different signature than the C standard version. To enable the standard-conforming variant, define **`_CRT_USE_CONFORMING_ANNEX_K_TIME`** to a nonzero value before including any of the required headers.
+The Microsoft-specific **`localtime_s`** has a different signature than the C standard version. To enable the standard-conforming variant, define **`_CRT_USE_CONFORMING_ANNEX_K_TIME`** to a nonzero value before including **`<time.h>`**.
 
 **`_localtime64_s`**, which uses the **`__time64_t`** structure, allows dates to be expressed up through 23:59:59, January 18, 3001, coordinated universal time (UTC), whereas **`_localtime32_s`** represents dates through 23:59:59 January 18, 2038, UTC.
 
