@@ -59,10 +59,10 @@ The **`localtime_s`** function converts a time stored as a [`time_t`](../standar
 
 **`localtime_s`** corrects for the local time zone if the user first sets the global environment variable **`TZ`**. When **`TZ`** is set, three other environment variables (**`_timezone`**, **`_daylight`**, and **`_tzname`**) are automatically set as well. If the **`TZ`** variable isn't set, **`localtime_s`** attempts to use the time zone information specified in the Date/Time application in Control Panel. If this information can't be obtained, PST8PDT, which signifies the Pacific time zone, is used by default. See [`_tzset`](tzset.md) for a description of these variables. **`TZ`** is a Microsoft extension and not part of the ANSI standard definition of **`localtime`**.
 
-The Microsoft-specific **`localtime_s`** is not compatible with the C standard version due to differences in its signature. To enable the standard-conforming variant, define **`_CRT_USE_CONFORMING_ANNEX_K_TIME`** to a nonzero value before including any relevant headers.
-
 > [!NOTE]
 > The target environment should try to determine whether daylight saving time is in effect.
+
+The Microsoft-specific **`localtime_s`** has a different signature than the C standard version. To enable the standard-conforming variant, define **`_CRT_USE_CONFORMING_ANNEX_K_TIME`** to a nonzero value before including any of the required headers.
 
 **`_localtime64_s`**, which uses the **`__time64_t`** structure, allows dates to be expressed up through 23:59:59, January 18, 3001, coordinated universal time (UTC), whereas **`_localtime32_s`** represents dates through 23:59:59 January 18, 2038, UTC.
 
