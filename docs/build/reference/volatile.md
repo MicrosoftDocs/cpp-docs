@@ -1,13 +1,13 @@
 ---
 description: "Learn more about: /volatileMetadata"
 title: "/volatileMetadata (Generate metadata on volatile memory accesses)"
-ms.date: 5/30/2024
+ms.date: 04/27/2026
 f1_keywords: ["/volatileMetadata"]
 helpviewer_keywords: ["/volatileMetadata", "-volatileMetadata compiler option", "/volatileMetadata compiler option", "volatileMetadata"]
 ---
 # `/volatileMetadata` (Generate metadata on volatile memory accesses)
 
-Generate metadata for volatile memory accesses to improve performance when running x64 code on ARM64.
+Generate metadata for volatile memory accesses to improve performance when running x64 or x86 code on ARM64.
 
 ## Syntax
 
@@ -15,20 +15,14 @@ Generate metadata for volatile memory accesses to improve performance when runni
 /volatileMetadata[-]
 ```
 
-## Arguments
-
-**`-`**\
-Turns off `/volatileMetadata`. This may result in worse performance when your code runs in emulation mode on ARM64 because the emulator pessimistically assumes that every load/store needs a barrier.
-
 ## Remarks
 
-Starting with Visual Studio 2019 16.10, `/volatileMetadata` is on by default when generating x64 code. It improves the emulation performance of x64 code on ARM64 by generating metadata that identifies volatile memory addresses. An emulator can use this metadata to improve performance by not using acquire/release semantics on those accesses it knows aren't volatile. Without this metadata, the emulator assumes that all addresses are volatile and uses acquire and release semantics.
+Starting with Visual Studio 2022 18.6, `/volatileMetadata` is off by default and must be explicitly enabled. To explicitly disable it, use `/volatileMetadata-`. `/volatileMetadata` improves the emulation performance of x64 and x86 code on ARM64 by generating metadata that identifies volatile memory addresses. An emulator can use this metadata to improve performance by not using acquire/release semantics on those accesses it knows aren't volatile. Without this metadata, the emulator assumes that all addresses are volatile and uses acquire and release semantics.
 
 One side effect of `/volatileMetadata` is you may see `npad` macros used in the generated code. This macro expands to a specified number of `NOP` instructions that create an address to associate with a memory barrier. That address is then recorded in the metadata to indicate that acquire/release semantics should be used to access it.
 
-`/volatileMetadata` is ignored when targeting x86.
-
-`/volatileMetadata` can be disabled by using `/volatileMetadata-`.
+> [!NOTE]
+> In Visual Studio 2019 version 16.10 through Visual Studio 2022, `/volatileMetadata` was on by default. Starting with Visual Studio 2022 18.6, `/volatileMetadata` is off by default.
 
 ## Requirements
 
