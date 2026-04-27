@@ -180,7 +180,7 @@ A class is like a blueprint for an object that does something. In this case, def
 
    This code is added to `Calculator.cpp`:
 
-   :::image type="complex" source="./media/vs-2026/calculator-ctor-definition.png" alt-text="Screenshot of the Visual Studio editor showing the definition of the 'Calculate' function.":::
+   :::image type="complex" source="./media/vs-2026/calculator-constructor.png" alt-text="Screenshot of the Visual Studio editor showing the definition of the 'Calculate' function.":::
    The definition of the function is: double Calculator::Calculate( double x, char oper, double y) { return 0.0; }
    :::image-end:::
 
