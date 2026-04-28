@@ -77,7 +77,7 @@ If you can't find the developer command prompt shortcut, or if you get an error 
    }
    ```
 
-   This code is a simple program that writes one line of text on the screen and then exit. To minimize errors, copy this code and paste it into Notepad.
+   This code is a simple program that writes one line of text on the screen and then exits. To minimize errors, copy this code and paste it into Notepad.
 
 1. Save your work! In Notepad, on the **File** menu, choose **Save**.
 
@@ -101,11 +101,11 @@ If you can't find the developer command prompt shortcut, or if you get an error 
    The dates and other details will differ on your computer.
 
    > [!NOTE]
-   > If you don't see your source code file, *`hello.cpp`*, make sure the current working directory in your command prompt is the *`C:\hello`* directory you created. Also make sure that this location is the directory where you saved your source file. 
+   > If you don't see your source code file, *hello.cpp*, make sure the current working directory in your command prompt is the *C:\hello* directory you created. Also make sure that this location is the directory where you saved your source file. 
    >
-   > Make sure that you saved the source code with a *`.cpp`* file name extension, not a *`.txt`* extension. Your source file gets saved in the current directory as a *`.cpp`* file automatically if you open Notepad at the command prompt by using the **`notepad hello.cpp`** command. 
+   > Make sure that you saved the source code with a `.cpp` file name extension, not a `.txt` extension. Your source file gets saved in the current directory as a `.cpp` file automatically if you open Notepad at the command prompt by using the `notepad hello.cpp` command. 
    >
-   > Notepad's behavior is different if you open it another way: By default, Notepad appends a *`.txt`* extension to new files when you save them. It also defaults to saving files in your *Documents* directory. To save your file with a *`.cpp`* extension in Notepad, choose **File** > **Save As**. In the **Save As** dialog, navigate to your *`C:\hello`* folder in the directory tree view control. Then use the **Save as type** dropdown control to select **All Files (\*.\*)**. Enter *`hello.cpp`* in the **File name** edit control, and then choose **Save** to save the file.
+   > Notepad's behavior is different if you open it another way: By default, Notepad appends a `.txt` extension to new files when you save them. It also defaults to saving files in your *Documents* directory. To save your file with a *.cpp* extension in Notepad, choose **File** > **Save As**. In the **Save As** dialog, navigate to your *C:\hello* folder in the directory tree view control. Then use the **Save as type** dropdown control to select **All Files (\*.\*)**. Enter *hello.cpp* in the **File name** edit control, and then choose **Save** to save the file.
 
 1. At the developer command prompt, enter `cl /EHsc hello.cpp` to compile your program.
 
@@ -129,7 +129,7 @@ If you can't find the developer command prompt shortcut, or if you get an error 
    >
    > If you get a different compiler or linker error or warning, review your source code to correct any errors, then save it and run the compiler again. For information about specific errors, use the search box to look for the error number.
 
-1. To run the hello.exe program, at the command prompt, enter `hello`.
+1. To run the hello.exe program, at the command prompt, enter *hello*.
 
    The program displays this text and exits:
 
@@ -137,13 +137,13 @@ If you can't find the developer command prompt shortcut, or if you get an error 
    Hello, world, from Microsoft C++!
    ```
 
-   Congratulations! You compiled and run a C++ program by using the command-line tools.
+   Congratulations! You compiled and ran a C++ program by using the command-line tools.
 
 ## Next steps
 
 This "Hello, World" example is about as simple as a C++ program can get. Real world programs usually have header files, more source files, and link to libraries.
 
-You can use the steps in this walkthrough to build your own C++ code instead of typing the sample code shown. These steps also let you build many C++ code sample programs that you find elsewhere. You can put your source code and build your apps in any writeable directory. By default, the Visual Studio IDE creates projects in your user folder, in a *source\\repos* subfolder. Older versions might put projects in a *Documents\\Visual Studio \<version>\\Projects* folder.
+You can use the steps in this walkthrough to build your own C++ code instead of typing the sample code shown. These steps also let you build many C++ code sample programs that you find elsewhere. You can put your source code and build your apps in any writable directory. By default, the Visual Studio IDE creates projects in your user folder, in a *source\\repos* subfolder. Older versions might put projects in a *Documents\\Visual Studio \{version}\\Projects* folder.
 
 To compile a program that has other source code files, enter them all on the command line, like:
 
