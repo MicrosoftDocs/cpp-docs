@@ -413,7 +413,7 @@ You can handle division by zero more gracefully so that it's easier for the user
 
 Congratulations! You completed the code for the calculator app, built and debugged it, and added it to a repo, all in Visual Studio.
 
-## Next steps
+## Next step
 
 [Learn more about Visual Studio for C++](https://devblogs.microsoft.com/cppblog/getting-started-with-visual-studio-for-c-and-cpp-development/)
 
@@ -808,7 +808,7 @@ Handle division by zero more gracefully so that it's easier for the user to unde
 
 Congratulations! You completed the code for the calculator app, and built and debugged it in Visual Studio.
 
-## Next steps
+## Next step
 
 [Learn more about Visual Studio for C++](https://devblogs.microsoft.com/cppblog/getting-started-with-visual-studio-for-c-and-cpp-development/)
 
