@@ -52,7 +52,7 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 1. Search for *Console App* and select the **Console App** template for C++.
 
     :::image type="complex" source="media/vs-2026/choose-console-app.png" alt-text="Screenshot of the Create a new project dialog.":::
-    The Create a new project dialog is shown with the Console App template selected. The template says: Run code in a windows terminal. Prints hello world by default. Has the tags c++, Windows, and Console.
+    The Create a new project dialog is shown with the Console App template selected. The template says: Run code in a Windows Terminal. Prints Hello World by default. Has the tags C++, Windows, and Console.
     :::image-end:::
 
 1. Select **Next**.
@@ -252,5 +252,5 @@ To install **Desktop development with C++**, you can run the installer right fro
 ## Related content
 
 - [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
-- [GitHub Copilot documentation](https://docs.github.com/en/copilot) - Dive deeper into AI-assisted development
+- [GitHub Copilot documentation](https://docs.github.com/copilot) - Dive deeper into AI-assisted development
 - [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) - Community-driven prompting examples for inspiration
