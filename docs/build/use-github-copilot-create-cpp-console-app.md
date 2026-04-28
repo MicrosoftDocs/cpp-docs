@@ -67,7 +67,7 @@ You prompt Copilot by describing the functionality you want. In this section, yo
 
 1. Open the Copilot chat window by selecting the Copilot icon in the toolbar:
 
-    :::image type="content" source="media/vs-2026/github-copilot-open-chat.png" alt-text="Screenshot of the GitHub icon dropdown. Open Chat Window is selected.":::
+    :::image type="content" source="media/vs-2026/github-copilot-open-chat.png" alt-text="Screenshot of the GitHub icon with Open Chat selected.":::
 
 1. In the chat window, enter the following prompt:
 
@@ -211,7 +211,7 @@ When you run the application, you should see an animated display of Conway's Gam
 
 In the preceding code example, the code generates a warning: `Return value ignored: '_getch'`. You can ask Copilot to fix it. Select the code editor and press **Alt+/** (Windows) to open the Copilot chat, then enter:
 
-:::image type="content" source="./media/vs-2026/github-copilot-fix-warning.png" alt-text="Screenshot of the Copilot chat window. The text: Fix warning C6031 is in the chat window.":::
+:::image type="content" source="./media/vs-2026/github-copilot-fix-warning.png" alt-text="Screenshot of the Copilot chat window where you can ask Copilot to fix an issue.":::
 
 Copilot suggests a fix to handle the return value properly. To accept the changes, select **Tab**:
 
