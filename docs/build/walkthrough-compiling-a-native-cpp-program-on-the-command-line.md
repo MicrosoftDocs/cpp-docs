@@ -60,13 +60,13 @@ If you can't find the developer command prompt shortcut, or if you get an error 
 
 ### Create a C++ source file and compile it on the command line
 
-1. In the developer command prompt window, enter `md c:\hello` to create a directory, and then enter `cd c:\hello` to change to that directory. This directory is where both your source file and the compiled program get created.
+1. In the developer command prompt window, enter `md C:\hello` to create a directory, and then enter `cd C:\hello` to change to that directory. This directory is where both your source file and the compiled program get created.
 
 1. Enter `notepad hello.cpp` in the command prompt window.
 
-   Choose **Yes** when Notepad prompts you to create a new file. This step opens a blank Notepad window, ready for you to enter your code in a file named hello.cpp.
+   Choose **Yes** when Notepad prompts you to create a new file. This step opens a blank Notepad window, ready for you to enter your code in a file named *hello.cpp*.
 
-1. In Notepad, enter the following lines of code:
+1. In Notepad, enter the following code:
 
    ```cpp
    #include <iostream>
@@ -83,10 +83,10 @@ If you can't find the developer command prompt shortcut, or if you get an error 
 
    Congratulations! You created a C++ source file, *hello.cpp*, that's ready to compile.
 
-1. Switch back to the developer command prompt window. Enter `dir` at the command prompt to list the contents of the c:\hello directory. You should see the source file hello.cpp in the directory listing, which looks something like:
+1. Switch back to the developer command prompt window. Enter `dir` at the command prompt to list the contents of the `C:\hello` directory. You should see the source file *hello.cpp* in the directory listing, which looks something like:
 
    ```Output
-   c:\hello>dir
+   C:\hello>dir
     Volume in drive C is Local Disk
     Volume Serial Number is AA11-BB22
 
@@ -112,7 +112,7 @@ If you can't find the developer command prompt shortcut, or if you get an error 
    The cl.exe compiler generates an .obj file that contains the compiled code, and then runs the linker to create an executable program named hello.exe. This name appears in the lines of output information that the compiler displays. The output of the compiler should look something like:
 
    ```Output
-   c:\hello>cl /EHsc hello.cpp
+   C:\hello>cl /EHsc hello.cpp
    Microsoft (R) C/C++ Optimizing Compiler Version 19.10.25017 for x86
    Copyright (C) Microsoft Corporation.  All rights reserved.
 
@@ -147,17 +147,23 @@ You can use the steps in this walkthrough to build your own C++ code instead of 
 
 To compile a program that has other source code files, enter them all on the command line, like:
 
-`cl /EHsc file1.cpp file2.cpp file3.cpp`
+```cmd
+cl /EHsc file1.cpp file2.cpp file3.cpp
+```
 
 The `/EHsc` command-line option instructs the compiler to enable standard C++ exception handling behavior. Without it, thrown exceptions can result in undestroyed objects and resource leaks. For more information, see [/EH (Exception Handling Model)](reference/eh-exception-handling-model.md).
 
 When you supply other source files, the compiler uses the first input file to create the program name. In this case, it outputs a program called *file1.exe*. To change the name to *program1.exe*, add an [/out](reference/out-output-file-name.md) linker option:
 
-`cl /EHsc file1.cpp file2.cpp file3.cpp /link /out:program1.exe`
+```cmd
+cl /EHsc file1.cpp file2.cpp file3.cpp /link /out:program1.exe
+```
 
 To catch more programming mistakes automatically, we recommend you compile by using either the [/W3](reference/compiler-option-warning-level.md) or [/W4](reference/compiler-option-warning-level.md) warning level option:
 
-`cl /W4 /EHsc file1.cpp file2.cpp file3.cpp /link /out:program1.exe`
+```cmd
+cl /W4 /EHsc file1.cpp file2.cpp file3.cpp /link /out:program1.exe
+```
 
 The compiler, cl.exe, has many more options. You can apply them to build, optimize, debug, and analyze your code. For a quick list, enter `cl /?` at the developer command prompt. You can also compile and link separately and apply linker options in more complex build scenarios. For more information on compiler and linker options and usage, see  [C/C++ Building Reference](reference/c-cpp-building-reference.md).
 
