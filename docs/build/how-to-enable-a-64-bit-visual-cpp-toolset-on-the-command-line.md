@@ -1,12 +1,13 @@
 ---
-description: "Learn more about: How to: Enable a 64-Bit, x64 hosted MSVC toolset on the command line"
 title: "How to: Enable a 64-Bit MSVC Toolset on the Command Line"
+description: "Learn how to enable a 64-Bit, x64 hosted MSVC toolset on the command line. You can create apps that run on 32-bit, 64-bit, or ARM-based operating systems."
 ms.date: "07/24/2019"
 helpviewer_keywords: ["x64 [C++]", "64-bit compiler [C++], command line usage", "64-bit compiler [C++], toolset enabling at command line", "command line [C++], 64-bit compiler", "Itanium [C++], command-line compiler", "IPF", "Itanium [C++]", "IPF, command-line compiler", "x64 [C++], command-line compiler"]
+#customer intent: 
 ---
 # How to: Enable a 64-Bit, x64 hosted MSVC toolset on the command line
 
-Visual Studio includes C++ compilers, linkers, and other tools that you can use to create platform-specific versions of your apps that can run on 32-bit, 64-bit, or ARM-based Windows operating systems. Other optional Visual Studio workloads let you use C++ tools to target other platforms, such as iOS, Android, and Linux. The default build architecture uses 32-bit, x86-hosted tools to build 32-bit, x86-native Windows code. However, you probably have a 64-bit computer. When Visual Studio is installed on a 64-bit Windows operating system, additional developer command prompt shortcuts for the 64-bit, x64-hosted native and cross compilers are available. You can take advantage of the processor and memory space available to 64-bit code by using the 64-bit, x64-hosted toolset when you build code for x86, x64, or ARM processors.
+Visual Studio includes C++ compilers, linkers, and other tools that you can use to create platform-specific versions of your apps. You can create versions that run on 32-bit, 64-bit, or ARM-based Windows operating systems. Other optional Visual Studio workloads let you use C++ tools to target other platforms, such as iOS, Android, and Linux. The default build architecture uses 32-bit, x86-hosted tools to build 32-bit, x86-native Windows code. However, you probably have a 64-bit computer. When Visual Studio is installed on a 64-bit Windows operating system, other developer command prompt shortcuts for the 64-bit, x64-hosted native, and cross compilers are available. You can take advantage of the processor and memory space available to 64-bit code by using the 64-bit, x64-hosted toolset when you build code for x86, x64, or ARM processors.
 
 ## Use a 64-bit hosted developer command prompt shortcut
 
@@ -25,11 +26,11 @@ Any of the native or cross compiler tools build configurations can be used on th
 ## Remarks
 
 > [!NOTE]
-> For information about the specific tools that are included with each Visual Studio edition, see [Visual C++ Tools and Features in Visual Studio Editions](../overview/visual-cpp-tools-and-features-in-visual-studio-editions.md).
+> For information about the specific tools that are included with each Visual Studio edition, see [C++ Tools and Features in Visual Studio Editions](../overview/visual-cpp-tools-and-features-in-visual-studio-editions.md).
 >
-> For information about how to use the Visual Studio IDE to create 64-bit applications, see [How to: Configure Microsoft C++ Projects to Target 64-Bit, x64 Platforms](how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md).
+> For information about how to use the Visual Studio IDE to create 64-bit applications, see [How to: Configure Visual Studio C++ Projects to Target 64-Bit, x64 Platforms](how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md).
 
-When you install a C++ workload in the Visual Studio installer, it always installs 32-bit, x86-hosted, native and cross compiler tools to build x86 and x64 code. If you include the Universal Windows Platform workload, it also installs x86-hosted cross compiler tools to build ARM code. If you install these workloads on a 64-bit, x64 processor, you also get 64-bit native and cross compiler tools to build x86, x64, and ARM code. The 32-bit and 64-bit tools generate identical code, but the 64-bit tools support more memory for precompiled header symbols and the Whole Program Optimization ([/GL](reference/gl-whole-program-optimization.md) and [/LTCG](reference/ltcg-link-time-code-generation.md)) options. If you run into memory limits when you use the 32-bit tools, try the 64-bit tools.
+When you install a C++ workload in the Visual Studio installer, it always installs 32-bit, x86-hosted, native, and cross compiler tools to build x86 and x64 code. If you include the Universal Windows Platform workload, it also installs x86-hosted cross compiler tools to build ARM code. If you install these workloads on a 64-bit, x64 processor, you also get 64-bit native and cross compiler tools to build x86, x64, and ARM code. The 32-bit and 64-bit tools generate identical code, but the 64-bit tools support more memory for precompiled header symbols and the Whole Program Optimization ([/GL](reference/gl-whole-program-optimization.md) and [/LTCG](reference/ltcg-link-time-code-generation.md)) options. If you run into memory limits when you use the 32-bit tools, try the 64-bit tools.
 
 ## See also
 
