@@ -3,7 +3,7 @@ title: "How to: Enable a 64-Bit MSVC Toolset on the Command Line"
 description: "Learn how to enable a 64-Bit, x64 hosted MSVC toolset on the command line. Use this toolset to create apps that run on 32-bit, 64-bit, or ARM-based systems."
 ms.date: "05/04/2026"
 helpviewer_keywords: ["x64 [C++]", "64-bit compiler [C++], command line usage", "64-bit compiler [C++], toolset enabling at command line", "command line [C++], 64-bit compiler", "Itanium [C++], command-line compiler", "IPF", "Itanium [C++]", "IPF, command-line compiler", "x64 [C++], command-line compiler"]
-#customer intent: As a cross-platform developer, I need the toolset installed with Visuals Studio to build code for x86, x64, or ARM processors.
+#customer intent: As a cross-platform developer, I need the toolset installed with Visual Studio to build code for x86, x64, or ARM processors.
 ---
 # How to: Enable a 64-Bit, x64 hosted MSVC toolset on the command line
 
@@ -21,7 +21,7 @@ If you have different versions of Visual Studio installed, other versions of the
 
 On earlier versions of Windows, choose **Start**, expand **All Programs**, and then expand the folder for your version of **Visual Studio**. For older versions of Visual Studio, this folder is **Visual Studio Tools**. For more information, see [Developer command prompt shortcuts](building-on-the-command-line.md#developer_command_prompt_shortcuts).
 
-## Use Vcvarsall.bat to set a 64-bit hosted build architecture
+## Use vcvarsall.bat to set a 64-bit hosted build architecture
 
 Any of the native or cross compiler tools build configurations can be used on the command line by running the *vcvarsall.bat* command file. This command file configures the path and environment variables that enable a particular build architecture in an existing command prompt window. For more information, see [Developer command file locations](building-on-the-command-line.md#developer_command_file_locations).
 
@@ -38,4 +38,4 @@ If you install these workloads on a 64-bit, x64 processor, you also get 64-bit n
 
 ## Related content
 
-- [Configure C++ projects for 64-bit, x64 targets](configuring-programs-for-64-bit-visual-cpp.md)<br/>
+- [Configure C++ projects for 64-bit, x64 targets](configuring-programs-for-64-bit-visual-cpp.md)
