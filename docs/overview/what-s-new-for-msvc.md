@@ -32,43 +32,40 @@ Here's a quick highlight of some of the new features in MSVC Build Tools version
 
 ### C++ language enhancements
 
-- The frontend team continued implementing C++23 and C++20 features and fixing conformance issues. For full C++23 details, see [C++23 Support in MSVC Build Tools 14.51](https://devblogs.microsoft.com/cppblog/c23-support-in-msvc-build-tools-14-51).
+- More C++23 and C++20 features and conformance issue fixes. For full C++23 details, see [C++23 Support in MSVC Build Tools 14.51](https://devblogs.microsoft.com/cppblog/c23-support-in-msvc-build-tools-14-51).
 - Multiple fixes to `consteval` function handling, including support for constexpr `new`/`delete` in modules. The `/experimental:constevalVfuncVtable` behavior is now enabled by default.
 - Added support for C language features: `_Atomic` qualifier and `__typeof__` for function types.
 - Fixed incorrect diagnostics for C99 flexible array members.
 - MSVC frontend now generates IFC files according to [version 0.44](https://github.com/microsoft/ifc-spec/releases/tag/0.44) of the [IFC specification](https://github.com/microsoft/ifc-spec).
-- Improved parser error recovery and removal of legacy token accessors.
+- Improved parser error recovery.
 
 ### Standard Library enhancements
 
 - Added new C++23 headers: `<flat_map>` ([P0429R9](https://wg21.link/P0429R9)) and `<flat_set>` ([P1222R4](https://wg21.link/P1222R4)).
-- **Massive `<regex>` overhaul:** Fixed long-standing correctness and performance problems present since VS 2008 SP1. After nearly two decades, the stack overflows are finally fixed. The implementation now performs matching non-recursively and includes significant performance improvements.
-- **ARM64 NEON vectorization:** First release shipping NEON-vectorized STL algorithms for ARM64/ARM64EC. Previously, only x64/x86 received SIMD optimizations with SSE4.2 and AVX2. Vectorized implementations are now available for algorithms including `swap_ranges()`, `rotate()`, `reverse()`, `min_element()`, `max_element()`, `find()`, `count()`, and many more.
+- **Massive `<regex>` overhaul:** Fixed long-standing correctness and performance problems. The implementation includes significant performance improvements.
+- **ARM64 NEON vectorization:** First release shipping NEON-vectorized STL algorithms for ARM64/ARM64EC. Previously, only x64/x86 received SIMD optimizations with SSE4.2 and AVX2. Vectorized implementations are now available for algorithms including `swap_ranges()`, `rotate()`, `reverse()`, `min_element()`, `max_element()`, `find()`, `count()`, and more.
 - Implemented 18 Library Working Group (LWG) issue resolutions, including fixes for duration conversion overflow, `construct_at` array support, and optional const overloads.
-- Optimized integer-to-string conversions by printing digits in pairs. The STL is now optimized for speed instead of size.
+- Optimized integer-to-string conversions by printing digits in pairs. The Standard Template Library is now optimized for speed instead of size.
 - Added type traits to detect references binding to temporaries ([P2255R2](https://wg21.link/P2255R2)).
 - Added explicit lifetime management support ([P2590R2](https://wg21.link/P2590R2)).
 - Enhanced debugger visualizations, including a `c_str()` intrinsic function for `basic_string` that enables conditional breakpoints.
 
 ### Build enhancements
 
-- **ARM SVE support:** First-ever ARM Scalable Vector Extension (SVE) support in MSVC, including frontend type support, intrinsic lowering, callee-saved register unwinding, and DIA SDK support.
+- **ARM SVE support:** First ARM Scalable Vector Extension (SVE) support in MSVC, including frontend type support, intrinsic lowering, callee-saved register unwinding, and DIA SDK support.
 - **Sample-based PGO:** Preview support for sample-based profile guided optimizations.
-- The backend optimizer received significant investment with dozens of new optimization patterns for improved code generation, including better inlining, loop optimizations, and pattern matching.
+- The C++ backend optimizer improves code generation, including better inlining, loop optimizations, and pattern matching.
 - **Intel APX preview:** Preview support for Intel Advanced Performance Extensions.
-- ARM64EC/ARM64X improvements: Fixed missing entry thunks for coroutine outlinees, improved identical COMDAT folding (ICF) in ARM64X binaries, and fixed volatile XMM assignment.
 - Enabled debug info pruning to reduce PDB sizes.
 
 ### Code analysis enhancements
 
-- Improved AddressSanitizer for ARM64 with comprehensive library packaging, interception fixes, and false-positive resolutions. ARM64 support is no longer preview—it's now fully supported.
-- Consolidated static analysis tools: EspX and its extensions like CppCoreCheck merged into a single DLL, simplifying deployment.
-- Fixed SanitizerCoverage blocklist handling and codegen issues.
+- Improved AddressSanitizer for ARM64. ARM64 is now fully supported.
 
 ### Deprecations
 
 - The following experimental coroutine headers are now deprecated: `<experimental/coroutine>`, `<experimental/generator>`, and `<experimental/resumable>`. Developers should transition to standard C++20 coroutines using the `<coroutine>` header.
-- Removed the escape hatch macro `_ALLOW_RTCc_IN_STL`. The STL doesn't support the `/RTCc` compiler option (but `/RTCs` and `/RTCu`/`/RTC1` remain supported).
+- Removed the macro `_ALLOW_RTCc_IN_STL`. The STL doesn't support the `/RTCc` compiler option (but `/RTCs` and `/RTCu`/`/RTC1` remain supported).
 
 ### Removed features
 
