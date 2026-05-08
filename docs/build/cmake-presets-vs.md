@@ -468,9 +468,17 @@ The Segment Heap is a modern Windows heap implementation that reduces memory usa
 To enable Segment Heap, set `CMAKE_PROJECT_TOP_LEVEL_INCLUDES` in the `cacheVariables` map of your Configure Preset in *`CMakePresets.json`*:
  
  ```json
-"cacheVariables": {
-  "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "{VSInstallDir}Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\Microsoft\\SegmentHeap.cmake"
+{
+  "configurePresets": [
+    {
+      // ...
+      "cacheVariables": {
+        "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "$env{VSINSTALLDIR}Common7/IDE/CommonExtensions/Microsoft/CMake/cmake/Microsoft/SegmentHeap.cmake"
+      }
+    }
+  ]
 }
+
 ```
 
 > [!NOTE]
