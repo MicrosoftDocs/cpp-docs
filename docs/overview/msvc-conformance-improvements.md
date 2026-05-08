@@ -1,7 +1,7 @@
 ---
 title: "/C++ Conformance improvements, behavior changes, and bug fixes in Microsoft C++ (MSVC) Build Tools"
 description: "Summary of conformance improvements in Microsoft C/C++ (MSVC)"
-ms.date: 11/03/2025
+ms.date: 05/08/2026
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ---
@@ -17,6 +17,87 @@ For changes in earlier versions of Visual Studio:
 | 2019 | [C++ conformance improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md) |
 | 2017 | [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md) |
 | 2003-2015 | [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md) |
+
+## <a name="msvc_14_51"></a> C++ conformance improvements, behavior changes, and bug fixes in MSVC Build Tools v14.51
+
+MSVC Build Tools v14.51 continues the progress toward full C++23 conformance with several key language feature implementations and numerous Core Working Group (CWG) issue resolutions. This release focuses on compile-time evaluation improvements, Unicode support enhancements, and refined consteval handling.
+
+This version shipped first with Visual Studio 2026 version 18.6 and includes version 19.51 of the MSVC compiler.
+
+Key highlights of this release include:
+- Static constexpr variables in constexpr functions (P2647R1)
+- Relaxed constexpr restrictions (P2448R2)
+- Unicode support improvements (P2029R4, P2071R2, P2314R4)
+- 22 CWG issue resolutions
+- Improved consteval function handling with default-enabled experimental features
+- New standard library headers `<flat_map>` and `<flat_set>`
+
+For more information about library features and additional updates, see [C++23 Support in MSVC Build Tools 14.51](https://devblogs.microsoft.com/cppblog/c23-support-in-msvc-build-tools-14-51) and [STL Changelog](https://github.com/microsoft/STL/wiki/Changelog).
+
+### P2647R1: Static constexpr variables in constexpr functions
+
+[P2647R1](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2647r1.html) allows static local variables to be declared `constexpr` within `constexpr` functions, reducing friction when marking existing functions as `constexpr`.
+
+```cpp
+constexpr char xdigit(int n)
+{
+  static constexpr char digits[] = "0123456789abcdef";
+  return digits[n];
+}
+```
+
+This feature improves both compile-time evaluation and run-time optimization. Previously, static local variables couldn't be marked `constexpr`, which made it difficult to declare lookup tables inside `constexpr` functions. Now the compiler can evaluate these functions at compile time when possible, while also generating optimized run-time code that accesses the static storage directly.
+
+### P2448R2: Relaxing some constexpr restrictions
+
+[P2448R2](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2448r2.html) relaxes restrictions on `constexpr` functions. A `constexpr` function no longer fails to compile if it can't actually run at compile time.
+
+```cpp
+void bar();
+
+// Now accepted, but only executable at run time
+constexpr void foo()
+{
+  bar();
+}
+```
+
+This change protects against library changes making user code ill-formed. If a library function is updated and can no longer be evaluated at compile time, code that calls it in a `constexpr` context remains valid—it simply runs at run time instead.
+
+### Other C++23 features
+
+Additional C++23 features implemented in this release include Unicode support improvements ([P2029R4](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p2029r4.html), [P2071R2](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p2071r2.html), [P2314R4](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p2314r4.html)), portable assumptions ([P1774R8](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p1774r8.html)), labels at the end of compound statements for C compatibility ([P2324R2](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p2324r2.html)), Class Template Argument Deduction (CTAD) from inherited constructors ([P2582R1](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2582r1.html)), and meaningful exports for modules ([P2615R1](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2615r1.html)). For more details, see the [blog post](https://devblogs.microsoft.com/cppblog/c23-support-in-msvc-build-tools-14-51).
+
+### CWG Issue Resolutions
+
+MSVC Build Tools v14.51 resolves 22 Core Working Group issues:
+
+- [CWG 2355](https://cplusplus.github.io/CWG/issues/2355.html): Deducing noexcept specifiers
+- [CWG 2392](https://cplusplus.github.io/CWG/issues/2392.html): new-expression size checks and constant evaluation
+- [CWG 2405](https://cplusplus.github.io/CWG/issues/2405.html): Additional type-dependent expressions
+- [CWG 2479](https://cplusplus.github.io/CWG/issues/2479.html): Missing specifications for consteval and constinit
+- [CWG 2484](https://cplusplus.github.io/CWG/issues/2484.html): char8_t / char16_t integral promotions
+- [CWG 2490](https://cplusplus.github.io/CWG/issues/2490.html): Restrictions on destruction in constant expressions
+- [CWG 2491](https://cplusplus.github.io/CWG/issues/2491.html): Export of typedef after first declaration
+- [CWG 2518](https://cplusplus.github.io/CWG/issues/2518.html): Conformance requirements and #error / #warning
+- [CWG 2529](https://cplusplus.github.io/CWG/issues/2529.html): Constant destruction of constexpr references
+- [CWG 2538](https://cplusplus.github.io/CWG/issues/2538.html): Ignoring standard attributes syntactically
+- [CWG 2539](https://cplusplus.github.io/CWG/issues/2539.html): Three-way comparison and floating-point strong ordering
+- [CWG 2543](https://cplusplus.github.io/CWG/issues/2543.html): constinit and optimized dynamic initialization
+- [CWG 2597](https://cplusplus.github.io/CWG/issues/2597.html): Replaceable allocation functions in the global module
+- [CWG 2602](https://cplusplus.github.io/CWG/issues/2602.html): consteval defaulted functions
+- [CWG 2605](https://cplusplus.github.io/CWG/issues/2605.html): Implicit-lifetime aggregates
+- [CWG 2615](https://cplusplus.github.io/CWG/issues/2615.html): Missing __has_cpp_attribute(assume)
+- [CWG 2618](https://cplusplus.github.io/CWG/issues/2618.html): Deduction excluding exception specifications
+- [CWG 2627](https://cplusplus.github.io/CWG/issues/2627.html): Bit-fields and narrowing conversions
+- [CWG 2631](https://cplusplus.github.io/CWG/issues/2631.html): Immediate function evaluation in default arguments
+- [CWG 2640](https://cplusplus.github.io/CWG/issues/2640.html): Extended characters in n-character sequences
+- [CWG 2651](https://cplusplus.github.io/CWG/issues/2651.html): Conversion function templates and noexcept
+- [CWG 2664](https://cplusplus.github.io/CWG/issues/2664.html): CTAD deduction failure for alias templates
+
+### Standard Library
+
+MSVC Build Tools v14.51 adds new standard library features including the `<flat_map>` and `<flat_set>` headers, type traits for detecting references binding to temporaries ([P2255R2](https://wg21.link/p2255r2)), explicit lifetime management ([P2590R2](https://wg21.link/p2590r2)), and `is_implicit_lifetime` ([P2674R1](https://wg21.link/P2674R1)). The release also includes a major `<regex>` overhaul, SIMD-vectorized STL algorithms using NEON for ARM64/ARM64EC, and 18 Library Working Group (LWG) issue resolutions. For the complete list, see the [STL Changelog](https://github.com/microsoft/STL/wiki/Changelog).
 
 ## <a name="msvc_14_50"></a> C++ conformance improvements, behavior changes, and bug fixes in MSVC Build Tools v14.50
 

@@ -1,7 +1,7 @@
 ---
 title: "What's new for MSVC Build Tools"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools (MSVC)."
-ms.date: 11/11/2025
+ms.date: 05/08/2026
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ms.custom: intro-whats-new
@@ -9,9 +9,77 @@ ms.custom: intro-whats-new
 
 # What's new for MSVC Build Tools
 
-Version 14.50 brings many updates and fixes to the Microsoft C++ compiler and other build tools.
+Version 14.51 brings many updates and fixes to the Microsoft C++ compiler and other build tools.
 
 - For more information about what's new in all of Visual Studio, see [Visual Studio 2026 release notes](/visualstudio/releases/2026/release-notes).
+
+## What's new for MSVC Build Tools version 14.51
+
+* Introduced in Visual Studio 2026 version 18.6 released May 2026.
+
+Visual Studio 2026 version 18.6 ships with the v145 platform toolset for MSBuild C++ projects and Microsoft C++ (MSVC) Build Tools version 14.51. To access all the new language features, build with `/std:c++latest`. Or, if you want to be restricted to features up to C++23, use `/std:c++23preview`.
+
+MSVC Build Tools version 14.51 preserves binary compatibility with code built with MSVC tools shipped in Visual Studio 2015 or later. For more information about binary compatibility, see [C++ binary compatibility between Visual Studio versions](/cpp/porting/binary-compat-2015-2017).
+
+| For detailed information about | See |
+|---|---|
+| What's new for C++ developers | [MSVC Build Tools version 14.51 Release Candidate Now Available](https://devblogs.microsoft.com/cppblog/msvc-build-tools-version-14-51-release-candidate-now-available/) |
+| Standard Library (STL) improvements | [STL Changelog MSVC Build Tools 14.51](https://github.com/microsoft/STL/wiki/Changelog#msvc-build-tools-1451-preview) |
+| C++23 language updates | [C++23 Support in MSVC Build Tools 14.51](https://devblogs.microsoft.com/cppblog/c23-support-in-msvc-build-tools-14-51) |
+| C++ language conformance improvements | [C/C++ Conformance improvements, behavior changes, and bug fixes in Microsoft C++ (MSVC) Build Tools](msvc-conformance-improvements.md) |
+
+Here's a quick highlight of some of the new features in MSVC Build Tools version 14.51:
+
+### C++ language enhancements
+
+- The frontend team continued implementing C++23 and C++20 features and fixing conformance issues. For full C++23 details, see [C++23 Support in MSVC Build Tools 14.51](https://devblogs.microsoft.com/cppblog/c23-support-in-msvc-build-tools-14-51).
+- Multiple fixes to `consteval` function handling, including support for constexpr `new`/`delete` in modules. The `/experimental:constevalVfuncVtable` behavior is now enabled by default.
+- Added support for C language features: `_Atomic` qualifier and `__typeof__` for function types.
+- Fixed incorrect diagnostics for C99 flexible array members.
+- MSVC frontend now generates IFC files according to [version 0.44](https://github.com/microsoft/ifc-spec/releases/tag/0.44) of the [IFC specification](https://github.com/microsoft/ifc-spec).
+- Improved parser error recovery and removal of legacy token accessors.
+
+### Standard Library enhancements
+
+- Added new C++23 headers: `<flat_map>` ([P0429R9](https://wg21.link/P0429R9)) and `<flat_set>` ([P1222R4](https://wg21.link/P1222R4)).
+- **Massive `<regex>` overhaul:** Fixed long-standing correctness and performance problems present since VS 2008 SP1. After nearly two decades, the stack overflows are finally fixed. The implementation now performs matching non-recursively and includes significant performance improvements.
+- **ARM64 NEON vectorization:** First release shipping NEON-vectorized STL algorithms for ARM64/ARM64EC. Previously, only x64/x86 received SIMD optimizations with SSE4.2 and AVX2. Vectorized implementations are now available for algorithms including `swap_ranges()`, `rotate()`, `reverse()`, `min_element()`, `max_element()`, `find()`, `count()`, and many more.
+- Implemented 18 Library Working Group (LWG) issue resolutions, including fixes for duration conversion overflow, `construct_at` array support, and optional const overloads.
+- Optimized integer-to-string conversions by printing digits in pairs. The STL is now optimized for speed instead of size.
+- Added type traits to detect references binding to temporaries ([P2255R2](https://wg21.link/P2255R2)).
+- Added explicit lifetime management support ([P2590R2](https://wg21.link/P2590R2)).
+- Enhanced debugger visualizations, including a `c_str()` intrinsic function for `basic_string` that enables conditional breakpoints.
+
+### Build enhancements
+
+- **ARM SVE support:** First-ever ARM Scalable Vector Extension (SVE) support in MSVC, including frontend type support, intrinsic lowering, callee-saved register unwinding, and DIA SDK support.
+- **Sample-based PGO:** Preview support for sample-based profile guided optimizations.
+- The backend optimizer received significant investment with dozens of new optimization patterns for improved code generation, including better inlining, loop optimizations, and pattern matching.
+- **Intel APX preview:** Preview support for Intel Advanced Performance Extensions.
+- ARM64EC/ARM64X improvements: Fixed missing entry thunks for coroutine outlinees, improved identical COMDAT folding (ICF) in ARM64X binaries, and fixed volatile XMM assignment.
+- Enabled debug info pruning to reduce PDB sizes.
+
+### Code analysis enhancements
+
+- Improved AddressSanitizer for ARM64 with comprehensive library packaging, interception fixes, and false-positive resolutions. ARM64 support is no longer preview—it's now fully supported.
+- Consolidated static analysis tools: EspX and its extensions like CppCoreCheck merged into a single DLL, simplifying deployment.
+- Fixed SanitizerCoverage blocklist handling and codegen issues.
+
+### Deprecations
+
+- The following experimental coroutine headers are now deprecated: `<experimental/coroutine>`, `<experimental/generator>`, and `<experimental/resumable>`. Developers should transition to standard C++20 coroutines using the `<coroutine>` header.
+- Removed the escape hatch macro `_ALLOW_RTCc_IN_STL`. The STL doesn't support the `/RTCc` compiler option (but `/RTCs` and `/RTCu`/`/RTC1` remain supported).
+
+### Removed features
+
+The following long-deprecated non-Standard features have been removed:
+
+- **TR1** including the `std::tr1` namespace, old `array::assign()`, and old `<random>` engines and distributions. Deprecated since VS 2017 15.5 (December 2017).
+- **`<hash_map>` and `<hash_set>`**. Deprecated since VS 2015 (July 2015).
+- **`<experimental/filesystem>`**. Deprecated since VS 2019 16.3 (September 2019).
+- **`stdext::checked_array_iterator` and `stdext::unchecked_array_iterator`**. Deprecated since VS 2022 17.8 (November 2023) for C++17 and later.
+- **`basic_istream::ipfx()`/`isfx()` and `basic_ostream::opfx()`/`osfx()`**. Deprecated since VS 2022 17.9 (February 2024) for C++17 and later.
+- **`locale::empty()`**. Deprecated since VS 2022 17.14 (May 2025).
 
 ## What's new for MSVC Build Tools version 14.50
 
