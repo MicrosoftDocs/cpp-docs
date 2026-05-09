@@ -77,7 +77,7 @@ Key highlights of this release include:
 
 For more information about performance improvements, bug fixes, and conformance updates in the standard library, see [STL Changelog](https://github.com/microsoft/STL/wiki/Changelog), which is updated regularly.
 
-## C++23 Features
+## C++23 features
 
 MSVC Build Tools v14.50 adds support for several C++23 features, bringing the compiler closer to full C++23 conformance.
 

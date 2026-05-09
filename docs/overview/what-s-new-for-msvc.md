@@ -36,8 +36,13 @@ Here's a quick highlight of some of the new features in MSVC Build Tools version
 - Multiple fixes to `consteval` function handling, including support for constexpr `new`/`delete` in modules. The `/experimental:constevalVfuncVtable` behavior is now enabled by default.
 - Added support for C language features: `_Atomic` qualifier and `__typeof__` for function types.
 - Fixed incorrect diagnostics for C99 flexible array members.
-- MSVC frontend now generates IFC files according to [version 0.44](https://github.com/microsoft/ifc-spec/releases/tag/0.44) of the [IFC specification](https://github.com/microsoft/ifc-spec).
+- MSVC now generates IFC files according to [version 0.44](https://github.com/microsoft/ifc-spec/releases/tag/0.44) of the [IFC specification](https://github.com/microsoft/ifc-spec).
 - Improved parser error recovery.
+
+## C language enhancements
+
+Added `_Atomic` qualifier support and added `__typeof__` support for function types.
+Fixed [C4319](https://learn.microsoft.com/cpp/error-messages/compiler-warnings/compiler-warning-level-1-c4319) not being emitted when compiling C code.
 
 ### Standard Library enhancements
 
