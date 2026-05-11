@@ -42,7 +42,7 @@ Here's a quick highlight of some of the new features in MSVC Build Tools version
 ## C language enhancements
 
 Added `_Atomic` qualifier support and added `__typeof__` support for function types.
-Fixed [C4319](https://learn.microsoft.com/cpp/error-messages/compiler-warnings/compiler-warning-level-1-c4319) not being emitted when compiling C code.
+Fixed [C4319](/cpp/error-messages/compiler-warnings/compiler-warning-level-1-c4319) not being emitted when compiling C code.
 
 ### Standard Library enhancements
 
