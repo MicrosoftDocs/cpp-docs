@@ -1,7 +1,7 @@
 ---
 title: "What's new for MSVC Build Tools"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools (MSVC)."
-ms.date: 05/11/2026
+ms.date: 05/12/2026
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ms.custom: intro-whats-new
@@ -25,7 +25,6 @@ MSVC Build Tools version 14.51 preserves binary compatibility with code built wi
 |---|---|
 | What's new for C++ developers | [MSVC Build Tools version 14.51 Release Candidate Now Available](https://devblogs.microsoft.com/cppblog/msvc-build-tools-version-14-51-release-candidate-now-available/) |
 | Standard Library (STL) improvements | [STL Changelog MSVC Build Tools 14.51](https://github.com/microsoft/STL/wiki/Changelog#msvc-build-tools-1451) |
-| C++23 language updates | [C++23 Support in MSVC Build Tools 14.51](https://devblogs.microsoft.com/cppblog/c23-support-in-msvc-build-tools-14-51) |
 | C++ language conformance improvements | [C/C++ Conformance improvements, behavior changes, and bug fixes in Microsoft C++ (MSVC) Build Tools](msvc-conformance-improvements.md) |
 
 Here's a quick highlight of some of the new features in MSVC Build Tools version 14.51:
