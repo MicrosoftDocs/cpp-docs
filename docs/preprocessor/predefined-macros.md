@@ -65,6 +65,8 @@ The compiler supports these predefined macros specified by the ISO C99, C11, C17
 
 MSVC supports other predefined macros:
 
+- `__APX_F__` Defined as 1 when the [`/feature:APX`](../build/reference/feature-x64.md) compiler option is set and the compiler target is x64. Otherwise, undefined.
+
 - `__ARM_ARCH` Defined as an integer literal that represents the ARM architecture version. The value is defined as 8 for the Armv8-A architecture. For 8.1 and onwards, the value is scaled for minor versions, such as X.Y, by using the formula X * 100 + Y as defined by the ARM C language extension. For example, for Armv8.1, `__ARM_ARCH` is 8 * 100 + 1 or 801. To set the ARM architecture version, see [`/arch (ARM64)`](../build/reference/arch-arm64.md). This macro was introduced in Visual Studio 2022 version 17.10.
 
 - `__ATOM__` Defined as 1 when the [`/favor:ATOM`](../build/reference/favor-optimize-for-architecture-specifics.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
@@ -84,6 +86,10 @@ MSVC supports other predefined macros:
 - `__AVX512VL__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md), [`/arch:AVX10.1`](../build/reference/arch-x86.md), or [`/arch:AVX10.2`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
 - `__AVX10_VER__` Defined as an integer that represents version of AVX10 when the [`/arch:AVX10.1`](../build/reference/arch-x86.md) or [`/arch:AVX10.2`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+
+- `__CCMP__` Defined as 1 when the [`/feature:APX`](../build/reference/feature-x64.md) compiler option is set and the compiler target is x64. Otherwise, undefined.
+
+- `__CF__` Defined as 1 when the [`/feature:APX`](../build/reference/feature-x64.md) compiler option is set and the compiler target is x64. Otherwise, undefined.
 
 - `_CHAR_UNSIGNED` Defined as 1 if the default **`char`** type is unsigned. This value is defined when the [**`/J`** (Default char type is unsigned)](../build/reference/j-default-char-type-is-unsigned.md) compiler option is set. Otherwise, undefined.
 
@@ -168,6 +174,8 @@ MSVC supports other predefined macros:
 - `_DEBUG` Defined as 1 when the [`/LDd`](../build/reference/md-mt-ld-use-run-time-library.md), [`/MDd`](../build/reference/md-mt-ld-use-run-time-library.md), or [`/MTd`](../build/reference/md-mt-ld-use-run-time-library.md) compiler option is set. Otherwise, undefined.
 
 - `_DLL` Defined as 1 when the [`/MD`](../build/reference/md-mt-ld-use-run-time-library.md) or [`/MDd`](../build/reference/md-mt-ld-use-run-time-library.md) (Multithreaded DLL) compiler option is set. Otherwise, undefined.
+
+- `__EGPR__` Defined as 1 when the [`/feature:APX`](../build/reference/feature-x64.md) compiler option is set and the compiler target is x64. Otherwise, undefined.
 
 - `__FUNCDNAME__` Defined as a string literal that contains the [decorated name](../build/reference/decorated-names.md) of the enclosing function. The macro is defined only within a function. The `__FUNCDNAME__` macro isn't expanded if you use the [`/EP`](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) or [`/P`](../build/reference/p-preprocess-to-a-file.md) compiler option.
 
@@ -287,6 +295,10 @@ MSVC supports other predefined macros:
 
 - `_MT` Defined as 1 when [**`/MD`** or **`/MDd`** (Multithreaded DLL)](../build/reference/md-mt-ld-use-run-time-library.md) or [**`/MT`** or **`/MTd`** (Multithreaded)](../build/reference/md-mt-ld-use-run-time-library.md) is specified. Otherwise, undefined.
 
+- `__NDD__` Defined as 1 when the [`/feature:APX`](../build/reference/feature-x64.md) compiler option is set and the compiler target is x64. Otherwise, undefined.
+
+- `__NF__` Defined as 1 when the [`/feature:APX`](../build/reference/feature-x64.md) compiler option is set and the compiler target is x64. Otherwise, undefined.
+
 - `_NATIVE_WCHAR_T_DEFINED` Defined as 1 when the [`/Zc:wchar_t`](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) compiler option is set. Otherwise, undefined.
 
 - `_OPENMP` Defined as integer literal 200203, if the [**`/openmp`** (Enable OpenMP 2.0 Support)](../build/reference/openmp-enable-openmp-2-0-support.md) compiler option is set. This value represents the date of the OpenMP specification implemented by MSVC. Otherwise, undefined.
@@ -300,7 +312,11 @@ MSVC supports other predefined macros:
    }
    ```
 
+- `__PPX__` Defined as 1 when the [`/feature:APX`](../build/reference/feature-x64.md) compiler option is set and the compiler target is x64. Otherwise, undefined.
+
 - `_PREFAST_` Defined as 1 when the [`/analyze`](../build/reference/analyze-code-analysis.md) compiler option is set. Otherwise, undefined.
+
+- `__PUSH2POP2__` Defined as 1 when the [`/feature:APX`](../build/reference/feature-x64.md) compiler option is set and the compiler target is x64. Otherwise, undefined.
 
 - `__SANITIZE_ADDRESS__` Available beginning with Visual Studio 2019 version 16.9. Defined as 1 when the [`/fsanitize=address`](../build/reference/fsanitize.md) compiler option is set. Otherwise, undefined.
 
@@ -315,6 +331,8 @@ MSVC supports other predefined macros:
 - `_WIN64` Defined as 1 when the compilation target is 64-bit ARM, x64, or ARM64EC. Otherwise, undefined.
 
 - `_WINRT_DLL` Defined as 1 when compiled as C++ and both [**`/ZW`** (Windows Runtime Compilation)](../build/reference/zw-windows-runtime-compilation.md) and [**`/LD`** or **`/LDd`**](../build/reference/md-mt-ld-use-run-time-library.md) compiler options are set. Otherwise, undefined.
+
+- `__ZU__` Defined as 1 when the [`/feature:APX`](../build/reference/feature-x64.md) compiler option is set and the compiler target is x64. Otherwise, undefined.
 
 No preprocessor macros that identify the ATL or MFC library version are predefined by the compiler. ATL and MFC library headers define these version macros internally. They're undefined in preprocessor directives made before the required header is included.
 

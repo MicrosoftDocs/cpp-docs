@@ -84,5 +84,6 @@ Support for **`/arch:AVX10.1`** was added in Visual Studio 2022. Support for **`
 ## See also
 
 [`/arch` (Minimum CPU Architecture)](arch-minimum-cpu-architecture.md)\
+[`/feature` (x64)](feature-x64.md)\
 [MSVC compiler options](compiler-options.md)\
 [MSVC compiler command-line syntax](compiler-command-line-syntax.md)
