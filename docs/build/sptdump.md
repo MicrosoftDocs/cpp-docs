@@ -66,8 +66,8 @@ The SPT header is 32 bytes:
 - `[0x1C-0x1D]` ProgramIdsUsed (uint16 LE) = number of program IDs (often just 1)
 - `[0x1E-0x1F]` ProgramIdCapacity (uint16 LE) = capacity in count (not bytes) for program IDs (typically 0x100)
 
-The StringTable immediately follows the header at the specified offset. It contains a null-terminated UTF-8 binary filename.
-The ProgramIdTable follows the StringTable at the specified offset. Each entry is 24 bytes: 16-byte Rich Signature Data Stream (RSDS) GUID + 4-byte age + 4-byte string index into StringTable.
+The StringTable immediately follows the header at the specified offset. It contains a null-terminated UTF-8 binary filename.\
+The ProgramIdTable follows the StringTable at the specified offset. Each entry is 24 bytes: 16-byte Rich Signature Data Stream (RSDS) GUID + 4-byte age + 4-byte string index into StringTable.\
 The data stream starts at `ProgramIdTableOffset + (ProgramIdCapacity * 24)`, and starts with a `SPT_OP_BINARY_ID` opcode.
 
 **SPT Opcodes**
