@@ -137,6 +137,8 @@ items:
           items: 
             - name: Profile-guided optimizations
               href: ../build/profile-guided-optimizations.md
+            - name: Sample profile-guided optimization tutorial
+              href: ../build/sample-profile-guided-optimization.md
             - name: Environment variables for profile-guided optimizations
               href: ../build/environment-variables-for-profile-guided-optimizations.md
             - name: PgoAutoSweep
@@ -145,6 +147,14 @@ items:
               href: ../build/pgomgr.md
             - name: pgosweep
               href: ../build/pgosweep.md
+            - name: SPDConvert
+              href: ../build/spdconvert.md
+            - name: SPDDump
+              href: ../build/spddump.md
+            - name: SPTAggregate
+              href: ../build/sptaggregate.md
+            - name: SPTDump
+              href: ../build/sptdump.md
             - name: "How to: Merge multiple PGO profiles into a single profile"
               href: ../build/how-to-merge-multiple-pgo-profiles-into-a-single-profile.md
 - name: Use the MSVC toolset from the command line
