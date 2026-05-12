@@ -16,7 +16,7 @@ Visual Studio 2019 and later versions don't include current build tools support 
 
 - The following experimental coroutine headers are now deprecated: `<experimental/coroutine>`, `<experimental/generator>`, and `<experimental/resumable>`. Transition to standard C++20 coroutines using the `<coroutine>` header.
 
-- ### Removed features
+### Removed features
 
 The following long-deprecated non-Standard features are removed:
 
