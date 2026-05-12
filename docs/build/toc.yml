@@ -571,7 +571,12 @@ items:
                 - name: /FC (Full path of source code file in diagnostics)
                   href: ../build/reference/fc-full-path-of-source-code-file-in-diagnostics.md
                 - name: /feature (Enable architecture features)
-                  href: ../build/reference/feature-arm64.md
+                  href: ../build/reference/feature-enable-architecture-features.md
+                  items:
+                    - name: /feature (ARM64)
+                      href: ../build/reference/feature-arm64.md
+                    - name: /feature (x64)
+                      href: ../build/reference/feature-x64.md
                 - name: /forceInterlockedFunctions (Generate and link with out-of-line atomic
                     functions)
                   href: ./reference/force-interlocked-functions.md
