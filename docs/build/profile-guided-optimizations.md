@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Profile-guided optimizations"
 title: "Profile-guided optimizations"
-ms.date: "04/23/2019"
+ms.date: 05/11/2026
 helpviewer_keywords: ["profile-guided optimizations", "optimization, profile-guided [C++]"]
 ---
 # Profile-guided optimizations
@@ -30,7 +30,7 @@ To use profile-guided optimization, follow these steps to optimize your app:
 
 - Profile the application.
 
-   Each time a profiled EXE session ends, or a profiled DLL unloads, the process creates a `appname!N.pgc` file. A `.pgc` file contains information about a particular application test run. *appname* is the name of your app, and *N* is a number starting with 1. It increments based on the number of other `appname!N.pgc` files in the directory. You can delete a `.pgc` file if the test run doesn't represent a scenario you want to optimize.
+   Each time a profiled EXE session ends, or a profiled DLL unloads, the process creates an `appname!N.pgc` file. A `.pgc` file contains information about a particular application test run. *appname* is the name of your app, and *N* is a number starting with 1. It increments based on the number of other `appname!N.pgc` files in the directory. You can delete a `.pgc` file if the test run doesn't represent a scenario you want to optimize.
 
    During a test run, you can force closure of the currently open `.pgc` file and the creation of a new `.pgc` file by using the [pgosweep](pgosweep.md) utility (for example, when the end of a test scenario doesn't coincide with application shutdown).
 
@@ -75,7 +75,7 @@ Profile-guided optimizations include these checks and improvements:
 
 To learn more about these environment variables, functions, and tools you can use in profile-guided optimizations, see the following resources:
 
-[Environment variables for profile-guided optimizations](environment-variables-for-profile-guided-optimizations.md)
+[Environment variables for profile-guided optimizations](environment-variables-for-profile-guided-optimizations.md)\
 These variables specify the run-time behavior of testing scenarios. They're now deprecated and replaced by new linker options. This document shows you how to move from the environment variables to the linker options.
 
 [PgoAutoSweep](pgoautosweep.md)\

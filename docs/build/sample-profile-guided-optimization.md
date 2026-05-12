@@ -301,11 +301,13 @@ This message appears on the first `/spgo` build. The linker creates the SPD file
 | `/link /debug` | Pass `/debug` to the linker to generate debug information (`.pdb`), which xperf uses to map profiling samples to source code. |
 | `/spgo` | SPGO linker flag—embeds SPGO metadata in the binary and creates an empty `textCount.spd` file alongside the executable. |
 
-> **Note:** `/spgo` is a linker flag. Pass it to the linker via `/link /spgo` in the `cl` command.
+> [!NOTE]
+> `/spgo` is a linker flag. Pass it to the linker via `/link /spgo` in the `cl` command.
 
 The `/spgo` flag doesn't optimize the binary yet. It prepares it for profiling. The optimization happens in [Rebuild textCount with /spdin](#rebuild-textcount-with-spdin) after the SPD is populated with real runtime data.
 
-> **Note:** To write the SPD to a specific location, add the optional `/spd:<path>` linker flag. For example: `/link /debug /spgo /spd:.\profiles\textCount.spd`. If you omit this flag, the SPD is created alongside the `.exe`.
+> [!NOTE]
+> To write the SPD to a specific location, add the optional `/spd:<path>` linker flag. For example: `/link /debug /spgo /spd:.\profiles\textCount.spd`. If you omit this flag, the SPD is created alongside the `.exe`.
 
 ## Choose your profiling method
 
@@ -505,7 +507,9 @@ SPDConvert.exe /mode:IP textCount.spd textCount.spt
 
 `/mode:IP` tells `SPDConvert` to interpret the SPT as containing instruction-pointer samples.
 
-> **Warning:** Using the wrong mode for your data type can produce an empty or malformed SPD. If you profiled with LBR, use `/mode:LBR`. If you profiled with PMC or OS timer, use `/mode:IP`. The `SPTAggregate` summary output from [Convert the ETL file to SPT](#convert-the-etl-file-to-spt) shows which sample types were collected and confirms the correct mode to use.
+> [!WARNING]
+> Using the wrong mode for your data type can produce an empty or malformed SPD. If you profiled with LBR, use `/mode:LBR`.
+> If you profiled with PMC or OS timer, use `/mode:IP`. The `SPTAggregate` summary output from [Convert the ETL file to SPT](#convert-the-etl-file-to-spt) shows which sample types were collected and confirms the correct mode to use.
 
 After running `SPDConvert`, confirm that `textCount.spd` was created (or updated) in the current directory.
 
@@ -554,7 +558,8 @@ cl /EHsc /GL /O2 textCount.cpp /link /debug /spgo /spdin:textCount.spd
 
 The command still includes `/spgo`. It generates a new SPD file alongside the optimized binary, which you can use as the starting point for subsequent profiling iterations.
 
-> **Warning:** The SPD file is associated with the exact binary it profiles against. If you rebuild `textCount` without `/spdin`, or rebuild from changed source, you must generate a new SPD file. The existing one doesn't match the new binary's GUID, and the linker won't use it.
+> [!WARNING]
+> The SPD file is associated with the exact binary it profiles against. If you rebuild `textCount` without `/spdin`, or rebuild from changed source, you must generate a new SPD file. The existing one doesn't match the new binary's GUID, and the linker won't use it.
 
 After the rebuild with `/spdin`, the linker outputs statistics about how much of your code was optimized using profile data. For example:
 
@@ -630,7 +635,7 @@ wpr -start CPU.light -filemode
 textCount.exe < warAndPeace.txt
 wpr -stop spgo_data.etl
 ```
-For more information on using WPR, see [Using Windows Performance Recorder](/windows-hardware/test/wpt/recording-pmu-events)
+For more information on using WPR, see [Using Windows Performance Recorder](/windows-hardware/test/wpt/recording-pmu-events).
 
 ### SPD distribution
 
