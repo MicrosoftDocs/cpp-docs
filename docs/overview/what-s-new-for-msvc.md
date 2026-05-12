@@ -57,9 +57,10 @@ Fixed [C4319](/cpp/error-messages/compiler-warnings/compiler-warning-level-1-c43
 ### Build enhancements
 
 - **Arm SVE support:** First Arm Scalable Vector Extension (SVE) support in MSVC, including frontend type support, intrinsic lowering, callee-saved register unwinding, and DIA SDK support.
-- **Sample-based PGO:** Preview support for sample-based profile guided optimizations.
+- **Sample-based PGO:** Preview support for sample-based profile guided optimizations. For more information, see [Use Sample Profile Guided Optimization (SPGO) to improve C++ performance](../build/sample-profile-guided-optimization.md).
 - The C++ backend optimizer improves code generation, including better inlining, loop optimizations, and pattern matching.
-- **Intel APX preview:** Preview support for Intel Advanced Performance Extensions.
+- **Experimental support for x64 Unwind Version 3 MASM directives**. For more information, see [Unwind Version 3 directives (experimental)](../assembler/masm/directives-reference#x64-unwind-version-3-experimental.md).
+- **Intel APX preview:** Preview support for Intel Advanced Performance Extensions. For more information, see [/feature (x64)](..build/reference/feature-x64.md).
 - Enabled debug info pruning to reduce PDB sizes.
 
 ### Deprecations
