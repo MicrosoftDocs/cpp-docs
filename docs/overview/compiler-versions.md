@@ -1,7 +1,7 @@
 ---
 description: "Learn more about Microsoft C++ compiler versioning."
 title: "Microsoft C++ (MSVC) compiler versioning"
-ms.date: 05/08/2026
+ms.date: 05/12/2026
 ms.service: "visual-cpp"
 ms.subservice: "tools"
 helpviewer_keywords: ["Visual C++, platforms supported", "platforms [C++]"]
@@ -44,7 +44,6 @@ The [Visual Studio Stable Channel](https://visualstudio.microsoft.com) gets mont
 Each Visual Studio update receives updates to all of the MSVC build toolsets:
 - The **preview** toolset receives new features and fixes that the development team completed since the previous update.
 - The **default** and **older in-support** toolsets receive only targeted bug fixes.
-
 
 Visual Studio Insiders users get early access to MSVC releases:
 - On the Insiders Channel, preview toolsets update approximately weekly.
@@ -129,12 +128,14 @@ The following table lists MSVC Build Tools versions for Visual Studio 2026 and l
 | MSVC Build Tools version | `_MSC_VER` | Support | EOL date | More info |
 |--|--|--|--|--|
 | 14.50 | 1950 | Long-term | Nov 2028 | [What's New for C++ developers in Visual Studio 2026 version 18.0](https://devblogs.microsoft.com/cppblog/whats-new-for-cpp-developers-in-visual-studio-2026-version-18-0/) |
-| 14.51 | 1951 | Standard | TBD | [MSVC lifecycle policy](https://aka.ms/msvc/lifecycle) |
-| 14.52 | 1952 | Standard | TBD | [MSVC lifecycle policy](https://aka.ms/msvc/lifecycle) |
+| 14.51 | 1951 | Standard | Feb 2027 | [MSVC lifecycle policy](https://aka.ms/msvc/lifecycle) |
+| 14.52 | 1952 | Standard | Preview<sup>c</sup> | [MSVC lifecycle policy](https://aka.ms/msvc/lifecycle) |
 
 <sup>a</sup> Visual Studio 2019 versions 16.8 and 16.9 share the same major and minor versions (and so have the same value for `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 version 16.8 is 192829333. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 version 16.9 is 192829910.
 
 <sup>b</sup> Visual Studio 2019 versions 16.10 and 16.11 share the same major and minor versions (and so have the same value for `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 version 16.10 is 192929917. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 version 16.11 is 192930129.
+
+<sup>c</sup> MSVC Build Tools version 14.52 is in preview. The EOL date will be established upon general availability.
 
 ## A brief history of Microsoft C++ compiler versioning
 
