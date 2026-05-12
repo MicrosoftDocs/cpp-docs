@@ -1,13 +1,13 @@
 ---
 title: "/C++ Conformance improvements, behavior changes, and bug fixes in Microsoft C++ (MSVC) Build Tools"
 description: "Summary of conformance improvements in Microsoft C/C++ (MSVC)"
-ms.date: 05/08/2026
+ms.date: 05/12/2026
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ---
 # C/C++ Conformance improvements, behavior changes, and bug fixes in Microsoft C++ (MSVC) Build Tools
 
-Microsoft C++ (MSVC) Build Tools makes conformance improvements and bug fixes in every release. Starting with Visual Studio 2026 version 18.0, major improvements are organized by MSVC Build Tools version number. To jump directly to the changes for a specific version, use the **In this article** links at the top of this article.
+We make conformance improvements and bug fixes in every release of Microsoft C++ (MSVC) Build Tools. Starting with Visual Studio 2026 version 18.0, we organize major improvements by MSVC Build Tools version number. Use the **In this article** links at the top of this article to jump directly to the changes for a specific version.
 
 For changes in earlier versions of Visual Studio:
 
@@ -31,7 +31,7 @@ Key highlights of this release include:
 - Improved `consteval` function handling with default-enabled experimental features
 - New standard library headers `<flat_map>` and `<flat_set>`
 
-For more information about library features and additional updates, see [C++23 Support in MSVC Build Tools 14.51](https://devblogs.microsoft.com/cppblog/c23-support-in-msvc-build-tools-14-51) and [STL Changelog](https://github.com/microsoft/STL/wiki/Changelog).
+For more information about library features and other updates, see [C++23 Support in MSVC Build Tools 14.51](https://devblogs.microsoft.com/cppblog/c23-support-in-msvc-build-tools-14-51) and [STL Changelog](https://github.com/microsoft/STL/wiki/Changelog).
 
 ### P2647R1: Static constexpr variables in constexpr functions
 
@@ -49,7 +49,7 @@ This feature improves both compile-time evaluation and run-time optimization. Pr
 
 ### Other C++23 features
 
-Other C++23 features implemented in this release include Unicode support improvements, labels at the end of compound statements for C compatibility, Class Template Argument Deduction (CTAD) from inherited constructors, and meaningful exports for modules. For more details and related Core Working Group (CWG) issue resolutions, see the [C++23 Support in MSVC Build Tools 14.51](https://devblogs.microsoft.com/cppblog/c23-support-in-msvc-build-tools-14-51).
+Other C++23 features implemented in this release include Unicode support improvements, labels at the end of compound statements for C compatibility, Class Template Argument Deduction (CTAD) from inherited constructors, and meaningful exports for modules. For more information and related Core Working Group (CWG) issue resolutions, see the [C++23 Support in MSVC Build Tools 14.51](https://devblogs.microsoft.com/cppblog/c23-support-in-msvc-build-tools-14-51).
 
 ### Standard Library
 
@@ -62,7 +62,7 @@ For the complete list, see the [STL Changelog](https://github.com/microsoft/STL/
 
 ## <a name="msvc_14_50"></a> C++ conformance improvements, behavior changes, and bug fixes in MSVC Build Tools v14.50
 
-MSVC Build Tools v14.50 introduces improvements to the MSVC compiler and standard library, including better C++23 standards conformance, enhanced reliability, and improved correctness. This release also includes numerous bug fixes and updates that benefit large-scale C++ development.
+MSVC Build Tools v14.50 introduces improvements to the MSVC compiler and standard library including better C++23 standards conformance, enhanced reliability, and improved correctness. This release also includes numerous bug fixes and updates that benefit large-scale C++ development.
 
 This version shipped first with Visual Studio 2026 version 18.0 and includes version 19.50 of the MSVC compiler.
 

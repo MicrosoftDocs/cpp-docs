@@ -6,7 +6,7 @@ helpviewer_keywords: ["Features deprecated or removed from Visual Studio"]
 ---
 # C++ features deprecated or removed from Visual Studio
 
-This article is a non-exhaustive list of C++ features deprecated or removed from Visual Studio 2019 and later. For information on breaking changes and conformance improvements for C++ in the latest version of Visual Studio, see [C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md).
+This article is a nonexhaustive list of C++ features deprecated or removed from Visual Studio 2019 and later. For information on breaking changes and conformance improvements for C++ in the latest version of Visual Studio, see [C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md).
 
 ### Support for Windows XP development
 
@@ -18,7 +18,7 @@ Visual Studio 2019 and later versions don't include current build tools support 
 
 - ### Removed features
 
-The following long-deprecated non-Standard features have been removed:
+The following long-deprecated non-Standard features are removed:
 
 - **TR1** including the `std::tr1` namespace, old `array::assign()`, and old `<random>` engines and distributions. Deprecated since VS 2017 15.5 (December 2017).
 - **`_ALLOW_RTCc_IN_STL`** macro removed. The Standard Template Library doesn't support the `/RTCc` compiler option, but `/RTCs` and `/RTCu`/`/RTC1` remain supported.
@@ -32,13 +32,13 @@ The following long-deprecated non-Standard features have been removed:
 
 ### Support for project upgrade from Visual C++ 6
 
-Visual Studio 2022 and later versions don't support upgrades from Visual C++ 6 Workspace (*`.dsw`*) and Project (*`.dsp`*) files. Visual Studio no longer registers the *`.dsw`* and *`.dsp`* file extensions as Visual Studio file types. To upgrade a project with these extensions, first use Visual Studio 2019 to upgrade the project to modern Solution (*`.sln`*) and C++ Project (*`.vcxproj`*) files. Then use the current version of Visual Studio to upgrade the project again.
+Visual Studio 2022 and later versions don't support upgrades from Visual C++ 6 Workspace (*`.dsw`*) and Project (*`.dsp`*) files. Visual Studio no longer registers the *`.dsw`* and *`.dsp`* file extensions as Visual Studio file types. To upgrade a project with these extensions, first use Visual Studio 2019 to upgrade the project to modern Solution (*`.sln`*) and C++ Project (*`.vcxproj`*) files. Then upgrade the project again using the current version of Visual Studio.
 
 ## Visual Studio 2026
 
-### Support for C++AMP, ARM32 toolchain, and /DEBUG:FASTLINK
+### Support for C++AMP, ARM32 toolchain, and `/DEBUG:FASTLINK`
 
-Visual Studio 2026 and later versions don't support C++AMP, the ARM32 toolchain, and /DEBUG:FASTLINK. If you're utilizing `/DEBUG:FASTLINK`, it's recommended to switch to [`/DEBUG:FULL`](/cpp/build/reference/debug-generate-debug-info) for improved debugging support. Developers needing to target ARM32 can continue using the Visual Studio 2022 v143 build tools as detailed in this [Microsoft blog post](https://devblogs.microsoft.com/cppblog/side-by-side-minor-version-msvc-toolsets-in-visual-studio-2019/).
+Visual Studio 2026 and later versions don't support C++AMP, the ARM32 toolchain, and /DEBUG:FASTLINK. If you're utilizing `/DEBUG:FASTLINK`, switch to [`/DEBUG:FULL`](/cpp/build/reference/debug-generate-debug-info) for improved debugging support. Developers needing to target ARM32 can continue using the Visual Studio 2022 v143 build tools as detailed in this [Microsoft blog post](https://devblogs.microsoft.com/cppblog/side-by-side-minor-version-msvc-toolsets-in-visual-studio-2019/).
 
 ### Deprecation of `/await`
 

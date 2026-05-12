@@ -111,7 +111,7 @@ Here's a quick highlight of some of the new features in MSVC Build Tools version
 - Copilot Chat allows you to use natural language to get answers to questions (Ask mode) or even implement changes for you automatically (Agent Mode).
 - Copilot Chat is smarter with improved context for everyday tasks. Expect better results when searching your codebase and referencing specific lines in your code.
 - A **Copilot Actions** option was added to the right-click context menu in the Visual Studio editor. Use it to quickly bring a specific file or lines of code you select to the attention of Copilot Chat. You can then ask Copilot to explain what the code does, make optimizations, generate comments, generate unit tests, and more.
-- Better AI code completions for C++. GitHub Copilot uses context from relevant files to improve inline autocomplete for C++. GitHub Copilot includes other relevant files as context which reduces hallucinations while offering more relevant and accurate suggestions.
+- Better AI code completions for C++. GitHub Copilot uses context from relevant files to improve inline autocomplete for C++. GitHub Copilot includes other relevant files as context, which reduces hallucinations while offering more relevant and accurate suggestions.
 - For more information, see [New GitHub Copilot capabilities for C++ developers: Upgrade MSVC, improve build performance, and refactor C++ code](https://devblogs.microsoft.com/cppblog/new-github-copilot-capabilities-for-c-developers-upgrade-msvc-improve-build-performance-and-refactor-c-code/).
 
 ### Build enhancements
@@ -129,7 +129,7 @@ Here's a quick highlight of some of the new features in MSVC Build Tools version
     - Access the new options from **Project Properties** > **Code Analysis** > **Clang-Tidy**:
 
 ![Screenshot of Project Properties dialog showing clang-tidy configuration options including processor allocation and custom command line arguments](./media/clang-tidy-improvements.png)
-- AddressSanitizer support for ARM64 Builds (Preview): For some time, the MSVC Build Tools have supported building projects that target x64 and x86 with [AddressSanitizer](/cpp/sanitizers/asan), which allows you to identify hard-to-find memory safety issues with zero false positives at runtime and increase memory safety. Now you can use AddressSanitizer to target ARM64. This feature is in preview.
+- AddressSanitizer support for ARM64 Builds (Preview): For some time, the MSVC Build Tools supported building projects that target x64 and x86 with [AddressSanitizer](/cpp/sanitizers/asan), which allows you to identify hard-to-find memory safety issues with zero false positives at runtime and increase memory safety. Now you can use AddressSanitizer to target ARM64. This feature is in preview.
 
 ### Productivity enhancements
 
@@ -167,4 +167,6 @@ We'd love to hear from you! You can [Report a Problem or Suggest a Feature](/vis
 
 ## Blogs
 
-Take advantage of the insights and recommendations available in the [Microsoft Developer Blogs](https://devblogs.microsoft.com/) site to stay up to date on all new releases. The blogs include deep dive posts on a broad range of features. The [C++ Team Blog](https://devblogs.microsoft.com/cppblog) and the [Visual Studio Blog](https://devblogs.microsoft.com/visualstudio) are of particular interest.
+Stay up to date on all new releases by taking advantage of the insights and recommendations available in at [Microsoft Developer Blogs](https://devblogs.microsoft.com/). The blogs include deep dive posts on a broad range of features.
+
+The [C++ Team Blog](https://devblogs.microsoft.com/cppblog) and the [Visual Studio Blog](https://devblogs.microsoft.com/visualstudio) are of particular interest.
