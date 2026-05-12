@@ -1,8 +1,9 @@
 ---
 description: "Learn more about: Microsoft Macro Assembler (MASM) for x64 (ml64.exe)"
 title: "MASM for x64 (ml64.exe)"
-ms.date: 09/21/2021
+ms.date: 05/07/2026
 helpviewer_keywords: ["ml64", "ml64.exe", "masm for x64"]
+ai-usage: ai-assisted
 ---
 # MASM for x64 (ml64.exe)
 
@@ -21,34 +22,54 @@ The Visual Studio project system supports assembler-language files built by usin
 ### To add an assembler-language file to an existing Visual Studio C++ project
 
 1. Select the project in **Solution Explorer**. On the menu bar, choose **Project**, **Build Customizations**.
-
 1. In the **Visual C++ Build Customization Files** dialog box, check the checkbox next to **masm(.targets,.props)**. Choose **OK** to save your selection and close the dialog box.
-
 1. On the menu bar, choose **Project**, **Add New Item**.
-
 1. In the **Add New Item** dialog box, select **C++ file (.cpp)** in the center pane. In the **Name** edit control, enter a new file name that has a *`.asm`* extension instead of *`.cpp`*. Choose **Add** to add the file to your project and close the dialog box.
 
 Create your assembler-language code in the *`.asm`* file you added. When you build your solution, the MASM assembler is invoked to assemble the *`.asm`* file into an object file that is then linked into your project. To make symbol access easier, declare your assembler functions as `extern "C"` in your C++ source code, rather than using the C++ name decoration conventions in your assembler-language source files.
 
-## ml64-Specific Directives
+## ml64-specific directives
 
 You can use the following ml64-specific directives in your assembler-language source code that targets x64:
 
 - [`.ALLOCSTACK`](dot-allocstack.md)
-
 - [`.ENDPROLOG`](dot-endprolog.md)
-
 - [`.PUSHFRAME`](dot-pushframe.md)
-
 - [`.PUSHREG`](dot-pushreg.md)
-
 - [`.SAVEREG`](dot-savereg.md)
-
 - [`.SAVEXMM128`](dot-savexmm128.md)
-
 - [`.SETFRAME`](dot-setframe.md)
 
-The [`PROC`](proc.md) directive has also been updated for use with ml64.exe.
+The [`PROC`](proc.md) directive is also updated for use with ml64.exe.
+
+## Unwind Version 3 directives (experimental)
+
+> [!IMPORTANT]
+> Unwind Version 3 support is experimental and is subject to change.
+
+Unwind Version 3 is an updated unwind code scheme for x64 that generates richer stack unwind metadata. It introduces new epilogue directives, extends register support, and changes the directive ordering model.
+
+### Enable Unwind Version 3
+
+Assemble with the `/unwindv3` option: `ml64 /unwindv3 filename.asm /link /entry:FunctionName`
+
+### Key differences from Version 1
+
+| Feature | Version 1 | Version 3 |
+|---|---|---|
+| Directive ordering | Directive follows instruction | Directive precedes instruction |
+| Unwind codes | `UWOP_*` | `WOD_*` |
+| `.ALLOCSTACK` size variants | 2 (`UWOP_ALLOC_SMALL`, `UWOP_ALLOC_LARGE`) | 3 (adds `WOD_ALLOC_HUGE` for > 32 KB) |
+| `.PUSHREG` register range | R0–R15 | R0–R31 |
+| Epilogue recording | Optional | Mandatory (`.BEGINEPILOG`/`.ENDEPILOG` required) |
+| Register-pair push/pop | Not supported | `.PUSH2REG`/`.POP2REG` directives |
+
+Epilogue recording is mandatory in Version 3: `.BEGINEPILOG` and `.ENDEPILOG` must surround the epilogue instructions. Without them, no epilogue unwind codes are emitted.
+
+> [!NOTE]
+> In Unwind Version 1 the directives come after the instruction. In Unwind Version 3, the directives come before the instruction.
+
+For a complete list of Version 3 directives, see [x64 Unwind Version 3 directives](directives-reference.md) and [@UnwindVersion](at-unwindversion.md).
 
 ## 32-Bit Address Mode (Address Size Override)
 

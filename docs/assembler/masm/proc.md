@@ -12,8 +12,8 @@ Marks start and end of a procedure block called *label*. The statements in the b
 
 ## Syntax
 
-> *label* **PROC** ⟦*distance*⟧ ⟦*language-type*⟧ ⟦ **PUBLIC** | **PRIVATE** | **EXPORT** ⟧ ⟦__\<__*prologuearg*__>__⟧ ⟦**USES** *reglist*⟧ ⟦__,__ *parameter* ⟦__:__*tag*⟧ ...⟧\
-> ⟦**FRAME** ⟦__:__*ehandler-address*⟧ ⟧\
+> *label* `PROC` ⟦*distance*⟧ ⟦*language-type*⟧ ⟦ `PUBLIC` | `PRIVATE` | `EXPORT` ⟧ ⟦__\<__*prologuearg*__>__⟧ ⟦`USES` *reglist*⟧ ⟦__,__ *parameter* ⟦__:__*tag*⟧ ...⟧\
+> ⟦`FRAME` ⟦__:__*ehandler-address*⟧ ⟧\
 > *statements*\
 > *label* **ENDP**
 
@@ -21,9 +21,9 @@ Marks start and end of a procedure block called *label*. The statements in the b
 
 The ⟦*distance*⟧ and ⟦*language-type*⟧ arguments are valid only in 32-bit MASM.
 
-⟦**FRAME** ⟦__:__*ehandler-address*⟧ ⟧ is only valid with ml64.exe, and causes MASM to generate a function table entry in .pdata and unwind information in .xdata for a function's structured exception handling unwind behavior.
+⟦`FRAME` ⟦__:__*ehandler-address*⟧ ⟧ is only valid with ml64.exe, and causes MASM to generate a function table entry in .pdata and unwind information in .xdata for a function's structured exception handling unwind behavior.
 
-When the **FRAME** attribute is used, it must be followed by an [.ENDPROLOG](dot-endprolog.md) directive.
+When the `FRAME` attribute is used, it must be followed by an [.ENDPROLOG](dot-endprolog.md) directive.
 
 See [MASM for x64 (ml64.exe)](masm-for-x64-ml64-exe.md) for more information on using ml64.exe.
 
@@ -49,7 +49,7 @@ _text ENDS
 END
 ```
 
-The above code will emit the following function table and unwind information:
+The above code emits the following function table and unwind information:
 
 ```Output
 FileHeader->Machine 34404
