@@ -463,7 +463,7 @@ Pass runtime flags to AddressSanitizer by using the `ASAN_OPTIONS` field in *`la
 
 ## Enable Segment Heap
 
-The Segment Heap is a modern Windows heap implementation that reduces memory usage and fragmentation. Visual Studio ships a CMake script that enables Segment Heap for your project by adding the required manifest settings. New C++ CMake projects enable Segment Heap by default.
+The Segment Heap is a Windows heap implementation that reduces memory usage and fragmentation. Visual Studio ships a CMake script that enables Segment Heap for your project by adding the required manifest settings. New C++ CMake projects enable Segment Heap by default.
  
 To enable Segment Heap, set `CMAKE_PROJECT_TOP_LEVEL_INCLUDES` in the `cacheVariables` map of your Configure Preset in *`CMakePresets.json`*. Optionally, set the `VS_SEGMENT_HEAP_ALLOWLIST` and `VS_SEGMENT_HEAP_EXCLUDE` environment variables to control which targets in the project use Segment Heap. Separate target names with semicolons:
  
