@@ -100,7 +100,7 @@ Specifies whether the application is DPI-aware. By default, the setting is **Yes
 
 ### Segment Heap
 
-Specifies whether the application utilizes the Segment Heap. For new C++ projects, the setting is **Yes** by default. 
+Specifies whether the application utilizes the Segment Heap. When enabled, applications benefit from improved memory efficiency, reduced fragmentation, and enhanced memory security. For new C++ projects, the setting is **Yes** by default. 
 
 ## Isolated COM Property Page
 
