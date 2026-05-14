@@ -1,9 +1,9 @@
 ---
 title: "Attributes in C++"
 description: "Learn more about: Attributes in C++"
-f1_keywords: ["deprecated", "noreturn", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::flatten", "msvc::forceinline", "msvc::forceinline_calls", "msvc::intrinsic", "msvc::noinline", "msvc::noinline_calls", "msvc::no_tls_guard", "msvc::musttail"]
-helpviewer_keywords: ["deprecated", "noreturn", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::flatten", "msvc::forceinline", "msvc::forceinline_calls", "msvc::intrinsic", "msvc::noinline", "msvc::noinline_calls", "msvc::no_tls_guard", "msvc::musttail"]
-ms.date: 12/9/2025
+f1_keywords: ["deprecated", "noreturn", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::disable", "msvc::enable", "msvc::flatten", "msvc::forceinline", "msvc::forceinline_calls", "msvc::intrinsic", "msvc::noinline", "msvc::noinline_calls", "msvc::no_tls_guard", "msvc::musttail"]
+helpviewer_keywords: ["deprecated", "noreturn", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::disable", "msvc::enable", "msvc::flatten", "msvc::forceinline", "msvc::forceinline_calls", "msvc::intrinsic", "msvc::noinline", "msvc::noinline_calls", "msvc::no_tls_guard", "msvc::musttail"]
+ms.date: 05/14/2026
 ---
 
 # Attributes in C++
@@ -113,6 +113,83 @@ Both `#pragma warning(suppress)` and `[[gsl::suppress]]` offer fine-grained cont
 - `#pragma warning(suppress)` can be used for any compiler warning. It’s useful when you need to suppress a warning in a specific code block without altering the code’s structure significantly.
 
 Whenever possible, use `[[gsl::suppress]]` for suppressing Microsoft C++ Code Analysis warnings.
+
+### `[[msvc::disable(feature:APX)]]`
+
+The `[[msvc::disable(feature:APX)]]` attribute, introduced in Visual Studio 2022 version 17.XX, is an experimental x64-only Microsoft-specific attribute that disables Intel Advanced Performance Extensions (APX) instruction generation for a specific function. When applied to a function declaration or definition, it prevents the compiler from emitting APX instructions in that function's body, even when APX is globally enabled via the `/arch:APX` compiler option. Other functions in the same translation unit continue to use APX instructions unless they are similarly attributed.
+
+<!-- TODO: Verify /arch:APX flag spelling with engineering team -->
+
+#### Example
+
+```cpp
+// Compile with /arch:APX on x64
+
+int subtract(int a, int b)
+{
+    return a - b;
+}
+
+[[msvc::disable(feature:APX)]]
+int main()
+{
+    int result = subtract(10, 3);
+    return result;
+}
+
+// Compiled output (relevant portions):
+//
+// subtract:
+//     {nf} sub  eax,ecx,edx    ; APX NDD instruction: eax = ecx - edx (no EFLAGS update)
+//     ret
+//
+// main:
+//     mov  edx,3               ; Set up second argument
+//     mov  ecx,10              ; Set up first argument
+//     call subtract            ; Call proceeds normally; subtract uses APX
+//     ret                      ; main itself uses no APX instructions
+```
+
+In this example, `main` is compiled without APX instructions due to `[[msvc::disable(feature:APX)]]`. The `subtract` function, which has no such attribute, still generates APX instructions including the `{nf}` no-flags encoding. This demonstrates that the attribute affects only the specific function to which it is applied — other functions in the same translation unit continue to use APX.
+
+### `[[msvc::enable(feature:APX)]]`
+
+The `[[msvc::enable(feature:APX)]]` attribute, introduced in Visual Studio 2022 version 17.XX, is an experimental x64-only Microsoft-specific attribute that enables Intel Advanced Performance Extensions (APX) instruction generation for a specific function. When applied to a function declaration or definition, it allows the compiler to emit APX instructions in that function's body, even when APX is not globally enabled. This provides per-function opt-in to APX features without requiring `/arch:APX` for the entire translation unit.
+
+<!-- TODO: Verify /arch:APX flag spelling with engineering team -->
+
+#### Example
+
+```cpp
+// Compile without /arch:APX on x64
+
+[[msvc::enable(feature:APX)]]
+int add_three(int a, int b, int c)
+{
+    return a + b + c;
+}
+
+int main()
+{
+    return add_three(5, 10, 15);
+}
+
+// Compiled output (relevant portions):
+//
+// add_three:
+//     {nf} add  eax,ecx,edx    ; APX NDD instruction: eax = ecx + edx (no EFLAGS update)
+//     {nf} add  eax,eax,r8d    ; APX NDD instruction: eax = eax + r8d
+//     ret
+//
+// main:
+//     mov  r8d,15              ; Third argument
+//     mov  edx,10              ; Second argument
+//     mov  ecx,5               ; First argument
+//     call add_three
+//     ret                      ; main uses no APX instructions
+```
+
+The `add_three` function uses APX NDD (New Data Destination) 3-operand instructions even though APX isn't enabled globally, while `main` uses standard x64 instructions. This demonstrates per-function opt-in to APX without requiring `/arch:APX` for the entire translation unit.
 
 ### `[[msvc::flatten]]`
 
