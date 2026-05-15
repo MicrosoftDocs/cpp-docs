@@ -3,7 +3,7 @@ title: "Attributes in C++"
 description: "Learn more about: Attributes in C++"
 f1_keywords: ["deprecated", "noreturn", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::disable", "msvc::enable", "msvc::flatten", "msvc::forceinline", "msvc::forceinline_calls", "msvc::intrinsic", "msvc::noinline", "msvc::noinline_calls", "msvc::no_tls_guard", "msvc::musttail"]
 helpviewer_keywords: ["deprecated", "noreturn", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::disable", "msvc::enable", "msvc::flatten", "msvc::forceinline", "msvc::forceinline_calls", "msvc::intrinsic", "msvc::noinline", "msvc::noinline_calls", "msvc::no_tls_guard", "msvc::musttail"]
-ms.date: 05/14/2026
+ms.date: 05/15/2026
 ---
 
 # Attributes in C++
@@ -116,61 +116,39 @@ Whenever possible, use `[[gsl::suppress]]` for suppressing Microsoft C++ Code An
 
 ### `[[msvc::disable(feature:APX)]]`
 
-The `[[msvc::disable(feature:APX)]]` attribute, introduced in [MSVC Build Tools version 14.51](../overview/what-s-new-for-msvc.md#whats-new-for-msvc-build-tools-version-1451) (Visual Studio version 18.6.0), is an x64-only Microsoft-specific attribute that disables Intel Advanced Performance Extensions (APX) instruction generation for a specific function. When applied to a function declaration or definition, it prevents the compiler from emitting APX instructions in that function's body, even when APX is globally enabled via the `/arch:APX` compiler option. Other functions in the same translation unit continue to use APX instructions unless they are similarly attributed. If a function with `[[msvc::disable(feature:APX)]]` has calls that are inlined into it, the inlined code is also compiled without APX instructions.
+The `[[msvc::disable(feature:APX)]]` attribute, introduced in [MSVC Build Tools version 14.51](../overview/what-s-new-for-msvc.md#whats-new-for-msvc-build-tools-version-1451) (Visual Studio version 18.6.0), is an x64-only Microsoft-specific attribute that disables Intel Advanced Performance Extensions (APX) instruction generation for a specific function. When applied to a function declaration or definition, it prevents the compiler from emitting APX instructions in that function's body, even if APX is globally enabled via the `/feature:APX` compiler option. Other functions in the same translation unit continue to use APX instructions unless they are similarly attributed. If a function with `[[msvc::disable(feature:APX)]]` calls inlined functions, the inlined code is also compiled without APX instructions.
 
 #### Example
 
 ```cpp
-// Compile with /arch:APX on x64
+// cl /std:c++latest apx.cpp /Zi /MD /O2 /d2offSSAPEEPLEA,SSAPEEPBUILDLEA,LEA_COMPLEX_ADDR,ADDR /link /incremental:no
 
-int test(int a, int b)
+​int test(int argc)
 {
-    return a - b;
+    auto lambda = 
+        []
+        [[msvc::enable(feature:APX), msvc::noinline]]
+        (int argc)
+        {
+            return argc + 42;
+        };
+    return lambda(argc);
 }
 
-[[msvc::disable(feature:APX)]]
-int test2(int a, int b)
+[[msvc::enable(feature:APX), msvc::noinline]]
+int test2(int x)
 {
-    return a - b;
+    return x + 42;
 }
 
-// Compiled output (relevant portions):
-//
-// test:                        // APX enabled — uses {nf} instruction
-//     {nf} sub  eax,ecx,edx   // APX NDD: eax = ecx - edx (no EFLAGS update)
-//     ret
-//
-// test2:                       // APX disabled by [[msvc::disable(feature:APX)]]
-//     mov  eax,ecx             // Standard x64: copy a to return register
-//     sub  eax,edx             // Subtract b  (eax = a - b)
-//     ret
-```
-
-`test` uses the APX `{nf}` (no-flags) NDD instruction, while `test2` uses standard x64 instructions. The attribute affects only the function it's applied to.
-
-### `[[msvc::enable(feature:APX)]]`
-
-The `[[msvc::enable(feature:APX)]]` attribute, introduced in [MSVC Build Tools version 14.51](../overview/what-s-new-for-msvc.md#whats-new-for-msvc-build-tools-version-1451) (Visual Studio version 18.6.0), is an x64-only Microsoft-specific attribute that enables Intel Advanced Performance Extensions (APX) instruction generation for a specific function. When applied to a function declaration or definition, it allows the compiler to emit APX instructions in that function's body, even when APX is not globally enabled. This provides per-function opt-in to APX features without requiring `/arch:APX` for the entire translation unit. If a function with `[[msvc::enable(feature:APX)]]` has calls that are inlined into it, the inlined code is also compiled with APX instructions.
-
-#### Example
-
-```cpp
-// Compile without /arch:APX on x64
-
-[[msvc::enable(feature:APX)]]
-int test(int a, int b)
+int main(int argc, char** argv)
 {
-    return a + b;
-}
-
-int test2(int a, int b)
-{
-    return a + b;
+    return test(argc) - test2(argc);
 }
 
 // Compiled output (relevant portions):
 //
-// test:                        // APX enabled by [[msvc::enable(feature:APX)]]
+// test:                       // APX enabled by [[msvc::enable(feature:APX)]]
 //     {nf} add  eax,ecx,edx   // APX NDD: eax = ecx + edx (no EFLAGS update)
 //     ret
 //
@@ -179,7 +157,52 @@ int test2(int a, int b)
 //     ret
 ```
 
-`test` uses the APX `{nf}` (no-flags) NDD instruction even though `/arch:APX` isn't enabled globally, while `test2` uses standard x64 instructions. The attribute provides per-function opt-in to APX.
+`test` uses the APX `{nf}` (no-flags) New Data Destination (NDD) instruction, while `test2` uses standard x64 instructions. The attribute affects only the function it's applied to.
+
+### `[[msvc::enable(feature:APX)]]`
+
+The `[[msvc::enable(feature:APX)]]` attribute, introduced in [MSVC Build Tools version 14.51](../overview/what-s-new-for-msvc.md#whats-new-for-msvc-build-tools-version-1451) (Visual Studio version 18.6.0), is an x64-only Microsoft-specific attribute that enables Intel Advanced Performance Extensions (APX) instruction generation for a specific function. When applied to a function declaration or definition, it allows the compiler to emit APX instructions in that function's body, even when APX is not globally enabled. This provides per-function opt-in to APX features without requiring `/arch:APX` for the entire translation unit. If a function with `[[msvc::enable(feature:APX)]]` has calls that are inlined into it, the inlined code is also compiled with APX instructions.
+
+#### `[[msvc::enable(feature:APX)]]` example
+
+```cpp
+// cl /std:c++latest apx.cpp /Zi /MD /O2 /d2offSSAPEEPLEA,SSAPEEPBUILDLEA,LEA_COMPLEX_ADDR,ADDR /link /incremental:no
+
+​int test(int argc)
+{
+    auto lambda = 
+        []
+        [[msvc::enable(feature:APX), msvc::noinline]]
+        (int argc)
+        {
+            return argc + 42;
+        };
+    return lambda(argc);
+}
+
+[[msvc::enable(feature:APX), msvc::noinline]]
+int test2(int x)
+{
+    return x + 42;
+}
+
+int main(int argc, char** argv)
+{
+    return test(argc) - test2(argc);
+}
+
+// Compiled output (relevant portions):
+//
+// test:                       // APX enabled by [[msvc::enable(feature:APX)]]
+//     {nf} add  eax,ecx,edx   // APX NDD: eax = ecx + edx (no EFLAGS update)
+//     ret
+//
+// test2:                       // Standard x64 — APX not enabled globally
+//     lea  eax,[rcx+rdx]       // Standard x64 addition
+//     ret
+```
+
+`test` uses the APX `{nf}` (no-flags) New Data Destination (NDD) instruction even though `/feat:APX` isn't enabled globally, while `test2` uses standard x64 instructions. The attribute provides per-function APX opt-in.
 
 ### `[[msvc::flatten]]`
 
