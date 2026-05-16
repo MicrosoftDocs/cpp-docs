@@ -1,7 +1,7 @@
 ---
 title: "What's new for MSVC Build Tools"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools (MSVC)."
-ms.date: 05/12/2026
+ms.date: 05/15/2026
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ms.custom: intro-whats-new
@@ -60,7 +60,7 @@ Fixed [C4319](/cpp/error-messages/compiler-warnings/compiler-warning-level-1-c43
 - **Sample-based PGO:** Preview support for sample-based profile guided optimizations. For more information, see [Use Sample Profile Guided Optimization (SPGO) to improve C++ performance](../build/sample-profile-guided-optimization.md).
 - The C++ backend optimizer improves code generation, including better inlining, loop optimizations, and pattern matching.
 - **Experimental support for x64 Unwind Version 3 MASM directives**. For more information, see [Unwind Version 3 directives (experimental)](../assembler/masm/directives-reference.md#x64-unwind-version-3-experimental)
-- **Intel APX preview:** Preview support for Intel Advanced Performance Extensions. For more information, see [/feature (x64)](../build/reference/feature-x64.md).
+- **Intel APX preview:** Preview support for Intel Advanced Performance Extensions. For more information, see [/feature (x64)](../build/reference/feature-x64.md), [`[[msvc::enable(feature:APX)]]`](../cpp/attributes.md#msvcenablefeatureapx), and [`[[msvc::disable(feature:APX)]]`](../cpp/attributes.md#msvcdisablefeatureapx).
 - Enabled debug info pruning to reduce PDB sizes.
 
 ### Deprecations
