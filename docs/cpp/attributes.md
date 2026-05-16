@@ -121,8 +121,8 @@ The `[[msvc::disable(feature:APX)]]` attribute, introduced in [MSVC Build Tools 
 #### Example
 
 ```cpp
-// cl /std:c++latest apx.cpp /feature:APX /Zi /MD /O2 /link /incremental:no
-
+// The following shows how to disable APX instructions for specific functions,
+// even when APX is enabled globally with /feature:APX
 ​int test(int argc)
 {
     auto lambda = 
@@ -140,19 +140,6 @@ int test2(int x)
 {
     return x + 42;
 }
-
-int main(int argc, char** argv)
-{
-    return test(argc) - test2(argc);
-}
-
-// Compiled output (relevant portions):
-//
-// test2(), and the lambda inside test(), are compiled without APX New Data Destination (NDD)
-// instructions because they have the attribute, e.g.:
-// 
-//     add  eax,ecx,edx  instead of APX NDD: eax = ecx + edx (no EFLAGS update)
-//
 ```
 
 ### `[[msvc::enable(feature:APX)]]`
@@ -162,13 +149,14 @@ The `[[msvc::enable(feature:APX)]]` attribute, introduced in [MSVC Build Tools v
 #### `[[msvc::enable(feature:APX)]]` example
 
 ```cpp
-// cl /std:c++latest apx.cpp /Zi /MD /O2 /link /incremental:no
+// The following shows how to enable APX instructions for specific functions,
+// even when APX isn't enabled globally with /feature:APX
 
 ​int test(int argc)
 {
     auto lambda = 
         []
-        [[msvc::enable(feature:APX), msvc::noinline]]
+        [[msvc::enable(feature:APX)]]
         (int argc)
         {
             return argc + 42;
@@ -181,21 +169,7 @@ int test2(int x)
 {
     return x + 42;
 }
-
-int main(int argc, char** argv)
-{
-    return test(argc) - test2(argc);
-}
-
-// Compiled output (relevant portions):
-//
-// test2(), and the lambda inside test(), are compiled with APX instructionsNew Data Destination (NDD)
-// instructions because they have the attribute, e.g.
-//     instead of add  eax,ecx,edx, get APX NDD: eax = ecx + edx (no EFLAGS update)
-//     ret
 ```
-
-`test` itself doesn't use the APX `{nf}` (no-flags) New Data Destination (NDD) instruction because `/feat:APX` isn't enabled globally, but the lambda inside `test` does because of the attribute. The attribute provides per-function APX opt-in.
 
 ### `[[msvc::flatten]]`
 
