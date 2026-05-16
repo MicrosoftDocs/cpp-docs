@@ -121,12 +121,13 @@ The `[[msvc::disable(feature:APX)]]` attribute, introduced in [MSVC Build Tools 
 #### Example
 
 ```cpp
-// cl /std:c++latest apx.cpp /feature:APX /Zi /MD /O2 /d2offSSAPEEPLEA,SSAPEEPBUILDLEA,LEA_COMPLEX_ADDR,ADDR /link /incremental:no
+// cl /std:c++latest apx.cpp /feature:APX /Zi /MD /O2 /link /incremental:no
 
 ​int test(int argc)
 {
     auto lambda = 
         []
+        [[msvc::disable(feature:APX)]]
         (int argc)
         {
             return argc + 42;
@@ -147,14 +148,12 @@ int main(int argc, char** argv)
 
 // Compiled output (relevant portions):
 //
-// test2() is compiled without APX instructions because it has the attribute, e.g.:
+// test2(), and the lambda inside test(), are compiled without APX New Data Destination (NDD)
+// instructions because they have the attribute, e.g.:
 // 
-//     add  eax,ecx,edx   // instead of APX NDD: eax = ecx + edx (no EFLAGS update)
-//     ret
+//     add  eax,ecx,edx  instead of APX NDD: eax = ecx + edx (no EFLAGS update)
 //
 ```
-
-The function `test()` and the lambda inside `test()` are compiled with APX `{nf}` (no-flags) New Data Destination (NDD) instructions because of the `/feature:APX` flag, but `test2()` isn't because it has the attribute.
 
 ### `[[msvc::enable(feature:APX)]]`
 
@@ -163,7 +162,7 @@ The `[[msvc::enable(feature:APX)]]` attribute, introduced in [MSVC Build Tools v
 #### `[[msvc::enable(feature:APX)]]` example
 
 ```cpp
-// cl /std:c++latest apx.cpp /Zi /MD /O2 /d2offSSAPEEPLEA,SSAPEEPBUILDLEA,LEA_COMPLEX_ADDR,ADDR /link /incremental:no
+// cl /std:c++latest apx.cpp /Zi /MD /O2 /link /incremental:no
 
 ​int test(int argc)
 {
@@ -190,16 +189,13 @@ int main(int argc, char** argv)
 
 // Compiled output (relevant portions):
 //
-// lambda inside test:         // APX enabled by [[msvc::enable(feature:APX)]]
-//     {nf} add  eax,ecx,edx   // APX NDD: eax = ecx + edx (no EFLAGS update)
-//     ret
-//
-// test2:                       // Standard x64 — APX not enabled globally
-//     lea  eax,[rcx+rdx]       // Standard x64 addition
+// test2(), and the lambda inside test(), are compiled with APX instructionsNew Data Destination (NDD)
+// instructions because they have the attribute, e.g.
+//     instead of add  eax,ecx,edx, get APX NDD: eax = ecx + edx (no EFLAGS update)
 //     ret
 ```
 
-`test` itself doesn't use the APX `{nf}` (no-flags) New Data Destination (NDD) instruction because `/feat:APX` isn't enabled globally, while the lambda inside `test` does. The attribute provides per-function APX opt-in.
+`test` itself doesn't use the APX `{nf}` (no-flags) New Data Destination (NDD) instruction because `/feat:APX` isn't enabled globally, but the lambda inside `test` does because of the attribute. The attribute provides per-function APX opt-in.
 
 ### `[[msvc::flatten]]`
 
