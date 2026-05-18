@@ -1,9 +1,9 @@
 ---
 title: "Attributes in C++"
 description: "Learn more about: Attributes in C++"
-f1_keywords: ["deprecated", "noreturn", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::flatten", "msvc::forceinline", "msvc::forceinline_calls", "msvc::intrinsic", "msvc::noinline", "msvc::noinline_calls", "msvc::no_tls_guard", "msvc::musttail"]
-helpviewer_keywords: ["deprecated", "noreturn", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::flatten", "msvc::forceinline", "msvc::forceinline_calls", "msvc::intrinsic", "msvc::noinline", "msvc::noinline_calls", "msvc::no_tls_guard", "msvc::musttail"]
-ms.date: 12/9/2025
+f1_keywords: ["deprecated", "noreturn", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::disable", "msvc::enable", "msvc::flatten", "msvc::forceinline", "msvc::forceinline_calls", "msvc::intrinsic", "msvc::noinline", "msvc::noinline_calls", "msvc::no_tls_guard", "msvc::musttail"]
+helpviewer_keywords: ["deprecated", "noreturn", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::disable", "msvc::enable", "msvc::flatten", "msvc::forceinline", "msvc::forceinline_calls", "msvc::intrinsic", "msvc::noinline", "msvc::noinline_calls", "msvc::no_tls_guard", "msvc::musttail"]
+ms.date: 05/15/2026
 ---
 
 # Attributes in C++
@@ -113,6 +113,63 @@ Both `#pragma warning(suppress)` and `[[gsl::suppress]]` offer fine-grained cont
 - `#pragma warning(suppress)` can be used for any compiler warning. It’s useful when you need to suppress a warning in a specific code block without altering the code’s structure significantly.
 
 Whenever possible, use `[[gsl::suppress]]` for suppressing Microsoft C++ Code Analysis warnings.
+
+### `[[msvc::disable(feature:APX)]]`
+
+The `[[msvc::disable(feature:APX)]]` attribute, introduced in [MSVC Build Tools version 14.51](../overview/what-s-new-for-msvc.md#whats-new-for-msvc-build-tools-version-1451) (Visual Studio version 18.6.0), is an x64-only Microsoft-specific attribute that disables Intel Advanced Performance Extensions (APX) instruction generation for a specific function. When applied to a function declaration or definition, it prevents the compiler from emitting APX instructions in that function's body, even if APX is globally enabled via the `/feature:APX` compiler option. Other functions in the same translation unit continue to use APX instructions unless they are similarly attributed. If a function with `[[msvc::disable(feature:APX)]]` calls inlined functions, the inlined code is also compiled without APX instructions.
+
+#### Example
+
+```cpp
+// The following shows how to disable APX instructions for specific functions,
+// even when APX is enabled globally with /feature:APX
+​int test(int argc)
+{
+    auto lambda = 
+        []
+        [[msvc::disable(feature:APX)]]
+        (int argc)
+        {
+            return argc + 42;
+        };
+    return lambda(argc);
+}
+
+[[msvc::disable(feature:APX)]]
+int test2(int x)
+{
+    return x + 42;
+}
+```
+
+### `[[msvc::enable(feature:APX)]]`
+
+The `[[msvc::enable(feature:APX)]]` attribute, introduced in [MSVC Build Tools version 14.51](../overview/what-s-new-for-msvc.md#whats-new-for-msvc-build-tools-version-1451) (Visual Studio version 18.6.0), is an x64-only Microsoft-specific attribute that enables Intel Advanced Performance Extensions (APX) instruction generation for a specific function. When applied to a function declaration or definition, it allows the compiler to emit APX instructions in that function's body, even when APX is not globally enabled. This provides per-function opt-in to APX features without requiring `/arch:APX` for the entire translation unit. If a function with `[[msvc::enable(feature:APX)]]` has calls that are inlined into it, the inlined code is also compiled with APX instructions.
+
+#### `[[msvc::enable(feature:APX)]]` example
+
+```cpp
+// The following shows how to enable APX instructions for specific functions,
+// even when APX isn't enabled globally with /feature:APX
+
+​int test(int argc)
+{
+    auto lambda = 
+        []
+        [[msvc::enable(feature:APX)]]
+        (int argc)
+        {
+            return argc + 42;
+        };
+    return lambda(argc);
+}
+
+[[msvc::enable(feature:APX), msvc::noinline]]
+int test2(int x)
+{
+    return x + 42;
+}
+```
 
 ### `[[msvc::flatten]]`
 
