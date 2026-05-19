@@ -14,6 +14,8 @@ SPGO takes a different approach. Instead of instrumenting your binary and runnin
 
 Because SPGO profiles release bits instead of instrumented builds, it enables much more flexibility in where and how you collect data. You can gather runtime profiles from production servers, developer machines, performance labs, or any combination. The result is a binary that runs hot paths more efficiently, with a typical performance speedup of 5-15% depending on the quality of the profile data.
 
+For more information about Sample Profile‑Guided Optimization (PGO) in MSVC and how it improves performance using sampling‑based profiling, see [Introducing Sample Profile Guided Optimization in MSVC](https://devblogs.microsoft.com/cppblog/introducing-sample-profile-guided-optimization-in-msvc/)
+
 In this tutorial, you walk through the complete SPGO workflow: build a sample app, profile it by using `xperf`, prepare the profile data, and rebuild with the profile data. When you finish, you can apply the same process to your own projects.
 
 ## Prerequisites
