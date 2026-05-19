@@ -9,7 +9,7 @@ helpviewer_keywords: ["profile-guided optimizations", "optimization, profile-gui
 Profile-guided optimization (PGO) lets you optimize a whole executable file. The optimizer uses data from test runs of the .exe or .dll file. The data represents the likely performance of the program in a production environment.
 
 > [!NOTE]
-> SPGO (Sample Profile-Guided Optimization) is an alternative approach that uses hardware CPU Windows Performance Counters instead of instrumentation. SPGO requires no instrumented build - you profile an existing release binary by using `xperf`. For more information, see [Sample Profile-Guided Optimization (SPGO) tutorial](sample-profile-guided-optimization.md).
+> SPGO (Sample Profile-Guided Optimization) is an alternative approach that uses hardware CPU Windows Performance Counters instead of instrumentation. SPGO requires no instrumented build - you profile an existing release binary by using `xperf`. For more information, see [Introducing Sample Profile Guided Optimization in MSVC](https://devblogs.microsoft.com/cppblog/introducing-sample-profile-guided-optimization-in-msvc/) and [Sample Profile-Guided Optimization (SPGO) tutorial](sample-profile-guided-optimization.md).
 
 Profile-guided optimizations are only available for x86, x64, or ARM64 native targets. Profile-guided optimizations aren't available for executable files that run on the common language runtime. Even if you produce an assembly with mixed native and managed code (by using the **/clr** compiler option), you can't use profile-guided optimization on just the native code. If you attempt to build a project with these options set in the IDE, a build error results.
 
