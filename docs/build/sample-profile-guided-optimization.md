@@ -1,7 +1,7 @@
 ---
 description: "Learn how to use Sample Profile-Guided Optimization (SPGO) to improve the performance of C and C++ applications."
 title: "Tutorial: Use Sample Profile-Guided Optimization (SPGO) to improve C++ performance"
-ms.date: 05/08/2026
+ms.date: 05/20/2026
 ms.topic: tutorial
 ai-usage: ai-assisted
 helpviewer_keywords: ["SPGO", "sample profile-guided optimization", "profiling, SPGO", "SPDConvert", "SPTAggregate"]
@@ -112,8 +112,9 @@ The Windows Performance Toolkit (WPT) uses `perfcore.ini`, located if you instal
 Open Windows Notepad as Administrator. Then open `perfcore.ini`. Find the DLL list section and add the following entries, one per line:
 
 ```
-perf_spt.dll
+perf_hv.dll
 perf_lbr.dll
+perf_spt.dll
 ```
 
 If `xperf.exe` isn't installed, see [General issues](#general-issues-all-paths) to install it.
@@ -249,7 +250,7 @@ Before applying SPGO, build `textCount` and run it against a large text file, su
 **Build:**
 
 ```cmd
-cl /EHsc /GL /O2 textCount.cpp
+cl /Zi /EHsc /GL /O2 textCount.cpp /link /debug
 ```
 
 **Run:**
@@ -282,7 +283,7 @@ Record the `Elapsed time` value. You'll compare it to the SPGO-optimized time in
 Now build textCount with SPGO enabled. This step lays the groundwork to gather profiling data.
 
 ```cmd
-cl /EHsc /GL /O2 textCount.cpp /link /debug /spgo
+cl /Zi /EHsc /GL /O2 textCount.cpp /link /debug /spgo
 ```
 
 When the build finishes, you see a message like:
@@ -297,6 +298,7 @@ This message appears on the first `/spgo` build. The linker creates the SPD file
 
 | Flag | Purpose |
 |------|---------|
+| `/Zi` | Generate complete debugging information |
 | `/EHsc` | Enable C++ exception handling |
 | `/GL` | Whole-program optimization — required for SPGO. Defers final optimization to link time, enabling cross-module inlining, code layout, and dead code elimination decisions. |
 | `/O2` | Optimize for speed — enables aggressive inlining, loop optimization, dead code removal, and related transforms. |
@@ -549,7 +551,7 @@ Rebuild `textCount` by using the populated SPD file. The linker reads the profil
 This step is the same for all three profiling paths.
 
 ```cmd
-cl /EHsc /GL /O2 textCount.cpp /link /debug /spgo /spdin:textCount.spd
+cl /Zi /EHsc /GL /O2 textCount.cpp /link /debug /spgo /spdin:textCount.spd
 ```
 
 **New flag (compared to [Build textCount with /spgo](#build-textcount-with-spgo)):**
