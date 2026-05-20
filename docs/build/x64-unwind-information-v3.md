@@ -17,8 +17,6 @@ Unwind V3 is required for code supporting APX. Non-APX enabled code should still
 
 Unwind Information V3 is a preview specification. There's still a risk of breaking changes or omissions. Code produced under this guidance should itself be considered Preview Code.
 
----
-
 ## Terminology
 
 | Term | Definition |
@@ -30,12 +28,9 @@ Unwind Information V3 is a preview specification. There's still a risk of breaki
 | **Payload** | The variable-length region immediately after the 4-byte `UNWIND_INFO_V3` header, sized by `PayloadWords` 16-bit words. Contains the large prolog extension, prolog IP offsets, epilog descriptors (with their IP offsets), and the WOD pool. |
 | **RVA** | Relative Virtual Address — an offset from the base address of the image at load time. |
 
----
-
 ## Overall Object-File Layout
 
-Unwind V3 reuses the existing PE/COFF `.pdata` and `.xdata` section
-conventions unchanged:
+Unwind V3 reuses the existing PE/COFF `.pdata` and `.xdata` section conventions unchanged:
 
 ```
 .pdata   — sorted array of IMAGE_AMD64_RUNTIME_FUNCTION_ENTRY (12 bytes each)
@@ -51,8 +46,6 @@ Each `RUNTIME_FUNCTION` entry is:
 | 8 | 4 | `UnwindInfoAddress` — RVA of `UNWIND_INFO_V3` in `.xdata` |
 
 No changes from V1 or V2.
-
----
 
 ## `UNWIND_INFO_V3` Header
 
@@ -107,8 +100,6 @@ handler_offset = ALIGN_UP(sizeof(UNWIND_INFO_V3) + PayloadWords * 2, 4)
 If `UNW_FLAG_EHANDLER` or `UNW_FLAG_UHANDLER` is set, a 4-byte handler RVA is at `handler_offset`, followed by language-specific handler data.
 
 If `UNW_FLAG_CHAININFO` is set, a 12-byte `RUNTIME_FUNCTION` is at `handler_offset`.
-
----
 
 ## Payload Layout
 
