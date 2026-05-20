@@ -112,9 +112,9 @@ The Windows Performance Toolkit (WPT) uses `perfcore.ini`, located if you instal
 Open Windows Notepad as Administrator. Then open `perfcore.ini`. Find the DLL list section and add the following entries, one per line:
 
 ```
-perf_hv.dll
 perf_lbr.dll
 perf_spt.dll
+perf_hv.dll
 ```
 
 If `xperf.exe` isn't installed, see [General issues](#general-issues-all-paths) to install it.
@@ -597,7 +597,7 @@ Collect multiple runs for each configuration and use the median. A single run is
 
 | Build | Representative elapsed time |
 |-------|-----------------------------|
-| Baseline (`cl /EHsc /O2`) | *(your measurement)* |
+| Baseline (`cl /Zi /EHsc /O2 /link debug`) | *(your measurement)* |
 | `/spgo` build (no profile data yet) | *(should be close to baseline)* |
 | SPGO-optimized (`/spdin`) | *(should show improvement)* |
 
@@ -609,7 +609,7 @@ The LBR path followed in this tutorial was applied to the [SQLite](https://githu
 
 Use this checklist to apply SPGO to your own C or C++ application.
 
-1. **Add `/link /spgo` to your existing release build command.** Modify your build script or project file:
+1. **Add `/Zi /link /spgo /debug` to your existing release build command.** Modify your build script or project file:
 
    ```cmd
    cl /EHsc /GL /O2 myapp.cpp /link /spgo
@@ -621,7 +621,7 @@ Use this checklist to apply SPGO to your own C or C++ application.
 1. **Rebuild with `/spdin:<your-spd-path>`.** Compile your application with the populated SPD:
 
    ```cmd
-   cl /EHsc /GL /O2 yourApp.cpp /link /spgo /spdin:yourApp.spd
+   cl /Zi /EHsc /GL /O2 yourApp.cpp /link /debug /spgo /spdin:yourApp.spd
    ```
 
 1. **Measure before and after.** Run your workload with both the nonoptimized and SPGO-optimized binaries. Collect the **median of multiple runs** for each configuration. A single run isn't reliable for benchmarking.
