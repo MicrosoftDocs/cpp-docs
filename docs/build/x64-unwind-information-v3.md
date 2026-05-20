@@ -15,7 +15,8 @@ Unwind Information V3 adds support for the Intel APX (Advanced Performance Exten
 
 Unwind V3 is required for code supporting APX. Non-APX enabled code should still use the [conventional (pre-V3) Unwind Information](../build/exception-handling-x64.md).
 
-Unwind Information V3 is a preview specification. There's still a risk of breaking changes or omissions. Code produced under this guidance should itself be considered Preview Code.
+> [!WARNING]
+> Unwind Information V3 is a preview specification. There's still a risk of breaking changes or omissions. Code produced under this guidance should itself be considered preview code.
 
 ## Terminology
 
