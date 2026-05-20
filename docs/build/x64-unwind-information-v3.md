@@ -23,11 +23,11 @@ This is a **Preview Specification**, in Beta Stage: There's still a risk of brea
 
 | Term | Definition |
 |------|------------|
-| **Fragment** | A contiguous region of machine code described by a single `RUNTIME_FUNCTION` / `UNWIND_INFO_V3` pair. A function might consist of a *main fragment* and zero or more *sub-fragments* [chained together](../build/exception-handling-x64.md#chained-unwind-info-structures). |
+| **Fragment** | A contiguous region of machine code described by a single `RUNTIME_FUNCTION` / `UNWIND_INFO_V3` pair. A function might consist of a *main fragment* and zero or more *sub-fragments* chained together. For more information see [Chained unwind info structures](../build/exception-handling-x64.md#chained-unwind-info-structures). |
 | **WOD** | Winding Operation Descriptor — a variable-length packed encoding of a single unwind operation (push, alloc, save, and so on). |
 | **WOD pool** | The byte array within the payload that stores all WODs for a fragment's prolog and epilog(s). |
-| **IP Offset** | A single unsigned byte giving the byte offset of an instruction relative to the start of the prolog or epilog. |
-| **Payload** | The variable-length region immediately after the 4-byte `UNWIND_INFO_V3` header, sized by `PayloadWords` 16-bit words. Contains prolog IP offsets, epilog descriptors (with their IP offsets), and the WOD pool. |
+| **IP Offset** | The unsigned byte offset of an instruction relative to the start of the prolog or epilog. |
+| **Payload** | The variable-length region immediately after the 4-byte `UNWIND_INFO_V3` header, sized by `PayloadWords` 16-bit words. Contains the large prolog extension, prolog IP offsets, epilog descriptors (with their IP offsets), and the WOD pool. |
 
 ---
 
@@ -77,7 +77,7 @@ Byte 3:
 
 | Field | Description |
 |-------|-------------|
-| `Version` | Must be `3`. A dumper should gate all V3 decoding on this value. |
+| `Version` | Must be `3`. |
 | `Flags` | Same flag definitions as V1/V2: `UNW_FLAG_EHANDLER` (0x01), `UNW_FLAG_UHANDLER` (0x02), `UNW_FLAG_CHAININFO` (0x04). New in V3: `UNW_FLAG_LARGE` (0x08). Bit 4 reserved (zero). |
 | `SizeOfProlog` | Byte offset to the start of the first instruction that isn't part of the prolog. When `UNW_FLAG_LARGE` is set, this 8-bit field is the **low byte** of a 16-bit prolog size; see §4.2. |
 | `PayloadWords` | Number of **16-bit words** of payload following this header. The payload contains prolog IP offsets, all epilog descriptors (including their IP offsets), and the WOD pool. Does **not** include the exception-handler RVA or chained `RUNTIME_FUNCTION` that might follow. The algorithm to locate the handler/chain data is the same as V1/V2: `header + 4 + PayloadWords * 2`, DWORD-aligned. |
@@ -296,44 +296,7 @@ To decode a WOD, read the first byte and test low bits in the following order:
 | `(byte[0] & 0x0F) == 0x0A` | 10 | `WOD_SAVE_XMM128` | 3 bytes |
 | `(byte[0] & 0x3F) == 0x20` | 32 | `WOD_PUSH2` | 2 bytes |
 
-**Decoding algorithm (pseudocode):**
-
-```c
-uint8_t b0 = pool[offset];
-
-if (b0 <= 0x03) {
-    // 8-bit opcode: exact match on entire byte
-    switch (b0) {
-    case 0x00: return WOD_SET_FPREG;
-    case 0x01: return WOD_ALLOC_HUGE;
-    case 0x02: return WOD_ALLOC_LARGE;
-    case 0x03: return WOD_PUSH_CANONICAL_FRAME;
-    }
-} else if ((b0 & 0x07) >= 0x04) {
-    // 3-bit opcode
-    switch (b0 & 0x07) {
-    case 0x04: return WOD_PUSH;
-    case 0x05: return WOD_SAVE_NONVOL_FAR;
-    case 0x06: return WOD_SAVE_NONVOL;
-    case 0x07: return WOD_PUSH_CONSECUTIVE_2;
-    }
-} else if ((b0 & 0x0F) >= 0x08 && (b0 & 0x0F) <= 0x0A) {
-    // 4-bit opcode
-    switch (b0 & 0x0F) {
-    case 0x08: return WOD_ALLOC_SMALL;
-    case 0x09: return WOD_SAVE_XMM128_FAR;
-    case 0x0A: return WOD_SAVE_XMM128;
-    }
-} else if ((b0 & 0x3F) == 0x20) {
-    // 6-bit opcode
-    return WOD_PUSH2;
-}
-return INVALID;
-```
-
-A cleaner approach: match from the shortest prefix (3-bit) upward,
-since the 8-bit opcodes use values 0–3 which don't conflict with any
-3-bit prefix pattern (the 3-bit opcodes occupy values 4–7):
+** WOD decoding algorithm (pseudocode):**
 
 ```c
 uint8_t b0 = pool[offset];

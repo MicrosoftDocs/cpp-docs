@@ -71,8 +71,8 @@ The `UNWIND_INFO` structure must be `DWORD` aligned in memory. Here's what each 
 
    |Flag|Description|
    |-|-|
-   |`UNW_FLAG_EHANDLER`| The function has an exception handler that the system calls when looking for functions that need to examine exceptions.|
-   |`UNW_FLAG_UHANDLER`| The function has a termination handler that the system calls when unwinding an exception.|
+   |`UNW_FLAG_EHANDLER`| The function has an exception handler that the operating system calls to examine the state of the exception and potentially handle it. Language features such as the C `__try` clause register such a handler.|
+   |`UNW_FLAG_UHANDLER`| The function has a termination handler that the operation system calls when unwinding the stack. This handler could release resources allocated by the function in exception safe code. Language features such as local C++ object destructors and C `__finally` clauses register such a termination handler. |
    |`UNW_FLAG_CHAININFO`| This unwind info structure isn't the primary one for the procedure. Instead, the chained unwind info entry is the contents of a previous `RUNTIME_FUNCTION` entry. For information, see [Chained unwind info structures](#chained-unwind-info-structures). If this flag is set, then the `UNW_FLAG_EHANDLER` and `UNW_FLAG_UHANDLER` flags must be cleared. Also, the frame register and fixed-stack allocation fields must have the same values as in the primary unwind info.|
 
 - **Size of prolog**
@@ -89,11 +89,11 @@ The `UNWIND_INFO` structure must be `DWORD` aligned in memory. Here's what each 
 
 - **Frame register offset (scaled)**
 
-   If the frame register field is nonzero, this field is the scaled offset from `RSP` that will be applied the selected Frame Pointer (FP) register value. The actual FP register is set to `RSP` + 16 \* this number, which means you can use offsets from 0 to 240. This offset points the FP register into the middle of the local stack allocation for dynamic stack frames, so you get better code density through shorter instructions. (That is, more instructions can use the 8-bit signed offset form.)
+   This field is a scaled offset between the `RSP` register value and the selected Frame Pointer (FP) register value. The selected FP register is set to `RSP` + 16 * this number, which means you can use offsets from 0 to 240. This offset points the FP register into the middle of the local stack allocation for dynamic stack frames, so you get better code density through shorter instructions. (That is, more instructions can use the 8-bit signed offset form.)
 
 - **Unwind codes array**
 
-   An array of items that explains the effect of the prolog on the nonvolatile registers and `RSP`. See the section on `UNWIND_CODE` for the meanings of individual items. For alignment purposes, this array always has an even number of entries, and the final entry is potentially unused. In that case, the array is one longer than indicated by the count of unwind codes field.
+   An array of items that explains the effect of the prolog on the nonvolatile registers and `RSP`. See the section on [Unwind operations code](#unwind-operation-code) for the meanings of individual items. To maintain proper data alignment, this array always contains an even number of entries, and the final entry may be unused. In that case, the array is one longer than indicated by the count of unwind codes field.
 
 - **Address of exception handler**
 

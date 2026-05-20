@@ -219,7 +219,7 @@ When you include `setjmpex.h` or `setjmp.h`, all calls to [`setjmp`](../c-runtim
 
 A call to `setjmp` preserves the current stack pointer, nonvolatile registers, and `MXCSR` registers. Calls to `longjmp` return to the most recent `setjmp` call site and resets the stack pointer, nonvolatile registers, and `MXCSR` registers, back to the state as preserved by the most recent `setjmp` call.
 
-If APX is supported, `R30` and `R31` should not be modified in a function from the point `setjmp` is called to the point where the call which ultimately results in `longjmp` is made. This limitation is the result of `R30` and `R31` not being saved as part of `jmp_buf` - this structure definition cannot change. Instead, they are restored via the unwinder. The following example helps illustrate this point:
+If APX is supported, `R30` and `R31` should not be modified in a function from the point `setjmp` is called to the point where the call which ultimately results in `longjmp` is made. This limitation is the result of `R30` and `R31` not being saved as part of `jmp_buf` - this structure definition cannot change. Instead, they are restored via the unwinder. The following example demonstrates how the difference on how the data is restored influences this restriction:
 
 ```c
 jmp_buf jmpbuffer;
@@ -247,7 +247,7 @@ void function_b() {
 }
 ```
 
-In this example, the value of `R30` changes from the point where `setjmp` is called to the point `function_b` is called. In `function_b`, `longjmp` will unwind the stack until it reaches the function which called `setjmp` (`function_a` in this case). The value restored for `R30` will be `20` (the value at the point `function_b` was called), not `10` (the value at which `setjmp` was called). This means that when `setjmp` returns for the second time (as the result of `longjmp`) the value of `R30` will be set to `20` instead of `10`, which is incorrect. This is the reason why compilers should make sure `R30` and `R31` must remain constant from the point `setjmp` is called to the last place in the function which could ultimately result in `longjmp` being called.
+In this example, the value of `R30` changes from the point where `setjmp` is called to the point `function_b` is called. In `function_b`, `longjmp` unwinds the stack until it reaches the function which called `setjmp` (`function_a` in this case). The value restored for `R30` will be `20` (the value at the point `function_b` was called), not `10` (the value at which `setjmp` was called). This means that when `setjmp` returns for the second time (as the result of `longjmp`) the value of `R30` will be set to `20` instead of `10`, which is incorrect. This is why compilers must ensure `R30` and `R31` remain constant from the point `setjmp` is called to the last place in the function which could ultimately result in `longjmp` being called.
 
 Since `longjmp` can be called from an exception filter (not just a sub-routine), this effectively dictates that `R30` and `R31` should remain constant from the point `setjmp` is called through the rest of the function.
 
