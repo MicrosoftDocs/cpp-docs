@@ -117,7 +117,7 @@ Total size = `PayloadWords` × 2 bytes (may include padding to fill words).
 
 ### Prolog IP Offsets
 
-An array of `NumberOfOps` entries. Each entry is an unsigned byte (or an unsigned 16-bit word when `UNW_FLAG_LARGE` is set) giving the IP offset (from the start of the prolog / start of the fragment) of the instruction that performs the corresponding unwind operation.
+An array of `NumberOfOps` entries. Each entry is an unsigned byte giving the IP offset from the start of the fragment of the instruction that performs the corresponding unwind operation. When `UNW_FLAG_LARGE` is set, each entry is an unsigned 16-bit word instead.
 
 **Ordering:** The first entry corresponds to the operation closest to the function body (the *last* prolog instruction with an unwind effect). The last entry corresponds to the operation closest to the function entry point (the *first* prolog instruction). This matches the V1 or V2 convention of listing unwind codes in reverse execution order. The prolog WODs always start at byte offset 0 of the WOD pool, and this same ordering applies.
 
@@ -179,11 +179,11 @@ The `Flags` bits 0 and 1, `FirstOp`, `IpOffsetOfLastInstruction`, and IP offset 
 
 | Field | Description |
 |-------|-------------|
-| `Flags` | Bit 0: `EPILOG_INFO_PARENT_FRAGMENT_TRANSFER` — set if this epilog transfers control back to the parent fragment (e.g. via JMP) rather than returning to the caller. Bit 1: `EPILOG_INFO_LARGE` — when set, the extended descriptor uses `EPILOG_INFO_LARGE_EX_V3` (16-bit `IpOffsetOfLastInstruction`) and each IP offset entry is 16-bit, accommodating epilogs exceeding 255 bytes. Expected very rarely. Bit 2: reserved (zero). |
+| `Flags` | Bit 0: `EPILOG_INFO_PARENT_FRAGMENT_TRANSFER` — set if this epilog transfers control back to the parent fragment (e.g. via JMP) rather than returning to the caller. Bit 1: `EPILOG_INFO_LARGE` — when set, the extended descriptor uses `EPILOG_INFO_LARGE_EX_V3` (16-bit `IpOffsetOfLastInstruction`) and each IP offset entry is 16-bit, accommodating epilogs exceeding 255 bytes. Bit 2: reserved (zero). |
 | `NumberOfOps` | Number of WODs for this epilog (0–31). Zero is a special value meaning "inherit from previous epilog descriptor." |
-| `EpilogOffset` | 16-bit signed displacement to the first instruction of this epilog. For the first epilog descriptor: positive values are byte offsets from the fragment start; negative values are byte offsets from the fragment tail (first byte past the end). For subsequent epilog descriptors: delta from the start of the previous epilog. All epilogs must use the same sign (all sorted ascending from start, or all sorted descending from tail). |
+| `EpilogOffset` | 16-bit signed displacement to the first instruction of this epilog. For the first epilog descriptor: positive values are byte offsets from the fragment start, and negative values are byte offsets from the fragment tail, that is, the first byte past the end. For subsequent epilog descriptors: delta from the start of the previous epilog. All epilogs must use the same sign — either all sorted ascending from start, or all sorted descending from tail. |
 | `FirstOp` | Byte index into the WOD pool where the first WOD for this epilog resides. Since WODs are variable-length, this is a byte offset, not a WOD index. Epilogs may share WODs with the prolog or with each other by pointing into the same pool region. |
-| `IpOffsetOfLastInstruction` | Unsigned byte offset (from the epilog start) of the last instruction in the epilog (typically RET or JMP). 8-bit in `EPILOG_INFO_EX_V3`; 16-bit in `EPILOG_INFO_LARGE_EX_V3`. The unwinder uses this to determine where the epilog ends and the function body resumes. |
+| `IpOffsetOfLastInstruction` | Unsigned byte offset from the epilog start of the last instruction in the epilog, typically RET or JMP. 8-bit in `EPILOG_INFO_EX_V3`; 16-bit in `EPILOG_INFO_LARGE_EX_V3`. The unwinder uses this to determine where the epilog ends and the function body resumes. |
 
 #### Epilog IP Offsets
 
