@@ -28,6 +28,7 @@ Unwind Information V3 is a preview specification. There's still a risk of breaki
 | **WOD pool** | The byte array within the payload that stores all WODs for a fragment's prolog and epilog(s). |
 | **IP Offset** | The unsigned byte offset of an instruction relative to the start of the prolog or epilog. |
 | **Payload** | The variable-length region immediately after the 4-byte `UNWIND_INFO_V3` header, sized by `PayloadWords` 16-bit words. Contains the large prolog extension, prolog IP offsets, epilog descriptors (with their IP offsets), and the WOD pool. |
+| **RVA** | Relative Virtual Address — an offset from the base address of the image at load time. |
 
 ---
 
@@ -49,7 +50,7 @@ Each `RUNTIME_FUNCTION` entry is:
 | 4 | 4 | `EndAddress` — RVA of first byte past fragment end |
 | 8 | 4 | `UnwindInfoAddress` — RVA of `UNWIND_INFO_V3` in `.xdata` |
 
-No changes from V1/V2.
+No changes from V1 or V2.
 
 ---
 
@@ -71,9 +72,9 @@ All multi-byte fields are little-endian. Bit 0 is the LSB of each byte.
 | Field | Description |
 |-------|-------------|
 | `Version` | Must be `3`. |
-| `Flags` | Same flag definitions as V1/V2: `UNW_FLAG_EHANDLER` (0x01), `UNW_FLAG_UHANDLER` (0x02), `UNW_FLAG_CHAININFO` (0x04). New in V3: `UNW_FLAG_LARGE` (0x08). Bit 4 reserved (zero). |
+| `Flags` | Same flag definitions as V1 or V2: `UNW_FLAG_EHANDLER` (0x01), `UNW_FLAG_UHANDLER` (0x02), `UNW_FLAG_CHAININFO` (0x04). New in V3: `UNW_FLAG_LARGE` (0x08). Bit 4 reserved (zero). |
 | `SizeOfProlog` | Byte offset to the start of the first instruction that isn't part of the prolog. When `UNW_FLAG_LARGE` is set, this 8-bit field is the low byte of a 16-bit prolog size. For more information on the 16-bit form see [`UNW_FLAG_LARGE` and `UNWIND_INFO_LARGE_V3`](#unw_flag_large-and-unwind_info_large_v3). |
-| `PayloadWords` | Number of 16-bit words of payload following this header. The payload contains prolog IP offsets, all epilog descriptors (including their IP offsets), and the WOD pool. Does not include the exception-handler RVA or chained `RUNTIME_FUNCTION` that might follow. The algorithm to locate the handler/chain data is the same as V1/V2: `header + 4 + PayloadWords * 2`, DWORD-aligned. |
+| `PayloadWords` | Number of 16-bit words of payload following this header. The payload contains prolog IP offsets, all epilog descriptors (including their IP offsets), and the WOD pool. Does not include the exception-handler RVA or chained `RUNTIME_FUNCTION` that might follow. The algorithm to locate the handler/chain data is the same as V1 or V2: `header + 4 + PayloadWords * 2`, DWORD-aligned. |
 | `NumberOfOps` | Count of WODs in the prolog (0–31). Zero means no prolog. If a function needs more than 31 prolog operations, use a subfragment. |
 | `NumberOfEpilogs` | Count of `EPILOG_INFO_V3` descriptors that follow the prolog IP offsets (0–7). Zero means no epilogs in this fragment. If more than 7 are needed, use a subfragment. |
 
@@ -97,7 +98,7 @@ This flag is expected to be needed very rarely (prologs exceeding 255 bytes).
 
 ### Locating Exception Handler / Chain Info
 
-Identical to V1/V2:
+Identical to V1 or V2:
 
 ```
 handler_offset = ALIGN_UP(sizeof(UNWIND_INFO_V3) + PayloadWords * 2, 4)
@@ -127,7 +128,7 @@ Total size = `PayloadWords` × 2 bytes (may include padding to fill words).
 
 An array of `NumberOfOps` entries. Each entry is an unsigned byte (or an unsigned 16-bit word when `UNW_FLAG_LARGE` is set) giving the IP offset (from the start of the prolog / start of the fragment) of the instruction that performs the corresponding unwind operation.
 
-**Ordering:** The first entry corresponds to the operation closest to the function body (the *last* prolog instruction with an unwind effect). The last entry corresponds to the operation closest to the function entry point (the *first* prolog instruction). This matches the V1/V2 convention of listing unwind codes in reverse execution order. The prolog WODs always start at byte offset 0 of the WOD pool, and this same ordering applies.
+**Ordering:** The first entry corresponds to the operation closest to the function body (the *last* prolog instruction with an unwind effect). The last entry corresponds to the operation closest to the function entry point (the *first* prolog instruction). This matches the V1 or V2 convention of listing unwind codes in reverse execution order. The prolog WODs always start at byte offset 0 of the WOD pool, and this same ordering applies.
 
 ### Epilog Descriptors
 
