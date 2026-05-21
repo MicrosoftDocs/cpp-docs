@@ -28,7 +28,7 @@ Example usage: to enable APX, specify **`/feature:APX`**.
 
 When **`/feature:APX`** is specified, the following preprocessor macros are defined: `__APX_F__`, `__CCMP__`, `__CF__`, `__EGPR__`, `__NDD__`, `__NF__`, `__PPX__`, `__PUSH2POP2__`, and `__ZU__`. For more information, see [Microsoft-specific predefined macros](../../preprocessor/predefined-macros.md).
 
-APX extends the x64 architecture with new registers and instructions, which affects how the compiler generates calls, preserves state across function boundaries, and emits unwind metadata. The following articles describe the x64 conventions and unwind information that APX builds on:
+APX extends the x64 architecture with new registers and instructions, which affects how the compiler generates calls, preserves state across function boundaries, and emits unwind metadata. The following articles describe the x64 conventions and unwind information related to APX:
 
 - [Caller/callee saved registers](../x64-calling-convention.md#callercallee-saved-registers)\
   Describes which registers a callee must preserve and which the caller is responsible for saving across a call on x64.
