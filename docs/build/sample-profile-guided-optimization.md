@@ -1,7 +1,7 @@
 ---
 description: "Learn how to use Sample Profile-Guided Optimization (SPGO) to improve the performance of C and C++ applications."
 title: "Tutorial: Use Sample Profile-Guided Optimization (SPGO) to improve C++ performance"
-ms.date: 05/08/2026
+ms.date: 05/20/2026
 ms.topic: tutorial
 ai-usage: ai-assisted
 helpviewer_keywords: ["SPGO", "sample profile-guided optimization", "profiling, SPGO", "SPDConvert", "SPTAggregate"]
@@ -112,8 +112,9 @@ The Windows Performance Toolkit (WPT) uses `perfcore.ini`, located if you instal
 Open Windows Notepad as Administrator. Then open `perfcore.ini`. Find the DLL list section and add the following entries, one per line:
 
 ```
-perf_spt.dll
 perf_lbr.dll
+perf_spt.dll
+perf_hv.dll
 ```
 
 If `xperf.exe` isn't installed, see [General issues](#general-issues-all-paths) to install it.
@@ -249,7 +250,7 @@ Before applying SPGO, build `textCount` and run it against a large text file, su
 **Build:**
 
 ```cmd
-cl /EHsc /GL /O2 textCount.cpp
+cl /Zi /EHsc /GL /O2 textCount.cpp /link /debug
 ```
 
 **Run:**
@@ -282,7 +283,7 @@ Record the `Elapsed time` value. You'll compare it to the SPGO-optimized time in
 Now build textCount with SPGO enabled. This step lays the groundwork to gather profiling data.
 
 ```cmd
-cl /EHsc /GL /O2 textCount.cpp /link /debug /spgo
+cl /Zi /EHsc /GL /O2 textCount.cpp /link /debug /spgo
 ```
 
 When the build finishes, you see a message like:
@@ -297,6 +298,7 @@ This message appears on the first `/spgo` build. The linker creates the SPD file
 
 | Flag | Purpose |
 |------|---------|
+| `/Zi` | Generate complete debugging information. This is necessary for SPGO to map profiling samples to source code. |
 | `/EHsc` | Enable C++ exception handling |
 | `/GL` | Whole-program optimization — required for SPGO. Defers final optimization to link time, enabling cross-module inlining, code layout, and dead code elimination decisions. |
 | `/O2` | Optimize for speed — enables aggressive inlining, loop optimization, dead code removal, and related transforms. |
@@ -549,7 +551,7 @@ Rebuild `textCount` by using the populated SPD file. The linker reads the profil
 This step is the same for all three profiling paths.
 
 ```cmd
-cl /EHsc /GL /O2 textCount.cpp /link /debug /spgo /spdin:textCount.spd
+cl /Zi /EHsc /GL /O2 textCount.cpp /link /debug /spgo /spdin:textCount.spd
 ```
 
 **New flag (compared to [Build textCount with /spgo](#build-textcount-with-spgo)):**
@@ -595,7 +597,7 @@ Collect multiple runs for each configuration and use the median. A single run is
 
 | Build | Representative elapsed time |
 |-------|-----------------------------|
-| Baseline (`cl /EHsc /O2`) | *(your measurement)* |
+| Baseline (`cl /Zi /EHsc /O2 /link /debug`) | *(your measurement)* |
 | `/spgo` build (no profile data yet) | *(should be close to baseline)* |
 | SPGO-optimized (`/spdin`) | *(should show improvement)* |
 
@@ -607,10 +609,10 @@ The LBR path followed in this tutorial was applied to the [SQLite](https://githu
 
 Use this checklist to apply SPGO to your own C or C++ application.
 
-1. **Add `/link /spgo` to your existing release build command.** Modify your build script or project file:
+1. **Add `/Zi /link /debug /spgo` to your existing release build command.** Modify your build script or project file:
 
    ```cmd
-   cl /EHsc /GL /O2 myapp.cpp /link /spgo
+   cl /Zi /EHsc /GL /O2 myapp.cpp /link /debug /spgo
    ```
 
 1. **Choose a representative workload.** Select a real usage scenario that exercises the hot paths of your application. Use production-like data. Avoid the following as your primary profiling workload: code coverage tests (they don't stress performance bottlenecks), uncommon error paths, startup and shutdown phases, and deprecated code paths. This workload drives the profile that feeds the optimizer.
@@ -619,7 +621,7 @@ Use this checklist to apply SPGO to your own C or C++ application.
 1. **Rebuild with `/spdin:<your-spd-path>`.** Compile your application with the populated SPD:
 
    ```cmd
-   cl /EHsc /GL /O2 yourApp.cpp /link /spgo /spdin:yourApp.spd
+   cl /Zi /EHsc /GL /O2 yourApp.cpp /link /debug /spgo /spdin:yourApp.spd
    ```
 
 1. **Measure before and after.** Run your workload with both the nonoptimized and SPGO-optimized binaries. Collect the **median of multiple runs** for each configuration. A single run isn't reliable for benchmarking.
