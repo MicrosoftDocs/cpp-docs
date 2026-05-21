@@ -71,6 +71,8 @@ The options listed in the following table:
 | **`/Zf`** | Makes all symbols public. |
 | **`/ZH:MD5`** | Use MD5 for checksum in debug info. |
 | **`/ZH:SHA_256`** | Use SHA256 for checksum in debug info (default in Visual Studio 2022 version 17.0 and later). |
+| **`/ZH:SHA384`** | Use SHA384 for checksum in debug info. |
+| **`/ZH:SHA512`** | Use SHA512 for checksum in debug info. |
 | **`/Zi`** | Generates CodeView information in object file. |
 | **`/Zm`** | Enables **`M510`** option for maximum compatibility with MASM 5.1.<br /> Not available in ml64.exe. |
 | **`/Zp`**⟦*`alignment`*⟧ | Packs structures on the specified byte boundary. The *`alignment`* can be 1, 2, 4, 8, or 16. |
