@@ -597,7 +597,7 @@ Collect multiple runs for each configuration and use the median. A single run is
 
 | Build | Representative elapsed time |
 |-------|-----------------------------|
-| Baseline (`cl /Zi /EHsc /O2 /link debug`) | *(your measurement)* |
+| Baseline (`cl /Zi /EHsc /O2 /link /debug`) | *(your measurement)* |
 | `/spgo` build (no profile data yet) | *(should be close to baseline)* |
 | SPGO-optimized (`/spdin`) | *(should show improvement)* |
 
