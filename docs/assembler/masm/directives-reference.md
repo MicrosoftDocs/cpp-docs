@@ -4,7 +4,7 @@ title: "Directives Reference"
 ms.date: 07/15/2020
 f1_keywords: ["Directives Reference"]
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), directives reference"]
-ms.assetid: da6efcd1-18f7-41de-81cd-a002a02f9a22
+ai-usage: ai-assisted
 ---
 # Directives Reference
 
@@ -24,6 +24,49 @@ ms.assetid: da6efcd1-18f7-41de-81cd-a002a02f9a22
    :::column span="":::
       [`.SAVEXMM128`](dot-savexmm128.md)\
       [`.SETFRAME`](dot-setframe.md)
+   :::column-end:::
+:::row-end:::
+
+## x64 Unwind Version 3 (experimental)
+
+The following directives are used with `ml64.exe` when the `/unwindv3` option is enabled. Unwind Version 3 is experimental and is subject to change.
+
+**Prologue directives**
+
+:::row:::
+   :::column span="":::
+      [`.ALLOCSTACK`](dot-allocstack.md)\
+      [`.ENDPROLOG`](dot-endprolog.md)\
+      [`.PUSH2REG`](dot-push2reg.md)
+   :::column-end:::
+   :::column span="":::
+      [`.PUSHFRAME`](dot-pushframe.md)\
+      [`.PUSHREG`](dot-pushreg.md)\
+      [`.SAVEREG`](dot-savereg.md)
+   :::column-end:::
+   :::column span="":::
+      [`.SAVEXMM128`](dot-savexmm128.md)\
+      [`.SETFRAME`](dot-setframe.md)
+   :::column-end:::
+:::row-end:::
+
+**Epilogue directives**
+
+:::row:::
+   :::column span="":::
+      [`.BEGINEPILOG`](dot-beginepilog.md)\
+      [`.ENDEPILOG`](dot-endepilog.md)\
+      [`.FREESTACK`](dot-freestack.md)
+   :::column-end:::
+   :::column span="":::
+      [`.POP2REG`](dot-pop2reg.md)\
+      [`.POPFRAME`](dot-popframe.md)\
+      [`.POPREG`](dot-popreg.md)\
+      [`.RESTOREREG`](dot-restorereg.md)
+   :::column-end:::
+   :::column span="":::
+      [`.RESTOREXMM128`](dot-restorexmm128.md)\
+      [`.UNSETFRAME`](dot-unsetframe.md)
    :::column-end:::
 :::row-end:::
 

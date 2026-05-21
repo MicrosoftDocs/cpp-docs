@@ -422,6 +422,6 @@ To maintain your privacy and keep your sensitive information out of public view,
 
 ## How to report a C++ documentation issue
 
-If you see an issue with a document, a bad code sample, a confusing explanation, a critical omission, or even just a typo, you can easily let us know by using the feedback buttons on the page. Since 2024, we no longer use GitHub issues to track problems reported. For more information, see [Announcing a new way to give feedback on Microsoft Learn](https://techcommunity.microsoft.com/blog/microsoftlearnblog/announcing-a-new-way-to-give-feedback-on-microsoft-learn/4027635).
+If you see an issue with a document, a bad code sample, a confusing explanation, a critical omission, or even just a typo, you can easily let us know by using the feedback buttons on the page. Since 2024, we no longer use GitHub issues to track problems reported. For more information, see [Announcing a new way to give feedback on Microsoft Learn](https://techcommunity.microsoft.com/blog/skills-hub-blog/announcing-a-new-way-to-give-feedback-on-microsoft-learn/4027635).
 
 [Our C++ docs are open source](https://github.com/MicrosoftDocs/cpp-docs/), so if you'd like to submit a fix yourself, you can. For more information about how you can contribute to our documentation, see our [Contributing guide](https://github.com/MicrosoftDocs/cpp-docs/blob/main/CONTRIBUTING.md) on GitHub.

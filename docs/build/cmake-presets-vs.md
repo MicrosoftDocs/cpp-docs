@@ -4,6 +4,7 @@ description: "Reference for using CMake Presets to configure and build CMake pro
 ms.date: 06/09/2023
 ms.topic: reference
 ms.custom: sfi-image-nochange
+ai-usage: ai-assisted
 ---
 
 # Configure and build with CMake Presets in Visual Studio
@@ -459,6 +460,38 @@ endif()
 The `<additional-options>` part lists other compilation flags, like `"-fno-omit-frame-pointer"`. For more information about AddressSanitizer for Linux, see [Using AddressSanitizer](https://github.com/google/sanitizers/wiki/AddressSanitizer#using-addresssanitizer). For more information about using AddressSanitizer with MSVC, see [Use AddressSanitizer from a developer command prompt](../sanitizers/asan.md#command-prompt).
 
 Pass runtime flags to AddressSanitizer by using the `ASAN_OPTIONS` field in *`launch.vs.json`*. `ASAN_OPTIONS` defaults to `detect_leaks=0` when no other runtime options are specified because LeakSanitizer isn't supported in Visual Studio.
+
+## Enable Segment Heap
+
+The Segment Heap is a Windows heap implementation that reduces memory usage and fragmentation. Visual Studio ships a CMake script that enables Segment Heap for your project by adding the required manifest settings. New C++ CMake projects enable Segment Heap by default.
+ 
+To enable Segment Heap, set `CMAKE_PROJECT_TOP_LEVEL_INCLUDES` in the `cacheVariables` map of your Configure Preset in *`CMakePresets.json`*. Optionally, set the `VS_SEGMENT_HEAP_ALLOWLIST` and `VS_SEGMENT_HEAP_EXCLUDE` environment variables to control which targets in the project use Segment Heap. Separate target names with semicolons:
+ 
+ ```json
+{
+  "configurePresets": [
+    {
+      // ...
+      "environment": {
+        "VS_SEGMENT_HEAP_ALLOWLIST": "target1;target2;",
+        "VS_SEGMENT_HEAP_EXCLUDE": "target3;"
+      },
+      "cacheVariables": {
+        "CMAKE_PROJECT_TOP_LEVEL_INCLUDES": "$env{VSINSTALLDIR}Common7/IDE/CommonExtensions/Microsoft/CMake/cmake/Microsoft/SegmentHeap.cmake"
+      }
+    }
+  ]
+}
+
+```
+
+> [!NOTE]
+> `CMAKE_PROJECT_TOP_LEVEL_INCLUDES` is available in CMake 3.24 or later.
+
+- `VS_SEGMENT_HEAP_ALLOWLIST` — Apply the Segment Heap manifest entry only to the listed targets. Exclude all other targets.
+- `VS_SEGMENT_HEAP_EXCLUDE` — Exclude the listed targets from using the Segment Heap.
+
+In this example, `CMAKE_PROJECT_TOP_LEVEL_INCLUDES` points to the Visual Studio-provided `SegmentHeap.cmake` script. The optional `VS_SEGMENT_HEAP_ALLOWLIST` and `VS_SEGMENT_HEAP_EXCLUDE` variables show how to include or exclude specific targets. If neither variable is set, Visual Studio enables Segment Heap for all targets. If both variables are set, `VS_SEGMENT_HEAP_ALLOWLIST` takes precedence.
 
 ## Run CMake from the command line or a CI pipeline
 
