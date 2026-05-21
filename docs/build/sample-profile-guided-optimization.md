@@ -298,7 +298,7 @@ This message appears on the first `/spgo` build. The linker creates the SPD file
 
 | Flag | Purpose |
 |------|---------|
-| `/Zi` | Generate complete debugging information |
+| `/Zi` | Generate complete debugging information. This is necessary for SPGO to map profiling samples to source code. |
 | `/EHsc` | Enable C++ exception handling |
 | `/GL` | Whole-program optimization — required for SPGO. Defers final optimization to link time, enabling cross-module inlining, code layout, and dead code elimination decisions. |
 | `/O2` | Optimize for speed — enables aggressive inlining, loop optimization, dead code removal, and related transforms. |
@@ -609,10 +609,10 @@ The LBR path followed in this tutorial was applied to the [SQLite](https://githu
 
 Use this checklist to apply SPGO to your own C or C++ application.
 
-1. **Add `/Zi /link /spgo /debug` to your existing release build command.** Modify your build script or project file:
+1. **Add `/Zi /link /debug /spgo` to your existing release build command.** Modify your build script or project file:
 
    ```cmd
-   cl /EHsc /GL /O2 myapp.cpp /link /spgo
+   cl /Zi /EHsc /GL /O2 myapp.cpp /link /debug /spgo
    ```
 
 1. **Choose a representative workload.** Select a real usage scenario that exercises the hot paths of your application. Use production-like data. Avoid the following as your primary profiling workload: code coverage tests (they don't stress performance bottlenecks), uncommon error paths, startup and shutdown phases, and deprecated code paths. This workload drives the profile that feeds the optimizer.
