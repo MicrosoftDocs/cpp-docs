@@ -1,7 +1,7 @@
 ---
 title: "/ZH (Hash algorithm for calculation of file checksum in debug info)"
-description: "Use the /ZH compiler option to enable MD5, SHA-1, SHA-256, SHA-384, or SHA-512 source file checksums in debug info"
-ms.date: 04/13/2026
+description: "Use the /ZH compiler option to enable source file checksums in debug info"
+ms.date: 05/25/2026
 f1_keywords: ["/ZH", "/ZH:MD5", "/ZH:SHA1", "/ZH:SHA_256", "/ZH:SHA384", "/ZH:SHA512"]
 helpviewer_keywords: ["/ZH", "/ZH:MD5", "/ZH:SHA1", "/ZH:SHA_256", "/ZH:SHA384", "/ZH:SHA512", "/ZH compiler option", "/ZH:MD5 compiler option", "/ZH:SHA1 compiler option", "/ZH:SHA_256 compiler option", "/ZH:SHA384 compiler option", "/ZH:SHA512 compiler option", "Hash algorithm for file checksum in debug info"]
 ---
@@ -13,9 +13,14 @@ Specifies which cryptographic hash algorithm to use to generate a checksum of ea
 
 > **`/ZH:MD5`**\
 > **`/ZH:SHA1`**\
-> **`/ZH:SHA_256`**\
+> **`/ZH:SHA_256`**
+
+::: moniker range=">=msvc-180"
+
 > **`/ZH:SHA384`**\
 > **`/ZH:SHA512`**
+
+::: moniker-end
 
 ## Arguments
 
@@ -28,20 +33,44 @@ Use an SHA-1 hash for the checksum.
 **`/ZH:SHA_256`**\
 Use an SHA-256 hash for the checksum. This option is the default in Visual Studio 2022 version 17.0 and later.
 
+::: moniker range=">=msvc-180"
+
 **`/ZH:SHA384`**\
-Use an SHA-384 hash for the checksum.
+Use an SHA-384 hash for the checksum. This option is available starting in Visual Studio 2026 version 18.6.0 and MSVC version 14.51.
 
 **`/ZH:SHA512`**\
-Use an SHA-512 hash for the checksum.
+Use an SHA-512 hash for the checksum. This option is available starting in Visual Studio 2026 version 18.6.0 and MSVC version 14.51.
+
+::: moniker-end
 
 ## Remarks
 
-PDB files store a checksum for each source file, compiled into the object code in the associated executable. The checksum allows the debugger to verify that the source code it loads matches the executable. The compiler and debugger support MD5, SHA-1, SHA-256, SHA-384, and SHA-512 hash algorithms. By default, in Visual Studio 2019 the compiler uses an MD5 hash to generate the checksum. To specify this hash algorithm explicitly, use the **`/ZH:MD5`** option.
+PDB files store a checksum for each source file, compiled into the object code in the associated executable. The checksum allows the debugger to verify that the source code it loads matches the executable. The compiler and debugger support MD5, SHA-1, and SHA-256 hash algorithms.
 
-Because of a risk of collision problems in MD5 and SHA-1, use the **`/ZH:SHA_256`** option or stronger. The SHA-384 and SHA-512 options provide stronger checksums but can increase compile time. The **`/ZH:SHA_256`** option is the default in Visual Studio 2022 version 17.0 and later.
+::: moniker range=">=msvc-180"
+
+Starting in Visual Studio 2026 version 18.6.0 and MSVC version 14.51, the compiler and debugger also support SHA-384 and SHA-512 hash algorithms.
+
+::: moniker-end
+
+By default, in Visual Studio 2019 the compiler uses an MD5 hash to generate the checksum. To specify this hash algorithm explicitly, use the **`/ZH:MD5`** option.
+
+Because of a risk of collision problems in MD5 and SHA-1, use the **`/ZH:SHA_256`** option or stronger.
+
+::: moniker range=">=msvc-180"
+
+The SHA-384 and SHA-512 options provide stronger checksums but can increase compile time.
+
+::: moniker-end
+
+The **`/ZH:SHA_256`** option is the default in Visual Studio 2022 version 17.0 and later.
+
+::: moniker range=">=msvc-180"
 
 > [!NOTE]
 > The **`/ZH:SHA384`** and **`/ZH:SHA512`** options aren't supported for IFC (module interface) files. If you compile modules with one of these options, the compiler emits [fatal error C1029](../../error-messages/compiler-errors-1/fatal-error-c1029.md). Use **`/ZH:SHA_256`** or a smaller hash algorithm when you compile C++ modules.
+
+::: moniker-end
 
 When more than one **`/ZH`** option is specified, the last option is used.
 
@@ -55,7 +84,17 @@ The **`/ZH`** option is available in Visual Studio 2019 version 16.4 and later.
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
+::: moniker range=">=msvc-180"
+
 1. Modify the **Additional options** property to add a **`/ZH:MD5`**, **`/ZH:SHA1`**, **`/ZH:SHA_256`**, **`/ZH:SHA384`**, or **`/ZH:SHA512`** option, and then choose **OK**.
+
+::: moniker-end
+
+::: moniker range=">=msvc-160 <=msvc-170"
+
+1. Modify the **Additional options** property to add a **`/ZH:MD5`**, **`/ZH:SHA1`**, or **`/ZH:SHA_256`** option, and then choose **OK**.
+
+::: moniker-end
 
 ## See also
 
