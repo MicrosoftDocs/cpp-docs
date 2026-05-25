@@ -11,12 +11,19 @@ Specifies which cryptographic hash algorithm to use to generate a checksum of ea
 
 ## Syntax
 
+::: moniker range=">=msvc-160 <=msvc-170"
+
 > **`/ZH:MD5`**\
 > **`/ZH:SHA1`**\
 > **`/ZH:SHA_256`**
 
+::: moniker-end
+
 ::: moniker range=">=msvc-180"
 
+> **`/ZH:MD5`**\
+> **`/ZH:SHA1`**\
+> **`/ZH:SHA_256`**\
 > **`/ZH:SHA384`**\
 > **`/ZH:SHA512`**
 
@@ -36,10 +43,10 @@ Use an SHA-256 hash for the checksum. This option is the default in Visual Studi
 ::: moniker range=">=msvc-180"
 
 **`/ZH:SHA384`**\
-Use an SHA-384 hash for the checksum. This option is available starting in Visual Studio 2026 version 18.6.0 and MSVC version 14.51.
+Use an SHA-384 hash for the checksum.
 
 **`/ZH:SHA512`**\
-Use an SHA-512 hash for the checksum. This option is available starting in Visual Studio 2026 version 18.6.0 and MSVC version 14.51.
+Use an SHA-512 hash for the checksum.
 
 ::: moniker-end
 
@@ -47,25 +54,15 @@ Use an SHA-512 hash for the checksum. This option is available starting in Visua
 
 PDB files store a checksum for each source file, compiled into the object code in the associated executable. The checksum allows the debugger to verify that the source code it loads matches the executable. The compiler and debugger support MD5, SHA-1, and SHA-256 hash algorithms.
 
-::: moniker range=">=msvc-180"
-
-Starting in Visual Studio 2026 version 18.6.0 and MSVC version 14.51, the compiler and debugger also support SHA-384 and SHA-512 hash algorithms.
-
-::: moniker-end
-
 By default, in Visual Studio 2019 the compiler uses an MD5 hash to generate the checksum. To specify this hash algorithm explicitly, use the **`/ZH:MD5`** option.
 
 Because of a risk of collision problems in MD5 and SHA-1, use the **`/ZH:SHA_256`** option or stronger.
 
-::: moniker range=">=msvc-180"
-
-The SHA-384 and SHA-512 options provide stronger checksums but can increase compile time.
-
-::: moniker-end
-
 The **`/ZH:SHA_256`** option is the default in Visual Studio 2022 version 17.0 and later.
 
 ::: moniker range=">=msvc-180"
+
+Starting in Visual Studio 2026 version 18.6.0 and MSVC version 14.51, the compiler and debugger also support SHA-384 and SHA-512 hash algorithms. These options provide stronger checksums but can increase compile time.
 
 > [!NOTE]
 > The **`/ZH:SHA384`** and **`/ZH:SHA512`** options aren't supported for IFC (module interface) files. If you compile modules with one of these options, the compiler emits [fatal error C1029](../../error-messages/compiler-errors-1/fatal-error-c1029.md). Use **`/ZH:SHA_256`** or a smaller hash algorithm when you compile C++ modules.
