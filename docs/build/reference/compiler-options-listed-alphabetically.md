@@ -263,7 +263,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/ZW`](zw-windows-runtime-compilation.md) | Produces an output file to run on the Windows Runtime. |
 
 <sup>17.14</sup> This option is available starting in Visual Studio 2022 version 17.14.\
-<sup>18.6.0</sup> This option is available starting in Visual Studio 2026 version 18.6.0.
+<sup>18.6.0</sup> This option is available starting in Visual Studio 2026 version 18.6.0 and MSVC version 14.51.
 
 ## See also
 

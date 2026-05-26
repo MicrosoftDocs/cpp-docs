@@ -220,7 +220,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/Zs`](zs-syntax-check-only.md) | Checks syntax only. |
 | [`/ZW`](zw-windows-runtime-compilation.md) | Produces an output file to run on the Windows Runtime. |
 
-<sup>18.6.0</sup> This option is available starting in Visual Studio 2026 version 18.6.0.
+<sup>18.6.0</sup> This option is available starting in Visual Studio 2026 version 18.6.0 and MSVC version 14.51.
 
 ## Linking
 

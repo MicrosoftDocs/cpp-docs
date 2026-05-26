@@ -79,7 +79,7 @@ The options listed in the following table:
 | **`/Zs`** | Performs a syntax check only. |
 | **`/?`** | Displays a summary of ML command-line syntax and options. |
 
-<sup>18.6.0</sup> This option is available starting in Visual Studio 2026 version 18.6.0.
+<sup>18.6.0</sup> This option is available starting in Visual Studio 2026 version 18.6.0 and MSVC version 14.51.
 
 *`filename`*\
 The name of the file.
