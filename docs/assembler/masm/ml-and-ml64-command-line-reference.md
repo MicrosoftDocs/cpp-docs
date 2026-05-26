@@ -1,7 +1,7 @@
 ---
 title: "ML and ML64 command-line reference"
 description: "Reference guide to the Microsoft MASM ML and ML64 assembler command-line options."
-ms.date: 04/29/2026
+ms.date: 05/25/2026
 ai-usage: ai-assisted
 f1_keywords: ["ML", "/unwindv3"]
 helpviewer_keywords: ["/W* MASM compiler option", "/c MASM compiler option", "/EP MASM compiler option", "/Fe MASM compiler option", "/Zp MASM compiler option", "/AT MASM compiler option", "/Zm MASM compiler option", "/Sf MASM compiler option", "/Sp MASM compiler option", "/w MASM compiler option", "/Fl MASM compiler option", "/coff MASM compiler option", "/St MASM compiler option", "/Cx MASM compiler option", "/Sl MASM compiler option", "/Cu MASM compiler option", "MASM (Microsoft Macro Assembler), ML command-line reference", "/FPi MASM compiler option", "/Zf MASM compiler option", "ML environment variable", "/Fr MASM compiler option", "/help MASM compiler option", "/Sa MASM compiler option", "/Zd MASM compiler option", "/I MASM compiler option", "/? MASM compiler option", "/Bl MASM compiler option", "/Fm MASM compiler option", "/Fo MASM compiler option", "command-line reference [ML]", "/Sn MASM compiler option", "/Gd MASM compiler option", "/D* MASM compiler option", "environment variables, ML", "/Gc MASM compiler option", "/F* MASM compiler option", "/Sc MASM compiler option", "/H MASM compiler option", "/Zs MASM compiler option", "/omf MASM compiler option", "/quiet MASM compiler option", "/Sg MASM compiler option", "/Cp MASM compiler option", "/Zi MASM compiler option", "/nologo MASM compiler option", "/Sx MASM compiler option", "/WX MASM compiler option", "/Ss MASM compiler option", "command line, reference [ML]", "/Ta MASM compiler option", "/unwindv3 MASM compiler option"]
@@ -71,13 +71,15 @@ The options listed in the following table:
 | **`/Zf`** | Makes all symbols public. |
 | **`/ZH:MD5`** | Use MD5 for checksum in debug info. |
 | **`/ZH:SHA_256`** | Use SHA256 for checksum in debug info (default in Visual Studio 2022 version 17.0 and later). |
-| **`/ZH:SHA384`** | Use SHA384 for checksum in debug info. |
-| **`/ZH:SHA512`** | Use SHA512 for checksum in debug info. |
+| **`/ZH:SHA384`** | Use SHA384 for checksum in debug info.<sup>18.6.0</sup> |
+| **`/ZH:SHA512`** | Use SHA512 for checksum in debug info.<sup>18.6.0</sup> |
 | **`/Zi`** | Generates CodeView information in object file. |
 | **`/Zm`** | Enables **`M510`** option for maximum compatibility with MASM 5.1.<br /> Not available in ml64.exe. |
 | **`/Zp`**⟦*`alignment`*⟧ | Packs structures on the specified byte boundary. The *`alignment`* can be 1, 2, 4, 8, or 16. |
 | **`/Zs`** | Performs a syntax check only. |
 | **`/?`** | Displays a summary of ML command-line syntax and options. |
+
+<sup>18.6.0</sup> This option is available starting in Visual Studio 2026 version 18.6.0 and MSVC version 14.51.
 
 *`filename`*\
 The name of the file.
