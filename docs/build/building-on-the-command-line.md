@@ -191,20 +191,20 @@ vcvarsall.bat [architecture] [platform_type] [winsdk_version] [-vcvars_ver= vcve
 
   Optionally specifies the Visual Studio compiler toolset to use. By default, the environment is set to use the current Visual Studio compiler toolset.
 
-::: moniker range=">= msvc-160"
+  ::: moniker range=">= msvc-160"
 
   Use **-vcvars_ver=14.2x.yyyyy** to specify a specific version of the Visual Studio 2019 compiler toolset.
 
   Use **-vcvars_ver=14.29** to specify the latest version of the Visual Studio 2019 compiler toolset.
 
-::: moniker-end
-::: moniker range="= msvc-150"
+  ::: moniker-end
+  ::: moniker range="= msvc-150"
 
   Use **-vcvars_ver=14.16** to specify the latest version of the Visual Studio 2017 compiler toolset.
 
   Use **-vcvars_ver=14.1x.yyyyy** to specify a specific version of the Visual Studio 2017 compiler toolset.
 
-::: moniker-end
+  ::: moniker-end
 
   Use **-vcvars_ver=14.0** to specify the Visual Studio 2015 compiler toolset.
 
