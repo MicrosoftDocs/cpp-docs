@@ -339,7 +339,7 @@ These articles show how to build apps on the command line, and describe how to c
 
   Provides links to articles that describe the Microsoft Program Maintenance Utility (`NMAKE.EXE`).
 
-- [MSBuild on the command line - C++](msbuild-visual-cpp.md)\
+- [MSBuild on the command line - C++](msbuild-visual-cpp.md)
 
   Provides links to articles that discuss how to use `msbuild.exe` from the command line.
 
