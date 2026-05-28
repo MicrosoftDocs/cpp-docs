@@ -320,9 +320,6 @@ By default, the Visual Studio IDE uses native project build systems based on MSB
 - [Walkthrough: Compiling a C++/CLI program on the command line](walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md)
 - [Walkthrough: Compiling a C++/CX program on the command line](walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md)
 - [Projects and build systems](projects-and-build-systems-cpp.md)
-
-The following reference content might also be useful:
-
 - [`/MD`, `/MT`, `/LD` (Use run-time library)](reference/md-mt-ld-use-run-time-library.md)
 - [C/C++ compiler options](reference/compiler-options.md)
 - [MSVC linker options](reference/linker-options.md)
