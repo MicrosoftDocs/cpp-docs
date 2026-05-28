@@ -1,13 +1,13 @@
 ---
-title: "Microsoft C++ compiler versioning"
+title: "Microsoft C++ (MSVC) compiler versioning"
 description: "Visual Studio includes a Microsoft C++ (MSVC) compiler. Learn about the versioning system used for the compiler."
-ms.date: 05/04/2026
+ms.date: 05/28/2026
 ms.service: "visual-cpp"
 ms.subservice: "tools"
 helpviewer_keywords: ["Visual C++, platforms supported", "platforms [C++]"]
 #customer intent: As a C++ developer using Visual Studio, I need to be aware of different versions of the Microsoft C++ compiler for consistency in my organization's production process.
 ---
-# Microsoft C++ compiler versioning
+# Microsoft C++ (MSVC) compiler versioning
 
 The Microsoft C++ (MSVC) compiler version consists of four fields:
 
@@ -139,7 +139,7 @@ The following table lists the Visual Studio version corresponding to each Micros
 
 <sup>b</sup> Visual Studio 2019 versions 16.10 and 16.11 share the same major and minor versions, and so have the same value for `_MSC_VER`. To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 version 16.10 is 192929917. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 version 16.11 is 192930129.
 
-## Related content
+## See also
 
 - [`_MSC_VER`](../preprocessor/predefined-macros.md)
 - [Visual C++ compiler version blog post](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/)
