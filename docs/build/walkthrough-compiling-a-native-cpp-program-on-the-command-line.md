@@ -2,10 +2,10 @@
 title: "Walkthrough: Compiling a Native C++ Program on the Command Line"
 description: "Learn how to use the Microsoft C++ compiler from a command prompt to compile and run C++ code by using a simple example."
 ms.custom: "conceptual"
-ms.date: 04/29/2026
+ms.date: 05/28/2026
 helpviewer_keywords: ["native code [C++]", "Visual C++, native code", "compiling programs [C++]", "command-line applications [C++], native"]
 ms.assetid: b200cfd1-0440-498f-90ee-7ecf92492dc0
-#customer intent: As a C++ developer, I want to build and run programs by using the command line.
+#customer intent: As a C++ developer, I want to build and run programs from the command line.
 ---
 # Walkthrough: Compiling a Native C++ Program on the Command Line
 
@@ -64,7 +64,7 @@ If you can't find the developer command prompt shortcut, or if you get an error 
 
 1. Enter `notepad hello.cpp` in the command prompt window.
 
-   Choose **Yes** when Notepad prompts you to create a new file. This step opens a blank Notepad window, ready for you to enter your code in a file named *hello.cpp*.
+   Choose **Yes** when Notepad prompts you to create a new file. This step opens a blank Notepad window, ready for you to enter your code in a file named `hello.cpp`.
 
 1. In Notepad, enter the following code:
 
@@ -81,9 +81,9 @@ If you can't find the developer command prompt shortcut, or if you get an error 
 
 1. Save your work! In Notepad, on the **File** menu, choose **Save**.
 
-   Congratulations! You created a C++ source file, *hello.cpp*, that's ready to compile.
+   Congratulations! You created a C++ source file, `hello.cpp`, that's ready to compile.
 
-1. Switch back to the developer command prompt window. Enter `dir` at the command prompt to list the contents of the `C:\hello` directory. You should see the source file *hello.cpp* in the directory listing, which looks something like:
+1. Switch back to the developer command prompt window. Enter `dir` at the command prompt to list the contents of the `C:\hello` directory. You should see the source file `hello.cpp` in the directory listing, which looks something like:
 
    ```Output
    C:\hello>dir
@@ -101,11 +101,11 @@ If you can't find the developer command prompt shortcut, or if you get an error 
    The dates and other details will differ on your computer.
 
    > [!NOTE]
-   > If you don't see your source code file, *hello.cpp*, make sure the current working directory in your command prompt is the *C:\hello* directory you created. Also make sure that this location is the directory where you saved your source file. 
+   > If you don't see your source code file, `hello.cpp`, make sure the current working directory in your command prompt is the `C:\hello` directory you created. Also make sure that this location is the directory where you saved your source file. 
    >
    > Make sure that you saved the source code with a `.cpp` file name extension, not a `.txt` extension. Your source file gets saved in the current directory as a `.cpp` file automatically if you open Notepad at the command prompt by using the `notepad hello.cpp` command. 
    >
-   > Notepad's behavior is different if you open it another way: By default, Notepad appends a `.txt` extension to new files when you save them. It also defaults to saving files in your *Documents* directory. To save your file with a *.cpp* extension in Notepad, choose **File** > **Save As**. In the **Save As** dialog, navigate to your *C:\hello* folder in the directory tree view control. Then use the **Save as type** dropdown control to select **All Files (\*.\*)**. Enter *hello.cpp* in the **File name** edit control, and then choose **Save** to save the file.
+   > Notepad's behavior is different if you open it another way: By default, Notepad appends a `.txt` extension to new files when you save them. It also defaults to saving files in your `Documents` directory. To save your file with a `.cpp extension in Notepad, choose **File** > **Save As**. In the **Save As** dialog, navigate to your *C:\hello* folder in the directory tree view control. Then use the **Save as type** dropdown control to select **All Files (\*.\*)**. Enter `hello.cpp` in the **File name** edit control, and then choose **Save** to save the file.
 
 1. At the developer command prompt, enter `cl /EHsc hello.cpp` to compile your program.
 
@@ -129,7 +129,7 @@ If you can't find the developer command prompt shortcut, or if you get an error 
    >
    > If you get a different compiler or linker error or warning, review your source code to correct any errors, then save it and run the compiler again. For information about specific errors, use the search box to look for the error number.
 
-1. To run the hello.exe program, at the command prompt, enter *hello*.
+1. To run the hello.exe program, at the command prompt, enter `hello`.
 
    The program displays this text and exits:
 
@@ -143,7 +143,7 @@ If you can't find the developer command prompt shortcut, or if you get an error 
 
 This "Hello, World" example is about as simple as a C++ program can get. Real world programs usually have header files, more source files, and link to libraries.
 
-You can use the steps in this walkthrough to build your own C++ code instead of typing the sample code shown. These steps also let you build many C++ code sample programs that you find elsewhere. You can put your source code and build your apps in any writable directory. By default, the Visual Studio IDE creates projects in your user folder, in a *source\\repos* subfolder. Older versions might put projects in a *Documents\\Visual Studio \{version}\\Projects* folder.
+You can use the steps in this walkthrough to build your own C++ code instead of typing the sample code shown. These steps also let you build many C++ code sample programs that you find elsewhere. You can put your source code and build your apps in any writable directory. By default, the Visual Studio IDE creates projects in your user folder, in a `source\repos` subfolder. Older versions might put projects in a `Documents\Visual Studio \{version}\Projects` folder.
 
 To compile a program that has other source code files, enter them all on the command line, like:
 
@@ -153,7 +153,7 @@ cl /EHsc file1.cpp file2.cpp file3.cpp
 
 The `/EHsc` command-line option instructs the compiler to enable standard C++ exception handling behavior. Without it, thrown exceptions can result in undestroyed objects and resource leaks. For more information, see [/EH (Exception Handling Model)](reference/eh-exception-handling-model.md).
 
-When you supply other source files, the compiler uses the first input file to create the program name. In this case, it outputs a program called *file1.exe*. To change the name to *program1.exe*, add an [/out](reference/out-output-file-name.md) linker option:
+When you supply other source files, the compiler uses the first input file to create the program name. In this case, it outputs a program called `file1.exe`. To change the name to `program1.exe`, add an [/out](reference/out-output-file-name.md) linker option:
 
 ```cmd
 cl /EHsc file1.cpp file2.cpp file3.cpp /link /out:program1.exe
@@ -173,7 +173,7 @@ The C and C++ languages are similar, but not the same. The MSVC compiler uses a 
 
 The MSVC compiler includes a C Runtime Library (CRT) that conforms to the ISO C99 standard, with minor exceptions. Portable code generally compiles and runs as expected. Certain obsolete library functions, and several POSIX function names, are deprecated by the MSVC compiler. The functions are supported, but the preferred names have changed. For more information, see [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md) and [Compiler Warning (level 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md).
 
-## Related content
+## See also
 
 - [C++ Language Reference](../cpp/cpp-language-reference.md)
 - [Projects and build systems](projects-and-build-systems-cpp.md)
