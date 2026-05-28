@@ -8,7 +8,7 @@ ms.custom:
   - ai-assisted
   - copilot-scenario-highlight
 ms.update-cycle: 180-days
-#customer intent: As a C++ developer, I want to be able to use GitHub Copilot to create, troubleshoot, and understand C++ code in Microsoft Visual Studio.
+#customer intent: As a C++ developer, I want to use GitHub Copilot to create, troubleshoot, and understand C++ code in Microsoft Visual Studio.
 ---
 
 # Use AI to create a C++ console application in Visual Studio
@@ -56,7 +56,7 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
     :::image-end:::
 
 1. Select **Next**.
-1. Set the project name to *Life* and choose the location for the project.
+1. Set the project name to `Life` and choose the location for the project.
 1. Select **Create**.
 1. After the project opens, find the `Life.cpp` file in Solution Explorer.
 1. Open `Life.cpp` and delete the default "Hello, World!" code to start with a clean slate.
@@ -249,7 +249,7 @@ To install **Desktop development with C++**, you can run the installer right fro
 - Ask Copilot to fix specific compilation errors by pasting the error message into Copilot chat.
 - Try refining your prompt to be more specific about what you want the app to do.
 
-## Related content
+## See also
 
 - [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
 - [GitHub Copilot documentation](https://docs.github.com/copilot) - Dive deeper into AI-assisted development
