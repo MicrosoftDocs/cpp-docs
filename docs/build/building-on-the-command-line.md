@@ -160,9 +160,7 @@ When you use `vcvarsall.bat` with no arguments, it configures the environment va
 
 ### `vcvarsall` syntax
 
-```cmd
-vcvarsall.bat [architecture] [platform_type] [winsdk_version] [-vcvars_ver= vcversion] [spectre_mode]
-```
+`vcvarsall.bat` [`architecture`] [`platform_type`] [`winsdk_version`] [`-vcvars_ver=`*`vcversion`*] [`spectre_mode`]
 
 - `architecture`
 
@@ -315,52 +313,17 @@ By default, the Visual Studio IDE uses native project build systems based on MSB
 > [!NOTE]
 > Starting in Visual Studio 2019 version 16.5, MSBuild and DEVENV don't use the command-line environment to control the toolset and libraries used.
 
-## In this section
-
-These articles show how to build apps on the command line, and describe how to customize the command-line build environment. Some show how to use 64-bit toolsets, and target x86, x64, ARM, and ARM64 platforms. They also describe use of the command-line build tools MSBuild and NMAKE.
+## See also
 
 - [Walkthrough: Compiling a native C++ program on the command line](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)
-
-  Gives an example that shows how to create and compile a C++ program using the command line.
-
 - [Walkthrough: Compile a C program on the command line](walkthrough-compile-a-c-program-on-the-command-line.md)
-
-  Describes how to compile a program written in the C programming language.
-
 - [Walkthrough: Compiling a C++/CLI program on the command line](walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md)
-
-  Describes how to create and compile a C++/CLI program that uses the .NET Framework.
-
 - [Walkthrough: Compiling a C++/CX program on the command line](walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md)
+- [Projects and build systems](projects-and-build-systems-cpp.md)
 
-  Describes how to create and compile a C++/CX program that uses the Windows Runtime.
-
-- [NMAKE reference](reference/nmake-reference.md)
-
-  Provides links to articles that describe the Microsoft Program Maintenance Utility (`NMAKE.EXE`).
-
-- [MSBuild on the command line - C++](msbuild-visual-cpp.md)\
-
-  Provides links to articles that discuss how to use `msbuild.exe` from the command line.
-
-## Related sections
+The following reference content might also be useful:
 
 - [`/MD`, `/MT`, `/LD` (Use run-time library)](reference/md-mt-ld-use-run-time-library.md)
-
-  Describes how to use these compiler options to use a Debug or Release run-time library.
-
 - [C/C++ compiler options](reference/compiler-options.md)
-
-  Provides links to articles that discuss the C and C++ compiler options and `CL.exe`.
-
 - [MSVC linker options](reference/linker-options.md)
-
-  Provides links to articles that discuss the linker options and `LINK.exe`.
-
 - [Additional MSVC build tools](reference/c-cpp-build-tools.md)
-
-  Provides links to the C/C++ build tools that are included in Visual Studio.
-
-## Related content
-
-[Projects and build systems](projects-and-build-systems-cpp.md)
