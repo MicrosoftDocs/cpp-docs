@@ -36,7 +36,7 @@ The macros reflect these values like this:
 - `_MSC_BUILD` (the revision) is 0
 
 > [!NOTE]
-> Visual Studio 2019 versions 16.8 and 16.9 share the same major and minor versions, and so have the same value for `_MSC_VER`. This fact is also true for Visual Studio 2019 versions 16.10 and 16.11. To distinguish them, use `_MSC_FULL_VER` as described in [Service releases starting with Visual Studio 2017](#service-releases-starting-with-visual-studio-2017).
+> Visual Studio 2019 versions 16.8 and 16.9 share the same major and minor versions, and so have the same value for `_MSC_VER`. This is also true for Visual Studio 2019 versions 16.10 and 16.11. To distinguish them, use `_MSC_FULL_VER` as described in [Service releases starting with Visual Studio 2017](#service-releases-starting-with-visual-studio-2017).
 
 ## Visual Studio channels
 
