@@ -137,6 +137,8 @@ items:
           items: 
             - name: Profile-guided optimizations
               href: ../build/profile-guided-optimizations.md
+            - name: Sample profile-guided optimization tutorial
+              href: ../build/sample-profile-guided-optimization.md
             - name: Environment variables for profile-guided optimizations
               href: ../build/environment-variables-for-profile-guided-optimizations.md
             - name: PgoAutoSweep
@@ -145,6 +147,14 @@ items:
               href: ../build/pgomgr.md
             - name: pgosweep
               href: ../build/pgosweep.md
+            - name: SPDConvert
+              href: ../build/spdconvert.md
+            - name: SPDDump
+              href: ../build/spddump.md
+            - name: SPTAggregate
+              href: ../build/sptaggregate.md
+            - name: SPTDump
+              href: ../build/sptdump.md
             - name: "How to: Merge multiple PGO profiles into a single profile"
               href: ../build/how-to-merge-multiple-pgo-profiles-into-a-single-profile.md
 - name: Use the MSVC toolset from the command line
@@ -314,6 +324,8 @@ items:
           href: ../build/prolog-and-epilog.md
         - name: x64 exception handling
           href: ../build/exception-handling-x64.md
+        - name: x64 Unwind Information V3
+          href: ../build/x64-unwind-information-v3.md
 - name: Configure C++ projects for ARM processors
   expanded: false
   items: 
@@ -561,7 +573,12 @@ items:
                 - name: /FC (Full path of source code file in diagnostics)
                   href: ../build/reference/fc-full-path-of-source-code-file-in-diagnostics.md
                 - name: /feature (Enable architecture features)
-                  href: ../build/reference/feature-arm64.md
+                  href: ../build/reference/feature-enable-architecture-features.md
+                  items:
+                    - name: /feature (ARM64)
+                      href: ../build/reference/feature-arm64.md
+                    - name: /feature (x64)
+                      href: ../build/reference/feature-x64.md
                 - name: /forceInterlockedFunctions (Generate and link with out-of-line atomic
                     functions)
                   href: ./reference/force-interlocked-functions.md
@@ -1098,6 +1115,14 @@ items:
               href: ../build/reference/section-specify-section-attributes.md
             - name: /SOURCELINK (Include Sourcelink file in PDB)
               href: ../build/reference/sourcelink.md
+            - name: /SPD
+              href: ../build/reference/spd-specify-sample-profile-database.md
+            - name: /SPDEMBED
+              href: ../build/reference/spdembed-embed-sample-profile-database.md
+            - name: /SPDIN
+              href: ../build/reference/spdin-use-sample-profile-database.md
+            - name: /SPGO
+              href: ../build/reference/spgo-enable-sample-profile-guided-optimization.md
             - name: /STACK (Stack allocations)
               href: ../build/reference/stack-stack-allocations.md
             - name: /STUB (MS-DOS stub file name)

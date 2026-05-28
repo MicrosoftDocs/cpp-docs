@@ -117,6 +117,8 @@ items:
           href: ../assembler/masm/dot-alpha.md
         - name: ASSUME
           href: ../assembler/masm/assume.md
+        - name: .BEGINEPILOG
+          href: ../assembler/masm/dot-beginepilog.md
         - name: .BREAK
           href: ../assembler/masm/dot-break.md
         - name: BYTE
@@ -171,6 +173,8 @@ items:
           href: ../assembler/masm/end-masm.md
         - name: .ENDIF
           href: ../assembler/masm/dot-endif.md
+        - name: .ENDEPILOG
+          href: ../assembler/masm/dot-endepilog.md
         - name: ENDM
           href: ../assembler/masm/endm.md
         - name: ENDP
@@ -225,6 +229,8 @@ items:
           href: ../assembler/masm/forc.md
         - name: .FPO
           href: ../assembler/masm/dot-fpo.md
+        - name: .FREESTACK
+          href: ../assembler/masm/dot-freestack.md
         - name: FWORD
           href: ../assembler/masm/fword.md
         - name: GOTO
@@ -315,8 +321,14 @@ items:
           href: ../assembler/masm/oword.md
         - name: PAGE
           href: ../assembler/masm/page.md
+        - name: .POP2REG
+          href: ../assembler/masm/dot-pop2reg.md
         - name: POPCONTEXT
           href: ../assembler/masm/popcontext.md
+        - name: .POPREG
+          href: ../assembler/masm/dot-popreg.md
+        - name: .POPFRAME
+          href: ../assembler/masm/dot-popframe.md
         - name: PROC
           href: ../assembler/masm/proc.md
         - name: PROTO
@@ -325,6 +337,8 @@ items:
           href: ../assembler/masm/public-masm.md
         - name: PURGE
           href: ../assembler/masm/purge.md
+        - name: .PUSH2REG
+          href: ../assembler/masm/dot-push2reg.md
         - name: PUSHCONTEXT
           href: ../assembler/masm/pushcontext.md
         - name: .PUSHFRAME
@@ -349,6 +363,10 @@ items:
           href: ../assembler/masm/repeat.md
         - name: REPT
           href: ../assembler/masm/rept.md
+        - name: .RESTOREREG
+          href: ../assembler/masm/dot-restorereg.md
+        - name: .RESTOREXMM128
+          href: ../assembler/masm/dot-restorexmm128.md
         - name: .SAFESEH
           href: ../assembler/masm/dot-safeseh.md
         - name: .SALL
@@ -401,6 +419,8 @@ items:
           href: ../assembler/masm/typedef-masm.md
         - name: UNION
           href: ../assembler/masm/union.md
+        - name: .UNSETFRAME
+          href: ../assembler/masm/dot-unsetframe.md
         - name: .UNTIL
           href: ../assembler/masm/dot-until.md
         - name: .UNTILCXZ
@@ -479,6 +499,8 @@ items:
           href: ../assembler/masm/at-substr.md
         - name: "@Time"
           href: ../assembler/masm/at-time.md
+        - name: "@UnwindVersion"
+          href: ../assembler/masm/at-unwindversion.md
         - name: "@Version"
           href: ../assembler/masm/at-version.md
         - name: "@WordSize"

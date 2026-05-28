@@ -22,6 +22,7 @@ f1_keywords:
   - VC.Project.VCManifestTool.ReplacementsFile
   - VC.Project.VCManifestTool.UpdateFileHashes
   - VC.Project.VCManifestTool.UpdateFileHashesSearchPath
+  - VC.Project.VCManifestTool.EnableSegmentHeap
 ---
 # Manifest Tool Property Pages
 
@@ -96,6 +97,10 @@ Specifies whether the application is DPI-aware. By default, the setting is **Yes
 - **None**
 - **High DPI Aware**
 - **Per Monitor High DPI Aware**
+
+### Segment Heap
+
+Specifies whether the application utilizes the Segment Heap. When enabled, applications benefit from improved memory efficiency, reduced fragmentation, and enhanced memory security. For new C++ projects, the setting is **Yes** by default. 
 
 ## Isolated COM Property Page
 
