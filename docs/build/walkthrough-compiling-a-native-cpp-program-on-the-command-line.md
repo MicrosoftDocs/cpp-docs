@@ -7,7 +7,7 @@ helpviewer_keywords: ["native code [C++]", "Visual C++, native code", "compiling
 ms.assetid: b200cfd1-0440-498f-90ee-7ecf92492dc0
 #customer intent: As a C++ developer, I want to build and run programs from the command line.
 ---
-# Walkthrough: Compiling a Native C++ Program on the Command Line
+# Walkthrough: Compiling a native C++ program on the command line
 
 Visual Studio includes a command-line C and C++ compiler. You can use it to create everything from basic console apps to Universal Windows Platform apps, Desktop apps, device drivers, and .NET components.
 
@@ -105,7 +105,7 @@ If you can't find the developer command prompt shortcut, or if you get an error 
    >
    > Make sure that you saved the source code with a `.cpp` file name extension, not a `.txt` extension. Your source file gets saved in the current directory as a `.cpp` file automatically if you open Notepad at the command prompt by using the `notepad hello.cpp` command. 
    >
-   > Notepad's behavior is different if you open it another way: By default, Notepad appends a `.txt` extension to new files when you save them. It also defaults to saving files in your `Documents` directory. To save your file with a `.cpp extension in Notepad, choose **File** > **Save As**. In the **Save As** dialog, navigate to your *C:\hello* folder in the directory tree view control. Then use the **Save as type** dropdown control to select **All Files (\*.\*)**. Enter `hello.cpp` in the **File name** edit control, and then choose **Save** to save the file.
+   > Notepad's behavior is different if you open it another way: By default, Notepad appends a `.txt` extension to new files when you save them. It also defaults to saving files in your `Documents` directory. To save your file with a `.cpp` extension in Notepad, choose **File** > **Save As**. In the **Save As** dialog, navigate to your *C:\hello* folder in the directory tree view control. Then use the **Save as type** dropdown control to select **All Files (\*.\*)**. Enter `hello.cpp` in the **File name** edit control, and then choose **Save** to save the file.
 
 1. At the developer command prompt, enter `cl /EHsc hello.cpp` to compile your program.
 
