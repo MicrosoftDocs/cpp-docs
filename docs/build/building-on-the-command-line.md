@@ -2,7 +2,7 @@
 title: "Use the Microsoft C++ Build Tools from the command line"
 description: "Learn how to install and use the Microsoft C++ Build Tools from the command line outside of the Visual Studio IDE."
 ms.custom: "conceptual"
-ms.date: 05/28/2026
+ms.date: 05/29/2026
 ms.topic: how-to
 helpviewer_keywords: ["command-line builds [C++]", "compiling source code [C++], command line", "builds [C++], command-line", "command line [C++], building from", "command line [C++], compilers"]
 #custom intent: As a C++ developer, I want to understand all the options for using the command line to compile and build my software projects as part of my workflow.
@@ -37,11 +37,11 @@ To install only the tools you need for C++ development, select the **Desktop dev
 
 ## How to use the command-line tools
 
-When you choose one of the C++ workloads in the Visual Studio Installer, it installs a specific version of the MSVC Build Tools package by default. For Visual Studio 2022 and earlier, the package is organized by a *platform toolset* (v### version format) that includes all the C and C++ tools for a specific version of Visual Studio. For later versions of Visual Studio, the package consists of the MSVC version (v##.## version format), which includes all the C and C++ tools for that particular MSVC package. The MSVC version is decoupled from the Visual Studio version.
+When you choose one of the C++ workloads in the Visual Studio Installer, it installs a specific version of the MSVC Build Tools package by default. For Visual Studio 2022 and earlier, the package is organized by a *platform toolset* (v### version format) that includes all the C and C++ tools for a specific version of Visual Studio. For later versions of Visual Studio, the package consists of the MSVC version (v##.## version format), which includes all the C and C++ tools for that particular MSVC package. The MSVC version is decoupled from the Visual Studio version starting with Visual Studio 2026.
 
 The tools include the C/C++ compilers, linkers, assemblers, and other build tools. It includes matching libraries and header files. You can use all of these tools at the command line. The Visual Studio IDE uses them internally. There are separate x86-hosted and x64-hosted compilers and tools that build code for x86, x64, ARM, and ARM64 targets. Each set of tools for a particular host and target build architecture is stored in its own directory.
 
-To work correctly, the tools require several environment variables to be set. These variables add the tools to the path and set the locations of include files, library files, and SDKs. To make it easy to set these environment variables, the installer creates customized *command files*, or batch files, during installation. You can run one of these command files to set a specific host and target build architecture, Windows SDK version, and platform toolset.
+The tools require several environment variables be set. These variables add the tools to the path and set the locations of include files, library files, and SDKs. To make it easy to set these environment variables, the installer creates customized *command files*, or batch files, during installation. You can run one of these command files to set a specific host and target build architecture, Windows SDK version, and platform toolset.
 
 For convenience, the installer also creates shortcuts in your Start menu. The shortcuts open developer Command Prompt windows by using these command files for specific combinations of host and target. These shortcuts ensure all the required environment variables are set and ready to use.
 
@@ -65,20 +65,17 @@ The command prompt shortcuts are installed in a version-specific Visual Studio f
 - **x86_x64 Cross Tools Command Prompt**. Sets the environment to use 32-bit, x86-native tools to build 64-bit, x64-native code.
 - **x64_x86 Cross Tools Command Prompt**. Sets the environment to use 64-bit, x64-native tools to build 32-bit, x86-native code.
 
-::: moniker range=">= msvc-160"
-
-The Start menu folder and shortcut names vary depending on the installed version of Visual Studio. If you set one, they also depend on the installation **Nickname**. For example, suppose you installed Visual Studio 2022, and you gave it a nickname of *Latest*. The developer command prompt shortcut is named **Developer Command Prompt for VS 2022 (Latest)** in a folder named **Visual Studio 2022**.
-
+::: moniker range=">=msvc-180"
+The Start menu folder and shortcut names vary depending on the installed version of Visual Studio. If you set one, they also depend on the installation **Nickname**. For example, suppose you installed Visual Studio 2026, and you gave it a nickname of *Insiders*. The developer command prompt shortcut is named **Developer Command Prompt for VS Insiders** in a folder named `C:\Program Files\Microsoft Visual Studio\18\Professional\Common7\Tools`.
+::: moniker-end
+::: moniker range="msvc-160 || msvc-170"
+The Start menu folder and shortcut names vary depending on the installed version of Visual Studio. If you set one, they also depend on the installation **Nickname**. For example, suppose you installed Visual Studio 2022, and you gave it a nickname of *Latest*. The developer command prompt shortcut is named **Developer Command Prompt for VS 2022 (Latest)** in a folder named `C:\Program Files\Microsoft Visual Studio\2022\Latest\Common7\Tools`.
 ::: moniker-end
 ::: moniker range="msvc-150"
-
 The Start menu folder and shortcut names vary depending on the installed version of Visual Studio. If you set one, they also depend on the installation **Nickname**. For example, suppose you installed Visual Studio 2017, and you gave it a nickname of *Latest*. The developer command prompt shortcut is named **Developer Command Prompt for VS 2017 (Latest)** in a folder named **Visual Studio 2017**.
-
 ::: moniker-end
 ::: moniker range="< msvc-150"
-
 The Start menu folder and shortcut names vary depending on the installed version of Visual Studio. For example, suppose you installed Visual Studio 2015. The developer command prompt shortcut is named **Developer Command Prompt for VS 2015**.
-
 ::: moniker-end
 
 > [!NOTE]
@@ -86,8 +83,7 @@ The Start menu folder and shortcut names vary depending on the installed version
 
 ### <a name="developer_command_prompt"></a> To open a developer Command Prompt window
 
-1. On the desktop, open the Windows **Start** menu. In Windows 11, choose **All apps** to open the list of installed apps. In Windows 10, the list is open to the left. Scroll down the list to find and open the folder (not the app) for your version of Visual Studio, such as **Visual Studio 2022**.
-
+1. On the desktop, open the Windows **Start** menu. In Windows 11, choose **All apps** to open the list of installed apps. In Windows 10, the list is open to the left. Scroll down the list to find and open the folder (not the app) for your version of Visual Studio, such as **Visual Studio 2022** or **Visual Studio** for version 2026 and later.
 1. In the folder, choose the **Developer Command Prompt** for your version of Visual Studio. This shortcut starts a developer Command Prompt window that uses the default build architecture of 32-bit, x86-native tools to build 32-bit, x86-native code. If you prefer a nondefault build architecture, choose one of the native or cross tools command prompts to specify the host and target architecture.
 
 For an even faster way to open a developer command prompt, enter *developer command prompt* in the desktop search box. Then choose the result you want.
@@ -99,19 +95,24 @@ For an even faster way to open a developer command prompt, enter *developer comm
 
 If you prefer to set the build environment in an existing Command Prompt window, you can use one of the command files created by the installer. We recommend you set the environment in a new Command Prompt window. We don't recommend you later switch environments in the same command window.
 
-::: moniker range=">= msvc-170"
+::: moniker range=">= msvc-180"
 
-The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2022, the typical installation location on a 64-bit system is in `\Program Files\Microsoft Visual Studio\2022\<edition>`. The `<edition>` can be Community, Professional, Enterprise, BuildTools, or another nickname you supplied.
+The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2026 and later, the typical installation location on a 64-bit system is in `\Program Files\Microsoft Visual Studio\18\<edition>`. The `<edition>` can be `Insiders`, `Community`, `Professional`, `Enterprise`, `BuildTools`, or another nickname you supplied.
+
+::: moniker-end
+::: moniker range="= msvc-170"
+
+The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2022, the typical installation location on a 64-bit system is in `\Program Files\Microsoft Visual Studio\2022\<edition>`. On a 32-bit system, the typical installation location is in `\Program Files (x86)\Microsoft Visual Studio\2022\<edition>`. The `<edition>` can be `Community`, `Professional`, `Enterprise`, `BuildTools`, or a nickname you supplied during installation.
 
 ::: moniker-end
 ::: moniker range="= msvc-160"
 
-The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2019, the typical installation location on a 64-bit system is in `\Program Files (x86)\Microsoft Visual Studio\2019\<edition>`. The `<edition>` can be Community, Professional, Enterprise, BuildTools, or another nickname you supplied.
+The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2019, the typical installation location on a 64-bit system is in `\Program Files (x86)\Microsoft Visual Studio\2019\<edition>`. The `<edition>` can be `Community`, `Professional`, `Enterprise`, `BuildTools`, or another nickname you supplied during installation.
 
 ::: moniker-end
 ::: moniker range="= msvc-150"
 
-The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2017, the typical installation location on a 64-bit system is in `\Program Files (x86)\Microsoft Visual Studio\2017\<edition>`. The `<edition>` can be Community, Professional, Enterprise, BuildTools, or another nickname you supplied.
+The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2017, the typical installation location on a 64-bit system is in `\Program Files (x86)\Microsoft Visual Studio\2017\<edition>`. The `<edition>` can be `Community`, `Professional`, `Enterprise`, `BuildTools`, or another nickname you supplied during installation.
 
 ::: moniker-end
 ::: moniker range="< msvc-150"
@@ -189,31 +190,47 @@ When you use `vcvarsall.bat` with no arguments, it configures the environment va
 
   Optionally specifies the Visual Studio compiler toolset to use. By default, the environment is set to use the current Visual Studio compiler toolset.
 
-  ::: moniker range=">= msvc-160"
+::: moniker range=">= msvc-180"
 
-  Use **-vcvars_ver=14.2x.yyyyy** to specify a specific version of the Visual Studio 2019 compiler toolset.
+- Don't specify `vcvars_ver` to use the latest installed VC++ compiler toolset.
+- Use `vcvars_ver="Preview"` to use the VC++ preview compiler toolset
+- Use `vcvars_ver="14.0"` to use the VC++ 2015 Compiler Toolset
+- Use `vcvars_ver="14.xx"` for the latest 14.xx.yyyyy toolset installed (for example "14.11")
+- Use `vcvars_ver="14.xx.yyyyy"` for a specific full version number (for example "14.11.25503")
+  
+::: moniker-end
+::: moniker range="= msvc-170"
 
-  Use **-vcvars_ver=14.29** to specify the latest version of the Visual Studio 2019 compiler toolset.
+- Don't specify `vcvars_ver` to use the latest installed Visual Studio 2022 compiler toolset.
+- Use `vcvars_ver="14.0"` to use the VC++ 2015 Compiler Toolset
+- Use `vcvars_ver="14.xx"` for the latest 14.xx.yyyyy toolset installed (for example "14.29")
+- Use `vcvars_ver="14.xx.yyyyy"` for a specific full version number (for example "14.44.35207")
 
-  ::: moniker-end
-  ::: moniker range="= msvc-150"
+::: moniker-end
+::: moniker range="= msvc-160"
 
-  Use **-vcvars_ver=14.16** to specify the latest version of the Visual Studio 2017 compiler toolset.
+- Don't specify `vcvars_ver` to use the latest installed Visual Studio 2019 compiler toolset.
+- Use `vcvars_ver="14.0"` to use the VC++ 2015 Compiler Toolset
+- Use `vcvars_ver="14.xx"` for the latest 14.xx.yyyyy toolset installed (for example "14.11")
+- Use `vcvars_ver="14.xx.yyyyy"` for a specific full version number (for example "14.11.25503")
 
-  Use **-vcvars_ver=14.1x.yyyyy** to specify a specific version of the Visual Studio 2017 compiler toolset.
+::: moniker-end
+::: moniker range="= msvc-150"
 
-  ::: moniker-end
+- Use **-vcvars_ver=14.16** to specify the latest version of the Visual Studio 2017 compiler toolset.
+- Use **-vcvars_ver=14.1x.yyyyy** to specify a specific version of the Visual Studio 2017 compiler toolset.
 
-  Use **-vcvars_ver=14.0** to specify the Visual Studio 2015 compiler toolset.
+::: moniker-end
+
+- Use **-vcvars_ver=14.0** to specify the Visual Studio 2015 compiler toolset.
 
 - `spectre_mode`
 
-  Leave this parameter out to use libraries without Spectre mitigations. Use the value `spectre` to use libraries with Spectre mitigations.
+  Leave this parameter out to use libraries without Spectre mitigations. Specify `spectre` to use libraries with Spectre mitigations.
 
 #### <a name="vcvarsall"></a> To set up the build environment in an existing Command Prompt window
 
 1. At the command prompt, use the `CD` command to change to the Visual Studio installation directory. Then, use `CD` again to change to the subdirectory that contains the configuration-specific command files. For Visual Studio 2019 and Visual Studio 2017, use the `VC\Auxiliary\Build` subdirectory. For Visual Studio 2015, use the `VC` subdirectory.
-
 1. Enter the command for your preferred developer environment. For example, to build ARM code for UWP on a 64-bit platform, using the latest Windows SDK and Visual Studio compiler toolset, use this command:
 
    ```cmd
@@ -222,7 +239,25 @@ When you use `vcvarsall.bat` with no arguments, it configures the environment va
 
 ## Create your own command prompt shortcut
 
-::: moniker range=">= msvc-160"
+::: moniker range=">=msvc-180"
+
+Open the **Properties** dialog for a developer command prompt shortcut to see the command target used. For example, the target for the **x64 Native Tools Command Prompt for Visual Studio** shortcut is similar to:
+
+```cmd
+%comspec% /k "C:\Program Files\Microsoft Visual Studio\18\Professional\Common7\Tools\VsDevCmd.bat" -arch=x64
+```
+
+:::moniker-end
+::: moniker range="=msvc-170"
+
+Open the **Properties** dialog for a developer command prompt shortcut to see the command target used. For example, the target for the **x64 Native Tools Command Prompt for VS 2022** shortcut is similar to:
+
+```cmd
+%comspec% /k "C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\Tools\VsDevCmd.bat"
+```
+
+:::moniker-end
+::: moniker range="= msvc-160"
 
 Open the **Properties** dialog for a developer command prompt shortcut to see the command target used. For example, the target for the **x64 Native Tools Command Prompt for VS 2019** shortcut is similar to:
 
