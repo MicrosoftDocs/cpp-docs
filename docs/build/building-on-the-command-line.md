@@ -197,29 +197,22 @@ When you use `vcvarsall.bat` with no arguments, it configures the environment va
   `"14.0"` | Use the Visual Studio 2015 Compiler Toolset
   `"14.xx"` | Use the latest 14.xx.yyyyy toolset installed (for example "14.51")
   `"14.xx.yyyyy"` | Use a specific full version number (for example "14.51.36231")
-
 ::: moniker-end
 ::: moniker range="= msvc-170"
-
   Don't specify `vcvars_ver` to use the latest installed Visual Studio 2022 compiler toolset.\
   Use `vcvars_ver="14.0"` to use the Visual Studio 2015 Compiler Toolset\
   Use `vcvars_ver="14.xx"` for the latest 14.xx.yyyyy toolset installed (for example "14.44")\
   Use `vcvars_ver="14.xx.yyyyy"` for a specific full version number (for example "14.44.35207")
-
 ::: moniker-end
 ::: moniker range="= msvc-160"
-
   Don't specify `vcvars_ver` to use the latest installed Visual Studio 2019 compiler toolset.\
   Use `vcvars_ver="14.0"` to use the VC++ 2015 Compiler Toolset\
   Use `vcvars_ver="14.xx"` for the latest 14.xx.yyyyy toolset installed (for example "14.29")\
   Use `vcvars_ver="14.xx.yyyyy"` for a specific full version number (for example "14.29.30133")
-
 ::: moniker-end
 ::: moniker range="= msvc-150"
-
   Use **-vcvars_ver=14.16** to specify the latest version of the Visual Studio 2017 compiler toolset.\
   Use **-vcvars_ver=14.1x.yyyyy** to specify a specific version of the Visual Studio 2017 compiler toolset.
-
 ::: moniker-end
 
   Use **-vcvars_ver=14.0** to specify the Visual Studio 2015 compiler toolset.
