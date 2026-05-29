@@ -188,34 +188,14 @@ When you use `vcvarsall.bat` with no arguments, it configures the environment va
 
 - `vcversion`
 
-  Optionally specifies the Visual Studio compiler toolset to use. By default, the environment is set to use the current Visual Studio compiler toolset.
+  Optionally specifies the Visual Studio compiler toolset to use. By default, the environment uses the latest installed Visual Studio compiler toolset. The following table shows example `vcvars_ver` values:
 
-::: moniker range=">= msvc-180"
-
-  Don't specify `vcvars_ver` | Use the latest installed Visual Studio compiler toolset
-  `"Preview"` | Use the Visual Studio preview compiler toolset
-  `"14.0"` | Use the Visual Studio 2015 Compiler Toolset
-  `"14.xx"` | Use the latest 14.xx.yyyyy toolset installed (for example "14.51")
-  `"14.xx.yyyyy"` | Use a specific full version number (for example "14.51.36231")
-::: moniker-end
-::: moniker range="= msvc-170"
-  Don't specify `vcvars_ver` to use the latest installed Visual Studio 2022 compiler toolset.\
-  Use `vcvars_ver="14.0"` to use the Visual Studio 2015 Compiler Toolset\
-  Use `vcvars_ver="14.xx"` for the latest 14.xx.yyyyy toolset installed (for example "14.44")\
-  Use `vcvars_ver="14.xx.yyyyy"` for a specific full version number (for example "14.44.35207")
-::: moniker-end
-::: moniker range="= msvc-160"
-  Don't specify `vcvars_ver` to use the latest installed Visual Studio 2019 compiler toolset.\
-  Use `vcvars_ver="14.0"` to use the VC++ 2015 Compiler Toolset\
-  Use `vcvars_ver="14.xx"` for the latest 14.xx.yyyyy toolset installed (for example "14.29")\
-  Use `vcvars_ver="14.xx.yyyyy"` for a specific full version number (for example "14.29.30133")
-::: moniker-end
-::: moniker range="= msvc-150"
-  Use **-vcvars_ver=14.16** to specify the latest version of the Visual Studio 2017 compiler toolset.\
-  Use **-vcvars_ver=14.1x.yyyyy** to specify a specific version of the Visual Studio 2017 compiler toolset.
-::: moniker-end
-
-  Use **-vcvars_ver=14.0** to specify the Visual Studio 2015 compiler toolset.
+  | `vcvars_ver={value}` | Result | VS 2026 example | VS 2022 example | VS 2019 example | VS 2017 example |
+  |--|--|--|--|--|--|
+  | `"Preview"` | Use the Visual Studio preview compiler toolset. | Supported | Not supported | Not supported | Not supported |
+  | `"14.0"` | Use the Visual Studio 2015 compiler toolset. | Supported | Supported | Supported | Supported |
+  | `"14.xx"` | Use the latest installed `14.xx.yyyyy` toolset. | `"14.51"` | `"14.44"` | `"14.29"` | `"14.16"` |
+  | `"14.xx.yyyyy"` | Use a specific full version number. | `"14.51.36231"` | `"14.44.35207"` | `"14.29.30133"` | `"14.16.27034"` |
 
 - `spectre_mode`
 
