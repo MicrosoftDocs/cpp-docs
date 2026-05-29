@@ -1,39 +1,42 @@
 ---
-description: "Learn more about Microsoft C++ compiler versioning."
 title: "Microsoft C++ (MSVC) compiler versioning"
-ms.date: 05/12/2026
+description: "Visual Studio includes a Microsoft C++ (MSVC) compiler. Learn about the versioning system used for the compiler."
+ms.date: 05/28/2026
 ms.service: "visual-cpp"
 ms.subservice: "tools"
 helpviewer_keywords: ["Visual C++, platforms supported", "platforms [C++]"]
+#customer intent: As a C++ developer using Visual Studio, I need to be aware of different versions of the Microsoft C++ compiler for consistency in my organization's production process.
 ---
 # Microsoft C++ (MSVC) compiler versioning
 
 The Microsoft C++ (MSVC) compiler version consists of four fields:
 
-M - major version (two digits)\
-N - minor version (two digits)\
-B - build version (five digits)\
-R - revision version
+- M: major version (two digits)
+- N: minor version (two digits)
+- B: build version (five digits)
+- R: revision version
 
 Microsoft-specific compiler macros encode these fields as follows:
 
-`_MSC_VER` = MMNN\
-`_MSC_FULL_VER` = MMNNBBBBB\
-`_MSC_BUILD` = R
+- `_MSC_VER` = MMNN
+- `_MSC_FULL_VER` = MMNNBBBBB
+- `_MSC_BUILD` = R
 
 For example, the compiler version for Visual Studio 2022 version 17.9.0 is 19.39.33519:
+
 - The major version is 19
 - The minor version is 39
 - The build version is 33519
 - The revision version is 0
 
 The macros reflect these values like this:
+
 - `_MSC_VER = 1939`
 - `_MSC_FULL_VER = 193933519`
-- `_MSC_BUILD` (the revision) is 0.
+- `_MSC_BUILD` (the revision) is 0
 
->[!Note]
->Visual Studio 2019 versions 16.8 and 16.9 share the same major and minor versions, and so have the same value for `_MSC_VER`. As do Visual Studio 2019 versions 16.10 and 16.11. To distinguish them, use `_MSC_FULL_VER` as described in [Service releases starting with Visual Studio 2017](#service-releases-starting-with-visual-studio-2017).
+> [!NOTE]
+> Visual Studio 2019 versions 16.8 and 16.9 share the same major and minor versions, and so have the same value for `_MSC_VER`. This is also true for Visual Studio 2019 versions 16.10 and 16.11. To distinguish them, use `_MSC_FULL_VER` as described in [Service releases starting with Visual Studio 2017](#service-releases-starting-with-visual-studio-2017).
 
 ## Visual Studio channels
 
@@ -62,18 +65,18 @@ Visual Studio Insiders users get early access to MSVC releases:
 
 Recall that the version number consists of four fields:
 
-M - major version (two digits)\
-N - minor version (two digits)\
-B - build version (five digits)\
-R - revision version
+- M: major version (two digits)
+- N: minor version (two digits)
+- B: build version (five digits)
+- R: revision version
 
-**[`_MSC_VER`](../preprocessor/predefined-macros.md)** distinguishes between major and minor releases. It has the form: MMNN.
+[`_MSC_VER`](../preprocessor/predefined-macros.md) distinguishes between major and minor releases. It has the form: MMNN.
 
-**[`_MSC_FULL_VER`](../preprocessor/predefined-macros.md)** represents the major, minor, and build version of the compiler. It has the form: MMNNBBBBB. Use it to distinguish between different versions of the compiler, including servicing releases. For more information about Visual Studio 2019 versions 16.8, 16.9, 16.10 and 16.11, see [Service releases starting with Visual Studio 2017](#service-releases-starting-with-visual-studio-2017).
+[`_MSC_FULL_VER`](../preprocessor/predefined-macros.md) represents the major, minor, and build version of the compiler. It has the form: MMNNBBBBB. Use it to distinguish between different versions of the compiler, including servicing releases. For more information about Visual Studio 2019 versions 16.8, 16.9, 16.10 and 16.11, see [Service releases starting with Visual Studio 2017](#service-releases-starting-with-visual-studio-2017).
 
 **[`_MSC_BUILD`](../preprocessor/predefined-macros.md)** represents the revision version of the compiler. It has the form: R. Use it to distinguish between compiler revisions.
 
-When the major version changed between Visual Studio 2013 and Visual Studio 2015, `_MSC_VER` reflected the change by going from 1800 to 1900.
+When the major version changed between Visual Studio 2013 and Visual Studio 2015, `_MSC_VER` reflects the change by going from 1800 to 1900.
 
 An example of a minor change is from Visual Studio 2022 version 17.1 to Visual Studio 2022 version 17.2. In that case, `_MSC_VER` changed from 1931 to 1932.
 
@@ -131,9 +134,9 @@ The following table lists MSVC Build Tools versions for Visual Studio 2026 and l
 | 14.51 | 1951 | Standard | Feb 2027 | [MSVC lifecycle policy](https://aka.ms/msvc/lifecycle) |
 | 14.52 | 1952 | Standard | Preview<sup>c</sup> | [MSVC lifecycle policy](https://aka.ms/msvc/lifecycle) |
 
-<sup>a</sup> Visual Studio 2019 versions 16.8 and 16.9 share the same major and minor versions (and so have the same value for `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 version 16.8 is 192829333. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 version 16.9 is 192829910.
+<sup>a</sup> Visual Studio 2019 versions 16.8 and 16.9 share the same major and minor versions, and so have the same value for `_MSC_VER`. To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 version 16.8 is 192829333. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 version 16.9 is 192829910.
 
-<sup>b</sup> Visual Studio 2019 versions 16.10 and 16.11 share the same major and minor versions (and so have the same value for `_MSC_VER`). To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 version 16.10 is 192929917. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 version 16.11 is 192930129.
+<sup>b</sup> Visual Studio 2019 versions 16.10 and 16.11 share the same major and minor versions, and so have the same value for `_MSC_VER`. To distinguish them, use `_MSC_FULL_VER`. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 version 16.10 is 192929917. The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 version 16.11 is 192930129.
 
 <sup>c</sup> MSVC Build Tools version 14.52 is in preview. The EOL date will be established upon general availability.
 
@@ -189,5 +192,5 @@ The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 version 16.9 is 1928
 
 ## See also
 
-[`_MSC_VER`](../preprocessor/predefined-macros.md)\
-[Visual C++ compiler version blog post](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/)
+- [`_MSC_VER`](../preprocessor/predefined-macros.md)
+- [Visual C++ compiler version blog post](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/)
