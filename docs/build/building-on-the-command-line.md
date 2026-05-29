@@ -66,16 +66,19 @@ The command prompt shortcuts are installed in a version-specific Visual Studio f
 - **x64_x86 Cross Tools Command Prompt**. Sets the environment to use 64-bit, x64-native tools to build 32-bit, x86-native code.
 
 ::: moniker range=">=msvc-180"
-The **Start** menu folder and shortcut names vary depending on the installed version of Visual Studio. If you set one, they also depend on the installation **Nickname**. For example, suppose you installed the Visual Studio 2026 Insiders version. The developer command prompt shortcut is named **Developer Command Prompt for VS Insiders** in a folder named `C:\Program Files\Microsoft Visual Studio\18\Insiders\Common7\Tools`
+The **Start** menu folder and shortcut names vary depending on the installed version of Visual Studio. For example, suppose you installed the Visual Studio 2026 Insiders version. The developer command prompt shortcut is named **Developer Command Prompt for VS Insiders** in **Start** > **Programs** > **Visual Studio** > **Visual Studio Tools**.
 ::: moniker-end
-::: moniker range="msvc-160 || msvc-170"
-The **Start** menu folder and shortcut names vary depending on the installed version of Visual Studio. If you set one, they also depend on the installation **Nickname**. For example, suppose you installed Visual Studio 2022, and you gave it a nickname of *Latest*. The developer command prompt shortcut is named **Developer Command Prompt for VS 2022 (Latest)** in a folder named `C:\Program Files\Microsoft Visual Studio\2022\Latest\Common7\Tools`.
+::: moniker range="msvc-170"
+The **Start** menu folder and shortcut names vary depending on the installed version of Visual Studio. For example, the developer prompt shortcut for Visual Studio 2022 is named **Developer Command Prompt for VS 2022** in **Start** > **Programs** > **Visual Studio 2022** > **Visual Studio Tools**.
+::: moniker-end
+::: moniker range="msvc-160"
+The **Start** menu folder and shortcut names vary depending on the installed version of Visual Studio. For example, the developer prompt shortcut for Visual Studio 2019 is named **Developer Command Prompt for VS 2019** in **Start** > **Programs** > **Visual Studio 2019** > **Visual Studio Tools**.
 ::: moniker-end
 ::: moniker range="msvc-150"
-The **Start** menu folder and shortcut names vary depending on the installed version of Visual Studio. If you set one, they also depend on the installation **Nickname**. For example, suppose you installed Visual Studio 2017, and you gave it a nickname of *Latest*. The developer command prompt shortcut is named **Developer Command Prompt for VS 2017 (Latest)** in a folder named **Visual Studio 2017**.
+The **Start** menu folder and shortcut names vary depending on the installed version of Visual Studio. For example, the developer prompt shortcut for Visual Studio 2017 is named **Developer Command Prompt for VS 2017** in **Start** > **Programs** > **Visual Studio 2017** > **Visual Studio Tools**.
 ::: moniker-end
 ::: moniker range="< msvc-150"
-The **Start** menu folder and shortcut names vary depending on the installed version of Visual Studio. For example, suppose you installed Visual Studio 2015. The developer command prompt shortcut is named **Developer Command Prompt for VS 2015**.
+The **Start** menu folder and shortcut names vary depending on the installed version of Visual Studio. For example, the developer prompt shortcut for Visual Studio 2015 is named **Developer Command Prompt for VS 2015** in **Start** > **Programs** > **Visual Studio 2015** > **Visual Studio Tools**.
 ::: moniker-end
 
 > [!NOTE]
@@ -97,27 +100,27 @@ If you prefer to set the build environment in an existing Command Prompt window,
 
 ::: moniker range=">= msvc-180"
 
-The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2026 and later, the typical installation location on a 64-bit system is `\Program Files\Microsoft Visual Studio\18\<edition>`. The `<edition>` can be `Insiders`, `Community`, `Professional`, `Enterprise`, `BuildTools`, or another nickname you supplied.
+The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2026 and later, the typical installation location on a 64-bit system is `C:\Program Files\Microsoft Visual Studio\18\<edition>`. The `<edition>` can be `Insiders`, `Community`, `Professional`, `Enterprise`, `BuildTools`.
 
 ::: moniker-end
 ::: moniker range="= msvc-170"
 
-The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2022, the typical installation location on a 64-bit system is `\Program Files\Microsoft Visual Studio\2022\<edition>`. On a 32-bit system, the typical installation location is `\Program Files (x86)\Microsoft Visual Studio\2022\<edition>`. The `<edition>` can be `Community`, `Professional`, `Enterprise`, `BuildTools`, or a nickname you supplied during installation.
+The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2022, the typical installation location on a 64-bit system is `C:\Program Files\Microsoft Visual Studio\2022\<edition>`. The `<edition>` can be `Community`, `Professional`, `Enterprise`, `BuildTools`.
 
 ::: moniker-end
 ::: moniker range="= msvc-160"
 
-The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2019, the typical installation location on a 64-bit system is `\Program Files (x86)\Microsoft Visual Studio\2019\<edition>`. The `<edition>` can be `Community`, `Professional`, `Enterprise`, `BuildTools`, or another nickname you supplied during installation.
+The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2019, the typical installation location on a 64-bit system is `C:\Program Files (x86)\Microsoft Visual Studio\2019\<edition>`. The `<edition>` can be `Community`, `Professional`, `Enterprise`, `BuildTools`.
 
 ::: moniker-end
 ::: moniker range="= msvc-150"
 
-The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2017, the typical installation location on a 64-bit system is `\Program Files (x86)\Microsoft Visual Studio\2017\<edition>`. The `<edition>` can be `Community`, `Professional`, `Enterprise`, `BuildTools`, or another nickname you supplied during installation.
+The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2017, the typical installation location on a 64-bit system is `C:\Program Files (x86)\Microsoft Visual Studio\2017\<edition>`. The `<edition>` can be `Community`, `Professional`, `Enterprise`, `BuildTools`.
 
 ::: moniker-end
 ::: moniker range="< msvc-150"
 
-The command file location depends on the Visual Studio version, and the installation directory. For Visual Studio 2015, the typical installation location on a 64-bit system is `\Program Files (x86)\Microsoft Visual Studio 14.0`.
+The command file location depends on the Visual Studio version, and the installation directory. For Visual Studio 2015, the typical installation location on a 64-bit system is `C:\Program Files (x86)\Microsoft Visual Studio 14.0`.
 
 ::: moniker-end
 
