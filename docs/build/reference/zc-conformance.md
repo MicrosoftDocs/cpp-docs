@@ -16,7 +16,7 @@ You may set multiple **`/Zc`** options separated by commas in a single **`/Zc`**
 
 ## Remarks
 
-When Visual Studio has implemented an extension to C or C++ that is incompatible with the standard, you can use a **`/Zc`** conformance option to specify standard-conforming or Microsoft-specific behavior. For some options, the Microsoft-specific behavior is the default, to prevent large-scale breaking changes to existing code. In other cases, the default is the standard behavior, where improvements in security, performance, or compatibility outweigh the costs of breaking changes. The default setting of each conformance option may change in newer versions of Visual Studio. For more information about each conformance option, see the article for the specific option. The [`/permissive-`](permissive-standards-conformance.md) compiler option implicitly sets the conformance options that aren't set by default to their conforming settings.
+When Visual Studio implements an extension to C or C++ that is incompatible with the standard, you can use a **`/Zc`** conformance option to specify standard-conforming or Microsoft-specific behavior. For some options, the Microsoft-specific behavior is the default, to prevent large-scale breaking changes to existing code. In other cases, the default is the standard behavior, where improvements in security, performance, or compatibility outweigh the costs of breaking changes. The default setting of each conformance option may change in newer versions of Visual Studio. For more information about each conformance option, see the article for the specific option. The [`/permissive-`](permissive-standards-conformance.md) compiler option implicitly sets the conformance options that aren't set by default to their conforming settings.
 
 Here are the **`/Zc`** compiler options:
 
@@ -27,7 +27,7 @@ Here are the **`/Zc`** compiler options:
 | [`/Zc:alignedNew[-]`](zc-alignednew.md) | Enable C++17 over-aligned dynamic allocation. Off by default unless **`/std:c++17`** or later is specified. |
 | [`/Zc:auto[-]`](zc-auto-deduce-variable-type.md) | Enforce the new Standard C++ meaning for **`auto`**. On by default. |
 | [`/Zc:char8_t[-]`](zc-char8-t.md) | Enable or disable C++20 native `u8` literal support as `const char8_t`. Off by default unless **`/std:c++20`** or later is specified. |
-| [`/Zc:checkGwOdr[-]`](zc-check-gwodr.md) | Enforce Standard C++ ODR violations under `/Gw`. |
+| [`/Zc:checkGwOdr[-]`](zc-check-gwodr.md) | Enforce Standard C++ One-Definition-Rule (ODR) violations under `/Gw`. |
 | [`/Zc:enumTypes[-]`](zc-enumtypes.md) | Enable Standard C++ rules for `enum` type deduction. Off by default. |
 | [`/Zc:externC[-]`](zc-externc.md) | Enforce Standard C++ rules for `extern "C"` functions. Off by default unless **`/permissive-`** is specified. |
 | [`/Zc:externConstexpr[-]`](zc-externconstexpr.md) | Enable external linkage for **`constexpr`** variables. Off by default unless **`/permissive-`** is specified. |
@@ -40,7 +40,7 @@ Here are the **`/Zc`** compiler options:
 | [`/Zc:noexceptTypes[-]`](zc-noexcepttypes.md) | Enforce C++17 **`noexcept`** rules. Off by default unless **`/std:c++17`** or later is specified. |
 | [`/Zc:nrvo[-]`](zc-nrvo.md) | Enable optional copy and move elisions. Off by default unless **`/O2`**, **`/permissive-`**, or **`/std:c++20`** or later is specified. |
 | [`/Zc:preprocessor[-]`](zc-preprocessor.md) | Use the new conforming preprocessor. Off by default unless **`/std:c11`** or later is specified. |
-| [`/Zc:referenceBinding[-]`](zc-referencebinding-enforce-reference-binding-rules.md) | A UDT temporary won't bind to a nonconst lvalue reference. Off by default unless **`/permissive-`** is specified. |
+| [`/Zc:referenceBinding[-]`](zc-referencebinding-enforce-reference-binding-rules.md) | A temporary value of a user-defined type dosen't bind to a nonconst lvalue reference. Off by default unless **`/permissive-`** is specified. |
 | [`/Zc:rvalueCast[-]`](zc-rvaluecast-enforce-type-conversion-rules.md) | Enforce Standard C++ explicit type conversion rules. Off by default unless **`/permissive-`** is specified. |
 | [`/Zc:sizedDealloc[-]`](zc-sizeddealloc-enable-global-sized-dealloc-functions.md) | Enable C++14 global sized deallocation functions. On by default. |
 | [`/Zc:strictStrings[-]`](zc-strictstrings-disable-string-literal-type-conversion.md) | Disable string-literal to `char*` or `wchar_t*` conversion. Off by default unless **`/permissive-`** is specified. |
@@ -54,7 +54,7 @@ Here are the **`/Zc`** compiler options:
 | [`/Zc:twoPhase-`](zc-twophase.md) | Use nonconforming template parsing behavior (only applicable when **`/permissive-`** is specified, which defaults to conforming). |
 | [`/Zc:u8EscapeEncoding[-]`](zc-u8escapeencoding.md) | Encode integer escape sequences in u8 string literals as-is instead of as utf-8 characters. Off by default. |
 | [`/Zc:wchar_t[-]`](zc-wchar-t-wchar-t-is-native-type.md) | **`wchar_t`** is a native type, not a typedef. On by default. |
-| [`/Zc:zeroSizeArrayNew[-]`](zc-zerosizearraynew.md) | Call member `new`/`delete` for 0-size arrays of objects. On by default. |
+| [`/Zc:zeroSizeArrayNew[-]`](zc-zerosizearraynew.md) | Call member `new`/`delete` for `0`-size arrays of objects. On by default. |
 
 For more information about conformance issues in MSVC, see [Nonstandard behavior](../../cpp/nonstandard-behavior.md).
 
