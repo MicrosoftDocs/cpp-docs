@@ -2,7 +2,7 @@
 title: "Use the Microsoft C++ Build Tools from the command line"
 description: "Learn how to install and use the Microsoft C++ Build Tools from the command line outside of the Visual Studio IDE."
 ms.custom: "conceptual"
-ms.date: 05/29/2026
+ms.date: 06/01/2026
 ms.topic: how-to
 helpviewer_keywords: ["command-line builds [C++]", "compiling source code [C++], command line", "builds [C++], command-line", "command line [C++], building from", "command line [C++], compilers"]
 #custom intent: As a C++ developer, I want to understand all the options for using the command line to compile and build my software projects as part of my workflow.
@@ -41,7 +41,7 @@ When you choose one of the C++ workloads in the Visual Studio Installer, it inst
 
 The tools include the C/C++ compilers, linkers, assemblers, and other build tools. It includes matching libraries and header files. You can use all of these tools at the command line. The Visual Studio IDE uses them internally. There are separate x86-hosted and x64-hosted compilers and tools that build code for x86, x64, ARM, and ARM64 targets. Each set of tools for a particular host and target build architecture is stored in its own directory.
 
-The tools require several environment variables be set. These variables add the tools to the path and set the locations of include files, library files, and SDKs. To make it easy to set these environment variables, the installer creates customized *command files*, or batch files, during installation. You can run one of these command files to set a specific host and target build architecture, Windows SDK version, and platform toolset.
+The tools require several environment variables to be set. These variables add the tools to the path and set the locations of include files, library files, and SDKs. To make it easy to set these environment variables, the installer creates customized *command files*, or batch files, during installation. You can run one of these command files to set a specific host and target build architecture, Windows SDK version, and platform toolset.
 
 For convenience, the installer also creates shortcuts in your **Start** menu. The shortcuts open developer Command Prompt windows by using these command files for specific combinations of host and target. These shortcuts ensure all the required environment variables are set and ready to use.
 
@@ -59,11 +59,11 @@ To see which environment variables a developer command prompt shortcut sets, use
 
 The command prompt shortcuts are installed in a version-specific Visual Studio folder in your Windows **Start** menu. Here's a list of the base command prompt shortcuts and the build architectures they support:
 
-- **Developer Command Prompt**. Sets the environment to use 32-bit, x86-native tools to build 32-bit, x86-native code.
-- **x86 Native Tools Command Prompt**. Sets the environment to use 32-bit, x86-native tools to build 32-bit, x86-native code.
-- **x64 Native Tools Command Prompt**. Sets the environment to use 64-bit, x64-native tools to build 64-bit, x64-native code.
-- **x86_x64 Cross Tools Command Prompt**. Sets the environment to use 32-bit, x86-native tools to build 64-bit, x64-native code.
-- **x64_x86 Cross Tools Command Prompt**. Sets the environment to use 64-bit, x64-native tools to build 32-bit, x86-native code.
+- **Developer Command Prompt**. Sets the environment to use 32-bit x86 tools to build 32-bit x86 code.
+- **x86 Native Tools Command Prompt**. Sets the environment to use 32-bit x86 tools to build 32-bit x86 code.
+- **x64 Native Tools Command Prompt**. Sets the environment to use 64-bit x64 tools to build 64-bit x64 code.
+- **x86_x64 Cross Tools Command Prompt**. Sets the environment to use 32-bit x86 tools to build 64-bit x64 code.
+- **x64_x86 Cross Tools Command Prompt**. Sets the environment to use 64-bit x64 tools to build 32-bit x86 code.
 
 ::: moniker range=">=msvc-180"
 The **Start** menu folder and shortcut names vary depending on the installed version of Visual Studio. For example, suppose you installed the Visual Studio 2026 Insiders version. The developer command prompt shortcut is named **Developer Command Prompt for VS Insiders** in **Start** > **Programs** > **Visual Studio** > **Visual Studio Tools**.
@@ -87,7 +87,7 @@ The **Start** menu folder and shortcut names vary depending on the installed ver
 ### <a name="developer_command_prompt"></a> To open a developer Command Prompt window
 
 1. On the desktop, open the Windows **Start** menu. In Windows 11, choose **All apps** to open the list of installed apps. In Windows 10, the list is open to the left. Scroll down the list to find and open the folder (not the app) for your version of Visual Studio, such as **Visual Studio 2022** or **Visual Studio** for version 2026 and later.
-1. In the folder, choose the **Developer Command Prompt** for your version of Visual Studio. This shortcut starts a developer Command Prompt window that uses the default build architecture of 32-bit, x86-native tools to build 32-bit, x86-native code. If you prefer a nondefault build architecture, choose one of the native or cross tools command prompts to specify the host and target architecture.
+1. In the folder, choose the **Developer Command Prompt** for your version of Visual Studio. This shortcut starts a developer Command Prompt window that sets the environment to use 32-bit x86 tools to build 32-bit x86 code. If you prefer a nondefault build architecture, choose one of the native or cross tools command prompts to specify the host and target architecture.
 
 For an even faster way to open a developer command prompt, enter *developer command prompt* in the desktop search box. Then choose the result you want.
 
@@ -105,7 +105,7 @@ The command file location depends on the version of Visual Studio you installed,
 ::: moniker-end
 ::: moniker range="= msvc-170"
 
-The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2022, the typical installation location on a 64-bit system is `C:\Program Files\Microsoft Visual Studio\2022\<edition>`. The `<edition>` can be `Community`, `Professional`, `Enterprise`, `BuildTools`.
+The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2022, the typical installation location is `C:\Program Files\Microsoft Visual Studio\2022\<edition>`. The `<edition>` can be `Community`, `Professional`, `Enterprise`, `BuildTools`.
 
 ::: moniker-end
 ::: moniker range="= msvc-160"
@@ -206,7 +206,7 @@ When you use `vcvarsall.bat` with no arguments, it configures the environment va
 
 #### <a name="vcvarsall"></a> To set up the build environment in an existing Command Prompt window
 
-1. At the command prompt, use the `CD` command to change to the Visual Studio installation directory. Then, use `CD` again to change to the subdirectory that contains the configuration-specific command files. For Visual Studio 2019 and Visual Studio 2017, use the `VC\Auxiliary\Build` subdirectory. For Visual Studio 2015, use the `VC` subdirectory.
+1. At the command prompt, use the `CD` command to change to the Visual Studio installation directory. For example, `C:\Program Files\Microsoft Visual Studio\18\Professional` if you are using Visual studio 2026. Then, use `CD` again to change to the subdirectory that contains the configuration-specific command files. For Visual Studio 2017 and beyond, use the `VC\Auxiliary\Build` subdirectory. For Visual Studio 2015, use the `VC` subdirectory.
 1. Enter the command for your preferred developer environment. For example, to build ARM code for UWP on a 64-bit platform, using the latest Windows SDK and Visual Studio compiler toolset, use this command:
 
    ```cmd
@@ -261,12 +261,16 @@ Open the **Properties** dialog for a developer command prompt shortcut to see th
 
 ::: moniker-end
 
-The architecture-specific batch files set the `architecture` parameter and call `vcvarsall.bat`. You can pass the same options to these batch files as you pass to `vcvarsall.bat`, or you can just call `vcvarsall.bat` directly. To specify parameters for your own command shortcut, add them to the end of the command in double quotes. For example, here's a shortcut to build ARM code for UWP on a 64-bit platform, using the latest Windows SDK. To use an earlier compiler toolset, specify the version number. Use a command like this command target in your shortcut:
+The architecture-specific batch files set the `architecture` parameter and call `vcvarsall.bat`. You can pass the same options to these batch files as you pass to `vcvarsall.bat`, or you can just call `vcvarsall.bat` directly. To specify parameters for your own command shortcut, add them to the end of the command in double quotes. To use an earlier compiler toolset, specify the version number. 
+
+You can only target ARM64 starting with Visual Studio 2026 because ARM32 targeting was removed then.
+
+Here's a shortcut to build ARM64 code for UWP on a 64-bit platform, using the latest Windows SDK. Targeting ARM64 is shown for Visual Studio 2026 and later. Targeting ARM32 is shown for earlier versions.
 
 ::: moniker range=">= msvc-180"
 
 ```cmd
-%comspec% /k "C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Auxiliary\Build\vcvarsall.bat" amd64_arm uwp -vcvars_ver=14.5
+%comspec% /k "C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Auxiliary\Build\vcvarsall.bat" amd64_arm64 uwp -vcvars_ver=14.50
 ```
 
 ::: moniker-end
