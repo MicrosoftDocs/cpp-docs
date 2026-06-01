@@ -10,7 +10,7 @@ ms.subservice: cpp-lang
 ---
 # `/Zc:u8EscapeEncoding` (numeric escape sequence encoding in u8 strings)
 
-Keep the value of numeric escape sequences in `u8` string literals without encoding them them as utf-8.
+Keep the value of numeric escape sequences in `u8` string literals without encoding them as utf-8.
 
 Use this switch to increase cross compatibility or when a non-utf-8 character is embedded in a utf-8 string literal.
 
@@ -44,7 +44,7 @@ Under `/Zc:u8EscapeEncoding`, the escape sequence `\x00ff` is encoded as `0xFF` 
 0x20 0xFF 0x20 0xC3 0xBF 0x20 0x0
 ```
 
-Under `/Zc:u8EscapeEncoding-` the value of both `\x00ff` and `\u00ff` are re-encoded as the utf-8 sequence `0xC3 0xBF`. The result is the following output when run:
+Under `/Zc:u8EscapeEncoding-`, the value of both `\x00ff` and `\u00ff` are re-encoded as the utf-8 sequence `0xC3 0xBF`. The result is the following output when run:
 
 ```output
 0x20 0xC3 0xBF 0x20 0xC3 0xBF 0x20 0x0
