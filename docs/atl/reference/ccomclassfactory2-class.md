@@ -4,9 +4,10 @@ title: "CComClassFactory2 Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComClassFactory2", "ATLCOM/ATL::CComClassFactory2", "ATLCOM/ATL::CComClassFactory2::CreateInstance", "ATLCOM/ATL::CComClassFactory2::CreateInstanceLic", "ATLCOM/ATL::CComClassFactory2::GetLicInfo", "ATLCOM/ATL::CComClassFactory2::LockServer", "ATLCOM/ATL::CComClassFactory2::RequestLicKey"]
 helpviewer_keywords: ["CComClassFactory2 class"]
-ms.assetid: 19b66fd6-b9ed-47a0-822c-8132184f5a3e
 ---
 # CComClassFactory2 Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements the [IClassFactory2](/windows/win32/api/ocidl/nn-ocidl-iclassfactory2) interface.
 

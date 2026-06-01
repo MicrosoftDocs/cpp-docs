@@ -3,9 +3,11 @@ description: "Learn more about: TN058: MFC Module State Implementation"
 title: "TN058: MFC Module State Implementation"
 ms.date: "06/28/2018"
 helpviewer_keywords: ["thread state [MFC]", "module states [MFC], managing state data", "TN058", "MFC, managing state data", "module states [MFC], switching", "DLLs [MFC], module states", "process state [MFC]"]
-ms.assetid: 72f5b36f-b3da-4009-a144-24258dcd2b2f
 ---
 # TN058: MFC Module State Implementation
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

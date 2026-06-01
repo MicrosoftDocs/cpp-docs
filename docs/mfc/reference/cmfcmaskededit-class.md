@@ -4,9 +4,11 @@ title: "CMFCMaskedEdit Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCMaskedEdit", "AFXMASKEDEDIT/CMFCMaskedEdit", "AFXMASKEDEDIT/CMFCMaskedEdit::DisableMask", "AFXMASKEDEDIT/CMFCMaskedEdit::EnableGetMaskedCharsOnly", "AFXMASKEDEDIT/CMFCMaskedEdit::EnableMask", "AFXMASKEDEDIT/CMFCMaskedEdit::EnableSelectByGroup", "AFXMASKEDEDIT/CMFCMaskedEdit::EnableSetMaskedCharsOnly", "AFXMASKEDEDIT/CMFCMaskedEdit::GetWindowText", "AFXMASKEDEDIT/CMFCMaskedEdit::SetValidChars", "AFXMASKEDEDIT/CMFCMaskedEdit::SetWindowText", "AFXMASKEDEDIT/CMFCMaskedEdit::IsMaskedChar"]
 helpviewer_keywords: ["CMFCMaskedEdit [MFC], DisableMask", "CMFCMaskedEdit [MFC], EnableGetMaskedCharsOnly", "CMFCMaskedEdit [MFC], EnableMask", "CMFCMaskedEdit [MFC], EnableSelectByGroup", "CMFCMaskedEdit [MFC], EnableSetMaskedCharsOnly", "CMFCMaskedEdit [MFC], GetWindowText", "CMFCMaskedEdit [MFC], SetValidChars", "CMFCMaskedEdit [MFC], SetWindowText", "CMFCMaskedEdit [MFC], IsMaskedChar"]
-ms.assetid: 13b1a645-2d5d-4c37-8599-16d5003f23a5
 ---
 # CMFCMaskedEdit Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCMaskedEdit` class supports a masked edit control, which validates user input against a mask and displays the validated results according to a template.
 

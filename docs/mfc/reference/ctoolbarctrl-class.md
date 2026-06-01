@@ -7,6 +7,9 @@ helpviewer_keywords: ["CToolBarCtrl [MFC], CToolBarCtrl", "CToolBarCtrl [MFC], A
 ---
 # `CToolBarCtrl` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Provides the functionality of the Windows toolbar common control.
 
 ## Syntax

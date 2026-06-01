@@ -4,9 +4,11 @@ title: "InitInstance Member Function"
 ms.date: "11/04/2016"
 f1_keywords: ["InitInstance"]
 helpviewer_keywords: ["InitInstance method [MFC]", "applications [MFC], initializing", "MFC, initializing", "initializing MFC applications"]
-ms.assetid: 4ef09267-ff7f-4c39-91a0-57454a264f83
 ---
 # InitInstance Member Function
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The Windows operating system allows you to run more than one copy, or "instance," of the same application. `WinMain` calls [InitInstance](reference/cwinapp-class.md#initinstance) every time a new instance of the application starts.
 

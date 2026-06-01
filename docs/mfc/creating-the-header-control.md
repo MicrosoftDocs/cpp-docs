@@ -3,10 +3,12 @@ description: "Learn more about: Creating the Header Control"
 title: "Creating the Header Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CHeaderCtrl class [MFC], creating", "header controls [MFC], creating"]
-ms.assetid: 7864d9d2-4a2c-4622-b58b-7b110a1e28d2
 ms.topic: how-to
 ---
 # Creating the Header Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The header control is not directly available in the dialog editor (although you can add a list control, which includes a header control).
 

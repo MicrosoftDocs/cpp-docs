@@ -4,9 +4,10 @@ title: "Registry Support Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["registry support classes, ATL", "ATL, registry", "registry support classes"]
-ms.assetid: 4203c346-77a9-42bf-8683-a3c3351cc490
 ---
 # Registry Support Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The following class provides registry support:
 

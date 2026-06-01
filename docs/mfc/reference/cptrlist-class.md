@@ -4,9 +4,11 @@ title: "CPtrList Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPtrList"]
 helpviewer_keywords: ["lists, generic", "CPtrList class [MFC]", "generic lists"]
-ms.assetid: 4139a09c-4338-4f42-9eea-51336120b43c
 ---
 # CPtrList Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Supports lists of void pointers.
 

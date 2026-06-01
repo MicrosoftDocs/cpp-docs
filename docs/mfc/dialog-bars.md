@@ -3,9 +3,11 @@ description: "Learn more about: Dialog Bars"
 title: "Dialog Bars"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["MFC, control bars", "CDialogBar class [MFC], dialog bars", "control bars [MFC], dialog bars", "dialog bars", "dialog bars [MFC], about dialog bars"]
-ms.assetid: 485c8055-6bb0-4051-8417-dd2971499321
 ---
 # Dialog Bars
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A dialog bar is a toolbar, a kind of [control bar](control-bars.md) that can contain any kind of control. Because it has the characteristics of a modeless dialog box, a [CDialogBar](reference/cdialogbar-class.md) object provides a more powerful toolbar.
 

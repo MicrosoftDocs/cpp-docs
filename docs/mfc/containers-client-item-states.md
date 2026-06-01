@@ -3,9 +3,11 @@ description: "Learn more about: Containers: Client-Item States"
 title: "Containers: Client-Item States"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE containers [MFC], client-item states", "states, OLE container client-item", "lifetime, lifetime states and OLE container client items", "client items and OLE containers"]
-ms.assetid: e7021caa-bd07-4adb-976e-f5f3d025bc53
 ---
 # Containers: Client-Item States
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains the different states a client item passes through in its lifetime.
 

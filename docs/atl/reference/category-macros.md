@@ -3,9 +3,10 @@ description: "Learn more about: Category Macros"
 title: "Category Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["ATLCOM/BEGIN_CATEGORY_MAP", "ATLCOM/END_CATEGORY_MAP", "ATLCOM/IMPLEMENTED_CATEGORY", "ATLCOM/REQUIRED_CATEGORY", "atlcom/ATL::BEGIN_CATEGORY_MAP", "atlcom/ATL::END_CATEGORY_MAP", "atlcom/ATL::IMPLEMENTED_CATEGORY", "atlcom/ATL::REQUIRED_CATEGORY"]
-ms.assetid: 223578cb-6180-4787-a8d8-ba3787a5d3ee
 ---
 # Category Macros
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These macros define category maps.
 

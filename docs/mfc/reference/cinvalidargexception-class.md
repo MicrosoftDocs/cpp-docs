@@ -4,9 +4,11 @@ title: "CInvalidArgException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CInvalidArgException", "AFX/CInvalidArgException", "AFX/CInvalidArgException::CInvalidArgException"]
 helpviewer_keywords: ["CInvalidArgException [MFC], CInvalidArgException"]
-ms.assetid: e43d7c67-1157-47f8-817a-804083e8186e
 ---
 # CInvalidArgException Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This class represents an invalid argument exception condition.
 

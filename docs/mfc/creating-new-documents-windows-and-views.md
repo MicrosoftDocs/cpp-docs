@@ -3,10 +3,12 @@ description: "Learn more about: Creating New Documents, Windows, and Views"
 title: "Creating New Documents, Windows, and Views"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["MDI [MFC], creating windows", "window objects [MFC], creating", "objects [MFC], creating document objects", "MFC default objects", "frame windows [MFC], creating", "windows [MFC], MDI", "MFC, documents", "view objects [MFC], creating", "windows [MFC], creating", "overriding, default view behavior", "views [MFC], initializing", "customizing MFC default objects", "MFC, frame windows", "MFC, views", "MDI [MFC], frame windows", "child windows [MFC], creating MDI", "view objects [MFC]", "document objects [MFC], creating", "MFC default objects [MFC], customizing", "views [MFC], overriding default behavior", "initializing views [MFC]"]
-ms.assetid: 88aa1f5f-2078-4603-b16b-a2b4c7b4a2a3
 ms.topic: concept-article
 ---
 # Creating New Documents, Windows, and Views
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following figures give an overview of the creation process for documents, views, and frame windows. Other articles that focus on the participating objects provide further details.
 

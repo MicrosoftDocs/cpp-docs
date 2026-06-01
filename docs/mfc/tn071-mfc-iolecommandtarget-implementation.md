@@ -3,9 +3,11 @@ description: "Learn more about: TN071: MFC IOleCommandTarget Implementation"
 title: "TN071: MFC IOleCommandTarget Implementation"
 ms.date: "06/28/2018"
 helpviewer_keywords: ["TN071 [MFC]", "IOleCommandTarget interface [MFC]"]
-ms.assetid: 3eef571e-6357-444d-adbb-6f734a0c3161
 ---
 # TN071: MFC IOleCommandTarget Implementation
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

@@ -3,10 +3,12 @@ description: "Learn more about: Creating Document Frame Windows"
 title: "Creating Document Frame Windows"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["frame windows [MFC], creating", "document templates [MFC], and document frame windows", "windows [MFC], creating", "runtime, class information", "run-time class [MFC], and document frame window creation", "document frame windows [MFC], creating", "MFC, frame windows"]
-ms.assetid: 8671e239-b76f-4dea-afa8-7024e6e58ff5
 ms.topic: concept-article
 ---
 # Creating Document Frame Windows
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 [Document/View Creation](document-view-creation.md) shows how the [CDocTemplate](reference/cdoctemplate-class.md) object orchestrates creating the frame window, document, and view and connecting them all together. Three [CRuntimeClass](reference/cruntimeclass-structure.md) arguments to the `CDocTemplate` constructor specify the frame window, document, and view classes that the document template creates dynamically in response to user commands such as the New command on the File menu or the New Window command on an MDI Window menu. The document template stores this information for later use when it creates a frame window for a view and document.
 

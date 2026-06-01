@@ -2,9 +2,11 @@
 description: "Learn more about: MFC Wizards and Dialog Boxes"
 title: "MFC Wizards and Dialog Boxes"
 ms.date: "11/04/2016"
-ms.assetid: 2fae0a2c-d147-4468-a547-f7b85df767a1
 ---
 # MFC Wizards and Dialog Boxes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The Microsoft Foundation Class (MFC) wizards generate boilerplate code for various kinds of components and objects. You can run the wizards by opening the shortcut menu for a project in **Solution Explorer** and choosing **Add**, **Class**.
 

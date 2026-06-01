@@ -3,9 +3,11 @@ description: "Learn more about: User-defined Tools"
 title: "User-defined Tools"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["user-defined tools (MFC Extensions)"]
-ms.assetid: cb887421-78ce-4652-bc67-96a53984ccaa
 ---
 # User-defined Tools
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 MFC supports user-defined tools. A user-defined tool is a special command that executes an external, user-specified program. You can use the customization process to manage user-defined tools. However, you cannot use this process if your application object is not derived from [CWinAppEx Class](../mfc/reference/cwinappex-class.md). For more information about customization, see [Customization for MFC](../mfc/customization-for-mfc.md).
 

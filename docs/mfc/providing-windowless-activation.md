@@ -3,10 +3,12 @@ description: "Learn more about: Providing Windowless Activation"
 title: "Providing Windowless Activation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["windowless activation of MFC ActiveX controls", "activation [MFC], MFC ActiveX controls", "MFC ActiveX controls [MFC], activate options", "activation [MFC], windowless"]
-ms.assetid: 094903b5-c344-42fa-96ff-ce01e16891c5
 ms.topic: concept-article
 ---
 # Providing Windowless Activation
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Window creation code (that is, everything that happens when you call `CreateWindow`) is costly to execute. A control that maintains an on-screen window has to manage messages for the window. Windowless controls are therefore faster than controls with windows.
 

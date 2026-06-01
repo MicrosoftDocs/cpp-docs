@@ -3,9 +3,11 @@ description: "Learn more about: Structures, Styles, Callbacks, and Message Maps"
 title: "Structures, Styles, Callbacks, and Message Maps"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["callback functions, MFC", "styles, MFC", "message classes [MFC], MFC", "structures, MFC"]
-ms.assetid: 27566602-7d84-4089-880c-8e90fb04fa56
 ---
 # Structures, Styles, Callbacks, and Message Maps
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This section documents the structures, styles, and callback functions used by the Microsoft Foundation Class Library and the MFC message maps.
 

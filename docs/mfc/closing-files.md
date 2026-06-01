@@ -3,10 +3,12 @@ description: "Learn more about: Closing Files"
 title: "Closing Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, file operations", "files [MFC], closing"]
-ms.assetid: 8415a3a8-3c75-45b0-ac2a-d5385f49bdb3
 ms.topic: how-to
 ---
 # Closing Files
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 As usual in I/O operations, once you finish with a file, you must close it.
 

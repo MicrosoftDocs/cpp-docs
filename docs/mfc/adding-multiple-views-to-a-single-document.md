@@ -3,10 +3,12 @@ description: "Learn more about: Adding Multiple Views to a Single Document"
 title: "Adding Multiple Views to a Single Document"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["multiple views [MFC], SDI applications", "documents [MFC], multiple views", "single document interface (SDI), adding views", "views [MFC], SDI applications"]
-ms.assetid: 86d0c134-01d5-429c-b672-36cfb956dc01
 ms.topic: concept-article
 ---
 # Adding Multiple Views to a Single Document
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 In a single-document interface (SDI) application created with the Microsoft Foundation Class (MFC) Library, each document type is associated with a single view type. In some cases, it is desirable to have the ability to switch the current view of a document with a new view.
 

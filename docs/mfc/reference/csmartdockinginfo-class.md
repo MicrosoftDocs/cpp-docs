@@ -4,9 +4,11 @@ title: "CSmartDockingInfo Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CSmartDockingInfo", "AFXDOCKINGMANAGER/CSmartDockingInfo", "AFXDOCKINGMANAGER/CSmartDockingInfo::CopyTo", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_bUseThemeColorInShading", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrBaseBackground", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrToneDest", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrToneSrc", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrTransparent", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_nCentralGroupOffset", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_sizeTotal", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_uiMarkerBmpResID", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_uiMarkerLightBmpResID"]
 helpviewer_keywords: ["CSmartDockingInfo [MFC], CopyTo", "CSmartDockingInfo [MFC], m_bUseThemeColorInShading", "CSmartDockingInfo [MFC], m_clrBaseBackground", "CSmartDockingInfo [MFC], m_clrToneDest", "CSmartDockingInfo [MFC], m_clrToneSrc", "CSmartDockingInfo [MFC], m_clrTransparent", "CSmartDockingInfo [MFC], m_nCentralGroupOffset", "CSmartDockingInfo [MFC], m_sizeTotal", "CSmartDockingInfo [MFC], m_uiMarkerBmpResID", "CSmartDockingInfo [MFC], m_uiMarkerLightBmpResID"]
-ms.assetid: cab04f38-4bc1-4378-9337-c56fc87fbd68
 ---
 # CSmartDockingInfo Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Defines the appearance of smart docking markers.
 

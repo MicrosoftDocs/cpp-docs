@@ -7,6 +7,9 @@ helpviewer_keywords: ["CTypedPtrList [MFC], AddHead", "CTypedPtrList [MFC], AddT
 ---
 # CTypedPtrList Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Provides a type-safe "wrapper" for objects of class `CPtrList`.
 
 ## Syntax

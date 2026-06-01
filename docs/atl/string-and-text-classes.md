@@ -4,9 +4,10 @@ title: "ATL String and Text Classes"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["string conversion, ATL", "string classes [ATL]"]
-ms.assetid: aa0cdc41-c953-4b17-82b6-59b908545571
 ---
 # String and Text Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 These classes provide support for strings and text string conversions.
 

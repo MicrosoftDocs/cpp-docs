@@ -3,9 +3,11 @@ description: "Learn more about: Recommendations for Choosing Between ATL and MFC
 title: "Recommendations for Choosing Between ATL and MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, ATL support", "ATL, vs. MFC"]
-ms.assetid: 269325bb-11a8-4330-ad2b-a14a2458679e
 ---
 # Recommendations for Choosing Between ATL and MFC
+
+>[!NOTE]
+> The Microsoft Foundation Classes library (MFC) and Active Template Library (ATL) continue to be supported. However, we're no longer adding features or updating the documentation.
 
 When developing components and applications, you can choose between two approaches — ATL and MFC (the Microsoft Foundation Class Library).
 

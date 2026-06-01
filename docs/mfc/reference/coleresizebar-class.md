@@ -4,9 +4,11 @@ title: "COleResizeBar Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleResizeBar", "AFXOLE/COleResizeBar", "AFXOLE/COleResizeBar::COleResizeBar", "AFXOLE/COleResizeBar::Create"]
 helpviewer_keywords: ["COleResizeBar [MFC], COleResizeBar", "COleResizeBar [MFC], Create"]
-ms.assetid: 56a708d9-28c5-4eb0-9404-77b688d91c63
 ---
 # COleResizeBar Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A type of control bar that supports resizing of in-place OLE items.
 

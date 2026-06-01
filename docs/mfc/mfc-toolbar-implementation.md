@@ -3,9 +3,11 @@ description: "Learn more about: MFC Toolbar Implementation"
 title: "MFC Toolbar Implementation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["toolbars [MFC], creating", "buttons [MFC], MFC toolbars", "toolbars [MFC], docking", "CToolBar class [MFC], creating toolbars", "MFC toolbars", "floating toolbars [MFC]", "toolbars [MFC], floating", "docking toolbars [MFC]", "bitmaps [MFC], toolbar", "toolbar controls [MFC]", "CToolBarCtrl class [MFC], implementing toolbars", "tool tips [MFC], enabling", "toolbars [MFC]", "toolbars [MFC], implementing MFC toolbars"]
-ms.assetid: af3319ad-c430-4f90-8361-e6a2c06fd084
 ---
 # MFC Toolbar Implementation
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A toolbar is a [control bar](control-bars.md) that contains the bitmap images of controls. These images can behave like pushbuttons, check boxes, or radio buttons. MFC supplies class [CToolbar](reference/ctoolbar-class.md) to manage toolbars.
 

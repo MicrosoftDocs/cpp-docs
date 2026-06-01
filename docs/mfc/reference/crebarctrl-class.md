@@ -7,6 +7,9 @@ helpviewer_keywords: ["CReBarCtrl [MFC], CReBarCtrl", "CReBarCtrl [MFC], BeginDr
 ---
 # CReBarCtrl Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Encapsulates the functionality of a rebar control, which is a container for a child window.
 
 ## Syntax

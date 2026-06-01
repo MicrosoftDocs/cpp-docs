@@ -7,6 +7,9 @@ helpviewer_keywords: ["CDateTimeCtrl [MFC], CDateTimeCtrl", "CDateTimeCtrl [MFC]
 ---
 # `CDateTimeCtrl` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Encapsulates the functionality of a date and time picker control.
 
 ## Syntax

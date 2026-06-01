@@ -4,9 +4,11 @@ title: "CInternetException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CInternetException", "AFXINET/CInternetException", "AFXINET/CInternetException::CInternetException", "AFXINET/CInternetException::m_dwContext", "AFXINET/CInternetException::m_dwError"]
 helpviewer_keywords: ["CInternetException [MFC], CInternetException", "CInternetException [MFC], m_dwContext", "CInternetException [MFC], m_dwError"]
-ms.assetid: 44fb3cbe-523e-4754-8843-a77909990b14
 ---
 # CInternetException Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Represents an exception condition related to an Internet operation.
 

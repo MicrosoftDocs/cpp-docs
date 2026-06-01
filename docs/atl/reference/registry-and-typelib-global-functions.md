@@ -4,9 +4,10 @@ title: "Registry and TypeLib Global Functions"
 ms.date: "03/27/2019"
 f1_keywords: ["atlbase/ATL::AtlGetPerUserRegistration", "afxpriv/ATL::AfxRegCreateKey", "afxpriv/ATL::AfxRegDeleteKey", "atlbase/ATL::AtlRegisterTypeLib", "afxpriv/ATL::AfxRegOpenKey", "afxpriv/ATL::AfxRegOpenKeyEx", "afxdisp/ATL::AfxUnregisterPreviewHandler", "atlbase/ATL::AtlSetPerUserRegistration", "atlbase/ATL::AtlUnRegisterTypeLib", "atlbase/ATL::AtlLoadTypeLib", "atlbase/ATL::AtlUpdateRegistryFromResourceD", "atlbase/ATL::RegistryDataExchange"]
 helpviewer_keywords: ["RegistryDataExchange function, global functions"]
-ms.assetid: d58b8a4e-975c-4417-8b34-d3c847f679b3
 ---
 # Registry and TypeLib Global Functions
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These functions provide support for loading and registering a type library.
 

@@ -3,10 +3,12 @@ description: "Learn more about: Using CDateTimeCtrl"
 title: "Using CDateTimeCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DateTimePicker control [MFC], CDateTimeCtrl class"]
-ms.assetid: cb2a8720-43f1-4c33-a3a4-def9a1622e00
 ms.topic: concept-article
 ---
 # Using CDateTimeCtrl
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The date and time picker control ([CDateTimeCtrl](../mfc/reference/cdatetimectrl-class.md)) implements an intuitive and recognizable method of entering or selecting a specific date. The main interface of the control is similar in functionality to a combo box. However, if the user expands the control, a month calendar control appears (by default), allowing the user to specify a particular date. When a date is chosen, the month calendar control automatically disappears.
 

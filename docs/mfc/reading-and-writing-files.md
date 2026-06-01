@@ -3,10 +3,12 @@ description: "Learn more about: Reading and Writing Files"
 title: "Reading and Writing Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CFile class [MFC], objects", "examples [MFC], reading files", "files [MFC], writing to", "examples [MFC], writing to files", "files [MFC], reading", "MFC, file operations", "CFile class [MFC], reading and writing CFile objects", "reading files", "writing to files [MFC]"]
-ms.assetid: cac0c826-ba56-495f-99b3-ce6336f65763
 ms.topic: how-to
 ---
 # Reading and Writing Files
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 If you've used the C run-time library file-handling functions, MFC reading and writing operations will appear familiar. This article describes reading directly from and writing directly to a `CFile` object. You can also do buffered file I/O with the [CArchive](../mfc/reference/carchive-class.md) class.
 

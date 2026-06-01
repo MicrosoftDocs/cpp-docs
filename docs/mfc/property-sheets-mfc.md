@@ -3,9 +3,11 @@ description: "Learn more about: Property Sheets (MFC)"
 title: "Property Sheets (MFC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["dialog boxes [MFC], tabs", "property sheets", "dialog boxes [MFC], property sheets", "tab dialog boxes"]
-ms.assetid: 09439f65-921d-45a2-b3cc-e13884a087b1
 ---
 # Property Sheets (MFC)
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This family of articles explains how to implement support for property sheets in MFC applications. A property sheet, also known as a tab dialog box, provides a way to manage large numbers of controls in a dialog box. The property sheet contains property pages, each based on a separate dialog template resource. You can divide your dialog box's controls into logical groups and put each group on its own property page.
 

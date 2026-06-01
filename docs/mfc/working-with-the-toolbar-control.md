@@ -3,10 +3,12 @@ description: "Learn more about: Working with the Toolbar Control"
 title: "Working with the Toolbar Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["GetToolBarCtrl method [MFC]", "toolbars [MFC], accessing common control", "CToolBarCtrl class [MFC], accessing toolbar", "toolbar controls [MFC], accessing"]
-ms.assetid: b19409d5-3831-42c7-80ae-195c49dc9085
 ms.topic: how-to
 ---
 # Working with the Toolbar Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains how you can access the [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) object underlying a [CToolBar](../mfc/reference/ctoolbar-class.md) for greater control over your toolbars. This is an advanced topic.
 

@@ -4,9 +4,10 @@ title: "CDacl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDacl", "ATLSECURITY/ATL::CDacl", "ATLSECURITY/ATL::CDacl::CDacl", "ATLSECURITY/ATL::CDacl::AddAllowedAce", "ATLSECURITY/ATL::CDacl::AddDeniedAce", "ATLSECURITY/ATL::CDacl::GetAceCount", "ATLSECURITY/ATL::CDacl::RemoveAce", "ATLSECURITY/ATL::CDacl::RemoveAllAces"]
 helpviewer_keywords: ["CDacl class"]
-ms.assetid: 2dc76616-6362-4967-b6cf-e2d39ca37ddd
 ---
 # CDacl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class is a wrapper for a DACL (discretionary access-control list) structure.
 

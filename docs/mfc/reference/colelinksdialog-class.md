@@ -4,9 +4,11 @@ title: "COleLinksDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleLinksDialog", "AFXODLGS/COleLinksDialog", "AFXODLGS/COleLinksDialog::COleLinksDialog", "AFXODLGS/COleLinksDialog::DoModal", "AFXODLGS/COleLinksDialog::m_el"]
 helpviewer_keywords: ["COleLinksDialog [MFC], COleLinksDialog", "COleLinksDialog [MFC], DoModal", "COleLinksDialog [MFC], m_el"]
-ms.assetid: fb2eb638-2809-46db-ac74-392a732affc7
 ---
 # COleLinksDialog Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Used for the OLE Edit Links dialog box.
 

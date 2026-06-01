@@ -4,9 +4,10 @@ title: "_U_STRINGorID Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL._U_STRINGorID", "ATL::_U_STRINGorID", "_U_STRINGorID"]
 helpviewer_keywords: ["_U_STRINGorID class", "U_STRINGorID class"]
-ms.assetid: 443cdc00-d265-4b27-8ef3-2feb95f3e5e3
 ---
 # _U_STRINGorID Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This argument adapter class allows either resource names (LPCTSTRs) or resource IDs (UINTs) to be passed to a function without requiring the caller to convert the ID to a string using the MAKEINTRESOURCE macro.
 

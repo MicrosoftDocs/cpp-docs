@@ -3,9 +3,11 @@ description: "Learn more about: Memory Management"
 title: "Memory Management"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["memory [MFC]", "MFC, memory management", "memory allocation [MFC]", "memory [MFC], managing", "memory allocation [MFC], MFC"]
-ms.assetid: 934ac81b-d630-4232-88e5-ea74f7187987
 ---
 # Memory Management
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This group of articles describes how to take advantage of the general-purpose services of the Microsoft Foundation Class Library (MFC) related to memory management. Memory allocation can be divided into two main categories: frame allocations and heap allocations.
 

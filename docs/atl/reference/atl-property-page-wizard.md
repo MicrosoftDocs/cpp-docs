@@ -4,9 +4,10 @@ title: "ATL Property Page Wizard"
 ms.date: "05/09/2019"
 f1_keywords: ["vc.codewiz.class.atl.ppg.overview"]
 helpviewer_keywords: ["ATL projects, adding property pages", "ATL Property Page Wizard"]
-ms.assetid: 6113e325-facd-4f68-b491-144d75209922
 ---
 # ATL Property Page Wizard
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 ::: moniker range=">=msvc-160"
 

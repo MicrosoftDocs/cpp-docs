@@ -15,6 +15,9 @@ This document uses the following markers to indicate instruction priority:
 
 ## General Guidelines
 
+### Using MCP tools
+If the user intent relates to Azure Devops, make sure to prioritize the Azure DevOps MCP server tools.
+
 ### 1. Issue Handling
 When creating a PR for an issue:
 - [ ] Read the full issue and all linked references

@@ -3,9 +3,11 @@ description: "Learn more about: Methods of Creating Tool Tips"
 title: "Methods of Creating Tool Tips"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CToolTipCtrl class [MFC], creating tool tips", "tool tips [MFC], tool tip controls", "tool tips [MFC], creating"]
-ms.assetid: b015e9f4-ddfb-49a4-a5a6-fa2d45e4d328
 ---
 # Methods of Creating Tool Tips
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 MFC provides three classes to create and manage the tool tip control: [CWnd](reference/cwnd-class.md), [CToolBarCtrl](reference/ctoolbarctrl-class.md), [CToolTipCtrl](reference/ctooltipctrl-class.md) and [CMFCToolTipCtrl](reference/cmfctooltipctrl-class.md). The tool tip member functions in these classes wrap the Windows common control API. Class `CToolBarCtrl` and class `CToolTipCtrl` are derived from class `CWnd`.
 

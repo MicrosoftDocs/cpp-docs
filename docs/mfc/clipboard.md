@@ -3,9 +3,11 @@ description: "Learn more about: Clipboard"
 title: "Clipboard"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["cutting and copying data", "copying data", "Clipboard", "Clipboard, programming", "transferring data"]
-ms.assetid: a71b2824-1f14-4914-8816-54578d73ad4e
 ---
 # Clipboard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This family of articles explains how to implement support for the Windows Clipboard in MFC applications. The Windows Clipboard is used in two ways:
 

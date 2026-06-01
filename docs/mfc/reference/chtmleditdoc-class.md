@@ -4,9 +4,11 @@ title: "CHtmlEditDoc Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CHtmlEditDoc", "AFXHTML/CHtmlEditDoc", "AFXHTML/CHtmlEditDoc::CHtmlEditDoc", "AFXHTML/CHtmlEditDoc::GetView", "AFXHTML/CHtmlEditDoc::IsModified", "AFXHTML/CHtmlEditDoc::OpenURL"]
 helpviewer_keywords: ["CHtmlEditDoc [MFC], CHtmlEditDoc", "CHtmlEditDoc [MFC], GetView", "CHtmlEditDoc [MFC], IsModified", "CHtmlEditDoc [MFC], OpenURL"]
-ms.assetid: b2cca61f-e5d6-4099-b0d1-46bf85f0bd64
 ---
 # CHtmlEditDoc Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 With [CHtmlEditView](../../mfc/reference/chtmleditview-class.md), provides the functionality of the WebBrowser editing platform within the context of the MFC document-view architecture.
 

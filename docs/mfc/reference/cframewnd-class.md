@@ -7,6 +7,9 @@ helpviewer_keywords: ["CFrameWnd [MFC], CFrameWnd", "CFrameWnd [MFC], ActivateFr
 ---
 # `CFrameWnd` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Provides the functionality of a Windows single document interface (SDI) overlapped or pop-up frame window, along with members for managing the window.
 
 ## Syntax

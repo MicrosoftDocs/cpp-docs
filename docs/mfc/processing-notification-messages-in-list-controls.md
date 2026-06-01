@@ -3,10 +3,12 @@ description: "Learn more about: Processing Notification Messages in List Control
 title: "Processing Notification Messages in List Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["processing notifications [MFC]", "CListCtrl class [MFC], processing notifications"]
-ms.assetid: 1f0e296e-d2a3-48fc-ae38-51d7fb096f51
 ms.topic: concept-article
 ---
 # Processing Notification Messages in List Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 As users click column headers, drag icons, edit labels, and so on, the list control ([CListCtrl](../mfc/reference/clistctrl-class.md)) sends notification messages to its parent window. Handle these messages if you want to do something in response. For example, when the user clicks a column header, you might want to sort the items based on the contents of the clicked column, as in Microsoft Outlook.
 

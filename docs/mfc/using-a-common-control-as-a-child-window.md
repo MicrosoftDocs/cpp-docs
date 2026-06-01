@@ -3,10 +3,12 @@ description: "Learn more about: Using a Common Control as a Child Window"
 title: "Using a Common Control as a Child Window"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["controls [MFC], using as child windows", "windows [MFC], common controls as", "child windows [MFC], common controls as", "common controls [MFC], child windows", "Windows common controls [MFC], child windows"]
-ms.assetid: 608f7d47-7854-4fce-bde9-856c51e76753
 ms.topic: how-to
 ---
 # Using a Common Control as a Child Window
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Any of the Windows common controls can be used as a child window of any other window. The following procedure describes how to create a common control dynamically and then work with it.
 

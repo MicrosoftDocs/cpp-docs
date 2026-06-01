@@ -7,6 +7,9 @@ helpviewer_keywords: ["CObArray [MFC], CObArray", "CObArray [MFC], Add", "CObArr
 ---
 # `CObArray` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Supports arrays of `CObject` pointers.
 
 ## Syntax

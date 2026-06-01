@@ -4,9 +4,11 @@ title: "CLinearTransition Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CLinearTransition", "AFXANIMATIONCONTROLLER/CLinearTransition", "AFXANIMATIONCONTROLLER/CLinearTransition::CLinearTransition", "AFXANIMATIONCONTROLLER/CLinearTransition::Create", "AFXANIMATIONCONTROLLER/CLinearTransition::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CLinearTransition::m_duration"]
 helpviewer_keywords: ["CLinearTransition [MFC], CLinearTransition", "CLinearTransition [MFC], Create", "CLinearTransition [MFC], m_dblFinalValue", "CLinearTransition [MFC], m_duration"]
-ms.assetid: 7fcb2dba-beb8-4933-9f5d-3b7fb1585ef0
 ---
 # CLinearTransition Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Encapsulates a linear transition.
 

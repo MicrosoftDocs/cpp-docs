@@ -4,9 +4,10 @@ title: "CElementTraitsBase Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CElementTraitsBase", "ATLCOLL/ATL::CElementTraitsBase", "ATLCOLL/ATL::CElementTraitsBase::INARGTYPE", "ATLCOLL/ATL::CElementTraitsBase::OUTARGTYPE", "ATLCOLL/ATL::CElementTraitsBase::CopyElements", "ATLCOLL/ATL::CElementTraitsBase::RelocateElements"]
 helpviewer_keywords: ["CElementTraitsBase class"]
-ms.assetid: 75284caf-347e-4355-a7d8-efc708dd514a
 ---
 # CElementTraitsBase Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides default copy and move methods for a collection class.
 

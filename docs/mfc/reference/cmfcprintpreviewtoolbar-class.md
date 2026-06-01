@@ -3,9 +3,11 @@ description: "Learn more about: CMFCPrintPreviewToolBar Class"
 title: "CMFCPrintPreviewToolBar Class"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CMFCPrintPreviewToolBar class [MFC]", "CMFCPrintPreviewToolBar class [MFC], destructor"]
-ms.assetid: 7b9f641b-d402-4339-8815-e5247237e7e5
 ---
 # CMFCPrintPreviewToolBar Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The toolbar on the print preview.
 

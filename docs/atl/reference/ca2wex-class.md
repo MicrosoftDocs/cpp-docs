@@ -4,9 +4,10 @@ title: "CA2WEX Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CA2WEX", "ATLCONV/ATL::CA2WEX", "ATLCONV/ATL::CA2WEX::CA2WEX", "ATLCONV/ATL::CA2WEX::m_psz", "ATLCONV/ATL::CA2WEX::m_szBuffer"]
 helpviewer_keywords: ["CA2WEX class"]
-ms.assetid: 317d9ffb-e84f-47e8-beda-57e28fb19124
 ---
 # CA2WEX Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class is used by the string conversion macros CA2TEX, CA2CTEX, CT2WEX, and CT2CWEX, and the typedef CA2W.
 

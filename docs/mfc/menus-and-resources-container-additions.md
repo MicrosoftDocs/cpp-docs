@@ -4,9 +4,11 @@ title: "Menus and Resources: Container Additions"
 ms.date: "11/04/2016"
 f1_keywords: ["IDP_OLE_INIT_FAILED", "IDP_FAILED_TO_CREATE", "VK_ESCAPE"]
 helpviewer_keywords: ["application accelerator table [MFC]", "VK_ESCAPE key [MFC]", "IDP_FAILED_TO_CREATE macro [MFC]", "visual editing, application menus and resources", "OLE containers [MFC], menus and resources", "accelerator tables [MFC], container applications", "IDP_OLE_INIT_FAILED macro [MFC]", "CONTAIN tutorial [MFC]", "Links menu item [MFC]"]
-ms.assetid: 425448be-8ca0-412e-909a-a3a9ce845288
 ---
 # Menus and Resources: Container Additions
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains the changes that need to be made to the menus and other resources in a visual editing container application.
 

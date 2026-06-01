@@ -3,9 +3,11 @@ description: "Learn more about: Bottomless Rich Edit Controls"
 title: "Bottomless Rich Edit Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["bottomless rich edit controls", "rich edit controls [MFC], bottomless", "CRichEditCtrl class [MFC], bottomless"]
-ms.assetid: 2877dd32-1e9a-4fd1-98c0-66dcbbeef1de
 ---
 # Bottomless Rich Edit Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Your application can resize a rich edit control ([CRichEditCtrl](reference/cricheditctrl-class.md)) as needed so that it is always the same size as its contents. A rich edit control supports this so-called "bottomless" functionality by sending its parent window an [EN_REQUESTRESIZE](/windows/win32/Controls/en-requestresize) notification message whenever the size of its contents changes.
 

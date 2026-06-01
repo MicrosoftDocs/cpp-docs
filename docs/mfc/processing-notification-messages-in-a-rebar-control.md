@@ -3,10 +3,12 @@ description: "Learn more about: Processing Notification Messages in a Rebar Cont
 title: "Processing Notification Messages in a Rebar Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["RBN_ notification messages, description of", "CReBarCtrl class [MFC], notification messages sent by", "RBN_ notification messages [MFC]", "notifications [MFC], CReBarCtrl"]
-ms.assetid: 40f43a60-0c18-4d8d-8fab-213a095624f9
 ms.topic: concept-article
 ---
 # Processing Notification Messages in a Rebar Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 In the parent class of the rebar control, create an `OnChildNotify` handler function with a switch statement for any rebar-control (`CReBarCtrl`) notification messages you want to handle. Notifications are sent to the parent window when the user drags objects over the rebar control, changes the layout of the rebar bands, deletes bands from the rebar control, and so on.
 

@@ -4,9 +4,10 @@ title: "CComEnum Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComEnum", "atlcom/ATL::CComEnum"]
 helpviewer_keywords: ["CComEnum class"]
-ms.assetid: bff7dd7b-eb6e-4d6e-96ed-2706e66c8b3b
 ---
 # CComEnum Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class defines a COM enumerator object based on an array.
 

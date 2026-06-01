@@ -4,9 +4,10 @@ title: "CComObjectStack Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComObjectStack", "ATLCOM/ATL::CComObjectStack", "ATLCOM/ATL::CComObjectStack::CComObjectStack", "ATLCOM/ATL::CComObjectStack::AddRef", "ATLCOM/ATL::CComObjectStack::QueryInterface", "ATLCOM/ATL::CComObjectStack::Release", "ATLCOM/ATL::CComObjectStack::m_hResFinalConstruct"]
 helpviewer_keywords: ["CComObjectStack class"]
-ms.assetid: 3da72c40-c834-45f6-bb76-6ac204028d80
 ---
 # CComObjectStack Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class creates a temporary COM object and provides it with a skeletal implementation of `IUnknown`.
 

@@ -6,6 +6,9 @@ f1_keywords: ["CMFCDynamicLayout", "AFXLAYOUT/CMFCDynamicLayout", "AFXLAYOUT/CMF
 ---
 # CMFCDynamicLayout Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Specifies how controls in a window are moved and resized as the user resizes the window.
 
 ## Syntax

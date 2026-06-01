@@ -7,6 +7,9 @@ helpviewer_keywords: ["CDaoRecordset [MFC], CDaoRecordset", "CDaoRecordset [MFC]
 ---
 # CDaoRecordset Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Represents a set of records selected from a data source.
 
 > [!NOTE]

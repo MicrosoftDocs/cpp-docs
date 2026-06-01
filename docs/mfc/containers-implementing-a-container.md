@@ -3,9 +3,11 @@ description: "Learn more about: Containers: Implementing a Container"
 title: "Containers: Implementing a Container"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["applications [OLE], OLE container", "OLE containers [MFC], implementing"]
-ms.assetid: af1e2079-619a-4eac-9327-985ad875823a
 ---
 # Containers: Implementing a Container
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article summarizes the procedure for implementing a container and points you to other articles that provide more detailed explanations about implementing containers. It also lists some optional OLE features you may want to implement and the articles describing these features.
 

@@ -4,9 +4,11 @@ title: "Connection Points"
 ms.date: "11/19/2018"
 f1_keywords: ["IConnectionPoint"]
 helpviewer_keywords: ["IConnectionPoint interface", "connections, connection points", "OLE COM connection points", "MFC COM, connection points", "COM, connection points", "interfaces, IConnectionPoint", "MFC, COM support", "connection points [MFC]", "CCmdTarget class [MFC], and connection points", "sinks, connection points"]
-ms.assetid: bc9fd7c7-8df6-4752-ac8c-0b177442c88d
 ---
 # Connection Points
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains how to implement connection points (formerly known as OLE connection points) using the MFC classes `CCmdTarget` and `CConnectionPoint`.
 

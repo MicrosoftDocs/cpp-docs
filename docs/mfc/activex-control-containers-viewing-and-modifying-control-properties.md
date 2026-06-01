@@ -3,9 +3,11 @@ description: "Learn more about: ActiveX Control Containers: Viewing and Modifyin
 title: "ActiveX Control Containers: Viewing and Modifying Control Properties"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["properties [MFC], viewing and modifying", "ActiveX control containers [MFC], viewing and modifying properties", "resource editors, viewing and modifying ActiveX controls", "ActiveX controls [MFC], properties", "controls [MFC], properties"]
-ms.assetid: 14ce5152-742b-4e0d-a9ab-c7b456e32918
 ---
 # ActiveX Control Containers: Viewing and Modifying Control Properties
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 When you insert an ActiveX control into a project, it is useful to view and change the properties supported by the ActiveX control. This article discusses how to use the Visual Studio resource editor to do this.
 

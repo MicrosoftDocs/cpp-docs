@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMFCPreviewCtrlImpl [MFC], CMFCPreviewCtrlImpl", "CMFCPre
 ---
 # `CMFCPreviewCtrlImpl` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 This class implements a window that is placed on a host window provided by the Shell for Rich Preview.
 
 ## Syntax

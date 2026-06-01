@@ -3,9 +3,11 @@ description: "Learn more about: Servers: Server Items"
 title: "Servers: Server Items"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["server items, implementing", "servers [MFC], server items", "architecture [MFC], server-item", "server items", "OLE server applications [MFC], server items"]
-ms.assetid: 28ba81a1-726a-4728-a52d-68bc7efd5a3c
 ---
 # Servers: Server Items
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 When a container launches a server so that a user can edit an embedded or linked OLE item, the server application creates a "server item." The server item, which is an object of a class derived from `COleServerItem`, provides an interface between the server document and the container application.
 

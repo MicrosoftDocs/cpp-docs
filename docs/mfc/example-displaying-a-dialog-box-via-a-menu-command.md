@@ -3,9 +3,11 @@ description: "Learn more about: Example: Displaying a Dialog Box via a Menu Comm
 title: "Example: Displaying a Dialog Box via a Menu Command"
 ms.date: "09/07/2019"
 helpviewer_keywords: ["MFC dialog boxes [MFC], examples", "MFC dialog boxes [MFC], displaying", "modeless dialog boxes [MFC], displaying", "dialog boxes [MFC], MFC", "modal dialog boxes [MFC], displaying", "examples [MFC], dialog boxes", "menu items [MFC], examples"]
-ms.assetid: e8692549-acd7-478f-9c5e-ba310ce8cccd
 ---
 # Example: Displaying a Dialog Box via a Menu Command
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This topic contains procedures to:
 

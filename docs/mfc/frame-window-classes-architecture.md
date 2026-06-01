@@ -3,9 +3,11 @@ description: "Learn more about: Frame Window Classes (Architecture)"
 title: "Frame Window Classes (Architecture)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["frame window classes [MFC], document/view architecture"]
-ms.assetid: 5da01fb4-f531-46cc-914f-e422e4f07f5d
 ---
 # Frame Window Classes (Architecture)
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 In document/view architecture, frame windows are windows that contain a view window. They also support having control bars attached to them.
 

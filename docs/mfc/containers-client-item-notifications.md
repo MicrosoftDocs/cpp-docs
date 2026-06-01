@@ -3,9 +3,11 @@ description: "Learn more about: Containers: Client-Item Notifications"
 title: "Containers: Client-Item Notifications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["notifications [MFC], container client item", "OLE containers [MFC], client-item notifications", "client items and OLE containers"]
-ms.assetid: e1f1c427-01f5-45f2-b496-c5bce3d76340
 ---
 # Containers: Client-Item Notifications
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article discusses the overridable functions that the MFC framework calls when server applications modify items in your client application's document.
 

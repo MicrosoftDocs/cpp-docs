@@ -4,9 +4,11 @@ title: "TN042: ODBC Driver Developer Recommendations"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.odbc"]
 helpviewer_keywords: ["ODBC drivers [MFC], writing", "databases [MFC], ODBC", "TN042"]
-ms.assetid: ecc6b5d9-f480-4582-9e22-8309fe561dad
 ---
 # TN042: ODBC Driver Developer Recommendations
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

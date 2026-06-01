@@ -3,9 +3,11 @@ description: "Learn more about: Header Items in a Header Control"
 title: "Header Items in a Header Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["header controls [MFC], header items in", "header items in header controls [MFC]", "CHeaderCtrl class [MFC], header items in", "controls [MFC], header"]
-ms.assetid: ac79ef1f-a671-4ab2-93e9-b1aa016a48bf
 ---
 # Header Items in a Header Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 You have considerable control over the appearance and behavior of the header items that make up a header control ([CHeaderCtrl](reference/cheaderctrl-class.md)). Each header item can have a string, a bitmapped image, an image from an associated image list, or an application-defined 32-bit value associated with it. The string, bitmap, or image is displayed in the header item.
 

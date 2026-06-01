@@ -4,9 +4,11 @@ title: "MFC ActiveX Controls"
 ms.date: "11/19/2018"
 f1_keywords: ["MFC ActiveX Controls (MFC)"]
 helpviewer_keywords: ["COleControl class [MFC], MFC ActiveX controls", "ActiveX controls [MFC], MFC", "containers [MFC], MFC ActiveX controls", "MFC ActiveX controls [MFC], serializing", "MFC ActiveX controls [MFC], containers", "serialization [MFC], MFC ActiveX controls", "dispatch maps [MFC], for MFC ActiveX controls", "MFC ActiveX controls [MFC], active/inactive state", "events [MFC], ActiveX controls", "MFC ActiveX controls [MFC]"]
-ms.assetid: c911fb74-3afc-4bf3-a0f5-7922b14d9a1b
 ---
 # MFC ActiveX Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 An ActiveX control is a reusable software component based on the Component Object Model (COM) that supports a wide variety of OLE functionality and can be customized to fit many software needs.
 

@@ -3,9 +3,11 @@ description: "Learn more about: TN039: MFC/OLE Automation Implementation"
 title: "TN039: MFC-OLE Automation Implementation"
 ms.date: "06/28/2018"
 helpviewer_keywords: ["MFC, COM support", "IDispatch interface", "MFC, OLE DB and", "TN039", "Automation, MFC COM interface entry points"]
-ms.assetid: 765fa3e9-dd54-4f08-9ad2-26e0546ff8b6
 ---
 # TN039: MFC/OLE Automation Implementation
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

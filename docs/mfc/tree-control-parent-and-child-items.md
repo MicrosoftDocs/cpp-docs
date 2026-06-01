@@ -3,9 +3,11 @@ description: "Learn more about: Tree Control Parent and Child Items"
 title: "Tree Control Parent and Child Items"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["parent items in CTreeCtrl [MFC]", "child items in tree control [MFC]", "CTreeCtrl class [MFC], parent and child items", "tree controls [MFC], parent and child items"]
-ms.assetid: abcea1e4-fe9b-40d9-86dc-1db235f8f103
 ---
 # Tree Control Parent and Child Items
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Any item in a tree control ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) can have a list of subitems, which are called child items, associated with it. An item that has one or more child items is called a parent item. A child item is displayed below its parent item and is indented to indicate it is subordinate to the parent. An item that has no parent is at the top of the hierarchy and is called a root item.
 

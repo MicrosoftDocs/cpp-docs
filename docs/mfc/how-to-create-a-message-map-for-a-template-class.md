@@ -3,9 +3,11 @@ description: "Learn more about: How to: Create a Message Map for a Template Clas
 title: "How to: Create a Message Map for a Template Class"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["template classes [MFC], creating message maps", "message maps [MFC], template classes"]
-ms.assetid: 4e7e24f8-06df-4b46-82aa-7435c8650de3
 ---
 # How to: Create a Message Map for a Template Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Message mapping in MFC provides an efficient way to direct Windows messages to an appropriate C++ object instance. Examples of MFC message map targets include application classes, document and view classes, control classes, and so on.
 

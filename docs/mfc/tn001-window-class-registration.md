@@ -4,9 +4,11 @@ title: "TN001: Window Class Registration"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.registration"]
 helpviewer_keywords: ["TN001", "WNDCLASS [MFC]", "AfxRegisterClass function"]
-ms.assetid: 1abf678e-f220-4606-85e0-03df32f64c54
 ---
 # TN001: Window Class Registration
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This note describes the MFC routines that register the special [WNDCLASS](/windows/win32/api/winuser/ns-winuser-wndclassw)es needed by Microsoft Windows. Specific `WNDCLASS` attributes used by MFC and Windows are discussed.
 

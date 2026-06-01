@@ -3,10 +3,12 @@ description: "Learn more about: Overview of the Rich Edit Control"
 title: "Overview of the Rich Edit Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["rich edit controls [MFC]"]
-ms.assetid: ad589b9f-a3fd-4820-bf1f-6b1965997e68
 ms.topic: concept-article
 ---
 # Overview of the Rich Edit Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!IMPORTANT]
 > If you are using a rich edit control in a dialog box (regardless of whether your application is SDI, MDI, or dialog-based), you must call [AfxInitRichEdit](reference/application-information-and-management.md#afxinitrichedit) once before the dialog box is displayed. A typical place to call this function is in your program's `InitInstance` member function. You do not need to call it for each time you display the dialog box, only the first time. You do not have to call `AfxInitRichEdit` if you are working with `CRichEditView`.

@@ -3,9 +3,10 @@ description: "Learn more about: Service Map Macros"
 title: "Service Map Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlcom/ATL::BEGIN_SERVICE_MAP", "atlcom/ATL::END_SERVICE_MAP", "atlcom/ATL::SERVICE_ENTRY", "atlcom/ATL::SERVICE_ENTRY_CHAIN", "ATLCOM/BEGIN_SERVICE_MAP", "ATLCOM/END_SERVICE_MAP", "ATLCOM/SERVICE_ENTRY", "ATLCOM/SERVICE_ENTRY_CHAIN"]
-ms.assetid: ca02a125-454a-4cf6-aac2-1c5585025ed4
 ---
 # Service Map Macros
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These macros define service maps and entries.
 

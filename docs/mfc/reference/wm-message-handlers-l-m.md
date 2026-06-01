@@ -4,9 +4,11 @@ title: "WM_ Message Handlers: L - M"
 ms.date: "11/04/2016"
 f1_keywords: ["ON_WM_MENUSELECT", "ON_WM_MBUTTONDBLCLK", "ON_WM_MOUSEACTIVATE", "ON_WM_MOUSEMOVE", "ON_WM_MOVING", "ON_WM_LBUTTONUP", "ON_WM_LBUTTONDBLCLK", "ON_WM_MEASUREITEM", "ON_WM_MDIACTIVATE", "ON_WM_MOVE", "ON_WM_LBUTTONDOWN", "ON_WM_MBUTTONDOWN", "ON_WM_MENUCHAR", "ON_WM_MBUTTONUP"]
 helpviewer_keywords: ["ON_WM_MENUSELECT [MFC]", "ON_WM_MBUTTONDBLCLK [MFC]", "ON_WM_MOVE [MFC]", "ON_WM_MOUSEACTIVATE [MFC]", "ON_WM_MBUTTONUP [MFC]", "ON_WM_MOUSEMOVE [MFC]", "ON_WM_MENUCHAR [MFC]", "ON_WM_MBUTTONDOWN [MFC]", "ON_WM_MEASUREITEM [MFC]", "ON_WM_MOVING [MFC]", "ON_WM_LBUTTONDOWN [MFC]", "ON_WM_MDIACTIVATE [MFC]", "ON_WM_LBUTTONDBLCLK [MFC]", "ON_WM_LBUTTONUP [MFC]", "WM_ messages"]
-ms.assetid: 96ecaaf1-6d13-4e12-a454-535635967489
 ---
 # WM_ Message Handlers: L - M
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following map entries on the left correspond to the function prototypes on the right:
 

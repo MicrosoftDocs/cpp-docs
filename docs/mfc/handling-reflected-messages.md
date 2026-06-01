@@ -3,10 +3,12 @@ description: "Learn more about: Handling Reflected Messages"
 title: "Handling Reflected Messages"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["message handling [MFC], reflected messages", "reflected messages, handling"]
-ms.assetid: 147a4e0c-51cc-4447-a8e1-c28b4cece578
 ms.topic: concept-article
 ---
 # Handling Reflected Messages
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Message reflection lets you handle messages for a control, such as **WM_CTLCOLOR**, **WM_COMMAND**, and **WM_NOTIFY**, within the control itself. This makes the control more self-contained and portable. The mechanism works with Windows common controls as well as with ActiveX controls (formerly called OLE controls).
 

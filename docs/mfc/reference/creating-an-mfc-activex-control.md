@@ -4,9 +4,11 @@ title: "Creating an MFC ActiveX Control"
 ms.date: "08/19/2019"
 f1_keywords: ["vc.appwiz.activex.project"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], creating", "ActiveX controls [MFC], creating"]
-ms.assetid: 8bd5a93c-d04d-414e-bb28-163fdc1c0dd5
 ---
 # Creating an MFC ActiveX Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 ActiveX control programs are modular programs designed to give a specific type of functionality to a parent application. For example, you can create a control such as a button for use in a dialog, or toolbar for use in a Web page.
 

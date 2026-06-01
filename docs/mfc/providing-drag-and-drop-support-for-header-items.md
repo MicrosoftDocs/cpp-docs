@@ -3,10 +3,12 @@ description: "Learn more about: Providing Drag-and-Drop Support for Header Items
 title: "Providing Drag-and-Drop Support for Header Items"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["HDS_DRAGDROP style", "header items in header controls", "CHeaderCtrl class [MFC], drag and drop support", "HDN_ notifications [MFC]"]
-ms.assetid: 93a152ec-804f-488f-b260-b3a438d0dc0f
 ms.topic: concept-article
 ---
 # Providing Drag-and-Drop Support for Header Items
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 To provide drag-and-drop support for header items, specify the HDS_DRAGDROP style. Drag-and-drop support for header items gives the user the ability to reorder the header items of a header control. The default behavior provides a semitransparent drag image of the header item being dragged and a visual indicator of the new position, if the header item is dropped.
 

@@ -3,9 +3,10 @@ description: "Learn more about: Reference Counting"
 title: "Reference Counting (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["AddRef method [C++], reference counting", "reference counting", "AddRef method [C++]", "reference counts", "references, counting"]
-ms.assetid: b1fd4514-6de6-429f-9e60-2777c0d07a3d
 ---
 # Reference Counting
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 COM itself does not automatically try to remove an object from memory when it thinks the object is no longer being used. Instead, the object programmer must remove the unused object. The programmer determines whether an object can be removed based on a reference count.
 

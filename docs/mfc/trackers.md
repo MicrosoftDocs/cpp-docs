@@ -3,9 +3,11 @@ description: "Learn more about: Trackers"
 title: "Trackers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["trackers [MFC]", "OLE applications [MFC], trackers", "applications [OLE], trackers", "tracking OLE items [MFC]", "OLE containers [MFC], trackers", "CDC class [MFC], trackers", "CRectTracker class [MFC], implementing trackers", "OLE server applications [MFC], trackers"]
-ms.assetid: dcd09399-6637-4621-80e5-d12670429787
 ---
 # Trackers
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The [CRectTracker](../mfc/reference/crecttracker-class.md) class provides a user interface between rectangular items in your application and your user by providing a variety of display styles. These styles include solid, hatched, or dashed borders; a hatched pattern that covers the item; and resize handles that can be located on the outside or inside of a border. Trackers are often used in conjunction with OLE items, that is, objects derived from `COleClientItem`. The tracker rectangles give visual cues on the current status of the item.
 

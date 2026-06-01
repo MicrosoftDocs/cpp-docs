@@ -3,9 +3,11 @@ description: "Learn more about: MFC ActiveX Controls: Adding Stock Methods"
 title: "MFC ActiveX Controls: Adding Stock Methods"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], stock methods", "MFC ActiveX controls [MFC], methods", "DoClick method [MFC]"]
-ms.assetid: bc4fad78-cabd-4cc0-a798-464b1a682f0b
 ---
 # MFC ActiveX Controls: Adding Stock Methods
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A stock method differs from a custom method in that it is already implemented by class [COleControl](reference/colecontrol-class.md). For example, `COleControl` contains a predefined member function that supports the Refresh method for your control. The dispatch map entry for this stock method is DISP_STOCKFUNC_REFRESH.
 

@@ -3,9 +3,11 @@ description: "Learn more about: Automation"
 title: "Automation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Automation servers, about Automation servers", "clients, Automation", "programmatic control [MFC]", "properties [MFC], Automation", "MFC, COM support", "OLE Automation", "Automation", "servers [MFC], Automation", "Automation clients", "sample applications [MFC], Automation", "methods [MFC]", "passing parameters, Automation", "Automation method [MFC]", "Automation, passing parameters", "Automation property [MFC]", "MFC COM, Automation", "methods [MFC], Automation"]
-ms.assetid: 329117f0-c1aa-4680-a901-bfb71277dfba
 ---
 # Automation
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Automation (formerly known as OLE Automation) makes it possible for one application to manipulate objects implemented in another application, or to expose objects so they can be manipulated.
 

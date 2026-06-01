@@ -3,9 +3,10 @@ description: "Learn more about: Pixel/HIMETRIC Conversion Global Functions"
 title: "Pixel-HIMETRIC Conversion Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlwin/ATL::AtlHiMetricToPixel", "atlwin/ATL::AtlPixelToHiMetric"]
-ms.assetid: ecb1b1b2-7e9d-4fbc-a855-16252d2d794c
 ---
 # Pixel/HIMETRIC Conversion Global Functions
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These functions provide support for converting to and from pixel and HIMETRIC units.
 

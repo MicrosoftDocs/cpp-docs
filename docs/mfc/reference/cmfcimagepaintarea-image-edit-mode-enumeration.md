@@ -4,9 +4,11 @@ title: "CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration"
 ms.date: "11/04/2016"
 f1_keywords: ["IMAGE_EDIT_MODE Enumeration"]
 helpviewer_keywords: ["IMAGE_EDIT_MODE Enumeration method [MFC]"]
-ms.assetid: e51db66a-fa1c-4766-9dac-a25b595f871a
 ---
 # CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Specifies a drawing mode that you use to modify an image in an image editor dialog box.
 

@@ -3,10 +3,12 @@ description: "Learn more about: Deriving a Class from CObject"
 title: "Deriving a Class from CObject"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DECLARE_DYNCREATE macro [MFC]", "DECLARE_SERIAL macro [MFC]", "macros [MFC], serialization", "serialization [MFC], macros", "DECLARE_DYNAMIC macro [MFC]", "derived classes [MFC], from CObject", "CObject class [MFC], deriving serializable classes", "CObject class [MFC], deriving from"]
-ms.assetid: 5ea4ea41-08b5-4bd8-b247-c5de8c152a27
 ms.topic: how-to
 ---
 # Deriving a Class from CObject
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article describes the minimum steps necessary to derive a class from [CObject](reference/cobject-class.md). Other `CObject` class articles describe the steps needed to take advantage of specific `CObject` features, such as serialization and diagnostic debugging support.
 

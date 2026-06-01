@@ -4,9 +4,11 @@ title: "CMFCLinkCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCLinkCtrl", "AFXLINKCTRL/CMFCLinkCtrl", "AFXLINKCTRL/CMFCLinkCtrl::SetURL", "AFXLINKCTRL/CMFCLinkCtrl::SetURLPrefix", "AFXLINKCTRL/CMFCLinkCtrl::SizeToContent", "AFXLINKCTRL/CMFCLinkCtrl::OnDrawFocusRect"]
 helpviewer_keywords: ["CMFCLinkCtrl [MFC], SetURL", "CMFCLinkCtrl [MFC], SetURLPrefix", "CMFCLinkCtrl [MFC], SizeToContent", "CMFCLinkCtrl [MFC], OnDrawFocusRect"]
-ms.assetid: 80f3874d-7cc8-410e-9ff1-62a225f5034b
 ---
 # CMFCLinkCtrl Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCLinkCtrl` class displays a button as a hyperlink and invokes the link's target when the button is clicked.
 

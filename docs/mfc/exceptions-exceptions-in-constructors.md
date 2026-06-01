@@ -3,9 +3,11 @@ description: "Learn more about: Exceptions: Exceptions in Constructors"
 title: "Exceptions: Exceptions in Constructors"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["constructors [MFC], exceptions", "throwing exceptions [MFC], in constructors", "exceptions [MFC], in constructors"]
-ms.assetid: a78eae5a-5821-4b27-9478-1436320ed1e1
 ---
 # Exceptions: Exceptions in Constructors
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 When throwing an exception in a constructor, clean up whatever objects and memory allocations you have made prior to throwing the exception, as explained in [Exceptions: Throwing Exceptions from Your Own Functions](exceptions-throwing-exceptions-from-your-own-functions.md).
 

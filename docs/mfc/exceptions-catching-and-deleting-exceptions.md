@@ -3,9 +3,11 @@ description: "Learn more about: Exceptions: Catching and Deleting Exceptions"
 title: "Exceptions: Catching and Deleting Exceptions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exceptions [MFC], deleting", "AND_CATCH macro [MFC]", "try-catch exception handling [MFC], catching and deleting exceptions", "exception handling [MFC], catching and deleting exceptions", "catch blocks [MFC], catching and deleting exceptions", "execution [MFC], returns from within catch block"]
-ms.assetid: 7c233ff0-89de-4de0-a68a-9e9cdb164311
 ---
 # Exceptions: Catching and Deleting Exceptions
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following instructions and examples show you how to catch and delete exceptions. For more information on the **`try`**, **`catch`**, and **`throw`** keywords, see [Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md).
 

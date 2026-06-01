@@ -3,9 +3,11 @@ description: "Learn more about: General Class Design Philosophy"
 title: "General Class Design Philosophy"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["designing classes [MFC]", "MFC, Windows API", "Visual C, Windows API calls", "classes [MFC], MFC class design", "Windows API [MFC], and MFC"]
-ms.assetid: e6861ae0-1581-4d9c-9ddf-63f9afcdb913
 ---
 # General Class Design Philosophy
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Microsoft Windows was designed long before the C++ language became popular. Because thousands of applications use the C-language Windows application programming interface (API), that interface will be maintained for the foreseeable future. Any C++ Windows interface must therefore be built on top of the procedural C-language API. This guarantees that C++ applications will be able to coexist with C applications.
 

@@ -3,9 +3,10 @@ description: "Learn more about: ATL Collection and Enumerator Classes"
 title: "ATL Collection and Enumerator Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["enumerators, ATL classes", "collection classes, ATL"]
-ms.assetid: 6818db73-7094-48d8-a0ca-18147beec362
 ---
 # ATL Collection and Enumerator Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 ATL provides the following classes to help you implement collections and enumerators.
 

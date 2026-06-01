@@ -3,9 +3,11 @@ description: "Learn more about: Array, List, and Map Classes"
 title: "Array, List, and Map Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["arrays [MFC], classes", "list classes [MFC]", "collection classes [MFC], maps", "map classes [MFC]", "collection classes [MFC], lists"]
-ms.assetid: 81a13a7f-0c2c-4efd-b6bb-b4e624a0743d
 ---
 # Array, List, and Map Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 For handling aggregates of data, the class library provides a group of collection classes — arrays, lists, and maps — that can hold a variety of object and predefined types. The collections are dynamically sized. These classes can be used in any program, whether written for Windows or not. However, they are most useful for implementing the data structures that define your document classes in the application framework. You can readily derive specialized collection classes from these, or you can create them based on the template classes. For more information about these approaches, see the article [Collections](collections.md). For a list of the template collection classes, see the article [Template Classes for Arrays, Lists, and Maps](template-classes-for-arrays-lists-and-maps.md).
 

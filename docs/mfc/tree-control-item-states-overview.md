@@ -3,10 +3,12 @@ description: "Learn more about: Tree Control Item States Overview"
 title: "Tree Control Item States Overview"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["states, CTreeCtrl items", "tree controls [MFC], item states overview", "CTreeCtrl class [MFC], item states"]
-ms.assetid: 2db11ae0-0d87-499d-8c1f-5e0dbe9e94c8
 ms.topic: concept-article
 ---
 # Tree Control Item States Overview
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Each item in a tree control ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) has a current state. For example, an item can be selected, disabled, expanded, and so on. For the most part, the tree control automatically sets an item's state to reflect user actions, such as selection of an item. However, you can also set an item's state by using the [SetItemState](../mfc/reference/ctreectrl-class.md#setitemstate) member function and retrieve the current state of an item by using the [GetItemState](../mfc/reference/ctreectrl-class.md#getitemstate) member function. For a complete list of item states, see [Tree-View Control Constants](/windows/win32/Controls/tree-view-control-item-states) in the Windows SDK.
 

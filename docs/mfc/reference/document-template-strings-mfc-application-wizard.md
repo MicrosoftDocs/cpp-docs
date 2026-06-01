@@ -4,9 +4,11 @@ title: "Document Template Strings, MFC Application Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.exe.doctemp"]
 helpviewer_keywords: ["MFC Application Wizard, document template strings"]
-ms.assetid: 8109f662-3182-4682-977a-2503321c678a
 ---
 # Document Template Strings, MFC Application Wizard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 In this page of the MFC Application Wizard, provide or refine the following options to help with document management and localization. Document template strings are available for applications that include **Document/view architecture support** in the [Application Type](../../mfc/reference/application-type-mfc-application-wizard.md). They are not available for dialog boxes. Because most document template strings are visible and used by the application's users, they are localized into the **Resource language** indicated in the **Application Type** page of the wizard.
 

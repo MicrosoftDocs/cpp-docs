@@ -4,10 +4,12 @@ title: "Handling Customization Notifications"
 ms.date: "11/04/2016"
 f1_keywords: ["TBN_CUSTHELP", "TBN_QUERYINSERT", "TBNOTIFY", "NMHDR", "TBN_TOOLBARCHANGE", "TBN_ENDDRAG", "NM_SETFOCUS", "TBN_RESET", "NM_RETURN", "NM_ENDWAIT", "NM_STARTWAIT", "TBN_BEGINDRAG", "NM_OUTOFMEMORY", "TBN_QUERYDELETE", "NM_DBLCLK", "TBN_ENDADJUST", "NM_KILLFOCUS", "NM_RCLICK", "TBN_BEGINADJUST", "NM_CLICK"]
 helpviewer_keywords: ["TBN_ENDADJUST notification [MFC]", "TBNOTIFY notification [MFC]", "TBN_BEGINDRAG notification [MFC]", "TBN_TOOLBARCHANGE notification [MFC]", "NM_CLICK notification [MFC]", "NM_RETURN notification [MFC]", "NM_RCLICK notification [MFC]", "TBN_ENDDRAG notification [MFC]", "TBN_BEGINADJUST notification [MFC]", "NM_ENDWAIT notification [MFC]", "NM_KILLFOCUS notification [MFC]", "NM_SETFOCUS notification [MFC]", "NM_OUTOFMEMORY notification [MFC]", "TBN_QUERYINSERT notification [MFC]", "NMHDR [MFC]", "NM_STARTWAIT notification [MFC]", "CToolBarCtrl class [MFC], handling notifications", "TBN_CUSTHELP notification [MFC]", "TBN_RESET notification [MFC]", "NM_DBLCLK notification [MFC]", "TBN_QUERYDELETE notification [MFC]", "NM_RDBLCLK notification [MFC]", "TBN_GETBUTTONINFO notification [MFC]"]
-ms.assetid: 219ea08e-7515-4b98-85cb-47120f08c0a2
 ms.topic: concept-article
 ---
 # Handling Customization Notifications
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A Windows toolbar common control has built-in customization features, including a system-defined customization dialog box, which allow the user to insert, delete, or rearrange toolbar buttons. The application determines whether the customization features are available and controls the extent to which the user can customize the toolbar.
 

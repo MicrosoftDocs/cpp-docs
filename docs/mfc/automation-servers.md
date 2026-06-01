@@ -3,9 +3,11 @@ description: "Learn more about: Automation Servers"
 title: "Automation Servers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Automation servers", "COM components, Automation servers", "dispatch maps [MFC], Automation servers", "servers, Automation"]
-ms.assetid: 523fd155-51ce-4f91-b986-b74bdbdd7d92
 ---
 # Automation Servers
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Automation makes it possible for your application to manipulate objects implemented in another application, or to expose objects so they can be manipulated. An Automation server is an application that exposes programmable objects (called Automation objects) to other applications (called [Automation clients](automation-clients.md)). Automation servers are sometimes called Automation components.
 

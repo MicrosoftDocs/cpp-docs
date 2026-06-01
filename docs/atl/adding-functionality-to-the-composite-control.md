@@ -3,10 +3,11 @@ description: "Learn more about: Adding Functionality to the Composite Control"
 title: "Adding Functionality to the Composite Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["event handlers [C++], ActiveX controls", "composite controls, handling events", "ActiveX controls [C++], events"]
-ms.assetid: 98f85681-9564-480d-af38-03f9733fe58b
 ms.topic: concept-article
 ---
 # Adding Functionality to the Composite Control
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 Once you have inserted any necessary controls into the composite control, the next step involves adding new functionality. This new functionality usually falls into two categories:
 

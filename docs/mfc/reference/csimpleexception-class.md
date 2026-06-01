@@ -4,9 +4,11 @@ title: "CSimpleException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSimpleException", "AFX/CSimpleException", "AFX/CSimpleException::CSimpleException", "AFX/CSimpleException::GetErrorMessage"]
 helpviewer_keywords: ["CSimpleException [MFC], CSimpleException", "CSimpleException [MFC], GetErrorMessage"]
-ms.assetid: be0eb8ef-e5b9-47d6-b0fb-efaff2d1e666
 ---
 # CSimpleException Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This class is a base class for resource-critical MFC exceptions.
 

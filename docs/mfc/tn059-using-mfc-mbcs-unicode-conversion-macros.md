@@ -3,9 +3,11 @@ description: "Learn more about: TN059: Using MFC MBCS/Unicode Conversion Macros"
 title: "TN059: Using MFC MBCS-Unicode Conversion Macros"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFCANS32.DLL", "Unicode [MFC], conversion macros", "Unicode [MFC], OLE interfaces", "conversion macros [MFC]", "converting Unicode", "MBCS [MFC], conversion macros", "macros [MFC], MBCS conversion macros", "TN059"]
-ms.assetid: a2aab748-94d0-4e2f-8447-3bd07112a705
 ---
 # TN059: Using MFC MBCS/Unicode Conversion Macros
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

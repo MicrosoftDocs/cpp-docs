@@ -4,9 +4,11 @@ title: "Database Macros and Globals"
 ms.date: "11/04/2016"
 f1_keywords: ["AFXDB/AFX_ODBC_CALL", "AFXDB/AFX_SQL_ASYNC", "AFXDB/AFX_SQL_SYNC", "AFXDB/AfxGetHENV"]
 helpviewer_keywords: ["global database functions [MFC]", "database macros [MFC]", "database globals [MFC]", "global functions [MFC], database functions", "macros [MFC], MFC database"]
-ms.assetid: 5b9b9e61-1cf9-4345-9f29-3807dd466488
 ---
 # Database Macros and Globals
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The macros and globals listed below apply to ODBC-based database applications. They are not used with DAO-based applications.
 

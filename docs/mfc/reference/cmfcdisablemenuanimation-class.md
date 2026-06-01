@@ -4,9 +4,11 @@ title: "CMFCDisableMenuAnimation Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCDisableMenuAnimation", "AFXPOPUPMENU/CMFCDisableMenuAnimation", "AFXPOPUPMENU/CMFCDisableMenuAnimation::Restore"]
 helpviewer_keywords: ["CMFCDisableMenuAnimation [MFC], Restore"]
-ms.assetid: c6eb07da-c382-43d6-8028-007f2320e50e
 ---
 # CMFCDisableMenuAnimation Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Disables pop-up menu animation.
 

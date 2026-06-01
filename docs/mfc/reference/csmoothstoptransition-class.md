@@ -4,9 +4,11 @@ title: "CSmoothStopTransition Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSmoothStopTransition", "AFXANIMATIONCONTROLLER/CSmoothStopTransition", "AFXANIMATIONCONTROLLER/CSmoothStopTransition::CSmoothStopTransition", "AFXANIMATIONCONTROLLER/CSmoothStopTransition::Create", "AFXANIMATIONCONTROLLER/CSmoothStopTransition::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CSmoothStopTransition::m_maximumDuration"]
 helpviewer_keywords: ["CSmoothStopTransition [MFC], CSmoothStopTransition", "CSmoothStopTransition [MFC], Create", "CSmoothStopTransition [MFC], m_dblFinalValue", "CSmoothStopTransition [MFC], m_maximumDuration"]
-ms.assetid: e1a4b476-6f96-43dd-90db-870a64406b85
 ---
 # CSmoothStopTransition Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Encapsulates a smooth-stop transition.
 

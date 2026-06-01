@@ -4,9 +4,11 @@ title: "CMFCDropDownToolBar Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CMFCDropDownToolBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::AllowShowOnPaneMenu", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::LoadBitmap", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::LoadToolBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnLButtonUp", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnMouseMove", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnSendCommand", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnUpdateCmdUI"]
 helpviewer_keywords: ["CMFCDropDownToolBar [MFC], AllowShowOnPaneMenu", "CMFCDropDownToolBar [MFC], LoadBitmap", "CMFCDropDownToolBar [MFC], LoadToolBar", "CMFCDropDownToolBar [MFC], OnLButtonUp", "CMFCDropDownToolBar [MFC], OnMouseMove", "CMFCDropDownToolBar [MFC], OnSendCommand", "CMFCDropDownToolBar [MFC], OnUpdateCmdUI"]
-ms.assetid: 78818ec5-83ce-42fa-a0d4-2d9d5ecc8770
 ---
 # CMFCDropDownToolBar Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A toolbar that appears when the user presses and holds a top-level toolbar button.
 

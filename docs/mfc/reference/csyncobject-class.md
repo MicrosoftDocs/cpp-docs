@@ -4,9 +4,11 @@ title: "CSyncObject Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSyncObject", "AFXMT/CSyncObject", "AFXMT/CSyncObject::CSyncObject", "AFXMT/CSyncObject::Lock", "AFXMT/CSyncObject::Unlock", "AFXMT/CSyncObject::m_hObject"]
 helpviewer_keywords: ["CSyncObject [MFC], CSyncObject", "CSyncObject [MFC], Lock", "CSyncObject [MFC], Unlock", "CSyncObject [MFC], m_hObject"]
-ms.assetid: c62ea6eb-a17b-4e01-aed4-321fc435a5f4
 ---
 # CSyncObject Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A pure virtual class that provides functionality common to the synchronization objects in Win32.
 

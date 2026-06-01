@@ -3,9 +3,10 @@ description: "Learn more about: ATL Connection Points"
 title: "ATL Connection Points"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["connections, connection points", "ATL, connection points", "connection points [C++], about connection points"]
-ms.assetid: 17d76165-5f83-4f95-b36d-483821c247a1
 ---
 # ATL Connection Points
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 A connectable object is one that supports outgoing interfaces. An outgoing interface allows the object to communicate with a client. For each outgoing interface, the connectable object exposes a connection point. Each outgoing interface is implemented by a client on an object called a sink.
 

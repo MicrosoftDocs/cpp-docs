@@ -3,9 +3,11 @@ description: "Learn more about: Root Class: CObject"
 title: "Root Class: CObject"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["base classes [MFC], MFC objects", "classes [MFC], MFC base class [MFC]", "root class [MFC]", "MFC, base class"]
-ms.assetid: 593706f3-e9e5-435f-815d-e7b5176b2a61
 ---
 # Root Class: CObject
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Most of the classes in the Microsoft Foundation Class (MFC) Library are derived from a single base class at the root of the class hierarchy. `CObject` provides a number of useful capabilities to all classes derived from it, with very low overhead. For more information about `CObject` and its capabilities, see [Using CObject](../mfc/using-cobject.md).
 

@@ -4,9 +4,11 @@ title: "CDataPathProperty Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDataPathProperty", "AFXCTL/CDataPathProperty", "AFXCTL/CDataPathProperty::CDataPathProperty", "AFXCTL/CDataPathProperty::GetControl", "AFXCTL/CDataPathProperty::GetPath", "AFXCTL/CDataPathProperty::Open", "AFXCTL/CDataPathProperty::ResetData", "AFXCTL/CDataPathProperty::SetControl", "AFXCTL/CDataPathProperty::SetPath"]
 helpviewer_keywords: ["CDataPathProperty [MFC], CDataPathProperty", "CDataPathProperty [MFC], GetControl", "CDataPathProperty [MFC], GetPath", "CDataPathProperty [MFC], Open", "CDataPathProperty [MFC], ResetData", "CDataPathProperty [MFC], SetControl", "CDataPathProperty [MFC], SetPath"]
-ms.assetid: 1f96efdb-54e4-460b-862c-eba5d4103488
 ---
 # CDataPathProperty Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements an OLE control property that can be loaded asynchronously.
 

@@ -3,9 +3,11 @@ description: "Learn more about: Document Template Creation"
 title: "Document Template Creation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["document templates [MFC]", "constructors [MFC], document template", "document templates [MFC], creating", "MFC, document templates", "templates [MFC], document templates"]
-ms.assetid: c87f1821-7cbf-442e-9690-f126ae7fb783
 ---
 # Document Template Creation
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 When creating a new document in response to a **New** or **Open** command from the **File** menu, the document template also creates a new frame window through which to view the document.
 

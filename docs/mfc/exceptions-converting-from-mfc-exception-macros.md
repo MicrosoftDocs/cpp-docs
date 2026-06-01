@@ -3,9 +3,11 @@ description: "Learn more about: Exceptions: Converting from MFC Exception Macros
 title: "Exceptions: Converting from MFC Exception Macros"
 ms.date: "08/27/2018"
 helpviewer_keywords: ["converting exceptions [MFC]", "exception objects [MFC]", "conversions [MFC], code written with MFC macros", "keywords [MFC], macros", "macrosv, C++ keywords", "exception objects [MFC], deleting", "CException class [MFC], deleting CException class objects", "exceptions [MFC], converting", "exceptions [MFC], deleting exception objects", "catch blocks [MFC], delimiting", "exception handling [MFC], converting exceptions"]
-ms.assetid: bd3ac3b3-f3ce-4fdd-a168-a2cff13ed796
 ---
 # Exceptions: Converting from MFC Exception Macros
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This is an advanced topic.
 

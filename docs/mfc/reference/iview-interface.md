@@ -4,9 +4,11 @@ title: "IView Interface"
 ms.date: "11/04/2016"
 f1_keywords: ["IView", "AFXWINFORMS/IView", "AFXWINFORMS/IView::OnActivateView", "AFXWINFORMS/IView::OnInitialUpdate", "AFXWINFORMS/IView::OnUpdate"]
 helpviewer_keywords: ["views [MFC]", "IView class [MFC]", "views [MFC], classes"]
-ms.assetid: 9321f299-486e-4551-bee9-d2c4a7b91548
 ---
 # IView Interface
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements several methods that [CWinFormsView](../../mfc/reference/cwinformsview-class.md) uses to send view notifications to a managed control.
 

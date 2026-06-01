@@ -3,9 +3,11 @@ description: "Learn more about: Automation Servers: Object-Lifetime Issues"
 title: "Automation Servers: Object-Lifetime Issues"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["objects [MFC], lifetime", "lifetime, automation server", "Automation servers, object lifetime", "servers, lifetime of Automation"]
-ms.assetid: 342baacf-4015-4a0e-be2f-321424f1cb43
 ---
 # Automation Servers: Object-Lifetime Issues
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 When an Automation client creates or activates an OLE item, the server passes the client a pointer to that object. The client establishes a reference to the object through a call to the OLE function [IUnknown::AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref). This reference is in effect until the client calls [IUnknown::Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release). (Client applications written with the Microsoft Foundation Class Library's OLE classes need not make these calls; the framework does so.) The OLE system and the server itself may establish references to the object. A server should not destroy an object as long as external references to the object remain in effect.
 

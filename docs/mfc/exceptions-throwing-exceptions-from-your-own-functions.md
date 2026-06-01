@@ -3,9 +3,11 @@ description: "Learn more about: Exceptions: Throwing Exceptions from Your Own Fu
 title: "Exceptions: Throwing Exceptions from Your Own Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["throwing exceptions [MFC], from functions", "functions [MFC], throwing exceptions", "exceptions [MFC], throwing"]
-ms.assetid: 492976e8-8804-4234-8e8f-30dffd0501be
 ---
 # Exceptions: Throwing Exceptions from Your Own Functions
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 It is possible to use the MFC exception-handling paradigm solely to catch exceptions thrown by functions in MFC or other libraries. In addition to catching exceptions thrown by library code, you can throw exceptions from your own code if you are writing functions that can encounter exceptional conditions.
 

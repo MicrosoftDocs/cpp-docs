@@ -4,9 +4,10 @@ title: "IPerPropertyBrowsingImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IPerPropertyBrowsingImpl", "ATLCTL/ATL::IPerPropertyBrowsingImpl", "ATLCTL/ATL::IPerPropertyBrowsingImpl::GetDisplayString", "ATLCTL/ATL::IPerPropertyBrowsingImpl::GetPredefinedStrings", "ATLCTL/ATL::IPerPropertyBrowsingImpl::GetPredefinedValue", "ATLCTL/ATL::IPerPropertyBrowsingImpl::MapPropertyToPage"]
 helpviewer_keywords: ["IPerPropertyBrowsingImpl class", "property pages, accessing information", "IPerPropertyBrowsing, ATL implementation"]
-ms.assetid: 0b1a9be3-d242-4767-be69-663a21e4b728
 ---
 # IPerPropertyBrowsingImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements `IUnknown` and allows a client to access the information in an object's property pages.
 

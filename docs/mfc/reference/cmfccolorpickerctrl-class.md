@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMFCColorPickerCtrl [MFC], CMFCColorPickerCtrl", "CMFCCol
 ---
 # CMFCColorPickerCtrl Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The `CMFCColorPickerCtrl` class provides functionality for a control that is used to select colors.
 
 ## Syntax

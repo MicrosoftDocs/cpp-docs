@@ -4,9 +4,11 @@ title: "CFieldExchange Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CFieldExchange", "AFXDB/CFieldExchange", "AFXDB/CFieldExchange::IsFieldType", "AFXDB/CFieldExchange::SetFieldType"]
 helpviewer_keywords: ["CFieldExchange [MFC], IsFieldType", "CFieldExchange [MFC], SetFieldType"]
-ms.assetid: 24c5c0b3-06a6-430e-9b6f-005a2c65e29f
 ---
 # CFieldExchange Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Supports the record field exchange (RFX) and bulk record field exchange (Bulk RFX) routines used by the database classes.
 

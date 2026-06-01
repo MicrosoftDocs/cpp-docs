@@ -7,6 +7,9 @@ helpviewer_keywords: ["CStringList [MFC], CStringList", "CStringList [MFC], AddH
 ---
 # `CStringList` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Supports lists of `CString` objects.
 
 ## Syntax

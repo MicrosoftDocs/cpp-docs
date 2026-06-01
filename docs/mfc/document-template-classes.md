@@ -3,9 +3,11 @@ description: "Learn more about: Document-Template Classes"
 title: "Document-Template Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["document templates [MFC], classes"]
-ms.assetid: 901749e9-8048-44a0-b5e2-361554650a73
 ---
 # Document-Template Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Document-template objects coordinate the creation of document, view, and frame window objects when a new document or view is created.
 

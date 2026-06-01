@@ -3,9 +3,11 @@ description: "Learn more about: Device Contexts"
 title: "Device Contexts"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OnPrepareDC method [MFC]", "windows [MFC], and device context", "drawing [MFC], device context", "CClientDC class [MFC], and GetDC method [MFC]", "drawing [MFC], in mouse and device contexts", "CDC class [MFC], objects", "device contexts [MFC]", "client areas", "CMetaFileDC class [MFC], and OnPrepareDC method [MFC]", "GDI objects [MFC], device contexts", "graphic objects [MFC], device contexts", "frame windows [MFC], device contexts", "metafiles and device contexts", "EndPaint method [MFC]", "printers [MFC], device contexts", "mouse [MFC], drawing and device contexts", "BeginPaint method, CPaintDC", "CPaintDC class [MFC], device context for painting", "windows [MFC], drawing directly into", "client areas, and device context", "device contexts [MFC], CDC class [MFC]", "user interface [MFC], device contexts", "device-independent drawing", "GetDC method and CClientDC class [MFC]", "CClientDC class [MFC], and ReleaseDC method [MFC]", "ReleaseDC method [MFC]", "device contexts [MFC], about device contexts", "drawing [MFC], directly into windows", "painting and device context"]
-ms.assetid: d0cd51f1-f778-4c7e-bf50-d738d10433c7
 ---
 # Device Contexts
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A device context is a Windows data structure containing information about the drawing attributes of a device such as a display or a printer. All drawing calls are made through a device-context object, which encapsulates the Windows APIs for drawing lines, shapes, and text. Device contexts allow device-independent drawing in Windows. Device contexts can be used to draw to the screen, to the printer, or to a metafile.
 

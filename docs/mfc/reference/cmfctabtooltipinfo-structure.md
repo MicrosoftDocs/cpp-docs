@@ -4,9 +4,11 @@ title: "CMFCTabToolTipInfo Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCTabToolTipInfo"]
 helpviewer_keywords: ["CMFCTabToolTipInfo struct"]
-ms.assetid: 9c3b3fb9-1497-4d59-932b-0da9348dd5e2
 ---
 # CMFCTabToolTipInfo Structure
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This structure provides information about the MDI tab that the user is hovering over.
 

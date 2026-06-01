@@ -3,9 +3,11 @@ description: "Learn more about: CWinApp and the MFC Application Wizard"
 title: "CWinApp and the MFC Application Wizard"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["application wizards [MFC], and CWinApp", "CWinApp class [MFC], and MFC Application Wizard", "MFC, wizards"]
-ms.assetid: f8ac0491-3302-4e46-981d-0790624eb8a2
 ---
 # CWinApp and the MFC Application Wizard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 When it creates a skeleton application, the MFC Application Wizard declares an application class derived from [CWinApp](reference/cwinapp-class.md). The MFC Application Wizard also generates an implementation file that contains the following items:
 

@@ -3,9 +3,11 @@ description: "Learn more about: Internet URL Parsing Globals and Helpers"
 title: "Internet URL Parsing Globals and Helpers"
 ms.date: "04/03/2017"
 helpviewer_keywords: ["parsing, URLs", "URLs, parsing"]
-ms.assetid: 46c6384f-e4a6-4dbd-9196-219c19040ec5
 ---
 # Internet URL Parsing Globals and Helpers
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 When a client sends a query to the Internet server, you can use one of the URL parsing globals to extract information about the client. The helper functions provide other internet functionality.
 

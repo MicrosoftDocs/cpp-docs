@@ -4,9 +4,11 @@ title: "Application Settings, MFC ActiveX Control Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.ctl.appset"]
 helpviewer_keywords: ["MFC ActiveX Control Wizard, application settings"]
-ms.assetid: 48475194-cc63-467f-8499-f142269a4c1c
 ---
 # Application Settings, MFC ActiveX Control Wizard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Use this page of the MFC ActiveX Control Wizard to design and add basic features to a new MFC ActiveX project. These settings apply to the application itself and not to any specific feature or element of the control.
 

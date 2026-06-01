@@ -3,9 +3,11 @@ description: "Learn more about: Dialog boxes in OLE"
 title: "Dialog boxes in OLE"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC dialog boxes [MFC], OLE dialog boxes", "OLE dialog boxes", "dialog boxes", "OLE dialog boxes [MFC], about OLE dialog boxes", "dialog boxes [MFC], about dialog boxes", "dialog boxes [MFC], OLE", "Insert object"]
-ms.assetid: 73c41eb8-738a-4d02-9212-d3395bb09a3a
 ---
 # Dialog boxes in OLE
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 While a user runs an OLE-enabled application, there are times when the application needs information from the user to carry out the operation. The MFC OLE classes provide default dialog boxes to gather the required information. This article lists the tasks handled by the OLE dialog boxes and the classes needed to display those dialog boxes. For details on OLE dialog boxes and the structures used to customize their behavior, see [MFC Reference](mfc-desktop-applications.md).
 

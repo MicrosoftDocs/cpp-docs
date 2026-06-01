@@ -7,6 +7,9 @@ helpviewer_keywords: ["DAO (Data Access Objects), Indexes collection", "CDaoInde
 ---
 # CDaoIndexInfo Structure
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The `CDaoIndexInfo` structure contains information about an index object defined for data access objects (DAO).
 
 > [!NOTE]

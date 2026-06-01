@@ -7,6 +7,9 @@ helpviewer_keywords: ["CPen [MFC], CPen", "CPen [MFC], CreatePen", "CPen [MFC], 
 ---
 # `CPen` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Encapsulates a Windows graphics device interface (GDI) pen.
 
 ## Syntax

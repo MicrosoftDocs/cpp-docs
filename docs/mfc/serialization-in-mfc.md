@@ -3,9 +3,11 @@ description: "Learn more about: Serialization in MFC"
 title: "Serialization in MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["collection classes [MFC], serialization", "bypassing serialization [MFC]", "MFC, serialization", "serialization [MFC], MFC", "serialization [MFC], bypassing"]
-ms.assetid: fb596a18-4522-47e0-96e0-192732d24c12
 ---
 # Serialization in MFC
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains the serialization mechanism provided in the Microsoft Foundation Class Library (MFC) to allow objects to persist between runs of your program.
 

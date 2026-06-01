@@ -4,9 +4,10 @@ title: "CHeapPtrElementTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CHeapPtrElementTraits", "ATLCOLL/ATL::CHeapPtrElementTraits", "ATLCOLL/ATL::CHeapPtrElementTraits::INARGTYPE", "ATLCOLL/ATL::CHeapPtrElementTraits::OUTARGTYPE"]
 helpviewer_keywords: ["CHeapPtrElementTraits class"]
-ms.assetid: 910e0e06-3c8b-4242-bf00-b57eb74fbc77
 ---
 # CHeapPtrElementTraits Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods, static functions, and typedefs useful when creating collections of heap pointers.
 

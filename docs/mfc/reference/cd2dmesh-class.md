@@ -4,9 +4,11 @@ title: "CD2DMesh Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CD2DMesh", "AFXRENDERTARGET/CD2DMesh", "AFXRENDERTARGET/CD2DMesh::CD2DMesh", "AFXRENDERTARGET/CD2DMesh::Attach", "AFXRENDERTARGET/CD2DMesh::Create", "AFXRENDERTARGET/CD2DMesh::Destroy", "AFXRENDERTARGET/CD2DMesh::Detach", "AFXRENDERTARGET/CD2DMesh::Get", "AFXRENDERTARGET/CD2DMesh::IsValid", "AFXRENDERTARGET/CD2DMesh::Open", "AFXRENDERTARGET/CD2DMesh::m_pMesh"]
 helpviewer_keywords: ["CD2DMesh [MFC], CD2DMesh", "CD2DMesh [MFC], Attach", "CD2DMesh [MFC], Create", "CD2DMesh [MFC], Destroy", "CD2DMesh [MFC], Detach", "CD2DMesh [MFC], Get", "CD2DMesh [MFC], IsValid", "CD2DMesh [MFC], Open", "CD2DMesh [MFC], m_pMesh"]
-ms.assetid: 11a2c78a-1367-40e8-a34f-44aa0509a4c9
 ---
 # CD2DMesh Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A wrapper for ID2D1Mesh.
 

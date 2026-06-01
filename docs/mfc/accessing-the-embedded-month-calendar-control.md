@@ -3,10 +3,12 @@ description: "Learn more about: Accessing the Embedded Month Calendar Control"
 title: "Accessing the Embedded Month Calendar Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DateTimePicker control [MFC], accessing month calendar", "CDateTimeCtrl class [MFC], accessing embedded control", "month calendar controls [MFC], embedded in date/time picker", "CMonthCalCtrl class [MFC], changing the font", "month calendar controls [MFC], changing the font", "DateTimePicker control [MFC]"]
-ms.assetid: 355e97ed-cf81-4df3-a2f8-9ddbbde93227
 ms.topic: concept-article
 ---
 # Accessing the Embedded Month Calendar Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The embedded month calendar control object can be accessed from the `CDateTimeCtrl` object with a call to the [GetMonthCalCtrl](reference/cdatetimectrl-class.md#getmonthcalctrl) member function.
 

@@ -3,9 +3,11 @@ description: "Learn more about: Serialization: Serializing an Object"
 title: "Serialization: Serializing an Object"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["serializing objects [MFC]", "serialization [MFC], objects", "objects [MFC], serializing"]
-ms.assetid: 1db772b1-ad55-4fcf-b133-126cca082510
 ---
 # Serialization: Serializing an Object
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The article [Serialization: Making a Serializable Class](../mfc/serialization-making-a-serializable-class.md) shows how to make a class serializable. Once you have a serializable class, you can serialize objects of that class to and from a file via a [CArchive](../mfc/reference/carchive-class.md) object. This article explains:
 

@@ -3,9 +3,11 @@ description: "Learn more about: Handlers for Commands and Control Notifications"
 title: "Handlers for Commands and Control Notifications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["commands [MFC], handlers for", "functions [MFC], handler", "handlers [MFC]", "controls [MFC], notifications", "handlers [MFC], control notification [MFC]", "notifications [MFC], handlers for control", "handlers [MFC], command"]
-ms.assetid: 20f57f4a-f577-4c09-80a2-43faf32a1c2e
 ---
 # Handlers for Commands and Control Notifications
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 There are no default handlers for commands or control-notification messages. Therefore, you are bound only by convention in naming your handlers for these categories of messages. When you map the command or control notification to a handler, the [Class Wizard](reference/mfc-class-wizard.md) proposes a name based on the command ID or control-notification code. You can accept the proposed name, change it, or replace it.
 

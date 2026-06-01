@@ -7,6 +7,9 @@ helpviewer_keywords: ["COleServerDoc [MFC], COleServerDoc", "COleServerDoc [MFC]
 ---
 # COleServerDoc Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The base class for OLE server documents.
 
 ## Syntax

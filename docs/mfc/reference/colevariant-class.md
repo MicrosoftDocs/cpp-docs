@@ -7,6 +7,9 @@ helpviewer_keywords: ["COleVariant [MFC], COleVariant", "COleVariant [MFC], Atta
 ---
 # COleVariant Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Encapsulates the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) data type.
 
 ## Syntax

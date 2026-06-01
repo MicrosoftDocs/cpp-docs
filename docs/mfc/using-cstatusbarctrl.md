@@ -3,10 +3,12 @@ description: "Learn more about: Using CStatusBarCtrl"
 title: "Using CStatusBarCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CStatusBarCtrl class [MFC], using", "status bar controls [MFC], about status bar controls"]
-ms.assetid: 08b39f83-580d-439a-b93e-7ef9e2a5702a
 ms.topic: concept-article
 ---
 # Using CStatusBarCtrl
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 You can use the status bar control ([CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md)) to create a control window that reflects various kinds of status information about the application. The status window can be divided into parts that display more than one type of information.
 

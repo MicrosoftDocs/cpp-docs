@@ -3,10 +3,12 @@ description: "Learn more about: Creating an Active Document Container Applicatio
 title: "Creating an Active Document Container Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["active documents [MFC], containers", "containers [MFC], active document", "active document containers [MFC], creating", "MFC COM, active document containment", "applications [MFC], active document container"]
-ms.assetid: 14e2d022-a6c5-4249-8712-706b0f4433f7
 ms.topic: how-to
 ---
 # Creating an Active Document Container Application
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The simplest and most recommended way to create an active document container application is to create an MFC EXE container application using the MFC Application Wizard, then modify the application to support active document containment.
 

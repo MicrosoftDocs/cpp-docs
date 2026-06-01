@@ -4,9 +4,11 @@ title: "CJumpList Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CJumpList", "AFXADV/CJumpList", "AFXADV/CJumpList::CJumpList", "AFXADV/CJumpList::AbortList", "AFXADV/CJumpList::AddDestination", "AFXADV/CJumpList::AddKnownCategory", "AFXADV/CJumpList::AddTask", "AFXADV/CJumpList::AddTasks", "AFXADV/CJumpList::AddTaskSeparator", "AFXADV/CJumpList::ClearAll", "AFXADV/CJumpList::ClearAllDestinations", "AFXADV/CJumpList::CommitList", "AFXADV/CJumpList::GetDestinationList", "AFXADV/CJumpList::GetMaxSlots", "AFXADV/CJumpList::GetRemovedItems", "AFXADV/CJumpList::InitializeList", "AFXADV/CJumpList::SetAppID"]
 helpviewer_keywords: ["CJumpList [MFC], CJumpList", "CJumpList [MFC], AbortList", "CJumpList [MFC], AddDestination", "CJumpList [MFC], AddKnownCategory", "CJumpList [MFC], AddTask", "CJumpList [MFC], AddTasks", "CJumpList [MFC], AddTaskSeparator", "CJumpList [MFC], ClearAll", "CJumpList [MFC], ClearAllDestinations", "CJumpList [MFC], CommitList", "CJumpList [MFC], GetDestinationList", "CJumpList [MFC], GetMaxSlots", "CJumpList [MFC], GetRemovedItems", "CJumpList [MFC], InitializeList", "CJumpList [MFC], SetAppID"]
-ms.assetid: d364d27e-f512-4b12-9872-c2a17c78ab1f
 ---
 # CJumpList Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A `CJumpList` is the list of shortcuts revealed when you right-click on an icon in the task bar.
 

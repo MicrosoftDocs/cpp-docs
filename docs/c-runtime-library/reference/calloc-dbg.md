@@ -68,9 +68,9 @@ For information about how memory blocks are allocated, initialized, and managed 
 
 ## Requirements
 
-| Routine | Required header |
-|---|---|
-| **`_calloc_dbg`** | \<crtdbg.h> |
+| Routine | Required header | Required library |
+|---|---|---|
+| **`_calloc_dbg`** | `<crtdbg.h>` | The debug C Runtime Library (for example, `ucrtd.lib`). Only available in debug builds. For information about Microsoft C runtime library `.lib` files, see [CRT library features](../crt-library-features.md). |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

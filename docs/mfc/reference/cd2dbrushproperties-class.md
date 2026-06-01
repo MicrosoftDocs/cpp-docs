@@ -4,9 +4,11 @@ title: "CD2DBrushProperties Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CD2DBrushProperties", "AFXRENDERTARGET/CD2DBrushProperties", "AFXRENDERTARGET/CD2DBrushProperties::CD2DBrushProperties", "AFXRENDERTARGET/CD2DBrushProperties::CommonInit"]
 helpviewer_keywords: ["CD2DBrushProperties [MFC], CD2DBrushProperties", "CD2DBrushProperties [MFC], CommonInit"]
-ms.assetid: c77d717f-0a16-4d74-b2ce-0ae1766ed6f9
 ---
 # CD2DBrushProperties Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A wrapper for `D2D1_BRUSH_PROPERTIES`.
 

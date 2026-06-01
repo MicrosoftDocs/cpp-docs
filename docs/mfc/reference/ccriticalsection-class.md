@@ -7,6 +7,9 @@ helpviewer_keywords: ["CCriticalSection [MFC], CCriticalSection", "CCriticalSect
 ---
 # `CCriticalSection` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Represents a "critical section" — a synchronization object that allows one thread at a time to access a resource or section of code.
 
 ## Syntax

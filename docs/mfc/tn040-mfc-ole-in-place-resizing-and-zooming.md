@@ -3,9 +3,11 @@ description: "Learn more about: TN040: MFC/OLE In-Place Resizing and Zooming"
 title: "TN040: MFC-OLE In-Place Resizing and Zooming"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["resizing in-place", "TN040", "zooming and in-place activation", "in-place activation, zooming and resizing"]
-ms.assetid: 4d7859bd-0b2e-4254-be62-2735cecf02c6
 ---
 # TN040: MFC/OLE In-Place Resizing and Zooming
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

@@ -3,9 +3,11 @@ description: "Learn more about: Containers: Compound Files"
 title: "Containers: Compound Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["compound files [MFC]", "compound documents", "containers [MFC], compound files", "OLE documents [MFC], compound files", "performance [MFC], compound files", "files [MFC], compound", "standardized file structure compound files", "documents [MFC], compound", "documents [MFC], OLE", "OLE containers [MFC], compound files", "access modes for files [MFC]"]
-ms.assetid: 8b83cb3e-76c8-4bbe-ba16-737092b36f49
 ---
 # Containers: Compound Files
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains the components and implementation of compound files and the advantages and disadvantages of using compound files in your OLE applications.
 

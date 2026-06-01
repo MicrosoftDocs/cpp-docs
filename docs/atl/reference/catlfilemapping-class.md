@@ -4,9 +4,10 @@ title: "CAtlFileMapping Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAtlFileMapping", "atlfile/ATL::CAtlFileMapping"]
 helpviewer_keywords: ["CAtlFileMapping class"]
-ms.assetid: 899fc058-e05e-48b5-aca9-340403bb9e26
 ---
 # CAtlFileMapping Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class represents a memory-mapped file, adding a cast operator to the methods of [CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md).
 

@@ -4,9 +4,10 @@ title: "CStrBufT Class"
 ms.date: "10/18/2018"
 f1_keywords: ["CStrBufT", "ATLSIMPSTR/ATL::CStrBufT", "ATLSIMPSTR/ATL::CStrBufT::CStrBufT", "ATLSIMPSTR/ATL::CStrBufT::SetLength", "ATLSIMPSTR/ATL::CStrBufT::AUTO_LENGTH", "ATLSIMPSTR/ATL::CStrBufT::SET_LENGTH"]
 helpviewer_keywords: ["strings [C++], custom memory management", "CStrBufT class", "shared classes, CStrBufT"]
-ms.assetid: 6b50fa8f-87e8-4ed4-a229-157ce128710f
 ---
 # CStrBufT Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides automatic resource cleanup for `GetBuffer` and `ReleaseBuffer` calls on an existing `CStringT` object.
 

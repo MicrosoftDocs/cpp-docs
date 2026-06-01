@@ -3,9 +3,11 @@ description: "Learn more about: Spin Button Member Functions"
 title: "Spin Button Member Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["spin button control, methods", "CSpinButtonCtrl class [MFC], methods"]
-ms.assetid: a08a26fd-b803-4cbe-a509-395fa357d057
 ---
 # Spin Button Member Functions
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 There are several member functions available for the spin control ([CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)). Use these functions to change the following attributes of the spin button.
 

@@ -4,9 +4,11 @@ title: "CMFCRibbonLinkCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonLinkCtrl", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::CMFCRibbonLinkCtrl", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::CopyFrom", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::GetCompactSize", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::GetLink", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::GetRegularSize", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::GetToolTipText", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::IsDrawTooltipImage", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnDraw", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnDrawMenuImage", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnMouseMove", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnSetIcon", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OpenLink", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::SetLink"]
 helpviewer_keywords: ["CMFCRibbonLinkCtrl [MFC], CMFCRibbonLinkCtrl", "CMFCRibbonLinkCtrl [MFC], CopyFrom", "CMFCRibbonLinkCtrl [MFC], GetCompactSize", "CMFCRibbonLinkCtrl [MFC], GetLink", "CMFCRibbonLinkCtrl [MFC], GetRegularSize", "CMFCRibbonLinkCtrl [MFC], GetToolTipText", "CMFCRibbonLinkCtrl [MFC], IsDrawTooltipImage", "CMFCRibbonLinkCtrl [MFC], OnDraw", "CMFCRibbonLinkCtrl [MFC], OnDrawMenuImage", "CMFCRibbonLinkCtrl [MFC], OnMouseMove", "CMFCRibbonLinkCtrl [MFC], OnSetIcon", "CMFCRibbonLinkCtrl [MFC], OpenLink", "CMFCRibbonLinkCtrl [MFC], SetLink"]
-ms.assetid: 77ae1941-e0ab-4a9d-911e-1752d34c079b
 ---
 # CMFCRibbonLinkCtrl Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements a hyperlink that is positioned on a ribbon. The hyperlink opens a Web page when you click it.
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.

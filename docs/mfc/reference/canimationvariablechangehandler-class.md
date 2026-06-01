@@ -4,9 +4,11 @@ title: "CAnimationVariableChangeHandler Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAnimationVariableChangeHandler", "AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler", "AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler::OnValueChanged", "AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler::SetAnimationController"]
 helpviewer_keywords: ["CAnimationVariableChangeHandler [MFC], OnValueChanged", "CAnimationVariableChangeHandler [MFC], SetAnimationController"]
-ms.assetid: 2ea4996d-5c04-4dfc-be79-d42d55050795
 ---
 # CAnimationVariableChangeHandler Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements a callback, which is called by the Animation API when the value of an animation variable changes.
 

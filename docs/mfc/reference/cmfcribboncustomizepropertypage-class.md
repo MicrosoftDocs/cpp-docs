@@ -4,9 +4,11 @@ title: "CMFCRibbonCustomizePropertyPage Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonCustomizePropertyPage", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::AddCustomCategory", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::OnOK"]
 helpviewer_keywords: ["CMFCRibbonCustomizePropertyPage [MFC], CMFCRibbonCustomizePropertyPage", "CMFCRibbonCustomizePropertyPage [MFC], AddCustomCategory", "CMFCRibbonCustomizePropertyPage [MFC], OnOK"]
-ms.assetid: ea32a99a-dfbe-401e-8975-aa191552532f
 ---
 # CMFCRibbonCustomizePropertyPage Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements a custom page for the **Customize** dialog box in Ribbon-based applications.
 

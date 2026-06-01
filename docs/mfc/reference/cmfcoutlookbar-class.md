@@ -4,9 +4,11 @@ title: "CMFCOutlookBar Class"
 ms.date: "06/25/2018"
 f1_keywords: ["CMFCOutlookBar", "AFXOUTLOOKBAR/CMFCOutlookBar", "AFXOUTLOOKBAR/CMFCOutlookBar::AllowDestroyEmptyTabbedPane", "AFXOUTLOOKBAR/CMFCOutlookBar::CanAcceptPane", "AFXOUTLOOKBAR/CMFCOutlookBar::CanSetCaptionTextToTabName", "AFXOUTLOOKBAR/CMFCOutlookBar::Create", "AFXOUTLOOKBAR/CMFCOutlookBar::CreateCustomPage", "AFXOUTLOOKBAR/CMFCOutlookBar::DoesAllowDynInsertBefore", "AFXOUTLOOKBAR/CMFCOutlookBar::FloatTab", "AFXOUTLOOKBAR/CMFCOutlookBar::GetButtonsFont", "AFXOUTLOOKBAR/CMFCOutlookBar::GetTabArea", "AFXOUTLOOKBAR/CMFCOutlookBar::IsMode2003", "AFXOUTLOOKBAR/CMFCOutlookBar::OnAfterAnimation", "AFXOUTLOOKBAR/CMFCOutlookBar::OnBeforeAnimation", "AFXOUTLOOKBAR/CMFCOutlookBar::OnScroll", "AFXOUTLOOKBAR/CMFCOutlookBar::RemoveCustomPage", "AFXOUTLOOKBAR/CMFCOutlookBar::SetButtonsFont", "AFXOUTLOOKBAR/CMFCOutlookBar::SetMode2003"]
 helpviewer_keywords: ["CMFCOutlookBar [MFC], AllowDestroyEmptyTabbedPane", "CMFCOutlookBar [MFC], CanAcceptPane", "CMFCOutlookBar [MFC], CanSetCaptionTextToTabName", "CMFCOutlookBar [MFC], Create", "CMFCOutlookBar [MFC], CreateCustomPage", "CMFCOutlookBar [MFC], DoesAllowDynInsertBefore", "CMFCOutlookBar [MFC], FloatTab", "CMFCOutlookBar [MFC], GetButtonsFont", "CMFCOutlookBar [MFC], GetTabArea", "CMFCOutlookBar [MFC], IsMode2003", "CMFCOutlookBar [MFC], OnAfterAnimation", "CMFCOutlookBar [MFC], OnBeforeAnimation", "CMFCOutlookBar [MFC], OnScroll", "CMFCOutlookBar [MFC], RemoveCustomPage", "CMFCOutlookBar [MFC], SetButtonsFont", "CMFCOutlookBar [MFC], SetMode2003"]
-ms.assetid: 2b335f71-ce99-4efd-b103-e65ba43ffc36
 ---
 # CMFCOutlookBar Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A tabbed pane with the visual appearance of the **Navigation Pane** in Microsoft Outlook 2000 or Outlook 2003. The `CMFCOutlookBar` object contains a [CMFCOutlookBarTabCtrl Class](../../mfc/reference/cmfcoutlookbartabctrl-class.md) object and a series of tabs. The tabs can be either [CMFCOutlookBarPane Class](../../mfc/reference/cmfcoutlookbarpane-class.md) objects or `CWnd`-derived objects. To the user, the Outlook bar appears as a series of buttons and a display area. When the user clicks a button, the corresponding control or button pane is displayed.
 

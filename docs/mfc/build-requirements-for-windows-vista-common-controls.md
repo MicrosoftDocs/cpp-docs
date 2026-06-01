@@ -3,10 +3,12 @@ description: "Learn more about: Build Requirements for Windows Common Controls"
 title: "Build Requirements for Windows Common Controls"
 ms.date: "08/19/2019"
 helpviewer_keywords: ["Common Controls (MFC), build requirements", "Common Controls (MFC)"]
-ms.assetid: 025f7d55-55a2-4dcd-8f62-02424e3dcc04
 ms.topic: how-to
 ---
 # Build Requirements for Windows Common Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The Microsoft Foundation Class (MFC) library supports [Windows Common Controls](/windows/win32/controls/common-controls-intro). The Common Controls are included in Windows and the library is included in Visual Studio. The MFC library provides new methods that enhance existing classes, and additional classes and methods that support Windows Common Controls. When you build your application, you should follow the compilation and migration requirements that are described in the following sections.
 

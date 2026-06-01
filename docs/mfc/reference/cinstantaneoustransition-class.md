@@ -4,9 +4,11 @@ title: "CInstantaneousTransition Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CInstantaneousTransition", "AFXANIMATIONCONTROLLER/CInstantaneousTransition", "AFXANIMATIONCONTROLLER/CInstantaneousTransition::CInstantaneousTransition", "AFXANIMATIONCONTROLLER/CInstantaneousTransition::Create", "AFXANIMATIONCONTROLLER/CInstantaneousTransition::m_dblFinalValue"]
 helpviewer_keywords: ["CInstantaneousTransition [MFC], CInstantaneousTransition", "CInstantaneousTransition [MFC], Create", "CInstantaneousTransition [MFC], m_dblFinalValue"]
-ms.assetid: c3d5121f-2c6b-4221-9e57-10e082a31120
 ---
 # CInstantaneousTransition Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Encapsulates an instantaneous transition.
 

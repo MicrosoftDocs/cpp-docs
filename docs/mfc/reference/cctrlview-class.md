@@ -4,9 +4,11 @@ title: "CCtrlView Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CCtrlView", "AFXWIN/CCtrlView", "AFXWIN/CCtrlView::CCtrlView", "AFXWIN/CCtrlView::OnDraw", "AFXWIN/CCtrlView::PreCreateWindow", "AFXWIN/CCtrlView::m_dwDefaultStyle", "AFXWIN/CCtrlView::m_strClass"]
 helpviewer_keywords: ["CCtrlView [MFC], CCtrlView", "CCtrlView [MFC], OnDraw", "CCtrlView [MFC], PreCreateWindow", "CCtrlView [MFC], m_dwDefaultStyle", "CCtrlView [MFC], m_strClass"]
-ms.assetid: ff488596-1e71-451f-8fec-b0831a7b44e0
 ---
 # CCtrlView Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Adapts the document-view architecture to the common controls supported by Windows 98 and Windows NT versions 3.51 and later.
 

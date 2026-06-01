@@ -3,9 +3,11 @@ description: "Learn more about: Exported DLL Function Entry Points"
 title: "Exported DLL Function Entry Points"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exporting DLLs [MFC], functions", "MFC, managing state data", "state management [MFC], exported DLLs"]
-ms.assetid: 3268666e-d24b-44f2-80e8-7c80f73b93ca
 ---
 # Exported DLL Function Entry Points
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 For exported functions of a DLL, use the [AFX_MANAGE_STATE](reference/extension-dll-macros.md#afx_manage_state) macro to maintain the proper global state when switching from the DLL module to the calling application's DLL.
 

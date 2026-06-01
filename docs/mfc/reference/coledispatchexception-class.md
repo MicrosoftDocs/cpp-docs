@@ -4,9 +4,11 @@ title: "COleDispatchException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleDispatchException", "AFXDISP/COleDispatchException", "AFXDISP/COleDispatchException::m_dwHelpContext", "AFXDISP/COleDispatchException::m_strDescription", "AFXDISP/COleDispatchException::m_strHelpFile", "AFXDISP/COleDispatchException::m_strSource", "AFXDISP/COleDispatchException::m_wCode"]
 helpviewer_keywords: ["COleDispatchException [MFC], m_dwHelpContext", "COleDispatchException [MFC], m_strDescription", "COleDispatchException [MFC], m_strHelpFile", "COleDispatchException [MFC], m_strSource", "COleDispatchException [MFC], m_wCode"]
-ms.assetid: 0e95c8be-e21a-490c-99ec-181c6a9a26d0
 ---
 # COleDispatchException Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Handles exceptions specific to the OLE `IDispatch` interface, which is a key part of OLE automation.
 

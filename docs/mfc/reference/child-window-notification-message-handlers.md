@@ -4,9 +4,11 @@ title: "Child Window Notification Message Handlers"
 ms.date: "11/04/2016"
 f1_keywords: ["ChildWindow"]
 helpviewer_keywords: ["message handlers [MFC]", "message handling [MFC], child window message handlers", "notifications [MFC], child window messages", "windows [MFC], message handlers", "child windows [MFC], messages"]
-ms.assetid: fddfdd08-8ecf-4f84-8b45-5a84616aaa8d
 ---
 # Child Window Notification Message Handlers
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 There are five categories of child window notification messages:
 

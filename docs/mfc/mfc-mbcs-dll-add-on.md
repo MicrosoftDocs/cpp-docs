@@ -6,6 +6,9 @@ helpviewer_keywords: ["MBCS", "MFC"]
 ---
 # MFC MBCS DLL Add-on
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Support for MFC and its multibyte character set (MBCS) libraries requires an additional step during Visual Studio installation in Visual Studio 2013 and later.
 
 **Visual Studio 2013**: By default, the MFC libraries installed in Visual Studio 2013 only support Unicode development. You need the MBCS DLLs in order to build an MFC project in Visual Studio 2013 that has the **Character Set** property set to **Use Multi-Byte Character Set** or **Not Set**. Download the DLL at [Multibyte MFC Library for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40770).

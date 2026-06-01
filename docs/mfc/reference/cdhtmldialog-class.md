@@ -7,6 +7,9 @@ helpviewer_keywords: ["CDHtmlDialog [MFC], CDHtmlDialog", "CDHtmlDialog [MFC], C
 ---
 # `CDHtmlDialog` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Is used to create dialog boxes that use HTML rather than dialog resources to implement their user interface.
 
 ## Syntax

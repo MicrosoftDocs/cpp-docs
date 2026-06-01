@@ -7,6 +7,9 @@ helpviewer_keywords: ["CD2DBrush [MFC], CD2DBrush", "CD2DBrush [MFC], Attach", "
 ---
 # `CD2DBrush` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 A wrapper for `ID2D1Brush`.
 
 ## Syntax

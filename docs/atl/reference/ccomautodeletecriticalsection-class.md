@@ -4,9 +4,10 @@ title: "CComAutoDeleteCriticalSection Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComAutoDeleteCriticalSection", "atlcore/ATL::CComAutoDeleteCriticalSection"]
 helpviewer_keywords: ["CComAutoDeleteCriticalSection class"]
-ms.assetid: 2396dbea-1c60-4841-b50e-c4e18af311a3
 ---
 # CComAutoDeleteCriticalSection Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods for obtaining and releasing ownership of a critical section object.
 

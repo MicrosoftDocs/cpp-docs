@@ -4,9 +4,10 @@ title: "IAxWinHostWindowLic Interface"
 ms.date: "11/04/2016"
 f1_keywords: ["IAxWinHostWindowLic", "ATLIFACE/ATL::IAxWinHostWindowLic", "ATLIFACE/ATL::CreateControlLic", "ATLIFACE/ATL::CreateControlLicEx"]
 helpviewer_keywords: ["IAxWinHostWindowLic interface"]
-ms.assetid: 750f1520-6bce-428c-aca0-fccbe3f063c7
 ---
 # IAxWinHostWindowLic Interface
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This interface provides methods for manipulating a licensed control and its host object.
 

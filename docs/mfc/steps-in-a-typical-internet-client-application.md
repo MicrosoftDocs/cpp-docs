@@ -3,10 +3,12 @@ description: "Learn more about: Steps in a Typical Internet Client Application"
 title: "Steps in a Typical Internet Client Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Internet client applications [MFC], general table", "WinInet classes [MFC], programming", "Internet applications [MFC], client applications"]
-ms.assetid: 7aba135c-7c15-4e2f-8c34-bbaf792c89a6
 ms.topic: how-to
 ---
 # Steps in a Typical Internet Client Application
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following table shows the steps you might perform in a typical Internet client application.
 

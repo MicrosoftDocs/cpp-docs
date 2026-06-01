@@ -4,9 +4,11 @@ title: "CHttpConnection Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CHttpConnection", "AFXINET/CHttpConnection", "AFXINET/CHttpConnection::CHttpConnection", "AFXINET/CHttpConnection::OpenRequest"]
 helpviewer_keywords: ["CHttpConnection [MFC], CHttpConnection", "CHttpConnection [MFC], OpenRequest"]
-ms.assetid: a402b662-c445-4988-800d-c8278551babe
 ---
 # CHttpConnection Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Manages your connection to an HTTP server.
 

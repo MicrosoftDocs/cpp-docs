@@ -4,9 +4,11 @@ title: "CCommonDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CCommonDialog", "AFXDLGS/CCommonDialog", "AFXDLGS/CCommonDialog::CCommonDialog"]
 helpviewer_keywords: ["CCommonDialog [MFC], CCommonDialog"]
-ms.assetid: 1f68d65f-a0fd-4778-be22-ebbe51a95f95
 ---
 # CCommonDialog Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The base class for classes that encapsulate functionality of the Windows common dialogs.
 

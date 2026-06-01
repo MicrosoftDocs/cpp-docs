@@ -3,9 +3,11 @@ description: "Learn more about: Containers: Client Items"
 title: "Containers: Client Items"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE containers [MFC], client items", "client items and OLE containers"]
-ms.assetid: 231528b5-0744-4f83-8897-083bf55ed087
 ---
 # Containers: Client Items
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains what client items are and from what classes your application should derive its client items.
 

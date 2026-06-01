@@ -9,6 +9,9 @@ ms.custom: devdivchpfy22
 
 # Add an IDL MFC method
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The **Add IDL MFC Method** wizard adds a method to an Interface Definition Library (IDL) interface defined in your Microsoft Framework Class (MFC) project. If the project contains a class associated with the interface, the wizard also adds the method to the class.
 
 To use this wizard, you must be in an MFC Project, ActiveX project, or an ATL project that supports MFC. For example, if you have a Microsoft ActiveX control project, you can use the following procedure to add a method to an IDL interface in the solution.

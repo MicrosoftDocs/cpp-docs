@@ -4,9 +4,10 @@ title: "CComTearOffObject Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComTearOffObject", "ATLCOM/ATL::CComTearOffObject", "ATLCOM/ATL::CComTearOffObject::CComTearOffObject", "ATLCOM/ATL::CComTearOffObject::AddRef", "ATLCOM/ATL::CComTearOffObject::QueryInterface", "ATLCOM/ATL::CComTearOffObject::Release", "ATLCOM/ATL::CComTearOffObjectBase", "ATLCOM/ATL::m_pOwner"]
 helpviewer_keywords: ["tear-off interfaces, ATL", "tear-off interfaces", "CComTearOffObject class"]
-ms.assetid: d974b598-c6b2-42b1-8360-9190d9d0fbf3
 ---
 # CComTearOffObject Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements a tear-off interface.
 

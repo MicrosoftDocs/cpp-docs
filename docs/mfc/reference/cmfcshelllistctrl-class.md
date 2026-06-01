@@ -4,9 +4,11 @@ title: "CMFCShellListCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCShellListCtrl", "AFXSHELLLISTCTRL/CMFCShellListCtrl", "AFXSHELLLISTCTRL/CMFCShellListCtrl::DisplayFolder", "AFXSHELLLISTCTRL/CMFCShellListCtrl::DisplayParentFolder", "AFXSHELLLISTCTRL/CMFCShellListCtrl::EnableShellContextMenu", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentFolder", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentFolderName", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentItemIdList", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentShellFolder", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetItemPath", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetItemTypes", "AFXSHELLLISTCTRL/CMFCShellListCtrl::IsDesktop", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnCompareItems", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnFormatFileDate", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnFormatFileSize", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnGetItemIcon", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnGetItemText", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnSetColumns", "AFXSHELLLISTCTRL/CMFCShellListCtrl::Refresh", "AFXSHELLLISTCTRL/CMFCShellListCtrl::SetItemTypes"]
 helpviewer_keywords: ["CMFCShellListCtrl [MFC], DisplayFolder", "CMFCShellListCtrl [MFC], DisplayParentFolder", "CMFCShellListCtrl [MFC], EnableShellContextMenu", "CMFCShellListCtrl [MFC], GetCurrentFolder", "CMFCShellListCtrl [MFC], GetCurrentFolderName", "CMFCShellListCtrl [MFC], GetCurrentItemIdList", "CMFCShellListCtrl [MFC], GetCurrentShellFolder", "CMFCShellListCtrl [MFC], GetItemPath", "CMFCShellListCtrl [MFC], GetItemTypes", "CMFCShellListCtrl [MFC], IsDesktop", "CMFCShellListCtrl [MFC], OnCompareItems", "CMFCShellListCtrl [MFC], OnFormatFileDate", "CMFCShellListCtrl [MFC], OnFormatFileSize", "CMFCShellListCtrl [MFC], OnGetItemIcon", "CMFCShellListCtrl [MFC], OnGetItemText", "CMFCShellListCtrl [MFC], OnSetColumns", "CMFCShellListCtrl [MFC], Refresh", "CMFCShellListCtrl [MFC], SetItemTypes"]
-ms.assetid: ad472958-5586-4c50-aadf-1844c30bf6e7
 ---
 # CMFCShellListCtrl Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCShellListCtrl` class provides Windows list control functionality and expands it by including the ability to display a list of shell items.
 

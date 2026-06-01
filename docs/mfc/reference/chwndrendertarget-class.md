@@ -4,9 +4,11 @@ title: "CHwndRenderTarget Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CHwndRenderTarget", "AFXRENDERTARGET/CHwndRenderTarget", "AFXRENDERTARGET/CHwndRenderTarget::CHwndRenderTarget", "AFXRENDERTARGET/CHwndRenderTarget::Attach", "AFXRENDERTARGET/CHwndRenderTarget::CheckWindowState", "AFXRENDERTARGET/CHwndRenderTarget::Create", "AFXRENDERTARGET/CHwndRenderTarget::Detach", "AFXRENDERTARGET/CHwndRenderTarget::GetHwnd", "AFXRENDERTARGET/CHwndRenderTarget::GetHwndRenderTarget", "AFXRENDERTARGET/CHwndRenderTarget::ReCreate", "AFXRENDERTARGET/CHwndRenderTarget::Resize", "AFXRENDERTARGET/CHwndRenderTarget::m_pHwndRenderTarget"]
 helpviewer_keywords: ["CHwndRenderTarget [MFC], CHwndRenderTarget", "CHwndRenderTarget [MFC], Attach", "CHwndRenderTarget [MFC], CheckWindowState", "CHwndRenderTarget [MFC], Create", "CHwndRenderTarget [MFC], Detach", "CHwndRenderTarget [MFC], GetHwnd", "CHwndRenderTarget [MFC], GetHwndRenderTarget", "CHwndRenderTarget [MFC], ReCreate", "CHwndRenderTarget [MFC], Resize", "CHwndRenderTarget [MFC], m_pHwndRenderTarget"]
-ms.assetid: aa65b69f-7202-46ea-af81-ef325da0b840
 ---
 # CHwndRenderTarget Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A wrapper for ID2D1HwndRenderTarget.
 

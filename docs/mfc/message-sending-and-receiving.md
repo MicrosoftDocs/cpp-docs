@@ -3,9 +3,11 @@ description: "Learn more about: Message Sending and Receiving"
 title: "Message Sending and Receiving"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows messages [MFC], handling in MFC", "control-notification messages [MFC]", "messages [MFC], receiving", "messages [MFC], MFC", "MFC, messages", "messages [MFC], sending"]
-ms.assetid: 9ce189cb-b259-4c3b-b6f2-9cfbed18b98b
 ---
 # Message Sending and Receiving
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Consider the sending part of the process and how the framework responds.
 

@@ -3,10 +3,12 @@ description: "Learn more about: Creating a Modeless Property Sheet"
 title: "Creating a Modeless Property Sheet"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["modeless property sheets", "property sheets, modeless", "Create method [MFC], property sheets"]
-ms.assetid: eafd8a92-cc67-4a69-a5fb-742c920d1ae8
 ms.topic: concept-article
 ---
 # Creating a Modeless Property Sheet
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Normally, the property sheets you create will be modal. When using a modal property sheet, the user must close the property sheet before using any other part of the application. This article describes methods you can use to create a modeless property sheet that allows the user to keep the property sheet open while using other parts of the application.
 

@@ -4,9 +4,10 @@ title: "CComSimpleThreadAllocator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComSimpleThreadAllocator", "ATLBASE/ATL::CComSimpleThreadAllocator", "ATLBASE/ATL::CComSimpleThreadAllocator::GetThread"]
 helpviewer_keywords: ["threading [ATL], selecting threads", "ATL threads", "CComSimpleThreadAllocator class", "ATL threads, allocating"]
-ms.assetid: 66b2166a-8c50-49fd-b8e4-7f293470327d
 ---
 # CComSimpleThreadAllocator Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class manages thread selection for the class `CComAutoThreadModule`.
 

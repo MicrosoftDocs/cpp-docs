@@ -3,9 +3,11 @@ description: "Learn more about: OLE in MFC"
 title: "OLE in MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, OLE and", "OLE items", "OLE applications [MFC], about OLE", "OLE [MFC]", "OLE containers [MFC], about OLE", "applications [OLE], about OLE", "OLE component object model (COM)"]
-ms.assetid: 5193479d-1239-4697-aea4-e82f92c707ab
 ---
 # OLE in MFC
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 These articles explain the fundamentals of OLE programming using MFC. MFC provides the easiest way to write programs that use OLE:
 

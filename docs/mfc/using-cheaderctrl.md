@@ -3,10 +3,12 @@ description: "Learn more about: Using CHeaderCtrl"
 title: "Using CHeaderCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["header controls [MFC], using", "CHeaderCtrl class [MFC]"]
-ms.assetid: fb3e512b-9539-43c4-a7e7-3fafd6d0706e
 ms.topic: concept-article
 ---
 # Using CHeaderCtrl
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Use a header control, represented by class [CHeaderCtrl](../mfc/reference/cheaderctrl-class.md), to display column headers for a columnar list. For example, a header control would be useful for implementing column controls in a spreadsheet.
 

@@ -3,9 +3,11 @@ description: "Learn more about: MFC ODBC Consumer Wizard"
 title: "MFC ODBC Consumer Wizard"
 ms.date: "08/29/2019"
 helpviewer_keywords: ["wizards [MFC]"]
-ms.assetid: f64a890b-a252-4887-88a1-782a7cd4ff3d
 ---
 # MFC ODBC Consumer Wizard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 ::: moniker range=">=msvc-160"
 

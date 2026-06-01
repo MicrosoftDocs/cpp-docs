@@ -7,6 +7,9 @@ helpviewer_keywords: ["CStdioFile [MFC], CStdioFile", "CStdioFile [MFC], Open", 
 ---
 # `CStdioFile` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Represents a C run-time stream file as opened by the run-time function [`fopen`](../../c-runtime-library/reference/fopen-wfopen.md).
 
 ## Syntax

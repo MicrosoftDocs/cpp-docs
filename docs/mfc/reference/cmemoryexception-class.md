@@ -4,9 +4,11 @@ title: "CMemoryException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMemoryException", "AFX/CMemoryException", "AFX/CMemoryException::CMemoryException"]
 helpviewer_keywords: ["CMemoryException [MFC], CMemoryException"]
-ms.assetid: 9af0ed57-d12a-45ca-82b5-c910a60f7edf
 ---
 # CMemoryException Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Represents an out-of-memory exception condition.
 

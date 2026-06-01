@@ -4,9 +4,11 @@ title: "Frame Window Classes (Windows)"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.frame"]
 helpviewer_keywords: ["frame window classes [MFC], reference"]
-ms.assetid: 6342ec5f-f922-4da8-a78e-2f5f994c7142
 ---
 # Frame Window Classes (Windows)
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Frame windows are windows that frame an application or a part of an application. Frame windows usually contain other windows, such as views, tool bars, and status bars. In the case of `CMDIFrameWnd`, they may contain `CMDIChildWnd` objects indirectly.
 

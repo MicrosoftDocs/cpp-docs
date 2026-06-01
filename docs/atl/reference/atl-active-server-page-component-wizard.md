@@ -3,9 +3,10 @@ description: "Learn more about: ATL Active Server Page Component Wizard"
 title: "ATL Active Server Page Component Wizard"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["ASP components, creating in ATL"]
-ms.assetid: 5a5cb904-dbbf-44ea-ad3d-2ddd14c1d3c5
 ---
 # ATL Active Server Page Component Wizard
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 ::: moniker range=">=msvc-160"
 

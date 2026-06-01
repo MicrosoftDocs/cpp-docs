@@ -3,9 +3,11 @@ description: "Learn more about: Message Handling and Mapping"
 title: "Message Handling and Mapping"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, messages", "message handling [MFC]", "message maps [MFC]"]
-ms.assetid: 62fe2a1b-944c-449d-a0f0-63c11ee0a3cb
 ---
 # Message Handling and Mapping
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article family describes how messages and commands are processed by the MFC framework and how you connect them to their handler functions.
 

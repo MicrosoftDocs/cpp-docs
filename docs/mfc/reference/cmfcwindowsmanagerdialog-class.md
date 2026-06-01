@@ -4,9 +4,11 @@ title: "CMFCWindowsManagerDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCWindowsManagerDialog", "AFXWINDOWSMANAGERDIALOG/CMFCWindowsManagerDialog", "AFXWINDOWSMANAGERDIALOG/CMFCWindowsManagerDialog::CMFCWindowsManagerDialog"]
 helpviewer_keywords: ["CMFCWindowsManagerDialog [MFC], CMFCWindowsManagerDialog"]
-ms.assetid: 35b4b0db-33c4-4b22-94d8-5e3396341340
 ---
 # CMFCWindowsManagerDialog Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCWindowsManagerDialog` object enables a user to manage MDI child windows in a MDI application.
 

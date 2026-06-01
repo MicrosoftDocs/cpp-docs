@@ -3,10 +3,12 @@ description: "Learn more about: Using CToolTipCtrl to Create and Manipulate a CT
 title: "Using CToolTipCtrl to Create and Manipulate a CToolTipCtrl Object"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["tool tips [MFC], creating", "CToolTipCtrl class [MFC], using"]
-ms.assetid: 0a34583f-f66d-46a1-a239-31b80ea395ad
 ms.topic: how-to
 ---
 # Using CToolTipCtrl to Create and Manipulate a CToolTipCtrl Object
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Here is an example of [CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md) usage:
 

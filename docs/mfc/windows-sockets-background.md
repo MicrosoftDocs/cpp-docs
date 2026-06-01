@@ -3,9 +3,11 @@ description: "Learn more about: Windows Sockets: Background"
 title: "Windows Sockets: Background"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["record-oriented data [MFC]", "e-mail [MFC]", "Internet Protocol Suite", "mail [MFC]", "communications [MFC], domain", "Windows Sockets [MFC], stream sockets", "mail [MFC], programming for", "sockets [MFC], stream sockets", "datagram sockets [MFC]", "SOCKET handle", "data types [MFC], socket", "e-mail [MFC], programming for", "X Window servers", "sequenced data flow", "stream sockets [MFC]"]
-ms.assetid: f60d4ed2-bf23-4a0e-98d2-fee77e8473dd
 ---
 # Windows Sockets: Background
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains the nature and purpose of Windows Sockets. The article also:
 

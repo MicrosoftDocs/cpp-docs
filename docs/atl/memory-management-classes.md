@@ -4,9 +4,10 @@ title: "Memory Management Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["memory, managing"]
-ms.assetid: be564a5e-577e-40a7-bfe3-25ad21e57270
 ---
 # Memory Management Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 These classes provide support for heap pointers, smart pointers, and other memory allocation routines.
 

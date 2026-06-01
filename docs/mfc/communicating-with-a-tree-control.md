@@ -3,10 +3,12 @@ description: "Learn more about: Communicating with a Tree Control"
 title: "Communicating with a Tree Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["tree controls [MFC], communicating with", "CTreeCtrl class [MFC], calling member functions", "communications, tree controls", "tree controls"]
-ms.assetid: 680ad9ee-b11f-452d-93fa-501ca7d7e069
 ms.topic: concept-article
 ---
 # Communicating with a Tree Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 You use different methods for calling member functions in a [CTreeCtrl](reference/ctreectrl-class.md) object depending on how the object was created:
 

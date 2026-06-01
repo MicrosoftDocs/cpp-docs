@@ -3,9 +3,11 @@ description: "Learn more about: Activation (C++)"
 title: "Activation (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE server applications [MFC], activation", "OLE items [MFC], visual editing", "activation [MFC]", "OLE [MFC], in-place activation", "OLE [MFC], activation", "in-place activation, embedded and linked items", "activating objects", "visual editing, activation", "visual editing", "documents [MFC], OLE", "embedded objects [MFC]", "OLE [MFC], editing", "in-place activation", "activation [MFC], embedded OLE items", "OLE activation [MFC]"]
-ms.assetid: ed8357d9-e487-4aaa-aa6b-2edc4de25dfa
 ---
 # Activation (C++)
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains the role of activation in the visual editing of OLE items. After a user has embedded an OLE item in a container document, it may need to be used. To do this, the user double-clicks the item, which activates that item. The most frequent activity for activation is editing. Many current OLE items, when activated for editing, cause the menus and toolbars in the current frame window to change to reflect those belonging to the server application that created the item. This behavior, known as in-place activation, allows the user to edit any embedded item in a compound document without leaving the container document's window.
 

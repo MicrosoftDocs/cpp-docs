@@ -3,9 +3,11 @@ description: "Learn more about: Servers: Implementing In-Place Frame Windows"
 title: "Servers: Implementing In-Place Frame Windows"
 ms.date: "09/09/2019"
 helpviewer_keywords: ["frame windows [MFC], implementing", "OLE server applications [MFC], frame windows", "servers, in-place frame windows", "frame windows [MFC], in-place", "in-place frame windows"]
-ms.assetid: 09bde4d8-15e2-4fba-8d14-9b954d926b92
 ---
 # Servers: Implementing In-Place Frame Windows
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains what you must do to implement in-place frame windows in your visual editing server application if you do not use the application wizard to create your server application. In place of following the procedure outlined in this article, you could use an existing in-place frame-window class from either an application wizard-generated application or a sample provided with Visual Studio.
 

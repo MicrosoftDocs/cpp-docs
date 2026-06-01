@@ -3,9 +3,11 @@ description: "Learn more about: Keyboard and Mouse Customization"
 title: "Keyboard and Mouse Customization"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["customizations [MFC], keyboard and mouse (MFC Extensions)", "keyboard and mouse customizations (MFC Extensions)"]
-ms.assetid: 1f789f1b-5f2e-4b11-b974-e3e2a2e49d82
 ---
 # Keyboard and Mouse Customization
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 MFC allows the user of your application to customize how it handles keyboard and mouse input. The user can customize keyboard input by assigning keyboard shortcuts to commands. The user can also customize the mouse input by selecting the command that should be executed when the user double-clicks inside specific windows of the application. This topic explains how to customize the input for your application.
 

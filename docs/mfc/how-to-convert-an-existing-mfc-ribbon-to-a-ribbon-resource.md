@@ -3,9 +3,11 @@ description: "Learn more about: How to: Convert an Existing MFC Ribbon to a Ribb
 title: "How to: Convert an Existing MFC Ribbon to a Ribbon Resource"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ribbon resource, converting from an MFC ribbon", "MFC ribbon, converting to a ribbon resource"]
-ms.assetid: 324b7ff6-58f9-4691-96a9-9836a79d0fb6
 ---
 # How to: Convert an Existing MFC Ribbon to a Ribbon Resource
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Ribbon resources are easier to visualize, modify, and maintain than manually coded ribbons. This topic describes how to convert a manually coded ribbon in an MFC Project into a ribbon resource.
 

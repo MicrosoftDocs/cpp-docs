@@ -3,9 +3,11 @@ description: "Learn more about: Property Sheets as Wizards"
 title: "Property Sheets as Wizards"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["property sheets, as wizards"]
-ms.assetid: 1ea66ecb-23b0-484a-838d-58671a2999b5
 ---
 # Property Sheets as Wizards
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A key characteristic of a wizard property sheet is that navigation is provided with Next or Finish, Back, and Cancel buttons instead of tabs. You need to call [CPropertySheet::SetWizardMode](../mfc/reference/cpropertysheet-class.md#setwizardmode) before calling [CPropertySheet::DoModal](../mfc/reference/cpropertysheet-class.md#domodal) on the property sheet object to take advantage of this feature.
 

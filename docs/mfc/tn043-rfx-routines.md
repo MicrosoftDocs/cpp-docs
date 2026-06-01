@@ -4,9 +4,11 @@ title: "TN043: RFX Routines"
 ms.date: "06/28/2018"
 f1_keywords: ["RFX"]
 helpviewer_keywords: ["RFX (record field exchange), architecture", "TN043", "RFX (record field exchange)"]
-ms.assetid: f552d0c1-2c83-4389-b472-42c9940aa713
 ---
 # TN043: RFX Routines
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

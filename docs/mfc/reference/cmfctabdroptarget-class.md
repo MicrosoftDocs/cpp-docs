@@ -4,9 +4,11 @@ title: "CMFCTabDropTarget Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCTabDropTarget", "AFXBASETABCTRL/CMFCTabDropTarget", "AFXBASETABCTRL/CMFCTabDropTarget::OnDragEnter", "AFXBASETABCTRL/CMFCTabDropTarget::OnDragLeave", "AFXBASETABCTRL/CMFCTabDropTarget::OnDragOver", "AFXBASETABCTRL/CMFCTabDropTarget::OnDropEx", "AFXBASETABCTRL/CMFCTabDropTarget::Register"]
 helpviewer_keywords: ["CMFCTabDropTarget [MFC], OnDragEnter", "CMFCTabDropTarget [MFC], OnDragLeave", "CMFCTabDropTarget [MFC], OnDragOver", "CMFCTabDropTarget [MFC], OnDropEx", "CMFCTabDropTarget [MFC], Register"]
-ms.assetid: 9777b7b6-10da-4c4b-b1d1-7ea795b0f1cb
 ---
 # CMFCTabDropTarget Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides the communication mechanism between a tab control and the OLE libraries.
 

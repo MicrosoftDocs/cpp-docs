@@ -4,9 +4,11 @@ title: "MFC ActiveX Controls: Localizing an ActiveX Control"
 ms.date: "09/12/2018"
 f1_keywords: ["LocaleID", "AfxOleRegisterTypeLib"]
 helpviewer_keywords: ["localization, ActiveX controls", "MFC ActiveX controls [MFC], localizing", "LocaleID ambient property [MFC]", "LOCALIZE sample [MFC]"]
-ms.assetid: a44b839a-c652-4ec5-b824-04392708a5f9
 ---
 # MFC ActiveX Controls: Localizing an ActiveX Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article discusses procedures for localizing ActiveX control interfaces.
 

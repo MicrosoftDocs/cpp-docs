@@ -4,9 +4,10 @@ title: "CStringElementTraitsI Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CStringElementTraitsI", "ATLCOLL/ATL::CStringElementTraitsI", "ATLCOLL/ATL::CStringElementTraitsI::INARGTYPE", "ATLCOLL/ATL::CStringElementTraitsI::OUTARGTYPE", "ATLCOLL/ATL::CStringElementTraitsI::CompareElements", "ATLCOLL/ATL::CStringElementTraitsI::CompareElementsOrdered", "ATLCOLL/ATL::CStringElementTraitsI::Hash"]
 helpviewer_keywords: ["CStringElementTraitsI class"]
-ms.assetid: c23f92b1-91e5-400f-96ed-258b02622b7a
 ---
 # CStringElementTraitsI Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides static functions related to strings stored in collection class objects. It is similar to [CStringElementTraits](../../atl/reference/cstringelementtraits-class.md), but performs case-insensitive comparisons.
 

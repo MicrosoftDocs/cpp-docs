@@ -3,9 +3,11 @@ description: "Learn more about: Containers for ActiveX Controls"
 title: "Containers for ActiveX Controls"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["ActiveX control containers [MFC], application support"]
-ms.assetid: 5ff0bf37-07f4-49aa-ad9c-c63d3756243a
 ---
 # Containers for ActiveX Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 You can use ActiveX controls developed in Visual Studio in other applications, as long as they support ActiveX control containment. A number of Microsoft applications, beginning with the versions listed, support ActiveX control containment.
 

@@ -4,9 +4,11 @@ title: "CMFCRibbonProgressBar Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonProgressBar", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::CMFCRibbonProgressBar", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::GetPos", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::GetRangeMax", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::GetRangeMin", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::GetRegularSize", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::IsInfiniteMode", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::OnDraw", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::SetInfiniteMode", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::SetPos", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::SetRange"]
 helpviewer_keywords: ["CMFCRibbonProgressBar [MFC], CMFCRibbonProgressBar", "CMFCRibbonProgressBar [MFC], GetPos", "CMFCRibbonProgressBar [MFC], GetRangeMax", "CMFCRibbonProgressBar [MFC], GetRangeMin", "CMFCRibbonProgressBar [MFC], GetRegularSize", "CMFCRibbonProgressBar [MFC], IsInfiniteMode", "CMFCRibbonProgressBar [MFC], OnDraw", "CMFCRibbonProgressBar [MFC], SetInfiniteMode", "CMFCRibbonProgressBar [MFC], SetPos", "CMFCRibbonProgressBar [MFC], SetRange"]
-ms.assetid: de3d9f2e-ed59-480e-aa7d-08a33ab36c67
 ---
 # CMFCRibbonProgressBar Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements a control that visually indicates the progress of a lengthy operation.
 

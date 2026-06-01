@@ -4,9 +4,11 @@ title: "CDataExchange Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDataExchange", "AFXWIN/CDataExchange", "AFXWIN/CDataExchange::CDataExchange", "AFXWIN/CDataExchange::Fail", "AFXWIN/CDataExchange::PrepareCtrl", "AFXWIN/CDataExchange::PrepareEditCtrl", "AFXWIN/CDataExchange::PrepareOleCtrl", "AFXWIN/CDataExchange::m_bSaveAndValidate", "AFXWIN/CDataExchange::m_pDlgWnd"]
 helpviewer_keywords: ["CDataExchange [MFC], CDataExchange", "CDataExchange [MFC], Fail", "CDataExchange [MFC], PrepareCtrl", "CDataExchange [MFC], PrepareEditCtrl", "CDataExchange [MFC], PrepareOleCtrl", "CDataExchange [MFC], m_bSaveAndValidate", "CDataExchange [MFC], m_pDlgWnd"]
-ms.assetid: 84ed6113-325d-493e-a75d-223f03a992b8
 ---
 # CDataExchange Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Supports the dialog data exchange (DDX) and dialog data validation (DDV) routines used by the Microsoft Foundation classes.
 

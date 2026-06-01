@@ -4,9 +4,10 @@ title: "CWindowImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CWindowImpl", "ATLWIN/ATL::CWindowImpl", "ATLWIN/ATL::CWindowImpl::Create", "ATLWIN/ATL::CWindowImpl::DefWindowProc", "ATLWIN/ATL::CWindowImpl::GetCurrentMessage", "ATLWIN/ATL::CWindowImpl::GetWindowProc", "ATLWIN/ATL::CWindowImpl::OnFinalMessage", "ATLWIN/ATL::CWindowImpl::SubclassWindow", "ATLWIN/ATL::CWindowImpl::UnsubclassWindow", "ATLWIN/ATL::CWindowImpl::GetWndClassInfo", "ATLWIN/ATL::CWindowImpl::WindowProc", "ATLWIN/ATL::CWindowImpl::m_pfnSuperWindowProc"]
 helpviewer_keywords: ["CWindowImpl class", "subclassing windows, ATL"]
-ms.assetid: 02eefd45-a0a6-4d1b-99f6-dbf627e2cc2f
 ---
 # CWindowImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 Provides methods for creating or subclassing a window.
 

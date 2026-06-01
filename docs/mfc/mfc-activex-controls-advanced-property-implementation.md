@@ -3,9 +3,11 @@ description: "Learn more about: MFC ActiveX Controls: Advanced Property Implemen
 title: "MFC ActiveX Controls: Advanced Property Implementation"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], error codes", "properties [MFC], ActiveX controls", "MFC ActiveX controls [MFC], properties"]
-ms.assetid: ec2e6759-5a8e-41d8-a275-99af8ff6f32e
 ---
 # MFC ActiveX Controls: Advanced Property Implementation
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article describes topics related to implementing advanced properties in an ActiveX control.
 

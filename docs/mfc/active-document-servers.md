@@ -3,9 +3,11 @@ description: "Learn more about: Active Document Servers"
 title: "Active Document Servers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["active documents [MFC], servers", "servers [MFC], active document", "active document servers [MFC]"]
-ms.assetid: 131fec1e-02a0-4305-a7ab-903b911232a7
 ---
 # Active Document Servers
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Active document servers such as Word, Excel, or PowerPoint host documents of other application types called active documents. Unlike OLE embedded objects (which are simply displayed within the page of another document), Active documents provide the full interface and complete native functionality of the server application that creates them. Users can create documents using the full power of their favorite applications (if they are active document enabled), yet can treat the resulting project as a single entity.
 

@@ -4,9 +4,11 @@ title: "CMFCDropDownFrame Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCDropDownFrame", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::Create", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::GetParentMenuBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::GetParentPopupMenu", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::RecalcLayout", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::SetAutoDestroy"]
 helpviewer_keywords: ["CMFCDropDownFrame [MFC], Create", "CMFCDropDownFrame [MFC], GetParentMenuBar", "CMFCDropDownFrame [MFC], GetParentPopupMenu", "CMFCDropDownFrame [MFC], RecalcLayout", "CMFCDropDownFrame [MFC], SetAutoDestroy"]
-ms.assetid: 09ff81a9-de00-43ec-9df9-b626f7728c4b
 ---
 # CMFCDropDownFrame Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides drop-down frame window functionality to drop-down toolbars and drop-down toolbar buttons.
 

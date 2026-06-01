@@ -2,9 +2,11 @@
 description: "Learn more about: DHTML Editing Command Maps"
 title: "DHTML Editing Command Maps"
 ms.date: "11/04/2016"
-ms.assetid: c1b49876-039e-4a26-bb24-ea98ccf254a1
 ---
 # DHTML Editing Command Maps
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following macros can be used to map DHTML editing commands in [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)-derived classes. For an example of their use, see [HTMLEdit Sample](../../overview/visual-cpp-samples.md).
 

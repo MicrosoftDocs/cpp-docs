@@ -4,9 +4,11 @@ title: "Adding an MFC Class"
 ms.date: "09/06/2019"
 f1_keywords: ["vc.codewiz.classes.adding.mfc"]
 helpviewer_keywords: ["classes [MFC], adding MFC", "MFC, adding classes"]
-ms.assetid: 9a96b67f-40bf-43d4-8872-2f8dfc5404f1
 ---
 # Adding an MFC Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 To add classes derived from Microsoft Foundation Class (MFC) library classes to your project, use the **Add Class** button in [Class Wizard](mfc-class-wizard.md). Specify the name of the new class, select the base class, and select the ID of the dialog box with which it is associated (if any). The wizard creates a header file and an implementation file and adds them to your project.
 

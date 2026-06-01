@@ -3,9 +3,11 @@ description: "Learn more about: TN045: MFC/Database Support for Long Varchar/Var
 title: "TN045: MFC-Database Support for Long Varchar-Varbinary"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["TN045", "Varbinary data type", "Varchar data type"]
-ms.assetid: cf572c35-5275-45b5-83df-5f0e36114f40
 ---
 # TN045: MFC/Database Support for Long Varchar/Varbinary
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

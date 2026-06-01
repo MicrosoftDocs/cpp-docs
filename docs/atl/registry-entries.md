@@ -3,9 +3,10 @@ description: "Learn more about: Registry Entries"
 title: "Registry Entries (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["registry, ATL services entries", "registry, application IDs"]
-ms.assetid: 881989b7-61bb-459a-a13e-3bfcb33e184e
 ---
 # Registry Entries
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 DCOM introduced the concept of Application IDs (AppIDs), which group configuration options for one or more DCOM objects into a centralized location in the registry. You specify an AppID by indicating its value in the AppID named value under the object's CLSID.
 

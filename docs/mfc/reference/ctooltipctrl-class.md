@@ -7,6 +7,9 @@ helpviewer_keywords: ["CToolTipCtrl [MFC], CToolTipCtrl", "CToolTipCtrl [MFC], A
 ---
 # `CToolTipCtrl` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Encapsulates the functionality of a "tooltip control," a small pop-up window that displays a single line of text describing the purpose of a tool in an application.
 
 ## Syntax

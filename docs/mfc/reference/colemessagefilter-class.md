@@ -4,9 +4,11 @@ title: "COleMessageFilter Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleMessageFilter", "AFXOLE/COleMessageFilter", "AFXOLE/COleMessageFilter::COleMessageFilter", "AFXOLE/COleMessageFilter::BeginBusyState", "AFXOLE/COleMessageFilter::EnableBusyDialog", "AFXOLE/COleMessageFilter::EnableNotRespondingDialog", "AFXOLE/COleMessageFilter::EndBusyState", "AFXOLE/COleMessageFilter::OnMessagePending", "AFXOLE/COleMessageFilter::Register", "AFXOLE/COleMessageFilter::Revoke", "AFXOLE/COleMessageFilter::SetBusyReply", "AFXOLE/COleMessageFilter::SetMessagePendingDelay", "AFXOLE/COleMessageFilter::SetRetryReply"]
 helpviewer_keywords: ["COleMessageFilter [MFC], COleMessageFilter", "COleMessageFilter [MFC], BeginBusyState", "COleMessageFilter [MFC], EnableBusyDialog", "COleMessageFilter [MFC], EnableNotRespondingDialog", "COleMessageFilter [MFC], EndBusyState", "COleMessageFilter [MFC], OnMessagePending", "COleMessageFilter [MFC], Register", "COleMessageFilter [MFC], Revoke", "COleMessageFilter [MFC], SetBusyReply", "COleMessageFilter [MFC], SetMessagePendingDelay", "COleMessageFilter [MFC], SetRetryReply"]
-ms.assetid: b1fd1639-fac4-4fd0-bf17-15172deba13c
 ---
 # COleMessageFilter Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Manages the concurrency required by the interaction of OLE applications.
 

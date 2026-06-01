@@ -3,9 +3,11 @@ description: "See the MFC class hierarchy in chart form."
 title: "MFC class hierarchy chart"
 ms.date: 09/10/2021
 helpviewer_keywords: ["object models, MFC", "classes [MFC], MFC hierarchy", "MFC, object model"]
-ms.assetid: 19d70341-e391-4a72-94c6-35755ce975d4
 ---
 # MFC class hierarchy chart
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following illustration represents the MFC classes derived from `CObject`:
 

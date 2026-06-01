@@ -3,10 +3,12 @@ description: "Learn more about: Retrieving Data from the Dialog Object"
 title: "Retrieving Data from the Dialog Object"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["dialog boxes [MFC], retrieving user data", "dialog box data [MFC]", "data [MFC], retrieving", "GetDlgItemText method [MFC]", "SetDlgItemText method [MFC]", "SetWindowText method [MFC]", "dialog box data [MFC], retrieving", "retrieving data [MFC]", "user input [MFC], retrieving from MFC dialog boxes", "capturing user input [MFC]", "dialog box controls [MFC], initializing values", "DDX (dialog data exchange) [MFC]", "MFC dialog boxes [MFC], retrieving user input", "data retrieval [MFC], dialog boxes", "data [MFC], dialog boxes", "DDX (dialog data exchange) [MFC], about DDX", "DDX (dialog data exchange) [MFC], retrieving data from Dialog object", "GetWindowText method [MFC]"]
-ms.assetid: bdca2b61-6b53-4c2e-b426-8712c7a38ec0
 ms.topic: concept-article
 ---
 # Retrieving Data from the Dialog Object
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The framework provides an easy way to initialize the values of controls in a dialog box and to retrieve values from the controls. The more laborious manual approach is to call functions such as the `SetDlgItemText` and `GetDlgItemText` member functions of class `CWnd`, which apply to control windows. With these functions, you access each control individually to set or get its value, calling functions such as `SetWindowText` and `GetWindowText`. The framework's approach automates both initialization and retrieval.
 

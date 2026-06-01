@@ -4,9 +4,11 @@ title: "CMapPtrToWord Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMapPtrToWord", "AFXCOLL/CMapPtrToWord", "AFXCOLL/CMapPtrToWord::CMapPtrToWord", "AFXCOLL/CMapPtrToWord::GetCount", "AFXCOLL/CMapPtrToWord::GetHashTableSize", "AFXCOLL/CMapPtrToWord::GetNextAssoc", "AFXCOLL/CMapPtrToWord::GetSize", "AFXCOLL/CMapPtrToWord::GetStartPosition", "AFXCOLL/CMapPtrToWord::HashKey", "AFXCOLL/CMapPtrToWord::InitHashTable", "AFXCOLL/CMapPtrToWord::IsEmpty", "AFXCOLL/CMapPtrToWord::Lookup", "AFXCOLL/CMapPtrToWord::LookupKey", "AFXCOLL/CMapPtrToWord::RemoveAll", "AFXCOLL/CMapPtrToWord::RemoveKey", "AFXCOLL/CMapPtrToWord::SetAt"]
 helpviewer_keywords: ["CMapPtrToWord [MFC], CMapPtrToWord", "CMapPtrToWord [MFC], GetCount", "CMapPtrToWord [MFC], GetHashTableSize", "CMapPtrToWord [MFC], GetNextAssoc", "CMapPtrToWord [MFC], GetSize", "CMapPtrToWord [MFC], GetStartPosition", "CMapPtrToWord [MFC], HashKey", "CMapPtrToWord [MFC], InitHashTable", "CMapPtrToWord [MFC], IsEmpty", "CMapPtrToWord [MFC], Lookup", "CMapPtrToWord [MFC], LookupKey", "CMapPtrToWord [MFC], RemoveAll", "CMapPtrToWord [MFC], RemoveKey", "CMapPtrToWord [MFC], SetAt"]
-ms.assetid: 4631c6b6-d49f-49d9-adc0-1e0491e32d7b
 ---
 # CMapPtrToWord Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Supports maps of 16-bit words keyed by void pointers.
 

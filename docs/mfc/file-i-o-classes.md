@@ -4,9 +4,11 @@ title: "File I-O Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.file"]
 helpviewer_keywords: ["disk file classes [MFC]", "stdio classes [MFC]", "OLE streams [MFC]", "I/O [MFC], MFC classes", "translated stream classes [MFC]", "file I/O classes [MFC]", "I/O [MFC], classes", "sockets classes [MFC]", "stream classes [MFC]", "memory file classes [MFC]"]
-ms.assetid: 92821c3f-d9e1-47f6-98c9-3b632d86e811
 ---
 # File I/O Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 These classes provide an interface to traditional disk files, in-memory files, Active streams, and Windows sockets. All of the classes derived from `CFile` can be used with a `CArchive` object to perform serialization.
 

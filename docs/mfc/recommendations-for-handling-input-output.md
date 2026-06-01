@@ -3,9 +3,11 @@ description: "Learn more about: Recommendations for Handling Input/Output"
 title: "Recommendations for Handling Input-Output"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["I/O [MFC], about I/O", "file-based I/O options", "I/O [MFC]", "I/O [MFC], options", "I/O [MFC], file-based options"]
-ms.assetid: d664b175-3b4a-40c3-b14b-39de6b12e419
 ---
 # Recommendations for Handling Input/Output
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Whether you use file-based I/O or not depends on how you respond to the questions in the following decision tree:
 

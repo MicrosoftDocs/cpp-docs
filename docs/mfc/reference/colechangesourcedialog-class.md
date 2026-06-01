@@ -4,9 +4,11 @@ title: "COleChangeSourceDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleChangeSourceDialog", "AFXODLGS/COleChangeSourceDialog", "AFXODLGS/COleChangeSourceDialog::COleChangeSourceDialog", "AFXODLGS/COleChangeSourceDialog::DoModal", "AFXODLGS/COleChangeSourceDialog::GetDisplayName", "AFXODLGS/COleChangeSourceDialog::GetFileName", "AFXODLGS/COleChangeSourceDialog::GetFromPrefix", "AFXODLGS/COleChangeSourceDialog::GetItemName", "AFXODLGS/COleChangeSourceDialog::GetToPrefix", "AFXODLGS/COleChangeSourceDialog::IsValidSource", "AFXODLGS/COleChangeSourceDialog::m_cs"]
 helpviewer_keywords: ["COleChangeSourceDialog [MFC], COleChangeSourceDialog", "COleChangeSourceDialog [MFC], DoModal", "COleChangeSourceDialog [MFC], GetDisplayName", "COleChangeSourceDialog [MFC], GetFileName", "COleChangeSourceDialog [MFC], GetFromPrefix", "COleChangeSourceDialog [MFC], GetItemName", "COleChangeSourceDialog [MFC], GetToPrefix", "COleChangeSourceDialog [MFC], IsValidSource", "COleChangeSourceDialog [MFC], m_cs"]
-ms.assetid: d0e08be7-21ef-45e1-97af-fe27d99e3bac
 ---
 # COleChangeSourceDialog Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Used for the OLE Change Source dialog box.
 

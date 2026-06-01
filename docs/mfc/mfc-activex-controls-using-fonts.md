@@ -7,6 +7,9 @@ helpviewer_keywords: ["notifications [MFC], MFC ActiveX controls fonts", "OnDraw
 ---
 # MFC ActiveX Controls: Using Fonts
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 If your ActiveX control displays text, you can allow the control user to change the text appearance by changing a font property. Font properties are implemented as font objects and can be one of two types: stock or custom. Stock Font properties are preimplemented font properties that you can add using the Add Property Wizard. Custom Font properties are not preimplemented and the control developer determines the property's behavior and usage.
 
 This article covers the following topics:

@@ -8,6 +8,9 @@ ms.custom: sfi-ropc-nochange
 ---
 # CDaoTableDef Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Represents the stored definition of a base table or an attached table.
 
 > [!NOTE]

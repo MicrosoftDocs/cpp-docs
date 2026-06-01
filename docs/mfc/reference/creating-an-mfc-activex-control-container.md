@@ -4,9 +4,11 @@ title: "Creating an MFC ActiveX Control Container"
 ms.date: "09/12/2018"
 f1_keywords: ["vc.appwiz.activex.container"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], containers", "ActiveX control containers [MFC], creating", "containers [MFC], creating", "OLE controls [MFC], containers"]
-ms.assetid: ec70e137-7c14-4940-bd0e-fd4edcc63ea5
 ---
 # Creating an MFC ActiveX Control Container
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 An ActiveX control container is a parent program that supplies the environment for an ActiveX (formerly OLE) control to run. You can create an application capable of containing ActiveX controls with or without MFC, but it is much easier to do with MFC.
 

@@ -3,9 +3,11 @@ description: "Learn more about: Persistence of OLE Controls"
 title: "Persistence of OLE Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE controls [MFC], persistence", "persistence, OLE controls"]
-ms.assetid: 64f8dc80-f110-41af-b3ea-14948f6bfdf7
 ---
 # Persistence of OLE Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 One capability of OLE controls is property persistence (or serialization), which allows the OLE control to read or write property values to and from a file or stream. A container application can use serialization to store a control's property values even after the application has destroyed the control. The property values of the OLE control can then be read from the file or stream when a new instance of the control is created at a later time.
 

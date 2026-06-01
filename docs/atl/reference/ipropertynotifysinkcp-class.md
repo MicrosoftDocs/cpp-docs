@@ -4,9 +4,10 @@ title: "IPropertyNotifySinkCP Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IPropertyNotifySinkCP", "atlctl/ATL::IPropertyNotifySinkCP"]
 helpviewer_keywords: ["connection points [C++], managing", "sinks, notifying of changes", "IPropertyNotifySinkCP class"]
-ms.assetid: 1b41445e-bc88-4fa6-bb62-d68aacec2bd5
 ---
 # IPropertyNotifySinkCP Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class exposes [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) interface as an outgoing interface on a connectable object.
 

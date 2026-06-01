@@ -3,10 +3,12 @@ description: "Learn more about: Using Documents"
 title: "Using Documents"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["documents [MFC], C++ applications", "data [MFC], reading", "documents [MFC]", "files [MFC], writing to", "data [MFC], documents", "files [MFC]", "views [MFC], C++ applications", "document/view architecture [MFC], documents", "reading data [MFC], documents and views", "printing [MFC], documents", "writing to files [MFC]"]
-ms.assetid: f390d6d8-d0e1-4497-9b6a-435f7ce0776c
 ms.topic: concept-article
 ---
 # Using Documents
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Working together, documents and views:
 

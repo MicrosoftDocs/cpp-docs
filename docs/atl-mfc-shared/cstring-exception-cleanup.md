@@ -3,9 +3,10 @@ description: "Learn more about: CString Exception Cleanup"
 title: "CString Exception Cleanup"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CString objects, exceptions", "exception handling, cleanup code"]
-ms.assetid: 28b9ce70-be63-4a0d-92a8-44bbfbc95e83
 ---
 # CString Exception Cleanup
+
+[!INCLUDE[product-lifecycle-status](./includes/lifecycle-note.md)]
 
 In previous versions of MFC, it was important that you clean up [CString](../atl-mfc-shared/reference/cstringt-class.md) objects after use. With MFC version 3.0 and later, explicit cleanup is no longer necessary.
 

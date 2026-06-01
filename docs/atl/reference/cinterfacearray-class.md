@@ -4,9 +4,10 @@ title: "CInterfaceArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CInterfaceArray", "ATLCOLL/ATL::CInterfaceArray", "ATLCOLL/ATL::CInterfaceArray::CInterfaceArray"]
 helpviewer_keywords: ["CInterfaceArray class"]
-ms.assetid: 1f29cf66-a086-4a7b-b6a8-64f73da39f79
 ---
 # CInterfaceArray Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods useful when constructing an array of COM interface pointers.
 

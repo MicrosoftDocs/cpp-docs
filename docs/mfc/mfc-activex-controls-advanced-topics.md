@@ -3,9 +3,11 @@ description: "Learn more about: MFC ActiveX Controls: Advanced Topics"
 title: "MFC ActiveX Controls: Advanced Topics"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], error codes", "MFC ActiveX controls [MFC], accessing invisible dialog controls", "MFC ActiveX controls [MFC], advanced topics", "FireError method [MFC]", "MFC ActiveX controls [MFC], database classes", "MFC ActiveX controls [MFC], special keys", "PreTranslateMessage method [MFC]", "MFC ActiveX controls [MFC], parameterized property", "ThrowError method [MFC]"]
-ms.assetid: e9e34abb-8e2d-461e-bb9c-a1aec5dcecbd
 ---
 # MFC ActiveX Controls: Advanced Topics
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article covers advanced topics related to developing ActiveX controls. These include:
 

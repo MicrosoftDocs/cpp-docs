@@ -3,9 +3,11 @@ description: "Learn more about: Menus and Resources: Menu Merging"
 title: "Menus and Resources: Menu Merging"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["status bars [MFC], OLE document applications", "visual editing [MFC], application menus and resources", "coordinating menu layouts [MFC]", "OLE containers [MFC], menus and resources", "toolbars [MFC], OLE document applications", "merging toolbar and status bar [MFC]", "menus [MFC], OLE document applications"]
-ms.assetid: 80b6bb17-d830-4122-83f0-651fc112d4d1
 ---
 # Menus and Resources: Menu Merging
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article details the steps necessary for OLE document applications to handle visual editing and in-place activation properly. In-place activation poses a challenge for both container and server (component) applications. The user remains in the same frame window (within the context of the container document) but is actually running another application (the server). This requires coordination between the resources of the container and server applications.
 

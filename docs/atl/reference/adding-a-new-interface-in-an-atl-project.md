@@ -4,9 +4,10 @@ title: "Adding a New Interface in an ATL Project"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.ATL.interface"]
 helpviewer_keywords: ["interfaces, adding to ATL objects", "Implement Interface ATL wizard", "controls [ATL], interfaces", "ATL projects, adding interfaces"]
-ms.assetid: 7d34b023-2c6b-4155-aca3-d47a40968063
 ---
 # Adding a New Interface in an ATL Project
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 When you add an interface to your object or control, you create stubbed-out functions for each method in that interface. In your object or control, you can add only interfaces currently found in an existing type library. Also, the class in which you add the interface must implement the [BEGIN_COM_MAP](com-map-macros.md#begin_com_map) macro or, if the project is attributed, it must have the `coclass` attribute.
 

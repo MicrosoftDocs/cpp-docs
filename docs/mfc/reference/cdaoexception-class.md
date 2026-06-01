@@ -7,6 +7,9 @@ helpviewer_keywords: ["CDaoException [MFC], CDaoException", "CDaoException [MFC]
 ---
 # CDaoException Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Represents an exception condition arising from the MFC database classes based on data access objects (DAO).
 
 > [!NOTE]

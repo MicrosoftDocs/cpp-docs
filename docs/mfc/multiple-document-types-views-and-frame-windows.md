@@ -3,9 +3,11 @@ description: "Learn more about: Multiple Document Types, Views, and Frame Window
 title: "Multiple Document Types, Views, and Frame Windows"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["static splitter windows [MFC]", "multiple views [MFC]", "multiple document types [MFC]", "multiple views [MFC], frame windows", "document classes [MFC], multiple", "documents [MFC], multiple types of", "splitter windows [MFC], dynamic", "dynamic splitter windows [MFC]", "windows [MFC], dynamic splitter", "windows [MFC], static splitter", "multiple frame windows [MFC]", "splitter windows [MFC], static"]
-ms.assetid: c6b9e4e0-7c9c-45f1-a804-aeac39c9a128
 ---
 # Multiple Document Types, Views, and Frame Windows
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The standard relationship among a document, its view, and its frame window is described in [Document/View Creation](document-view-creation.md). Many applications support a single document type (but possibly multiple open documents of that type) with a single view on the document and only one frame window per document. But some applications may need to alter one or more of those defaults.
 

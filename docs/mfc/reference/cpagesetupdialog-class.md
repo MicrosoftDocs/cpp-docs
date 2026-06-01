@@ -4,9 +4,11 @@ title: "CPageSetupDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPageSetupDialog", "AFXDLGS/CPageSetupDialog", "AFXDLGS/CPageSetupDialog::CPageSetupDialog", "AFXDLGS/CPageSetupDialog::CreatePrinterDC", "AFXDLGS/CPageSetupDialog::DoModal", "AFXDLGS/CPageSetupDialog::GetDeviceName", "AFXDLGS/CPageSetupDialog::GetDevMode", "AFXDLGS/CPageSetupDialog::GetDriverName", "AFXDLGS/CPageSetupDialog::GetMargins", "AFXDLGS/CPageSetupDialog::GetPaperSize", "AFXDLGS/CPageSetupDialog::GetPortName", "AFXDLGS/CPageSetupDialog::OnDrawPage", "AFXDLGS/CPageSetupDialog::PreDrawPage", "AFXDLGS/CPageSetupDialog::m_psd"]
 helpviewer_keywords: ["CPageSetupDialog [MFC], CPageSetupDialog", "CPageSetupDialog [MFC], CreatePrinterDC", "CPageSetupDialog [MFC], DoModal", "CPageSetupDialog [MFC], GetDeviceName", "CPageSetupDialog [MFC], GetDevMode", "CPageSetupDialog [MFC], GetDriverName", "CPageSetupDialog [MFC], GetMargins", "CPageSetupDialog [MFC], GetPaperSize", "CPageSetupDialog [MFC], GetPortName", "CPageSetupDialog [MFC], OnDrawPage", "CPageSetupDialog [MFC], PreDrawPage", "CPageSetupDialog [MFC], m_psd"]
-ms.assetid: 049c0ac8-f254-4854-9414-7a8271d1447a
 ---
 # CPageSetupDialog Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Encapsulates the services provided by the Windows common OLE Page Setup dialog box with additional support for setting and modifying print margins.
 

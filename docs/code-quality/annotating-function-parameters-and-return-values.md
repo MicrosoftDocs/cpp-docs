@@ -1,5 +1,5 @@
 ---
-title: Annotating function parameters and return values
+title: "Annotating function parameters and return values"
 description: "Reference guide to function parameter and return value annotations."
 ms.date: 10/15/2019
 ms.topic: "concept-article"
@@ -102,7 +102,7 @@ f1_keywords:
   - "_In_"
   - "_Inout_updates_bytes_"
   - "_In_reads_to_ptr_z_"
-  - "_Ret_writes_bytes_to_maybenull"
+  - "_Ret_writes_bytes_to_maybenull_"
   - "_Outptr_opt_result_nullonfailure_"
   - "_In_reads_to_ptr_"
   - "_Outptr_result_buffer_"
@@ -123,7 +123,6 @@ f1_keywords:
   - "_Scanf_format_string_"
   - "_Scanf_s_format_string_"
   - "_Printf_format_string_"
-ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 ---
 # Annotating function parameters and return values
 

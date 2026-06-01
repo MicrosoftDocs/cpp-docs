@@ -59,8 +59,8 @@ This table describes a commonly used subset of the available macros; there are m
 | **`$(TargetFileName)`** | The file name of the primary output file for the build (defined as base name + file extension). |
 | **`$(TargetName)`** | The base name of the primary output file for the build. |
 | **`$(TargetPath)`** | The absolute path name of the primary output file for the build (defined as drive + path + base name + file extension). |
-| **`$(VCInstallDir)`** | The directory that contains the C++ content of your Visual Studio installation. This property contains the version of the targeted Microsoft C++ (MSVC) toolset, which might be different that the host Visual Studio. For example, when building with `$(PlatformToolset) = v140`, **`$(VCInstallDir)`** contains the path to the Visual Studio 2015 installation. |
-| **`$(VSInstallDir)`** | The directory into which you installed Visual Studio. This property contains the version of the targeted Visual Studio toolset, which might be different that the host Visual Studio. For example, when building with `$(PlatformToolset) = v110`, **`$(VSInstallDir)`** contains the path to the Visual Studio 2012 installation. |
+| **`$(VCInstallDir)`** | The directory that contains the C++ content of your Visual Studio installation. This property contains the version of the targeted Microsoft C++ (MSVC) toolset, which might be different than the host Visual Studio. For example, when building with `$(PlatformToolset) = v140`, **`$(VCInstallDir)`** contains the path to the Visual Studio 2015 installation. |
+| **`$(VSInstallDir)`** | The directory into which you installed Visual Studio. This property contains the version of the targeted Visual Studio toolset, which might be different than the host Visual Studio. For example, when building with `$(PlatformToolset) = v110`, **`$(VSInstallDir)`** contains the path to the Visual Studio 2012 installation. |
 | **`$(WebDeployPath)`** | The relative path from the web deployment root to where the project outputs belong. |
 | **`$(WebDeployRoot)`** | The absolute path to the location of **`<localhost>`**. For example, *`c:\inetpub\wwwroot`*. |
 

@@ -3,9 +3,11 @@ description: "Learn more about: Document Templates and the Document/View Creatio
 title: "Document Templates and the Document-View Creation Process"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["icons, for multiple document templates", "document templates [MFC], and views", "document/view architecture [MFC], creating document/view", "single document template", "MFC, document templates", "multiple document template", "CDocTemplate class [MFC]", "templates [MFC], document templates"]
-ms.assetid: 311ce4cd-fbdf-4ea1-a51b-5bb043abbcee
 ---
 # Document Templates and the Document/View Creation Process
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 To manage the complex process of creating documents with their associated views and frame windows, the framework uses two document template classes: [CSingleDocTemplate](reference/csingledoctemplate-class.md) for SDI applications and [CMultiDocTemplate](reference/cmultidoctemplate-class.md) for MDI applications. A `CSingleDocTemplate` can create and store one document of one type at a time. A `CMultiDocTemplate` keeps a list of many open documents of one type.
 

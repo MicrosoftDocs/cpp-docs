@@ -4,9 +4,11 @@ title: "CMiniFrameWnd Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMiniFrameWnd", "AFXWIN/CMiniFrameWnd", "AFXWIN/CMiniFrameWnd::CMiniFrameWnd", "AFXWIN/CMiniFrameWnd::Create", "AFXWIN/CMiniFrameWnd::CreateEx"]
 helpviewer_keywords: ["CMiniFrameWnd [MFC], CMiniFrameWnd", "CMiniFrameWnd [MFC], Create", "CMiniFrameWnd [MFC], CreateEx"]
-ms.assetid: b8f534ed-0532-4d8e-9657-5595cf677749
 ---
 # CMiniFrameWnd Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Represents a half-height frame window typically seen around floating toolbars.
 

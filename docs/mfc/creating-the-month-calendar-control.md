@@ -3,10 +3,12 @@ description: "Learn more about: Creating the Month Calendar Control"
 title: "Creating the Month Calendar Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CMonthCalCtrl class [MFC], creating", "month calendar controls [MFC], creating", "month calendar controls [MFC]"]
-ms.assetid: 185cc642-85e9-4365-8a4c-d90b75b010f7
 ms.topic: how-to
 ---
 # Creating the Month Calendar Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 How the month calendar control is created depends on whether you are using the control in a dialog box or creating it in a nondialog window.
 

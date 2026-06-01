@@ -4,9 +4,10 @@ title: "CPathT Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CPathT", "ATLPATH/ATL::CPathT", "ATLPATH/ATL::CPathT::PCXSTR", "ATLPATH/ATL::CPathT::PXSTR", "ATLPATH/ATL::CPathT::XCHAR", "ATLPATH/ATL::CPathT::CPathT", "ATLPATH/ATL::CPathT::AddBackslash", "ATLPATH/ATL::CPathT::AddExtension", "ATLPATH/ATL::CPathT::Append", "ATLPATH/ATL::CPathT::BuildRoot", "ATLPATH/ATL::CPathT::Canonicalize", "ATLPATH/ATL::CPathT::Combine", "ATLPATH/ATL::CPathT::CommonPrefix", "ATLPATH/ATL::CPathT::CompactPath", "ATLPATH/ATL::CPathT::CompactPathEx", "ATLPATH/ATL::CPathT::FileExists", "ATLPATH/ATL::CPathT::FindExtension", "ATLPATH/ATL::CPathT::FindFileName", "ATLPATH/ATL::CPathT::GetDriveNumber", "ATLPATH/ATL::CPathT::GetExtension", "ATLPATH/ATL::CPathT::IsDirectory", "ATLPATH/ATL::CPathT::IsFileSpec", "ATLPATH/ATL::CPathT::IsPrefix", "ATLPATH/ATL::CPathT::IsRelative", "ATLPATH/ATL::CPathT::IsRoot", "ATLPATH/ATL::CPathT::IsSameRoot", "ATLPATH/ATL::CPathT::IsUNC", "ATLPATH/ATL::CPathT::IsUNCServer", "ATLPATH/ATL::CPathT::IsUNCServerShare", "ATLPATH/ATL::CPathT::MakePretty", "ATLPATH/ATL::CPathT::MatchSpec", "ATLPATH/ATL::CPathT::QuoteSpaces", "ATLPATH/ATL::CPathT::RelativePathTo", "ATLPATH/ATL::CPathT::RemoveArgs", "ATLPATH/ATL::CPathT::RemoveBackslash", "ATLPATH/ATL::CPathT::RemoveBlanks", "ATLPATH/ATL::CPathT::RemoveExtension", "ATLPATH/ATL::CPathT::RemoveFileSpec", "ATLPATH/ATL::CPathT::RenameExtension", "ATLPATH/ATL::CPathT::SkipRoot", "ATLPATH/ATL::CPathT::StripPath", "ATLPATH/ATL::CPathT::StripToRoot", "ATLPATH/ATL::CPathT::UnquoteSpaces", "ATLPATH/ATL::CPathT::m_strPath"]
 helpviewer_keywords: ["CPathT class"]
-ms.assetid: eba4137d-1fd2-4b44-a2e1-0944db64df3c
 ---
 # CPathT Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class represents a path.
 

@@ -3,10 +3,12 @@ description: "Learn more about: Add Class from Typelib Wizard"
 title: "Add Class from Typelib Wizard"
 ms.date: "03/10/2022"
 helpviewer_keywords: ["COM interfaces, adding classes"]
-ms.assetid: 96152afd-9374-4649-a6ab-b0fa2a5592a3
 ms.custom: devdivchpfy22
 ---
 # Add Class from Typelib Wizard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 ::: moniker range=">=msvc-160"
 

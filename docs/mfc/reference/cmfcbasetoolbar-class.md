@@ -4,9 +4,11 @@ title: "CMFCBaseToolBar Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCBaseToolBar", "AFXBASETOOLBAR/CMFCBaseToolBar", "AFXBASETOOLBAR/CMFCBaseToolBar::GetDockingMode", "AFXBASETOOLBAR/CMFCBaseToolBar::GetMinSize", "AFXBASETOOLBAR/CMFCBaseToolBar::OnAfterChangeParent"]
 helpviewer_keywords: ["CMFCBaseToolBar [MFC], GetDockingMode", "CMFCBaseToolBar [MFC], GetMinSize", "CMFCBaseToolBar [MFC], OnAfterChangeParent"]
-ms.assetid: 5d79206d-55e4-46f8-b1b8-042e34d7f9da
 ---
 # CMFCBaseToolBar Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Base class for toolbars.
 

@@ -4,9 +4,11 @@ title: "CGopherLocator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CGopherLocator", "AFXINET/CGopherLocator", "AFXINET/CGopherLocator::CGopherLocator", "AFXINET/CGopherLocator::GetLocatorType"]
 helpviewer_keywords: ["CGopherLocator [MFC], CGopherLocator", "CGopherLocator [MFC], GetLocatorType"]
-ms.assetid: 6fcc015f-5ae6-4959-b936-858634c71019
 ---
 # CGopherLocator Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Gets a gopher "locator" from a gopher server, determines the locator's type, and makes the locator available to [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md).
 

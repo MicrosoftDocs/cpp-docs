@@ -4,9 +4,11 @@ title: "CMFCDragFrameImpl Class"
 ms.date: "10/18/2018"
 f1_keywords: ["CMFCDragFrameImpl"]
 helpviewer_keywords: ["CMFCDragFrameImpl class [MFC]"]
-ms.assetid: 500cd824-8188-43c2-8754-b7bb46b5648a
 ---
 # CMFCDragFrameImpl Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCDragFrameImpl` class draws the drag rectangle that appears when the user drags a pane in the standard dock mode.
    For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.

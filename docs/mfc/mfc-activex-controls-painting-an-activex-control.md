@@ -3,9 +3,11 @@ description: "Learn more about: MFC ActiveX Controls: Painting an ActiveX Contro
 title: "MFC ActiveX Controls: Painting an ActiveX Control"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], painting", "MFC ActiveX controls [MFC], optimizing"]
-ms.assetid: 25fff9c0-4dab-4704-aaae-8dfb1065dee3
 ---
 # MFC ActiveX Controls: Painting an ActiveX Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article describes the ActiveX control painting process and how you can alter paint code to optimize the process. (See [Optimizing Control Drawing](optimizing-control-drawing.md) for techniques on how to optimize drawing by not having controls individually restore previously selected GDI objects. After all of the controls have been drawn, the container can automatically restore the original objects.)
 

@@ -4,9 +4,10 @@ title: "CNonStatelessWorker Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CNonStatelessWorker", "ATLUTIL/ATL::CNonStatelessWorker", "ATLUTIL/ATL::CNonStatelessWorker::RequestType", "ATLUTIL/ATL::CNonStatelessWorker::Execute", "ATLUTIL/ATL::CNonStatelessWorker::Initialize", "ATLUTIL/ATL::CNonStatelessWorker::Terminate"]
 helpviewer_keywords: ["CNonStatelessWorker class"]
-ms.assetid: d00936c6-9e7d-49fb-b87d-417b963367d1
 ---
 # CNonStatelessWorker Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 Receives requests from a thread pool and passes them on to a worker object that is created and destroyed on each request.
 

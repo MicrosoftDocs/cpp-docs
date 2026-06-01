@@ -4,9 +4,10 @@ title: "IUnknown Implementation Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["IUnknown implementation classes"]
-ms.assetid: 47b69bb5-69d8-4a9c-84a8-329bdde2bb3f
 ---
 # IUnknown Implementation Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The following classes implement `IUnknown` and related methods:
 

@@ -3,9 +3,11 @@ description: "Learn more about: Exceptions: Changes to Exception Macros in Versi
 title: "Exceptions: Changes to Exception Macros in Version 3.0"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["C++ exception handling [MFC], upgrade considerations", "CATCH macro [MFC]", "exceptions [MFC], what's changed", "THROW_LAST macro [MFC]"]
-ms.assetid: 3aa20d8c-229e-449c-995c-ab879eac84bc
 ---
 # Exceptions: Changes to Exception Macros in Version 3.0
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This is an advanced topic.
 

@@ -3,9 +3,10 @@ description: "Learn more about: ATL Operators"
 title: "ATL Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["operators [ATL]"]
-ms.assetid: 58ccd252-2869-45ee-8a5c-3ca40ee7f8a2
 ---
 # ATL Operators
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This section contains the reference topics for the ATL global operators.
 

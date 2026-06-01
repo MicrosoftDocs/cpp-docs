@@ -7,6 +7,8 @@ helpviewer_keywords: ["elapsed time, CTimeSpan object", "timespan", "time span",
 ---
 # `CTimeSpan` Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 An amount of time, which is internally stored as the number of seconds in the time span.
 
 ## Syntax

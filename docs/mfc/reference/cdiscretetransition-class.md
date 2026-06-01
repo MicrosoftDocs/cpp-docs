@@ -4,9 +4,11 @@ title: "CDiscreteTransition Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDiscreteTransition", "AFXANIMATIONCONTROLLER/CDiscreteTransition", "AFXANIMATIONCONTROLLER/CDiscreteTransition::CDiscreteTransition", "AFXANIMATIONCONTROLLER/CDiscreteTransition::Create", "AFXANIMATIONCONTROLLER/CDiscreteTransition::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CDiscreteTransition::m_delay", "AFXANIMATIONCONTROLLER/CDiscreteTransition::m_hold"]
 helpviewer_keywords: ["CDiscreteTransition [MFC], CDiscreteTransition", "CDiscreteTransition [MFC], Create", "CDiscreteTransition [MFC], m_dblFinalValue", "CDiscreteTransition [MFC], m_delay", "CDiscreteTransition [MFC], m_hold"]
-ms.assetid: b4d84fb3-ccaa-451c-a69b-6b50dcb9b9c8
 ---
 # CDiscreteTransition Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Encapsulates a discrete transition.
 

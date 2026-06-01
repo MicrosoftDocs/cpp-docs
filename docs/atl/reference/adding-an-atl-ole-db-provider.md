@@ -3,9 +3,10 @@ description: "Learn more about: Adding an ATL OLE DB Provider"
 title: "Adding an ATL OLE DB Provider"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB, adding ATL OLE DB provider to projects", "ATL projects, adding ATL OLE DB providers", "ATL OLE DB providers"]
-ms.assetid: 26fba1e3-880f-4bc6-90e5-2096a48a3a6c
 ---
 # Adding an ATL OLE DB Provider
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 ::: moniker range=">=msvc-160"
 

@@ -6,6 +6,9 @@ helpviewer_keywords: ["verbs [MFC]", "OLE [MFC], activation", "edit verb [MFC]",
 ---
 # Activation: Verbs
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 This article explains the role primary and secondary verbs play in OLE [activation](activation-cpp.md).
 
 Usually, double-clicking an embedded item allows the user to edit it. However, certain items do not behave this way. For example, double-clicking an item created with the Sound Recorder application does not open the server in a separate window; instead, it plays the sound.

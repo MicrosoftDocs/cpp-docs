@@ -3,9 +3,11 @@ description: "Learn more about: Active Document Classes"
 title: "Active Document Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Active document classes [MFC]"]
-ms.assetid: cc20af37-b658-406d-8148-7670737f4c03
 ---
 # Active Document Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Active documents can be displayed either in the entire client window of a Web browser, such as Internet Explorer 5.5, or in an Active container, such as the Microsoft Office Binder, that supports Active documents.
 

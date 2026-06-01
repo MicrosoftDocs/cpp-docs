@@ -3,9 +3,11 @@ description: "Learn more about: Data Objects and Data Sources: Creation and Dest
 title: "Data Objects and Data Sources: Creation and Destruction"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["destroying data objects [MFC]", "object creation [MFC], data source objects", "data sources [MFC], and data objects", "data source objects [MFC], creating", "destruction [MFC], data sources", "data source objects [MFC], destroying", "data objects [MFC], creating", "data objects [MFC], destroying", "data sources [MFC], role", "data sources [MFC], destroying", "destruction [MFC], data objects", "data sources [MFC], creating"]
-ms.assetid: ac216d54-3ca5-4ce7-850d-cd1f6a90d4f1
 ---
 # Data Objects and Data Sources: Creation and Destruction
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 As explained in the article [Data Objects and Data Sources (OLE)](data-objects-and-data-sources-ole.md), data objects and data sources represent both sides of a data transfer. This article explains when to create and destroy these objects and sources to perform your data transfers properly, including:
 

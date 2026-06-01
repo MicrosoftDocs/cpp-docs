@@ -3,9 +3,11 @@ description: "Learn more about: Files in MFC"
 title: "Files in MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["serialization [MFC], MFC files", "I/O [MFC], MFC classes", "files [MFC], MFC", "files [MFC], serialization", "binary access, binary file operations in MFC", "file I/O classes [MFC]", "I/O [MFC]", "persistence [MFC]", "MFC, file operations", "files [MFC], manipulating", "binary access [MFC]"]
-ms.assetid: ae25e2c5-2859-4679-ab97-438824e93ce1
 ---
 # Files in MFC
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 In the Microsoft Foundation Class Library (MFC), class [CFile](reference/cfile-class.md) handles normal file I/O operations. This family of articles explains how to open and close files as well as read and write data to those files. It also discusses file status operations. For a description of how to use the object-based serialization features of MFC as an alternative way of reading and writing data in files, see the article [Serialization](serialization-in-mfc.md).
 

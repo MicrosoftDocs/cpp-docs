@@ -7,6 +7,9 @@ helpviewer_keywords: ["DAO (Data Access Objects), Relations collection", "CDaoRe
 ---
 # CDaoRelationInfo Structure
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The `CDaoRelationInfo` structure contains information about a relation defined between fields of two tables in a [`CDaoDatabase`](../../mfc/reference/cdaodatabase-class.md) object.
 
 > [!NOTE]

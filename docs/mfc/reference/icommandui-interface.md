@@ -4,9 +4,11 @@ title: "ICommandUI Interface"
 ms.date: "09/07/2019"
 f1_keywords: ["ICommandUI", "AFXWINFORMS/ICommandUI", "AFXWINFORMS/icommandui__Check", "AFXWINFORMS/ICommandUI::ContinueRouting", "AFXWINFORMS/ICommandUI::Enabled", "AFXWINFORMS/ICommandUI::ID", "AFXWINFORMS/ICommandUI::Index", "AFXWINFORMS/ICommandUI::Radio", "AFXWINFORMS/ICommandUI::Text"]
 helpviewer_keywords: ["ICommandUI interface [MFC]"]
-ms.assetid: 134afe8d-dcdf-47ca-857a-a166a6b665dd
 ---
 # ICommandUI Interface
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Manages user interface commands.
 

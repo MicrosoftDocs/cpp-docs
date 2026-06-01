@@ -3,9 +3,11 @@ description: "Learn more about: OLE Background: Linking and Embedding"
 title: "OLE Background: Linking and Embedding"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE embedded items [MFC]", "item types [MFC], defined", "item types [MFC]", "OLE [MFC], linked items", "linked items (OLE) [MFC]", "embedded objects [MFC]", "OLE items [MFC], types"]
-ms.assetid: 11107711-eb96-4099-8f5c-7910bb3ecb75
 ---
 # OLE Background: Linking and Embedding
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Using the Paste command in a container application can create an embedded component, or embedded item. The source data for an embedded item is stored as part of the OLE document that contains it. In this way, a document file for a word processor document can contain text and also can contain bitmaps, graphs, formulas, or any other type of data.
 

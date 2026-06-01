@@ -3,10 +3,12 @@ description: "Learn more about: Using CStatusBarCtrl to Create a CStatusBarCtrl 
 title: "Using CStatusBarCtrl to Create a CStatusBarCtrl Object"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["status bar controls [MFC], creating", "CStatusBarCtrl class [MFC], creating"]
-ms.assetid: 365c2b65-12de-49e6-9a2e-416c6ee10d60
 ms.topic: how-to
 ---
 # Using CStatusBarCtrl to Create a CStatusBarCtrl Object
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Here is an example of a typical use of [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md):
 

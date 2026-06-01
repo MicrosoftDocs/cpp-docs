@@ -3,10 +3,12 @@ description: "Learn more about: Allocating GDI Resources"
 title: "Allocating GDI Resources"
 ms.date: "06/03/2019"
 helpviewer_keywords: ["resources [MFC], printing", "GDI objects [MFC], allocating during printing", "printing [MFC], allocating GDI resources"]
-ms.assetid: cef7e94d-5a27-4aea-a9ee-8369fc895d3a
 ms.topic: concept-article
 ---
 # Allocating GDI Resources
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains how to allocate and deallocate the Windows graphics device interface (GDI) objects needed for printing.
 

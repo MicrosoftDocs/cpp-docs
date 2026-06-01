@@ -3,10 +3,12 @@ description: "Learn more about: Using Frame Windows"
 title: "Using Frame Windows"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["windows [MFC], frame windows", "frame windows [MFC], using", "MFC, frame windows"]
-ms.assetid: 4d773238-11f6-4ccf-8114-57310c5aaa2d
 ms.topic: concept-article
 ---
 # Using Frame Windows
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The MFC framework creates document frame windows — and their views and documents — as part of its implementation of the New and Open commands on the File menu. Because the framework does most of the frame-window work for you, you play only a small role in creating, using, and destroying those windows. You can, however, explicitly create your own frame windows and child windows for special purposes.
 

@@ -3,9 +3,11 @@ description: "Learn more about: Standard Dialog Data Validation Routines"
 title: "Standard Dialog Data Validation Routines"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["standard dialog, data validation routines"]
-ms.assetid: 44dbc222-a897-4949-925e-7660e8964ccd
 ---
 # Standard Dialog Data Validation Routines
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This topic lists the standard dialog data validation (DDV) routines used for common MFC dialog controls.
 

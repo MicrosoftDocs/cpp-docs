@@ -4,9 +4,11 @@ title: "COlePasteSpecialDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COlePasteSpecialDialog", "AFXODLGS/COlePasteSpecialDialog", "AFXODLGS/COlePasteSpecialDialog::COlePasteSpecialDialog", "AFXODLGS/COlePasteSpecialDialog::AddFormat", "AFXODLGS/COlePasteSpecialDialog::AddLinkEntry", "AFXODLGS/COlePasteSpecialDialog::AddStandardFormats", "AFXODLGS/COlePasteSpecialDialog::CreateItem", "AFXODLGS/COlePasteSpecialDialog::DoModal", "AFXODLGS/COlePasteSpecialDialog::GetDrawAspect", "AFXODLGS/COlePasteSpecialDialog::GetIconicMetafile", "AFXODLGS/COlePasteSpecialDialog::GetPasteIndex", "AFXODLGS/COlePasteSpecialDialog::GetSelectionType", "AFXODLGS/COlePasteSpecialDialog::m_ps"]
 helpviewer_keywords: ["COlePasteSpecialDialog [MFC], COlePasteSpecialDialog", "COlePasteSpecialDialog [MFC], AddFormat", "COlePasteSpecialDialog [MFC], AddLinkEntry", "COlePasteSpecialDialog [MFC], AddStandardFormats", "COlePasteSpecialDialog [MFC], CreateItem", "COlePasteSpecialDialog [MFC], DoModal", "COlePasteSpecialDialog [MFC], GetDrawAspect", "COlePasteSpecialDialog [MFC], GetIconicMetafile", "COlePasteSpecialDialog [MFC], GetPasteIndex", "COlePasteSpecialDialog [MFC], GetSelectionType", "COlePasteSpecialDialog [MFC], m_ps"]
-ms.assetid: 0e82ef9a-9bbe-457e-8240-42c86a0534f7
 ---
 # COlePasteSpecialDialog Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Used for the OLE Paste Special dialog box.
 

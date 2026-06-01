@@ -4,9 +4,10 @@ title: "CWorkerThread Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CWorkerThread", "ATLUTIL/ATL::CWorkerThread", "ATLUTIL/ATL::CWorkerThread::CWorkerThread", "ATLUTIL/ATL::CWorkerThread::AddHandle", "ATLUTIL/ATL::CWorkerThread::AddTimer", "ATLUTIL/ATL::CWorkerThread::GetThreadHandle", "ATLUTIL/ATL::CWorkerThread::GetThreadId", "ATLUTIL/ATL::CWorkerThread::Initialize", "ATLUTIL/ATL::CWorkerThread::RemoveHandle", "ATLUTIL/ATL::CWorkerThread::Shutdown"]
 helpviewer_keywords: ["CWorkerThread class"]
-ms.assetid: be79a832-1345-4a36-a13e-a406cc65286f
 ---
 # CWorkerThread Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class creates a worker thread or uses an existing one, waits on one or more kernel object handles, and executes a specified client function when one of the handles is signaled.
 

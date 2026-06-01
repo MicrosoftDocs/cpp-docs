@@ -3,9 +3,11 @@ description: "Learn more about: Active Document Containment"
 title: "Active Document Containment"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["active documents [MFC], containers", "containers [MFC], active document", "MFC, COM support", "active document containers [MFC], about active document containers", "MFC COM, active document containment"]
-ms.assetid: b8dfa74b-75ce-47df-b75e-fc87b7f7d687
 ---
 # Active Document Containment
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Active document containment is a technology that provides a single frame in which to work with documents, instead of forcing you to create and use multiple application frames for each document type. It differs from basic OLE technology in that OLE works with embedded objects within a compound document in which only a single piece of content can be active. With active document containment, you activate an entire document (that is, an entire application, including associated menus, toolbars, and so on) within the context of a single frame.
 

@@ -3,9 +3,11 @@ description: "Learn more about: Servers"
 title: "Servers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE server applications [MFC]", "OLE server applications [MFC], activation", "full-server", "servers", "mini-server", "OLE server applications [MFC], server types", "server applications [MFC]"]
-ms.assetid: e45172e8-eae3-400a-8139-0fa009a42fdc
 ---
 # Servers
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A server application (or component application) creates OLE items (or components) for use by container applications. A visual editing server application also supports visual editing or in-place activation. Another form of OLE server is an [automation server](../mfc/automation-servers.md). Some server applications support only the creation of embedded items; others support the creation of both embedded and linked items. Some support linking only, although this is rare. All server applications must support activation by container applications when the user wants to edit an item. An application can be both a container and a server. In other words, it can both incorporate data into its documents, and create data that can be incorporated as items into other applications' documents.
 

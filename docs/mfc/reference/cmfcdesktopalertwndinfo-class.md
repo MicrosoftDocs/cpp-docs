@@ -4,9 +4,11 @@ title: "CMFCDesktopAlertWndInfo Class"
 ms.date: "10/18/2018"
 f1_keywords: ["CMFCDesktopAlertWndInfo", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_hIcon", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_nURLCmdID", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_strText", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_strURL"]
 helpviewer_keywords: ["CMFCDesktopAlertWndInfo [MFC], m_hIcon", "CMFCDesktopAlertWndInfo [MFC], m_nURLCmdID", "CMFCDesktopAlertWndInfo [MFC], m_strText", "CMFCDesktopAlertWndInfo [MFC], m_strURL"]
-ms.assetid: 5c9bb84e-6c96-4748-8e74-6951b6ae8e84
 ---
 # CMFCDesktopAlertWndInfo Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCDesktopAlertWndInfo` class is used with the [CMFCDesktopAlertWnd Class](../../mfc/reference/cmfcdesktopalertwnd-class.md). It specifies the controls that are displayed if the desktop alert window pops up.
 

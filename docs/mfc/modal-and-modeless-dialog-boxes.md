@@ -3,9 +3,11 @@ description: "Learn more about: Modal and Modeless Dialog Boxes"
 title: "Modal and Modeless Dialog Boxes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC dialog boxes [MFC], modeless", "modeless dialog boxes [MFC]", "MFC dialog boxes [MFC], modal", "modal dialog boxes [MFC]"]
-ms.assetid: e83df336-5994-4b8f-8233-7942f997315b
 ---
 # Modal and Modeless Dialog Boxes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 You can use class [CDialog](reference/cdialog-class.md) to manage two kinds of dialog boxes:
 

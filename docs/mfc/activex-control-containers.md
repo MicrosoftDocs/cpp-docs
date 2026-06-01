@@ -3,9 +3,11 @@ description: "Learn more about: ActiveX Control Containers"
 title: "ActiveX Control Containers"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["ActiveX control containers [MFC]", "OLE controls [MFC], containers"]
-ms.assetid: 0eb1a713-e607-4c79-a0c7-67c5f1fd5fab
 ---
 # ActiveX Control Containers
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 An ActiveX control container is a container that fully supports ActiveX controls and can incorporate them into its own windows or dialogs. An ActiveX control is a reusable software element that you can use in many development projects. Controls allow your application's user to access databases, monitor data, and make various selections within your applications. For more information on ActiveX controls, see the article [MFC ActiveX Controls](mfc-activex-controls.md).
 

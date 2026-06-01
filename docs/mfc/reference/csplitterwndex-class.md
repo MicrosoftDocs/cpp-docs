@@ -4,9 +4,11 @@ title: "CSplitterWndEx Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSplitterWndEx", "AFXSPLITTERWNDEX/CSplitterWndEx", "AFXSPLITTERWNDEX/CSplitterWndEx::OnDrawSplitter"]
 helpviewer_keywords: ["CSplitterWndEx [MFC], OnDrawSplitter"]
-ms.assetid: 33e5eef3-05e1-4a07-a968-bf9207ce8598
 ---
 # CSplitterWndEx Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Represents a customized splitter window.
 

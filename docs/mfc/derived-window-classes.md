@@ -3,9 +3,11 @@ description: "Learn more about: Derived window classes"
 title: "Derived window classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["window class hierarchy", "hierarchies, window classes", "classes [MFC], derived", "CWnd class [MFC], classes derived from", "derived classes [MFC], window classes", "window classes [MFC], derived"]
-ms.assetid: 6f7e437e-fbde-4a06-bfab-72d9dbf05292
 ---
 # Derived window classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 You can create windows directly from [`CWnd`](reference/cwnd-class.md), or derive new window classes from `CWnd`. It's how you typically create your own custom windows. However, most windows used in a framework program are instead created from one of the `CWnd`-derived frame-window classes supplied by MFC.
 

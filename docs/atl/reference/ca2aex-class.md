@@ -4,9 +4,10 @@ title: "CA2AEX Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CA2AEX", "ATLCONV/ATL::CA2AEX", "ATLCONV/ATL::CA2AEX::CA2AEX", "ATLCONV/ATL::CA2AEX::m_psz", "ATLCONV/ATL::CA2AEX::m_szBuffer"]
 helpviewer_keywords: ["CA2AEX class"]
-ms.assetid: 57dc65df-d9cf-4a84-99d3-6e031dde3664
 ---
 # CA2AEX Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class is used by the string conversion macros CA2TEX and CT2AEX, and the typedef CA2A.
 

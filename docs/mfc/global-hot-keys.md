@@ -3,9 +3,11 @@ description: "Learn more about: Global Hot Keys"
 title: "Global Hot Keys"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["keyboard shortcuts [MFC], hot keys", "CHotKeyCtrl class [MFC], global hot keys", "access keys [MFC], hot keys", "global hot keys [MFC]"]
-ms.assetid: e0b95d14-c571-4c9a-9cd1-e7fc1f0e278d
 ---
 # Global Hot Keys
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A global hot key is associated with a particular nonchild window. It allows the user to activate the window from any part of the system. An application sets a global hot key for a particular window by sending the [WM_SETHOTKEY](/windows/win32/inputdev/wm-sethotkey) message to that window. For instance, if `m_HotKeyCtrl` is the [CHotKeyCtrl](reference/chotkeyctrl-class.md) object and `pMainWnd` is a pointer to the window to be activated when the hot key is pressed, you could use the following code to associate the hot key specified in the control with the window pointed to by `pMainWnd`.
 

@@ -3,9 +3,11 @@ description: "Learn more about: Header Control and List Control"
 title: "Header Control and List Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CListCtrl class [MFC], with CHeaderCtrl", "CListCtrl class [MFC], header controls", "CHeaderCtrl class [MFC], with CListCtrl", "controls [MFC], header", "header controls [MFC]", "header controls [MFC], list controls used with"]
-ms.assetid: b20194b1-1a6b-4e2f-b890-1b3cca6650bc
 ---
 # Header Control and List Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 In most cases, you will use the header control that is embedded in a [CListCtrl](reference/clistctrl-class.md) or [CListView](reference/clistview-class.md) object. However, there are cases where a separate header control object is desirable, such as manipulating data, arranged in columns or rows, in a [CView](reference/cview-class.md)-derived object. In these cases, you need greater control over the appearance and default behavior of an embedded header control.
 

@@ -3,9 +3,11 @@ description: "Learn more about: MAPI Support in MFC"
 title: "MAPI Support in MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, MAPI support", "MAPI support in MFC", "CDocument class [MFC], and MAPI", "OnUpdateFileSendMail method [MFC]", "MAPI, MFC", "OnFileSendMail method [MFC]"]
-ms.assetid: cafbecb1-0427-4077-b4b8-159bae5b49b8
 ---
 # MAPI Support in MFC
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 MFC supplies support for a subset of the Microsoft Messaging Application Program Interface (MAPI) in class `CDocument`. Specifically, `CDocument` has member functions that determine whether mail support is present on the end-user's machine and, if so, enable a Send Mail command whose standard command ID is ID_FILE_SEND_MAIL. The MFC handler function for this command allows the user to send a document through electronic mail.
 

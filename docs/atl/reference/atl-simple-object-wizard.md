@@ -4,9 +4,10 @@ title: "ATL Simple Object Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.class.atl.simple.overview"]
 helpviewer_keywords: ["ATL projects, adding objects", "ATL Simple Object Wizard"]
-ms.assetid: f7f85741-9aad-4543-a917-a29b996364da
 ---
 # ATL Simple Object Wizard
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This wizard inserts into the project a minimal COM object. Use this page of the wizard to specify the names that identify the C++ class and files for your object and its COM functionality.
 

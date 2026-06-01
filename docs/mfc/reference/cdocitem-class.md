@@ -4,9 +4,11 @@ title: "CDocItem Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDocItem", "AFXOLE/CDocItem", "AFXOLE/CDocItem::GetDocument", "AFXOLE/CDocItem::IsBlank"]
 helpviewer_keywords: ["CDocItem [MFC], GetDocument", "CDocItem [MFC], IsBlank"]
-ms.assetid: 84fb8610-a4c8-4211-adc0-e70e8d002c11
 ---
 # CDocItem Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The base class for document items, which are components of a document's data.
 

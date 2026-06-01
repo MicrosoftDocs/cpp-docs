@@ -4,9 +4,10 @@ title: "Thread Pooling Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["thread pooling, classes", "threading [ATL], pooling", "pooling worker threads"]
-ms.assetid: 01fa2c1c-12ae-4781-b772-0a74b6365a8c
 ---
 # Thread Pooling Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The following classes support thread pooling:
 

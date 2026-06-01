@@ -4,9 +4,11 @@ title: "CAnimationTimerEventHandler Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAnimationTimerEventHandler", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::CreateInstance", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::OnPostUpdate", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::OnPreUpdate", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::OnRenderingTooSlow", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::SetAnimationController"]
 helpviewer_keywords: ["CAnimationTimerEventHandler [MFC], CreateInstance", "CAnimationTimerEventHandler [MFC], OnPostUpdate", "CAnimationTimerEventHandler [MFC], OnPreUpdate", "CAnimationTimerEventHandler [MFC], OnRenderingTooSlow", "CAnimationTimerEventHandler [MFC], SetAnimationController"]
-ms.assetid: 188dea3b-4b5e-4f6b-8df9-09d993a21619
 ---
 # CAnimationTimerEventHandler Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements a callback, which is called by the Animation API when timing events occur.
 

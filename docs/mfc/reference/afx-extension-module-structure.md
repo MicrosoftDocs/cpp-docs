@@ -4,9 +4,11 @@ title: "AFX_EXTENSION_MODULE Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["AFX_EXTENSION_MODULE"]
 helpviewer_keywords: ["AFX_EXTENSION_MODULE structure [MFC]"]
-ms.assetid: b85a989c-d0c5-4b28-b53c-dad45b75704e
 ---
 # AFX_EXTENSION_MODULE Structure
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `AFX_EXTENSION_MODULE` is used during initialization of MFC extension DLLs to hold the state of MFC extension DLL module.
 

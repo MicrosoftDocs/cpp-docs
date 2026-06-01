@@ -4,9 +4,11 @@ title: "CColorDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CColorDialog", "AFXDLGS/CColorDialog", "AFXDLGS/CColorDialog::CColorDialog", "AFXDLGS/CColorDialog::DoModal", "AFXDLGS/CColorDialog::GetColor", "AFXDLGS/CColorDialog::GetSavedCustomColors", "AFXDLGS/CColorDialog::SetCurrentColor", "AFXDLGS/CColorDialog::OnColorOK", "AFXDLGS/CColorDialog::m_cc"]
 helpviewer_keywords: ["CColorDialog [MFC], CColorDialog", "CColorDialog [MFC], DoModal", "CColorDialog [MFC], GetColor", "CColorDialog [MFC], GetSavedCustomColors", "CColorDialog [MFC], SetCurrentColor", "CColorDialog [MFC], OnColorOK", "CColorDialog [MFC], m_cc"]
-ms.assetid: d013dc25-9290-4b5d-a97e-95ad7208e13b
 ---
 # CColorDialog Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Allows you to incorporate a color-selection dialog box into your application.
 

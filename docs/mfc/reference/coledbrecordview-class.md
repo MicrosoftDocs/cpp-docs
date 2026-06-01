@@ -4,9 +4,11 @@ title: "COleDBRecordView Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleDBRecordView", "AFXOLEDB/COleDBRecordView", "AFXOLEDB/COleDBRecordView::COleDBRecordView", "AFXOLEDB/COleDBRecordView::OnGetRowset", "AFXOLEDB/COleDBRecordView::OnMove"]
 helpviewer_keywords: ["COleDBRecordView [MFC], COleDBRecordView", "COleDBRecordView [MFC], OnGetRowset", "COleDBRecordView [MFC], OnMove"]
-ms.assetid: 98612427-c4c9-4760-b7e1-85b17448add9
 ---
 # COleDBRecordView Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A view that displays database records in controls.
 

@@ -3,10 +3,12 @@ description: "Learn more about: Creating the Dialog Resource"
 title: "Creating the Dialog Resource"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["dialog resources", "MFC dialog boxes [MFC], creating", "dialog templates [MFC], creating dialog resource", "templates [MFC], creating", "resources [MFC], creating dialog boxes", "MFC dialog boxes [MFC], dialog resource"]
-ms.assetid: 0b83bd33-14d3-4611-8129-fccdae18053e
 ms.topic: concept-article
 ---
 # Creating the Dialog Resource
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 To design the [dialog box](dialog-boxes.md) and create the dialog resource, you use the [dialog editor](../windows/dialog-editor.md). In the dialog editor, you can:
 

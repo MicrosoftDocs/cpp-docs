@@ -4,9 +4,10 @@ title: "Application Settings, ATL Project Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.atl.com.appset"]
 helpviewer_keywords: ["ATL Project Wizard, application settings"]
-ms.assetid: d48c9fc5-f439-49fd-884c-8bcfa7d52991
 ---
 # Application Settings, ATL Project Wizard
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 Use the **Application Settings** page of the ATL Project Wizard to design and add basic features to a new ATL project.
 

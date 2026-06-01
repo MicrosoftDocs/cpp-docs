@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMFCListCtrl [MFC], EnableMarkSortedColumn", "CMFCListCtr
 ---
 # `CMFCListCtrl` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The `CMFCListCtrl` class extends the functionality of [`CListCtrl` Class](../../mfc/reference/clistctrl-class.md) class by supporting the advanced header control functionality of the [`CMFCHeaderCtrl` Class](../../mfc/reference/cmfcheaderctrl-class.md).
 
 ## Syntax

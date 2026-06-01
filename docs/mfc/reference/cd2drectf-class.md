@@ -4,9 +4,11 @@ title: "CD2DRectF Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CD2DRectF", "AFXRENDERTARGET/CD2DRectF", "AFXRENDERTARGET/CD2DRectF::CD2DRectF", "AFXRENDERTARGET/CD2DRectF::IsNull"]
 helpviewer_keywords: ["CD2DRectF [MFC], CD2DRectF", "CD2DRectF [MFC], IsNull"]
-ms.assetid: 87c12d87-9d18-4a19-ba14-0f51d6b6835a
 ---
 # CD2DRectF Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A wrapper for `D2D1_RECT_F`.
 

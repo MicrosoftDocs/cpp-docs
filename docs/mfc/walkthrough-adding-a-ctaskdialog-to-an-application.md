@@ -6,6 +6,9 @@ helpviewer_keywords: ["CTaskDialog, adding", "walkthroughs [MFC], dialogs"]
 ---
 # Walkthrough: Adding a CTaskDialog to an application
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 This walkthrough introduces the [`CTaskDialog` class](../mfc/reference/ctaskdialog-class.md) and shows how to add it to your application.
 
 The `CTaskDialog` is a task dialog box that replaces the Windows message box in Windows Vista or later. The `CTaskDialog` improves on the original message box and adds functionality. The Windows message box is still supported in Visual Studio.

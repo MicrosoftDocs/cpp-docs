@@ -4,9 +4,10 @@ title: "IWorkerThreadClient Interface"
 ms.date: "11/04/2016"
 f1_keywords: ["IWorkerThreadClient", "ATLUTIL/ATL::IWorkerThreadClient", "ATLUTIL/ATL::CloseHandle", "ATLUTIL/ATL::Execute"]
 helpviewer_keywords: ["IWorkerThreadClient interface"]
-ms.assetid: 56f4a2f5-007e-4a33-9e20-05187629f715
 ---
 # IWorkerThreadClient Interface
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 `IWorkerThreadClient` is the interface implemented by clients of the [CWorkerThread](../../atl/reference/cworkerthread-class.md) class.
 

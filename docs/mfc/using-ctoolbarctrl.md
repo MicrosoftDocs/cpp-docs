@@ -3,10 +3,12 @@ description: "Learn more about: Using CToolBarCtrl"
 title: "Using CToolBarCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CToolBarCtrl class [MFC]", "toolbar controls [MFC], creating"]
-ms.assetid: 13cf3753-135b-4a3e-a850-ed30177fcf9d
 ms.topic: concept-article
 ---
 # Using CToolBarCtrl
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 You can use the toolbar control ([CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md)) to create a control window containing buttons and optional spaces. Each button in the toolbar control window sends a command message to the parent window as the user chooses it. Typically, the buttons in a toolbar correspond to items in the application's menu, providing an additional and more direct way for the user to access an application's commands.
 

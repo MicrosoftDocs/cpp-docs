@@ -4,9 +4,10 @@ title: "CWinTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CWinTraits", "ATLWIN/ATL::CWinTraits", "ATLWIN/ATL::CWinTraits::GetWndExStyle", "ATLWIN/ATL::CWinTraits::GetWndStyle"]
 helpviewer_keywords: ["CMDIChildWinTraits class", "window styles, default values for ATL", "CWinTraits class", "CFrameWinTraits class", "CControlWinTraits class"]
-ms.assetid: f78f486e-6d9c-42c6-8e86-371e05aa7e59
 ---
 # CWinTraits Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides a method for standardizing the styles used when creating a window object.
 

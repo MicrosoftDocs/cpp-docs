@@ -4,9 +4,11 @@ title: "CMDIFrameWnd Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMDIFrameWnd", "AFXWIN/CMDIFrameWnd", "AFXWIN/CMDIFrameWnd::CMDIFrameWnd", "AFXWIN/CMDIFrameWnd::CreateClient", "AFXWIN/CMDIFrameWnd::CreateNewChild", "AFXWIN/CMDIFrameWnd::GetWindowMenuPopup", "AFXWIN/CMDIFrameWnd::MDIActivate", "AFXWIN/CMDIFrameWnd::MDICascade", "AFXWIN/CMDIFrameWnd::MDIGetActive", "AFXWIN/CMDIFrameWnd::MDIIconArrange", "AFXWIN/CMDIFrameWnd::MDIMaximize", "AFXWIN/CMDIFrameWnd::MDINext", "AFXWIN/CMDIFrameWnd::MDIPrev", "AFXWIN/CMDIFrameWnd::MDIRestore", "AFXWIN/CMDIFrameWnd::MDISetMenu", "AFXWIN/CMDIFrameWnd::MDITile"]
 helpviewer_keywords: ["CMDIFrameWnd [MFC], CMDIFrameWnd", "CMDIFrameWnd [MFC], CreateClient", "CMDIFrameWnd [MFC], CreateNewChild", "CMDIFrameWnd [MFC], GetWindowMenuPopup", "CMDIFrameWnd [MFC], MDIActivate", "CMDIFrameWnd [MFC], MDICascade", "CMDIFrameWnd [MFC], MDIGetActive", "CMDIFrameWnd [MFC], MDIIconArrange", "CMDIFrameWnd [MFC], MDIMaximize", "CMDIFrameWnd [MFC], MDINext", "CMDIFrameWnd [MFC], MDIPrev", "CMDIFrameWnd [MFC], MDIRestore", "CMDIFrameWnd [MFC], MDISetMenu", "CMDIFrameWnd [MFC], MDITile"]
-ms.assetid: fa8736e6-511b-4c51-8b4d-eba78378aeb9
 ---
 # CMDIFrameWnd Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides the functionality of a Windows multiple document interface (MDI) frame window, along with members for managing the window.
 

@@ -4,9 +4,11 @@ title: "Handlers for Standard Windows Messages"
 ms.date: "11/04/2016"
 f1_keywords: ["afx_msg"]
 helpviewer_keywords: ["Windows messages [MFC], handlers", "message handling [MFC], Windows message handlers", "handler functions, standard Windows messages", "functions [MFC], handler", "messages [MFC], Windows"]
-ms.assetid: 19412a8b-2c38-4502-81da-13c823c7e36c
 ---
 # Handlers for Standard Windows Messages
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Default handlers for standard Windows messages (**WM_**) are predefined in class `CWnd`. The class library bases names for these handlers on the message name. For example, the handler for the **WM_PAINT** message is declared in `CWnd` as:
 

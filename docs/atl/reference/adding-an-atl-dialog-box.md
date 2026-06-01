@@ -3,9 +3,10 @@ description: "Learn more about: Adding an ATL Dialog Box"
 title: "Adding an ATL Dialog Box"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL projects, adding dialog resources", "MFC dialog boxes, ATL dialogs", "dialog boxes, ATL"]
-ms.assetid: 152a378f-7b24-4f66-aeba-c740973f03a6
 ---
 # Adding an ATL Dialog Box
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 To add an ATL dialog to your project, your project must be either an ATL project or an MFC project that includes ATL support. You can use the [ATL Project Wizard](../../atl/reference/atl-project-wizard.md) to create an ATL application, or [add an ATL object to your MFC application](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) to implement ATL support for an MFC application.
 

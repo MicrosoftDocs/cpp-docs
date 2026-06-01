@@ -4,9 +4,11 @@ title: "CMultiPageDHtmlDialog Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CMultiPageDHtmlDialog", "AFXDHTML/CMultiPageDHtmlDialog", "AFXDHTML/CMultiPageDHtmlDialog::CMultiPageDHtmlDialog"]
 helpviewer_keywords: ["CMultiPageDHtmlDialog [MFC], CMultiPageDHtmlDialog"]
-ms.assetid: 971accc1-824d-4df4-b4c1-b1a20e0f7e4f
 ---
 # CMultiPageDHtmlDialog Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A multipage dialog displays multiple HTML pages sequentially and handles the events from each page.
 

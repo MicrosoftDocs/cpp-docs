@@ -4,9 +4,11 @@ title: "CVSListBox Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CVSListBox", "AFXVSLISTBOX/CVSListBox", "AFXVSLISTBOX/CVSListBox::CVSListBox", "AFXVSLISTBOX/CVSListBox::AddItem", "AFXVSLISTBOX/CVSListBox::EditItem", "AFXVSLISTBOX/CVSListBox::GetCount", "AFXVSLISTBOX/CVSListBox::GetItemData", "AFXVSLISTBOX/CVSListBox::GetItemText", "AFXVSLISTBOX/CVSListBox::GetSelItem", "AFXVSLISTBOX/CVSListBox::RemoveItem", "AFXVSLISTBOX/CVSListBox::SelectItem", "AFXVSLISTBOX/CVSListBox::SetItemData", "AFXVSLISTBOX/CVSListBox::GetListHwnd"]
 helpviewer_keywords: ["CVSListBox [MFC], CVSListBox", "CVSListBox [MFC], AddItem", "CVSListBox [MFC], EditItem", "CVSListBox [MFC], GetCount", "CVSListBox [MFC], GetItemData", "CVSListBox [MFC], GetItemText", "CVSListBox [MFC], GetSelItem", "CVSListBox [MFC], RemoveItem", "CVSListBox [MFC], SelectItem", "CVSListBox [MFC], SetItemData", "CVSListBox [MFC], GetListHwnd"]
-ms.assetid: c79be7b4-46ed-4af8-a41e-68962782d8ef
 ---
 # CVSListBox Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CVSListBox` class supports an editable list control.
 

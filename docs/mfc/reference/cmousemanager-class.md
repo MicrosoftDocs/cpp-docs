@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMouseManager [MFC], AddView", "CMouseManager [MFC], GetV
 ---
 # CMouseManager Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Allows a user to associate different commands with a particular [CView](../../mfc/reference/cview-class.md) object when the user double-clicks inside that view.
 
 ## Syntax

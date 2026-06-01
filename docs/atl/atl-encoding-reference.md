@@ -3,9 +3,10 @@ description: "Learn more about: ATL Encoding Reference"
 title: "ATL Encoding Reference"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["encoding", "encoding, functions"]
-ms.assetid: 82d4fdf3-3c4a-4fe2-b297-8ffb4714406f
 ---
 # ATL Encoding Reference
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 Encoding in a range of common Internet standards such as uuencode, hexadecimal, and UTF8 is supported by the code found in *`atlenc.h`*.
 

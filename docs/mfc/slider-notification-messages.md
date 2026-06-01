@@ -3,9 +3,11 @@ description: "Learn more about: Slider Notification Messages"
 title: "Slider Notification Messages"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CSliderCtrl class [MFC], notifications", "slider controls [MFC], notification messages", "messages, notification", "notifications [MFC], CSliderCtrl"]
-ms.assetid: b9121104-3889-4a10-92bf-f3723f1af9d0
 ---
 # Slider Notification Messages
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A slider control notifies its parent window of user actions by sending the parent WM_HSCROLL or WM_VSCROLL messages, depending on the orientation of the slider control. To handle these messages, add handlers for the WM_HSCROLL and WM_VSCROLL messages to the parent window. The [OnHScroll](../mfc/reference/cwnd-class.md#onhscroll) and [OnVScroll](../mfc/reference/cwnd-class.md#onvscroll) member functions will be passed a notification code, the position of the slider, and a pointer to the [CSliderCtrl](../mfc/reference/csliderctrl-class.md) object. Note that the pointer is of type `CScrollBar *` even though it points to a `CSliderCtrl` object. You may need to typecast this pointer if you need to manipulate the slider control.
 

@@ -3,9 +3,11 @@ description: "Learn more about: How Default Printing Is Done"
 title: "How Default Printing Is Done"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["default printing", "printing [MFC], default", "defaults, printing"]
-ms.assetid: 0f698459-0fc9-4d43-97da-29cf0f65daa2
 ---
 # How Default Printing Is Done
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains the default printing process in Windows in terms of the MFC framework.
 

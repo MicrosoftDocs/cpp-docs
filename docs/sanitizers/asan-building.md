@@ -2,6 +2,7 @@
 title: "MSVC AddressSanitizer language, build, and debugging reference"
 description: "Technical description of building for the MSVC AddressSanitizer"
 ms.date: 02/05/2024
+ms.topic: overview
 f1_keywords: ["__SANITIZE_ADDRESS__", "ASAN_VCASAN_DEBUGGING"]
 helpviewer_keywords: ["ASan reference", "MSVC AddressSanitizer reference", "MSVC Address Sanitizer reference"]
 ---

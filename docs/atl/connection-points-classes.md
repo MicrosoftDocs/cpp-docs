@@ -4,9 +4,10 @@ title: "Connection Points Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["classes [C++], connection points", "connection points classes"]
-ms.assetid: 076365fa-299a-4dce-84c3-a5dff0e0da1f
 ---
 # Connection Points Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The following classes provide support for connection points:
 

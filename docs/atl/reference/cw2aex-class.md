@@ -7,6 +7,8 @@ helpviewer_keywords: ["CW2AEX class"]
 ---
 # `CW2AEX` Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 This class is used by the string conversion macros `CT2AEX`, `CW2TEX`, `CW2CTEX`, and `CT2CAEX`, and the typedef `CW2A`.
 
 > [!IMPORTANT]

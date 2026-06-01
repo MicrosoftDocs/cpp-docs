@@ -4,9 +4,10 @@ title: "CDefaultElementTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDefaultElementTraits", "atlcoll/ATL::CDefaultElementTraits"]
 helpviewer_keywords: ["CDefaultElementTraits class"]
-ms.assetid: ac5ee610-7957-4b7c-92b6-38ff72e4118e
 ---
 # CDefaultElementTraits Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides default methods and functions for a collection class.
 

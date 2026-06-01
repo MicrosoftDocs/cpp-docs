@@ -4,9 +4,10 @@ description: "Reference guide to the Microsoft C++ Active Template Library (ATL)
 ms.date: "02/07/2020"
 f1_keywords: ["CComPtr", "ATLBASE/ATL::CComPtr", "ATLBASE/ATL::CComPtr::CComPtr"]
 helpviewer_keywords: ["CComPtr class"]
-ms.assetid: 22d9ea8d-ed66-4c34-940f-141db11e83bd
 ---
 # `CComPtr` Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 A smart pointer class for managing COM interface pointers.
 

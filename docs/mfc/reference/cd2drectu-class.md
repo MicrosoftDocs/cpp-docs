@@ -4,9 +4,11 @@ title: "CD2DRectU Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CD2DRectU", "AFXRENDERTARGET/CD2DRectU", "AFXRENDERTARGET/CD2DRectU::CD2DRectU", "AFXRENDERTARGET/CD2DRectU::IsNull"]
 helpviewer_keywords: ["CD2DRectU [MFC], CD2DRectU", "CD2DRectU [MFC], IsNull"]
-ms.assetid: a62f17d1-011d-4867-8f51-fd7e7c00561d
 ---
 # CD2DRectU Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A wrapper for `D2D1_RECT_U`.
 

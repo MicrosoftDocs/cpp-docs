@@ -4,9 +4,11 @@ title: "CD2DBitmapBrush Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CD2DBitmapBrush", "AFXRENDERTARGET/CD2DBitmapBrush", "AFXRENDERTARGET/CD2DBitmapBrush::CD2DBitmapBrush", "AFXRENDERTARGET/CD2DBitmapBrush::Attach", "AFXRENDERTARGET/CD2DBitmapBrush::Create", "AFXRENDERTARGET/CD2DBitmapBrush::Destroy", "AFXRENDERTARGET/CD2DBitmapBrush::Detach", "AFXRENDERTARGET/CD2DBitmapBrush::Get", "AFXRENDERTARGET/CD2DBitmapBrush::GetBitmap", "AFXRENDERTARGET/CD2DBitmapBrush::GetExtendModeX", "AFXRENDERTARGET/CD2DBitmapBrush::GetExtendModeY", "AFXRENDERTARGET/CD2DBitmapBrush::GetInterpolationMode", "AFXRENDERTARGET/CD2DBitmapBrush::SetBitmap", "AFXRENDERTARGET/CD2DBitmapBrush::SetExtendModeX", "AFXRENDERTARGET/CD2DBitmapBrush::SetExtendModeY", "AFXRENDERTARGET/CD2DBitmapBrush::SetInterpolationMode", "AFXRENDERTARGET/CD2DBitmapBrush::CommonInit", "AFXRENDERTARGET/CD2DBitmapBrush::m_pBitmap", "AFXRENDERTARGET/CD2DBitmapBrush::m_pBitmapBrush", "AFXRENDERTARGET/CD2DBitmapBrush::m_pBitmapBrushProperties"]
 helpviewer_keywords: ["CD2DBitmapBrush [MFC], CD2DBitmapBrush", "CD2DBitmapBrush [MFC], Attach", "CD2DBitmapBrush [MFC], Create", "CD2DBitmapBrush [MFC], Destroy", "CD2DBitmapBrush [MFC], Detach", "CD2DBitmapBrush [MFC], Get", "CD2DBitmapBrush [MFC], GetBitmap", "CD2DBitmapBrush [MFC], GetExtendModeX", "CD2DBitmapBrush [MFC], GetExtendModeY", "CD2DBitmapBrush [MFC], GetInterpolationMode", "CD2DBitmapBrush [MFC], SetBitmap", "CD2DBitmapBrush [MFC], SetExtendModeX", "CD2DBitmapBrush [MFC], SetExtendModeY", "CD2DBitmapBrush [MFC], SetInterpolationMode", "CD2DBitmapBrush [MFC], CommonInit", "CD2DBitmapBrush [MFC], m_pBitmap", "CD2DBitmapBrush [MFC], m_pBitmapBrush", "CD2DBitmapBrush [MFC], m_pBitmapBrushProperties"]
-ms.assetid: 46ebbe34-66e0-44c8-af1d-d129e851de5e
 ---
 # CD2DBitmapBrush Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A wrapper for ID2D1BitmapBrush.
 

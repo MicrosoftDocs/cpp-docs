@@ -7,6 +7,9 @@ helpviewer_keywords: ["COleClientItem [MFC], COleClientItem", "COleClientItem [M
 ---
 # COleClientItem Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Defines the container interface to OLE items.
 
 ## Syntax

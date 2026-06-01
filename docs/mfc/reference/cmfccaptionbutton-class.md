@@ -4,9 +4,11 @@ title: "CMFCCaptionButton Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCCaptionButton", "AFXCAPTIONBUTTON/CMFCCaptionButton", "AFXCAPTIONBUTTON/CMFCCaptionButton::CMFCCaptionButton", "AFXCAPTIONBUTTON/CMFCCaptionButton::GetHit", "AFXCAPTIONBUTTON/CMFCCaptionButton::GetIconID", "AFXCAPTIONBUTTON/CMFCCaptionButton::GetRect", "AFXCAPTIONBUTTON/CMFCCaptionButton::GetSize", "AFXCAPTIONBUTTON/CMFCCaptionButton::IsMiniFrameButton", "AFXCAPTIONBUTTON/CMFCCaptionButton::Move", "AFXCAPTIONBUTTON/CMFCCaptionButton::OnDraw", "AFXCAPTIONBUTTON/CMFCCaptionButton::SetMiniFrameButton"]
 helpviewer_keywords: ["CMFCCaptionButton [MFC], CMFCCaptionButton", "CMFCCaptionButton [MFC], GetHit", "CMFCCaptionButton [MFC], GetIconID", "CMFCCaptionButton [MFC], GetRect", "CMFCCaptionButton [MFC], GetSize", "CMFCCaptionButton [MFC], IsMiniFrameButton", "CMFCCaptionButton [MFC], Move", "CMFCCaptionButton [MFC], OnDraw", "CMFCCaptionButton [MFC], SetMiniFrameButton"]
-ms.assetid: c5774b38-c0dd-414a-9ede-3b2f78f233ec
 ---
 # CMFCCaptionButton Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCCaptionButton` class implements a button that is displayed on the caption bar for a docking pane or a mini-frame window. Typically, the framework creates caption buttons automatically.
 

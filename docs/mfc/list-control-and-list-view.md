@@ -3,9 +3,11 @@ description: "Learn more about: List Control and List View"
 title: "List Control and List View"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CListView class [MFC], and CListCtrl", "views [MFC], list and list control", "CListCtrl class [MFC], and CListView", "list views [MFC]", "list controls [MFC], List view"]
-ms.assetid: 7aee1c48-b158-4399-be0b-be366993665e
 ---
 # List Control and List View
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 For convenience, MFC encapsulates the list control in two ways. You can use list controls:
 

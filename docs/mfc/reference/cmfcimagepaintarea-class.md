@@ -4,9 +4,11 @@ title: "CMFCImagePaintArea Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCImagePaintArea", "AFXIMAGEPAINTAREA/CMFCImagePaintArea", "AFXIMAGEPAINTAREA/CMFCImagePaintArea::CMFCImagePaintArea", "AFXIMAGEPAINTAREA/CMFCImagePaintArea::GetMode", "AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetBitmap", "AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetColor", "AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetMode"]
 helpviewer_keywords: ["CMFCImagePaintArea [MFC], CMFCImagePaintArea", "CMFCImagePaintArea [MFC], GetMode", "CMFCImagePaintArea [MFC], SetBitmap", "CMFCImagePaintArea [MFC], SetColor", "CMFCImagePaintArea [MFC], SetMode"]
-ms.assetid: c59eec22-f15a-4e58-8c4d-4a18a41f4452
 ---
 # CMFCImagePaintArea Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides the picture area that you use to modify an image in an image editor dialog box.
 

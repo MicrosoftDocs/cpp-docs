@@ -4,9 +4,11 @@ title: "TN006: Message Maps"
 ms.date: "06/25/2018"
 f1_keywords: ["vc.messages.maps"]
 helpviewer_keywords: ["ON_UPDATE_COMMAND_UI macro [MFC]", "ON_NOTIFY_RANGE macro [MFC]", "ON_COMMAND macro [MFC]", "ON_CONTROL_RANGE macro [MFC]", "ON_REGISTERED_MESSAGE macro [MFC]", "ON_NOTIFY message [MFC]", "ON_COMMAND_RANGE_EX macro [MFC]", "ON_MESSAGE macro [MFC]", "Windows messages [MFC], message maps", "ON_COMMAND_RANGE macro [MFC]", "TN006", "ON_CONTROL macro [MFC]", "ON_COMMAND_EX macro [MFC]", "message maps [MFC], Windows messaging"]
-ms.assetid: af4b6794-4b40-4f1e-ad41-603c3b7409bb
 ---
 # TN006: Message Maps
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This note describes the MFC message map facility.
 

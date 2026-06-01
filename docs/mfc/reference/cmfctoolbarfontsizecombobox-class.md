@@ -4,9 +4,11 @@ title: "CMFCToolBarFontSizeComboBox Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCToolBarFontSizeComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox::CMFCToolBarFontSizeComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox::GetTwipSize", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox::RebuildFontSizes", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox::SetTwipSize"]
 helpviewer_keywords: ["CMFCToolBarFontSizeComboBox [MFC], CMFCToolBarFontSizeComboBox", "CMFCToolBarFontSizeComboBox [MFC], GetTwipSize", "CMFCToolBarFontSizeComboBox [MFC], RebuildFontSizes", "CMFCToolBarFontSizeComboBox [MFC], SetTwipSize"]
-ms.assetid: 72e0c44c-6a0e-4194-a71f-ab64e3afb9b5
 ---
 # CMFCToolBarFontSizeComboBox Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A toolbar button that contains a combo box control that enables the user to select a font size.
 

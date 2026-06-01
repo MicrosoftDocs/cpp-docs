@@ -3,9 +3,11 @@ description: "Learn more about: Slider Control Member Functions"
 title: "Slider Control Member Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CSliderCtrl class [MFC], methods", "slider controls [MFC], member functions"]
-ms.assetid: dbde49ee-7306-4d14-a6ce-d09aa198178f
 ---
 # Slider Control Member Functions
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 An application can call the slider control's member functions to retrieve information about the slider control ([CSliderCtrl](../mfc/reference/csliderctrl-class.md)) and to change its characteristics.
 

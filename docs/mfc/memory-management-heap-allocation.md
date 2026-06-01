@@ -3,9 +3,11 @@ description: "Learn more about: Memory Management: Heap Allocation"
 title: "Memory Management: Heap Allocation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["memory [MFC], detecting leaks", "delete operator [MFC], using with debug MFC", "heap allocation [MFC], described", "memory allocation [MFC], heap memory", "memory leaks [MFC], detecting", "new operator [MFC], using with debug MFC", "heap allocation [MFC]", "detecting memory leaks [MFC]"]
-ms.assetid: a5d949c6-1b79-476e-9c66-513a558203d9
 ---
 # Memory Management: Heap Allocation
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The heap is reserved for the memory allocation needs of the program. It is an area apart from the program code and the stack. Typical C programs use the functions **malloc** and **free** to allocate and deallocate heap memory. The Debug version of MFC provides modified versions of the C++ built-in operators **`new`** and **`delete`** to allocate and deallocate objects in heap memory.
 

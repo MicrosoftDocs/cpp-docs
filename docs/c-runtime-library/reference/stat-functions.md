@@ -1,7 +1,7 @@
 ---
 title: "_stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32"
 description: "Learn more about: _stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32"
-ms.date: "5/25/2023"
+ms.date: 03/20/2026
 api_name: ["_wstat64", "_stati64", "_stat32", "_stat32i64", "_stat", "_wstati64", "_wstat32", "_wstat64i32", "_wstat", "_stat64", "_stat64i32", "_wstat32i64", "_o__stat32", "_o__stat32i64", "_o__stat64", "_o__stat64i32", "_o__wstat32", "_o__wstat32i64", "_o__wstat64", "_o__wstat64i32"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -162,13 +162,14 @@ For more compatibility information, see [Compatibility](../compatibility.md).
 #include <sys/stat.h>
 #include <stdio.h>
 #include <errno.h>
+#include <stdlib.h>
 
 int main( void )
 {
    struct _stat buf;
    int result;
    char timebuf[26];
-   char* filename = "crt_stat.c";
+   const char* filename = "crt_stat.c";
    errno_t err;
 
    // Get data associated with "crt_stat.c":

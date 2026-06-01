@@ -6,6 +6,8 @@ helpviewer_keywords: ["CString objects, basic operations", "string literals, CSt
 ---
 # Basic CString Operations
 
+[!INCLUDE[product-lifecycle-status](./includes/lifecycle-note.md)]
+
 This topic explains the following basic [CString](../atl-mfc-shared/reference/cstringt-class.md) operations:
 
 - [Creating CString objects from standard C literal strings](#_core_creating_cstring_objects_from_standard_c_literal_strings)

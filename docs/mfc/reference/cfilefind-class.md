@@ -4,9 +4,11 @@ title: "CFileFind Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CFileFind", "AFX/CFileFind", "AFX/CFileFind::CFileFind", "AFX/CFileFind::Close", "AFX/CFileFind::FindFile", "AFX/CFileFind::FindNextFile", "AFX/CFileFind::GetCreationTime", "AFX/CFileFind::GetFileName", "AFX/CFileFind::GetFilePath", "AFX/CFileFind::GetFileTitle", "AFX/CFileFind::GetFileURL", "AFX/CFileFind::GetLastAccessTime", "AFX/CFileFind::GetLastWriteTime", "AFX/CFileFind::GetLength", "AFX/CFileFind::GetRoot", "AFX/CFileFind::IsArchived", "AFX/CFileFind::IsCompressed", "AFX/CFileFind::IsDirectory", "AFX/CFileFind::IsDots", "AFX/CFileFind::IsHidden", "AFX/CFileFind::IsNormal", "AFX/CFileFind::IsReadOnly", "AFX/CFileFind::IsSystem", "AFX/CFileFind::IsTemporary", "AFX/CFileFind::MatchesMask", "AFX/CFileFind::CloseContext", "AFX/CFileFind::m_pTM"]
 helpviewer_keywords: ["CFileFind [MFC], CFileFind", "CFileFind [MFC], Close", "CFileFind [MFC], FindFile", "CFileFind [MFC], FindNextFile", "CFileFind [MFC], GetCreationTime", "CFileFind [MFC], GetFileName", "CFileFind [MFC], GetFilePath", "CFileFind [MFC], GetFileTitle", "CFileFind [MFC], GetFileURL", "CFileFind [MFC], GetLastAccessTime", "CFileFind [MFC], GetLastWriteTime", "CFileFind [MFC], GetLength", "CFileFind [MFC], GetRoot", "CFileFind [MFC], IsArchived", "CFileFind [MFC], IsCompressed", "CFileFind [MFC], IsDirectory", "CFileFind [MFC], IsDots", "CFileFind [MFC], IsHidden", "CFileFind [MFC], IsNormal", "CFileFind [MFC], IsReadOnly", "CFileFind [MFC], IsSystem", "CFileFind [MFC], IsTemporary", "CFileFind [MFC], MatchesMask", "CFileFind [MFC], CloseContext", "CFileFind [MFC], m_pTM"]
-ms.assetid: 9990068c-b023-4114-9580-a50182d15240
 ---
 # `CFileFind` Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Performs local file searches and is the base class for [`CGopherFileFind`](../../mfc/reference/cgopherfilefind-class.md) and [`CFtpFileFind`](../../mfc/reference/cftpfilefind-class.md), which perform Internet file searches.
 

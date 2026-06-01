@@ -4,9 +4,11 @@ title: "MFC ActiveX Controls: Using Stock Property Pages"
 ms.date: "09/12/2018"
 f1_keywords: ["CLSID_CPicturePropPage", "CLSID_CColorPropPage", "CLSID_CFontPropPage"]
 helpviewer_keywords: ["picture stock property pages [MFC]", "CLSID_CFontPropPage [MFC]", "color stock property pages [MFC]", "CLSID_CColorPropPage [MFC]", "fonts [MFC], ActiveX controls", "stock properties [MFC], stock property pages", "CLSID_CPicturePropPage [MFC]", "MFC ActiveX controls [MFC], property pages"]
-ms.assetid: 22638d86-ff3e-4124-933e-54b7c2a25968
 ---
 # MFC ActiveX Controls: Using Stock Property Pages
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article discusses the stock property pages available for ActiveX controls and how to use them.
 

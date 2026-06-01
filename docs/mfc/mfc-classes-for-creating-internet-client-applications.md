@@ -3,9 +3,11 @@ description: "Learn more about: MFC Classes for Creating Internet Client Applica
 title: "MFC Classes for Creating Internet Client Applications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, WinInet classes", "WinInet classes [MFC], classes", "classes [MFC], MFC", "Internet client applications [MFC], MFC", "Internet applications [MFC], MFC"]
-ms.assetid: 67d34117-9839-4f4b-8bb8-0e4a9471c606
 ---
 # MFC Classes for Creating Internet Client Applications
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 MFC provides the following classes and global functions for writing Internet client applications. Indentation indicates a class is derived from the unindented class above it. `CGopherFile` and `CHttpFile` derive from `CInternetFile`, for example. These classes and global functions are declared in AFXINET.H, except `CFileFind`, which is declared in AFX.H.
 

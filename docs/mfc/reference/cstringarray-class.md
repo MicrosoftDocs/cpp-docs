@@ -7,6 +7,9 @@ helpviewer_keywords: ["CStringArray [MFC], CStringArray", "CStringArray [MFC], A
 ---
 # `CStringArray` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Supports arrays of [`CString`](../../atl-mfc-shared/using-cstring.md) objects.
 
 ## Syntax

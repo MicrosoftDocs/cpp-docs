@@ -3,10 +3,12 @@ description: "Learn more about: Using the Classes to Write Applications for Wind
 title: "Using the Classes to Write Applications for Windows"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows applications [MFC], MFC application framework", "MFC, application development", "applications [OLE], MFC application framework", "MFC ActiveX controls [MFC], creating", "OLE applications [MFC], MFC application framework", "database applications [MFC], creating"]
-ms.assetid: 73f63470-857d-43dd-9a54-b38b7be0f1b7
 ms.topic: concept-article
 ---
 # Using the Classes to Write Applications for Windows
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Taken together, the classes in the Microsoft Foundation Class (MFC) Library make up an "application framework," on which you build an application for the Windows operating system. At a very general level, the framework defines the skeleton of an application and supplies standard user-interface implementations that can be placed onto the skeleton. Your job as programmer is to fill in the rest of the skeleton, which are those things that are specific to your application. You can get a head start by using the MFC Application Wizard to create the files for a very thorough starter application. You use the Visual Studio resource editors to design your user-interface elements visually, Class View commands to connect those elements to code, and the class library to implement your application-specific logic.
 

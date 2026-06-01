@@ -3,9 +3,11 @@ description: "Learn more about: Type-Safe Access to Controls With Code Wizards"
 title: "Type-Safe Access to Controls With Code Wizards"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DDX (dialog data exchange), access to controls", "code wizards", "dialog boxes [MFC], access to controls", "dialog box controls [MFC], accessing"]
-ms.assetid: b8874393-ee48-4124-8d78-e3648a7e29b9
 ---
 # Type-Safe Access to Controls With Code Wizards
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 If you are familiar with DDX features, you can use the Control property in the [Add Member Variable Wizard](../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard) to create type-safe access. This approach is easier than creating controls without code wizards.
 

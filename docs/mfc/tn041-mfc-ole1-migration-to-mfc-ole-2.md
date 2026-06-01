@@ -3,9 +3,11 @@ description: "Learn more about: TN041: MFC/OLE1 Migration to MFC/OLE 2"
 title: "TN041: MFC-OLE1 Migration to MFC-OLE 2"
 ms.date: "10/18/2018"
 helpviewer_keywords: ["OLE1 [MFC]", "migrating OLE1 to OLE2", "migration [MFC], OLE1 to OLE2", "OLE2 [MFC]", "porting OLE1 to OLE2", "converting OLE1 to OLE2", "upgrading Visual C++ applications [MFC], OLE1 to OLE2", "TN041"]
-ms.assetid: 67f55552-4b04-4ddf-af0b-4d9eaf5da957
 ---
 # TN041: MFC/OLE1 Migration to MFC/OLE 2
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

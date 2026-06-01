@@ -4,7 +4,6 @@ title: "CAxWindow Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAxWindow", "ATLWIN/ATL::CAxWindow", "ATLWIN/ATL::AttachControl", "ATLWIN/ATL::CreateControl", "ATLWIN/ATL::CreateControlEx", "ATLWIN/ATL::GetWndClassName", "ATLWIN/ATL::QueryControl", "ATLWIN/ATL::QueryHost", "ATLWIN/ATL::SetExternalDispatch", "ATLWIN/ATL::SetExternalUIHandler"]
 helpviewer_keywords: ["CAxWindow class", "ATL, hosting ActiveX controls"]
-ms.assetid: 85e79261-43e4-4770-bde0-1ff87f222b0f
 api_type:
 - DllExport
 api_location:
@@ -13,6 +12,8 @@ api_name:
 - CAxWindow::CreateControlEx
 ---
 # CAxWindow Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods for manipulating a window hosting an ActiveX control.
 

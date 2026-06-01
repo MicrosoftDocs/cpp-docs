@@ -4,9 +4,11 @@ title: "Database Support, MFC Application Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.exe.database"]
 helpviewer_keywords: ["MFC Application Wizard, database support"]
-ms.assetid: 9ddf4558-fd41-4ac7-8d9b-c93d9c68ab59
 ---
 # Database Support, MFC Application Wizard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This page provides options that allow you to specify the level of database support (plus a data source, if necessary) for your project.
 

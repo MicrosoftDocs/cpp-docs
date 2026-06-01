@@ -4,9 +4,10 @@ title: "CElementTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CElementTraits", "atlcoll/ATL::CElementTraits"]
 helpviewer_keywords: ["CElementTraits class"]
-ms.assetid: 496528e5-7f80-4b45-be0c-6f646feb43c5
 ---
 # CElementTraits Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class is used by collection classes to provide methods and functions for moving, copying, comparison, and hashing operations.
 

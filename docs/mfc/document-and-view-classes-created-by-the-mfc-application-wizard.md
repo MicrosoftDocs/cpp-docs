@@ -3,9 +3,11 @@ description: "Learn more about: Document and View Classes Created by the MFC App
 title: "Document and View Classes Created by the MFC Application Wizard"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["document classes [MFC]", "document classes [MFC], created by application wizards", "application wizards [MFC], document/view classes created", "view classes [MFC], created by application wizards"]
-ms.assetid: 70c34a60-2701-4981-acea-c08a5787d8e6
 ---
 # Document and View Classes Created by the MFC Application Wizard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The MFC Application Wizard gives you a head start on your program development by creating skeletal document and view classes for you. You can then [map commands and messages to these classes](reference/mapping-messages-to-functions.md) and use the Visual Studio source code editor to write their member functions.
 

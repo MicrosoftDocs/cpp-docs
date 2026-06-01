@@ -3,9 +3,10 @@ description: "Learn more about: Default ATL Project Configurations"
 title: "Default ATL Project Configurations"
 ms.date: "10/20/2017"
 helpviewer_keywords: ["ATL projects, default configurations"]
-ms.assetid: 7e272722-41af-4330-b965-a6d74ec16880
 ---
 # Default ATL Project Configurations
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 The ATL Project Wizard creates two project configurations by default:
 

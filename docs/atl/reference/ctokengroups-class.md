@@ -4,9 +4,10 @@ title: "CTokenGroups Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CTokenGroups", "ATLSECURITY/ATL::CTokenGroups", "ATLSECURITY/ATL::CTokenGroups::CTokenGroups", "ATLSECURITY/ATL::CTokenGroups::Add", "ATLSECURITY/ATL::CTokenGroups::Delete", "ATLSECURITY/ATL::CTokenGroups::DeleteAll", "ATLSECURITY/ATL::CTokenGroups::GetCount", "ATLSECURITY/ATL::CTokenGroups::GetLength", "ATLSECURITY/ATL::CTokenGroups::GetPTOKEN_GROUPS", "ATLSECURITY/ATL::CTokenGroups::GetSidsAndAttributes", "ATLSECURITY/ATL::CTokenGroups::LookupSid"]
 helpviewer_keywords: ["CTokenGroups class"]
-ms.assetid: 2ab08076-4b08-4487-bc70-ec6dee304190
 ---
 # CTokenGroups Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class is a wrapper for the `TOKEN_GROUPS` structure.
 

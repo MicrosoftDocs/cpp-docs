@@ -3,9 +3,11 @@ description: "Learn more about: Message Maps (MFC)"
 title: "Message Maps (MFC)"
 ms.date: "09/07/2019"
 helpviewer_keywords: ["message maps [MFC], MFC", "Windows messages [MFC], message maps", "messages [MFC], Windows", "MFC, messages"]
-ms.assetid: 3f9855e4-9d7d-4b64-8f3f-a19ea3cf79ba
 ---
 # Message Maps (MFC)
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This section of the reference lists all [message mapping macros](../../mfc/reference/message-map-macros-mfc.md) and all [`CWnd`](../../mfc/reference/cwnd-class.md) message-map entries along with the corresponding member function prototypes:
 

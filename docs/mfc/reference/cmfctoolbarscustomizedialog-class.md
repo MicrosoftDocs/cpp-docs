@@ -4,9 +4,11 @@ title: "CMFCToolBarsCustomizeDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCToolBarsCustomizeDialog", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::CMFCToolBarsCustomizeDialog", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::FillAllCommandsList", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::FillCategoriesComboBox", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::FillCategoriesListBox", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::GetCommandName", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::GetCountInCategory", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::GetFlags", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::OnInitDialog", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::PostNcDestroy"]
 helpviewer_keywords: ["CMFCToolBarsCustomizeDialog [MFC], CMFCToolBarsCustomizeDialog", "CMFCToolBarsCustomizeDialog [MFC], FillAllCommandsList", "CMFCToolBarsCustomizeDialog [MFC], FillCategoriesComboBox", "CMFCToolBarsCustomizeDialog [MFC], FillCategoriesListBox", "CMFCToolBarsCustomizeDialog [MFC], GetCommandName", "CMFCToolBarsCustomizeDialog [MFC], GetCountInCategory", "CMFCToolBarsCustomizeDialog [MFC], GetFlags", "CMFCToolBarsCustomizeDialog [MFC], OnInitDialog", "CMFCToolBarsCustomizeDialog [MFC], PostNcDestroy"]
-ms.assetid: 78e2cddd-4f13-4097-afc3-1ad646a113f1
 ---
 # CMFCToolBarsCustomizeDialog Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A modeless tab dialog box ( [CPropertySheet Class](../../mfc/reference/cpropertysheet-class.md)) that enables the user to customize the toolbars, menus, keyboard shortcuts, user-defined tools, and visual style in an application. Typically, the user accesses this dialog box by selecting **Customize** from the **Tools** menu.
 

@@ -4,9 +4,11 @@ title: "COleException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleException", "AFXDISP/COleException", "AFXDISP/COleException::Process", "AFXDISP/COleException::m_sc"]
 helpviewer_keywords: ["COleException [MFC], Process", "COleException [MFC], m_sc"]
-ms.assetid: 2571e9fe-26cc-42f0-9ad9-8ad5b4311ec1
 ---
 # COleException Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Represents an exception condition related to an OLE operation.
 

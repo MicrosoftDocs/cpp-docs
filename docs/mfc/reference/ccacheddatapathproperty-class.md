@@ -4,9 +4,11 @@ title: "CCachedDataPathProperty Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CCachedDataPathProperty", "AFXCTL/CCachedDataPathProperty", "AFXCTL/CCachedDataPathProperty::CCachedDataPathProperty", "AFXCTL/CCachedDataPathProperty::m_Cache"]
 helpviewer_keywords: ["CCachedDataPathProperty [MFC], CCachedDataPathProperty", "CCachedDataPathProperty [MFC], m_Cache"]
-ms.assetid: 0d81356b-4fe5-43f6-aed2-2eb5a5485706
 ---
 # CCachedDataPathProperty Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements an OLE control property transferred asynchronously and cached in a memory file.
 

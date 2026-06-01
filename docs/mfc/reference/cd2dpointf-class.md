@@ -4,9 +4,11 @@ title: "CD2DPointF Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CD2DPointF", "AFXRENDERTARGET/CD2DPointF", "AFXRENDERTARGET/CD2DPointF::CD2DPointF"]
 helpviewer_keywords: ["CD2DPointF [MFC], CD2DPointF"]
-ms.assetid: 30f72083-1c8a-4f50-adb2-72dbbe3522d4
 ---
 # CD2DPointF Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A wrapper for `D2D1_POINT_2F`.
 

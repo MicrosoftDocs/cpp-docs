@@ -7,6 +7,9 @@ helpviewer_keywords: ["CDCRenderTarget [MFC], CDCRenderTarget", "CDCRenderTarget
 ---
 # `CDCRenderTarget` class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 A wrapper for [`ID2D1DCRenderTarget`](/windows/win32/api/d2d1/nn-d2d1-id2d1dcrendertarget).
 
 ## Syntax

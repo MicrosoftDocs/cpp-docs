@@ -7,6 +7,8 @@ helpviewer_keywords: ["IOleControlImpl class"]
 ---
 # IOleControlImpl Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 This class provides a default implementation of the `IOleControl` interface and implements `IUnknown`.
 
 > [!IMPORTANT]

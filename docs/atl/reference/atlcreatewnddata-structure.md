@@ -4,9 +4,10 @@ title: "_AtlCreateWndData Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::_AtlCreateWndData", "ATL._AtlCreateWndData", "_AtlCreateWndData"]
 helpviewer_keywords: ["_AtlCreateWndData structure", "AtlCreateWndData structure"]
-ms.assetid: 76ed5382-bfbf-4b8b-8a29-912688dfd2ae
 ---
 # _AtlCreateWndData Structure
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This structure contains class instance data in windowing code in ATL.
 

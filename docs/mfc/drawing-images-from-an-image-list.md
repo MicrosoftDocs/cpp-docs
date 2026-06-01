@@ -3,10 +3,12 @@ description: "Learn more about: Drawing Images from an Image List"
 title: "Drawing Images from an Image List"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CImageList class [MFC], drawing images from", "drawing [MFC], images from image lists", "image lists [MFC], drawing images from", "images [MFC], drawing"]
-ms.assetid: 2f6063fb-1c28-45f8-a333-008c064db11c
 ms.topic: concept-article
 ---
 # Drawing Images from an Image List
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 To draw an image, use the [CImageList::Draw](reference/cimagelist-class.md#draw) member function. You'll specify a pointer to a device context object, the index of the image to draw, the location in the device context at which to draw the image, and a set of flags to indicate the drawing style.
 

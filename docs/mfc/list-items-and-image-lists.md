@@ -3,9 +3,11 @@ description: "Learn more about: List Items and Image Lists"
 title: "List Items and Image Lists"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CImageList class [MFC], and list items", "image lists [MFC], list items", "CListCtrl class [MFC], image lists", "list items [MFC], image lists"]
-ms.assetid: 317d095f-f978-47da-acb6-7bfe7dd3bc69
 ---
 # List Items and Image Lists
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 An "item" in a list control ([CListCtrl](reference/clistctrl-class.md)) consists of an icon, a label, and possibly other information (in "subitems").
 

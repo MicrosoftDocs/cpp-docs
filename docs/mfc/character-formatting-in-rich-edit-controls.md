@@ -3,9 +3,11 @@ description: "Learn more about: Character Formatting in Rich Edit Controls"
 title: "Character Formatting in Rich Edit Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["formatting [MFC], characters", "rich edit controls [MFC], character formatting in", "CRichEditCtrl class [MFC], character formatting in"]
-ms.assetid: c80f4305-75ad-45f9-8d17-d83d0fe79be5
 ---
 # Character Formatting in Rich Edit Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 You can use member functions of the rich edit control ([CRichEditCtrl](reference/cricheditctrl-class.md)) to format characters and to retrieve formatting information. For characters, you can specify typeface, size, color, and effects such as bold, italic, and protected.
 

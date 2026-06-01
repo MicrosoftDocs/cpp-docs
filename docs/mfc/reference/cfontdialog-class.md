@@ -4,9 +4,11 @@ title: "CFontDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CFontDialog", "AFXDLGS/CFontDialog", "AFXDLGS/CFontDialog::CFontDialog", "AFXDLGS/CFontDialog::DoModal", "AFXDLGS/CFontDialog::GetCharFormat", "AFXDLGS/CFontDialog::GetColor", "AFXDLGS/CFontDialog::GetCurrentFont", "AFXDLGS/CFontDialog::GetFaceName", "AFXDLGS/CFontDialog::GetSize", "AFXDLGS/CFontDialog::GetStyleName", "AFXDLGS/CFontDialog::GetWeight", "AFXDLGS/CFontDialog::IsBold", "AFXDLGS/CFontDialog::IsItalic", "AFXDLGS/CFontDialog::IsStrikeOut", "AFXDLGS/CFontDialog::IsUnderline", "AFXDLGS/CFontDialog::m_cf"]
 helpviewer_keywords: ["CFontDialog [MFC], CFontDialog", "CFontDialog [MFC], DoModal", "CFontDialog [MFC], GetCharFormat", "CFontDialog [MFC], GetColor", "CFontDialog [MFC], GetCurrentFont", "CFontDialog [MFC], GetFaceName", "CFontDialog [MFC], GetSize", "CFontDialog [MFC], GetStyleName", "CFontDialog [MFC], GetWeight", "CFontDialog [MFC], IsBold", "CFontDialog [MFC], IsItalic", "CFontDialog [MFC], IsStrikeOut", "CFontDialog [MFC], IsUnderline", "CFontDialog [MFC], m_cf"]
-ms.assetid: 6228d500-ed0f-4156-81e5-ab0d57d1dcf4
 ---
 # CFontDialog Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Allows you to incorporate a font-selection dialog box into your application.
 

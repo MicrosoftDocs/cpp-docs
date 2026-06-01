@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMemFile [MFC], CMemFile", "CMemFile [MFC], Attach", "CMe
 ---
 # CMemFile Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The [CFile](../../mfc/reference/cfile-class.md)-derived class that supports memory files.
 
 ## Syntax

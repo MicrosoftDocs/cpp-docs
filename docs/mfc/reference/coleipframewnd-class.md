@@ -4,9 +4,11 @@ title: "COleIPFrameWnd Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleIPFrameWnd", "AFXOLE/COleIPFrameWnd", "AFXOLE/COleIPFrameWnd::COleIPFrameWnd", "AFXOLE/COleIPFrameWnd::OnCreateControlBars", "AFXOLE/COleIPFrameWnd::RepositionFrame"]
 helpviewer_keywords: ["COleIPFrameWnd [MFC], COleIPFrameWnd", "COleIPFrameWnd [MFC], OnCreateControlBars", "COleIPFrameWnd [MFC], RepositionFrame"]
-ms.assetid: 24abb2cb-826c-4dda-a287-d8a8900a5763
 ---
 # COleIPFrameWnd Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The base for your application's in-place editing window.
 

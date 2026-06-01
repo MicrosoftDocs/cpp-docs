@@ -4,9 +4,11 @@ title: "CMFCRibbonMainPanel Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonMainPanel", "AFXRIBBONMAINPANEL/CMFCRibbonMainPanel", "AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::Add", "AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::AddRecentFilesList", "AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::AddToBottom", "AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::AddToRight", "AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::GetCommandsFrame"]
 helpviewer_keywords: ["CMFCRibbonMainPanel [MFC], Add", "CMFCRibbonMainPanel [MFC], AddRecentFilesList", "CMFCRibbonMainPanel [MFC], AddToBottom", "CMFCRibbonMainPanel [MFC], AddToRight", "CMFCRibbonMainPanel [MFC], GetCommandsFrame"]
-ms.assetid: 1af78798-5e75-4365-9c81-a54aa5679602
 ---
 # CMFCRibbonMainPanel Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements a ribbon panel that displays when you click the [CMFCRibbonApplicationButton](../../mfc/reference/cmfcribbonapplicationbutton-class.md).
 

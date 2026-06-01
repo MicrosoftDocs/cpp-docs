@@ -4,9 +4,10 @@ title: "Appearance, ATL Control Wizard"
 ms.date: "08/31/2018"
 f1_keywords: ["vc.codewiz.class.atl.control.misc"]
 helpviewer_keywords: ["ATL Control Wizard, appearance"]
-ms.assetid: cc16d7ff-74d7-4c15-9ebd-4b19201ff457
 ---
 # Appearance, ATL Control Wizard
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 Use this page of the wizard to identify additional user element options for the control. This page is available for controls identified as **Standard controls** under **Control type** on the [Options, ATL Control Wizard](../../atl/reference/options-atl-control-wizard.md) page.
 

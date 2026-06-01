@@ -4,9 +4,11 @@ title: "CResourceException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CResourceException", "AFXWIN/CResourceException", "AFXWIN/CResourceException::CResourceException"]
 helpviewer_keywords: ["CResourceException [MFC], CResourceException"]
-ms.assetid: af6ae043-d124-4bfd-b35e-7bb0db67d289
 ---
 # CResourceException Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Generated when Windows cannot find or allocate a requested resource.
 

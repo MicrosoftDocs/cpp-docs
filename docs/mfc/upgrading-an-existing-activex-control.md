@@ -3,10 +3,12 @@ description: "Learn more about: Upgrading an Existing ActiveX Control"
 title: "Upgrading an Existing ActiveX Control"
 ms.date: 11/03/2021
 helpviewer_keywords: ["ActiveX controls [MFC], Internet", "LPK files for Internet controls", "safe for scripting and initialization (controls)", "OLE controls [MFC], upgrading to ActiveX", "CAB files, for ActiveX controls", "Internet applications [MFC], ActiveX controls", "Internet applications [MFC], packaging code for download", "upgrading ActiveX controls", "licensing ActiveX controls"]
-ms.assetid: 4d12ddfa-b491-4f9f-a0b7-b51458e05651
 ms.topic: how-to
 ---
 # Upgrading an Existing ActiveX Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Existing ActiveX controls (formerly OLE controls) can be used on the Internet without modification. However, you may want to modify controls to improve their performance.
 

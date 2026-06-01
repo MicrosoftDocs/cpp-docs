@@ -3,9 +3,11 @@ title: "OLE drag and drop"
 description: "Overview of Microsoft Foundation Classes (MFC) OLE drag and drop, how to implement a drop source, a drop target, and how to customize drag and drop."
 ms.date: "02/09/2020"
 helpviewer_keywords: ["OLE server applications [MFC], drag and drop", "drag and drop [MFC]", "OLE applications [MFC], drag and drop", "File Manager drag and drop support [MFC]", "drag and drop [MFC], about OLE drag and drop", "OLE drag and drop [MFC]", ]
-ms.assetid: a4595350-ca06-4400-88a1-f0175c76b77b
 ---
 # OLE drag and drop
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The drag-and-drop feature of OLE is primarily a shortcut for copying and pasting data. When you use the Clipboard to copy or paste data, a number of steps are required. You select the data, and choose **Cut** or **Copy** from the **Edit** menu. Then you move to the destination app or window, and place the cursor in the target location. Finally, you choose **Edit** > **Paste** from the menu.
 

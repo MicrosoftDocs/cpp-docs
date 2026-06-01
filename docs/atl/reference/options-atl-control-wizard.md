@@ -4,9 +4,10 @@ title: "Options, ATL Control Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.class.atl.control.options"]
 helpviewer_keywords: ["ATL Control Wizard, options"]
-ms.assetid: 4607c51a-992d-433e-9281-919c6f519a3d
 ---
 # Options, ATL Control Wizard
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 Use this page of the wizard to define the type of control you are creating and the level of interface support it contains.
 

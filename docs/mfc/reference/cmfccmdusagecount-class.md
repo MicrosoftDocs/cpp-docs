@@ -4,9 +4,11 @@ title: "CMFCCmdUsageCount Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCCmdUsageCount", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::AddCmd", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::GetCount", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::HasEnoughInformation", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::IsFreqeuntlyUsedCmd", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::Reset", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::Serialize", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::SetOptions"]
 helpviewer_keywords: ["CMFCCmdUsageCount [MFC], AddCmd", "CMFCCmdUsageCount [MFC], GetCount", "CMFCCmdUsageCount [MFC], HasEnoughInformation", "CMFCCmdUsageCount [MFC], IsFreqeuntlyUsedCmd", "CMFCCmdUsageCount [MFC], Reset", "CMFCCmdUsageCount [MFC], Serialize", "CMFCCmdUsageCount [MFC], SetOptions"]
-ms.assetid: 9c33b783-37c0-43ea-9f31-3c75e246c841
 ---
 # CMFCCmdUsageCount Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Tracks the usage count of Windows messages, such as when the user selects an item from a menu.
 

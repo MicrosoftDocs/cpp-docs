@@ -7,6 +7,9 @@ helpviewer_keywords: ["CD2DPathGeometry [MFC], CD2DPathGeometry", "CD2DPathGeome
 ---
 # CD2DPathGeometry Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 A wrapper for ID2D1PathGeometry.
 
 ## Syntax

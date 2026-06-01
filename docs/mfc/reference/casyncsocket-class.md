@@ -7,6 +7,9 @@ helpviewer_keywords: ["CAsyncSocket [MFC], CAsyncSocket", "CAsyncSocket [MFC], A
 ---
 # `CAsyncSocket` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Represents a Windows Socket — an endpoint of network communication.
 
 ## Syntax

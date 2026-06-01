@@ -3,9 +3,11 @@ description: "Learn more about: MFC ActiveX Controls: Creating an Automation Ser
 title: "MFC ActiveX Controls: Creating an Automation Server"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Automation servers [MFC], MFC ActiveX controls", "ActiveX controls [MFC], Automation server", "MFC ActiveX controls [MFC], Automation server"]
-ms.assetid: e0c24ed2-d61c-49ad-a4fa-4e1098d1d39b
 ---
 # MFC ActiveX Controls: Creating an Automation Server
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 You can develop an MFC ActiveX control as an Automation server for the purpose of programmatically embedding that control in another application and calling methods in the control from the application. Such a control would still be available to be hosted in an ActiveX control container.
 

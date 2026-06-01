@@ -3,9 +3,11 @@ description: "Learn more about: Windows Sockets: Stream Sockets"
 title: "Windows Sockets: Stream Sockets"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows Sockets [MFC], stream sockets", "sockets [MFC], stream sockets", "stream sockets [MFC]"]
-ms.assetid: 31faaa34-a995-493f-a30b-b8115293d619
 ---
 # Windows Sockets: Stream Sockets
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article describes stream sockets, one of the two Windows Socket types available. (The other type is the [datagram socket](../mfc/windows-sockets-datagram-sockets.md).)
 

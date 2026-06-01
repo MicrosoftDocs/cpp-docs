@@ -4,9 +4,11 @@ title: "Dialog Data Exchange Functions for OLE Controls"
 ms.date: "11/04/2016"
 f1_keywords: ["AFXDISP/DDX_OCBool", "AFXDISP/DDX_OCBoolRO", "AFXDISP/DDX_OCColor", "AFXDISP/DDX_OCColorRO", "AFXDISP/DDX_OCFloat", "AFXDISP/DDX_OCFloatRO", "AFXDISP/DDX_OCInt", "AFXDISP/DDX_OCIntRO", "AFXDISP/DDX_OCShort", "AFXDISP/DDX_OCShortRO", "AFXDISP/DDX_OCText", "AFXDISP/DDX_OCTextRO"]
 helpviewer_keywords: ["OLE controls [MFC], DDX functions", "DDX (dialog data exchange), OLE support"]
-ms.assetid: 7ef1f288-ff65-40d4-aad2-5497bc00bb27
 ---
 # Dialog Data Exchange Functions for OLE Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This topic lists the DDX_OC functions used to exchange data between a property of an OLE control in a dialog box, form view, or control view object and a data member of the dialog box, form view, or control view object.
 

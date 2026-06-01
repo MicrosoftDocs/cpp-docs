@@ -4,9 +4,11 @@ title: "CMFCDesktopAlertDialog Class"
 ms.date: "10/18/2018"
 f1_keywords: ["CMFCDesktopAlertDialog", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::CreateFromParams", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::GetDlgSize", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::HasFocus", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::PreTranslateMessage"]
 helpviewer_keywords: ["CMFCDesktopAlertDialog [MFC], CreateFromParams", "CMFCDesktopAlertDialog [MFC], GetDlgSize", "CMFCDesktopAlertDialog [MFC], HasFocus", "CMFCDesktopAlertDialog [MFC], PreTranslateMessage"]
-ms.assetid: a53c60aa-9607-485b-b826-ec64962075f6
 ---
 # CMFCDesktopAlertDialog Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCDesktopAlertDialog` class is used together with the [CMFCDesktopAlertWnd Class](../../mfc/reference/cmfcdesktopalertwnd-class.md) to display a custom dialog in a popup window.
 

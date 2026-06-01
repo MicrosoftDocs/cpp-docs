@@ -3,9 +3,11 @@ description: "Learn more about: OLE Background"
 title: "OLE Background"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE, about OLE"]
-ms.assetid: 5f654eb5-66b1-40c9-9215-bb85356a67f8
 ---
 # OLE Background
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 OLE is a mechanism that allows users to create and edit documents containing items or "objects" created by multiple applications.
 

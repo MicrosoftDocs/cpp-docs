@@ -3,10 +3,12 @@ description: "Learn more about: Manipulating the Tool Tip Control"
 title: "Manipulating the Tool Tip Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CToolTipCtrl class [MFC], manipulating tool tip attributes", "tool tips [MFC], attributes"]
-ms.assetid: 3600afe5-712a-4b56-8456-96e85fe879af
 ms.topic: concept-article
 ---
 # Manipulating the Tool Tip Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Class `CToolTipCtrl` provides a group of member functions that control the various attributes of the `CToolTipCtrl` object and the tool tip window.
 

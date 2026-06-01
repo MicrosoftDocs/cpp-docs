@@ -4,9 +4,10 @@ title: "IPointerInactiveImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IPointerInactiveImpl", "ATLCTL/ATL::IPointerInactiveImpl", "ATLCTL/ATL::IPointerInactiveImpl::GetActivationPolicy", "ATLCTL/ATL::IPointerInactiveImpl::OnInactiveMouseMove", "ATLCTL/ATL::IPointerInactiveImpl::OnInactiveSetCursor"]
 helpviewer_keywords: ["IPointerInactive ATL implementation", "inactive objects", "IPointerInactiveImpl class"]
-ms.assetid: e1fe9ea6-d38a-4527-9112-eb344771e0b7
 ---
 # IPointerInactiveImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements `IUnknown` and the [IPointerInactive](/windows/win32/api/ocidl/nn-ocidl-ipointerinactive) interface methods.
 

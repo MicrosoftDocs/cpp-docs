@@ -3,9 +3,11 @@ description: "Learn more about: Settings for the CStatusBarCtrl"
 title: "Settings for the CStatusBarCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["status bar controls [MFC], settings", "CStatusBarCtrl class [MFC], settings"]
-ms.assetid: adeba0c3-17f3-435c-b140-a57845e9ce49
 ---
 # Settings for the CStatusBarCtrl
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The default position of a [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md) status window is along the bottom of the parent window, but you can specify the CCS_TOP style to have it appear at the top of the parent window's client area.
 

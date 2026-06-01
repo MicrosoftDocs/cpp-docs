@@ -4,9 +4,11 @@ title: "CDocObjectServerItem Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CDocObjectServerItem", "AFXDOCOB/CDocObjectServerItem", "AFXDOCOB/CDocObjectServerItem::CDocObjectServerItem", "AFXDOCOB/CDocObjectServerItem::GetDocument", "AFXDOCOB/CDocObjectServerItem::OnDoVerb", "AFXDOCOB/CDocObjectServerItem::OnHide", "AFXDOCOB/CDocObjectServerItem::OnShow"]
 helpviewer_keywords: ["CDocObjectServerItem [MFC], CDocObjectServerItem", "CDocObjectServerItem [MFC], GetDocument", "CDocObjectServerItem [MFC], OnDoVerb", "CDocObjectServerItem [MFC], OnHide", "CDocObjectServerItem [MFC], OnShow"]
-ms.assetid: 530f7156-50c8-4806-9328-602c9133f622
 ---
 # CDocObjectServerItem Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements OLE server verbs specifically for DocObject servers.
 

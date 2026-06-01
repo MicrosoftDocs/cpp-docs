@@ -3,10 +3,12 @@ description: "Learn more about: Using Tooltips in a CStatusBarCtrl Object"
 title: "Using Tooltips in a CStatusBarCtrl Object"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["tool tips [MFC], using in status bars", "status bars [MFC], tool tips", "CStatusBarCtrl class [MFC], tool tips"]
-ms.assetid: a77597a7-43ef-4b8f-87bc-a8ea1dc63dc3
 ms.topic: how-to
 ---
 # Using Tooltips in a CStatusBarCtrl Object
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 To enable tooltips for a status bar control, create the `CStatusBarCtrl` object with the SBT_TOOLTIPS style.
 

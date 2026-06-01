@@ -4,9 +4,11 @@ title: "Frame-Window Classes Created by the Application Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["CMainFrame"]
 helpviewer_keywords: ["application wizards [MFC], frame window classes created by", "window classes [MFC]", "classes [MFC], frame-window", "CMDIFrameWnd class [MFC], frame windows", "window classes [MFC], frame", "CFrameWnd class [MFC], frame windows", "CMDIChildWnd class [MFC], frame windows", "frame window classes [MFC], created by application wizards", "CMainFrame class [MFC]"]
-ms.assetid: 9947df73-4470-49a0-ac61-7b6ee401a74e
 ---
 # Frame-Window Classes Created by the Application Wizard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 When you to create a new MFC project from the **New Project** dialog, in addition to application, document, and view classes, the Application Wizard creates a derived frame-window class for your application's main frame window. The class is called `CMainFrame` by default, and the files that contain it are named MAINFRM.H and MAINFRM.CPP.
 

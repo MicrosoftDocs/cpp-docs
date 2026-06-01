@@ -3,9 +3,11 @@ description: "Learn more about: How to: Add Restart Manager Support"
 title: "How to: Add Restart Manager Support"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Restart manager [MFC]", "C++, application crash support"]
-ms.assetid: 7f3f5867-d4bc-4ba8-b3c9-dc1e7be93642
 ---
 # How to: Add Restart Manager Support
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The restart manager is a feature added to Visual Studio for Windows Vista or later operating systems. The restart manager adds support for your application if it unexpectedly closes or restarts. The behavior of the restart manager depends on the type of your application. If your application is a document editor, the restart manager enabled your application to automatically save the state and content of any open documents and restarts your application after an unexpected closure. If your application is not a document editor, the restart manager will restart the application, but it cannot save the state of the application by default.
 

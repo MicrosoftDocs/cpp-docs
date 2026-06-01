@@ -4,9 +4,10 @@ title: "CAtlComModule Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAtlComModule", "ATLBASE/ATL::CAtlComModule", "ATLBASE/ATL::CAtlComModule::CAtlComModule", "ATLBASE/ATL::CAtlComModule::RegisterServer", "ATLBASE/ATL::CAtlComModule::RegisterTypeLib", "ATLBASE/ATL::CAtlComModule::UnregisterServer", "ATLBASE/ATL::CAtlComModule::UnRegisterTypeLib"]
 helpviewer_keywords: ["CAtlComModule class"]
-ms.assetid: af5dd71a-a0d1-4a2e-9a24-154a03381c75
 ---
 # CAtlComModule Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements a COM server module.
 

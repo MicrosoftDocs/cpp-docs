@@ -3,9 +3,11 @@ description: "Learn more about: Containers: Advanced Features"
 title: "Containers: Advanced Features"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["links [MFC], to embedded OLE objects", "containers [MFC], links to embedded OLE objects", "containers [MFC], advanced features", "container/server applications [MFC]", "embedded objects [MFC]", "OLE controls [MFC], containers", "OLE containers [MFC], advanced features", "server/container applications [MFC]", "containers [MFC], container applications"]
-ms.assetid: 221fd99c-b138-40fa-ad6a-974e3b3ad1f8
 ---
 # Containers: Advanced Features
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article describes the steps necessary to incorporate optional advanced features into existing container applications. These features are:
 

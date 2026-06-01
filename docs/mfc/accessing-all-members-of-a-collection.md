@@ -3,10 +3,12 @@ description: "Learn more about: Accessing All Members of a Collection"
 title: "Accessing All Members of a Collection"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, collections", "enumerations [MFC]", "enumerating collections [MFC]", "collections [MFC], accessing", "collection classes [MFC]", ", ", ", ", ", ", ", ", ", ", ", ", ", "]
-ms.assetid: 7bbae518-062e-4393-81f9-b22abd2e5f59
 ms.topic: how-to
 ---
 # Accessing All Members of a Collection
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The MFC array collection classes — both template-based and not — use indexes to access their elements. The MFC list and map collection classes — both template-based and not — use an indicator of type **POSITION** to describe a given position within the collection. To access one or more members of these collections, you first initialize the position indicator and then repeatedly pass that position to the collection and ask it to return the next element. The collection is not responsible for maintaining state information about the progress of the iteration. That information is kept in the position indicator. But, given a particular position, the collection is responsible for returning the next element.
 

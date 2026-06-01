@@ -3,9 +3,11 @@ description: "Learn more about: Walkthrough: Creating a Ribbon Application By Us
 title: "Walkthrough: Creating a Ribbon Application By Using MFC"
 ms.date: "09/09/2019"
 helpviewer_keywords: ["ribbon application, creating (MFC)", "creating a ribbon application (MFC)"]
-ms.assetid: e61393e2-1d6b-4594-a7ce-157d3d1b0d9f
 ---
 # Walkthrough: Creating a Ribbon Application By Using MFC
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This walkthrough shows how to use the **MFC Application Wizard** to create an application that has a ribbon by default. You can then expand the ribbon by adding a **Custom** ribbon category that has a **Favorites** ribbon panel, and then adding some frequently used commands to the panel.
 

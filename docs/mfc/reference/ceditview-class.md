@@ -7,6 +7,9 @@ helpviewer_keywords: ["CEditView [MFC], CEditView", "CEditView [MFC], FindText",
 ---
 # CEditView Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 A type of view class that provides the functionality of a Windows edit control and can be used to implement simple text-editor functionality.
 
 ## Syntax

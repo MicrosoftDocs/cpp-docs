@@ -7,6 +7,9 @@ helpviewer_keywords: ["MFC, COM support", "MFC ActiveX controls [MFC], COM suppo
 ---
 # MFC COM
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 A subset of MFC is designed to support COM, while most of the Active Template Library (ATL) is designed for COM programming. This section of topics describes MFC's support for COM.
 
 Active technologies (such as ActiveX controls, Active document containment, OLE, and so on) use the Component Object Model (COM) to enable software components to interact with one another in a networked environment, regardless of the language with which they were created. Active technologies can be used to create applications that run on the desktop or the Internet. For more information, see [Introduction to COM](../atl/introduction-to-com.md) or [The Component Object Model](/windows/win32/com/the-component-object-model).

@@ -4,9 +4,11 @@ title: "CMFCRibbonContextCaption Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonContextCaption", "AFXRIBBONBAR/CMFCRibbonContextCaption", "AFXRIBBONBAR/CMFCRibbonContextCaption::GetColor", "AFXRIBBONBAR/CMFCRibbonContextCaption::GetRightTabX"]
 helpviewer_keywords: ["CMFCRibbonContextCaption [MFC], GetColor", "CMFCRibbonContextCaption [MFC], GetRightTabX"]
-ms.assetid: cce2c0a2-8370-4266-997e-f8d0eeb3d616
 ---
 # CMFCRibbonContextCaption Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements a colored caption that appears at the top of a ribbon category or a context category.
 

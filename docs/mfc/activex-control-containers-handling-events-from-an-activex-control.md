@@ -3,9 +3,11 @@ description: "Learn more about: ActiveX Control Containers: Handling Events from
 title: "ActiveX Control Containers: Handling Events from an ActiveX Control"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["event handlers [MFC], ActiveX controls", "ActiveX control containers [MFC], event sinks", "event handling [MFC], ActiveX controls", "ON_EVENT macro [MFC]", "ActiveX controls [MFC], events [MFC]", "END_EVENTSINK_MAP macro, using", "events [MFC], ActiveX controls", "BEGIN_EVENTSINK_MAP macro"]
-ms.assetid: f9c106db-052f-4e32-82ad-750646aa760b
 ---
 # ActiveX Control Containers: Handling Events from an ActiveX Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article discusses using the **Properties** window (in **Class View**) to install event handlers for ActiveX controls in an ActiveX control container. The event handlers are used to receive notifications (from the control) of certain events and perform some action in response. This notification is called "firing" the event.
 

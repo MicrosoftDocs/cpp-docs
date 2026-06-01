@@ -7,6 +7,9 @@ helpviewer_keywords: ["CBrush [MFC], CBrush", "CBrush [MFC], CreateBrushIndirect
 ---
 # `CBrush` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Encapsulates a Windows graphics device interface (GDI) brush.
 
 ## Syntax

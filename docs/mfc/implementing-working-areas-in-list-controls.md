@@ -3,10 +3,12 @@ description: "Learn more about: Implementing Working Areas in List Controls"
 title: "Implementing Working Areas in List Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["list controls [MFC], working areas", "working areas in list control [MFC]"]
-ms.assetid: fbbb356b-3359-4348-8603-f1cb114cadde
 ms.topic: concept-article
 ---
 # Implementing Working Areas in List Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 By default, a list control arranges all items in a standard grid fashion. However, another method is supported, working areas, that arranges the list items into rectangular groups. For an image of a list control that implements working areas, see Using List-View Controls in the Windows SDK.
 

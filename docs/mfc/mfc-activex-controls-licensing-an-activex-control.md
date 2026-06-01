@@ -3,9 +3,11 @@ description: "Learn more about: MFC ActiveX Controls: Licensing an ActiveX Contr
 title: "MFC ActiveX Controls: Licensing an ActiveX Control"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["COleObjectFactory class [MFC], licensing controls", "MFC ActiveX controls [MFC], licensing", "VerifyLicenseKey method [MFC]", "VerifyUserLicense method [MFC]", "GetLicenseKey method [MFC]", "licensing ActiveX controls"]
-ms.assetid: cacd9e45-701a-4a1f-8f1f-b0b39f6ac303
 ---
 # MFC ActiveX Controls: Licensing an ActiveX Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Licensing support, an optional feature of ActiveX controls, allows you to control who is able to use or distribute the control. (For additional discussion of licensing issues, see Licensing Issues in [Upgrading an Existing ActiveX Control](upgrading-an-existing-activex-control.md).)
 

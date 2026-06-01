@@ -3,9 +3,10 @@ description: "Learn more about: Using CStringT"
 title: "Using CStringT"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CStringT class, using"]
-ms.assetid: 3a9fffb1-6f90-482a-ab69-4003e6084cb5
 ---
 # Using CStringT
+
+[!INCLUDE[product-lifecycle-status](./includes/lifecycle-note.md)]
 
 The topics in this section describe programming using the template class [CStringT](../atl-mfc-shared/reference/cstringt-class.md).
 

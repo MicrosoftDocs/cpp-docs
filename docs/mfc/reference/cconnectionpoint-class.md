@@ -4,9 +4,11 @@ title: "CConnectionPoint Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CConnectionPoint", "AFXDISP/CConnectionPoint", "AFXDISP/CConnectionPoint::CConnectionPoint", "AFXDISP/CConnectionPoint::GetConnections", "AFXDISP/CConnectionPoint::GetContainer", "AFXDISP/CConnectionPoint::GetIID", "AFXDISP/CConnectionPoint::GetMaxConnections", "AFXDISP/CConnectionPoint::GetNextConnection", "AFXDISP/CConnectionPoint::GetStartPosition", "AFXDISP/CConnectionPoint::OnAdvise", "AFXDISP/CConnectionPoint::QuerySinkInterface"]
 helpviewer_keywords: ["CConnectionPoint [MFC], CConnectionPoint", "CConnectionPoint [MFC], GetConnections", "CConnectionPoint [MFC], GetContainer", "CConnectionPoint [MFC], GetIID", "CConnectionPoint [MFC], GetMaxConnections", "CConnectionPoint [MFC], GetNextConnection", "CConnectionPoint [MFC], GetStartPosition", "CConnectionPoint [MFC], OnAdvise", "CConnectionPoint [MFC], QuerySinkInterface"]
-ms.assetid: f0f23a1e-5e8c-41a9-aa6c-1a4793b28e8f
 ---
 # CConnectionPoint Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Defines a special type of interface used to communicate with other OLE objects, called a "connection point."
 

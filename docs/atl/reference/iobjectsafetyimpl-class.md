@@ -4,9 +4,10 @@ title: "IObjectSafetyImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IObjectSafetyImpl", "ATLCTL/ATL::IObjectSafetyImpl", "ATLCTL/ATL::IObjectSafetyImpl::GetInterfaceSafetyOptions", "ATLCTL/ATL::IObjectSafetyImpl::SetInterfaceSafetyOptions", "ATLCTL/ATL::IObjectSafetyImpl::m_dwCurrentSafety"]
 helpviewer_keywords: ["controls [ATL], safe", "safe for scripting and initialization (controls)", "IObjectSafety, ATL implementation", "IObjectSafetyImpl class"]
-ms.assetid: 64e32082-d910-4a8a-a5bf-ebed9145359d
 ---
 # IObjectSafetyImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides a default implementation of the `IObjectSafety` interface to allow a client to retrieve and set an object's safety levels.
 

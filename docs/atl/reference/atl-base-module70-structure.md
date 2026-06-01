@@ -4,9 +4,10 @@ title: "_ATL_BASE_MODULE70 Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::_ATL_BASE_MODULE70", "ATL._ATL_BASE_MODULE70", "_ATL_BASE_MODULE70"]
 helpviewer_keywords: ["ATL_BASE_MODULE70 structure", "_ATL_BASE_MODULE70 structure"]
-ms.assetid: 4539282f-15b8-4d7c-aafa-a85dc56f4980
 ---
 # _ATL_BASE_MODULE70 Structure
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 Used by any project that uses ATL.
 

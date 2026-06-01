@@ -4,9 +4,10 @@ title: "CHandle Class"
 ms.date: "07/09/2019"
 f1_keywords: ["CHandle", "ATLBASE/ATL::CHandle", "ATLBASE/ATL::CHandle::CHandle", "ATLBASE/ATL::CHandle::Attach", "ATLBASE/ATL::CHandle::Close", "ATLBASE/ATL::CHandle::Detach", "ATLBASE/ATL::CHandle::m_h"]
 helpviewer_keywords: ["CHandle class"]
-ms.assetid: 883e9db5-40ec-4e29-9c74-4dd2ddd2e35d
 ---
 # CHandle Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods for creating and using a handle object.
 

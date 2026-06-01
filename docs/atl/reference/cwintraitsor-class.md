@@ -4,9 +4,10 @@ title: "CWinTraitsOR Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CWinTraitsOR", "ATLWIN/ATL::CWinTraitsOR", "ATLWIN/ATL::CWinTraitsOR::GetWndExStyle", "ATLWIN/ATL::CWinTraitsOR::GetWndStyle"]
 helpviewer_keywords: ["CWinTraitsOR class", "window styles, default values for ATL"]
-ms.assetid: 1eb7b1e8-a9bd-411b-a30a-35a8a10af989
 ---
 # CWinTraitsOR Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides a method for standardizing the styles used when creating a window object.
 

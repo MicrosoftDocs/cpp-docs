@@ -3,10 +3,12 @@ description: "Learn more about: Creating Stack and Queue Collections"
 title: "Creating Stack and Queue Collections"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC collection classes [MFC], stack collections", "collections, stack", "stack", "collection classes [MFC], creating", "queue collections", "MFC collection classes [MFC], queue collections", "stack collections", "collections, queue"]
-ms.assetid: 3c7bc198-35f0-4fc3-aaed-6005a0f22638
 ms.topic: how-to
 ---
 # Creating Stack and Queue Collections
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains how to create other data structures, such as [stacks](#_core_stacks) and [queues](#_core_queues), from MFC list classes. The examples use classes derived from `CList`, but you can use `CList` directly unless you need to add functionality.
 

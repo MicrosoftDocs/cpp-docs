@@ -4,10 +4,12 @@ title: "Creating the Tab Control"
 ms.date: "11/04/2016"
 f1_keywords: ["TCS_EX_REGISTERDROP", "TCS_EX_FLATSEPARATORS"]
 helpviewer_keywords: ["TCS_EX_REGISTERDROP extended style [MFC]", "tab controls [MFC], creating", "CTabCtrl class [MFC], creating", "TCS_EX_FLATSEPARATORS extended style"]
-ms.assetid: 3a9c2d64-f5f4-41ea-84ab-fceb73c3dbdc
 ms.topic: how-to
 ---
 # Creating the Tab Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 How the tab control is created depends on whether you are using the control in a dialog box or creating it in a nondialog window.
 

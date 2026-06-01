@@ -4,9 +4,10 @@ title: "CComObjectRootEx Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComObjectRootEx", "ATLCOM/ATL::CComObjectRootEx", "ATLCOM/ATL::InternalAddRef", "ATLCOM/ATL::InternalRelease", "ATLCOM/ATL::Lock", "ATLCOM/ATL::Unlock", "ATLCOM/ATL::FinalConstruct", "ATLCOM/ATL::FinalRelease", "ATLCOM/ATL::OuterAddRef", "ATLCOM/ATL::OuterQueryInterface", "ATLCOM/ATL::OuterRelease", "ATLCOM/ATL::InternalQueryInterface", "ATLCOM/ATL::ObjectMain", "ATLCOM/ATL::m_dwRef", "ATLCOM/ATL::m_pOuterUnknown"]
 helpviewer_keywords: ["reference counting"]
-ms.assetid: 894a3d7c-2daf-4fd0-8fa4-e6a05bcfb631
 ---
 # CComObjectRootEx Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods to handle object reference count management for both nonaggregated and aggregated objects.
 

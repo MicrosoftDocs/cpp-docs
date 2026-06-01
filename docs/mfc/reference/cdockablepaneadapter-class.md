@@ -4,9 +4,11 @@ title: "CDockablePaneAdapter Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDockablePaneAdapter", "AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter", "AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::GetWrappedWnd", "AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::LoadState", "AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::SaveState", "AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::SetWrappedWnd"]
 helpviewer_keywords: ["CDockablePaneAdapter [MFC], GetWrappedWnd", "CDockablePaneAdapter [MFC], LoadState", "CDockablePaneAdapter [MFC], SaveState", "CDockablePaneAdapter [MFC], SetWrappedWnd"]
-ms.assetid: 6ed6cf82-f39c-4d0c-bf7c-8641495cf8f3
 ---
 # CDockablePaneAdapter Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides docking support for `CWnd`-derived panes.
 

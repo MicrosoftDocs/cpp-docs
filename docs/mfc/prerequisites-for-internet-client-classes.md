@@ -3,9 +3,11 @@ description: "Learn more about: Prerequisites for Internet Client Classes"
 title: "Prerequisites for Internet Client Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Internet files [MFC], writing to", "Internet [MFC], connections", "FTP (File Transfer Protocol), MFC classes", "Gopher prerequisites [MFC]", "files [MFC], writing to", "classes [MFC], connections", "HTTP [MFC], prerequisites for Internet clients", "connections [MFC], classes for", "Internet client class prerequisites [MFC]", "files [MFC], reading", "URLs [MFC], Internet client applications", "prerequisites, Internet client classes [MFC]", "Gopher client applications [MFC]"]
-ms.assetid: c51d1dfe-260c-4228-8100-e4efd90e9599
 ---
 # Prerequisites for Internet Client Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Some actions taken by an Internet client (reading a file, for example) have prerequisite actions (in this case, establishing an Internet connection). The following tables list the prerequisites for some client actions.
 

@@ -7,6 +7,8 @@ helpviewer_keywords: ["jpeg files", "bitmaps [C++], ATL and MFC support for", "i
 ---
 # `CImage` Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 `CImage` provides enhanced bitmap support, including the ability to load and save images in JPEG, GIF, BMP, and Portable Network Graphics (PNG) formats.
 
 > [!IMPORTANT]

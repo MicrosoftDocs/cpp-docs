@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMFCTasksPane [MFC], CMFCTasksPane", "CMFCTasksPane [MFC]
 ---
 # CMFCTasksPane Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 
 The `CMFCTasksPane` class implements a list of clickable items (tasks).

@@ -4,10 +4,12 @@ title: "Drawing Tool Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.drawing"]
 helpviewer_keywords: ["drawing [MFC], tool classes", "screen output classes [MFC]", "output classes [MFC]"]
-ms.assetid: e907bd89-38b5-47c9-b76a-95e0bf3bb41d
 ms.topic: concept-article
 ---
 # Drawing Tool Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 These classes encapsulate drawing tools that are used to draw on a device context.
 

@@ -7,6 +7,9 @@ helpviewer_keywords: ["CBaseKeyFrame [MFC], CBaseKeyFrame", "CBaseKeyFrame [MFC]
 ---
 # CBaseKeyFrame Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Implements the basic functionality of a keyframe.
 
 ## Syntax

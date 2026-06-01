@@ -3,9 +3,11 @@ description: "Learn more about: Active Document Containers"
 title: "Active Document Containers"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["active documents [MFC], containers", "active document containers [MFC]", "containers [MFC], active document", "MFC COM, active document containment"]
-ms.assetid: ba20183a-8b4c-440f-9031-e5fcc41d391b
 ---
 # Active Document Containers
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 An active document container, such as Microsoft Office Binder or Internet Explorer, allows you to work with several documents of different application types within a single frame (instead of forcing you to create and use multiple application frames for each document type).
 

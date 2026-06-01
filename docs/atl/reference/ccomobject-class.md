@@ -4,9 +4,10 @@ title: "CComObject Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComObject", "ATLCOM/ATL::CComObject", "ATLCOM/ATL::CComObject::CComObject", "ATLCOM/ATL::CComObject::AddRef", "ATLCOM/ATL::CComObject::CreateInstance", "ATLCOM/ATL::CComObject::QueryInterface", "ATLCOM/ATL::CComObject::Release"]
 helpviewer_keywords: ["CComObject class"]
-ms.assetid: e2b6433b-6349-4749-b4bc-acbd7a22c8b0
 ---
 # CComObject Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements `IUnknown` for a nonaggregated object.
 

@@ -4,9 +4,11 @@ title: "CSocketFile Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSocketFile", "AFXSOCK/CSocketFile", "AFXSOCK/CSocketFile::CSocketFile"]
 helpviewer_keywords: ["CSocketFile [MFC], CSocketFile"]
-ms.assetid: 7924c098-5f72-40d6-989d-42800a47958f
 ---
 # CSocketFile Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A `CFile` object used for sending and receiving data across a network via Windows Sockets.
 

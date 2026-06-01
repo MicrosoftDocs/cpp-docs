@@ -3,10 +3,12 @@ description: "Learn more about: Destroying the List Control"
 title: "Destroying the List Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["list controls [MFC], destroying", "CListCtrl class [MFC], destroying controls"]
-ms.assetid: 513ec820-3a02-49d2-b073-a6a7a3fc91b3
 ms.topic: concept-article
 ---
 # Destroying the List Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 If you embed your [CListCtrl](reference/clistctrl-class.md) object as a data member of a view or dialog class, it is destroyed when its owner is destroyed. If you use a [CListView](reference/clistview-class.md), the framework destroys the control when it destroys the view.
 

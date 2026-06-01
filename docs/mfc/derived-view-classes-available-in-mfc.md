@@ -3,9 +3,11 @@ description: "Learn more about: Derived View Classes Available in MFC"
 title: "Derived View Classes Available in MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CView class [MFC], classes derived from", "classes [MFC], derived", "derived classes [MFC], view classes", "view classes [MFC], derived"]
-ms.assetid: dba42178-7459-4ccc-b025-f3d9b8a4b737
 ---
 # Derived View Classes Available in MFC
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following table shows MFC's view classes and their relationships to one another. The capabilities of your view class depend on the MFC view class from which it derives.
 

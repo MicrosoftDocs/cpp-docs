@@ -4,9 +4,11 @@ title: "User Interface Features, MFC Application Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.exe.ui"]
 helpviewer_keywords: ["MFC Application Wizard, user interface features"]
-ms.assetid: 59e7b829-a665-42eb-be23-3f2a36eb2dad
 ---
 # User Interface Features, MFC Application Wizard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This topic explains the options that you can use to specify the look of your application. The user interface features available for your project depend on the type of application you specified in the [Application Type, MFC Application Wizard](../../mfc/reference/application-type-mfc-application-wizard.md) page of the MFC Application Wizard. For example, if you create a single document interface application, you cannot add child frame styles.
 

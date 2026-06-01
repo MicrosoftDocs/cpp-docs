@@ -4,9 +4,11 @@ title: "CTabbedPane Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CTabbedPane", "AFXTABBEDPANE/CTabbedPane", "AFXTABBEDPANE/CTabbedPane::DetachPane", "AFXTABBEDPANE/CTabbedPane::EnableTabAutoColor", "AFXTABBEDPANE/CTabbedPane::FloatTab", "AFXTABBEDPANE/CTabbedPane::GetTabArea", "AFXTABBEDPANE/CTabbedPane::GetTabWnd", "AFXTABBEDPANE/CTabbedPane::HasAutoHideMode", "AFXTABBEDPANE/CTabbedPane::IsTabLocationBottom", "AFXTABBEDPANE/CTabbedPane::ResetTabs", "AFXTABBEDPANE/CTabbedPane::SetTabAutoColors", "AFXTABBEDPANE/CTabbedPane::m_bTabsAlwaysTop", "AFXTABBEDPANE/CTabbedPane::m_pTabWndRTC"]
 helpviewer_keywords: ["CTabbedPane [MFC], DetachPane", "CTabbedPane [MFC], EnableTabAutoColor", "CTabbedPane [MFC], FloatTab", "CTabbedPane [MFC], GetTabArea", "CTabbedPane [MFC], GetTabWnd", "CTabbedPane [MFC], HasAutoHideMode", "CTabbedPane [MFC], IsTabLocationBottom", "CTabbedPane [MFC], ResetTabs", "CTabbedPane [MFC], SetTabAutoColors", "CTabbedPane [MFC], m_bTabsAlwaysTop", "CTabbedPane [MFC], m_pTabWndRTC"]
-ms.assetid: f4dc5215-b789-4f2d-8c62-477aceda3578
 ---
 # CTabbedPane Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements the functionality of a pane with detachable tabs.
 

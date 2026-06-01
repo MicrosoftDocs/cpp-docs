@@ -4,9 +4,10 @@ title: "_U_MENUorID Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL._U_MENUorID", "ATL::_U_MENUorID", "_U_MENUorID"]
 helpviewer_keywords: ["U_MENUorID class", "_U_MENUorID class"]
-ms.assetid: cfc8032b-61b4-4a68-ba3a-92b82500ccae
 ---
 # _U_MENUorID Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides wrappers for `CreateWindow` and `CreateWindowEx`.
 

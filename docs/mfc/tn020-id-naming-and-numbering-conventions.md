@@ -4,9 +4,11 @@ title: "TN020: ID Naming and Numbering Conventions"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.id"]
 helpviewer_keywords: ["TN020", "resource identifiers, naming and numbering", "resource identifiers"]
-ms.assetid: aecbd2cf-68b3-47f6-ae21-b1f507917245
 ---
 # TN020: ID Naming and Numbering Conventions
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This note describes the ID naming and numbering conventions that MFC 2.0 uses for resources, commands, strings, controls, and child windows.
 

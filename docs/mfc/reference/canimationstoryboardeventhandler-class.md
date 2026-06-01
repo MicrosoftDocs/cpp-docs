@@ -4,9 +4,11 @@ title: "CAnimationStoryboardEventHandler Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAnimationStoryboardEventHandler", "AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler", "AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::CAnimationStoryboardEventHandler", "AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::CreateInstance", "AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::OnStoryboardStatusChanged", "AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::OnStoryboardUpdated", "AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::SetAnimationController"]
 helpviewer_keywords: ["CAnimationStoryboardEventHandler [MFC], CAnimationStoryboardEventHandler", "CAnimationStoryboardEventHandler [MFC], CreateInstance", "CAnimationStoryboardEventHandler [MFC], OnStoryboardStatusChanged", "CAnimationStoryboardEventHandler [MFC], OnStoryboardUpdated", "CAnimationStoryboardEventHandler [MFC], SetAnimationController"]
-ms.assetid: 10a7e86b-c02d-4124-9a2e-61ecf8ac62fc
 ---
 # CAnimationStoryboardEventHandler Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements a callback, which is called by the Animation API when the status of a storyboard is changed or a storyboard is updated.
 

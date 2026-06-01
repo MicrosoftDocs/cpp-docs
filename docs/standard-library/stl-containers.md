@@ -163,5 +163,4 @@ In C++14 and later, you can compare dissimilar containers and/or dissimilar elem
 ## See also
 
 [Parallel Containers](../parallel/concrt/parallel-containers-and-objects.md)\
-[`<sample container>`](../standard-library/sample-container.md)\
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

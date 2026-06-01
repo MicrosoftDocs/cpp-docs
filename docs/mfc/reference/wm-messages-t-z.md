@@ -4,9 +4,11 @@ title: "WM_ Messages: T - Z"
 ms.date: "11/04/2016"
 f1_keywords: ["ON_WM_TCARD", "ON_WM_WININICHANGE", "ON_WM_VSCROLLCLIPBOARD", "ON_WM_VSCROLL", "ON_WM_WINDOWPOSCHANGED", "ON_WM_TIMECHANGE", "ON_WM_TIMER", "ON_WM_VKEYTOITEM", "ON_WM_WINDOWPOSCHANGING"]
 helpviewer_keywords: ["ON_WM_VSCROLLCLIPBOARD [MFC]", "ON_WM_WININICHANGE [MFC]", "ON_WM_WINDOWPOSCHANGED [MFC]", "ON_WM_TCARD [MFC]", "ON_WM_TIMECHANGE [MFC]", "ON_WM_TIMER [MFC]", "WM_ messages [MFC]", "ON_WM_WINDOWPOSCHANGING [MFC]", "ON_WM_VKEYTOITEM [MFC]", "ON_WM_VSCROLL"]
-ms.assetid: c528bb2e-ddb5-4da6-b652-432a387408b8
 ---
 # WM_ Messages: T - Z
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following map entries correspond to the function prototypes:
 

@@ -4,9 +4,11 @@ title: "CMFCToolBarComboBoxEdit Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCToolBarComboBoxEdit", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxEdit", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxEdit::CMFCToolBarComboBoxEdit"]
 helpviewer_keywords: ["CMFCToolBarComboBoxEdit [MFC], CMFCToolBarComboBoxEdit"]
-ms.assetid: 4789c34a-ce58-48ba-a26f-38748b601352
 ---
 # CMFCToolBarComboBoxEdit Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The framework uses the `CMFCToolBarComboBoxEdit` class to create a toolbar button that behaves like an editable combo box control.
 

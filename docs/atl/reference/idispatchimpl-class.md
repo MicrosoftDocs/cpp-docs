@@ -4,9 +4,10 @@ title: "IDispatchImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IDispatchImpl", "ATLCOM/ATL::IDispatchImpl", "ATLCOM/ATL::IDispatchImpl::IDispatchImpl", "ATLCOM/ATL::IDispatchImpl::GetIDsOfNames", "ATLCOM/ATL::IDispatchImpl::GetTypeInfo", "ATLCOM/ATL::IDispatchImpl::GetTypeInfoCount", "ATLCOM/ATL::IDispatchImpl::Invoke"]
 helpviewer_keywords: ["dual interfaces, classes", "IDispatchImpl class", "IDispatch class support in ATL"]
-ms.assetid: 8108eb36-1228-4127-a203-3ab5ba488892
 ---
 # IDispatchImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 Provides a default implementation for the `IDispatch` part of a dual interface.
 

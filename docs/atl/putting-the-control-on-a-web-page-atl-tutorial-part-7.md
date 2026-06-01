@@ -3,10 +3,11 @@ description: "Learn more about: Putting the Control on a Web Page (ATL Tutorial,
 title: "Putting the Control on a Web Page (ATL Tutorial, Part 7)"
 ms.custom: "get-started-article"
 ms.date: "05/06/2019"
-ms.assetid: 50dc4c95-c95b-4006-b88a-9826f7bdb222
 ms.topic: tutorial
 ---
 # Putting the Control on a Web Page (ATL Tutorial, Part 7)
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 Your control is now finished. To see your control work in a real-world situation, put it on a Web page. An HTML file that contains the control was created when you defined your control. Open the PolyCtl.htm file from **Solution Explorer**, and you can see your control on a Web page.
 

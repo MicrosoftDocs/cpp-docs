@@ -4,9 +4,11 @@ title: "CMFCRibbonQuickAccessToolBarDefaultState Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonQuickAccessToolBarDefaultState", "AFXRIBBONQUICKACCESSTOOLBAR/CMFCRibbonQuickAccessToolBarDefaultState", "AFXRIBBONQUICKACCESSTOOLBAR/CMFCRibbonQuickAccessToolBarDefaultState::CMFCRibbonQuickAccessToolBarDefaultState", "AFXRIBBONQUICKACCESSTOOLBAR/CMFCRibbonQuickAccessToolBarDefaultState::AddCommand", "AFXRIBBONQUICKACCESSTOOLBAR/CMFCRibbonQuickAccessToolBarDefaultState::CopyFrom", "AFXRIBBONQUICKACCESSTOOLBAR/CMFCRibbonQuickAccessToolBarDefaultState::RemoveAll"]
 helpviewer_keywords: ["CMFCRibbonQuickAccessToolBarDefaultState [MFC], CMFCRibbonQuickAccessToolBarDefaultState", "CMFCRibbonQuickAccessToolBarDefaultState [MFC], AddCommand", "CMFCRibbonQuickAccessToolBarDefaultState [MFC], CopyFrom", "CMFCRibbonQuickAccessToolBarDefaultState [MFC], RemoveAll"]
-ms.assetid: eca99200-b87b-47ba-b2e8-2f3f2444b176
 ---
 # `CMFCRibbonQuickAccessToolBarDefaultState` Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A helper class that manages default state for the Quick Access Toolbar that is positioned on the ribbon bar ([`CMFCRibbonBar` Class](../../mfc/reference/cmfcribbonbar-class.md)).
 

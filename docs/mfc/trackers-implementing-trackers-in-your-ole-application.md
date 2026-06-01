@@ -3,9 +3,11 @@ description: "Learn more about: Trackers: Implementing Trackers in Your OLE Appl
 title: "Trackers: Implementing Trackers in Your OLE Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["trackers [MFC]", "OLE applications [MFC], trackers", "applications [OLE], trackers", "tracking OLE items [MFC]", "OLE containers [MFC], trackers", "CRectTracker class [MFC], implementing trackers"]
-ms.assetid: 5103a517-65bd-441a-8a53-02915ff3ef08
 ---
 # Trackers: Implementing Trackers in Your OLE Application
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Trackers provide a graphical interface to enable users to interact with OLE client items. By using different tracker styles, OLE client items can be displayed with hatched borders, resize handles, or a variety of other visual effects. This article describes:
 

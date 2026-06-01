@@ -3,9 +3,11 @@ description: "Learn more about: Clipboard: Using the OLE Clipboard Mechanism"
 title: "Clipboard: Using the OLE Clipboard Mechanism"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["applications [OLE], Clipboard", "OLE Clipboard", "Clipboard [MFC], OLE formats", "OLE Clipboard, formats", "formats [MFC], Clipboard for OLE"]
-ms.assetid: 229cc610-5bb1-435e-bd20-2c8b9964d1af
 ---
 # Clipboard: Using the OLE Clipboard Mechanism
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 OLE uses standard formats and some OLE-specific formats for transferring data through the Clipboard.
 

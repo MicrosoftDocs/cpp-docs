@@ -3,9 +3,11 @@ description: "Learn more about: Tree Control Drag-and-Drop Operations"
 title: "Tree Control Drag-and-Drop Operations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CTreeCtrl class [MFC], drag and drop operations", "drag and drop [MFC], CTreeCtrl", "tree controls [MFC], drag and drop operations"]
-ms.assetid: 3cf78b4c-4579-4fe1-9bc9-c5ab876e4af1
 ---
 # Tree Control Drag-and-Drop Operations
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A tree control ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) sends a notification when the user starts to drag an item. The control sends a [TVN_BEGINDRAG](/windows/win32/Controls/tvn-begindrag) notification message when the user begins dragging an item with the left mouse button and a [TVN_BEGINRDRAG](/windows/win32/Controls/tvn-beginrdrag) notification message when the user begins dragging with the right button. You can prevent a tree control from sending these notifications by giving the tree control the TVS_DISABLEDRAGDROP style.
 

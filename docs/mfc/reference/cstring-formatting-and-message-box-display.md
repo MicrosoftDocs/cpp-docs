@@ -3,9 +3,11 @@ description: "Learn more about: CString Formatting and Message-Box Display"
 title: "CString Formatting and Message-Box Display"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CString objects [MFC], formatting and message boxes"]
-ms.assetid: d1068cf4-9cc5-4952-b9e7-d612c53cbc28
 ---
 # `CString` Formatting and Message-Box Display
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A number of functions are provided to format and parse `CString` objects. You can use these functions whenever you have to manipulate `CString` objects, but they are particularly useful for formatting strings that will appear in message-box text.
 

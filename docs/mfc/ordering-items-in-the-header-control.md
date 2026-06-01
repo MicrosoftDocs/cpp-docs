@@ -4,10 +4,12 @@ title: "Ordering Items in the Header Control"
 ms.date: "11/04/2016"
 f1_keywords: ["DS_DRAGDROP"]
 helpviewer_keywords: ["sequence [MFC]", "sequence [MFC], header control items", "OrderToIndex method [MFC]", "DS_DRAGDROP notification [MFC]", "GetOrderArray method [MFC]", "SetOrderArray method [MFC]", "header controls [MFC], ordering items"]
-ms.assetid: 5aaef872-75b5-49c5-8fed-6f9a81fca812
 ms.topic: concept-article
 ---
 # Ordering Items in the Header Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Once you've [added items to a header control](adding-items-to-the-header-control.md), you can manipulate or get information about their order with the following functions:
 

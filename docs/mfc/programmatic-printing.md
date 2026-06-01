@@ -3,9 +3,11 @@ description: "Learn more about: Programmatic Printing"
 title: "Programmatic Printing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["printing [MFC], active documents", "active documents [MFC], printing", "printing [MFC], programmatic", "IPrint interface", "printing [MFC]"]
-ms.assetid: 3db0945b-5e13-4be4-86a0-6aecdae565bd
 ---
 # Programmatic Printing
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 OLE provided the means to uniquely identify persistent documents (`GetClassFile`) and load them into their associated code (`CoCreateInstance`, `QueryInterface(IID_IPersistFile)`, `QueryInterface(IID_IPersistStorage)`, `IPersistFile::Load`, and `IPersistStorage::Load`). To further enable printing documents, active document containment (using an existing OLE design not shipped with OLE 2.0 originally) introduces a base-standard printing interface, `IPrint`, generally available through any object that can load the persistent state of the document type. Each view of an active document can optionally support the `IPrint` interface to provide these capabilities.
 

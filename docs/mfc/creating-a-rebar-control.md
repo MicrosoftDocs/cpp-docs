@@ -3,10 +3,12 @@ description: "Learn more about: Creating a Rebar Control"
 title: "Creating a Rebar Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["rebar controls [MFC], creating", "CReBarCtrl class [MFC], creating"]
-ms.assetid: 0a012e08-772b-4f6a-af86-7cb651d11d3e
 ms.topic: how-to
 ---
 # Creating a Rebar Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 [CReBarCtrl](reference/crebarctrl-class.md) objects should be created before the parent object is visible. This minimizes the possibilities of painting problems.
 

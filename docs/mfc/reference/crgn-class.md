@@ -7,6 +7,9 @@ helpviewer_keywords: ["CRgn [MFC], CRgn", "CRgn [MFC], CombineRgn", "CRgn [MFC],
 ---
 # CRgn Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Encapsulates a Windows graphics device interface (GDI) region.
 
 ## Syntax

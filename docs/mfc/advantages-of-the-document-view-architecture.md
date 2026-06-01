@@ -3,9 +3,11 @@ description: "Learn more about: Advantages of the Document/View Architecture"
 title: "Advantages of the Document-View Architecture"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["views [MFC], advantages", "document/view architecture [MFC], advantages of"]
-ms.assetid: 0bc27071-e120-4889-939c-ce1e61fb9cb3
 ---
 # Advantages of the Document/View Architecture
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The key advantage to using the MFC document/view architecture is that the architecture supports multiple views of the same document particularly well. (If you don't need multiple views and the small overhead of document/view is excessive in your application, you can avoid the architecture. [Alternatives to the Document/View Architecture](alternatives-to-the-document-view-architecture.md).)
 

@@ -7,6 +7,9 @@ helpviewer_keywords: ["CPaintDC [MFC], CPaintDC", "CPaintDC [MFC], m_ps", "CPain
 ---
 # `CPaintDC` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 A device-context class derived from [`CDC`](../../mfc/reference/cdc-class.md).
 
 ## Syntax

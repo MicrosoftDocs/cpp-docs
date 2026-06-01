@@ -3,10 +3,12 @@ description: "Learn more about: Enabling Tool Tips"
 title: "Enabling Tool Tips"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["initializing tool tips [MFC]", "enabling tool tips [MFC]", "tool tips [MFC], initializing", "tool tips [MFC], enabling"]
-ms.assetid: 06b7c889-7722-4ce6-8b88-9efa50fe6369
 ms.topic: how-to
 ---
 # Enabling Tool Tips
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 You can enable tool tip support for the child controls of a window (such as the controls on a form view or dialog box).
 

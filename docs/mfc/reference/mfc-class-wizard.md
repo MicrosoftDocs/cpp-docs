@@ -7,6 +7,9 @@ helpviewer_keywords: ["MFC Class Wizard"]
 ---
 # MFC Class Wizard
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Use the **Class Wizard** to create new MFC classes, or add messages and message handlers to existing classes in your project.
 
 There are three ways to open the **Class Wizard**:

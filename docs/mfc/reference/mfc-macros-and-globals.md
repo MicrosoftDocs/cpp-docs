@@ -3,9 +3,11 @@ description: "Learn more about: MFC Macros and Globals"
 title: "MFC Macros and Globals"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, global functions and variables", "MFC, macros", "global functions, MFC", "macros, MFC", "global functions [MFC]", "global variables, MFC", "Afx naming convention", "macros"]
-ms.assetid: add4e33f-0e62-4d27-be14-896cb8675d22
 ---
 # MFC Macros and Globals
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The Microsoft Foundation Class Library can be divided into two major sections: (1) the MFC classes and (2) macros and globals. If a function or variable is not a member of a class, it is a global function or variable.
 

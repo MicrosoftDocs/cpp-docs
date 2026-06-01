@@ -4,9 +4,11 @@ title: "CMFCImageEditorPaletteBar Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCImageEditorPaletteBar", "AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar", "AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar::GetRowHeight", "AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar::IsButtonExtraSizeAvailable"]
 helpviewer_keywords: ["CMFCImageEditorPaletteBar [MFC], GetRowHeight", "CMFCImageEditorPaletteBar [MFC], IsButtonExtraSizeAvailable"]
-ms.assetid: 3fb7ba8e-f254-4d56-b913-9941b4ed8138
 ---
 # CMFCImageEditorPaletteBar Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides palette bar functionality to an image editor dialog box.
 

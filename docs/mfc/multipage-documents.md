@@ -3,9 +3,11 @@ description: "Learn more about: Multipage Documents"
 title: "Multipage Documents"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["pagination [MFC]", "overriding [MFC], View class functions for printing", "OnPrepareDC method [MFC]", "CPrintInfo structure [MFC], multipage documents", "OnEndPrinting method [MFC]", "protocols [MFC], printing protocol", "document pages vs. printer pages [MFC]", "printer mode [MFC]", "printing [MFC], multipage documents", "printers [MFC], printer mode", "documents [MFC], printing", "OnPreparePrinting method [MFC]", "OnPrint method [MFC]", "DoPreparePrinting method and pagination [MFC]", "OnDraw method [MFC], printing", "pagination [MFC], printing multipage documents", "printing [MFC], protocol", "pages [MFC], printing", "OnBeginPrinting method [MFC]", "multipage documents [MFC]", "printing [MFC], pagination", "documents [MFC], paginating"]
-ms.assetid: 69626b86-73ac-4b74-b126-9955034835ef
 ---
 # Multipage Documents
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article describes the Windows printing protocol and explains how to print documents that contain more than one page. The article covers the following topics:
 

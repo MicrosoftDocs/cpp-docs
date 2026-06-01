@@ -4,9 +4,10 @@ title: "_U_RECT Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::_U_RECT", "_U_RECT", "ATL._U_RECT"]
 helpviewer_keywords: ["U_RECT class", "_U_RECT class"]
-ms.assetid: 5f880a2d-09cf-4327-bf32-a3519c4dcd63
 ---
 # _U_RECT Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This argument adapter class allows either `RECT` pointers or references to be passed to a function that is implemented in terms of pointers.
 

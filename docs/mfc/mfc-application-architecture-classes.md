@@ -6,6 +6,9 @@ helpviewer_keywords: ["MFC, classes", "MFC, application development", "classes [
 ---
 # MFC application architecture classes
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The Microsoft Foundation Class library (MFC) classes in this category contribute to the architecture of an MFC application. They supply functionality common to most applications. You fill in the framework to add application-specific functionality. Typically, you do so by deriving new classes from the architecture classes, and then adding new members or overriding existing member functions.
 
 [Application wizards](reference/mfc-application-wizard.md) generate several types of applications, all of which use the application framework in differing ways. SDI (single document interface) and MDI (multiple document interface) applications make full use of the document/view part of the framework. Other types of applications, such as dialog-based applications, form-based applications, and DLLs, use only some of document/view architecture features.

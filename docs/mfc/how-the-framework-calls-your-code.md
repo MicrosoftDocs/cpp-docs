@@ -3,9 +3,11 @@ description: "Learn more about: How the Framework Calls Your Code"
 title: "How the Framework Calls Your Code"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["control flow [MFC], MFC framework and your code", "events [MFC], command routing in MFC", "command routing [MFC], framework", "command handling [MFC], calling handlers and code in MFC", "events [MFC], event-driven programming", "MFC, calling code from", "MFC, calling code", "application-specific events [MFC]", "command routing [MFC], MFC"]
-ms.assetid: 39e68189-a580-40d0-9e35-bf5cd24a8ecf
 ---
 # How the Framework Calls Your Code
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 It is crucial to understand the relationship between your source code and the code in the MFC framework. When your application runs, most of the flow of control resides in the framework's code. The framework manages the message loop that gets messages from Windows as the user chooses commands and edits data in a view. Events that the framework can handle by itself do not rely on your code at all. For example, the framework knows how to close windows and how to exit the application in response to user commands. As it handles these tasks, the framework uses message handlers and C++ virtual functions to give you opportunities to respond to these events as well. Your code is not in control, however; the framework is.
 

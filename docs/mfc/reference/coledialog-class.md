@@ -4,9 +4,11 @@ title: "COleDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleDialog", "AFXODLGS/COleDialog", "AFXODLGS/COleDialog::GetLastError"]
 helpviewer_keywords: ["COleDialog [MFC], GetLastError"]
-ms.assetid: b1ed0aca-3914-4b00-af34-4a4fb491aec7
 ---
 # COleDialog Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides functionality common to dialog boxes for OLE.
 

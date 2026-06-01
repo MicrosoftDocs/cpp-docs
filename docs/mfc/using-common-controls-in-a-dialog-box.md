@@ -3,10 +3,12 @@ description: "Learn more about: Using Common Controls in a Dialog Box"
 title: "Using Common Controls in a Dialog Box"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["common controls [MFC], in dialog boxes", "dialog box controls [MFC], common controls", "Windows common controls [MFC], in dialog boxes"]
-ms.assetid: 17713caf-09f8-484a-bf54-5f48bf09cce9
 ms.topic: how-to
 ---
 # Using Common Controls in a Dialog Box
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The Windows common controls can be used in [dialog boxes](../mfc/dialog-boxes.md), form views, record views, and any other window based on a dialog template. The following procedure, with minor changes, will work for forms as well.
 

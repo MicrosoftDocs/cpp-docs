@@ -3,9 +3,11 @@ description: "Learn more about: How to: Load a Ribbon Resource from an MFC Appli
 title: "How to: Load a Ribbon Resource from an MFC Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ribbon resource [MFC], loading"]
-ms.assetid: 1c76bb8f-6345-414a-9f3f-128815ceadc5
 ---
 # How to: Load a Ribbon Resource from an MFC Application
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 To use the ribbon resource in your application, modify the application to load the ribbon resource.
 

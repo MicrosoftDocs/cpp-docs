@@ -3,10 +3,12 @@ description: "Learn more about: Optimizing Persistence and Initialization"
 title: "Optimizing Persistence and Initialization"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], optimizing", "performance, ActiveX controls", "optimization, ActiveX controls", "optimizing performance, ActiveX controls"]
-ms.assetid: e821e19e-b9eb-49ab-b719-0743420ba80b
 ms.topic: concept-article
 ---
 # Optimizing Persistence and Initialization
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 By default, persistence and initialization in a control are handled by the `DoPropExchange` member function. In a typical control, this function contains calls to several **PX_** functions (`PX_Color`, `PX_Font`, and so on), one for each property.
 

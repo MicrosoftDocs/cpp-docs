@@ -3,9 +3,11 @@ description: "Learn more about: OLE Drag-and-Drop and Data Transfer Classes"
 title: "OLE Drag-and-Drop and Data Transfer Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ActiveX classes [MFC]", "OLE drag and drop [MFC], and data transfer classes", "drag and drop [MFC], classes", "data transfer [MFC], OLE", "data transfer classes [MFC]"]
-ms.assetid: c8ab2825-ed69-4b88-8ae6-f368b94726b8
 ---
 # OLE Drag-and-Drop and Data Transfer Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 These classes are used in OLE data transfers. They allow data to be transferred between applications by using the Clipboard or through drag and drop.
 

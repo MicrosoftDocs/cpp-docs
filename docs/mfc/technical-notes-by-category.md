@@ -2,9 +2,11 @@
 description: "Learn more about: Technical Notes by Category"
 title: "Technical Notes by Category"
 ms.date: "11/04/2016"
-ms.assetid: b9f1c953-233d-4d64-9e8e-ca69b79460b8
 ---
 # Technical Notes by Category
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Technical notes are divided into the following categories. For a numerical listing of the technical notes, see [Technical Notes by Number](../mfc/technical-notes-by-number.md).
 

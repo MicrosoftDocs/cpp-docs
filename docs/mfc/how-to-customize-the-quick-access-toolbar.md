@@ -3,9 +3,11 @@ description: "Learn more about: How to: Customize the Quick Access Toolbar"
 title: "How to: Customize the Quick Access Toolbar"
 ms.date: "09/07/2019"
 helpviewer_keywords: ["quick access toolbar [MFC], customization"]
-ms.assetid: 2554099b-0c89-4605-9249-31bf9cbcefe0
 ---
 # How to: Customize the Quick Access Toolbar
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The Quick Access Toolbar (QAT) is a customizable toolbar that contains a set of commands that are either displayed next to the Application button or under the category tabs. The following illustration shows a typical Quick Access Toolbar.
 

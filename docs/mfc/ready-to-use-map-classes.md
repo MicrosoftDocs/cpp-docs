@@ -4,9 +4,11 @@ title: "Ready-to-Use Map Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.map"]
 helpviewer_keywords: ["collection classes [MFC], maps", "classes [MFC], map", "map classes [MFC]"]
-ms.assetid: 3f0b1c05-2243-4d4d-98d4-429fc3310c9f
 ---
 # Ready-to-Use Map Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following classes are ready-to-use map classes.
 

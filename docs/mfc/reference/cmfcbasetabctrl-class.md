@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMFCBaseTabCtrl [MFC], AddIcon", "CMFCBaseTabCtrl [MFC], 
 ---
 # CMFCBaseTabCtrl Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Implements the base functionality for tabbed windows.
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 

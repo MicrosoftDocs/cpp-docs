@@ -3,10 +3,12 @@ description: "Learn more about: Using an Animation Control"
 title: "Using an Animation Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["controls [MFC], animation", "CAnimateCtrl class [MFC], animation controls", "animation controls [MFC]"]
-ms.assetid: a009a464-e12d-4112-bf52-04a09b28dd88
 ms.topic: concept-article
 ---
 # Using an Animation Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Typical usage of an animation control follows the pattern below:
 

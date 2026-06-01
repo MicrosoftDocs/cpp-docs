@@ -4,9 +4,11 @@ title: "CPropExchange Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPropExchange", "AFXCTL/CPropExchange", "AFXCTL/CPropExchange::ExchangeBlobProp", "AFXCTL/CPropExchange::ExchangeFontProp", "AFXCTL/CPropExchange::ExchangePersistentProp", "AFXCTL/CPropExchange::ExchangeProp", "AFXCTL/CPropExchange::ExchangeVersion", "AFXCTL/CPropExchange::GetVersion", "AFXCTL/CPropExchange::IsAsynchronous", "AFXCTL/CPropExchange::IsLoading"]
 helpviewer_keywords: ["CPropExchange [MFC], ExchangeBlobProp", "CPropExchange [MFC], ExchangeFontProp", "CPropExchange [MFC], ExchangePersistentProp", "CPropExchange [MFC], ExchangeProp", "CPropExchange [MFC], ExchangeVersion", "CPropExchange [MFC], GetVersion", "CPropExchange [MFC], IsAsynchronous", "CPropExchange [MFC], IsLoading"]
-ms.assetid: ed872180-e770-4942-892a-92139d501fab
 ---
 # CPropExchange Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Supports the implementation of persistence for your OLE controls.
 

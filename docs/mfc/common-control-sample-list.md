@@ -3,9 +3,11 @@ description: "Learn more about: Common Control Sample List"
 title: "Common Control Sample List"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["sample applications [MFC], common controls"]
-ms.assetid: 8ae39e2d-12a8-4b17-909d-5bf155749123
 ---
 # Common Control Sample List
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 See the following sample programs that illustrate common controls:
 

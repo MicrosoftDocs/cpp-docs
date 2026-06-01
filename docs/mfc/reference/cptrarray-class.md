@@ -4,9 +4,11 @@ title: "CPtrArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPtrArray", "AFXCOLL/CPtrArray", "AFXCOLL/CPtrArray::CPtrArray", "AFXCOLL/CPtrArray::Add", "AFXCOLL/CPtrArray::Append", "AFXCOLL/CPtrArray::Copy", "AFXCOLL/CPtrArray::ElementAt", "AFXCOLL/CPtrArray::FreeExtra", "AFXCOLL/CPtrArray::GetAt", "AFXCOLL/CPtrArray::GetCount", "AFXCOLL/CPtrArray::GetData", "AFXCOLL/CPtrArray::GetSize", "AFXCOLL/CPtrArray::GetUpperBound", "AFXCOLL/CPtrArray::InsertAt", "AFXCOLL/CPtrArray::IsEmpty", "AFXCOLL/CPtrArray::RemoveAll", "AFXCOLL/CPtrArray::RemoveAt", "AFXCOLL/CPtrArray::SetAt", "AFXCOLL/CPtrArray::SetAtGrow", "AFXCOLL/CPtrArray::SetSize"]
 helpviewer_keywords: ["CPtrArray [MFC], CPtrArray", "CPtrArray [MFC], Add", "CPtrArray [MFC], Append", "CPtrArray [MFC], Copy", "CPtrArray [MFC], ElementAt", "CPtrArray [MFC], FreeExtra", "CPtrArray [MFC], GetAt", "CPtrArray [MFC], GetCount", "CPtrArray [MFC], GetData", "CPtrArray [MFC], GetSize", "CPtrArray [MFC], GetUpperBound", "CPtrArray [MFC], InsertAt", "CPtrArray [MFC], IsEmpty", "CPtrArray [MFC], RemoveAll", "CPtrArray [MFC], RemoveAt", "CPtrArray [MFC], SetAt", "CPtrArray [MFC], SetAtGrow", "CPtrArray [MFC], SetSize"]
-ms.assetid: c23b87a3-bf84-49d6-a66b-61e999d0938a
 ---
 # CPtrArray Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Supports arrays of void pointers.
 

@@ -4,9 +4,11 @@ title: "CMFCRibbonButtonsGroup Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonButtonsGroup", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::AddButton", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::AddButtons", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::GetButton", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::GetCount", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::GetImageSize", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::GetRegularSize", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::HasImages", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::OnDrawImage", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::RemoveAll", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::SetImages", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::SetParentCategory"]
 helpviewer_keywords: ["CMFCRibbonButtonsGroup [MFC], CMFCRibbonButtonsGroup", "CMFCRibbonButtonsGroup [MFC], AddButton", "CMFCRibbonButtonsGroup [MFC], AddButtons", "CMFCRibbonButtonsGroup [MFC], GetButton", "CMFCRibbonButtonsGroup [MFC], GetCount", "CMFCRibbonButtonsGroup [MFC], GetImageSize", "CMFCRibbonButtonsGroup [MFC], GetRegularSize", "CMFCRibbonButtonsGroup [MFC], HasImages", "CMFCRibbonButtonsGroup [MFC], OnDrawImage", "CMFCRibbonButtonsGroup [MFC], RemoveAll", "CMFCRibbonButtonsGroup [MFC], SetImages", "CMFCRibbonButtonsGroup [MFC], SetParentCategory"]
-ms.assetid: b993d93e-fc1a-472f-a87f-1d7b7b499845
 ---
 # CMFCRibbonButtonsGroup Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCRibbonButtonsGroup` class allows you to organize a set of ribbon buttons into a group. All buttons in the group are directly adjacent to each other horizontally and enclosed in a border.
 

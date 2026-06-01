@@ -7,6 +7,9 @@ helpviewer_keywords: ["CDaoFieldExchange [MFC], IsValidOperation", "CDaoFieldExc
 ---
 # CDaoFieldExchange Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Supports the DAO record field exchange (DFX) routines used by the DAO database classes.
 
 > [!NOTE]

@@ -3,9 +3,11 @@ description: "Learn more about: WinInet Basics"
 title: "WinInet Basics"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OnStatusCallback method [MFC]", "WinInet classes [MFC], displaying progress", "WinInet classes [MFC], about WinInet classes"]
-ms.assetid: 665de5ac-e80d-427d-8d91-2ae466885940
 ---
 # WinInet Basics
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 You can use WinInet to add FTP support to download and upload files from within your application. You can override [OnStatusCallback](../mfc/reference/cinternetsession-class.md#onstatuscallback) and use the *dwContext* parameter to provide progress information to users as you search for and download files.
 

@@ -4,9 +4,11 @@ title: "Message Handling and Command Targets"
 ms.date: "11/04/2016"
 f1_keywords: ["IOleCommandTarget"]
 helpviewer_keywords: ["command targets [MFC]", "message handling [MFC], active documents", "IOleCommandTarget interface [MFC]", "command routing [MFC], command targets"]
-ms.assetid: e45ce14c-e6b6-4262-8f3b-4e891e0ec2a3
 ---
 # Message Handling and Command Targets
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The command dispatch interface `IOleCommandTarget` defines a simple and extensible mechanism to query and execute commands. This mechanism is simpler than Automation's `IDispatch` because it relies entirely on a standard set of commands; commands rarely have arguments, and no type information is involved (type safety is diminished for command arguments as well).
 

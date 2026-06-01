@@ -3,10 +3,12 @@ description: "Learn more about: Drawing in a View"
 title: "Drawing in a View"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["drawing [MFC], in views", "views [MFC], printing", "views [MFC], updating", "printing [MFC], views", "views [MFC], rendering", "printing views [MFC]", "paint messages in view class [MFC]", "device contexts, screen drawings"]
-ms.assetid: e3761db6-0f19-4482-a4cd-ac38ef7c4d3a
 ms.topic: how-to
 ---
 # Drawing in a View
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Nearly all drawing in your application occurs in the view's `OnDraw` member function, which you must override in your view class. (The exception is mouse drawing, discussed in [Interpreting User Input Through a View](interpreting-user-input-through-a-view.md).) Your `OnDraw` override:
 

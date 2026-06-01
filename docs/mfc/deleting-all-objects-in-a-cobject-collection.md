@@ -3,10 +3,12 @@ description: "Learn more about: Deleting All Objects in a CObject Collection"
 title: "Deleting All Objects in a CObject Collection"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["objects [MFC], deleting in collections", "objects in CObject collections, deleting", "CObject class [MFC], deleting in collection", "collection classes [MFC], deleting all objects", "CObject class collection", "objects in CObject collections", "collection classes [MFC], shared objects"]
-ms.assetid: 81d2c1d5-a0a5-46e1-8ab9-82b45cf7afd2
 ms.topic: how-to
 ---
 # Deleting All Objects in a CObject Collection
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains how to delete all objects in a collection (without deleting the collection object itself).
 

@@ -3,10 +3,12 @@ description: "Learn more about: Printing"
 title: "Printing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["view classes [MFC], print operations", "documents [MFC], printing", "printing [MFC], from framework", "printing [MFC]"]
-ms.assetid: be465e8d-b0c9-4fc5-9fa8-d10486064f76
 ms.topic: concept-article
 ---
 # Printing
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Microsoft Windows implements device-independent display. In MFC, this means that the same drawing calls, in the `OnDraw` member function of your view class, are responsible for drawing on the display and on other devices, such as printers. For print preview, the target device is a simulated printer output to the display.
 

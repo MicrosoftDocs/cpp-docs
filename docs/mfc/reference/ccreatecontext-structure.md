@@ -4,9 +4,11 @@ title: "CCreateContext Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["CCreateContext"]
 helpviewer_keywords: ["CCreateContext structure [MFC]"]
-ms.assetid: 337a0e44-d910-49a8-afc0-c7207666a9dc
 ---
 # CCreateContext Structure
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The framework uses the `CCreateContext` structure when it creates the frame windows and views that are associated with a document.
 

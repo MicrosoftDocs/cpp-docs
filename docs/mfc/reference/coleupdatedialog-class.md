@@ -4,9 +4,11 @@ title: "COleUpdateDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleUpdateDialog", "AFXODLGS/COleUpdateDialog", "AFXODLGS/COleUpdateDialog::COleUpdateDialog", "AFXODLGS/COleUpdateDialog::DoModal"]
 helpviewer_keywords: ["COleUpdateDialog [MFC], COleUpdateDialog", "COleUpdateDialog [MFC], DoModal"]
-ms.assetid: 699ca980-52b1-4cf8-9ab1-ac6767ad5b0e
 ---
 # COleUpdateDialog Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Used for a special case of the OLE Edit Links dialog box, which should be used when you need to update only existing linked or embedded objects in a document.
 

@@ -4,9 +4,11 @@ title: "CMFCVisualManagerOfficeXP Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCVisualManagerOfficeXP"]
 helpviewer_keywords: ["CMFCVisualManagerOfficeXP class [MFC]"]
-ms.assetid: 46b6f854-37c2-4836-8f56-5cb6ff63c9af
 ---
 # CMFCVisualManagerOfficeXP Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCVisualManagerOfficeXP` gives an application a Microsoft Office XP appearance.
 

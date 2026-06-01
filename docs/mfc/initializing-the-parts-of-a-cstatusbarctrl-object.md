@@ -3,10 +3,12 @@ description: "Learn more about: Initializing the Parts of a CStatusBarCtrl Objec
 title: "Initializing the Parts of a CStatusBarCtrl Object"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CStatusBarCtrl class [MFC], simple mode", "status bars [MFC], declaring parts of", "simple status bars [MFC]", "status bars [MFC], icons", "status bars [MFC], simple mode", "icons, using in status bars", "CStatusBarCtrl class [MFC], declaring parts of"]
-ms.assetid: 60e8f285-d2d8-424a-a6ea-2fc548370303
 ms.topic: concept-article
 ---
 # Initializing the Parts of a CStatusBarCtrl Object
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 By default, a status bar displays status information using separate panes. These panes (also referred to as parts) can contain either a text string, an icon, or both.
 

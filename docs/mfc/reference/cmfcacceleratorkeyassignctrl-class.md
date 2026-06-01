@@ -4,9 +4,11 @@ title: "CMFCAcceleratorKeyAssignCtrl Class"
 ms.date: "10/18/2018"
 f1_keywords: ["CMFCAcceleratorKeyAssignCtrl", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::CMFCAcceleratorKeyAssignCtrl", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::GetAccel", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::IsFocused", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::IsKeyDefined", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::PreTranslateMessage", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::ResetKey"]
 helpviewer_keywords: ["CMFCAcceleratorKeyAssignCtrl [MFC], CMFCAcceleratorKeyAssignCtrl", "CMFCAcceleratorKeyAssignCtrl [MFC], GetAccel", "CMFCAcceleratorKeyAssignCtrl [MFC], IsFocused", "CMFCAcceleratorKeyAssignCtrl [MFC], IsKeyDefined", "CMFCAcceleratorKeyAssignCtrl [MFC], PreTranslateMessage", "CMFCAcceleratorKeyAssignCtrl [MFC], ResetKey"]
-ms.assetid: 89fb8e62-596e-4e71-8c9a-32740347aaab
 ---
 # CMFCAcceleratorKeyAssignCtrl Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCAcceleratorKeyAssignCtrl` class extends the [CEdit Class](../../mfc/reference/cedit-class.md) to support extra system buttons such as ALT, CONTROL, and SHIFT.
 

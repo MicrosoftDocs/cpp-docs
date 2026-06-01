@@ -3,9 +3,11 @@ description: "Learn more about: General MFC Topics"
 title: "General MFC Topics"
 ms.date: "09/17/2019"
 helpviewer_keywords: ["MFC", "class libraries [MFC], MFC", "MFC, application development"]
-ms.assetid: 617e9945-9bb3-471d-a3ba-e235fcfb55d1
 ---
 # General MFC Topics
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This family of articles includes technical details about the Microsoft Foundation Class (MFC) Library and provides an overview of the MFC framework and its key components and subsystems.
 

@@ -6,6 +6,8 @@ helpviewer_keywords: ["Unicode, string objects"]
 ---
 # String Data Management
 
+[!INCLUDE[product-lifecycle-status](./includes/lifecycle-note.md)]
+
 Visual C++ provides several ways to manage string data:
 
 - [String Manipulation](../c-runtime-library/string-manipulation-crt.md) for working with C-style `NULL`-terminated strings

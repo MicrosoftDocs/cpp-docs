@@ -3,9 +3,11 @@ description: "Learn more about: How to: Customize the Application Button"
 title: "How to: Customize the Application Button"
 ms.date: "09/07/2019"
 helpviewer_keywords: ["application button [MFC], customizing"]
-ms.assetid: ebb11180-ab20-43df-a234-801feca9eb38
 ---
 # How to: Customize the Application Button
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 When you click the Application button, a menu of commands is displayed. Typically, the menu contains file-related commands such as **Open**, **Save**, **Print**, and **Exit**.
 

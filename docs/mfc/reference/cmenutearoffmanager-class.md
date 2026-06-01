@@ -4,9 +4,11 @@ title: "CMenuTearOffManager Class"
 ms.date: "10/18/2018"
 f1_keywords: ["CMenuTearOffManager", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::CMenuTearOffManager", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Build", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::GetRegPath", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Initialize", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::IsDynamicID", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Parse", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Reset", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetInUse", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetupTearOffMenus"]
 helpviewer_keywords: ["CMenuTearOffManager [MFC], CMenuTearOffManager", "CMenuTearOffManager [MFC], Build", "CMenuTearOffManager [MFC], GetRegPath", "CMenuTearOffManager [MFC], Initialize", "CMenuTearOffManager [MFC], IsDynamicID", "CMenuTearOffManager [MFC], Parse", "CMenuTearOffManager [MFC], Reset", "CMenuTearOffManager [MFC], SetInUse", "CMenuTearOffManager [MFC], SetupTearOffMenus"]
-ms.assetid: ab7ca272-ce42-4678-95f7-6ad75038f5a0
 ---
 # CMenuTearOffManager Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Manages tear-off menus. A tear-off menu is a menu on the menu bar. The user can remove a tear-off menu from the menu bar, causing the tear-off menu to float.
 

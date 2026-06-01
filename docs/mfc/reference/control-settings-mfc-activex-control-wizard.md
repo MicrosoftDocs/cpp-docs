@@ -4,9 +4,11 @@ title: "Control Settings, MFC ActiveX Control Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.ctl.settings"]
 helpviewer_keywords: ["MFC ActiveX Control Wizard, control settings"]
-ms.assetid: 2ccaa4fc-0d52-413e-afa3-ecd474c3f6f0
 ---
 # Control Settings, MFC ActiveX Control Wizard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Use this page of the wizard to specify how you want the control to behave. For example, you can base the control on standard Windows control types, optimize its behavior and appearance, or indicate that the control can act as a container for other controls.
 

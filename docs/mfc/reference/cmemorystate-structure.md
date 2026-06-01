@@ -4,9 +4,11 @@ title: "CMemoryState Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["CMemoryState"]
 helpviewer_keywords: ["CMemoryState structure [MFC]", "memory leaks [MFC], detecting", "detecting memory leaks [MFC]"]
-ms.assetid: 229d9de7-a6f3-4cc6-805b-5a9d9b1bfe1d
 ---
 # CMemoryState Structure
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides a convenient way to detect memory leaks in your program.
 

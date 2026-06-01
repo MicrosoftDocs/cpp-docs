@@ -4,9 +4,11 @@ title: "CTreeView Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CTreeView", "AFXCVIEW/CTreeView", "AFXCVIEW/CTreeView::CTreeView", "AFXCVIEW/CTreeView::GetTreeCtrl"]
 helpviewer_keywords: ["CTreeView [MFC], CTreeView", "CTreeView [MFC], GetTreeCtrl"]
-ms.assetid: 5df583a6-d69f-42ca-9d8d-57e04558afff
 ---
 # CTreeView Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Simplifies use of the tree control and of [CTreeCtrl](../../mfc/reference/ctreectrl-class.md), the class that encapsulates tree-control functionality, with MFC's document-view architecture.
 

@@ -3,9 +3,11 @@ description: "Learn more about: When Update Handlers Are Called"
 title: "When Update Handlers Are Called"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["updating user interface objects [MFC]", "command routing [MFC], update commands", "toolbar buttons [MFC], enabling", "disabling toolbar buttons", "menus [MFC], initializing", "update handlers [MFC]", "disabling menu items", "toolbars [MFC], updating", "menus [MFC], updating as context changes", "toolbar controls [MFC], updated during OnIdle method [MFC]", "menu items, enabling", "command routing [MFC], update handlers", "update handlers, calling"]
-ms.assetid: 7359f6b1-4669-477d-bd99-690affed08d9
 ---
 # When Update Handlers Are Called
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Suppose the user clicks the mouse in the File menu, which generates a WM_INITMENUPOPUP message. The framework's update mechanism collectively updates all items on the File menu before the menu drops down so the user can see it.
 

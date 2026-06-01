@@ -3,9 +3,11 @@ description: "Learn more about: MFC ActiveX Controls: Adding Custom Properties"
 title: "MFC ActiveX Controls: Adding Custom Properties"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], properties", "properties [MFC], custom"]
-ms.assetid: 85af5167-74c7-427b-b8f3-e0d7b73942e5
 ---
 # MFC ActiveX Controls: Adding Custom Properties
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Custom properties differ from stock properties in that custom properties are not already implemented by the `COleControl` class. A custom property is used to expose a certain state or appearance of an ActiveX control to a programmer using the control.
 

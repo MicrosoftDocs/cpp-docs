@@ -3,9 +3,11 @@ title: "Derived Message Maps"
 description: "Describes MFC message handling."
 ms.date: "09/23/2020"
 helpviewer_keywords: ["message handling [MFC], derived message handlers", "messages, routing", "message maps [MFC], derived", "derived message maps"]
-ms.assetid: 21829556-6e64-40c3-8279-fed85d99de77
 ---
 # Derived Message Maps
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 During message handling, checking a class's own message map is not the end of the message-map story. What happens if class `CMyView` (derived from `CView`) has no matching entry for a message?
 

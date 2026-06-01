@@ -3,9 +3,11 @@ description: "Learn more about: HTML Basics"
 title: "HTML Basics"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["HTML [MFC], about HTML"]
-ms.assetid: aab8ea9f-12d4-4bdd-a585-ac3124081a2a
 ---
 # HTML Basics
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Most browsers have the capability of examining the HTML source of the pages you browse. When you view the source you will see a number of HTML (Hypertext markup language) tags, surrounded by angle brackets(<>), interspersed with text.
 

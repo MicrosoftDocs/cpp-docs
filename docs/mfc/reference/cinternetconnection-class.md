@@ -4,9 +4,11 @@ title: "CInternetConnection Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CInternetConnection", "AFXINET/CInternetConnection", "AFXINET/CInternetConnection::CInternetConnection", "AFXINET/CInternetConnection::GetContext", "AFXINET/CInternetConnection::GetServerName", "AFXINET/CInternetConnection::GetSession"]
 helpviewer_keywords: ["CInternetConnection [MFC], CInternetConnection", "CInternetConnection [MFC], GetContext", "CInternetConnection [MFC], GetServerName", "CInternetConnection [MFC], GetSession"]
-ms.assetid: 62a5d1c3-8471-4e36-a064-48831829b2a7
 ---
 # CInternetConnection Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Manages your connection to an Internet server.
 

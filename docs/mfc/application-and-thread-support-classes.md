@@ -4,9 +4,11 @@ title: "Application and Thread Support Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.support"]
 helpviewer_keywords: ["application objects [MFC], thread support classes", "lock classes [MFC]", "thread support classes [MFC]", "threading [MFC]", "synchronization classes [MFC], multithreading", "application support classes [MFC]"]
-ms.assetid: 3c1d14fd-c35c-48f1-86ce-1e0f9a32c36d
 ---
 # Application and Thread Support Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Each application has one and only one application object; this object coordinates other objects in the running program and is derived from `CWinApp`.
 

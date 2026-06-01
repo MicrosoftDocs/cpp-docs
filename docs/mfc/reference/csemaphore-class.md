@@ -7,6 +7,9 @@ helpviewer_keywords: ["CSemaphore [MFC], CSemaphore"]
 ---
 # CSemaphore Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 An object of class `CSemaphore` represents a "semaphore". A semaphore is a synchronization object that controls access to shared resources and prevents race conditions.
 
 ## Syntax

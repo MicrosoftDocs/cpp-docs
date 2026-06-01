@@ -6,6 +6,9 @@ helpviewer_keywords: ["applications [MFC], managing"]
 ---
 # Application Information and Management
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 When you write an application, you create a single [`CWinApp`](../../mfc/reference/cwinapp-class.md)-derived object. At times, you may want to get information about this object from outside the `CWinApp`-derived object. Or you may need access to other global "manager" objects.
 
 The Microsoft Foundation Class Library provides the following global functions to help you accomplish these tasks:

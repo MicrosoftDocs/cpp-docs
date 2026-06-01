@@ -4,10 +4,12 @@ title: "Managing MDI Child Windows"
 ms.date: "11/19/2018"
 f1_keywords: ["MDICLIENT"]
 helpviewer_keywords: ["MDI [MFC], child windows", "child windows [MFC], and MDICLIENT window", "MDICLIENT window [MFC]", "windows [MFC], MDI", "frame windows [MFC], MDI child windows", "child windows [MFC]", "MDI [MFC], frame windows"]
-ms.assetid: 1828d96e-a561-48ae-a661-ba9701de6bee
 ms.topic: concept-article
 ---
 # Managing MDI Child Windows
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 MDI main frame windows (one per application) contain a special child window called the MDICLIENT window. The MDICLIENT window manages the client area of the main frame window, and itself has child windows: the document windows, derived from `CMDIChildWnd`. Because the document windows are frame windows themselves (MDI child windows), they can also have their own children. In all of these cases, the parent window manages its child windows and forwards some commands to them.
 

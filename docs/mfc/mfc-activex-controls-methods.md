@@ -3,9 +3,11 @@ description: "Learn more about: MFC ActiveX Controls: Methods"
 title: "MFC ActiveX Controls: Methods"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], methods"]
-ms.assetid: e20271de-6ffa-4ba0-848b-bafe6c9e510c
 ---
 # MFC ActiveX Controls: Methods
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 An ActiveX control fires events to communicate between itself and its control container. A container can also communicate with a control by means of methods and properties. Methods are also called functions.
 

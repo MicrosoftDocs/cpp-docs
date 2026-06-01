@@ -4,9 +4,11 @@ title: "CSharedFile Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSharedFile", "AFXADV/CSharedFile", "AFXADV/CSharedFile::CSharedFile", "AFXADV/CSharedFile::Detach", "AFXADV/CSharedFile::SetHandle"]
 helpviewer_keywords: ["CSharedFile [MFC], CSharedFile", "CSharedFile [MFC], Detach", "CSharedFile [MFC], SetHandle"]
-ms.assetid: 5d000422-9ede-4318-a8c9-f7412b674f39
 ---
 # CSharedFile Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The [CMemFile](../../mfc/reference/cmemfile-class.md)-derived class that supports shared memory files.
 

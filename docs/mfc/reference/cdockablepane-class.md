@@ -7,6 +7,9 @@ helpviewer_keywords: ["CDockablePane [MFC], CDockablePane", "CDockablePane [MFC]
 ---
 # `CDockablePane` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Implements a pane that can either be docked in a dock site or included in a tabbed pane.
 
 ## Syntax

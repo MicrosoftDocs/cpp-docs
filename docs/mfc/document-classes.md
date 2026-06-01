@@ -4,9 +4,11 @@ title: "Document Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.document"]
 helpviewer_keywords: ["document classes [MFC]"]
-ms.assetid: 4bf19b02-0a4f-4319-b68e-cddcba2705cb
 ---
 # Document Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Document class objects, created by document-template objects, manage the application's data. You will derive a class for your documents from one of these classes.
 

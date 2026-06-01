@@ -7,6 +7,8 @@ helpviewer_keywords: ["connection points [C++], managing", "CComDynamicUnkArray 
 ---
 # CComDynamicUnkArray Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 This class stores an array of `IUnknown` pointers.
 
 ## Syntax

@@ -3,9 +3,11 @@ description: "Learn more about: Clipboard: Adding Other Formats"
 title: "Clipboard: Adding Other Formats"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["formats [MFC], Clipboard", "Clipboard, formats", "custom formats, placing on Clipboard", "custom formats", "registering custom Clipboard data formats", "custom Clipboard data formats"]
-ms.assetid: aea58159-65ed-4385-aeaa-3d9d5281903b
 ---
 # Clipboard: Adding Other Formats
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This topic explains how to expand the list of supported formats, particularly for OLE support. The topic [Clipboard: Copying and Pasting Data](clipboard-copying-and-pasting-data.md) describes the minimum implementation necessary to support copying and pasting from the Clipboard. If this is all you implement, the only formats placed on the Clipboard are **CF_METAFILEPICT**, **CF_EMBEDSOURCE**, **CF_OBJECTDESCRIPTOR**, and possibly **CF_LINKSOURCE**. Most applications will need more formats on the Clipboard than these three.
 

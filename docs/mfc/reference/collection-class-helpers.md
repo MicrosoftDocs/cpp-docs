@@ -6,6 +6,9 @@ helpviewer_keywords: ["DestructElements function", "ConstructElements function",
 ---
 # Collection Class Helpers
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The collection classes `CMap`, `CList`, and `CArray` use templated global helper functions for such purposes as comparing, copying, and serializing elements. As part of your implementation of classes based on `CMap`, `CList`, and `CArray`, you must override these functions as necessary with versions tailored to the type of data stored in your map, list, or array. For information on overriding helper functions such as `SerializeElements`, see the article [Collections: How to Make a Type-Safe Collection](../../mfc/how-to-make-a-type-safe-collection.md). Note that `ConstructElements` and `DestructElements` have been deprecated.
 
 The Microsoft Foundation Class Library provides the following global functions in afxtempl.h to help you customize your collection classes:

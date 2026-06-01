@@ -7,6 +7,9 @@ helpviewer_keywords: ["COleDocument [MFC], COleDocument", "COleDocument [MFC], A
 ---
 # COleDocument Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The base class for OLE documents that support visual editing.
 
 ## Syntax

@@ -4,9 +4,10 @@ title: "Collection classes in ATL"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["collection classes"]
-ms.assetid: eff95de6-78ef-4212-9d7d-1dacbdd4cc58
 ---
 # Collection Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The following classes provide support for arrays, lists, maps, and also traits methods for helping with comparisons and element access.
 

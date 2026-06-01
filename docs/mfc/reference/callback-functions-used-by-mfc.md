@@ -3,9 +3,11 @@ description: "Learn more about: Callback Functions Used by MFC"
 title: "Callback Functions Used by MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["callback functions [MFC], MFC", "MFC, callback functions", "functions [MFC], callback", "callback functions [MFC]"]
-ms.assetid: b2a6857c-fdd3-45ec-8fd8-2e71fac77582
 ---
 # Callback Functions Used by MFC
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Three callback functions appear in the Microsoft Foundation Class Library. These callback functions are passed to [CDC::EnumObjects](../../mfc/reference/cdc-class.md#enumobjects), [CDC::GrayString](../../mfc/reference/cdc-class.md#graystring), and [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc). Note that all callback functions must trap MFC exceptions before returning to Windows, since exceptions cannot be thrown across callback boundaries. For more information about exceptions, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).
 

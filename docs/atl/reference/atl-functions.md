@@ -3,9 +3,10 @@ description: "Learn more about: ATL Functions"
 title: "ATL Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["functions [ATL]", "ATL, global functions"]
-ms.assetid: 69db0cb2-de1d-445b-b692-020d6e8c2173
 ---
 # ATL Functions
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 To find an ATL function by category, see the following topics.
 

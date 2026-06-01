@@ -3,9 +3,11 @@ description: "Learn more about: Window, Dialog, and Control Classes"
 title: "Window, Dialog, and Control Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["windows [MFC], dialog and control classes"]
-ms.assetid: b3610da6-9644-49b7-adbf-0e04f0d6d2b5
 ---
 # Window, Dialog, and Control Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Class `CWnd` and its derived classes encapsulate an `HWND`, a handle to a Windows window. `CWnd` can be used by itself or as a base for deriving new classes. The derived classes supplied by the class library represent various kinds of windows.
 

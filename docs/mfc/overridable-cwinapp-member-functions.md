@@ -3,9 +3,11 @@ description: "Learn more about: Overridable CWinApp Member Functions"
 title: "Overridable CWinApp Member Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["overriding [MFC], overridable functions in CWinApp", "application class [MFC]", "CWinApp class [MFC], overridables"]
-ms.assetid: 07183d5e-734b-45d9-a8b6-9dde4adac0b4
 ---
 # Overridable CWinApp Member Functions
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 [CWinApp](reference/cwinapp-class.md) provides several key overridable member functions (`CWinApp` overrides these members from class [CWinThread](reference/cwinthread-class.md), from which `CWinApp` derives):
 

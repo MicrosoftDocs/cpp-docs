@@ -3,9 +3,11 @@ description: "Learn more about: Active Technology on the Internet"
 title: "Active Technology on the Internet"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["Internet applications [MFC], Active technology"]
-ms.assetid: 6f782aa1-5c2f-47a2-9e63-ddd0829d5a08
 ---
 # Active Technology on the Internet
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Active technology is an open platform that lets developers create exciting, dynamic content and applications for the global Internet, or for a company's internal network, known as an intranet. The major technologies provided by Microsoft for Internet programming are described below.
 

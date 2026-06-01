@@ -4,9 +4,11 @@ title: "CMFCHeaderCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCHeaderCtrl", "AFXHEADERCTRL/CMFCHeaderCtrl", "AFXHEADERCTRL/CMFCHeaderCtrl::CMFCHeaderCtrl", "AFXHEADERCTRL/CMFCHeaderCtrl::EnableMultipleSort", "AFXHEADERCTRL/CMFCHeaderCtrl::GetColumnState", "AFXHEADERCTRL/CMFCHeaderCtrl::GetSortColumn", "AFXHEADERCTRL/CMFCHeaderCtrl::IsAscending", "AFXHEADERCTRL/CMFCHeaderCtrl::IsDialogControl", "AFXHEADERCTRL/CMFCHeaderCtrl::IsMultipleSort", "AFXHEADERCTRL/CMFCHeaderCtrl::RemoveSortColumn", "AFXHEADERCTRL/CMFCHeaderCtrl::SetSortColumn", "AFXHEADERCTRL/CMFCHeaderCtrl::OnDrawItem", "AFXHEADERCTRL/CMFCHeaderCtrl::OnDrawSortArrow", "AFXHEADERCTRL/CMFCHeaderCtrl::OnFillBackground"]
 helpviewer_keywords: ["CMFCHeaderCtrl [MFC], CMFCHeaderCtrl", "CMFCHeaderCtrl [MFC], EnableMultipleSort", "CMFCHeaderCtrl [MFC], GetColumnState", "CMFCHeaderCtrl [MFC], GetSortColumn", "CMFCHeaderCtrl [MFC], IsAscending", "CMFCHeaderCtrl [MFC], IsDialogControl", "CMFCHeaderCtrl [MFC], IsMultipleSort", "CMFCHeaderCtrl [MFC], RemoveSortColumn", "CMFCHeaderCtrl [MFC], SetSortColumn", "CMFCHeaderCtrl [MFC], OnDrawItem", "CMFCHeaderCtrl [MFC], OnDrawSortArrow", "CMFCHeaderCtrl [MFC], OnFillBackground"]
-ms.assetid: 2f5fbf7b-5c75-42db-9216-640b1628f777
 ---
 # CMFCHeaderCtrl Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCHeaderCtrl` class supports sorting multiple columns in a header control.
 

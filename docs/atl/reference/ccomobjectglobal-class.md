@@ -4,9 +4,10 @@ title: "CComObjectGlobal Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComObjectGlobal", "ATLCOM/ATL::CComObjectGlobal", "ATLCOM/ATL::CComObjectGlobal::CComObjectGlobal", "ATLCOM/ATL::CComObjectGlobal::AddRef", "ATLCOM/ATL::CComObjectGlobal::QueryInterface", "ATLCOM/ATL::CComObjectGlobal::Release", "ATLCOM/ATL::CComObjectGlobal::m_hResFinalConstruct"]
 helpviewer_keywords: ["CComObjectGlobal class"]
-ms.assetid: 79bdee55-66e4-4536-b5b3-bdf09f78b9a6
 ---
 # CComObjectGlobal Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class manages a reference count on the module containing your `Base` object.
 

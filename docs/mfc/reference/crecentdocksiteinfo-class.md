@@ -4,9 +4,11 @@ title: "CRecentDockSiteInfo Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CRecentDockSiteInfo", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::CleanUp", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentDefaultPaneDivider", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentDockedPercent", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentDockedRect", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentListOfPanes", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentPaneContainer", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentTabContainer", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::Init", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::IsRecentLeftPane", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::SaveListOfRecentPanes", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::SetInfo", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::StoreDockInfo"]
 helpviewer_keywords: ["CRecentDockSiteInfo [MFC], CleanUp", "CRecentDockSiteInfo [MFC], GetRecentDefaultPaneDivider", "CRecentDockSiteInfo [MFC], GetRecentDockedPercent", "CRecentDockSiteInfo [MFC], GetRecentDockedRect", "CRecentDockSiteInfo [MFC], GetRecentListOfPanes", "CRecentDockSiteInfo [MFC], GetRecentPaneContainer", "CRecentDockSiteInfo [MFC], GetRecentTabContainer", "CRecentDockSiteInfo [MFC], Init", "CRecentDockSiteInfo [MFC], IsRecentLeftPane", "CRecentDockSiteInfo [MFC], SaveListOfRecentPanes", "CRecentDockSiteInfo [MFC], SetInfo", "CRecentDockSiteInfo [MFC], StoreDockInfo"]
-ms.assetid: 2dd14f95-d5a2-4461-a7a5-2c6c36a3a165
 ---
 # CRecentDockSiteInfo Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CRecentDockSiteInfo` class is a helper class that stores recent state information for the [CPane Class](../../mfc/reference/cpane-class.md).
 

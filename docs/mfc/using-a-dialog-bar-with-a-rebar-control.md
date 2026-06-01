@@ -3,10 +3,12 @@ description: "Learn more about: Using a Dialog Bar with a Rebar Control"
 title: "Using a Dialog Bar with a Rebar Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["WS_EX_TRANSPARENT style", "rebar controls [MFC], dialog bars", "dialog bars [MFC], using with rebar bands"]
-ms.assetid: e528cea0-6b81-4bdf-9643-7c03b6176590
 ms.topic: how-to
 ---
 # Using a Dialog Bar with a Rebar Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 As mentioned in [Rebar Controls and Bands](../mfc/rebar-controls-and-bands.md), each band can contain only one child window (or control). This might be a limitation if you want to have more than one child window per band. A convenient workaround is to create a dialog bar resource with multiple controls and then add a rebar band (containing the dialog bar) to the rebar control.
 

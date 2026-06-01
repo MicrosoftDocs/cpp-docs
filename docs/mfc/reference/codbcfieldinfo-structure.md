@@ -4,9 +4,11 @@ title: "CODBCFieldInfo Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["CODBCFieldInfo"]
 helpviewer_keywords: ["ODBC [MFC], data source information", "CODBCFieldInfo structure [MFC]"]
-ms.assetid: 92598b4f-facc-4108-b282-63a179ff79ab
 ---
 # CODBCFieldInfo Structure
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CODBCFieldInfo` structure contains information about the fields in an ODBC data source.
 

@@ -3,10 +3,12 @@ description: "Learn more about: Dragging Images from an Image List"
 title: "Dragging Images from an Image List"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CImageList class [MFC], dragging images from", "dragging images from image lists [MFC]", "image lists [MFC], dragging images from", "images [MFC], dragging from image lists"]
-ms.assetid: af691db8-e4f0-4046-b7b9-9acc68d3713d
 ms.topic: concept-article
 ---
 # Dragging Images from an Image List
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 [CImageList](reference/cimagelist-class.md) includes functions for dragging an image on the screen. The dragging functions move an image smoothly, in color, and without any flashing of the cursor. Both masked and unmasked images can be dragged.
 

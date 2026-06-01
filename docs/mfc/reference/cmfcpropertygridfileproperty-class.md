@@ -4,9 +4,11 @@ title: "CMFCPropertyGridFileProperty Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCPropertyGridFileProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFileProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty"]
 helpviewer_keywords: ["CMFCPropertyGridFileProperty [MFC], CMFCPropertyGridFileProperty"]
-ms.assetid: 2bb8b8b4-47fc-4798-bd5e-dc8ea0b4cd9d
 ---
 # CMFCPropertyGridFileProperty Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCPropertyGridFileProperty` class supports a property list control item that opens a file selection dialog box.
 

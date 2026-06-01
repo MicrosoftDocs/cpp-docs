@@ -4,9 +4,11 @@ title: "CRectTracker Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CRectTracker", "AFXEXT/CRectTracker", "AFXEXT/CRectTracker::CRectTracker", "AFXEXT/CRectTracker::AdjustRect", "AFXEXT/CRectTracker::Draw", "AFXEXT/CRectTracker::DrawTrackerRect", "AFXEXT/CRectTracker::GetHandleMask", "AFXEXT/CRectTracker::GetTrueRect", "AFXEXT/CRectTracker::HitTest", "AFXEXT/CRectTracker::NormalizeHit", "AFXEXT/CRectTracker::OnChangedRect", "AFXEXT/CRectTracker::SetCursor", "AFXEXT/CRectTracker::Track", "AFXEXT/CRectTracker::TrackRubberBand", "AFXEXT/CRectTracker::m_nHandleSize", "AFXEXT/CRectTracker::m_nStyle", "AFXEXT/CRectTracker::m_rect", "AFXEXT/CRectTracker::m_sizeMin"]
 helpviewer_keywords: ["CRectTracker [MFC], CRectTracker", "CRectTracker [MFC], AdjustRect", "CRectTracker [MFC], Draw", "CRectTracker [MFC], DrawTrackerRect", "CRectTracker [MFC], GetHandleMask", "CRectTracker [MFC], GetTrueRect", "CRectTracker [MFC], HitTest", "CRectTracker [MFC], NormalizeHit", "CRectTracker [MFC], OnChangedRect", "CRectTracker [MFC], SetCursor", "CRectTracker [MFC], Track", "CRectTracker [MFC], TrackRubberBand", "CRectTracker [MFC], m_nHandleSize", "CRectTracker [MFC], m_nStyle", "CRectTracker [MFC], m_rect", "CRectTracker [MFC], m_sizeMin"]
-ms.assetid: 99caa7f2-3c0d-4a42-bbee-e5d1d342d4ee
 ---
 # CRectTracker Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Allows an item to be displayed, moved, and resized in different fashions.
 

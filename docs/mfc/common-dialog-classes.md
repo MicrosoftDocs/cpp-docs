@@ -3,9 +3,11 @@ description: "Learn more about: Common Dialog Classes"
 title: "Common Dialog Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["dialog classes [MFC]", "dialog boxes [MFC], Windows common dialogs", "common dialog boxes [MFC], common dialog classes", "common dialog classes [MFC]", "MFC dialog boxes [MFC], Windows common dialogs", "Windows common dialogs [MFC]", "dialog classes [MFC], common", "common dialog boxes [MFC]"]
-ms.assetid: 5c4f6443-896c-4b05-a7df-8169fdadc71d
 ---
 # Common Dialog Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 In addition to class [CDialog](reference/cdialog-class.md), MFC supplies several classes derived from `CDialog` that encapsulate commonly used dialog boxes, as shown in the following table. The dialog boxes encapsulated are called the "common dialog boxes" and are part of the Windows common dialog library (COMMDLG.DLL). The dialog-template resources and code for these classes are provided in the Windows common dialog boxes that are part of Windows versions 3.1 and later.
 

@@ -4,9 +4,11 @@ title: "Exception Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.exception"]
 helpviewer_keywords: ["exception classes [MFC]", "exception handling [MFC], exception classes", "MFC, exceptions"]
-ms.assetid: 1a2caf12-b3e9-4189-86d2-bf7a595bf025
 ---
 # Exception Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The class library provides an exception-handling mechanism based on class `CException`. The application framework uses exceptions in its code; you can also use them in yours. For more information, see the article [Exceptions](exception-handling-in-mfc.md). You can derive your own exception types from `CException`.
 

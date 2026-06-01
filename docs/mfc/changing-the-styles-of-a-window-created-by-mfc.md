@@ -3,10 +3,12 @@ description: "Learn more about: Changing the Styles of a Window Created by MFC"
 title: "Changing the Styles of a Window Created by MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["window styles [MFC]", "WS_OVERLAPPEDWINDOW macro [MFC]", "single document interface (SDI), changing window attributes", "MDI [MFC], window styles", "windows [MFC], MFC", "child windows [MFC], styles", "MFC, windows", "CFrameWnd class [MFC], window styles", "CREATESTRUCT macro [MFC]", "CMDIChildWnd class [MFC], changing window styles", "multidocument interface style", "PreCreateWindow method [MFC], window styles", "single document interface (SDI), style", "default window style", "defaults [MFC], window style", "PreCreateWindow method [MFC], changing window styles", "CMainFrame class [MFC]", "styles [MFC], windows"]
-ms.assetid: 77fa4f03-96b4-4687-9ade-41e46f7e4b0a
 ms.topic: concept-article
 ---
 # Changing the Styles of a Window Created by MFC
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 In its version of the `WinMain` function, MFC registers several standard window classes for you. Because you don't normally edit MFC's `WinMain`, that function gives you no opportunity to change the MFC default window styles. This article explains how you can change the styles of such a preregistered window class in an existing application.
 

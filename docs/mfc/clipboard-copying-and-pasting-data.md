@@ -3,9 +3,11 @@ description: "Learn more about: Clipboard: Copying and Pasting Data"
 title: "Clipboard: Copying and Pasting Data"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Clipboard, copying data to", "Clipboard, pasting"]
-ms.assetid: 580e10be-241f-4f9f-94cf-8302edc5beef
 ---
 # Clipboard: Copying and Pasting Data
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This topic describes the minimum work necessary to implement copying to and pasting from the Clipboard in your OLE application. It is recommended that you read the [Data Objects and Data Sources (OLE)](data-objects-and-data-sources-ole.md) topics before proceeding.
 

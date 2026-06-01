@@ -7,6 +7,9 @@ helpviewer_keywords: ["CFile [MFC], CFile", "CFile [MFC], Abort", "CFile [MFC], 
 ---
 # CFile Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The base class for Microsoft Foundation Class file classes.
 
 ## Syntax

@@ -4,9 +4,11 @@ title: "CUserTool Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CUserTool", "AFXUSERTOOL/CUserTool", "AFXUSERTOOL/CUserTool::CopyIconToClipboard", "AFXUSERTOOL/CUserTool::DrawToolIcon", "AFXUSERTOOL/CUserTool::GetCommand", "AFXUSERTOOL/CUserTool::GetCommandId", "AFXUSERTOOL/CUserTool::Invoke", "AFXUSERTOOL/CUserTool::Serialize", "AFXUSERTOOL/CUserTool::SetCommand", "AFXUSERTOOL/CUserTool::SetToolIcon", "AFXUSERTOOL/CUserTool::LoadDefaultIcon", "AFXUSERTOOL/CUserTool::m_strArguments", "AFXUSERTOOL/CUserTool::m_strInitialDirectory", "AFXUSERTOOL/CUserTool::m_strLabel"]
 helpviewer_keywords: ["CUserTool [MFC], CopyIconToClipboard", "CUserTool [MFC], DrawToolIcon", "CUserTool [MFC], GetCommand", "CUserTool [MFC], GetCommandId", "CUserTool [MFC], Invoke", "CUserTool [MFC], Serialize", "CUserTool [MFC], SetCommand", "CUserTool [MFC], SetToolIcon", "CUserTool [MFC], LoadDefaultIcon", "CUserTool [MFC], m_strArguments", "CUserTool [MFC], m_strInitialDirectory", "CUserTool [MFC], m_strLabel"]
-ms.assetid: 7c287d3e-d012-488d-b4e1-aa0f83f294bb
 ---
 # CUserTool Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A user tool is a menu item that runs an external application. The **Tools** tab of the **Customize** dialog box ( [CMFCToolBarsCustomizeDialog Class](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)) enables the user to add user tools, and to specify the name, command, arguments, and initial directory for each user tool.
 

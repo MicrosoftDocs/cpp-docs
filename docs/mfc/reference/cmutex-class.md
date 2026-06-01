@@ -4,9 +4,11 @@ title: "CMutex Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMutex", "AFXMT/CMutex", "AFXMT/CMutex::CMutex"]
 helpviewer_keywords: ["CMutex [MFC], CMutex"]
-ms.assetid: 6330c050-4f01-4195-a099-2029b92f8cf1
 ---
 # CMutex Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Represents a "mutex" — a synchronization object that allows one thread mutually exclusive access to a resource.
 

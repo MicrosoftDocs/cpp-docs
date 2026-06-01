@@ -4,9 +4,10 @@ title: "Registry Data Exchange Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlplus/ATL::BEGIN_RDX_MAP", "atlplus/ATL::END_RDX_MAP", "atlplus/ATL::RDX_BINARY", "atlplus/ATL::RDX_CSTRING_TEXT", "atlplus/ATL::RDX_DWORD", "atlplus/ATL::RDX_TEXT", "ATLPLUS/BEGIN_RDX_MAP", "ATLPLUS/END_RDX_MAP", "ATLPLUS/RDX_BINARY", "ATLPLUS/RDX_CSTRING_TEXT", "ATLPLUS/RDX_DWORD", "ATLPLUS/RDX_TEXT"]
 helpviewer_keywords: ["RegistryDataExchange function, macros"]
-ms.assetid: c1bc5e79-2307-43d2-9d10-3a62ffadf473
 ---
 # Registry Data Exchange Macros
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These macros perform Registry Data Exchange operations.
 

@@ -4,9 +4,11 @@ title: "MFC ActiveX Controls: Using Data Binding in an ActiveX Control"
 ms.date: "11/19/2018"
 f1_keywords: ["bindable", "requestedit", "defaultbind", "displaybind", "dispid"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], data binding", "data binding [MFC], MFC ActiveX controls", "data-bound controls [MFC], MFC ActiveX controls", "controls [MFC], data binding", "bound controls [MFC], MFC ActiveX"]
-ms.assetid: 476b590a-bf2a-498a-81b7-dd476bd346f1
 ---
 # MFC ActiveX Controls: Using Data Binding in an ActiveX Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 One of the more powerful uses of ActiveX controls is data binding, which allows a property of the control to bind with a specific field in a database. When a user modifies data in this bound property, the control notifies the database and requests that the record field be updated. The database then notifies the control of the success or failure of the request.
 

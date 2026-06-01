@@ -3,10 +3,12 @@ description: "Learn more about: Overriding the Standard Command Routing"
 title: "Overriding the Standard Command Routing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, command routing", "command routing [MFC], overriding", "command handling [MFC], routing commands", "overriding, standard command routing"]
-ms.assetid: 872b698a-7432-40c4-9008-68721e8effa5
 ms.topic: concept-article
 ---
 # Overriding the Standard Command Routing
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 In rare cases when you must implement some variation of the standard framework routing, you can override it. The idea is to change the routing in one or more classes by overriding `OnCmdMsg` in those classes. Do so:
 

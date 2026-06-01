@@ -3,9 +3,10 @@ description: "Learn more about: ATL and the Free Threaded Marshaler"
 title: "ATL and the Free Threaded Marshaler"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, free threaded marshaler", "free threaded marshaler", "threading [C++], marshaler in ATL", "threading [ATL], free threaded marshaler", "FTM in ATL"]
-ms.assetid: 2db88a13-2217-4ebc-aa7e-432d5da902eb
 ---
 # ATL and the Free Threaded Marshaler
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The ATL Simple Object Wizard's Attributes page provides an option that allows your class to aggregate the free threaded marshaler (FTM).
 

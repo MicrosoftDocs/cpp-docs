@@ -4,9 +4,11 @@ title: "OnIdle Member Function"
 ms.date: "11/19/2018"
 f1_keywords: ["OnIdle"]
 helpviewer_keywords: ["processing messages [MFC]", "OnIdle method [MFC]", "idle loop processing [MFC]", "CWinApp class [MFC], OnIdle method [MFC]", "message handling [MFC], OnIdle method [MFC]"]
-ms.assetid: 51adc874-0075-4f76-be1c-79283f46c10b
 ---
 # OnIdle Member Function
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 When no Windows messages are being processed, the framework calls the [CWinApp](reference/cwinapp-class.md) member function [OnIdle](reference/cwinapp-class.md#onidle) (described in the MFC Library Reference).
 

@@ -3,10 +3,12 @@ description: "Learn more about: Steps in a Typical HTTP Client Application"
 title: "Steps in a Typical HTTP Client Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["HTTP client applications [MFC]", "client applications [MFC], HTTP", "Internet applications [MFC], HTTP client applications", "applications [MFC], HTTP client", "Internet client applications [MFC], HTTP table", "WinInet classes [MFC], HTTP"]
-ms.assetid: f86552e8-8acd-4b23-bdc5-0c3a247ebd74
 ms.topic: how-to
 ---
 # Steps in a Typical HTTP Client Application
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following table shows the steps you might perform in a typical HTTP client application:
 

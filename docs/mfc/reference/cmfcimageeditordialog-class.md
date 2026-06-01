@@ -4,9 +4,11 @@ title: "CMFCImageEditorDialog Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CMFCImageEditorDialog", "AFXIMAGEEDITORDIALOG/CMFCImageEditorDialog", "AFXIMAGEEDITORDIALOG/CMFCImageEditorDialog::CMFCImageEditorDialog"]
 helpviewer_keywords: ["CMFCImageEditorDialog [MFC], CMFCImageEditorDialog"]
-ms.assetid: 6a7d08f3-1ec2-4062-9b79-a0c2776b58d1
 ---
 # CMFCImageEditorDialog Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCImageEditorDialog` class supports an image editor dialog box.
 

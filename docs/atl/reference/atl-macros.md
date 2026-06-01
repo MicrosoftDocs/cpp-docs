@@ -3,9 +3,10 @@ description: "Learn more about: ATL Macros"
 title: "ATL Macros"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, macros", "macros, ATL"]
-ms.assetid: 788bd803-e7dc-4dc5-9e8d-31649471415b
 ---
 # ATL Macros
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 To find an ATL macro by category, see the following topics.
 

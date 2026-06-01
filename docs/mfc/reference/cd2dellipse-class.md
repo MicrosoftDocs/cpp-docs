@@ -4,9 +4,11 @@ title: "CD2DEllipse Class"
 ms.date: "08/29/2019"
 f1_keywords: ["CD2DEllipse", "AFXRENDERTARGET/CD2DEllipse", "AFXRENDERTARGET/CD2DEllipse::CD2DEllipse"]
 helpviewer_keywords: ["CD2DEllipse [MFC], CD2DEllipse"]
-ms.assetid: e9f02f54-acf2-427e-b349-db50cd9a77df
 ---
 # CD2DEllipse Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A wrapper for `D2D1_ELLIPSE`.
 

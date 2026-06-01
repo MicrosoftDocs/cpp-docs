@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Using Insertion Operators and Controlling Format"
 title: "Using Insertion Operators and Controlling Format"
+description: "Learn more about: Using Insertion Operators and Controlling Format"
 ms.date: 10/07/2021
 helpviewer_keywords: ["insertion operators"]
 ---
@@ -165,7 +165,7 @@ Stan      4358.2
 
 If you change the `ios::fixed` flag to `ios::scientific`, the program prints this:
 
-```cpp
+```Output
 Zoot    1.2e+00
 Jimmy   3.5e+01
 Al      6.5e+02

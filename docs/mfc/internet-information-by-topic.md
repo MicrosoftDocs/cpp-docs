@@ -3,9 +3,11 @@ description: "Learn more about: Internet Information by Topic"
 title: "Internet Information by Topic"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, Internet applications"]
-ms.assetid: 93a8b6c9-d274-492a-90b3-cf43a77edb1d
 ---
 # Internet Information by Topic
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 For information on programming with a specific Internet technology, see:
 

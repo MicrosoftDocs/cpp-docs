@@ -3,10 +3,11 @@ description: "Learn more about: Specifying Property Pages"
 title: "Specifying Property Pages (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ISpecifyPropertyPages method", "property pages, specifying"]
-ms.assetid: ee8678cf-c708-49ab-b0ad-fc2db31f1ac3
 ms.topic: how-to
 ---
 # Specifying Property Pages
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 When you create an ActiveX control, you will often want to associate it with property pages that can be used to set the properties of your control. Control containers use the `ISpecifyPropertyPages` interface to find out which property pages can be used to set your control's properties. You will need to implement this interface on your control.
 

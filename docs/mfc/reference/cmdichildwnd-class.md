@@ -4,9 +4,11 @@ title: "CMDIChildWnd Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMDIChildWnd", "AFXWIN/CMDIChildWnd", "AFXWIN/CMDIChildWnd::CMDIChildWnd", "AFXWIN/CMDIChildWnd::Create", "AFXWIN/CMDIChildWnd::GetMDIFrame", "AFXWIN/CMDIChildWnd::MDIActivate", "AFXWIN/CMDIChildWnd::MDIDestroy", "AFXWIN/CMDIChildWnd::MDIMaximize", "AFXWIN/CMDIChildWnd::MDIRestore", "AFXWIN/CMDIChildWnd::SetHandles"]
 helpviewer_keywords: ["CMDIChildWnd [MFC], CMDIChildWnd", "CMDIChildWnd [MFC], Create", "CMDIChildWnd [MFC], GetMDIFrame", "CMDIChildWnd [MFC], MDIActivate", "CMDIChildWnd [MFC], MDIDestroy", "CMDIChildWnd [MFC], MDIMaximize", "CMDIChildWnd [MFC], MDIRestore", "CMDIChildWnd [MFC], SetHandles"]
-ms.assetid: 6d07f5d4-9a3e-4723-9fa5-e65bb669fdd5
 ---
 # CMDIChildWnd Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides the functionality of a Windows multiple document interface (MDI) child window, along with members for managing the window.
 

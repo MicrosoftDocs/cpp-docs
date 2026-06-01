@@ -4,9 +4,11 @@ title: "Graphic Objects"
 ms.date: "11/04/2016"
 f1_keywords: ["HRGN", "HFONT", "HBITMAP"]
 helpviewer_keywords: ["CRgn class [MFC], HRGN handle type", "HPEN [MFC]", "objects [MFC], graphic", "palettes [MFC], creating in device context", "pens [MFC], creating in device context", "bitmaps [MFC], creating in device contexts", "palette objects [MFC]", "memory [MFC], display contexts", "MFC, graphic objects", "regions [MFC], creating in device context", "CPen class [MFC], HPEN handle type", "GDI objects [MFC]", "HRGN [MFC]", "graphic objects [MFC]", "GDI objects [MFC], graphic-object classes", "CFont class [MFC], HFONT handle type", "HFONT and class CFont [MFC]", "HBITMAP and class CBitmap [MFC]", "fonts [MFC], creating in device context", "images [MFC], graphic objects [MFC]", "CBitmap class [MFC], HBITMAP handle type", "HPALETTE and class CPalette [MFC]", "CBrush class [MFC], HBRUSH handle type", "objects [MFC], graphic objects", "drawing [MFC], in device contexts", "device contexts [MFC], graphic objects [MFC]", "brushes [MFC], creating in device context", "region objects [MFC]", "pen objects [MFC]", "GDI [MFC], graphic-object classes", "graphic objects [MFC], creating in device context", "HBRUSH and class CBrush [MFC]", "painting and device context [MFC]", "CPalette class [MFC], HPALETTE handle type"]
-ms.assetid: 41963b25-34b7-4343-8446-34ba516b83ca
 ---
 # Graphic Objects
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Windows provides a variety of drawing tools to use in device contexts. It provides pens to draw lines, brushes to fill interiors, and fonts to draw text. MFC provides graphic-object classes equivalent to the drawing tools in Windows. The table below shows the available classes and the equivalent Windows graphics device interface (GDI) handle types.
 

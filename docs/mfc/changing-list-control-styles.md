@@ -3,10 +3,12 @@ description: "Learn more about: Changing List Control Styles"
 title: "Changing List Control Styles"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["styles [MFC], CListCtrl", "CListCtrl class [MFC], styles", "CListCtrl class [MFC], changing styles"]
-ms.assetid: be74a005-0795-417c-9056-f6342aa74b26
 ms.topic: concept-article
 ---
 # Changing List Control Styles
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 You can change the window style of a list control ([CListCtrl](reference/clistctrl-class.md)) at any time after you create it. By changing the window style, you change the kind of view the control uses. For example, to emulate the Explorer, you might supply menu items or toolbar buttons for switching the control between different views: icon view, list view, and so on.
 

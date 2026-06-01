@@ -7,6 +7,9 @@ helpviewer_keywords: ["CScrollView [MFC], CScrollView", "CScrollView [MFC], Chec
 ---
 # `CScrollView` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 A [`CView`](../../mfc/reference/cview-class.md) with scrolling capabilities.
 
 ## Syntax

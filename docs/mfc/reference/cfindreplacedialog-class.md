@@ -7,6 +7,9 @@ helpviewer_keywords: ["CFindReplaceDialog [MFC], CFindReplaceDialog", "CFindRepl
 ---
 # CFindReplaceDialog Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Allows you to implement standard string Find/Replace dialog boxes in your application.
 
 ## Syntax

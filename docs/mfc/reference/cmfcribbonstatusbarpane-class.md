@@ -4,9 +4,11 @@ title: "CMFCRibbonStatusBarPane Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonStatusBarPane", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::CMFCRibbonStatusBarPane", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::GetAlmostLargeText", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::GetTextAlign", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::IsAnimation", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::IsExtended", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::OnDrawBorder", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::OnFillBackground", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::SetAlmostLargeText", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::SetAnimationList", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::SetTextAlign", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::StartAnimation", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::StopAnimation", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::OnFinishAnimation"]
 helpviewer_keywords: ["CMFCRibbonStatusBarPane [MFC], CMFCRibbonStatusBarPane", "CMFCRibbonStatusBarPane [MFC], GetAlmostLargeText", "CMFCRibbonStatusBarPane [MFC], GetTextAlign", "CMFCRibbonStatusBarPane [MFC], IsAnimation", "CMFCRibbonStatusBarPane [MFC], IsExtended", "CMFCRibbonStatusBarPane [MFC], OnDrawBorder", "CMFCRibbonStatusBarPane [MFC], OnFillBackground", "CMFCRibbonStatusBarPane [MFC], SetAlmostLargeText", "CMFCRibbonStatusBarPane [MFC], SetAnimationList", "CMFCRibbonStatusBarPane [MFC], SetTextAlign", "CMFCRibbonStatusBarPane [MFC], StartAnimation", "CMFCRibbonStatusBarPane [MFC], StopAnimation", "CMFCRibbonStatusBarPane [MFC], OnFinishAnimation"]
-ms.assetid: 5d034c3c-ecca-4267-b88c-0f55a2884dd0
 ---
 # CMFCRibbonStatusBarPane Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCRibbonStatusBarPane` class implements a ribbon element that you can add to a ribbon status bar.
 

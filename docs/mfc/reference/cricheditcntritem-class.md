@@ -4,9 +4,11 @@ title: "CRichEditCntrItem Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CRichEditCntrItem", "AFXRICH/CRichEditCntrItem", "AFXRICH/CRichEditCntrItem::CRichEditCntrItem", "AFXRICH/CRichEditCntrItem::SyncToRichEditObject"]
 helpviewer_keywords: ["CRichEditCntrItem [MFC], CRichEditCntrItem", "CRichEditCntrItem [MFC], SyncToRichEditObject"]
-ms.assetid: 6c0b4efe-0fb8-4621-b5e1-fdcb8ec48c3b
 ---
 # CRichEditCntrItem Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 With [CRichEditView](../../mfc/reference/cricheditview-class.md) and [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md), provides the functionality of the rich edit control within the context of MFC's document view architecture.
 

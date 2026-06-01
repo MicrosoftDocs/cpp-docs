@@ -4,9 +4,11 @@ title: "Control Names, MFC ActiveX Control Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.ctl.names"]
 helpviewer_keywords: ["MFC ActiveX Control Wizard, control names"]
-ms.assetid: 9b8b81d2-36df-48ed-b58a-a771a0e269ee
 ---
 # Control Names, MFC ActiveX Control Wizard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Specify the names for the control class and property page class, the type names, and type identifiers for your control. With the exception of **Short name**, all other fields can be edited independently. If you change the text for **Short name**, the change is reflected in the names of all other fields in this page. This naming behavior is designed to make all the names easily identifiable for you as you develop your control.
 

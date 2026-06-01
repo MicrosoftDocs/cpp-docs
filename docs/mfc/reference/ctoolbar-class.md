@@ -7,6 +7,9 @@ helpviewer_keywords: ["CToolBar [MFC], CToolBar", "CToolBar [MFC], CommandToInde
 ---
 # `CToolBar` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Control bars that have a row of bitmapped buttons and optional separators.
 
 ## Syntax

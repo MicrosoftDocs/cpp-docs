@@ -3,10 +3,12 @@ description: "Learn more about: Command Routing"
 title: "Command Routing"
 ms.date: "09/06/2019"
 helpviewer_keywords: ["MFC, command routing", "command handling [MFC], routing commands", "handlers [MFC]", "handlers, command [MFC]", "command routing"]
-ms.assetid: 9393a956-bdd4-47c5-9013-dbd680433f93
 ms.topic: how-to
 ---
 # Command Routing
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Your responsibility in working with commands is limited to making message-map connections between commands and their handler functions, a task for which you use the [MFC Class Wizard](reference/mfc-class-wizard.md). You must also write the code for the command handlers.
 

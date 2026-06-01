@@ -7,6 +7,9 @@ helpviewer_keywords: ["CFrameWndEx [MFC], ActiveItemRecalcLayout", "CFrameWndEx 
 ---
 # `CFrameWndEx` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Implements the functionality of a Windows single document interface (SDI) overlapped or popup frame window, and provides members for managing the window. It extends the [`CFrameWnd`](../../mfc/reference/cframewnd-class.md) class.
 
 ## Syntax

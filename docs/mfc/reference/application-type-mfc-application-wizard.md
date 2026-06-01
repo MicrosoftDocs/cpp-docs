@@ -4,9 +4,11 @@ title: "Application Type, MFC Application Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.exe.apptype"]
 helpviewer_keywords: ["static libraries, MFC"]
-ms.assetid: c3f62b0e-3f13-42c5-9859-d3890d0c3e1d
 ---
 # Application Type, MFC Application Wizard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Use this page of the [MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md) to design and add basic features to a new MFC application.
 

@@ -4,9 +4,11 @@ title: "Command Routing Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.command"]
 helpviewer_keywords: ["MFC, command routing", "command routing [MFC], classes"]
-ms.assetid: 4b50e689-2c54-4e6c-90f0-37333e22b2a1
 ---
 # Command Routing Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 As the user interacts with the application by choosing menus or control-bar buttons with the mouse, the application sends messages from the affected user-interface object to an appropriate command-target object. Command-target classes derived from `CCmdTarget` include [CWinApp](reference/cwinapp-class.md), [CWnd](reference/cwnd-class.md), [CDocTemplate](reference/cdoctemplate-class.md), [CDocument](reference/cdocument-class.md), [CView](reference/cview-class.md), and the classes derived from them. The framework supports automatic command routing so that commands can be handled by the most appropriate object currently active in the application.
 

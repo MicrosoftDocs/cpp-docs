@@ -3,9 +3,11 @@ description: "Learn more about: ActiveX Control Containers: Programming ActiveX 
 title: "ActiveX Control Containers: Programming ActiveX Controls in an ActiveX Control Container"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["ActiveX control containers [MFC], accessing ActiveX controls", "Confirm Classes dialog box", "wrapper classes [MFC], ActiveX controls", "ActiveX control containers [MFC], wrapper classes", "ActiveX controls [MFC], accessing", "MFC ActiveX controls [MFC], accessing in containers", "header files [MFC], for ActiveX control wrapper class", "wrapper classes [MFC], using", "ActiveX controls [MFC], wrapper classes"]
-ms.assetid: ef9b2480-92d6-4191-b16e-8055c4fd7b73
 ---
 # ActiveX Control Containers: Programming ActiveX Controls in an ActiveX Control Container
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article describes the process for accessing the exposed [methods](../mfc/mfc-activex-controls-methods.md) and [properties](../mfc/mfc-activex-controls-properties.md) of embedded ActiveX controls.
 

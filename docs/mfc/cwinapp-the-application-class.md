@@ -3,9 +3,11 @@ description: "Learn more about: CWinApp: The Application Class"
 title: "CWinApp: The Application Class"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["application class [MFC]", "CWinApp class [MFC], CWinThread", "MFC, WinMain and", "CWinApp class [MFC], multithreading", "CWinThread class [MFC], and CWinApp", "InitApplication method [MFC]", "WinMain method [MFC]", "WinMain method [MFC], in MFC", "CWinApp class [MFC], WinMain"]
-ms.assetid: 935822bb-d463-481b-a5f6-9719d68ed1d5
 ---
 # CWinApp: The Application Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The main application class in MFC encapsulates the initialization, running, and termination of an application for the Windows operating system. An application built on the framework must have one and only one object of a class derived from [CWinApp](reference/cwinapp-class.md). This object is constructed before windows are created.
 

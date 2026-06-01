@@ -3,9 +3,11 @@ description: "Learn more about: ActiveX Control Containers: Using Controls in a 
 title: "ActiveX Control Containers: Using Controls in a Non-Dialog Container"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Create method [MFC], ActiveX controls", "CreateControl method [MFC]", "ActiveX controls [MFC], creating", "ActiveX control containers [MFC], non-dialog containers", "ActiveX control containers [MFC], inserting controls"]
-ms.assetid: 46f195b0-b8ca-4409-8cca-fbfaf2c9ab9f
 ---
 # ActiveX Control Containers: Using Controls in a Non-Dialog Container
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 In some applications, such as an SDI or MDI application, you will want to embed a control in a window of the application. The **Create** member function of the wrapper class, inserted by Visual Studio, can create an instance of the control dynamically, without the need for a dialog box.
 

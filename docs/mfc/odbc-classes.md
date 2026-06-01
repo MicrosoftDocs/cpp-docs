@@ -3,9 +3,11 @@ description: "Learn more about: ODBC Classes"
 title: "ODBC Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["database classes [MFC], ODBC", "ODBC classes [MFC]"]
-ms.assetid: 6c40fca8-3033-4873-9abe-7f51725de0e0
 ---
 # ODBC Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 These classes work with the other application framework classes to give easy access to a wide variety of databases for which Open Database Connectivity (ODBC) drivers are available.
 

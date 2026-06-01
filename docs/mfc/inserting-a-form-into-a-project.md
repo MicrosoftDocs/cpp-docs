@@ -3,10 +3,12 @@ description: "Learn more about: Inserting a Form into a Project"
 title: "Inserting a Form into a Project"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["inserting forms [MFC]", "Insert New dialog box [MFC]", "forms, adding to projects"]
-ms.assetid: f3bd2998-3ce2-496d-ac5c-57ca70eec7cb
 ms.topic: how-to
 ---
 # Inserting a Form into a Project
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Forms provide a convenient container for controls. You can easily insert an MFC-based form into your application as long as the application supports the MFC libraries.
 

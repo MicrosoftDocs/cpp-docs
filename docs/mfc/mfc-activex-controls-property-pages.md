@@ -3,9 +3,11 @@ description: "Learn more about: MFC ActiveX Controls: Property Pages"
 title: "MFC ActiveX Controls: Property Pages"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["DDP_ functions [MFC]", "MFC ActiveX controls [MFC], properties", "property pages [MFC], MFC ActiveX controls", "DoDataExchange method [MFC]", "OLEIVERB_PROPERTIES", "CPropertyPageDialog class [MFC]", "MFC ActiveX controls [MFC], property pages"]
-ms.assetid: 1506f87a-9fd6-4505-8380-0dbc9636230e
 ---
 # MFC ActiveX Controls: Property Pages
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Property pages allow an ActiveX control user to view and change ActiveX control properties. These properties are accessed by invoking a control properties dialog box, which contains one or more property pages that provide a customized, graphical interface for viewing and editing the control properties.
 

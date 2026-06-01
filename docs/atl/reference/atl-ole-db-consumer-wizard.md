@@ -3,9 +3,10 @@ description: "Learn more about: ATL OLE DB Consumer Wizard"
 title: "ATL OLE DB Consumer Wizard"
 ms.date: "07/02/2019"
 helpviewer_keywords: ["ATL projects, adding ATL OLE DB consumers"]
-ms.assetid: dcb68ed1-2224-422f-9f7b-108a74864204
 ---
 # ATL OLE DB Consumer Wizard
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 ::: moniker range=">=msvc-160"
 

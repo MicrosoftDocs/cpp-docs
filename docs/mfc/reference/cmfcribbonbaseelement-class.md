@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMFCRibbonBaseElement [MFC], AddToKeyList", "CMFCRibbonBa
 ---
 # CMFCRibbonBaseElement Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The `CMFCRibbonBaseElement` class is the base class for all elements that you can add to a [ribbon bar](../../mfc/reference/cmfcribbonbar-class.md). Examples of ribbon elements are ribbon buttons, ribbon check boxes, and ribbon combo boxes.
 
 ## Syntax

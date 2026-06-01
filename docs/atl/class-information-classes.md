@@ -4,9 +4,10 @@ title: "Class Information Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["class information, retrieving"]
-ms.assetid: 39365025-f24a-41ae-87ab-4ae8ed085b98
 ---
 # Class Information Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The following class provides support for retrieving class information:
 

@@ -4,9 +4,11 @@ title: "CLinearTransitionFromSpeed Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CLinearTransitionFromSpeed", "AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed", "AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::CLinearTransitionFromSpeed", "AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::Create", "AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::m_dblSpeed"]
 helpviewer_keywords: ["CLinearTransitionFromSpeed [MFC], CLinearTransitionFromSpeed", "CLinearTransitionFromSpeed [MFC], Create", "CLinearTransitionFromSpeed [MFC], m_dblFinalValue", "CLinearTransitionFromSpeed [MFC], m_dblSpeed"]
-ms.assetid: 8f159a1c-8893-4017-951e-09e5758aba7d
 ---
 # CLinearTransitionFromSpeed Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Encapsulates a linear-speed transition.
 

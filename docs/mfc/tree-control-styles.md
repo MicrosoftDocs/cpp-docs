@@ -4,9 +4,11 @@ title: "Tree Control Styles"
 ms.date: "11/04/2016"
 f1_keywords: ["TVS_SINGLEEXPAND", "TVS_LINESATROOT", "TVS_HASBUTTONS", "TVS_NOTOOLTIPS", "TVS_HASLINES"]
 helpviewer_keywords: ["TVS_LINESATROOT [MFC]", "styles [MFC], CTreeCtrl", "styles [MFC], tree control", "TVS_HASLINES", "TVS_SINGLEEXPAND", "CTreeCtrl class [MFC], styles", "TVS_EDITLABELS [MFC]", "TVS_NOTOOLTIPS [MFC]", "TVS_HASBUTTONS [MFC]", "tree controls [MFC], styles"]
-ms.assetid: f43faebd-a355-479e-888a-bf0673d5e1b4
 ---
 # Tree Control Styles
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Tree control ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) styles govern aspects of a tree control's appearance. You set the initial styles when you create the tree control. You can retrieve and change the styles after creating the tree control by using the [GetWindowLong](/windows/win32/api/winuser/nf-winuser-getwindowlongw) and [SetWindowLong](/windows/win32/api/winuser/nf-winuser-setwindowlongw) Windows functions, specifying **GWL_STYLE** for the *nIndex* parameter. For a complete list of styles, see [Tree View Control Window Styles](/windows/win32/Controls/tree-view-control-window-styles) in the Windows SDK.
 

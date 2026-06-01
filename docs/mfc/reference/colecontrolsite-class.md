@@ -7,6 +7,9 @@ helpviewer_keywords: ["COleControlSite [MFC], COleControlSite", "COleControlSite
 ---
 # COleControlSite Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Provides support for custom client-side control interfaces.
 
 ## Syntax

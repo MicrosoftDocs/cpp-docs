@@ -4,9 +4,11 @@ title: "TN028: Context-Sensitive Help Support"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.help"]
 helpviewer_keywords: ["context-sensitive Help [MFC], MFC applications", "TN028", "resource identifiers, context-sensitive Help"]
-ms.assetid: 884f1c55-fa27-4d4c-984f-30907d477484
 ---
 # TN028: Context-Sensitive Help Support
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This note describes the rules for assigning Help contexts IDs and other help issues in MFC. Context-sensitive help support requires the help compiler that is available in Visual Studio.
 

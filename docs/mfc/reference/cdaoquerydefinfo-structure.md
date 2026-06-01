@@ -7,6 +7,9 @@ helpviewer_keywords: ["DAO (Data Access Objects), QueryDefs collection", "CDaoQu
 ---
 # CDaoQueryDefInfo Structure
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The `CDaoQueryDefInfo` structure contains information about a querydef object defined for data access objects (DAO).
 
 > [!NOTE]

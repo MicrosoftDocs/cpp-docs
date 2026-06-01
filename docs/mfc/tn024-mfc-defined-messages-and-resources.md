@@ -3,9 +3,11 @@ description: "Learn more about: TN024: MFC-Defined Messages and Resources"
 title: "TN024: MFC-Defined Messages and Resources"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["resources [MFC]", "Windows messages [MFC], MFC-defined", "messages [MFC], MFC", "TN024"]
-ms.assetid: c65353ce-8096-454b-ad22-1a7a1dd9a788
 ---
 # TN024: MFC-Defined Messages and Resources
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

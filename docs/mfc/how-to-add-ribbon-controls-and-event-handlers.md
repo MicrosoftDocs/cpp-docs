@@ -3,9 +3,11 @@ description: "Learn more about: How to: Add Ribbon Controls and Event Handlers"
 title: "How to: Add Ribbon Controls and Event Handlers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["event handlers [MFC], adding", "ribbon controls [MFC], adding"]
-ms.assetid: b31f25bc-ede7-49c3-9e3c-dffe4e174a69
 ---
 # How to: Add Ribbon Controls and Event Handlers
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Ribbon controls are elements, such as buttons and combo boxes, that you add to panels. Panels are areas of the ribbon bar that display a group of related controls.
 

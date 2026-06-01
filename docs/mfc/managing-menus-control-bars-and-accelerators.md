@@ -3,10 +3,12 @@ description: "Learn more about: Managing Menus, Control Bars, and Accelerators"
 title: "Managing Menus, Control Bars, and Accelerators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MDI [MFC], frame windows", "control bars [MFC], updating in frame windows", "menus [MFC], updating as context changes", "user interface objects [MFC], updating", "accelerator tables [MFC]", "sharing menus [MFC]", "updating user-interface objects [MFC]", "frame windows [MFC], updating", "status bars [MFC], updating"]
-ms.assetid: 97ca1997-06df-4373-b023-4f7ecd81047b
 ms.topic: concept-article
 ---
 # Managing Menus, Control Bars, and Accelerators
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The frame window manages updating user-interface objects, including menus, toolbar buttons, the status bar, and accelerators. It also manages sharing the menu bar in MDI applications.
 

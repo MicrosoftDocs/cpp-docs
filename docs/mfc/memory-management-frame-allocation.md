@@ -3,9 +3,11 @@ description: "Learn more about: Memory Management: Frame Allocation"
 title: "Memory Management: Frame Allocation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["memory leaks [MFC], frame allocation", "memory [MFC], detecting leaks", "memory [MFC], reclaiming", "memory allocation [MFC], frames", "frame variables [MFC], automatic deletion of", "scope [MFC], frame variables", "heap allocation [MFC], vs. frame allocation", "variables [MFC], frame variables", "memory leaks [MFC], detecting", "memory, releasing [MFC]", "stack frames [MFC]", "memory leaks [MFC], allocating objects on the frame", "detecting memory leaks [MFC]", "frame allocation [MFC]", "frame variables [MFC]"]
-ms.assetid: 945a211a-6f4f-4679-bb6a-b0f2a0d4a6c1
 ---
 # Memory Management: Frame Allocation
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Allocation on the frame takes its name from the "stack frame" that is set up whenever a function is called. The stack frame is an area of memory that temporarily holds the arguments to the function as well as any variables that are defined local to the function. Frame variables are often called "automatic" variables because the compiler automatically allocates the space for them.
 

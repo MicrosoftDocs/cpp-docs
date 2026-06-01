@@ -7,6 +7,8 @@ helpviewer_keywords: ["CComCoClass class", "aggregation [C++], aggregation model
 ---
 # CComCoClass Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 This class provides methods for creating instances of a class, and obtaining its properties.
 
 ## Syntax

@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMFCRibbonFontComboBox [MFC], CMFCRibbonFontComboBox", "C
 ---
 # CMFCRibbonFontComboBox Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Implements a combo box that contains a list of fonts. You place the combo box on a ribbon panel.
 
 ## Syntax

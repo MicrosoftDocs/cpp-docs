@@ -4,9 +4,11 @@ title: "CTooltipManager Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CTooltipManager", "AFXTOOLTIPMANAGER/CTooltipManager", "AFXTOOLTIPMANAGER/CTooltipManager::CreateToolTip", "AFXTOOLTIPMANAGER/CTooltipManager::DeleteToolTip", "AFXTOOLTIPMANAGER/CTooltipManager::SetTooltipParams", "AFXTOOLTIPMANAGER/CTooltipManager::SetTooltipText", "AFXTOOLTIPMANAGER/CTooltipManager::UpdateTooltips"]
 helpviewer_keywords: ["CTooltipManager [MFC], CreateToolTip", "CTooltipManager [MFC], DeleteToolTip", "CTooltipManager [MFC], SetTooltipParams", "CTooltipManager [MFC], SetTooltipText", "CTooltipManager [MFC], UpdateTooltips"]
-ms.assetid: c71779d7-8b6e-47ef-8500-d4552731fe86
 ---
 # CTooltipManager Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Maintains runtime information about tooltips. The `CTooltipManager` class is instantiated one time per application.
 

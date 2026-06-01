@@ -4,9 +4,10 @@ title: "CAutoPtrList Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAutoPtrList", "ATLCOLL/ATL::CAutoPtrList", "ATLCOLL/ATL::CAutoPtrList::CAutoPtrList"]
 helpviewer_keywords: ["CAutoPtrList class"]
-ms.assetid: 11de4aca-28b0-4ff2-a74a-cb602312ffbd
 ---
 # CAutoPtrList Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods useful when constructing a list of smart pointers.
 

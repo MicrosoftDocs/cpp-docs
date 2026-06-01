@@ -4,10 +4,12 @@ title: "Class Library Overview"
 ms.date: "09/17/2019"
 f1_keywords: ["vc.classes.mfc"]
 helpviewer_keywords: ["grouping MFC classes", "MFC, class library", "classes [MFC], MFC", "class libraries, MFC", "class libraries"]
-ms.assetid: 9b0e3152-ac39-4f52-91b4-f20aa3a674aa
 ms.topic: concept-article
 ---
 # Class Library Overview
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This overview categorizes and describes the classes in the Microsoft Foundation Class Library (MFC) version 9.0. The classes in MFC, taken together, constitute an application framework — the framework of an application written for the Windows API. Your programming task is to fill in the code that is specific to your application.
 

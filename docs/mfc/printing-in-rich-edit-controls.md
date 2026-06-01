@@ -3,10 +3,12 @@ description: "Learn more about: Printing in Rich Edit Controls"
 title: "Printing in Rich Edit Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["printing [MFC], CRichEditCtrl", "rich edit controls [MFC], printing", "CRichEditCtrl class [MFC], printing"]
-ms.assetid: dbda0e40-018f-424e-b5d8-7b489aaf27af
 ms.topic: concept-article
 ---
 # Printing in Rich Edit Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 You can tell a rich edit control ([CRichEditCtrl](reference/cricheditctrl-class.md)) to render its output for a specified device, such as a printer. You can also specify the output device for which a rich edit control formats its text.
 

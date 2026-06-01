@@ -3,10 +3,12 @@ description: "Learn more about: Receiving Notification from Common Controls"
 title: "Receiving Notification from Common Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OnNotify method [MFC]", "common controls [MFC], notifications", "ON_NOTIFY macro [MFC]", "controls [MFC], notifications", "receiving notifications from common controls", "notifications [MFC], common controls", "Windows common controls [MFC], notifications", "WM_NOTIFY message"]
-ms.assetid: 50194592-d60d-44d0-8ab3-338a2a2c63e7
 ms.topic: concept-article
 ---
 # Receiving Notification from Common Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Common controls are child windows that send notification messages to the parent window when events, such as input from the user, occur in the control.
 

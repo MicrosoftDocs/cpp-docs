@@ -7,7 +7,7 @@ helpviewer_keywords: ["linker [C++]", "linker [C++], options listed", "libraries
 ---
 # Linker options
 
-LINK.exe links Common Object File Format (COFF) object files and libraries to create an executable (EXE) file or a dynamic-link library (DLL).
+`LINK.exe` links Common Object File Format (COFF) object files and libraries to create an executable (EXE) file or a dynamic-link library (DLL).
 
 The following table lists options for `LINK.exe`. For more information about LINK, see:
 
@@ -16,9 +16,9 @@ The following table lists options for `LINK.exe`. For more information about LIN
 - [LINK output](link-output.md)
 - [Reserved words](reserved-words.md)
 
-Linker options aren't case-sensitive; for example, `/base` and `/BASE` mean the same thing. For details on how to specify each option on the command line or in Visual Studio, see the documentation for that option.
+Linker options aren't case-sensitive. For example, `/base` and `/BASE` mean the same thing. For details on how to specify each option on the command line or in Visual Studio, see the documentation for that option.
 
-You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to specify some linker options.
+Use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to specify some linker options.
 
 ## Linker options listed alphabetically
 
@@ -112,6 +112,10 @@ You can use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to speci
 | [`/SAFESEH`](safeseh-image-has-safe-exception-handlers.md) | Specifies that the image will contain a table of safe exception handlers. |
 | [`/SECTION`](section-specify-section-attributes.md) | Overrides the attributes of a section. |
 | [`/SOURCELINK`](sourcelink.md) | Specifies a SourceLink file to add to the PDB. |
+| [`/SPD`](spd-specify-sample-profile-database.md) | Specifies the name and location of the *`.spd`* file for Sample Profile-Guided Optimization. |
+| [`/SPDEMBED`](spdembed-embed-sample-profile-database.md) | Embeds the Sample Profile Database into the PDB file during a Sample Profile-Guided Optimization (SPGO) build. |
+| [`/SPDIN`](spdin-use-sample-profile-database.md) | Specifies a *`.spd`* file containing profiling data for an optimized Sample Profile-Guided Optimization (SPGO) build. |
+| [`/SPGO`](spgo-enable-sample-profile-guided-optimization.md) | Enables Sample Profile-Guided Optimization and creates an empty *`.spd`* file. |
 | [`/STACK`](stack-stack-allocations.md) | Sets the size of the stack in bytes. |
 | [`/STUB`](stub-ms-dos-stub-file-name.md) | Attaches an MS-DOS stub program to a Win32 program. |
 | [`/SUBSYSTEM`](subsystem-specify-subsystem.md) | Tells the operating system how to run the *`.exe`* file. |

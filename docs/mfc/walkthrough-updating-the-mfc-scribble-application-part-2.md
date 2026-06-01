@@ -3,9 +3,11 @@ description: "Learn more about: Walkthrough: Updating the MFC Scribble Applicati
 title: "Walkthrough: Updating the MFC Scribble Application (Part 2)"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["walkthroughs [MFC]"]
-ms.assetid: 602df5c2-17d4-4cd9-8cf6-dff652c4cae5
 ---
 # Walkthrough: Updating the MFC Scribble Application (Part 2)
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 [Part 1](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md) of this walkthrough showed how to add an Office Fluent Ribbon to the classic Scribble application. This part shows how to add ribbon panels and controls that users can use instead of menus and commands.
 

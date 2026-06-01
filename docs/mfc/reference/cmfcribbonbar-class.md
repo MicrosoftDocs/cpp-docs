@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMFCRibbonBar [MFC], ActivateContextCategory", "CMFCRibbo
 ---
 # `CMFCRibbonBar` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The `CMFCRibbonBar` class implements a ribbon bar similar to that used in Office 2007.
 
 For more detail, see the source code located in the `mfc` folder of your Visual Studio installation. For example, `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\atlmfc\src\mfc`.

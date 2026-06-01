@@ -3,9 +3,11 @@ description: "Learn more about: ActiveX Controls on the Internet"
 title: "ActiveX Controls on the Internet"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["ActiveX controls [MFC], creating", "ActiveX controls [MFC], Internet", "downloading data with ActiveX controls", "OLE controls [MFC], upgrading to ActiveX", "Internet applications [MFC], ActiveX controls", "networks [MFC], downloading with ActiveX controls"]
-ms.assetid: 7ab943c8-2022-41df-9065-d629b616eeec
 ---
 # ActiveX Controls on the Internet
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 ActiveX controls are the updated version of the OLE control specification.
 

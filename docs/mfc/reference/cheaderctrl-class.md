@@ -4,9 +4,11 @@ title: "CHeaderCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CHeaderCtrl", "AFXCMN/CHeaderCtrl", "AFXCMN/CHeaderCtrl::CHeaderCtrl", "AFXCMN/CHeaderCtrl::ClearAllFilters", "AFXCMN/CHeaderCtrl::ClearFilter", "AFXCMN/CHeaderCtrl::Create", "AFXCMN/CHeaderCtrl::CreateDragImage", "AFXCMN/CHeaderCtrl::CreateEx", "AFXCMN/CHeaderCtrl::DeleteItem", "AFXCMN/CHeaderCtrl::DrawItem", "AFXCMN/CHeaderCtrl::EditFilter", "AFXCMN/CHeaderCtrl::GetBitmapMargin", "AFXCMN/CHeaderCtrl::GetFocusedItem", "AFXCMN/CHeaderCtrl::GetImageList", "AFXCMN/CHeaderCtrl::GetItem", "AFXCMN/CHeaderCtrl::GetItemCount", "AFXCMN/CHeaderCtrl::GetItemDropDownRect", "AFXCMN/CHeaderCtrl::GetItemRect", "AFXCMN/CHeaderCtrl::GetOrderArray", "AFXCMN/CHeaderCtrl::GetOverflowRect", "AFXCMN/CHeaderCtrl::HitTest", "AFXCMN/CHeaderCtrl::InsertItem", "AFXCMN/CHeaderCtrl::Layout", "AFXCMN/CHeaderCtrl::OrderToIndex", "AFXCMN/CHeaderCtrl::SetBitmapMargin", "AFXCMN/CHeaderCtrl::SetFilterChangeTimeout", "AFXCMN/CHeaderCtrl::SetFocusedItem", "AFXCMN/CHeaderCtrl::SetHotDivider", "AFXCMN/CHeaderCtrl::SetImageList", "AFXCMN/CHeaderCtrl::SetItem", "AFXCMN/CHeaderCtrl::SetOrderArray"]
 helpviewer_keywords: ["CHeaderCtrl [MFC], CHeaderCtrl", "CHeaderCtrl [MFC], ClearAllFilters", "CHeaderCtrl [MFC], ClearFilter", "CHeaderCtrl [MFC], Create", "CHeaderCtrl [MFC], CreateDragImage", "CHeaderCtrl [MFC], CreateEx", "CHeaderCtrl [MFC], DeleteItem", "CHeaderCtrl [MFC], DrawItem", "CHeaderCtrl [MFC], EditFilter", "CHeaderCtrl [MFC], GetBitmapMargin", "CHeaderCtrl [MFC], GetFocusedItem", "CHeaderCtrl [MFC], GetImageList", "CHeaderCtrl [MFC], GetItem", "CHeaderCtrl [MFC], GetItemCount", "CHeaderCtrl [MFC], GetItemDropDownRect", "CHeaderCtrl [MFC], GetItemRect", "CHeaderCtrl [MFC], GetOrderArray", "CHeaderCtrl [MFC], GetOverflowRect", "CHeaderCtrl [MFC], HitTest", "CHeaderCtrl [MFC], InsertItem", "CHeaderCtrl [MFC], Layout", "CHeaderCtrl [MFC], OrderToIndex", "CHeaderCtrl [MFC], SetBitmapMargin", "CHeaderCtrl [MFC], SetFilterChangeTimeout", "CHeaderCtrl [MFC], SetFocusedItem", "CHeaderCtrl [MFC], SetHotDivider", "CHeaderCtrl [MFC], SetImageList", "CHeaderCtrl [MFC], SetItem", "CHeaderCtrl [MFC], SetOrderArray"]
-ms.assetid: b847ac90-5fae-4a87-88e0-ca45f77b8b3b
 ---
 # CHeaderCtrl Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides the functionality of the Windows common header control.
 

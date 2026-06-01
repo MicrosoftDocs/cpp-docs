@@ -4,9 +4,10 @@ title: "CComSafeArrayBound Class"
 ms.date: "05/06/2019"
 f1_keywords: ["CComSafeArrayBound", "ATLSAFE/ATL::CComSafeArrayBound", "ATLSAFE/ATL::GetCount", "ATLSAFE/ATL::GetLowerBound", "ATLSAFE/ATL::GetUpperBound", "ATLSAFE/ATL::SetCount", "ATLSAFE/ATL::SetLowerBound"]
 helpviewer_keywords: ["CComSafeArrayBound class"]
-ms.assetid: dd6299db-5f84-4630-bbf0-f5add5318437
 ---
 # CComSafeArrayBound Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class is a wrapper for a [SAFEARRAYBOUND](/windows/win32/api/oaidl/ns-oaidl-safearraybound) structure.
 

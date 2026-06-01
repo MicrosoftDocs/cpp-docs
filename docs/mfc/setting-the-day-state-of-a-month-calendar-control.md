@@ -4,10 +4,12 @@ title: "Setting the Day State of a Month Calendar Control"
 ms.date: "11/04/2016"
 f1_keywords: ["MCN_GETDAYSTATE"]
 helpviewer_keywords: ["CMonthCalCtrl class [MFC], setting day state info", "MCN_GETDAYSTATE notification [MFC]", "month calendar controls [MFC], day state info"]
-ms.assetid: 435d1b11-ec0e-4121-9e25-aaa6af812a3c
 ms.topic: how-to
 ---
 # Setting the Day State of a Month Calendar Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 One of the attributes of a month calendar control is the ability to store information, referred to as the day state of the control, for each day of the month. This information is used to emphasize certain dates for the month currently displayed.
 

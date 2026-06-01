@@ -4,9 +4,11 @@ title: "MFC ActiveX Controls: Using Pictures in an ActiveX Control"
 ms.date: "11/04/2016"
 f1_keywords: ["LPPICTUREDISP"]
 helpviewer_keywords: ["OnDraw method, MFC ActiveX controls", "MFC ActiveX controls [MFC], pictures", "OnDraw method [MFC]", "OnResetState method [MFC]", "CLSID_CPicturePropPage [MFC]"]
-ms.assetid: 2e49735c-21b9-4442-bb3d-c82ef258eec9
 ---
 # MFC ActiveX Controls: Using Pictures in an ActiveX Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article describes the common Picture type and how to implement it in your ActiveX control. Topics include:
 

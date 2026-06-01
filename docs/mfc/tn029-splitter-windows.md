@@ -4,9 +4,11 @@ title: "TN029: Splitter Windows"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.windows.splitter"]
 helpviewer_keywords: ["TN029", "splitter windows [MFC], about splitter windows"]
-ms.assetid: 2c57ce99-2a3c-4eff-9cea-baccb13af075
 ---
 # TN029: Splitter Windows
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This note describes the MFC [CSplitterWnd Class](../mfc/reference/csplitterwnd-class.md), which provides window splits and manages the resizing of other pane windows.
 

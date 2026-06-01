@@ -4,9 +4,10 @@ title: "IDispEventSimpleImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IDispEventSimpleImpl", "ATLCOM/ATL::IDispEventSimpleImpl", "ATLCOM/ATL::IDispEventSimpleImpl::Advise", "ATLCOM/ATL::IDispEventSimpleImpl::DispEventAdvise", "ATLCOM/ATL::IDispEventSimpleImpl::DispEventUnadvise", "ATLCOM/ATL::IDispEventSimpleImpl::GetIDsOfNames", "ATLCOM/ATL::IDispEventSimpleImpl::GetTypeInfo", "ATLCOM/ATL::IDispEventSimpleImpl::GetTypeInfoCount", "ATLCOM/ATL::IDispEventSimpleImpl::Invoke", "ATLCOM/ATL::IDispEventSimpleImpl::Unadvise"]
 helpviewer_keywords: ["IDispEventSimpleImpl class"]
-ms.assetid: 971d82b7-a921-47fa-a4d8-909bed377ab0
 ---
 # IDispEventSimpleImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides implementations of the `IDispatch` methods, without getting type information from a type library.
 

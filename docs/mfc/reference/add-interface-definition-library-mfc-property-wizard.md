@@ -9,6 +9,9 @@ ms.custom: devdivchpfy22
 
 # Add an IDL MFC property
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The **Add IDL MFC Property** wizard adds a property to an Interface Definition Library (IDL) interface defined in your Microsoft Framework Class (MFC) project.
 
 To use this wizard, you must be in an MFC Project, ActiveX project, or an ATL project that supports MFC. For example, if you have a Microsoft ActiveX control project, you can use the following procedure to add a property to an IDL interface in the solution.

@@ -4,9 +4,10 @@ title: "Security Identifier Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlsecurity/ATL::Sids::AccountOps", "atlsecurity/ATL::Sids::Admins", "atlsecurity/ATL::Sids::AnonymousLogon", "atlsecurity/ATL::Sids::AuthenticatedUser", "atlsecurity/ATL::Sids::BackupOps", "atlsecurity/ATL::Sids::Batch", "atlsecurity/ATL::Sids::CreatorGroup", "atlsecurity/ATL::Sids::CreatorGroupServer", "atlsecurity/ATL::Sids::CreatorOwner", "atlsecurity/ATL::Sids::CreatorOwnerServer", "atlsecurity/ATL::Sids::Dialup", "atlsecurity/ATL::Sids::Guests", "atlsecurity/ATL::Sids::Interactive", "atlsecurity/ATL::Sids::Local", "atlsecurity/ATL::Sids::Network", "atlsecurity/ATL::Sids::NetworkService", "atlsecurity/ATL::Sids::Null", "atlsecurity/ATL::Sids::PowerUsers", "atlsecurity/ATL::Sids::PrintOps", "atlsecurity/ATL::Sids::Proxy", "atlsecurity/ATL::Sids::RasServers", "atlsecurity/ATL::Sids::Replicator", "atlsecurity/ATL::Sids::RestrictedCode", "atlsecurity/ATL::Sids::Self", "atlsecurity/ATL::Sids::ServerLogon", "atlsecurity/ATL::Sids::Service", "atlsecurity/ATL::Sids::System", "atlsecurity/ATL::Sids::SystemOps", "atlsecurity/ATL::Sids::TerminalServer", "atlsecurity/ATL::Sids::Users", "atlsecurity/ATL::Sids::World"]
 helpviewer_keywords: ["security IDs [C++]", "SIDs [C++], returning SID objects"]
-ms.assetid: 85404dcb-c59b-4535-ab3d-66cfa37e87de
 ---
 # Security Identifier Global Functions
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These functions return common well-known SID objects.
 

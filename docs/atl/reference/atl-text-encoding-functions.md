@@ -3,9 +3,10 @@ description: "Learn more about: ATL Text Encoding Functions"
 title: "ATL Text Encoding Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlbase/ATL::AtlGetHexValue", "atlbase/ATL::AtlGetVersion", "atlenc/ATL::AtlHexDecode", "atlenc/ATL::AtlHexDecodeGetRequiredLength", "atlenc/ATL::AtlHexEncode", "atlenc/ATL::AtlHexEncodeGetRequiredLength", "atlenc/ATL::AtlHexValue", "atlenc/ATL::BEncode", "atlenc/ATL::BEncodeGetRequiredLength", "atlenc/ATL::EscapeXML", "atlenc/ATL::GetExtendedChars", "atlenc/ATL::IsExtendedChar", "atlenc/ATL::QEncode", "atlenc/ATL::QEncodeGetRequiredLength", "atlenc/ATL::QPDecode", "atlenc/ATL::QPDecodeGetRequiredLength", "atlenc/ATL::QPEncode", "atlenc/ATL::QPEncodeGetRequiredLength", "atlenc/ATL::UUDecode", "atlenc/ATL::UUDecodeGetRequiredLength", "atlenc/ATL::UUEncode", "atlenc/ATL::UUEncodeGetRequiredLength"]
-ms.assetid: 2ae1648b-2b87-4112-92aa-0069fcfd23da
 ---
 # ATL Text Encoding Functions
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These functions support text encoding and decoding.
 

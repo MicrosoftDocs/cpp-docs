@@ -7,6 +7,9 @@ helpviewer_keywords: ["CPrintDialog [MFC], CPrintDialog", "CPrintDialog [MFC], C
 ---
 # `CPrintDialog` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Encapsulates the services provided by the Windows common dialog box for printing.
 
 ## Syntax

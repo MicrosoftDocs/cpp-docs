@@ -3,9 +3,10 @@ description: "Learn more about: ATL Wizards and Dialog Boxes"
 title: "ATL Wizards and Dialog Boxes"
 ms.date: "06/26/2020"
 helpviewer_keywords: ["ATL, class wizards"]
-ms.assetid: 51cf002a-83bc-41ba-aeb8-364ea2331375
 ---
 # ATL Wizards and Dialog Boxes
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 The Active Template Library (ATL) wizards generate boilerplate code for various kinds of COM objects. You can run the wizards by opening the shortcut menu for a project in **Solution Explorer** and choosing **Add**, **Class**.
 

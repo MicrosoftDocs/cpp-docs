@@ -4,9 +4,11 @@ title: "MFC ActiveX Controls: Adding Stock Events to an ActiveX Control"
 ms.date: "11/04/2016"
 f1_keywords: ["EVENT__STOCK_ERROR", "EVENT__STOCK_READYSTATECHANGE", "ReadyStateChange", "EVENT__STOCK_MOUSEMOVE", "EVENT__STOCK_MOUSEUP", "EVENT__STOCK_DBLCLICK", "KeyPress", "EVENT__STOCK_KEYDOWN", "EVENT__STOCK", "EVENT__STOCK_MOUSEDOWN", "EVENT__STOCK_KEYPRESS", "EVENT__STOCK_CLICK", "EVENT__STOCK_KEYUP"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], events", "KeyPress event", "FireDblClick event", "FireMouseDown event", "events [MFC], stock", "FireKeyPress event", "EVENT_STOCK_MOUSEMOVE event", "EVENT_STOCK_CLICK event", "FireClick event", "FireKeyUp event", "FireMouseUp event", "EVENT_STOCK_ERROREVENT event", "EVENT_STOCK_KEYDOWN event", "EVENT_STOCK_MOUSEDOWN event", "EVENT_STOCK_KEYPRESS macro [MFC]", "EVENT_STOCK_KEYUP event", "EVENT_STOCK_DBLCLICK event", "FireError event", "FireKeyDown event", "ReadyStateChange event", "EVENT_STOCK_MOUSEUP event", "FireMouseMove event", "EVENT_STOCK prefix", "EVENT_STOCK_READYSTATECHANGE event", "EVENT_STOCK_KEYPRESS event"]
-ms.assetid: 3eeadc67-4b3d-4444-8caa-53054073988a
 ---
 # MFC ActiveX Controls: Adding Stock Events to an ActiveX Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Stock events differ from custom events in that they are automatically fired by class [COleControl](reference/colecontrol-class.md). `COleControl` contains predefined member functions that fire events resulting from common actions. Some common actions implemented by `COleControl` include single- and double-clicks on the control, keyboard events, and changes in the state of the mouse buttons. Event map entries for stock events are always preceded by the EVENT_STOCK prefix.
 

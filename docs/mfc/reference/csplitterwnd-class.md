@@ -7,6 +7,9 @@ helpviewer_keywords: ["CSplitterWnd [MFC], CSplitterWnd", "CSplitterWnd [MFC], A
 ---
 # `CSplitterWnd` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Provides the functionality of a splitter window, which is a window that contains multiple panes.
 
 ## Syntax

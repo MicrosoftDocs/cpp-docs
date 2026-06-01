@@ -4,9 +4,11 @@ title: "CMFCBaseVisualManager Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCBaseVisualManager", "AFXVISUALMANAGER/CMFCBaseVisualManager", "AFXVISUALMANAGER/CMFCBaseVisualManager::CMFCBaseVisualManager", "AFXVISUALMANAGER/CMFCBaseVisualManager::DrawCheckBox", "AFXVISUALMANAGER/CMFCBaseVisualManager::DrawComboBorder", "AFXVISUALMANAGER/CMFCBaseVisualManager::DrawComboDropButton", "AFXVISUALMANAGER/CMFCBaseVisualManager::DrawPushButton", "AFXVISUALMANAGER/CMFCBaseVisualManager::DrawRadioButton", "AFXVISUALMANAGER/CMFCBaseVisualManager::DrawStatusBarProgress", "AFXVISUALMANAGER/CMFCBaseVisualManager::FillReBarPane", "AFXVISUALMANAGER/CMFCBaseVisualManager::GetStandardWindowsTheme", "AFXVISUALMANAGER/CMFCBaseVisualManager::CleanUpThemes", "AFXVISUALMANAGER/CMFCBaseVisualManager::UpdateSystemColors"]
 helpviewer_keywords: ["CMFCBaseVisualManager [MFC], CMFCBaseVisualManager", "CMFCBaseVisualManager [MFC], DrawCheckBox", "CMFCBaseVisualManager [MFC], DrawComboBorder", "CMFCBaseVisualManager [MFC], DrawComboDropButton", "CMFCBaseVisualManager [MFC], DrawPushButton", "CMFCBaseVisualManager [MFC], DrawRadioButton", "CMFCBaseVisualManager [MFC], DrawStatusBarProgress", "CMFCBaseVisualManager [MFC], FillReBarPane", "CMFCBaseVisualManager [MFC], GetStandardWindowsTheme", "CMFCBaseVisualManager [MFC], CleanUpThemes", "CMFCBaseVisualManager [MFC], UpdateSystemColors"]
-ms.assetid: d56f3afc-cdea-4de1-825a-a08999c571e0
 ---
 # CMFCBaseVisualManager Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A layer between derived visual managers and the Windows Theme API.
 

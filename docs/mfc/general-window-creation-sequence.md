@@ -3,9 +3,11 @@ description: "Learn more about: General Window Creation Sequence"
 title: "General Window Creation Sequence"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["sequence [MFC], window creation", "frame windows [MFC], creating", "windows [MFC], creating", "sequence [MFC]"]
-ms.assetid: 9cd8c7ea-5e24-429e-b6d9-d7b6041d8ba6
 ---
 # General Window Creation Sequence
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 When you create a window of your own, such as a child window, the framework uses much the same process as that described in [Document/View Creation](document-view-creation.md).
 

@@ -4,9 +4,11 @@ title: "CMapStringToPtr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMapStringToPtr", "AFXCOLL/CMapStringToPtr", "AFXCOLL/CMapStringToPtr::CMapStringToPtr", "AFXCOLL/CMapStringToPtr::GetCount", "AFXCOLL/CMapStringToPtr::GetHashTableSize", "AFXCOLL/CMapStringToPtr::GetNextAssoc", "AFXCOLL/CMapStringToPtr::GetSize", "AFXCOLL/CMapStringToPtr::GetStartPosition", "AFXCOLL/CMapStringToPtr::HashKey", "AFXCOLL/CMapStringToPtr::InitHashTable", "AFXCOLL/CMapStringToPtr::IsEmpty", "AFXCOLL/CMapStringToPtr::Lookup", "AFXCOLL/CMapStringToPtr::LookupKey", "AFXCOLL/CMapStringToPtr::RemoveAll", "AFXCOLL/CMapStringToPtr::RemoveKey", "AFXCOLL/CMapStringToPtr::SetAt"]
 helpviewer_keywords: ["CMapStringToPtr [MFC], CMapStringToPtr", "CMapStringToPtr [MFC], GetCount", "CMapStringToPtr [MFC], GetHashTableSize", "CMapStringToPtr [MFC], GetNextAssoc", "CMapStringToPtr [MFC], GetSize", "CMapStringToPtr [MFC], GetStartPosition", "CMapStringToPtr [MFC], HashKey", "CMapStringToPtr [MFC], InitHashTable", "CMapStringToPtr [MFC], IsEmpty", "CMapStringToPtr [MFC], Lookup", "CMapStringToPtr [MFC], LookupKey", "CMapStringToPtr [MFC], RemoveAll", "CMapStringToPtr [MFC], RemoveKey", "CMapStringToPtr [MFC], SetAt"]
-ms.assetid: 1ac11143-eb0a-4511-a662-2df0d1d9005b
 ---
 # CMapStringToPtr Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Supports maps of void pointers keyed by `CString` objects.
 

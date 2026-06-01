@@ -4,9 +4,11 @@ title: "OLE Background: MFC Implementation"
 ms.date: "11/04/2016"
 f1_keywords: ["IMarshall", "IMoniker"]
 helpviewer_keywords: ["MFC libraries, implementing", "OLE MFC library implementation", "OLE IMarshal interface", "IMoniker interface, MFC", "IMarshall class [MFC]", "OLE, compound files", "OLE IMoniker interface", "OLE IUnknown"]
-ms.assetid: 2b67016a-d78e-4d60-925f-c28ec8fb6180
 ---
 # OLE Background: MFC Implementation
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Because of the size and complexity of the raw OLE API, calling it directly to write OLE applications can be very time consuming. The goal of the Microsoft Foundation Class Library implementation of OLE is to reduce the amount of work you have to do to write full-featured, OLE-capable applications.
 

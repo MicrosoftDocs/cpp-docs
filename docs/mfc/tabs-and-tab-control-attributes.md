@@ -3,9 +3,11 @@ description: "Learn more about: Tabs and Tab Control Attributes"
 title: "Tabs and Tab Control Attributes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["attributes [MFC], reference topics", "tab controls [MFC], attributes", "tabs [MFC]", "tabs [MFC], attributes", "CTabCtrl class [MFC], tab control attributes"]
-ms.assetid: ecf190cb-f323-4751-bfdb-766dbe6bb553
 ---
 # Tabs and Tab Control Attributes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 You have considerable control over the appearance and behavior of tabs that make up a tab control ([CTabCtrl](../mfc/reference/ctabctrl-class.md)). Each tab can have a label, an icon, an item state, and an application-defined 32-bit value associated with it. For each tab, you can display the icon, the label, or both.
 

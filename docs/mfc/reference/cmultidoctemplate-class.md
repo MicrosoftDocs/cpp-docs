@@ -4,9 +4,11 @@ title: "CMultiDocTemplate Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMultiDocTemplate", "AFXWIN/CMultiDocTemplate", "AFXWIN/CMultiDocTemplate::CMultiDocTemplate"]
 helpviewer_keywords: ["CMultiDocTemplate [MFC], CMultiDocTemplate"]
-ms.assetid: 5b8aa328-e461-41d0-b388-00594535e119
 ---
 # CMultiDocTemplate Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Defines a document template that implements the multiple document interface (MDI).
 

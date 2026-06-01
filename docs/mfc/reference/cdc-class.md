@@ -7,6 +7,9 @@ helpviewer_keywords: ["CDC [MFC], CDC", "CDC [MFC], AbortDoc", "CDC [MFC], Abort
 ---
 # `CDC` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Defines a class of device-context objects.
 
 ## Syntax

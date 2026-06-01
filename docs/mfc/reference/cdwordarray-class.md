@@ -4,9 +4,11 @@ title: "CDWordArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDWordArray", "AFXCOLL/CDWordArray", "AFXCOLL/CDWordArray::CDWordArray", "AFXCOLL/CDWordArray::Add", "AFXCOLL/CDWordArray::Append", "AFXCOLL/CDWordArray::Copy", "AFXCOLL/CDWordArray::ElementAt", "AFXCOLL/CDWordArray::FreeExtra", "AFXCOLL/CDWordArray::GetAt", "AFXCOLL/CDWordArray::GetCount", "AFXCOLL/CDWordArray::GetData", "AFXCOLL/CDWordArray::GetSize", "AFXCOLL/CDWordArray::GetUpperBound", "AFXCOLL/CDWordArray::InsertAt", "AFXCOLL/CDWordArray::IsEmpty", "AFXCOLL/CDWordArray::RemoveAll", "AFXCOLL/CDWordArray::RemoveAt", "AFXCOLL/CDWordArray::SetAt", "AFXCOLL/CDWordArray::SetAtGrow", "AFXCOLL/CDWordArray::SetSize"]
 helpviewer_keywords: ["CDWordArray [MFC], CDWordArray", "CDWordArray [MFC], Add", "CDWordArray [MFC], Append", "CDWordArray [MFC], Copy", "CDWordArray [MFC], ElementAt", "CDWordArray [MFC], FreeExtra", "CDWordArray [MFC], GetAt", "CDWordArray [MFC], GetCount", "CDWordArray [MFC], GetData", "CDWordArray [MFC], GetSize", "CDWordArray [MFC], GetUpperBound", "CDWordArray [MFC], InsertAt", "CDWordArray [MFC], IsEmpty", "CDWordArray [MFC], RemoveAll", "CDWordArray [MFC], RemoveAt", "CDWordArray [MFC], SetAt", "CDWordArray [MFC], SetAtGrow", "CDWordArray [MFC], SetSize"]
-ms.assetid: 581be11e-ced6-47d1-8679-e0b8e7d99494
 ---
 # CDWordArray Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Supports arrays of 32-bit doublewords.
 

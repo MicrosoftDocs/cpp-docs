@@ -3,10 +3,12 @@ description: "Learn more about: Building on the Framework"
 title: "Building on the Framework"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["application-specific classes [MFC]", "application framework [MFC], building applications", "applications [MFC]", "MFC, application development"]
-ms.assetid: 883f0f19-866f-4221-8a3d-5607941dc8d0
 ms.topic: concept-article
 ---
 # Building on the Framework
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Your role in configuring an application with the MFC framework is to supply the application-specific source code and to connect the components by defining what messages and commands to which they respond. You use the C++ language and standard C++ techniques to derive your own application-specific classes from those supplied by the class library and to override and augment the base class's behavior.
 

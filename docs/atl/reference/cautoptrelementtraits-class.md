@@ -4,9 +4,10 @@ title: "CAutoPtrElementTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAutoPtrElementTraits", "ATLCOLL/ATL::CAutoPtrElementTraits", "ATLCOLL/ATL::CAutoPtrElementTraits::INARGTYPE", "ATLCOLL/ATL::CAutoPtrElementTraits::OUTARGTYPE"]
 helpviewer_keywords: ["CAutoPtrElementTraits class"]
-ms.assetid: 777c1b14-6ab7-491f-b9a5-be149e71d4a2
 ---
 # CAutoPtrElementTraits Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods, static functions, and typedefs useful when creating collections of smart pointers.
 

@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMFCRibbonComboBox [MFC], CMFCRibbonComboBox", "CMFCRibbo
 ---
 # CMFCRibbonComboBox Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The `CMFCRibbonComboBox` class implements a combo box control that you can add to a ribbon bar, a ribbon panel, or a ribbon popup menu.
 
 ## Syntax

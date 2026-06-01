@@ -4,9 +4,11 @@ title: "CMFCColorDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCColorDialog", "AFXCOLORDIALOG/CMFCColorDialog", "AFXCOLORDIALOG/CMFCColorDialog::CMFCColorDialog", "AFXCOLORDIALOG/CMFCColorDialog::GetColor", "AFXCOLORDIALOG/CMFCColorDialog::GetPalette", "AFXCOLORDIALOG/CMFCColorDialog::RebuildPalette", "AFXCOLORDIALOG/CMFCColorDialog::SetCurrentColor", "AFXCOLORDIALOG/CMFCColorDialog::SetNewColor", "AFXCOLORDIALOG/CMFCColorDialog::SetPageOne", "AFXCOLORDIALOG/CMFCColorDialog::SetPageTwo"]
 helpviewer_keywords: ["CMFCColorDialog [MFC], CMFCColorDialog", "CMFCColorDialog [MFC], GetColor", "CMFCColorDialog [MFC], GetPalette", "CMFCColorDialog [MFC], RebuildPalette", "CMFCColorDialog [MFC], SetCurrentColor", "CMFCColorDialog [MFC], SetNewColor", "CMFCColorDialog [MFC], SetPageOne", "CMFCColorDialog [MFC], SetPageTwo"]
-ms.assetid: 235bbbbc-a3b1-46e0-801b-fb55093ec579
 ---
 # CMFCColorDialog Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCColorDialog` class represents a color selection dialog box.
 

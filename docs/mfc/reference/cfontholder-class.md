@@ -4,9 +4,11 @@ title: "CFontHolder Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CFontHolder", "AFXCTL/CFontHolder", "AFXCTL/CFontHolder::CFontHolder", "AFXCTL/CFontHolder::GetDisplayString", "AFXCTL/CFontHolder::GetFontDispatch", "AFXCTL/CFontHolder::GetFontHandle", "AFXCTL/CFontHolder::InitializeFont", "AFXCTL/CFontHolder::QueryTextMetrics", "AFXCTL/CFontHolder::ReleaseFont", "AFXCTL/CFontHolder::Select", "AFXCTL/CFontHolder::SetFont", "AFXCTL/CFontHolder::m_pFont"]
 helpviewer_keywords: ["CFontHolder [MFC], CFontHolder", "CFontHolder [MFC], GetDisplayString", "CFontHolder [MFC], GetFontDispatch", "CFontHolder [MFC], GetFontHandle", "CFontHolder [MFC], InitializeFont", "CFontHolder [MFC], QueryTextMetrics", "CFontHolder [MFC], ReleaseFont", "CFontHolder [MFC], Select", "CFontHolder [MFC], SetFont", "CFontHolder [MFC], m_pFont"]
-ms.assetid: 728ab472-0c97-440d-889f-1324c6e1b6b8
 ---
 # CFontHolder Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements the stock Font property and encapsulates the functionality of a Windows font object and the `IFont` interface.
 

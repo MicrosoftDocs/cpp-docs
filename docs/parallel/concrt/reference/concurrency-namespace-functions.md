@@ -6,58 +6,7 @@ f1_keywords: ["concrt/concurrency::Alloc", "concrt/concurrency::DisableTracing",
 ---
 # concurrency namespace functions
 
-:::row:::
-   :::column span="":::
-      [`Alloc`](#alloc)\
-      [`asend`](#asend)\
-      [`cancel_current_task`](#cancel_current_task)\
-      [`clear`](#clear)\
-      [`create_async`](#create_async)\
-      [`create_task`](#create_task)\
-      [`CreateResourceManager`](#createresourcemanager)\
-      [`DisableTracing`](#disabletracing)\
-      [`EnableTracing`](#enabletracing)\
-      [`Free`](#free)\
-      [`get_ambient_scheduler`](#get_ambient_scheduler)\
-      [`GetExecutionContextId`](#getexecutioncontextid)\
-      [`GetOSVersion`](#getosversion)\
-      [`GetProcessorCount`](#getprocessorcount)\
-      [`GetProcessorNodeCount`](#getprocessornodecount)
-   :::column-end:::
-   :::column span="":::
-      [`GetSchedulerId`](#getschedulerid)\
-      [`internal_assign_iterators`](#internal_assign_iterators)\
-      [`interruption_point`](#interruption_point)\
-      [`is_current_task_group_canceling`](#is_current_task_group_canceling)\
-      [`make_choice`](#make_choice)\
-      [`make_greedy_join`](#make_greedy_join)\
-      [`make_join`](#make_join)\
-      [`make_task`](#make_task)\
-      [`parallel_buffered_sort`](#parallel_buffered_sort)\
-      [`parallel_for_each`](#parallel_for_each)\
-      [`parallel_for`](#parallel_for)\
-      [`parallel_invoke`](#parallel_invoke)\
-      [`parallel_radixsort`](#parallel_radixsort)\
-      [`parallel_reduce`](#parallel_reduce)\
-      [`parallel_sort`](#parallel_sort)
-   :::column-end:::
-   :::column span="":::
-      [`parallel_transform`](#parallel_transform)\
-      [`receive`](#receive)\
-      [`run_with_cancellation_token`](#run_with_cancellation_token)\
-      [`send`](#send)\
-      [`set_ambient_scheduler`](#set_ambient_scheduler)\
-      [`set_task_execution_resources`](#set_task_execution_resources)\
-      [`swap`](#swap)\
-      [`task_from_exception`](#task_from_exception)\
-      [`task_from_result`](#task_from_result)\
-      [`Trace_agents_register_name`](#trace_agents_register_name)\
-      [`try_receive`](#try_receive)\
-      [`wait`](#wait)\
-      [`when_all`](#when_all)\
-      [`when_any`](#when_any)
-   :::column-end:::
-:::row-end:::
+The following functions are available in the `concurrency` namespace:
 
 ## <a name="alloc"></a> Alloc
 

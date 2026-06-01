@@ -4,9 +4,10 @@ title: "Persistence Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["persistence classes", "persistence, classes"]
-ms.assetid: a6a2b6b2-52bc-471c-b78a-de58363128bb
 ---
 # Persistence Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The following classes implement object persistence:
 

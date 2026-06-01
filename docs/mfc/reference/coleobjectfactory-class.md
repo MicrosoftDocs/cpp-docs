@@ -4,9 +4,11 @@ title: "COleObjectFactory Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleObjectFactory", "AFXDISP/COleObjectFactory", "AFXDISP/COleObjectFactory::COleObjectFactory", "AFXDISP/COleObjectFactory::GetClassID", "AFXDISP/COleObjectFactory::IsLicenseValid", "AFXDISP/COleObjectFactory::IsRegistered", "AFXDISP/COleObjectFactory::Register", "AFXDISP/COleObjectFactory::RegisterAll", "AFXDISP/COleObjectFactory::Revoke", "AFXDISP/COleObjectFactory::RevokeAll", "AFXDISP/COleObjectFactory::UnregisterAll", "AFXDISP/COleObjectFactory::UpdateRegistry", "AFXDISP/COleObjectFactory::UpdateRegistryAll", "AFXDISP/COleObjectFactory::GetLicenseKey", "AFXDISP/COleObjectFactory::OnCreateObject", "AFXDISP/COleObjectFactory::VerifyLicenseKey", "AFXDISP/COleObjectFactory::VerifyUserLicense"]
 helpviewer_keywords: ["COleObjectFactory [MFC], COleObjectFactory", "COleObjectFactory [MFC], GetClassID", "COleObjectFactory [MFC], IsLicenseValid", "COleObjectFactory [MFC], IsRegistered", "COleObjectFactory [MFC], Register", "COleObjectFactory [MFC], RegisterAll", "COleObjectFactory [MFC], Revoke", "COleObjectFactory [MFC], RevokeAll", "COleObjectFactory [MFC], UnregisterAll", "COleObjectFactory [MFC], UpdateRegistry", "COleObjectFactory [MFC], UpdateRegistryAll", "COleObjectFactory [MFC], GetLicenseKey", "COleObjectFactory [MFC], OnCreateObject", "COleObjectFactory [MFC], VerifyLicenseKey", "COleObjectFactory [MFC], VerifyUserLicense"]
-ms.assetid: ab179c1e-4af2-44aa-a576-37c48149b427
 ---
 # COleObjectFactory Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements the OLE class factory, which creates OLE objects such as servers, automation objects, and documents.
 

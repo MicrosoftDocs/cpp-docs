@@ -3,9 +3,11 @@ description: "Learn more about: Paragraph Formatting in Rich Edit Controls"
 title: "Paragraph Formatting in Rich Edit Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["rich edit controls [MFC], paragraph formatting in", "paragraph formatting in CRichEditCtrl [MFC]", "CRichEditCtrl class [MFC], paragraph formatting in", "formatting [MFC], paragraphs"]
-ms.assetid: 0df2e4c9-2074-4e41-b913-87cb8c1b4d43
 ---
 # Paragraph Formatting in Rich Edit Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 You can use member functions of the rich edit control ([CRichEditCtrl](reference/cricheditctrl-class.md)) to format paragraphs and to retrieve formatting information. Paragraph formatting attributes include alignment, tabs, indents, and numbering.
 

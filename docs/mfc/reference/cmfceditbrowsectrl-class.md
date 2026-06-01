@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMFCEditBrowseCtrl [MFC], EnableBrowseButton", "CMFCEditB
 ---
 # CMFCEditBrowseCtrl Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The `CMFCEditBrowseCtrl` class supports the edit browse control, which is an editable text box that optionally contains a browse button. When the user clicks the browse button, the control performs a custom action or displays a standard dialog box that contains a file browser or a folder browser.
 
 ## Syntax

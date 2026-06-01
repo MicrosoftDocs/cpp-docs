@@ -4,9 +4,11 @@ title: "CWordArray Class"
 ms.date: "09/07/2019"
 f1_keywords: ["CWordArray", "AFXCOLL/CWordArray", "AFXCOLL/CWordArray::CWordArray", "AFXCOLL/CWordArray::Add", "AFXCOLL/CWordArray::Append", "AFXCOLL/CWordArray::Copy", "AFXCOLL/CWordArray::ElementAt", "AFXCOLL/CWordArray::FreeExtra", "AFXCOLL/CWordArray::GetAt", "AFXCOLL/CWordArray::GetCount", "AFXCOLL/CWordArray::GetData", "AFXCOLL/CWordArray::GetSize", "AFXCOLL/CWordArray::GetUpperBound", "AFXCOLL/CWordArray::InsertAt", "AFXCOLL/CWordArray::IsEmpty", "AFXCOLL/CWordArray::RemoveAll", "AFXCOLL/CWordArray::RemoveAt", "AFXCOLL/CWordArray::SetAt", "AFXCOLL/CWordArray::SetAtGrow", "AFXCOLL/CWordArray::SetSize"]
 helpviewer_keywords: ["CWordArray [MFC], CWordArray", "CWordArray [MFC], Add", "CWordArray [MFC], Append", "CWordArray [MFC], Copy", "CWordArray [MFC], ElementAt", "CWordArray [MFC], FreeExtra", "CWordArray [MFC], GetAt", "CWordArray [MFC], GetCount", "CWordArray [MFC], GetData", "CWordArray [MFC], GetSize", "CWordArray [MFC], GetUpperBound", "CWordArray [MFC], InsertAt", "CWordArray [MFC], IsEmpty", "CWordArray [MFC], RemoveAll", "CWordArray [MFC], RemoveAt", "CWordArray [MFC], SetAt", "CWordArray [MFC], SetAtGrow", "CWordArray [MFC], SetSize"]
-ms.assetid: 2ba2c194-2c6c-40ff-9db4-e9dbe57e1f57
 ---
 # CWordArray Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Supports arrays of 16-bit words.
 

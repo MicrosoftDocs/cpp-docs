@@ -3,10 +3,12 @@ description: "Learn more about: Bypassing the Serialization Mechanism"
 title: "Bypassing the Serialization Mechanism"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["archive objects [MFC]", "bypassing serialization", "archives [MFC], serialization", "serialization [MFC], bypassing", "archives [MFC]", "serialization [MFC], role of framework", "serialization [MFC], overriding"]
-ms.assetid: 48d4a279-b51c-4ba5-81cd-ed043312b582
 ms.topic: concept-article
 ---
 # Bypassing the Serialization Mechanism
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 As you have seen, the framework provides a default way to read and write data to and from files. Serializing through an archive object suits the needs of a great many applications. Such an application reads a file entirely into memory, lets the user update the file, and then writes the updated version to disk again.
 

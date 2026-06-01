@@ -3,9 +3,11 @@ description: "Learn more about: Clipboard Operations in Rich Edit Controls"
 title: "Clipboard Operations in Rich Edit Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["pasting Clipboard data", "CRichEditCtrl class [MFC], paste operation", "cut operation in CRichEditCtrl class [MFC]", "CRichEditCtrl class [MFC], Clipboard operations", "copy operations in rich edit controls", "Clipboard, operations in CRichEditCtrl", "rich edit controls [MFC], Clipboard operations"]
-ms.assetid: 15ce66bc-2636-4a35-a2ae-d52285dc1af6
 ---
 # Clipboard Operations in Rich Edit Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Your application can paste the contents of the Clipboard into a rich edit control ([CRichEditCtrl](reference/cricheditctrl-class.md)) using either the best available Clipboard format or a specific Clipboard format. You can also determine whether a rich edit control is capable of pasting a Clipboard format.
 

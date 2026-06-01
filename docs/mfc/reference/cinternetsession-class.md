@@ -7,6 +7,9 @@ helpviewer_keywords: ["CInternetSession [MFC], CInternetSession", "CInternetSess
 ---
 # `CInternetSession` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Creates and initializes a single or several simultaneous Internet sessions and, if necessary, describes your connection to a proxy server.
 
 ## Syntax

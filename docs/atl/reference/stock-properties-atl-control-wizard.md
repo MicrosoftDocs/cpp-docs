@@ -3,9 +3,10 @@ description: "Learn more about: Stock Properties, ATL Control Wizard"
 title: "Stock Properties, ATL Control Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.class.atl.control.stockprops"]
-ms.assetid: b27b0e60-08a6-43f4-ba6e-0a4e45147693
 ---
 # Stock Properties, ATL Control Wizard
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This page of the wizard identifies the stock properties supported for the control. By default, no properties are identified.
 

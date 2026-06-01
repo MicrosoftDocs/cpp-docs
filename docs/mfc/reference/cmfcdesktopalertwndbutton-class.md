@@ -4,9 +4,11 @@ title: "CMFCDesktopAlertWndButton Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCDesktopAlertWndButton", "AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton", "AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton::IsCaptionButton", "AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton::IsCloseButton"]
 helpviewer_keywords: ["CMFCDesktopAlertWndButton [MFC], IsCaptionButton", "CMFCDesktopAlertWndButton [MFC], IsCloseButton"]
-ms.assetid: df39a0c8-0c39-4ab0-8c64-78c5b2c4ecaf
 ---
 # CMFCDesktopAlertWndButton Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Allows buttons to be added to a desktop alert dialog box.
 

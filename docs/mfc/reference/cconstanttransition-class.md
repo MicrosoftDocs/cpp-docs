@@ -4,9 +4,11 @@ title: "CConstantTransition Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CConstantTransition", "AFXANIMATIONCONTROLLER/CConstantTransition", "AFXANIMATIONCONTROLLER/CConstantTransition::CConstantTransition", "AFXANIMATIONCONTROLLER/CConstantTransition::Create", "AFXANIMATIONCONTROLLER/CConstantTransition::m_duration"]
 helpviewer_keywords: ["CConstantTransition [MFC], CConstantTransition", "CConstantTransition [MFC], Create", "CConstantTransition [MFC], m_duration"]
-ms.assetid: f6fa4780-a71b-4cd6-80aa-d4792ace36c2
 ---
 # CConstantTransition Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Encapsulates a constant transition.
 

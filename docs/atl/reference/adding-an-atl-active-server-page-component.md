@@ -2,9 +2,10 @@
 description: "Learn more about: Adding an ATL Active Server Page Component"
 title: "Adding an ATL Active Server Page Component"
 ms.date: "05/09/2019"
-ms.assetid: 7be2204c-6e58-4099-8892-001b848c8987
 ---
 # Adding an ATL Active Server Page Component
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 ::: moniker range=">=msvc-160"
 

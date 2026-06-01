@@ -3,10 +3,12 @@ description: "Learn more about: Message Categories"
 title: "Message Categories"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["messages [MFC], categories", "control-notification messages [MFC]", "Windows messages [MFC], categories", "controls [MFC], notifications", "command messages [MFC]", "messages [MFC], Windows", "message handling [MFC], message types"]
-ms.assetid: 68e1db75-9da6-4a4d-b2c2-dc4d59f8d87b
 ms.topic: how-to
 ---
 # Message Categories
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 What kinds of messages do you write handlers for There are three main categories:
 

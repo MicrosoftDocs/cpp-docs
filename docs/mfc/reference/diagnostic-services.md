@@ -6,6 +6,9 @@ helpviewer_keywords: ["diagnosi [MFC]s, diagnostic services", "diagnostic macros
 ---
 # Diagnostic Services
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The Microsoft Foundation Class Library supplies many diagnostic services that make debugging your programs easier. These diagnostic services include macros and global functions that allow you to track your program's memory allocations, dump the contents of objects during run time, and print debugging messages during run time. The macros and global functions for diagnostic services are grouped into the following categories:
 
 - General diagnostic macros

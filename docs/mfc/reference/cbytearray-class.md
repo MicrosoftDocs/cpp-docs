@@ -4,9 +4,11 @@ title: "CByteArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CByteArray", "AFXCOLL/CByteArray", "AFXCOLL/CByteArray::CByteArray", "AFXCOLL/CByteArray::Add", "AFXCOLL/CByteArray::Append", "AFXCOLL/CByteArray::Copy", "AFXCOLL/CByteArray::ElementAt", "AFXCOLL/CByteArray::FreeExtra", "AFXCOLL/CByteArray::GetAt", "AFXCOLL/CByteArray::GetCount", "AFXCOLL/CByteArray::GetData", "AFXCOLL/CByteArray::GetSize", "AFXCOLL/CByteArray::GetUpperBound", "AFXCOLL/CByteArray::InsertAt", "AFXCOLL/CByteArray::IsEmpty", "AFXCOLL/CByteArray::RemoveAll", "AFXCOLL/CByteArray::RemoveAt", "AFXCOLL/CByteArray::SetAt", "AFXCOLL/CByteArray::SetAtGrow", "AFXCOLL/CByteArray::SetSize"]
 helpviewer_keywords: ["CByteArray [MFC], CByteArray", "CByteArray [MFC], Add", "CByteArray [MFC], Append", "CByteArray [MFC], Copy", "CByteArray [MFC], ElementAt", "CByteArray [MFC], FreeExtra", "CByteArray [MFC], GetAt", "CByteArray [MFC], GetCount", "CByteArray [MFC], GetData", "CByteArray [MFC], GetSize", "CByteArray [MFC], GetUpperBound", "CByteArray [MFC], InsertAt", "CByteArray [MFC], IsEmpty", "CByteArray [MFC], RemoveAll", "CByteArray [MFC], RemoveAt", "CByteArray [MFC], SetAt", "CByteArray [MFC], SetAtGrow", "CByteArray [MFC], SetSize"]
-ms.assetid: 53d4a512-657c-4187-9609-e3f5339a78e0
 ---
 # CByteArray Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Supports dynamic arrays of bytes.
 

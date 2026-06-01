@@ -3,9 +3,11 @@ description: "Learn more about: Notifications from a Rich Edit Control"
 title: "Notifications from a Rich Edit Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["messages [MFC], notification [MFC]", "CRichEditCtrl class [MFC], notifications", "rich edit controls [MFC], notifications", "notifications [MFC], from CRichEditCtrl"]
-ms.assetid: eb5304fe-f4f3-4557-9ebf-3095dea383c4
 ---
 # Notifications from a Rich Edit Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Notification messages report events affecting a rich edit control ([CRichEditCtrl](reference/cricheditctrl-class.md)). They can be processed by the parent window or, using message reflection, by the rich edit control itself. Rich edit controls support all of the notification messages used with edit controls as well as several additional ones. You can determine which notification messages a rich edit control sends its parent window by setting its "event mask."
 

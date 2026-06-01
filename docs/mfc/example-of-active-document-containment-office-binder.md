@@ -3,9 +3,11 @@ description: "Learn more about: Example of Active Document Containment: Office B
 title: "Example of Active Document Containment: Office Binder"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["active documents [MFC], containers", "examples [MFC], active document containment", "containers [MFC], active document", "active document containers [MFC], examples", "Office Binder [MFC]", "MFC COM, active document containment"]
-ms.assetid: 70dd8568-e8bc-44ac-bf5e-678767efe8e3
 ---
 # Example of Active Document Containment: Office Binder
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The Microsoft Office Binder is an example of an active document container. An Office Binder includes two primary panes, as containers typically do. The left pane contains icons that correspond to active documents in the Binder. Each document is called a *section* within the Binder. For example, a Binder can contain Word documents, PowerPoint files, Excel spreadsheets, and so on.
 

@@ -3,9 +3,11 @@ description: "Learn more about: Command IDs"
 title: "Command IDs"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["command IDs, MFC", "command IDs"]
-ms.assetid: e0171a2b-45b9-41fa-945d-ec2f7602ded0
 ---
 # Command IDs
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A command is fully described by its command ID alone (encoded in the **WM_COMMAND** message). This ID is assigned to the user-interface object that generates the command. Typically, IDs are named for the functionality of the user-interface object they are assigned to.
 

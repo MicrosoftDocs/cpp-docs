@@ -3,9 +3,11 @@ description: "Learn more about: Run Member Function"
 title: "Run Member Function"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["WinMain method [MFC]"]
-ms.assetid: 24ab7597-2354-495b-9a20-2c8ccc7385b3
 ---
 # Run Member Function
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A framework application spends most of its time in the [Run](../mfc/reference/cwinapp-class.md#run) member function of class [CWinApp](../mfc/reference/cwinapp-class.md). After initialization, `WinMain` calls `Run` to process the message loop.
 

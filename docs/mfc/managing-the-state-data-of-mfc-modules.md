@@ -3,10 +3,12 @@ description: "Learn more about: Managing the State Data of MFC Modules"
 title: "Managing the State Data of MFC Modules"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["global state [MFC]", "data management [MFC], MFC modules", "window procedure entry points [MFC]", "exported interfaces and global state [MFC]", "module states [MFC], saving and restoring", "data management [MFC]", "MFC, managing state data", "multiple modules [MFC]", "module state restored [MFC]"]
-ms.assetid: 81889c11-0101-4a66-ab3c-f81cf199e1bb
 ms.topic: concept-article
 ---
 # Managing the State Data of MFC Modules
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article discusses the state data of MFC modules and how this state is updated when the flow of execution (the path code takes through an application when executing) enters and leaves a module. Switching module states with the AFX_MANAGE_STATE and METHOD_PROLOGUE macros is also discussed.
 

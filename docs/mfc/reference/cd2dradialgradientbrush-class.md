@@ -4,9 +4,11 @@ title: "CD2DRadialGradientBrush Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CD2DRadialGradientBrush", "AFXRENDERTARGET/CD2DRadialGradientBrush", "AFXRENDERTARGET/CD2DRadialGradientBrush::CD2DRadialGradientBrush", "AFXRENDERTARGET/CD2DRadialGradientBrush::Attach", "AFXRENDERTARGET/CD2DRadialGradientBrush::Create", "AFXRENDERTARGET/CD2DRadialGradientBrush::Destroy", "AFXRENDERTARGET/CD2DRadialGradientBrush::Detach", "AFXRENDERTARGET/CD2DRadialGradientBrush::Get", "AFXRENDERTARGET/CD2DRadialGradientBrush::GetCenter", "AFXRENDERTARGET/CD2DRadialGradientBrush::GetGradientOriginOffset", "AFXRENDERTARGET/CD2DRadialGradientBrush::GetRadiusX", "AFXRENDERTARGET/CD2DRadialGradientBrush::GetRadiusY", "AFXRENDERTARGET/CD2DRadialGradientBrush::SetCenter", "AFXRENDERTARGET/CD2DRadialGradientBrush::SetGradientOriginOffset", "AFXRENDERTARGET/CD2DRadialGradientBrush::SetRadiusX", "AFXRENDERTARGET/CD2DRadialGradientBrush::SetRadiusY", "AFXRENDERTARGET/CD2DRadialGradientBrush::m_pRadialGradientBrush", "AFXRENDERTARGET/CD2DRadialGradientBrush::m_RadialGradientBrushProperties"]
 helpviewer_keywords: ["CD2DRadialGradientBrush [MFC], CD2DRadialGradientBrush", "CD2DRadialGradientBrush [MFC], Attach", "CD2DRadialGradientBrush [MFC], Create", "CD2DRadialGradientBrush [MFC], Destroy", "CD2DRadialGradientBrush [MFC], Detach", "CD2DRadialGradientBrush [MFC], Get", "CD2DRadialGradientBrush [MFC], GetCenter", "CD2DRadialGradientBrush [MFC], GetGradientOriginOffset", "CD2DRadialGradientBrush [MFC], GetRadiusX", "CD2DRadialGradientBrush [MFC], GetRadiusY", "CD2DRadialGradientBrush [MFC], SetCenter", "CD2DRadialGradientBrush [MFC], SetGradientOriginOffset", "CD2DRadialGradientBrush [MFC], SetRadiusX", "CD2DRadialGradientBrush [MFC], SetRadiusY", "CD2DRadialGradientBrush [MFC], m_pRadialGradientBrush", "CD2DRadialGradientBrush [MFC], m_RadialGradientBrushProperties"]
-ms.assetid: 6c76d84a-d831-4ee2-96f1-82c1f5b0d6a9
 ---
 # CD2DRadialGradientBrush Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A wrapper for ID2D1RadialGradientBrush.
 

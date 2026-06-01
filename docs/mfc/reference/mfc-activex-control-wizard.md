@@ -4,10 +4,12 @@ title: "MFC ActiveX Control Wizard"
 ms.date: "03/04/2022"
 f1_keywords: ["vc.appwiz.mfc.ctl.overview"]
 helpviewer_keywords: ["ActiveX controls [MFC], MFC", "MFC ActiveX controls [MFC], wizards", "OLE controls [MFC], creating", "MFC ActiveX Control Wizard", "OLE controls [MFC]"]
-ms.assetid: f19d698c-bdc3-4c74-af97-3d6ccb441b75
 ms.custom: devdivchpfy22
 ---
 # MFC ActiveX Control Wizard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 An ActiveX control is a specific type of [automation server](../../mfc/automation-servers.md); it's a reusable component. The application hosting the ActiveX control is the [automation client](../../mfc/automation-clients.md) of that control. If your goal is to create such a reusable component, then use this wizard to create your control. For more information, see [MFC ActiveX Controls](../../mfc/mfc-activex-controls.md).
 

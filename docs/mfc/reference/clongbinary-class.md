@@ -4,9 +4,11 @@ title: "CLongBinary Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CLongBinary", "AFXDB_/CLongBinary", "AFXDB_/CLongBinary::CLongBinary", "AFXDB_/CLongBinary::m_dwDataLength", "AFXDB_/CLongBinary::m_hData"]
 helpviewer_keywords: ["CLongBinary class [MFC]"]
-ms.assetid: f4320059-aeb4-4ee5-bc2b-25f19d898ef5
 ---
 # CLongBinary Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Simplifies working with very large binary data objects (often called BLOBs, or "binary large objects") in a database.
 

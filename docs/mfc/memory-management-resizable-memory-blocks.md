@@ -3,9 +3,11 @@ description: "Learn more about: Memory Management: Resizable Memory Blocks"
 title: "Memory Management: Resizable Memory Blocks"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["memory blocks [MFC], resizable", "memory [MFC], corruption", "memory allocation [MFC], memory block size", "memory blocks [MFC], allocating", "blocks [MFC], memory allocation", "resizable memory blocks [MFC]"]
-ms.assetid: f0efe6f4-a3ed-4541-9195-51ec1291967a
 ---
 # Memory Management: Resizable Memory Blocks
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The **`new`** and **`delete`** operators, described in the article [Memory Management: Examples](memory-management-examples.md), are good for allocating and deallocating fixed-size memory blocks and objects. Occasionally, your application may need resizable memory blocks. You must use the standard C run-time library functions [malloc](../c-runtime-library/reference/malloc.md), [realloc](../c-runtime-library/reference/realloc.md), and [free](../c-runtime-library/reference/free.md) to manage resizable memory blocks on the heap.
 

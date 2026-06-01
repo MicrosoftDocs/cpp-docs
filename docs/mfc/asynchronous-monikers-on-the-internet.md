@@ -3,9 +3,11 @@ description: "Learn more about: Asynchronous Monikers on the Internet"
 title: "Asynchronous Monikers on the Internet"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ActiveX controls [MFC], asynchronous", "MFC, asynchronous monikers", "asynchronous monikers [MFC]", "Web applications [MFC], asynchronous", "downloading Internet resources and asynchronous monikers", "optimization [MFC], asynchronous downloading across Internet", "Internet [MFC], asynchronous downloading"]
-ms.assetid: 418b0c64-0046-4dae-8118-c9c762b5822e
 ---
 # Asynchronous Monikers on the Internet
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The Internet requires new approaches to application design because of its slow network access. Applications should perform network access asynchronously to avoid stalling the user interface. The MFC class [CAsyncMonikerFile](reference/casyncmonikerfile-class.md) provides asynchronous support for downloading files.
 

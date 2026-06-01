@@ -3,9 +3,11 @@ description: "Learn more about: Frame Windows"
 title: "Frame Windows"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["document frame windows [MFC]", "windows [MFC], MDI", "window classes [MFC], frame", "single document interface (SDI) [MFC]", "single document interface (SDI) [MFC], frame windows", "views [MFC], and frame windows", "CFrameWnd class [MFC], frame windows", "frame windows [MFC]", "frame windows [MFC], about frame windows", "MFC, frame windows", "MDI [MFC], frame windows", "splitter windows [MFC], and frame windows"]
-ms.assetid: 40677339-8135-4f5e-aba6-3fced3078077
 ---
 # Frame Windows
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 When an application runs under Windows, the user interacts with documents displayed in frame windows. A document frame window has two major components: the frame and the contents that it frames. A document frame window can be a [single document interface](sdi-and-mdi.md) (SDI) frame window or a [multiple document interface](sdi-and-mdi.md) (MDI) child window. Windows manages most of the user's interaction with the frame window: moving and resizing the window, closing it, and minimizing and maximizing it. You manage the contents inside the frame.
 

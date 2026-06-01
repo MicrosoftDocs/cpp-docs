@@ -4,9 +4,10 @@ title: "CAutoPtrArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAutoPtrArray", "ATLCOLL/ATL::CAutoPtrArray", "ATLCOLL/ATL::CAutoPtrArray::CAutoPtrArray"]
 helpviewer_keywords: ["CAutoPtrArray class"]
-ms.assetid: 880a70da-8c81-4427-8ac6-49aa8d424244
 ---
 # CAutoPtrArray Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods useful when constructing an array of smart pointers.
 

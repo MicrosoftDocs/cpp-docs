@@ -3,10 +3,12 @@ description: "Learn more about: Command Routing Illustration"
 title: "Command Routing Illustration"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, command routing", "command handling [MFC], routing commands", "command routing [MFC], OnCmdMsg handler"]
-ms.assetid: 4b7b4741-565f-4878-b076-fd85c670f87f
 ms.topic: how-to
 ---
 # Command Routing Illustration
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 To illustrate, consider a command message from a Clear All menu item in an MDI application's Edit menu. Suppose the handler function for this command happens to be a member function of the application's document class. Here's how that command reaches its handler after the user chooses the menu item:
 

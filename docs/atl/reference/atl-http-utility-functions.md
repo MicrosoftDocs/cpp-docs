@@ -2,9 +2,10 @@
 description: "Learn more about: ATL HTTP Utility Functions"
 title: "ATL HTTP Utility Functions"
 ms.date: "11/04/2016"
-ms.assetid: 4db57ef2-31fa-4696-bbeb-79a9035033ed
 ---
 # ATL HTTP Utility Functions
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These functions support manipulation of URLs.
 

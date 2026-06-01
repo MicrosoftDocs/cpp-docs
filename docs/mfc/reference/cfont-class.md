@@ -7,6 +7,9 @@ helpviewer_keywords: ["CFont [MFC], CFont", "CFont [MFC], CreateFont", "CFont [M
 ---
 # `CFont` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Encapsulates a Windows graphics device interface (GDI) font and provides member functions for manipulating the font.
 
 ## Syntax

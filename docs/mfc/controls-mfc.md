@@ -3,9 +3,11 @@ description: "Learn more about: Controls (MFC)"
 title: "Controls (MFC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows common controls [MFC]", "common controls [MFC]", "controls [MFC]"]
-ms.assetid: b2842884-6435-4b8f-933b-21671bf8af95
 ---
 # Controls (MFC)
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Controls are objects that users can interact with to enter or manipulate data. They commonly appear in dialog boxes or on toolbars. This topic family covers three main kinds of controls:
 

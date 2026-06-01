@@ -3,9 +3,11 @@ description: "Learn more about: MFC Technical Notes"
 title: "MFC Technical Notes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, technical notes", "technical notes, MFC", "technical notes [MFC]"]
-ms.assetid: 8aa01d66-0b07-4d0a-a080-4bb00c7baaac
 ---
 # MFC Technical Notes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A technical note is a document written for programmers by programmers.
 

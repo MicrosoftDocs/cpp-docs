@@ -3,10 +3,12 @@ description: "Learn more about: Mapping Messages"
 title: "Mapping Messages"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["message maps [MFC], about message maps", "mappings [MFC], commands", "commands [MFC], mapping", "command mapping [MFC]", "message handling [MFC], connecting to handler functions", "commands [MFC], connecting to handler functions", "mappings [MFC], messages", "messages [MFC], mapping"]
-ms.assetid: 996f0652-0698-4b8c-b893-cdaa836d9d0f
 ms.topic: concept-article
 ---
 # Mapping Messages
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Each framework class that can receive messages or commands has its own "message map." The framework uses message maps to connect messages and commands to their handler functions. Any class derived from class `CCmdTarget` can have a message map. Other articles explain message maps in detail and describe how to use them.
 

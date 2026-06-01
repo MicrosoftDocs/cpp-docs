@@ -4,9 +4,11 @@ title: "CDragListBox Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDragListBox", "AFXCMN/CDragListBox", "AFXCMN/CDragListBox::CDragListBox", "AFXCMN/CDragListBox::BeginDrag", "AFXCMN/CDragListBox::CancelDrag", "AFXCMN/CDragListBox::Dragging", "AFXCMN/CDragListBox::DrawInsert", "AFXCMN/CDragListBox::Dropped", "AFXCMN/CDragListBox::ItemFromPt"]
 helpviewer_keywords: ["CDragListBox [MFC], CDragListBox", "CDragListBox [MFC], BeginDrag", "CDragListBox [MFC], CancelDrag", "CDragListBox [MFC], Dragging", "CDragListBox [MFC], DrawInsert", "CDragListBox [MFC], Dropped", "CDragListBox [MFC], ItemFromPt"]
-ms.assetid: fee20b42-60ae-4aa9-83f9-5a3d9b96e33b
 ---
 # CDragListBox Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 In addition to providing the functionality of a Windows list box, the `CDragListBox` class allows the user to move list box items, such as filenames, within the list box.
 

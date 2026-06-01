@@ -7,6 +7,9 @@ ms.topic: concept-article
 ---
 # MFC Concepts
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 This section provides conceptual and task-based topics to help you program using the Microsoft Foundation Class (MFC) Library.
 
 ## In This Section

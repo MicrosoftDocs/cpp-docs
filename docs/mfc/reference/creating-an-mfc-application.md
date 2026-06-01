@@ -6,6 +6,9 @@ helpviewer_keywords: ["applications [MFC]", "MFC, creating applications", "MFC a
 ---
 # Creating an MFC Application
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 An MFC application is an executable application for Windows that is based on the Microsoft Foundation Class (MFC) Library. MFC executables generally fall into five types: standard Windows applications, dialog boxes, forms-based applications, Explorer-style applications, and Web browser-style applications. For more information, see:
 
 - [Using the Classes to Write Windows Applications](../../mfc/using-the-classes-to-write-applications-for-windows.md)

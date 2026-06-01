@@ -3,10 +3,12 @@ description: "Learn more about: Providing Flicker-Free Activation"
 title: "Providing Flicker-Free Activation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], flicker-free", "flicker, MFC ActiveX controls", "activation [MFC], flicker-free"]
-ms.assetid: bcb24b77-31d8-44a0-8c58-2ea6213b4c43
 ms.topic: concept-article
 ---
 # Providing Flicker-Free Activation
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 If your control draws itself identically in the inactive and active states (and does not use windowless activation), you can eliminate the drawing operations and the accompanying visual flicker that normally occur when making the transition between the inactive and active states. To do this, include the **noFlickerActivate** flag in the set of flags returned by [COleControl::GetControlFlags](../mfc/reference/colecontrol-class.md#getcontrolflags). For example:
 

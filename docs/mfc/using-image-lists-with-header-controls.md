@@ -3,10 +3,12 @@ description: "Learn more about: Using Image Lists with Header Controls"
 title: "Using Image Lists with Header Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["header controls [MFC], image lists", "CHeaderCtrl class [MFC], image lists", "image lists [MFC], header controls"]
-ms.assetid: d5e9b310-6278-406c-909c-eefa09549a47
 ms.topic: how-to
 ---
 # Using Image Lists with Header Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Header items have the ability to display an image within a header item. This image, stored in an associated image list, is 16 x 16 pixels and has the same characteristics as the icon images used in a list view control. In order to implement this behavior successfully, you must first create and initialize the image list, associate the list with the header control, and then modify the attributes of the header item that will display the image.
 

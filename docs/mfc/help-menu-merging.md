@@ -3,9 +3,11 @@ description: "Learn more about: Help Menu Merging"
 title: "Help Menu Merging"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["menus [MFC], merging", "merging Help menus [MFC]", "Help [MFC], for active document containers"]
-ms.assetid: 9d615999-79ba-471a-9288-718f0c903d49
 ---
 # Help Menu Merging
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 When an object is active within a container, the menu merging protocol of OLE Documents gives the object complete control of the **Help** menu. As a result, the container's Help topics are not available unless the user deactivates the object. The active document containment architecture expands on the rules for in-place menu merging to allow both the container and an active document that is active to share the menu. The new rules are simply additional conventions about what component owns what part of the menu and how the shared menu is constructed.
 

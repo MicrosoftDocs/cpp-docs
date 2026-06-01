@@ -3,10 +3,12 @@ description: "Learn more about: Adding Items to the Control"
 title: "Adding Items to the Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CListCtrl class [MFC], adding items"]
-ms.assetid: 715994bd-340d-4ad2-9882-411654137830
 ms.topic: concept-article
 ---
 # Adding Items to the Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 To add items to the list control ([CListCtrl](reference/clistctrl-class.md)), call one of several versions of the [InsertItem](reference/clistctrl-class.md#insertitem) member function, depending on what information you have. One version takes a [LVITEM](/windows/win32/api/commctrl/ns-commctrl-lvitemw) structure that you prepare. Because the `LVITEM` structure contains numerous members, you have greater control over the attributes of the list control item.
 

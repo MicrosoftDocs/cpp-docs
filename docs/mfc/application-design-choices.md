@@ -3,9 +3,11 @@ description: "Learn more about: Application Design Choices"
 title: "Application Design Choices"
 ms.date: "09/12/2019"
 helpviewer_keywords: ["design", "application design [MFC], design goals", "application design [MFC], Internet applications", "Internet applications [MFC], designing applications", "Internet [MFC], vs. intranets", "applications [MFC], Internet", "server applications [MFC], vs. client applications on Internet", "client applications [MFC], vs. server applications on Internet"]
-ms.assetid: 9b96172c-b4d4-4c69-bfb2-226ce0de6d08
 ---
 # Application Design Choices
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article discusses some of the design issues to consider when programming for the Internet.
 

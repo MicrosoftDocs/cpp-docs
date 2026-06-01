@@ -3,9 +3,11 @@ description: "Learn more about: Rebar Controls and Bands"
 title: "Rebar Controls and Bands"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["rebar controls [MFC], working with bands in", "bands, in rebar controls"]
-ms.assetid: b647e7a5-9ea7-48b1-8e5f-096d104748f0
 ---
 # Rebar Controls and Bands
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The main purpose of a rebar control is to act as a container for child windows, common dialog controls, menus, toolbars, and so on. This containment is supported by the concept of a "band." Each rebar band can contain any combination of a gripper bar, a bitmap, a text label, and a child window.
 

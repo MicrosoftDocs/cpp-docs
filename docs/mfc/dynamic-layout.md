@@ -2,9 +2,11 @@
 description: "Learn more about: Dynamic Layout"
 title: "Dynamic Layout"
 ms.date: "09/09/2019"
-ms.assetid: 8598cfb2-c8d4-4f5a-bf2b-59dc4653e042
 ---
 # Dynamic Layout
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 With MFC in Visual Studio 2015, you can create dialogs that the user can resize, and you can control the way the layout adjusts to the change in size. For example, you can attach buttons at the bottom of a dialog to the bottom edge so they always stay at the bottom. You can also set up certain controls such as listboxes, editboxes, and text fields to expand as the user expands the dialog.
 

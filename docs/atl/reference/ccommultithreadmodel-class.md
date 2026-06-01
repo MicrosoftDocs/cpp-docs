@@ -7,6 +7,8 @@ helpviewer_keywords: ["ATL, multithreading", "CComMultiThreadModel class", "thre
 ---
 # CComMultiThreadModel Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 `CComMultiThreadModel` provides thread-safe methods for incrementing and decrementing the value of a variable.
 
 ## Syntax

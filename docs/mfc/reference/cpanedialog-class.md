@@ -4,9 +4,11 @@ title: "CPaneDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPaneDialog", "AFXPANEDIALOG/CPaneDialog", "AFXPANEDIALOG/CPaneDialog::Create", "AFXPANEDIALOG/CPaneDialog::HandleInitDialog", "AFXPANEDIALOG/CPaneDialog::SetOccDialogInfo"]
 helpviewer_keywords: ["CPaneDialog [MFC], Create", "CPaneDialog [MFC], HandleInitDialog", "CPaneDialog [MFC], SetOccDialogInfo"]
-ms.assetid: 48a6bb91-4b92-40f5-8907-b3270b146cf6
 ---
 # CPaneDialog Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CPaneDialog` class supports a modeless, dockable dialog box.
 

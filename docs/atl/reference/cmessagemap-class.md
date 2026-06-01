@@ -4,9 +4,10 @@ title: "CMessageMap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMessageMap", "ATLWIN/ATL::CMessageMap", "ATLWIN/ATL::CMessageMap::ProcessWindowMessage"]
 helpviewer_keywords: ["CMessageMap class", "message maps, ATL", "ATL, message handlers"]
-ms.assetid: 1f97bc16-a8a0-4cf0-b90f-1778813a5c8e
 ---
 # CMessageMap Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class allows an object's message maps to be access by another object.
 

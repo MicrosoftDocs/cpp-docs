@@ -4,9 +4,11 @@ title: "CD2DSolidColorBrush Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CD2DSolidColorBrush", "AFXRENDERTARGET/CD2DSolidColorBrush", "AFXRENDERTARGET/CD2DSolidColorBrush::CD2DSolidColorBrush", "AFXRENDERTARGET/CD2DSolidColorBrush::Attach", "AFXRENDERTARGET/CD2DSolidColorBrush::Create", "AFXRENDERTARGET/CD2DSolidColorBrush::Destroy", "AFXRENDERTARGET/CD2DSolidColorBrush::Detach", "AFXRENDERTARGET/CD2DSolidColorBrush::Get", "AFXRENDERTARGET/CD2DSolidColorBrush::GetColor", "AFXRENDERTARGET/CD2DSolidColorBrush::SetColor", "AFXRENDERTARGET/CD2DSolidColorBrush::m_colorSolid", "AFXRENDERTARGET/CD2DSolidColorBrush::m_pSolidColorBrush"]
 helpviewer_keywords: ["CD2DSolidColorBrush [MFC], CD2DSolidColorBrush", "CD2DSolidColorBrush [MFC], Attach", "CD2DSolidColorBrush [MFC], Create", "CD2DSolidColorBrush [MFC], Destroy", "CD2DSolidColorBrush [MFC], Detach", "CD2DSolidColorBrush [MFC], Get", "CD2DSolidColorBrush [MFC], GetColor", "CD2DSolidColorBrush [MFC], SetColor", "CD2DSolidColorBrush [MFC], m_colorSolid", "CD2DSolidColorBrush [MFC], m_pSolidColorBrush"]
-ms.assetid: d4506637-acce-4f74-8a9b-f0a45571a735
 ---
 # CD2DSolidColorBrush Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A wrapper for ID2D1SolidColorBrush.
 

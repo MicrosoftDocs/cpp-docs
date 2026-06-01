@@ -4,9 +4,11 @@ title: "CMFCFontInfo Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCFontInfo", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::GetFullName", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_nCharSet", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_nPitchAndFamily", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_nType", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_strName", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_strScript"]
 helpviewer_keywords: ["CMFCFontInfo [MFC], GetFullName", "CMFCFontInfo [MFC], m_nCharSet", "CMFCFontInfo [MFC], m_nPitchAndFamily", "CMFCFontInfo [MFC], m_nType", "CMFCFontInfo [MFC], m_strName", "CMFCFontInfo [MFC], m_strScript"]
-ms.assetid: f88329b2-d74e-4921-9441-a3bb6536a049
 ---
 # CMFCFontInfo Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCFontInfo` class describes the name and other attributes of a font.
 

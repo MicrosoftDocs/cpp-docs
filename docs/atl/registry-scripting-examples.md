@@ -3,9 +3,10 @@ description: "Learn more about: Registry Scripting Examples"
 title: "Registry Scripting Examples"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["scripting, examples", "registrar scripts [ATL]", "scripts, Registrar scripts", "registry, Registrar"]
-ms.assetid: b6df80e1-e08b-40ee-9243-9b381b172460
 ---
 # Registry Scripting Examples
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The scripting examples in this topic demonstrate how to add a key to the system registry, register the Registrar COM server, and specify multiple parse trees.
 

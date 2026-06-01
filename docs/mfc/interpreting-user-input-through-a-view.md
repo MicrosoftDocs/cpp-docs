@@ -3,10 +3,12 @@ description: "Learn more about: Interpreting User Input Through a View"
 title: "Interpreting User Input Through a View"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["interpreting user input through views [MFC]", "views [MFC], user interface and input", "input [MFC], view class [MFC]", "CView class [MFC], interpreting user input", "user input [MFC], interpreting through view class [MFC]"]
-ms.assetid: f0302a70-661f-4781-8fe7-78f082bef2a5
 ms.topic: concept-article
 ---
 # Interpreting User Input Through a View
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Other member functions of the view handle and interpret all user input. You will usually define message-handler member functions in your view class to process:
 

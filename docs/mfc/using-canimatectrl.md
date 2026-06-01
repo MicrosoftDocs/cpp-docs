@@ -3,10 +3,12 @@ description: "Learn more about: Using CAnimateCtrl"
 title: "Using CAnimateCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["animation controls [MFC], CAnimateCtrl class", "controls [MFC], animation", "CAnimateCtrl class [MFC], about CAnimateCtrl class [MFC]"]
-ms.assetid: 696c0805-bef0-4e2e-a9e7-b37b9215b7f0
 ms.topic: concept-article
 ---
 # Using CAnimateCtrl
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 An animation control, represented by the class [CAnimateCtrl](../mfc/reference/canimatectrl-class.md), is a window that displays a clip in Audio Video Interleaved (AVI) format — the standard Windows video/audio format. An AVI clip is a series of bitmap frames, like a movie.
 

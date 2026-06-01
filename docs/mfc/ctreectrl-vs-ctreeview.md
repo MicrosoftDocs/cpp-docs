@@ -3,9 +3,11 @@ description: "Learn more about: CTreeCtrl vs. CTreeView"
 title: "CTreeCtrl vs. CTreeView"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["tree view controls", "CTreeCtrl class [MFC], vs. CTreeView class [MFC]", "CTreeView class [MFC], vs. CTreeCtrl class [MFC]", "tree controls [MFC], and tree view"]
-ms.assetid: bba5af25-103f-4b53-84d3-071bc9bd6494
 ---
 # CTreeCtrl vs. CTreeView
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 MFC provides two classes that encapsulate tree controls: [CTreeCtrl](reference/ctreectrl-class.md) and [CTreeView](reference/ctreeview-class.md). Each class is useful in different situations.
 

@@ -3,10 +3,12 @@ description: "Learn more about: Creating the List Control"
 title: "Creating the List Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CListCtrl class [MFC], creating control", "list controls [MFC]"]
-ms.assetid: a4cb1729-31b6-4d2b-a44b-367474848a39
 ms.topic: how-to
 ---
 # Creating the List Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 How the list control ([CListCtrl](reference/clistctrl-class.md)) is created depends on whether you're using the control directly or using class [CListView](reference/clistview-class.md) instead. If you use `CListView`, the framework constructs the view as part of its document/view creation sequence. Creating the list view creates the list control as well (the two are the same thing). The control is created in the view's [OnCreate](reference/cwnd-class.md#oncreate) handler function. In this case, the control is ready for you to add items, via a call to [GetListCtrl](reference/clistview-class.md#getlistctrl).
 

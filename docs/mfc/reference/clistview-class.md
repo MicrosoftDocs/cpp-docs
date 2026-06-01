@@ -4,9 +4,11 @@ title: "CListView Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CListView", "AFXCVIEW/CListView", "AFXCVIEW/CListView::CListView", "AFXCVIEW/CListView::GetListCtrl", "AFXCVIEW/CListView::RemoveImageList"]
 helpviewer_keywords: ["CListView [MFC], CListView", "CListView [MFC], GetListCtrl", "CListView [MFC], RemoveImageList"]
-ms.assetid: 7626bdb2-a1b8-4eab-b631-6743710a8432
 ---
 # CListView Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Simplifies use of the list control and of [CListCtrl](../../mfc/reference/clistctrl-class.md), the class that encapsulates list-control functionality, with MFC's document-view architecture.
 

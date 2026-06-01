@@ -4,9 +4,11 @@ title: "DHTML Event Maps"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.macros.shared"]
 helpviewer_keywords: ["event map macros [MFC]", "DHTML [MFC], event map macros", "macros [MFC], DHTML event map", "DHTML events [MFC], event map", "DHTML events [MFC]"]
-ms.assetid: 9a2c8ae7-7216-4a5e-bc60-6b98695be0c6
 ---
 # DHTML Event Maps
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following macros can be used to handle DHTML events.
 

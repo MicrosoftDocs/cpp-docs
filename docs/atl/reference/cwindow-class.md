@@ -7,6 +7,8 @@ helpviewer_keywords: ["CWindow class"]
 ---
 # `CWindow` Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 This class provides methods for manipulating a window.
 
 > [!IMPORTANT]

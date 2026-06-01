@@ -7,6 +7,9 @@ helpviewer_keywords: ["CBasePane [MFC], AccNotifyObjectFocusEvent", "CBasePane [
 ---
 # CBasePane Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Base class for all panes in MFC.
 
 ## Syntax

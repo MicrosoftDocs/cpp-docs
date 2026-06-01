@@ -4,9 +4,11 @@ title: "Creating a Forms-Based MFC Application"
 ms.date: "09/09/2019"
 f1_keywords: ["vc.appwiz.mfcforms.project"]
 helpviewer_keywords: ["applications [MFC], forms-based", "forms-based applications [MFC]"]
-ms.assetid: 048d2f7d-b60d-4386-ad8e-71d49af9c05e
 ---
 # Creating a Forms-Based MFC Application
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A form is a dialog box with controls that let a user access and possibly change data. You may want to develop an application in which the user selects from a selection of forms. Commonly, a forms-based application lets the user access forms by click **New** from the **File** menu. A dialog-based application, which does not give users access to a **New** option in the **File** menu, is also considered a forms-based application.
 

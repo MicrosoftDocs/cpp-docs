@@ -4,9 +4,11 @@ title: "COleCmdUI Class"
 ms.date: 07/24/2020
 f1_keywords: ["COleCmdUI", "AFXDOCOBJ/COleCmdUI", "AFXDOCOBJ/COleCmdUI::COleCmdUI", "AFXDOCOBJ/COleCmdUI::Enable", "AFXDOCOBJ/COleCmdUI::SetCheck", "AFXDOCOBJ/COleCmdUI::SetText"]
 helpviewer_keywords: ["COleCmdUI [MFC], COleCmdUI", "COleCmdUI [MFC], Enable", "COleCmdUI [MFC], SetCheck", "COleCmdUI [MFC], SetText"]
-ms.assetid: a2d5ce08-6657-45d3-8673-2a9f32d50eec
 ---
 # COleCmdUI Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements a method for MFC to update the state of user-interface objects related to the `IOleCommandTarget`-driven features of your application.
 

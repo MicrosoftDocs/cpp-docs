@@ -4,9 +4,11 @@ title: "CStatusBarCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CStatusBarCtrl", "AFXCMN/CStatusBarCtrl", "AFXCMN/CStatusBarCtrl::CStatusBarCtrl", "AFXCMN/CStatusBarCtrl::Create", "AFXCMN/CStatusBarCtrl::CreateEx", "AFXCMN/CStatusBarCtrl::DrawItem", "AFXCMN/CStatusBarCtrl::GetBorders", "AFXCMN/CStatusBarCtrl::GetIcon", "AFXCMN/CStatusBarCtrl::GetParts", "AFXCMN/CStatusBarCtrl::GetRect", "AFXCMN/CStatusBarCtrl::GetText", "AFXCMN/CStatusBarCtrl::GetTextLength", "AFXCMN/CStatusBarCtrl::GetTipText", "AFXCMN/CStatusBarCtrl::IsSimple", "AFXCMN/CStatusBarCtrl::SetBkColor", "AFXCMN/CStatusBarCtrl::SetIcon", "AFXCMN/CStatusBarCtrl::SetMinHeight", "AFXCMN/CStatusBarCtrl::SetParts", "AFXCMN/CStatusBarCtrl::SetSimple", "AFXCMN/CStatusBarCtrl::SetText", "AFXCMN/CStatusBarCtrl::SetTipText"]
 helpviewer_keywords: ["CStatusBarCtrl [MFC], CStatusBarCtrl", "CStatusBarCtrl [MFC], Create", "CStatusBarCtrl [MFC], CreateEx", "CStatusBarCtrl [MFC], DrawItem", "CStatusBarCtrl [MFC], GetBorders", "CStatusBarCtrl [MFC], GetIcon", "CStatusBarCtrl [MFC], GetParts", "CStatusBarCtrl [MFC], GetRect", "CStatusBarCtrl [MFC], GetText", "CStatusBarCtrl [MFC], GetTextLength", "CStatusBarCtrl [MFC], GetTipText", "CStatusBarCtrl [MFC], IsSimple", "CStatusBarCtrl [MFC], SetBkColor", "CStatusBarCtrl [MFC], SetIcon", "CStatusBarCtrl [MFC], SetMinHeight", "CStatusBarCtrl [MFC], SetParts", "CStatusBarCtrl [MFC], SetSimple", "CStatusBarCtrl [MFC], SetText", "CStatusBarCtrl [MFC], SetTipText"]
-ms.assetid: 8504ad38-7b91-4746-aede-ac98886eb47b
 ---
 # CStatusBarCtrl Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides the functionality of the Windows common status bar control.
 

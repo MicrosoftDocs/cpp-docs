@@ -4,9 +4,11 @@ title: "CAnimationColor Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAnimationColor", "AFXANIMATIONCONTROLLER/CAnimationColor", "AFXANIMATIONCONTROLLER/CAnimationColor::CAnimationColor", "AFXANIMATIONCONTROLLER/CAnimationColor::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationColor::GetB", "AFXANIMATIONCONTROLLER/CAnimationColor::GetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationColor::GetG", "AFXANIMATIONCONTROLLER/CAnimationColor::GetR", "AFXANIMATIONCONTROLLER/CAnimationColor::GetValue", "AFXANIMATIONCONTROLLER/CAnimationColor::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationColor::GetAnimationVariableList", "AFXANIMATIONCONTROLLER/CAnimationColor::m_bValue", "AFXANIMATIONCONTROLLER/CAnimationColor::m_gValue", "AFXANIMATIONCONTROLLER/CAnimationColor::m_rValue"]
 helpviewer_keywords: ["CAnimationColor [MFC], CAnimationColor", "CAnimationColor [MFC], AddTransition", "CAnimationColor [MFC], GetB", "CAnimationColor [MFC], GetDefaultValue", "CAnimationColor [MFC], GetG", "CAnimationColor [MFC], GetR", "CAnimationColor [MFC], GetValue", "CAnimationColor [MFC], SetDefaultValue", "CAnimationColor [MFC], GetAnimationVariableList", "CAnimationColor [MFC], m_bValue", "CAnimationColor [MFC], m_gValue", "CAnimationColor [MFC], m_rValue"]
-ms.assetid: 88bfabd4-efeb-4652-87e8-304253d8e48c
 ---
 # CAnimationColor Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements the functionality of a color whose red, green, and blue components can be animated.
 

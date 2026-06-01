@@ -2,9 +2,11 @@
 description: "Learn more about: Document/View Sample List"
 title: "Document-View Sample List"
 ms.date: "11/04/2016"
-ms.assetid: 6f087ce8-2f46-433c-b674-4c110743b289
 ---
 # Document/View Sample List
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 See the following sample programs that illustrate using MFC's document/view architecture in interesting ways:
 

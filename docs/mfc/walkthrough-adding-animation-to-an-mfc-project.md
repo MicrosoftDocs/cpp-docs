@@ -3,9 +3,11 @@ description: "Learn more about: Walkthrough: Adding Animation to an MFC Project"
 title: "Walkthrough: Adding Animation to an MFC Project"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["animation [MFC]", "MFC, animation"]
-ms.assetid: 004f832c-9fd5-4f88-9ca9-ae65dececdc2
 ---
 # Walkthrough: Adding Animation to an MFC Project
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This walkthrough teaches how to add a basic animated object to a Visual Studio, Microsoft Foundation Class Library (MFC) project.
 

@@ -3,9 +3,11 @@ description: "Learn more about: Menus (MFC)"
 title: "Menus (MFC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["menus [MFC], updating as context changes", "menus [MFC], MFC resources for working with", "menus [MFC], manipulating during execution", "menus [MFC]"]
-ms.assetid: 6a181495-47a9-4356-83fc-b89152d6cb4c
 ---
 # Menus (MFC)
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 MFC supplies two elements to help you work with menus:
 

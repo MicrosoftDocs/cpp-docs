@@ -4,9 +4,10 @@ title: "CComCritSecLock Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComCritSecLock", "ATLBASE/ATL::CComCritSecLock", "ATLBASE/ATL::CComCritSecLock::CComCritSecLock", "ATLBASE/ATL::CComCritSecLock::Lock", "ATLBASE/ATL::CComCritSecLock::Unlock"]
 helpviewer_keywords: ["CComCritSecLock class"]
-ms.assetid: 223152a1-86c3-4ef9-89a7-f455fe791b0e
 ---
 # CComCritSecLock Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods for locking and unlocking a critical section object.
 

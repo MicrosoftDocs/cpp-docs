@@ -3,9 +3,11 @@ description: "Learn more about: Form Views (MFC)"
 title: "Form Views (MFC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["user interfaces [MFC], forms", "forms [MFC]", "applications [MFC], forms-based", "forms-based applications [MFC]", "forms [MFC], adding to applications"]
-ms.assetid: efbe73c1-4ca4-4613-aac2-30d916e92c0e
 ---
 # Form Views (MFC)
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 You can add forms to any Visual C++ application that supports the MFC libraries, including a [forms-based application](reference/creating-a-forms-based-mfc-application.md) (one whose view class is derived from `CFormView`). If you did not initially create your application to support forms, Visual Studio will add this support for you when you insert a new form. In an SDI or MDI application, which implements the default [document/view architecture](document-view-architecture.md), when the user chooses the **New** command (by default, on the **File** menu), Visual Studio prompts the user to choose from the available forms.
 

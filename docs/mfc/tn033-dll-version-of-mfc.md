@@ -6,6 +6,9 @@ helpviewer_keywords: ["MFC DLLs [MFC], writing MFC extension DLLS", "AFXDLL libr
 ---
 # TN033: DLL Version of MFC
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 This note describes how you can use the *`MFCxx.DLL`* and *`MFCxxD.DLL`* (where *xx* is the MFC version number) shared dynamic link libraries with MFC applications and MFC extension DLLs. For more information about regular MFC DLLs, see [Using MFC as Part of a DLL](../mfc/tn011-using-mfc-as-part-of-a-dll.md).
 
 This technical note covers three aspects of DLLs. The last two are for the more advanced users:

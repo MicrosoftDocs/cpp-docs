@@ -1,30 +1,12 @@
 ---
-description: "Learn more about: concurrency namespace Operators"
 title: "concurrency namespace Operators"
-ms.date: "11/04/2016"
+description: "Learn more about: concurrency namespace Operators"
+ms.date: 11/04/2016
 f1_keywords: ["concrt/concurrency::operator!=", "concrt/concurrency::operator&&"]
-ms.assetid: 8e373f23-fc8e-49f7-82e6-ba0c57b822f8
 ---
 # concurrency namespace Operators
 
-:::row:::
-   :::column span="":::
-      [`operator||`](#operator_lor)\
-      [`operator&&`](#operator_amp_amp)
-   :::column-end:::
-   :::column span="":::
-      [`operator==`](#operator_eq_eq)\
-      [`operator!=`](#operator_neq)
-   :::column-end:::
-   :::column span="":::
-      [`operator<`](#operator_lt)\
-      [`operator<=`](#operator_lt_eq)
-   :::column-end:::
-   :::column span="":::
-      [`operator>`](#operator_gt)\
-      [`operator>=`](#operator_gt_eq)
-   :::column-end:::
-:::row-end:::
+The following operators are available in the `concurrency` namespace:
 
 ## <a name="operator_lor"></a> `operator||` Operator
 

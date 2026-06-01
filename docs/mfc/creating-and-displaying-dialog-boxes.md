@@ -3,10 +3,12 @@ description: "Learn more about: Creating and Displaying Dialog Boxes"
 title: "Creating and Displaying Dialog Boxes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["modal dialog boxes [MFC], creating", "opening dialog boxes", "modeless dialog boxes [MFC], creating", "MFC dialog boxes [MFC], creating", "MFC dialog boxes [MFC], displaying"]
-ms.assetid: 1c5219ee-8b46-44bc-9708-83705d4f248b
 ms.topic: concept-article
 ---
 # Creating and Displaying Dialog Boxes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Creating a dialog object is a two-phase operation. First, construct the dialog object, then create the dialog window. Modal and modeless dialog boxes differ somewhat in the process used to create and display them. The following table lists how modal and modeless dialog boxes are normally constructed and displayed.
 

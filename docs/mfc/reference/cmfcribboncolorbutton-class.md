@@ -4,9 +4,11 @@ title: "CMFCRibbonColorButton Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonColorButton", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::CMFCRibbonColorButton", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::AddColorsGroup", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::EnableAutomaticButton", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::EnableOtherButton", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::GetAutomaticColor", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::GetColor", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::GetColorBoxSize", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::GetColumns", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::GetHighlightedColor", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::RemoveAllColorGroups", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetColor", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetColorBoxSize", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetColorName", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetColumns", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetDocumentColors", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetPalette", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::UpdateColor"]
 helpviewer_keywords: ["CMFCRibbonColorButton [MFC], CMFCRibbonColorButton", "CMFCRibbonColorButton [MFC], AddColorsGroup", "CMFCRibbonColorButton [MFC], EnableAutomaticButton", "CMFCRibbonColorButton [MFC], EnableOtherButton", "CMFCRibbonColorButton [MFC], GetAutomaticColor", "CMFCRibbonColorButton [MFC], GetColor", "CMFCRibbonColorButton [MFC], GetColorBoxSize", "CMFCRibbonColorButton [MFC], GetColumns", "CMFCRibbonColorButton [MFC], GetHighlightedColor", "CMFCRibbonColorButton [MFC], RemoveAllColorGroups", "CMFCRibbonColorButton [MFC], SetColor", "CMFCRibbonColorButton [MFC], SetColorBoxSize", "CMFCRibbonColorButton [MFC], SetColorName", "CMFCRibbonColorButton [MFC], SetColumns", "CMFCRibbonColorButton [MFC], SetDocumentColors", "CMFCRibbonColorButton [MFC], SetPalette", "CMFCRibbonColorButton [MFC], UpdateColor"]
-ms.assetid: 6b4b4ee3-8cc0-41b4-a4eb-93e8847008e1
 ---
 # CMFCRibbonColorButton Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCRibbonColorButton` class implements a color button that you can add to a ribbon bar. The ribbon color button displays a drop-down menu that contains one or more color palettes.
 

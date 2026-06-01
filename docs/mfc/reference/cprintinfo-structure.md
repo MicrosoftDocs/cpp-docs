@@ -4,9 +4,11 @@ title: "CPrintInfo Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["CPrintInfo"]
 helpviewer_keywords: ["CPrintInfo structure [MFC]"]
-ms.assetid: 0b3de849-d050-4386-9a14-f4c1a25684f7
 ---
 # CPrintInfo Structure
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Stores information about a print or print-preview job.
 

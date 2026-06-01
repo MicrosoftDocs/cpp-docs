@@ -4,9 +4,11 @@ title: "ExitInstance Member Function"
 ms.date: "11/04/2016"
 f1_keywords: []
 helpviewer_keywords: ["programs [MFC], terminating", "CWinApp class [MFC], ExitInstance", "ExitInstance method [MFC]"]
-ms.assetid: 5bb597bd-8dab-4d49-8bcf-9c45aa8be4a2
 ---
 # ExitInstance Member Function
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The [ExitInstance](reference/cwinapp-class.md#exitinstance) member function of class [CWinApp](reference/cwinapp-class.md) is called each time a copy of your application terminates, usually as a result of the user quitting the application.
 

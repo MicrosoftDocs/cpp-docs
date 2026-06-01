@@ -6,6 +6,9 @@ helpviewer_keywords: ["delegate map macros [MFC]", "event map macros [MFC]", "in
 ---
 # Delegate and interface map macros
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 MFC supports these macros for delegate and interface maps:
 
 |Name|Description|

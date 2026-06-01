@@ -3,10 +3,11 @@ description: "Learn more about: Threading Models and Critical Sections Classes"
 title: "Threading Models and Critical Sections Classes (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, critical sections", "ATL, multithreading", "threading [ATL], models", "critical sections"]
-ms.assetid: 759f05ef-6285-4be6-a2cc-78572dd75146
 ms.topic: concept-article
 ---
 # Threading Models and Critical Sections Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The following classes define a threading model and critical section:
 

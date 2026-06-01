@@ -4,9 +4,11 @@ title: "CMFCRibbonLabel Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonLabel", "AFXRIBBONLABEL/CMFCRibbonLabel", "AFXRIBBONLABEL/CMFCRibbonLabel::CMFCRibbonLabel", "AFXRIBBONLABEL/CMFCRibbonLabel::SetACCData"]
 helpviewer_keywords: ["CMFCRibbonLabel [MFC], CMFCRibbonLabel", "CMFCRibbonLabel [MFC], SetACCData"]
-ms.assetid: 0346c891-83bf-4f20-b8a1-c84cf2aadced
 ---
 # CMFCRibbonLabel Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements a non-clickable text label for a ribbon.
 

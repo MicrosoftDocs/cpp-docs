@@ -4,9 +4,11 @@ title: "CMFCRibbonApplicationButton Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton::CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton::SetImage"]
 helpviewer_keywords: ["CMFCRibbonApplicationButton [MFC], CMFCRibbonApplicationButton", "CMFCRibbonApplicationButton [MFC], SetImage"]
-ms.assetid: beb81757-fabd-4641-9130-876ba8505b78
 ---
 # CMFCRibbonApplicationButton Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements a special button located in the top-left corner of the application window. When clicked, the button opens a menu that usually contains common **File** commands like **Open**, **Save**, and **Exit**.
 

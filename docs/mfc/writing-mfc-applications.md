@@ -3,10 +3,12 @@ description: "Learn more about: Writing MFC Applications"
 title: "Writing MFC Applications"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["Internet applications [MFC], MFC", "MFC, Internet applications", "application wizards [MFC], Internet applications", "MFC, application development"]
-ms.assetid: 6a8d8a03-abfa-4976-86c2-c5773a4b7179
 ms.topic: concept-article
 ---
 # Writing MFC Applications
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains the initial steps you take to develop your application. First, you must decide what kind of application you are writing. Several of the choices were discussed in [Application Design Choices](../mfc/application-design-choices.md). Will your application be:
 

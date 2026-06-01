@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMFCPropertyGridProperty [MFC], CMFCPropertyGridProperty"
 ---
 # `CMFCPropertyGridProperty` class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 A `CMFCPropertyGridProperty` object represents a list item in a property list control.
 
    For more detail, see the source code located in the **`mfc`** folder of your Visual Studio installation. For example, `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\atlmfc\src\mfc`.

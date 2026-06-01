@@ -4,9 +4,11 @@ title: "CMFCSpinButtonCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCSpinButtonCtrl", "AFXSPINBUTTONCTRL/CMFCSpinButtonCtrl", "AFXSPINBUTTONCTRL/CMFCSpinButtonCtrl::OnDraw"]
 helpviewer_keywords: ["CMFCSpinButtonCtrl [MFC], OnDraw"]
-ms.assetid: 8773f259-4d3f-4bca-a71c-09e0c71bc843
 ---
 # CMFCSpinButtonCtrl Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCSpinButtonCtrl` class supports a visual manager that draws a spin button control.
 

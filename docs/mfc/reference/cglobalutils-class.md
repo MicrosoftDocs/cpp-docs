@@ -4,9 +4,11 @@ title: "CGlobalUtils Class"
 ms.date: "10/18/2018"
 f1_keywords: ["CGlobalUtils", "AFXGLOBALUTILS/CGlobalUtils", "AFXGLOBALUTILS/CGlobalUtils::AdjustRectToWorkArea", "AFXGLOBALUTILS/CGlobalUtils::CalcExpectedDockedRect", "AFXGLOBALUTILS/CGlobalUtils::CanBeAttached", "AFXGLOBALUTILS/CGlobalUtils::CanPaneBeInFloatingMultiPaneFrameWnd", "AFXGLOBALUTILS/CGlobalUtils::CheckAlignment", "AFXGLOBALUTILS/CGlobalUtils::CyFromString", "AFXGLOBALUTILS/CGlobalUtils::DecimalFromString", "AFXGLOBALUTILS/CGlobalUtils::FlipRect", "AFXGLOBALUTILS/CGlobalUtils::ForceAdjustLayout", "AFXGLOBALUTILS/CGlobalUtils::GetDockingManager", "AFXGLOBALUTILS/CGlobalUtils::GetOppositeAlignment", "AFXGLOBALUTILS/CGlobalUtils::GetPaneAndAlignFromPoint", "AFXGLOBALUTILS/CGlobalUtils::GetWndIcon", "AFXGLOBALUTILS/CGlobalUtils::SetNewParent", "AFXGLOBALUTILS/CGlobalUtils::StringFromCy", "AFXGLOBALUTILS/CGlobalUtils::StringFromDecimal"]
 helpviewer_keywords: ["CGlobalUtils [MFC], AdjustRectToWorkArea", "CGlobalUtils [MFC], CalcExpectedDockedRect", "CGlobalUtils [MFC], CanBeAttached", "CGlobalUtils [MFC], CanPaneBeInFloatingMultiPaneFrameWnd", "CGlobalUtils [MFC], CheckAlignment", "CGlobalUtils [MFC], CyFromString", "CGlobalUtils [MFC], DecimalFromString", "CGlobalUtils [MFC], FlipRect", "CGlobalUtils [MFC], ForceAdjustLayout", "CGlobalUtils [MFC], GetDockingManager", "CGlobalUtils [MFC], GetOppositeAlignment", "CGlobalUtils [MFC], GetPaneAndAlignFromPoint", "CGlobalUtils [MFC], GetWndIcon", "CGlobalUtils [MFC], SetNewParent", "CGlobalUtils [MFC], StringFromCy", "CGlobalUtils [MFC], StringFromDecimal"]
-ms.assetid: 2c5bd1a6-f80c-4e79-a476-b4ceebabfb2f
 ---
 # CGlobalUtils Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.
 

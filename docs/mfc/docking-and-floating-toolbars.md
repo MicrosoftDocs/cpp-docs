@@ -4,10 +4,12 @@ title: "Docking and Floating Toolbars"
 ms.date: "11/04/2016"
 f1_keywords: ["CBRS_SIZE_DYNAMIC", "CBRS_SIZE_FIXED"]
 helpviewer_keywords: ["size [MFC], toolbars", "size", "frame windows [MFC], toolbar docking", "CBRS_ALIGN_ANY constant [MFC]", "palettes, floating", "toolbars [MFC], docking", "CBRS_SIZE_DYNAMIC constant [MFC]", "floating toolbars", "toolbars [MFC], size", "toolbars [MFC], floating", "fixed-size toolbars", "CBRS_SIZE_FIXED constant [MFC]", "toolbar controls [MFC], wrapping", "toolbars [MFC], wrapping", "floating palettes"]
-ms.assetid: b7f9f9d4-f629-47d2-a3c4-2b33fa6b51e4
 ms.topic: concept-article
 ---
 # Docking and Floating Toolbars
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The Microsoft Foundation Class Library supports dockable toolbars. A dockable toolbar can be attached, or docked, to any side of its parent window, or it can be detached, or floated, in its own mini-frame window. This article explains how to use dockable toolbars in your applications.
 

@@ -7,6 +7,9 @@ helpviewer_keywords: ["CException [MFC], CException", "CException [MFC], Delete"
 ---
 # `CException` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The base class for all exceptions in the Microsoft Foundation Class Library.
 
 ## Syntax

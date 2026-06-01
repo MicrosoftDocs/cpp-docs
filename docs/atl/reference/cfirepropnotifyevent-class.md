@@ -4,9 +4,10 @@ title: "CFirePropNotifyEvent Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CFirePropNotifyEvent", "ATLCTL/ATL::CFirePropNotifyEvent", "ATLCTL/ATL::CFirePropNotifyEvent::FireOnChanged", "ATLCTL/ATL::CFirePropNotifyEvent::FireOnRequestEdit"]
 helpviewer_keywords: ["sinks, notifying of ATL events", "CFirePropNotifyEvent class", "connection points [C++], notifying of events"]
-ms.assetid: eb7a563e-6bce-4cdf-8d20-8c6a5307781b
 ---
 # CFirePropNotifyEvent Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods for notifying the container's sink regarding control property changes.
 

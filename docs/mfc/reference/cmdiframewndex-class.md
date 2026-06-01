@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMDIFrameWndEx [MFC], ActiveItemRecalcLayout", "CMDIFrame
 ---
 # `CMDIFrameWndEx` class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Extends the functionality of [`CMDIFrameWnd`](../../mfc/reference/cframewnd-class.md), a Windows Multiple Document Interface (MDI) frame window.
 
 ## Syntax

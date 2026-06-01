@@ -3,9 +3,10 @@ description: "Learn more about: Marshaling Global Functions"
 title: "Marshaling Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlbase/ATL::AtlFreeMarshalStream", "atlbase/ATL::AtlMarshalPtrInProc", "atlbase/ATL::AtlUnmarshalPtr"]
-ms.assetid: 877100b5-6ad9-44c5-a2e0-09414f1720d0
 ---
 # Marshaling Global Functions
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These functions provide support for marshaling and converting marshaling data into interface pointers.
 

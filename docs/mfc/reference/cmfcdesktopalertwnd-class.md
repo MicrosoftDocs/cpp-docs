@@ -4,9 +4,11 @@ title: "CMFCDesktopAlertWnd Class"
 ms.date: "10/18/2018"
 f1_keywords: ["CMFCDesktopAlertWnd", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::Create", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetAnimationSpeed", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetAnimationType", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetAutoCloseTime", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetCaptionHeight", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetDialogSize", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetLastPos", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetTransparency", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::HasSmallCaption", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::OnBeforeShow", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::OnClickLinkButton", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::OnCommand", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::OnDraw", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::ProcessCommand", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetAnimationSpeed", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetAnimationType", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetAutoCloseTime", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetSmallCaption", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetTransparency"]
 helpviewer_keywords: ["CMFCDesktopAlertWnd [MFC], Create", "CMFCDesktopAlertWnd [MFC], GetAnimationSpeed", "CMFCDesktopAlertWnd [MFC], GetAnimationType", "CMFCDesktopAlertWnd [MFC], GetAutoCloseTime", "CMFCDesktopAlertWnd [MFC], GetCaptionHeight", "CMFCDesktopAlertWnd [MFC], GetDialogSize", "CMFCDesktopAlertWnd [MFC], GetLastPos", "CMFCDesktopAlertWnd [MFC], GetTransparency", "CMFCDesktopAlertWnd [MFC], HasSmallCaption", "CMFCDesktopAlertWnd [MFC], OnBeforeShow", "CMFCDesktopAlertWnd [MFC], OnClickLinkButton", "CMFCDesktopAlertWnd [MFC], OnCommand", "CMFCDesktopAlertWnd [MFC], OnDraw", "CMFCDesktopAlertWnd [MFC], ProcessCommand", "CMFCDesktopAlertWnd [MFC], SetAnimationSpeed", "CMFCDesktopAlertWnd [MFC], SetAnimationType", "CMFCDesktopAlertWnd [MFC], SetAutoCloseTime", "CMFCDesktopAlertWnd [MFC], SetSmallCaption", "CMFCDesktopAlertWnd [MFC], SetTransparency"]
-ms.assetid: 73a2dd7b-ea84-4ae2-9830-7cf6e8dd2425
 ---
 # CMFCDesktopAlertWnd Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCDesktopAlertWnd` class implements the functionality of a modeless dialog box which appears on the screen to inform the user about an event.
 

@@ -3,9 +3,11 @@ description: "Learn more about: Dispatch Maps"
 title: "Dispatch Maps"
 ms.date: "06/20/2018"
 helpviewer_keywords: ["dispatch maps [MFC], macros", "dispatch maps [MFC]", "dispatch map macros [MFC]"]
-ms.assetid: bef9d08b-ad35-4c3a-99d8-04150c7c04e2
 ---
 # Dispatch Maps
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 OLE Automation provides ways to call methods and to access properties across applications. The mechanism supplied by the Microsoft Foundation Class Library for dispatching these requests is the "dispatch map," which designates the internal and external names of object functions and properties, as well as the data types of the properties themselves and of function arguments.
 

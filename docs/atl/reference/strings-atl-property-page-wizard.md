@@ -4,9 +4,10 @@ title: "Strings, ATL Property Page Wizard"
 ms.date: "05/09/2019"
 f1_keywords: ["vc.codewiz.class.atl.ppg.strings"]
 helpviewer_keywords: ["ATL Property Page Wizard, strings"]
-ms.assetid: 00547db6-911f-49eb-92e1-2ba67079d4df
 ---
 # Strings, ATL Property Page Wizard
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 ::: moniker range=">=msvc-160"
 

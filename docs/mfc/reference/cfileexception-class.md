@@ -7,6 +7,9 @@ helpviewer_keywords: ["CFileException [MFC], CFileException", "CFileException [M
 ---
 # `CFileException` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Represents a file-related exception condition.
 
 ## Syntax

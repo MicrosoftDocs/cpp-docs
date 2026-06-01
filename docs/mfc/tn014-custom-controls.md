@@ -7,6 +7,9 @@ helpviewer_keywords: ["TN014", "custom controls [MFC]"]
 ---
 # TN014: Custom Controls
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 This note describes the MFC Support for custom and self-drawing controls. It also describes dynamic subclassing, and describes the relationship between [CWnd](../mfc/reference/cwnd-class.md) objects and `HWND`s.
 
 The MFC sample application CTRLTEST illustrates how to use many custom controls. See the source code for the MFC General sample [CTRLTEST](../overview/visual-cpp-samples.md) and online help.

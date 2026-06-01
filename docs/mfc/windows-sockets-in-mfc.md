@@ -3,9 +3,11 @@ description: "Learn more about: Windows Sockets in MFC"
 title: "Windows Sockets in MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["WINSOCK.DLL", "sockets [MFC], programming models", "MFC, Windows Sockets", "Windows Sockets [MFC], MFC support", "Windows Sockets [MFC], programming models", "WSOCK32.DLL", "sockets [MFC], MFC"]
-ms.assetid: 1f3c476a-9c68-49fe-9a25-d22971a334d0
 ---
 # Windows Sockets in MFC
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > MFC supports Windows Sockets 1 but does not support [Windows Sockets 2](/windows/win32/WinSock/windows-sockets-start-page-2). Windows Sockets 2 first shipped with Windows 98 and is the version included with Windows 2000.

@@ -7,6 +7,9 @@ helpviewer_keywords: ["CDocObjectServer [MFC], CDocObjectServer", "CDocObjectSer
 ---
 # CDocObjectServer Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Implements the additional OLE interfaces needed to make a normal `COleDocument` server into a full DocObject server: `IOleDocument`, `IOleDocumentView`, `IOleCommandTarget`, and `IPrint`.
 
 ## Syntax

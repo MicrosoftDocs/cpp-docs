@@ -3,10 +3,11 @@ description: "Learn more about: ATL Collection Classes"
 title: "ATL collection class overview"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["DestructElements function", "collection classes, choosing", "ConstructElements function", "SerializeElements function", "traits classes", "collection classes, about collection classes", "CTraits classes", "collection classes"]
-ms.assetid: 4d619d46-5b4e-41dd-b9fd-e86b1fbc00b5
 ms.topic: concept-article
 ---
 # ATL Collection Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 ATL provides many classes for storing and accessing data. Which class you decide to use depends on several factors, including:
 

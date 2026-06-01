@@ -3,9 +3,11 @@ description: "Learn more about: MFC ActiveX Controls: Adding Custom Methods"
 title: "MFC ActiveX Controls: Adding Custom Methods"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], methods", "PtInCircle custom method [MFC]"]
-ms.assetid: 8f8dc344-44a0-4021-8db5-4cdd3d700e18
 ---
 # MFC ActiveX Controls: Adding Custom Methods
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Custom methods differ from stock methods in that they are not already implemented by `COleControl`. You must supply the implementation for each custom method you add to your control.
 

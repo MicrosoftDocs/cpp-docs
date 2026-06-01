@@ -6,6 +6,9 @@ helpviewer_keywords: ["object creation [MFC], dynamically at run time", "CObject
 ---
 # Dynamic Object Creation
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 This article explains how to create an object dynamically at run time. The procedure uses run-time class information, as discussed in the article [Accessing Run-Time Class Information](accessing-run-time-class-information.md).
 
 #### Dynamically create an object given its run-time class

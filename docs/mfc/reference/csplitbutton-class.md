@@ -4,9 +4,11 @@ title: "CSplitButton Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CSplitButton", "AFXCMN/CSplitButton", "AFXCMN/CSplitButton::CSplitButton", "AFXCMN/CSplitButton::Create", "AFXCMN/CSplitButton::SetDropDownMenu", "AFXCMN/CSplitButton::OnDropDown"]
 helpviewer_keywords: ["CSplitButton [MFC], CSplitButton", "CSplitButton [MFC], Create", "CSplitButton [MFC], SetDropDownMenu", "CSplitButton [MFC], OnDropDown"]
-ms.assetid: 6844d0a9-6408-4e44-9b5f-57628ed8bad6
 ---
 # CSplitButton Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CSplitButton` class represents a split button control. The split button control performs a default behavior when a user clicks the main part of the button, and displays a drop-down menu when a user clicks the drop-down arrow of the button.
 

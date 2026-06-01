@@ -4,9 +4,11 @@ title: "Advanced Features, MFC Application Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.exe.advanced"]
 helpviewer_keywords: ["MFC Application Wizard, advanced features"]
-ms.assetid: 8a6681c5-6576-4b12-841a-6862beee76fa
 ---
 # Advanced Features, MFC Application Wizard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This topic lists options for additional features for your application, such as Help, printing support, and so on. In each section, specify additional support for these advanced features.
 

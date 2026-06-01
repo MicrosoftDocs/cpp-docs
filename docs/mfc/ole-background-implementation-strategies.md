@@ -3,9 +3,11 @@ description: "Learn more about: OLE Background: Implementation Strategies"
 title: "OLE Background: Implementation Strategies"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE [MFC], development strategy", "OLE applications [MFC], implementing OLE", "applications [OLE], implementing OLE"]
-ms.assetid: 0875ddae-99df-488c-82c6-164074a81058
 ---
 # OLE Background: Implementation Strategies
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Depending on your application, there are four possible implementation strategies for adding OLE support:
 

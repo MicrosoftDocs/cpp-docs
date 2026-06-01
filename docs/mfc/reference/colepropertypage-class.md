@@ -4,9 +4,11 @@ title: "COlePropertyPage Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COlePropertyPage", "AFXCTL/COlePropertyPage", "AFXCTL/COlePropertyPage::COlePropertyPage", "AFXCTL/COlePropertyPage::GetControlStatus", "AFXCTL/COlePropertyPage::GetObjectArray", "AFXCTL/COlePropertyPage::GetPageSite", "AFXCTL/COlePropertyPage::OVERWRITEApply", "AFXCTL/COlePropertyPage::IsModified", "AFXCTL/COlePropertyPage::OnEditProperty", "AFXCTL/COlePropertyPage::OnHelp", "AFXCTL/COlePropertyPage::OnInitDialog", "AFXCTL/COlePropertyPage::OnObjectsChanged", "AFXCTL/COlePropertyPage::OnSetPageSite", "AFXCTL/COlePropertyPage::SetControlStatus", "AFXCTL/COlePropertyPage::SetDialogResource", "AFXCTL/COlePropertyPage::SetHelpInfo", "AFXCTL/COlePropertyPage::SetModifiedFlag", "AFXCTL/COlePropertyPage::SetPageName"]
 helpviewer_keywords: ["COlePropertyPage [MFC], COlePropertyPage", "COlePropertyPage [MFC], GetControlStatus", "COlePropertyPage [MFC], GetObjectArray", "COlePropertyPage [MFC], GetPageSite", "COlePropertyPage [MFC], IgnoreApply", "COlePropertyPage [MFC], IsModified", "COlePropertyPage [MFC], OnEditProperty", "COlePropertyPage [MFC], OnHelp", "COlePropertyPage [MFC], OnInitDialog", "COlePropertyPage [MFC], OnObjectsChanged", "COlePropertyPage [MFC], OnSetPageSite", "COlePropertyPage [MFC], SetControlStatus", "COlePropertyPage [MFC], SetDialogResource", "COlePropertyPage [MFC], SetHelpInfo", "COlePropertyPage [MFC], SetModifiedFlag", "COlePropertyPage [MFC], SetPageName"]
-ms.assetid: e9972872-8e6b-4550-905e-d36a274d64dc
 ---
 # COlePropertyPage Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Used to display the properties of a custom control in a graphical interface, similar to a dialog box.
 

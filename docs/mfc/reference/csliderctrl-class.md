@@ -7,6 +7,9 @@ helpviewer_keywords: ["CSliderCtrl [MFC], CSliderCtrl", "CSliderCtrl [MFC], Clea
 ---
 # `CSliderCtrl` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Provides the functionality of the Windows common slider control.
 
 ## Syntax

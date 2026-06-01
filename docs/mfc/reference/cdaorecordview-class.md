@@ -7,6 +7,9 @@ helpviewer_keywords: ["CDaoRecordView [MFC], CDaoRecordView", "CDaoRecordView [M
 ---
 # CDaoRecordView Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 A view that displays database records in controls.
 
 > [!NOTE]

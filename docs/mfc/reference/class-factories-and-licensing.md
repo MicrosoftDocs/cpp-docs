@@ -3,9 +3,11 @@ description: "Learn more about: Class Factories and Licensing"
 title: "Class Factories and Licensing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["class factories [MFC], and licensing"]
-ms.assetid: 53c4856a-4062-46db-9f69-dd4339f746b3
 ---
 # Class Factories and Licensing
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 To create an instance of your OLE control, a container application calls a member function of the control's class factory. Because your control is an actual OLE object, the class factory is responsible for creating instances of your control. Every OLE control class must have a class factory.
 

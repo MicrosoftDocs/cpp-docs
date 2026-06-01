@@ -4,10 +4,12 @@ title: "Using Drop-Down Buttons in a Toolbar Control"
 ms.date: "11/04/2016"
 f1_keywords: ["TBN_DROPDOWN", "TBSTYLE_EX_DRAWDDARROWS"]
 helpviewer_keywords: ["CToolBarCtrl class [MFC], drop-down buttons", "toolbars [MFC], drop-down buttons", "drop-down buttons in toolbars", "TBSTYLE_EX_DRAWDDARROWS", "TBN_DROPDOWN notification [MFC]"]
-ms.assetid: b859f758-d2f6-40d9-9c26-0ff61993b9b2
 ms.topic: how-to
 ---
 # Using Drop-Down Buttons in a Toolbar Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 In addition to standard push buttons, a toolbar can also have drop-down buttons. A drop-down button is usually indicated by the presence of an attached down arrow.
 

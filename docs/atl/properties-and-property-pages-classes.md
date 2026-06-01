@@ -4,9 +4,10 @@ title: "Properties and Property Pages Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["property pages, classes", "properties [ATL], classes", "properties [ATL]"]
-ms.assetid: 31616f98-69f8-48b2-8d58-b8e7d1c2b2d8
 ---
 # Properties and Property Pages Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The following classes support properties and property pages:
 

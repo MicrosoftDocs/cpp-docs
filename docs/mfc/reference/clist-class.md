@@ -4,9 +4,11 @@ title: "CList Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CList", "AFXTEMPL/CList", "AFXTEMPL/CList::CList", "AFXTEMPL/CList::AddHead", "AFXTEMPL/CList::AddTail", "AFXTEMPL/CList::Find", "AFXTEMPL/CList::FindIndex", "AFXTEMPL/CList::GetAt", "AFXTEMPL/CList::GetCount", "AFXTEMPL/CList::GetHead", "AFXTEMPL/CList::GetHeadPosition", "AFXTEMPL/CList::GetNext", "AFXTEMPL/CList::GetPrev", "AFXTEMPL/CList::GetSize", "AFXTEMPL/CList::GetTail", "AFXTEMPL/CList::GetTailPosition", "AFXTEMPL/CList::InsertAfter", "AFXTEMPL/CList::InsertBefore", "AFXTEMPL/CList::IsEmpty", "AFXTEMPL/CList::RemoveAll", "AFXTEMPL/CList::RemoveAt", "AFXTEMPL/CList::RemoveHead", "AFXTEMPL/CList::RemoveTail", "AFXTEMPL/CList::SetAt"]
 helpviewer_keywords: ["CList [MFC], CList", "CList [MFC], AddHead", "CList [MFC], AddTail", "CList [MFC], Find", "CList [MFC], FindIndex", "CList [MFC], GetAt", "CList [MFC], GetCount", "CList [MFC], GetHead", "CList [MFC], GetHeadPosition", "CList [MFC], GetNext", "CList [MFC], GetPrev", "CList [MFC], GetSize", "CList [MFC], GetTail", "CList [MFC], GetTailPosition", "CList [MFC], InsertAfter", "CList [MFC], InsertBefore", "CList [MFC], IsEmpty", "CList [MFC], RemoveAll", "CList [MFC], RemoveAt", "CList [MFC], RemoveHead", "CList [MFC], RemoveTail", "CList [MFC], SetAt"]
-ms.assetid: 6f6273c3-c8f6-47f5-ac2a-0a950379ae5d
 ---
 # `CList` Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Supports ordered lists of nonunique objects accessible sequentially or by value.
 

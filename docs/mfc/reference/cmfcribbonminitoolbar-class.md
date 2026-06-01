@@ -4,9 +4,11 @@ title: "CMFCRibbonMiniToolBar Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonMiniToolBar", "AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar", "AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::IsContextMenuMode", "AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::IsRibbonMiniToolBar", "AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::SetCommands", "AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::Show", "AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::ShowWithContextMenu"]
 helpviewer_keywords: ["CMFCRibbonMiniToolBar [MFC], IsContextMenuMode", "CMFCRibbonMiniToolBar [MFC], IsRibbonMiniToolBar", "CMFCRibbonMiniToolBar [MFC], SetCommands", "CMFCRibbonMiniToolBar [MFC], Show", "CMFCRibbonMiniToolBar [MFC], ShowWithContextMenu"]
-ms.assetid: 7017e963-aeaf-4fe9-b540-e15a7ed41e94
 ---
 # CMFCRibbonMiniToolBar Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements a contextual popup toolbar.
 

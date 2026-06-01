@@ -4,9 +4,10 @@ title: "CComHeapPtr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComHeapPtr", "ATLBASE/ATL::CComHeapPtr", "ATLBASE/ATL::CComHeapPtr::CComHeapPtr"]
 helpviewer_keywords: ["CComHeapPtr class"]
-ms.assetid: bd08b53d-da2b-43ab-a79c-e7c8dbbc5994
 ---
 # CComHeapPtr Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 A smart pointer class for managing heap pointers.
 

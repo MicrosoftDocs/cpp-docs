@@ -3,9 +3,11 @@ description: "Learn more about: Menus and Resources: Server Additions"
 title: "Menus and Resources: Server Additions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE visual editing servers [MFC]", "accelerator tables [MFC], server applications", "visual editing [MFC], application menus and resources", "server applications [MFC], accelerator table", "string tables [MFC], visual editing applications", "servers [MFC], menu additions", "resources [MFC], server applications", "OLE server applications [MFC], menus and resources", "string editing [MFC], visual editing applications", "IDP_OLE_INIT_FAILED macro [MFC]", "server applications [MFC], OLE menus and resources", "OLE initialization failure [MFC]"]
-ms.assetid: 56ce9e8d-8f41-4db8-8dee-e8b0702d057c
 ---
 # Menus and Resources: Server Additions
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains the changes that need to be made to the menus and other resources in a visual editing server (component) application. A server application requires many additions to the menu structure and other resources because it can be started in one of three modes: stand alone, embedded, or in place. As described in the [Menus and Resources (OLE)](menus-and-resources-ole.md) article, there are a maximum of four sets of menus. All four are used for an MDI full-server application, while only three are used for a miniserver. The application wizard will create the menu layout necessary for the type of server you want. Some customization may be necessary.
 

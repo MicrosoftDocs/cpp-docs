@@ -7,6 +7,9 @@ helpviewer_keywords: ["CObList [MFC], CObList", "CObList [MFC], AddHead", "CObLi
 ---
 # `CObList` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Supports ordered lists of nonunique `CObject` pointers accessible sequentially or by pointer value.
 
 ## Syntax

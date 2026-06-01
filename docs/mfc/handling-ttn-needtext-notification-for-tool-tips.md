@@ -4,10 +4,12 @@ title: "Handling TTN_NEEDTEXT Notification for Tool Tips"
 ms.date: "11/04/2016"
 f1_keywords: ["TTN_NEEDTEXT"]
 helpviewer_keywords: ["TTN_NEEDTEXT message [MFC]", "notifications [MFC], tool tips", "tool tips [MFC], notifications"]
-ms.assetid: d0370a65-21ba-4676-bcc5-8cf851bbb15c
 ms.topic: concept-article
 ---
 # Handling TTN_NEEDTEXT Notification for Tool Tips
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 As part of [enabling tool tips](enabling-tool-tips.md), you handle the **TTN_NEEDTEXT** message by adding the following entry to your owner window's message map:
 

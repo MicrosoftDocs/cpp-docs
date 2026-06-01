@@ -7,6 +7,8 @@ ms.topic: concept-article
 ---
 # Understanding parse trees
 
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
+
 You can define one or more parse trees in your registrar script, where each parse tree has the following form:
 
 > \<root-key>{\<registry expression>}+

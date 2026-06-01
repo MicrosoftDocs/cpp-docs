@@ -3,10 +3,12 @@ description: "Learn more about: Exchanging Data"
 title: "Exchanging Data"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["property sheets [MFC], data exchange", "exchanging data with property sheets [MFC]", "DDX (dialog data exchange) [MFC], property sheets"]
-ms.assetid: 689f02d0-51a9-455b-8ffb-5b44f0aefa28
 ms.topic: concept-article
 ---
 # Exchanging Data
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 As with most dialog boxes, the exchange of data between the property sheet and the application is one of the most important functions of the property sheet. This article describes how to accomplish this task.
 

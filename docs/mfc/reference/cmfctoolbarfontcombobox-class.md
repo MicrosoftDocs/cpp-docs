@@ -4,9 +4,11 @@ title: "CMFCToolBarFontComboBox Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCToolBarFontComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::CMFCToolBarFontComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::GetFontDesc", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::SetFont"]
 helpviewer_keywords: ["CMFCToolBarFontComboBox [MFC], CMFCToolBarFontComboBox", "CMFCToolBarFontComboBox [MFC], GetFontDesc", "CMFCToolBarFontComboBox [MFC], SetFont"]
-ms.assetid: 25f8e08c-aadd-4cb5-9581-a99d49d444b1
 ---
 # CMFCToolBarFontComboBox Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A toolbar button that contains a combo box control that enables the user to select a font from a list of system fonts.
 

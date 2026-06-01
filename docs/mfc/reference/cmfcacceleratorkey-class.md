@@ -4,9 +4,11 @@ title: "CMFCAcceleratorKey Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCAcceleratorKey", "AFXACCELERATORKEY/CMFCAcceleratorKey", "AFXACCELERATORKEY/CMFCAcceleratorKey::CMFCAcceleratorKey", "AFXACCELERATORKEY/CMFCAcceleratorKey::Format", "AFXACCELERATORKEY/CMFCAcceleratorKey::SetAccelerator"]
 helpviewer_keywords: ["CMFCAcceleratorKey [MFC], CMFCAcceleratorKey", "CMFCAcceleratorKey [MFC], Format", "CMFCAcceleratorKey [MFC], SetAccelerator"]
-ms.assetid: d140fbf7-23db-45ea-a63e-414a5ec7b3d5
 ---
 # CMFCAcceleratorKey Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A helper class that implements virtual key mapping and formatting.
 

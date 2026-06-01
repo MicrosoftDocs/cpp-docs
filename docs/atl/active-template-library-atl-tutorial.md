@@ -4,10 +4,11 @@ description: "Create an ActiveX control using Microsoft C++ and the Active Templ
 ms.custom: "get-started-article"
 ms.date: "05/03/2019"
 helpviewer_keywords: ["ATL projects, tutorials", "controls [ATL], tutorials", "ATL tutorial", "tutorials [ATL]", "ATL, tutorials"]
-ms.assetid: f921a121-09c8-4812-9317-e15b2f1471fa
 ms.topic: tutorial
 ---
 # Active Template Library (ATL) Tutorial
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 ATL is designed to simplify the process of creating efficient, flexible, lightweight controls. This tutorial leads you through the creation of an ActiveX control, demonstrating many ATL and COM fundamentals.
 

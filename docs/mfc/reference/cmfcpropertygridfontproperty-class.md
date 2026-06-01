@@ -4,9 +4,11 @@ title: "CMFCPropertyGridFontProperty Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCPropertyGridFontProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::CMFCPropertyGridFontProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::GetColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::GetLogFont"]
 helpviewer_keywords: ["CMFCPropertyGridFontProperty [MFC], CMFCPropertyGridFontProperty", "CMFCPropertyGridFontProperty [MFC], GetColor", "CMFCPropertyGridFontProperty [MFC], GetLogFont"]
-ms.assetid: 83693f33-bbd3-4fcb-a9ad-fa79fcf2ca24
 ---
 # CMFCPropertyGridFontProperty Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCPropertyGridFileProperty` class supports a property list control item that opens a font selection dialog box.
 

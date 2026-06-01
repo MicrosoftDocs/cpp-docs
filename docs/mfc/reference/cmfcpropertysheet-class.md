@@ -4,9 +4,11 @@ title: "CMFCPropertySheet Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CMFCPropertySheet", "AFXPROPERTYSHEET/CMFCPropertySheet", "AFXPROPERTYSHEET/CMFCPropertySheet::CMFCPropertySheet", "AFXPROPERTYSHEET/CMFCPropertySheet::AddPage", "AFXPROPERTYSHEET/CMFCPropertySheet::AddPageToTree", "AFXPROPERTYSHEET/CMFCPropertySheet::AddTreeCategory", "AFXPROPERTYSHEET/CMFCPropertySheet::EnablePageHeader", "AFXPROPERTYSHEET/CMFCPropertySheet::GetHeaderHeight", "AFXPROPERTYSHEET/CMFCPropertySheet::GetLook", "AFXPROPERTYSHEET/CMFCPropertySheet::GetNavBarWidth", "AFXPROPERTYSHEET/CMFCPropertySheet::GetTab", "AFXPROPERTYSHEET/CMFCPropertySheet::InitNavigationControl", "AFXPROPERTYSHEET/CMFCPropertySheet::OnActivatePage", "AFXPROPERTYSHEET/CMFCPropertySheet::OnDrawPageHeader", "AFXPROPERTYSHEET/CMFCPropertySheet::OnRemoveTreePage", "AFXPROPERTYSHEET/CMFCPropertySheet::RemoveCategory", "AFXPROPERTYSHEET/CMFCPropertySheet::RemovePage", "AFXPROPERTYSHEET/CMFCPropertySheet::SetIconsList", "AFXPROPERTYSHEET/CMFCPropertySheet::SetLook"]
 helpviewer_keywords: ["CMFCPropertySheet [MFC], CMFCPropertySheet", "CMFCPropertySheet [MFC], AddPage", "CMFCPropertySheet [MFC], AddPageToTree", "CMFCPropertySheet [MFC], AddTreeCategory", "CMFCPropertySheet [MFC], EnablePageHeader", "CMFCPropertySheet [MFC], GetHeaderHeight", "CMFCPropertySheet [MFC], GetLook", "CMFCPropertySheet [MFC], GetNavBarWidth", "CMFCPropertySheet [MFC], GetTab", "CMFCPropertySheet [MFC], InitNavigationControl", "CMFCPropertySheet [MFC], OnActivatePage", "CMFCPropertySheet [MFC], OnDrawPageHeader", "CMFCPropertySheet [MFC], OnRemoveTreePage", "CMFCPropertySheet [MFC], RemoveCategory", "CMFCPropertySheet [MFC], RemovePage", "CMFCPropertySheet [MFC], SetIconsList", "CMFCPropertySheet [MFC], SetLook"]
-ms.assetid: 01d93573-9698-440f-a6a4-5bebbee879dc
 ---
 # CMFCPropertySheet Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCPropertySheet` class supports a property sheet where each property page is denoted by a page tab, a toolbar button, a tree control node, or a list item.
 

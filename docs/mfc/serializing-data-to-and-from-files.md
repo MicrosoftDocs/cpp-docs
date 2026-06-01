@@ -3,10 +3,12 @@ description: "Learn more about: Serializing Data to and from Files"
 title: "Serializing Data to and from Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["documents [MFC], serialization", "documents [MFC], saving", "saving documents", "deserialization [MFC]", "serialization [MFC], role of document", "serialization [MFC], role of data", "data [MFC]", "data [MFC], serializing", "document data [MFC]"]
-ms.assetid: b42a0c68-4bc4-4012-9938-5433a26d2c24
 ms.topic: concept-article
 ---
 # Serializing Data to and from Files
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The basic idea of persistence is that an object should be able to write its current state, indicated by the values of its member variables, to persistent storage. Later, the object can be re-created by reading, or "deserializing," the object's state from persistent storage. A key point here is that the object itself is responsible for reading and writing its own state. Thus, for a class to be persistent, it must implement the basic serialization operations.
 

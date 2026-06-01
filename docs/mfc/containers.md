@@ -3,9 +3,11 @@ description: "Learn more about: Containers"
 title: "Containers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["containers [MFC]", "OLE containers", "application containers [MFC]", "containers [MFC], OLE container applications", "containers [MFC], container applications"]
-ms.assetid: b19d7c05-4d02-44bd-b76a-4a6c25994a62
 ---
 # Containers
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A container application is an application that can incorporate embedded or linked items into its own documents. The documents managed by a container application must be able to store and display OLE compound document components as well as data created by the application itself. A container application must also allow users to insert new items or edit existing items.
 

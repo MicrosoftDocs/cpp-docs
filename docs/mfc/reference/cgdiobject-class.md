@@ -4,9 +4,11 @@ title: "CGdiObject Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CGdiObject", "AFXWIN/CGdiObject", "AFXWIN/CGdiObject::CGdiObject", "AFXWIN/CGdiObject::Attach", "AFXWIN/CGdiObject::CreateStockObject", "AFXWIN/CGdiObject::DeleteObject", "AFXWIN/CGdiObject::DeleteTempMap", "AFXWIN/CGdiObject::Detach", "AFXWIN/CGdiObject::FromHandle", "AFXWIN/CGdiObject::GetObject", "AFXWIN/CGdiObject::GetObjectType", "AFXWIN/CGdiObject::GetSafeHandle", "AFXWIN/CGdiObject::UnrealizeObject", "AFXWIN/CGdiObject::m_hObject"]
 helpviewer_keywords: ["CGdiObject [MFC], CGdiObject", "CGdiObject [MFC], Attach", "CGdiObject [MFC], CreateStockObject", "CGdiObject [MFC], DeleteObject", "CGdiObject [MFC], DeleteTempMap", "CGdiObject [MFC], Detach", "CGdiObject [MFC], FromHandle", "CGdiObject [MFC], GetObject", "CGdiObject [MFC], GetObjectType", "CGdiObject [MFC], GetSafeHandle", "CGdiObject [MFC], UnrealizeObject", "CGdiObject [MFC], m_hObject"]
-ms.assetid: 1cba3ba5-3d49-4e43-8293-209299f2f6f4
 ---
 # CGdiObject Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides a base class for various kinds of Windows graphics device interface (GDI) objects such as bitmaps, regions, brushes, pens, palettes, and fonts.
 

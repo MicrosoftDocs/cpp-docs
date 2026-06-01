@@ -7,6 +7,9 @@ helpviewer_keywords: ["CFormView [MFC], CFormView", "CFormView [MFC], IsInitDlgC
 ---
 # `CFormView` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The base class used for form views.
 
 ## Syntax

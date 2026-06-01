@@ -4,9 +4,11 @@ title: "CMFCRibbonCustomizeDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonCustomizeDialog", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizeDialog", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog"]
 helpviewer_keywords: ["CMFCRibbonCustomizeDialog [MFC], CMFCRibbonCustomizeDialog"]
-ms.assetid: ce67de7f-5eaa-4c75-9b94-f290f36df073
 ---
 # CMFCRibbonCustomizeDialog Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Displays the ribbon **Customize** page.
 

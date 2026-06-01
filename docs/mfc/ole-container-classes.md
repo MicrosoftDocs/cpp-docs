@@ -3,9 +3,11 @@ description: "Learn more about: OLE Container Classes"
 title: "OLE Container Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ActiveX classes [MFC]", "container classes [MFC]", "OLE classes [MFC]", "visual editing [MFC], classes", "OLE [MFC], classes", "containers [MFC], OLE container applications"]
-ms.assetid: 1e27e1ab-4c22-41eb-8547-6915c72668ae
 ---
 # OLE Container Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 These classes are used by container applications. Both `COleLinkingDoc` and `COleDocument` manage collections of `COleClientItem` objects. Rather than deriving your document class from `CDocument`, you'll derive it from `COleLinkingDoc` or `COleDocument`, depending on whether you want support for links to objects embedded in your document.
 

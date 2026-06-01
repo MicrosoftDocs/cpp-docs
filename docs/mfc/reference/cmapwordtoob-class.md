@@ -4,9 +4,11 @@ title: "CMapWordToOb Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMapWordToOb", "AFXCOLL/CMapWordToOb", "AFXCOLL/CMapWordToOb::CMapWordToOb", "AFXCOLL/CMapWordToOb::GetCount", "AFXCOLL/CMapWordToOb::GetHashTableSize", "AFXCOLL/CMapWordToOb::GetNextAssoc", "AFXCOLL/CMapWordToOb::GetSize", "AFXCOLL/CMapWordToOb::GetStartPosition", "AFXCOLL/CMapWordToOb::HashKey", "AFXCOLL/CMapWordToOb::InitHashTable", "AFXCOLL/CMapWordToOb::IsEmpty", "AFXCOLL/CMapWordToOb::Lookup", "AFXCOLL/CMapWordToOb::LookupKey", "AFXCOLL/CMapWordToOb::RemoveAll", "AFXCOLL/CMapWordToOb::RemoveKey", "AFXCOLL/CMapWordToOb::SetAt"]
 helpviewer_keywords: ["CMapWordToOb [MFC], CMapWordToOb", "CMapWordToOb [MFC], GetCount", "CMapWordToOb [MFC], GetHashTableSize", "CMapWordToOb [MFC], GetNextAssoc", "CMapWordToOb [MFC], GetSize", "CMapWordToOb [MFC], GetStartPosition", "CMapWordToOb [MFC], HashKey", "CMapWordToOb [MFC], InitHashTable", "CMapWordToOb [MFC], IsEmpty", "CMapWordToOb [MFC], Lookup", "CMapWordToOb [MFC], LookupKey", "CMapWordToOb [MFC], RemoveAll", "CMapWordToOb [MFC], RemoveKey", "CMapWordToOb [MFC], SetAt"]
-ms.assetid: 9c9bcd76-456f-4cf9-b03c-dd28b49d5e4f
 ---
 # CMapWordToOb Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Supports maps of `CObject` pointers keyed by 16-bit words.
 

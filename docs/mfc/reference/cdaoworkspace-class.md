@@ -8,6 +8,9 @@ ms.custom: sfi-ropc-nochange
 ---
 # CDaoWorkspace Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Manages a named, password-protected database session from login to logoff, by a single user.
 
 > [!NOTE]

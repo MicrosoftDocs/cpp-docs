@@ -7,6 +7,9 @@ helpviewer_keywords: ["CAnimationPoint [MFC], CAnimationPoint", "CAnimationPoint
 ---
 # `CAnimationPoint` class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Implements the functionality of a point whose coordinates can be animated.
 
 ## Syntax

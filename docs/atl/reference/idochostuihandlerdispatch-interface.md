@@ -4,9 +4,10 @@ title: "IDocHostUIHandlerDispatch Interface"
 ms.date: "07/02/2019"
 f1_keywords: ["IDocHostUIHandlerDispatch", "atlbase/ATL::IDocHostUIHandlerDispatch"]
 helpviewer_keywords: ["IDocHostUIHandlerDispatch interface"]
-ms.assetid: 6963a301-601a-4ac3-8bef-f7b252ea2fc6
 ---
 # IDocHostUIHandlerDispatch Interface
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 An interface to the Microsoft HTML parsing and rendering engine.
 

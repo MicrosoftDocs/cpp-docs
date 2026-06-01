@@ -4,9 +4,11 @@ title: "CD2DTextLayout Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CD2DTextLayout", "AFXRENDERTARGET/CD2DTextLayout", "AFXRENDERTARGET/CD2DTextLayout::CD2DTextLayout", "AFXRENDERTARGET/CD2DTextLayout::Create", "AFXRENDERTARGET/CD2DTextLayout::Destroy", "AFXRENDERTARGET/CD2DTextLayout::Get", "AFXRENDERTARGET/CD2DTextLayout::GetFontFamilyName", "AFXRENDERTARGET/CD2DTextLayout::GetLocaleName", "AFXRENDERTARGET/CD2DTextLayout::IsValid", "AFXRENDERTARGET/CD2DTextLayout::ReCreate", "AFXRENDERTARGET/CD2DTextLayout::SetFontFamilyName", "AFXRENDERTARGET/CD2DTextLayout::SetLocaleName", "AFXRENDERTARGET/CD2DTextLayout::m_pTextLayout"]
 helpviewer_keywords: ["CD2DTextLayout [MFC], CD2DTextLayout", "CD2DTextLayout [MFC], Create", "CD2DTextLayout [MFC], Destroy", "CD2DTextLayout [MFC], Get", "CD2DTextLayout [MFC], GetFontFamilyName", "CD2DTextLayout [MFC], GetLocaleName", "CD2DTextLayout [MFC], IsValid", "CD2DTextLayout [MFC], ReCreate", "CD2DTextLayout [MFC], SetFontFamilyName", "CD2DTextLayout [MFC], SetLocaleName", "CD2DTextLayout [MFC], m_pTextLayout"]
-ms.assetid: 724bd13c-f2ef-4e55-a775-8cb04b7b7908
 ---
 # CD2DTextLayout Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A wrapper for IDWriteTextLayout.
 

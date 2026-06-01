@@ -6,6 +6,9 @@ helpviewer_keywords: ["MFC, classes", "classes [MFC], MFC"]
 ---
 # MFC Classes
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The classes in the following list are included in the Microsoft Foundation Class (MFC) Library.
 
 > [!TIP]

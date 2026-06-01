@@ -3,10 +3,12 @@ description: "Learn more about: Handling Tool Tip Notifications"
 title: "Handling Tool Tip Notifications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["TOOLTIPTEXT structure [MFC]", "CToolBarCtrl class [MFC], handling notifications", "notifications [MFC], tool tips", "tool tips [MFC], notifications"]
-ms.assetid: ddb93b5f-2e4f-4537-8053-3453c86e2bbb
 ms.topic: concept-article
 ---
 # Handling Tool Tip Notifications
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 When you specify the **TBSTYLE_TOOLTIPS** style, the toolbar creates and manages a tool tip control. A tool tip is a small pop-up window that contains a line of text describing a toolbar button. The tool tip is hidden, appearing only when the user puts the cursor on a toolbar button and leaves it there for approximately one-half second. The tool tip is displayed near the cursor.
 

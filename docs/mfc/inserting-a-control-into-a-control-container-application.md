@@ -3,9 +3,11 @@ description: "Learn more about: ActiveX Control Containers: Inserting a Control 
 title: "ActiveX Control Containers: Inserting a Control into a Control Container Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ActiveX control containers [MFC], inserting controls", "ActiveX controls [MFC], adding to projects"]
-ms.assetid: bbb617ff-872f-43d8-b4d6-c49adb16b148
 ---
 # ActiveX Control Containers: Inserting a Control into a Control Container Application
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Before you can access an ActiveX control from an ActiveX control container application, you must add the ActiveX control to the container application using the [Insert ActiveX Control](../windows/adding-editing-or-deleting-controls.md) dialog box.
 

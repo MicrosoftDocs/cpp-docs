@@ -3,9 +3,11 @@ description: "Learn more about: Methods of Creating a Toolbar"
 title: "Methods of Creating a Toolbar"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CToolBarCtrl class [MFC], and CToolBar class [MFC]", "CToolBar class [MFC], creating toolbars", "MFC toolbars", "toolbar controls [MFC]", "toolbar controls [MFC], creating", "CToolBarCtrl class [MFC], creating toolbars"]
-ms.assetid: f19d8d65-d49f-445c-abe8-d47d3e4101c8
 ---
 # Methods of Creating a Toolbar
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 MFC provides two classes to create toolbars: [CToolBar](reference/ctoolbar-class.md) and [CToolBarCtrl](reference/ctoolbarctrl-class.md) (which wraps the Windows common control API). `CToolBar` provides all of the functionality of the toolbar common control, and it handles many of the required common control settings and structures for you; however, your resulting executable usually will be larger than that created by using `CToolBarCtrl`.
 

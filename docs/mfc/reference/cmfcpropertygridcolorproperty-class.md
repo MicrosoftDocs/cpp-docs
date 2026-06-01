@@ -4,9 +4,11 @@ title: "CMFCPropertyGridColorProperty Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCPropertyGridColorProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::CMFCPropertyGridColorProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::EnableAutomaticButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::EnableOtherButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::GetColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetColumnsNumber", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetOriginalValue"]
 helpviewer_keywords: ["CMFCPropertyGridColorProperty [MFC], CMFCPropertyGridColorProperty", "CMFCPropertyGridColorProperty [MFC], EnableAutomaticButton", "CMFCPropertyGridColorProperty [MFC], EnableOtherButton", "CMFCPropertyGridColorProperty [MFC], GetColor", "CMFCPropertyGridColorProperty [MFC], SetColor", "CMFCPropertyGridColorProperty [MFC], SetColumnsNumber", "CMFCPropertyGridColorProperty [MFC], SetOriginalValue"]
-ms.assetid: af37be93-a91e-40a2-9a65-0f3412c6f0f8
 ---
 # CMFCPropertyGridColorProperty Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCPropertyGridColorProperty` class supports a property list control item that opens a color selection dialog box.
 

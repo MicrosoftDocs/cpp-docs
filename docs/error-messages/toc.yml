@@ -136,6 +136,8 @@ items:
       href: compiler-errors-1/fatal-error-c1025-c1115.md
     - name: Fatal error C1026
       href: compiler-errors-1/fatal-error-c1026.md
+    - name: Fatal error C1029
+      href: compiler-errors-1/fatal-error-c1029.md
     - name: Fatal error C1033
       href: compiler-errors-1/fatal-error-c1033.md
     - name: Fatal error C1035

@@ -7,6 +7,8 @@ helpviewer_keywords: ["shared classes, COleDateTime", "time-only values", "Date 
 ---
 # COleDateTime Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 Encapsulates the `DATE` data type that is used in OLE automation.
 
 ## Syntax

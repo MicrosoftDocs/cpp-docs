@@ -3,9 +3,10 @@ description: "Learn more about: CAtlServiceModuleT::Run Function"
 title: "CAtlServiceModuleT::Run Function"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL services, security"]
-ms.assetid: 42c010f0-e60e-459c-a63b-a53a24cda93b
 ---
 # CAtlServiceModuleT::Run Function
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 `Run` contains calls to `PreMessageLoop`, `RunMessageLoop`, and `PostMessageLoop`. After being called, `PreMessageLoop` first stores the service's thread ID. The service will use this ID to close itself by sending a WM_QUIT message using the Win32 API function, [PostThreadMessage](/windows/win32/api/winuser/nf-winuser-postthreadmessagew).
 

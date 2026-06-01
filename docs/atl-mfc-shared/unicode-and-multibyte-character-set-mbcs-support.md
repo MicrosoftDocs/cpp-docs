@@ -6,6 +6,8 @@ helpviewer_keywords: ["MFC [C++], character set support", "MBCS [C++], strings a
 ---
 # Unicode and Multibyte Character Set (MBCS) Support
 
+[!INCLUDE[product-lifecycle-status](./includes/lifecycle-note.md)]
+
 Some languages, for example, Japanese and Chinese, have large character sets. To support programming for these markets, the Microsoft Foundation Class Library (MFC) enables two different approaches to handling large character sets:
 
 - [Unicode](#mfc-support-for-unicode-strings), **`wchar_t`** based wide-characters, and strings encoded as UTF-16.

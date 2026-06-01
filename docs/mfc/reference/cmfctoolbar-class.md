@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMFCToolBar [MFC], AddBasicCommand", "CMFCToolBar [MFC], 
 ---
 # `CMFCToolBar` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The `CMFCToolBar` class resembles [`CToolBar` Class](../../mfc/reference/ctoolbar-class.md), but provides additional support for user interface features. These include flat toolbars, toolbars with hot images, large icons, pager buttons, locked toolbars, rebar controls, text under images, background images, and tabbed toolbars. The `CMFCToolBar` class also contains built-in support for user customization of toolbars and menus, drag-and-drop between toolbars and menus, combo box buttons, edit box buttons, color pickers, and roll-up buttons.
 
 For more detail, see the source code located in your Visual Studio installation, for example, `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\atlmfc\src\mfc`.

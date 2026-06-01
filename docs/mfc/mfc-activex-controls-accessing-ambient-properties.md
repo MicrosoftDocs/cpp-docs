@@ -3,9 +3,11 @@ description: "Learn more about: MFC ActiveX Controls: Accessing Ambient Properti
 title: "MFC ActiveX Controls: Accessing Ambient Properties"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], accessing ambient properties", "properties [MFC], accessing ambient"]
-ms.assetid: fdc9db29-e6b0-45d2-a879-8bd60e2058a7
 ---
 # MFC ActiveX Controls: Accessing Ambient Properties
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article discusses how an ActiveX control can access the ambient properties of its control container.
 

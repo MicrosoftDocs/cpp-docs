@@ -3,9 +3,10 @@ description: "Learn more about: CAtlServiceModuleT::ServiceMain Function"
 title: "CAtlServiceModuleT::ServiceMain Function"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ServiceMain method"]
-ms.assetid: f21408c1-1919-4dec-88d8-bf5b39ac9808
 ---
 # CAtlServiceModuleT::ServiceMain Function
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The service control manager (SCM) calls `ServiceMain` when you open the Services Control Panel application, select the service, and click **Start**.
 

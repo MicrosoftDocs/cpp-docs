@@ -4,9 +4,11 @@ title: "COleControlModule Class"
 ms.date: "11/04/2016"
 f1_keywords: ["OleControlModule"]
 helpviewer_keywords: ["OLE control modules [MFC]", "MFC ActiveX controls [MFC], OLE control modules", "COleControlModule class [MFC]", "control modules [MFC]"]
-ms.assetid: 0721724d-d4af-4eda-ad34-5a2b27810dd4
 ---
 # COleControlModule Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The base class from which you derive an OLE control module object.
 

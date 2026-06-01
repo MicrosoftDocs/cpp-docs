@@ -4,9 +4,10 @@ title: "Property Map Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlcom/ATL::BEGIN_PROP_MAP", "atlcom/ATL::PROP_DATA_ENTRY", "atlcom/ATL::PROP_ENTRY_TYPE", "atlcom/ATL::PROP_ENTRY_TYPE_EX", "atlcom/ATL::PROP_PAGE", "atlcom/ATL::END_PROP_MAP", "ATLCOM/BEGIN_PROP_MAP", "ATLCOM/PROP_DATA_ENTRY", "ATLCOM/PROP_ENTRY_TYPE", "ATLCOM/PROP_ENTRY_TYPE_EX", "ATLCOM/PROP_PAGE", "ATLCOM/END_PROP_MAP"]
 helpviewer_keywords: ["property maps"]
-ms.assetid: 128bc742-2b98-4b97-a243-684dbb83db77
 ---
 # Property Map Macros
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These macros define property maps and entries.
 

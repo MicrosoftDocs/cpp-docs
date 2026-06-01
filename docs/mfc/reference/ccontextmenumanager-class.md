@@ -4,9 +4,11 @@ title: "CContextMenuManager Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CContextMenuManager", "AFXCONTEXTMENUMANAGER/CContextMenuManager", "AFXCONTEXTMENUMANAGER/CContextMenuManager::CContextMenuManager", "AFXCONTEXTMENUMANAGER/CContextMenuManager::AddMenu", "AFXCONTEXTMENUMANAGER/CContextMenuManager::GetMenuById", "AFXCONTEXTMENUMANAGER/CContextMenuManager::GetMenuByName", "AFXCONTEXTMENUMANAGER/CContextMenuManager::GetMenuNames", "AFXCONTEXTMENUMANAGER/CContextMenuManager::LoadState", "AFXCONTEXTMENUMANAGER/CContextMenuManager::ResetState", "AFXCONTEXTMENUMANAGER/CContextMenuManager::SaveState", "AFXCONTEXTMENUMANAGER/CContextMenuManager::SetDontCloseActiveMenu", "AFXCONTEXTMENUMANAGER/CContextMenuManager::ShowPopupMenu", "AFXCONTEXTMENUMANAGER/CContextMenuManager::TrackPopupMenu"]
 helpviewer_keywords: ["CContextMenuManager [MFC], CContextMenuManager", "CContextMenuManager [MFC], AddMenu", "CContextMenuManager [MFC], GetMenuById", "CContextMenuManager [MFC], GetMenuByName", "CContextMenuManager [MFC], GetMenuNames", "CContextMenuManager [MFC], LoadState", "CContextMenuManager [MFC], ResetState", "CContextMenuManager [MFC], SaveState", "CContextMenuManager [MFC], SetDontCloseActiveMenu", "CContextMenuManager [MFC], ShowPopupMenu", "CContextMenuManager [MFC], TrackPopupMenu"]
-ms.assetid: 1de20640-243c-47e1-85de-1baa4153bc83
 ---
 # CContextMenuManager Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CContextMenuManager` object manages shortcut menus, also known as context menus.
 

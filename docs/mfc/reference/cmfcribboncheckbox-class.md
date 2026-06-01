@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMFCRibbonCheckBox [MFC], CMFCRibbonCheckBox", "CMFCRibbo
 ---
 # CMFCRibbonCheckBox Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The `CMFCRibbonCheckBox` class implements a check box that you can add to a ribbon panel, Quick Access Toolbar, or popup menu.
 
 ## Syntax

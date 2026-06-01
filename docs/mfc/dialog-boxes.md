@@ -3,9 +3,11 @@ description: "Learn more about: Dialog Boxes"
 title: "Dialog Boxes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["modeless dialog boxes [MFC], MFC dialog boxes", "MFC, dialog boxes", "modal dialog boxes [MFC], MFC dialog boxes", "CDialog class [MFC], MFC dialog boxes", "MFC dialog boxes"]
-ms.assetid: e4feea1a-8360-4ccb-9b84-507f1ccd9ef3
 ---
 # Dialog Boxes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Applications for Windows frequently communicate with the user through dialog boxes. Class [CDialog](reference/cdialog-class.md) provides an interface for managing dialog boxes, the Visual Studio dialog editor makes it easy to design dialog boxes and create their dialog-template resources, and Code wizards simplify the process of initializing and validating the controls in a dialog box and of gathering the values entered by the user.
 

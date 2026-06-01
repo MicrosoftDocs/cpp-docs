@@ -4,9 +4,11 @@ title: "Output (Device Context) Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.output"]
 helpviewer_keywords: ["device contexts [MFC], classes", "screen output classes [MFC]", "printing classes [MFC]", "window drawing classes [MFC]", "painting classes [MFC]", "output classes [MFC]"]
-ms.assetid: 35fd6435-a38e-42c6-a3fa-cd6f39370fc3
 ---
 # Output (Device Context) Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 These classes encapsulate the different types of device contexts available in Windows.
 

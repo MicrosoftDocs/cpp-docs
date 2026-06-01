@@ -7,6 +7,9 @@ helpviewer_keywords: ["CComboBox [MFC], CComboBox", "CComboBox [MFC], AddString"
 ---
 # `CComboBox` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Provides the functionality of a Windows combo box.
 
 ## Syntax

@@ -4,9 +4,11 @@ title: "CMFCRibbonSlider Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonSlider", "AFXRIBBONSLIDER/CMFCRibbonSlider", "AFXRIBBONSLIDER/CMFCRibbonSlider::CMFCRibbonSlider", "AFXRIBBONSLIDER/CMFCRibbonSlider::GetPos", "AFXRIBBONSLIDER/CMFCRibbonSlider::GetRangeMax", "AFXRIBBONSLIDER/CMFCRibbonSlider::GetRangeMin", "AFXRIBBONSLIDER/CMFCRibbonSlider::GetRegularSize", "AFXRIBBONSLIDER/CMFCRibbonSlider::GetZoomIncrement", "AFXRIBBONSLIDER/CMFCRibbonSlider::HasZoomButtons", "AFXRIBBONSLIDER/CMFCRibbonSlider::OnDraw", "AFXRIBBONSLIDER/CMFCRibbonSlider::SetPos", "AFXRIBBONSLIDER/CMFCRibbonSlider::SetRange", "AFXRIBBONSLIDER/CMFCRibbonSlider::SetZoomButtons", "AFXRIBBONSLIDER/CMFCRibbonSlider::SetZoomIncrement"]
 helpviewer_keywords: ["CMFCRibbonSlider [MFC], CMFCRibbonSlider", "CMFCRibbonSlider [MFC], GetPos", "CMFCRibbonSlider [MFC], GetRangeMax", "CMFCRibbonSlider [MFC], GetRangeMin", "CMFCRibbonSlider [MFC], GetRegularSize", "CMFCRibbonSlider [MFC], GetZoomIncrement", "CMFCRibbonSlider [MFC], HasZoomButtons", "CMFCRibbonSlider [MFC], OnDraw", "CMFCRibbonSlider [MFC], SetPos", "CMFCRibbonSlider [MFC], SetRange", "CMFCRibbonSlider [MFC], SetZoomButtons", "CMFCRibbonSlider [MFC], SetZoomIncrement"]
-ms.assetid: 9351ac34-f234-4e42-91e2-763f1989c8ff
 ---
 # CMFCRibbonSlider Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCRibbonSlider` class implements a slider control that you can add to a ribbon bar or ribbon status bar. The ribbon slider control resembles the zoom sliders that appear in Office 2007 applications.
 

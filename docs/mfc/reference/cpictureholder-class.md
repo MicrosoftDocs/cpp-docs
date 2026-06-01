@@ -4,9 +4,11 @@ title: "CPictureHolder Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPictureHolder", "AFXCTL/CPictureHolder", "AFXCTL/CPictureHolder::CPictureHolder", "AFXCTL/CPictureHolder::CreateEmpty", "AFXCTL/CPictureHolder::CreateFromBitmap", "AFXCTL/CPictureHolder::CreateFromIcon", "AFXCTL/CPictureHolder::CreateFromMetafile", "AFXCTL/CPictureHolder::GetDisplayString", "AFXCTL/CPictureHolder::GetPictureDispatch", "AFXCTL/CPictureHolder::GetType", "AFXCTL/CPictureHolder::Render", "AFXCTL/CPictureHolder::SetPictureDispatch", "AFXCTL/CPictureHolder::m_pPict"]
 helpviewer_keywords: ["CPictureHolder [MFC], CPictureHolder", "CPictureHolder [MFC], CreateEmpty", "CPictureHolder [MFC], CreateFromBitmap", "CPictureHolder [MFC], CreateFromIcon", "CPictureHolder [MFC], CreateFromMetafile", "CPictureHolder [MFC], GetDisplayString", "CPictureHolder [MFC], GetPictureDispatch", "CPictureHolder [MFC], GetType", "CPictureHolder [MFC], Render", "CPictureHolder [MFC], SetPictureDispatch", "CPictureHolder [MFC], m_pPict"]
-ms.assetid: a4f59775-704a-41dd-b5bd-2e531c95127a
 ---
 # CPictureHolder Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements a Picture property, which allows the user to display a picture in your control.
 

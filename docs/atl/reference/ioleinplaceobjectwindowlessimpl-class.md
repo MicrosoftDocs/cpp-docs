@@ -4,9 +4,10 @@ title: "IOleInPlaceObjectWindowlessImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IOleInPlaceObjectWindowlessImpl", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::ContextSensitiveHelp", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::GetDropTarget", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::GetWindow", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::InPlaceDeactivate", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::OnWindowMessage", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::SetObjectRects", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::UIDeactivate"]
 helpviewer_keywords: ["IOleInPlaceObjectWindowless, ATL implementation", "activation [C++], ATL", "IOleInPlaceObjectWindowlessImpl class", "ActiveX controls [C++], communication between container and control", "controls [ATL], windowless", "deactivating ATL"]
-ms.assetid: a2e0feb4-bc59-4adf-aab2-105457bbdbb4
 ---
 # IOleInPlaceObjectWindowlessImpl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements `IUnknown` and provides methods that enable a windowless control to receive window messages and to participate in drag-and-drop operations.
 

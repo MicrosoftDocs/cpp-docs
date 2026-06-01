@@ -4,9 +4,10 @@ title: Object Safety Classes (ATL)
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["safety classes", "object safety classes"]
-ms.assetid: 00060b28-49e2-4ec1-9a22-f501e07821d6
 ---
 # Object Safety Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The following class provides support for object safety:
 

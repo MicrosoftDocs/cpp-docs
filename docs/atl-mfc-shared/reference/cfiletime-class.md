@@ -4,9 +4,10 @@ title: "CFileTime class"
 ms.date: "10/18/2018"
 f1_keywords: ["CFileTime", "ATLTIME/ATL::CFileTime", "ATLTIME/ATL::CFileTime::CFileTime", "ATLTIME/ATL::CFileTime::GetCurrentTime", "ATLTIME/ATL::CFileTime::GetTime", "ATLTIME/ATL::CFileTime::LocalToUTC", "ATLTIME/ATL::CFileTime::SetTime", "ATLTIME/ATL::CFileTime::UTCToLocal", "ATLTIME/ATL::CFileTime::Day", "ATLTIME/ATL::CFileTime::Hour", "ATLTIME/ATL::CFileTime::Millisecond", "ATLTIME/ATL::CFileTime::Minute", "ATLTIME/ATL::CFileTime::Second", "ATLTIME/ATL::CFileTime::Week"]
 helpviewer_keywords: ["CFileTime class", "shared classes, CFileTime"]
-ms.assetid: 1a358a65-1383-4124-b0d4-59b026e6860f
 ---
 # `CFileTime` class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods for managing the date and time values associated with a file.
 

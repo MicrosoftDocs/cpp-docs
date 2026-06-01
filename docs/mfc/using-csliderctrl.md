@@ -3,10 +3,12 @@ description: "Learn more about: Using CSliderCtrl"
 title: "Using CSliderCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CSliderCtrl class [MFC], using", "slider controls [MFC], using"]
-ms.assetid: 242c7bcd-126e-4b9b-8f76-8082ad06fe73
 ms.topic: concept-article
 ---
 # Using CSliderCtrl
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The [CSliderCtrl](../mfc/reference/csliderctrl-class.md) class represents a slider control, which is also called a trackbar. A "slider control" is a window that contains a slider and optional tick marks. When the user moves the slider, using either the mouse or the arrow keys, the slider control sends notification messages to indicate the change.
 

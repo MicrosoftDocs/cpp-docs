@@ -3,9 +3,11 @@ description: "Learn more about: Exceptions: Using MFC Macros and C++ Exceptions"
 title: "Exceptions: Using MFC Macros and C++ Exceptions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exception objects [MFC]", "memory leaks [MFC], exception object not deleted", "exception handling [MFC], MFC", "try-catch exception handling [MFC], mixing MFC macros and C++ keywords", "exception objects [MFC], deleting", "exceptions [MFC], MFC macros vs. C++ keywords", "catch blocks [MFC], mixed", "exception handling [MFC], mixed-language", "nested try blocks [MFC]", "catch blocks [MFC], explicitly deleting code in", "try-catch exception handling [MFC], nested try blocks", "heap corruption [MFC]", "nested catch blocks [MFC]"]
-ms.assetid: d664a83d-879b-44d4-bdf0-029f0aca69e9
 ---
 # Exceptions: Using MFC Macros and C++ Exceptions
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article discusses considerations for writing code that uses both the MFC exception-handling macros and the C++ exception-handling keywords.
 

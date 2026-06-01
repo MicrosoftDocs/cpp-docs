@@ -4,9 +4,11 @@ title: "CWinFormsView Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CWinFormsView", "AFXWINFORMS/CWinFormsView", "AFXWINFORMS/CWinFormsView::CWinFormsView", "AFXWINFORMS/CWinFormsView::GetControl"]
 helpviewer_keywords: ["CWinFormsView [MFC], CWinFormsView", "CWinFormsView [MFC], GetControl"]
-ms.assetid: d597e397-6529-469b-88f5-7f65a6b9e895
 ---
 # CWinFormsView Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides generic functionality for hosting of a Windows Forms control as an MFC view.
 

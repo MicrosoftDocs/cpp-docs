@@ -7,6 +7,9 @@ helpviewer_keywords: ["buffercommand enumeration [MFC]"]
 ---
 # BufferCommand enumeration
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Used by [CMemFile::GetBufferPtr](cmemfile-class.md#getbufferptr) to determine what action to take on the file-backed memory buffer.
 
 ## Syntax

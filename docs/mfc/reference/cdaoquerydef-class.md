@@ -7,6 +7,9 @@ helpviewer_keywords: ["CDaoQueryDef [MFC], CDaoQueryDef", "CDaoQueryDef [MFC], A
 ---
 # `CDaoQueryDef` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Represents a query definition, or "querydef," usually one saved in a database.
 
 > [!NOTE]

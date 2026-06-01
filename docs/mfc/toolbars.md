@@ -3,9 +3,11 @@ description: "Learn more about: Toolbars"
 title: "Toolbars"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["toolbars [MFC]", "command bars [MFC], MFC toolbars"]
-ms.assetid: c22ecc5b-a84c-4979-8d1a-8e3e71d5ce33
 ---
 # Toolbars
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The toolbar family of articles describes MFC toolbars and how to create and use them.
 

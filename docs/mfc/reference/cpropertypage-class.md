@@ -7,6 +7,9 @@ helpviewer_keywords: ["CPropertyPage [MFC], CPropertyPage", "CPropertyPage [MFC]
 ---
 # `CPropertyPage` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Represents individual pages of a property sheet, otherwise known as a tab dialog box.
 
 ## Syntax

@@ -4,9 +4,11 @@ title: "CD2DSizeU Class"
 ms.date: "08/29/2019"
 f1_keywords: ["CD2DSizeU", "AFXRENDERTARGET/CD2DSizeU", "AFXRENDERTARGET/CD2DSizeU::CD2DSizeU", "AFXRENDERTARGET/CD2DSizeU::IsNull"]
 helpviewer_keywords: ["CD2DSizeU [MFC], CD2DSizeU", "CD2DSizeU [MFC], IsNull"]
-ms.assetid: 6e679ba8-2112-43c3-8275-70b660856f02
 ---
 # CD2DSizeU Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A wrapper for D2D1_SIZE_U.
 

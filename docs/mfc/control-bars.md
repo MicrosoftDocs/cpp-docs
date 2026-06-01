@@ -3,9 +3,11 @@ description: "Learn more about: Control Bars"
 title: "Control Bars"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["command bars [MFC], types of", "toolbars [MFC], control bars", "control bars [MFC]", "MFC, control bars", "control bars [MFC], types of", "CDialogBar class [MFC], control bars", "status bars [MFC], control bars", "CControlBar class [MFC], MFC control bars", "dialog bars [MFC], control bars", "CToolBar class [MFC], control bars", "CStatusBar class [MFC], control bars"]
-ms.assetid: 31831910-3d23-4d70-9e71-03cc02f01ec4
 ---
 # Control Bars
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 "Control bar" is the general name for toolbars, status bars, and dialog bars. MFC classes `CToolBar`, `CStatusBar`, `CDialogBar`, `COleResizeBar`, and `CReBar` derive from class [CControlBar](reference/ccontrolbar-class.md), which implements their common functionality.
 

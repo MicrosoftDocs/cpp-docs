@@ -4,10 +4,11 @@ title: "Changing the Drawing Code (ATL Tutorial, Part 4)"
 ms.custom: "get-started-article"
 ms.date: "09/26/2018"
 helpviewer_keywords: ["_ATL_MIN_CRT macro"]
-ms.assetid: 08ff14e8-aa49-4139-a110-5d071939cf1e
 ms.topic: tutorial
 ---
 # Changing the Drawing Code (ATL Tutorial, Part 4)
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 By default, the control's drawing code displays a square and the text **PolyCtl**. In this step, you will change the code to display something more interesting. The following tasks are involved:
 

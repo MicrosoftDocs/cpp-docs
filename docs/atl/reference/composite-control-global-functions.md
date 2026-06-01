@@ -4,9 +4,10 @@ title: "Composite Control Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlhost/ATL::AtlAxDialogBox", "atlhost/ATL::AtlAxCreateDialog", "atlhost/ATL::AtlAxCreateControl", "atlhost/ATL::AtlAxCreateControlEx", "atlhost/ATL::AtlAxCreateControlLic", "atlhost/ATL::AtlAxCreateControlLicEx", "atlhost/ATL::AtlAxAttachControl", "atlhost/ATL::AtlAxGetHost", "atlhost/ATL::AtlAxGetControl", "atlhost/ATL::AtlSetChildSite", "atlhost/ATL::AtlAxWinInit", "atlhost/ATL::AtlAxWinTerm", "atlhost/ATL::AtlGetObjectSourceInterface"]
 helpviewer_keywords: ["composite controls, global functions"]
-ms.assetid: 536884cd-e863-4c7a-ab0a-604dc60a0bbe
 ---
 # Composite Control Global Functions
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These functions provide support for creating dialog boxes, and for creating, hosting and licensing ActiveX controls.
 

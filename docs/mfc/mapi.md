@@ -3,9 +3,11 @@ description: "Learn more about: MAPI"
 title: "MAPI"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["messaging [MFC], client applications", "enabling applications for MAPI [MFC]", "MAPI support in MFC", "e-mail [MFC], enabling", "mail [MFC], enabling your application", "MAPI, MFC", "enabling applications for mail [MFC]"]
-ms.assetid: 193449f7-b131-4ab0-9301-8d4f6cd1e7c4
 ---
 # MAPI
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article describes the Microsoft Messaging Application Programming Interface (MAPI) for client message application developers. MFC supplies support for a subset of MAPI in class `CDocument` but does not encapsulate the entire API. For more information, see [MAPI Support in MFC](mapi-support-in-mfc.md).
 

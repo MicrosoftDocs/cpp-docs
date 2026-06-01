@@ -4,9 +4,11 @@ title: "CMFCCustomColorsPropertyPage Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCCustomColorsPropertyPage", "AFXCUSTOMCOLORSPROPERTYPAGE/CMFCCustomColorsPropertyPage", "AFXCUSTOMCOLORSPROPERTYPAGE/CMFCCustomColorsPropertyPage::Setup"]
 helpviewer_keywords: ["CMFCCustomColorsPropertyPage [MFC], Setup"]
-ms.assetid: 46a45ba2-1fda-440d-8018-d4dcd44f5816
 ---
 # CMFCCustomColorsPropertyPage Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Represents a property page that can select custom colors in a color dialog box.
 

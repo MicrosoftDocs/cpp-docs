@@ -3,9 +3,11 @@ description: "Learn more about: Compound Document Support, MFC Application Wizar
 title: "Compound Document Support, MFC Application Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.exe.compdoc"]
-ms.assetid: 42e1af83-12c4-438d-92eb-13835afdb148
 ---
 # Compound Document Support, MFC Application Wizard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 In this page of the MFC Application Wizard, indicate to what level your application provides compound and active document support. Your application must support the document/view architecture to support compound documents and document templates.
 

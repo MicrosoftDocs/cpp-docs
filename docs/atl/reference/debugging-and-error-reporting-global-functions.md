@@ -4,9 +4,10 @@ title: "Debugging and Error Reporting Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlcomcli/ATL::AtlHresultFromLastError", "atlcom/ATL::AtlReportError", "atldef/ATL::AtlThrow"]
 helpviewer_keywords: ["functions [ATL], error reporting"]
-ms.assetid: 11339c02-98cd-428d-b3b9-7deeb155a6a3
 ---
 # Debugging and Error Reporting Global Functions
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These functions provide useful debugging and trace facilities.
 

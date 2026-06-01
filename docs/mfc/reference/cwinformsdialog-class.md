@@ -4,9 +4,11 @@ title: "CWinFormsDialog Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CWinFormsDialog", "AFXWINFORMS/CWinFormsDialog", "AFXWINFORMS/CWinFormsDialog::CWinFormsDialog", "AFXWINFORMS/CWinFormsDialog::GetControl", "AFXWINFORMS/CWinFormsDialog::GetControlHandle", "AFXWINFORMS/CWinFormsDialog::OnInitDialog"]
 helpviewer_keywords: ["CWinFormsDialog [MFC], CWinFormsDialog", "CWinFormsDialog [MFC], GetControl", "CWinFormsDialog [MFC], GetControlHandle", "CWinFormsDialog [MFC], OnInitDialog"]
-ms.assetid: e3cec000-a578-448e-b06a-8af256312f61
 ---
 # CWinFormsDialog Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A wrapper for an MFC dialog class that hosts a Windows Forms user control.
 

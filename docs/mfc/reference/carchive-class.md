@@ -7,6 +7,9 @@ helpviewer_keywords: ["CArchive [MFC], CArchive", "CArchive [MFC], Abort", "CArc
 ---
 # `CArchive` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Allows you to save a complex network of objects in a permanent binary form (usually disk storage) that persists after those objects are deleted.
 
 ## Syntax

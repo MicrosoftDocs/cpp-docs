@@ -4,9 +4,10 @@ title: "Security Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["security classes [C++]"]
-ms.assetid: 0477f1a4-c1af-4c4f-bbca-08f7b844e028
 ---
 # Security Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 These classes are wrappers for common Win32 security classes and objects.
 

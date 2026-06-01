@@ -4,9 +4,11 @@ title: "CPalette Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPalette", "AFXWIN/CPalette", "AFXWIN/CPalette::CPalette", "AFXWIN/CPalette::AnimatePalette", "AFXWIN/CPalette::CreateHalftonePalette", "AFXWIN/CPalette::CreatePalette", "AFXWIN/CPalette::FromHandle", "AFXWIN/CPalette::GetEntryCount", "AFXWIN/CPalette::GetNearestPaletteIndex", "AFXWIN/CPalette::GetPaletteEntries", "AFXWIN/CPalette::ResizePalette", "AFXWIN/CPalette::SetPaletteEntries"]
 helpviewer_keywords: ["CPalette [MFC], CPalette", "CPalette [MFC], AnimatePalette", "CPalette [MFC], CreateHalftonePalette", "CPalette [MFC], CreatePalette", "CPalette [MFC], FromHandle", "CPalette [MFC], GetEntryCount", "CPalette [MFC], GetNearestPaletteIndex", "CPalette [MFC], GetPaletteEntries", "CPalette [MFC], ResizePalette", "CPalette [MFC], SetPaletteEntries"]
-ms.assetid: 8cd95498-53ed-4852-85e1-70e522541114
 ---
 # CPalette Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Encapsulates a Windows color palette.
 

@@ -3,10 +3,12 @@ description: "Learn more about: Manipulating Image Lists"
 title: "Manipulating Image Lists"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["image lists [MFC], manipulating", "lists [MFC], image", "CImageList class [MFC], manipulating"]
-ms.assetid: 043418f8-077e-4dce-b8bb-2b7b0d7b5156
 ms.topic: concept-article
 ---
 # Manipulating Image Lists
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The [Replace](reference/cimagelist-class.md#replace) member function replaces an image in an image list ([CImageList](reference/cimagelist-class.md)) with a new image. This function is also useful if you need to dynamically increase the number of images in an image list object. The [SetImageCount](reference/cimagelist-class.md#setimagecount) function dynamically changes the number of images stored in the image list. If you increase the size of the image list, call `Replace` to add images to the new image slots. If you decrease the size of the image list, the images beyond the new size are freed.
 

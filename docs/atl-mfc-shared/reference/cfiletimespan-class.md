@@ -4,9 +4,10 @@ description: "The Active Template Library (ATL) and Microsoft Foundation Classes
 ms.date: "01/10/2020"
 f1_keywords: ["CFileTimeSpan", "ATLTIME/ATL::CFileTimeSpan", "ATLTIME/ATL::CFileTimeSpan::CFileTimeSpan", "ATLTIME/ATL::CFileTimeSpan::GetTimeSpan", "ATLTIME/ATL::CFileTimeSpan::SetTimeSpan"]
 helpviewer_keywords: ["shared classes, CFileTimeSpan", "CFileTimeSpan class"]
-ms.assetid: 5856fb39-9c82-4027-8ccf-8760890491ec
 ---
 # `CFileTimeSpan` class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods for managing relative date and time values associated with a file.
 

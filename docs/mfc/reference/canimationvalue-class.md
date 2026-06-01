@@ -4,9 +4,11 @@ title: "CAnimationValue Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAnimationValue", "AFXANIMATIONCONTROLLER/CAnimationValue", "AFXANIMATIONCONTROLLER/CAnimationValue::CAnimationValue", "AFXANIMATIONCONTROLLER/CAnimationValue::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationValue::GetValue", "AFXANIMATIONCONTROLLER/CAnimationValue::GetVariable", "AFXANIMATIONCONTROLLER/CAnimationValue::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationValue::GetAnimationVariableList", "AFXANIMATIONCONTROLLER/CAnimationValue::m_value"]
 helpviewer_keywords: ["CAnimationValue [MFC], CAnimationValue", "CAnimationValue [MFC], AddTransition", "CAnimationValue [MFC], GetValue", "CAnimationValue [MFC], GetVariable", "CAnimationValue [MFC], SetDefaultValue", "CAnimationValue [MFC], GetAnimationVariableList", "CAnimationValue [MFC], m_value"]
-ms.assetid: 78c5ae19-ede5-4f20-bfbe-68b467b603c2
 ---
 # CAnimationValue Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements the functionality of animation object that has one value.
 

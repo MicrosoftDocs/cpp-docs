@@ -4,9 +4,11 @@ title: "CDockState Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDockState", "AFXADV/CDockState", "AFXADV/CDockState::Clear", "AFXADV/CDockState::GetVersion", "AFXADV/CDockState::LoadState", "AFXADV/CDockState::SaveState", "AFXADV/CDockState::m_arrBarInfo"]
 helpviewer_keywords: ["CDockState [MFC], Clear", "CDockState [MFC], GetVersion", "CDockState [MFC], LoadState", "CDockState [MFC], SaveState", "CDockState [MFC], m_arrBarInfo"]
-ms.assetid: 09e7c10b-3abd-4cb2-ad36-42420fe6bc36
 ---
 # CDockState Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A serialized `CObject` class that loads, unloads, or clears the state of one or more docking control bars in persistent memory (a file).
 

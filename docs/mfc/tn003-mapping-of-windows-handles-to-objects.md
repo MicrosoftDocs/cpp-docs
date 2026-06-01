@@ -4,9 +4,11 @@ title: "TN003: Mapping of Windows Handles to Objects"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.mapping"]
 helpviewer_keywords: ["TN003", "handle maps", "Windows handles to objects [MFC]", "mappings [MFC], Windows handles to objects"]
-ms.assetid: fbea9f38-992c-4091-8dbc-f29e288617d6
 ---
 # TN003: Mapping of Windows Handles to Objects
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This note describes the MFC routines that support mapping Windows object handles to C++ objects.
 

@@ -3,9 +3,11 @@ description: "Learn more about: Internet-Related MFC Classes"
 title: "Internet-Related MFC Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, Internet classes"]
-ms.assetid: e50c6b39-4b65-4b8a-8101-8934d0780723
 ---
 # Internet-Related MFC Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 For information about Internet-related classes and functions, see:
 

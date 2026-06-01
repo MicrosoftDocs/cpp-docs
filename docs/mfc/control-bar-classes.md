@@ -3,9 +3,11 @@ description: "Learn more about: Control Bar Classes"
 title: "Control Bar Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["control bars [MFC], classes"]
-ms.assetid: 11009103-cad8-4309-85ce-3d2e858e1818
 ---
 # Control Bar Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Control bars are attached to a frame window. They contain buttons, status panes, or a dialog template. Free-floating control bars, also called tool palettes, are implemented by attaching them to a [CMiniFrameWnd](reference/cminiframewnd-class.md) object.
 

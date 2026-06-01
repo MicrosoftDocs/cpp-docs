@@ -3,9 +3,11 @@ description: "Learn more about: Collections"
 title: "Collections"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, collections", "arrays [MFC], classes", "MFC collection classes", "shapes, collection", "collection classes [MFC], MFC", "collections, about collections", "array templates [MFC]", "collection classes [MFC], template-based", "collection classes [MFC], about collection classes", "collection classes [MFC], maps", "collection classes [MFC], arrays", "shapes", "collection classes [MFC], lists", "collection classes [MFC], shapes"]
-ms.assetid: 02586e4c-851d-41d0-a722-feb11c17c74c
 ---
 # Collections
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The Microsoft Foundation Class Library provides collection classes to manage groups of objects. These classes are of two types:
 

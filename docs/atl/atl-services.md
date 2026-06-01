@@ -3,9 +3,10 @@ description: "Learn more about: ATL Services"
 title: "ATL Services"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CServiceModule class", "COM objects, ATL", "services, ATL", "ATL services"]
-ms.assetid: 8c09d1a8-7548-4d2c-947c-9d795a81659b
 ---
 # ATL Services
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 To create your ATL COM object so that it runs in a service, simply select Service (EXE) from the list of server options in the ATL Project Wizard. The wizard will then create a class derived from `CAtlServiceModuleT` to implement the service.
 

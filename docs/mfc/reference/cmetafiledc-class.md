@@ -4,9 +4,11 @@ title: "CMetaFileDC Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMetaFileDC", "AFXEXT/CMetaFileDC", "AFXEXT/CMetaFileDC::CMetaFileDC", "AFXEXT/CMetaFileDC::Close", "AFXEXT/CMetaFileDC::CloseEnhanced", "AFXEXT/CMetaFileDC::Create", "AFXEXT/CMetaFileDC::CreateEnhanced"]
 helpviewer_keywords: ["CMetaFileDC [MFC], CMetaFileDC", "CMetaFileDC [MFC], Close", "CMetaFileDC [MFC], CloseEnhanced", "CMetaFileDC [MFC], Create", "CMetaFileDC [MFC], CreateEnhanced"]
-ms.assetid: ffce60fa-4181-4d46-9832-25e46fad4db4
 ---
 # CMetaFileDC Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements a Windows metafile, which contains a sequence of graphics device interface (GDI) commands that you can replay to create a desired image or text.
 

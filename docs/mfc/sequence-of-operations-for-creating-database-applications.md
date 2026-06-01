@@ -3,9 +3,11 @@ description: "Learn more about: Sequence of Operations for Creating Database App
 title: "Sequence of Operations for Creating Database Applications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["applications [MFC], database", "database applications [MFC]", "database applications [MFC], creating", "MFC, database applications"]
-ms.assetid: 9371da59-8536-43cd-8314-706ad320e2ec
 ---
 # Sequence of Operations for Creating Database Applications
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following table shows your role and the framework's role in writing database applications.
 

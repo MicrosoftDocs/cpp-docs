@@ -3,9 +3,11 @@ description: "Learn more about: Customization for MFC"
 title: "Customization for MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["customizations, MFC Extensions"]
-ms.assetid: 3b1b7532-8cc9-48dc-9bbe-7fd4060530b5
 ---
 # Customization for MFC
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This topic provides tips for customizing an MFC application.
 

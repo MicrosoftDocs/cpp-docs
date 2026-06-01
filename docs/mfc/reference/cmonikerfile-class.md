@@ -4,9 +4,11 @@ title: "CMonikerFile Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMonikerFile", "AFXOLE/CMonikerFile", "AFXOLE/CMonikerFile::CMonikerFile", "AFXOLE/CMonikerFile::Close", "AFXOLE/CMonikerFile::Detach", "AFXOLE/CMonikerFile::GetMoniker", "AFXOLE/CMonikerFile::Open", "AFXOLE/CMonikerFile::CreateBindContext"]
 helpviewer_keywords: ["CMonikerFile [MFC], CMonikerFile", "CMonikerFile [MFC], Close", "CMonikerFile [MFC], Detach", "CMonikerFile [MFC], GetMoniker", "CMonikerFile [MFC], Open", "CMonikerFile [MFC], CreateBindContext"]
-ms.assetid: 87be5966-f4f7-4235-bce2-1fa39e9417de
 ---
 # CMonikerFile Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Represents a stream of data ( [IStream](/windows/win32/api/objidl/nn-objidl-istream)) named by an [IMoniker](/windows/win32/api/objidl/nn-objidl-imoniker).
 

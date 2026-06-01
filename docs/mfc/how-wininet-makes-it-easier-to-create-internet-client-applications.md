@@ -3,9 +3,11 @@ description: "Learn more about: How WinInet Makes It Easier to Create Internet C
 title: "How WinInet Makes It Easier to Create Internet Client Applications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows Sockets [MFC], vs. WinInet", "WinInet classes [MFC], vs. WinSock", "WinInet classes [MFC], Internet client applications"]
-ms.assetid: dc0f9f47-3184-4e7a-8074-2c63e0359885
 ---
 # How WinInet Makes It Easier to Create Internet Client Applications
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The Win32 Internet Extensions, or WinInet, provide access to common Internet protocols, including gopher, FTP, and HTTP. Using WinInet, you can write Internet client applications at a higher level of programming, without having to deal with WinSock, TCP/IP, or the details of specific Internet protocols. WinInet provides a consistent set of functions for all three protocols, with a familiar Win32 API interface. This consistency minimizes code changes you need to make if the underlying protocol changes (for example, from FTP to HTTP).
 

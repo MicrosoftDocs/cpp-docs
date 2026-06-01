@@ -3,9 +3,11 @@ description: "Learn more about: Automation Clients"
 title: "Automation Clients"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["clients, Automation", "Automation clients", "type libraries, Automation clients", "clients"]
-ms.assetid: 84e34a79-06f6-4752-a33b-ae0ede1d8ecf
 ---
 # Automation Clients
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Automation makes it possible for your application to manipulate objects implemented in another application, or to expose objects so they can be manipulated. An Automation client is an application that can manipulate exposed objects belonging to another application. The application that exposes the objects is called the Automation server. The client manipulates the server application's objects by accessing those objects' properties and functions.
 

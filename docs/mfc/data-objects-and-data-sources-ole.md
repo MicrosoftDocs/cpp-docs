@@ -3,9 +3,11 @@ description: "Learn more about: Data Objects and Data Sources (OLE)"
 title: "Data Objects and Data Sources (OLE)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["data objects [MFC], definition", "data transfer [MFC]", "OLE [MFC], data transfer", "data sources [MFC], definition", "data transfer [MFC], definition", "OLE [MFC], data objects", "OLE [MFC], data sources"]
-ms.assetid: 8f68eed8-0ce8-4489-a4cc-f95554f89090
 ---
 # Data Objects and Data Sources (OLE)
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 When you perform a data transfer, either by using the Clipboard or drag and drop, the data has a source and a destination. One application provides the data for copying and another application accepts it for pasting. Each side of the transfer needs to perform different operations on the same data for the transfer to succeed. The Microsoft Foundation Class (MFC) Library provides two classes that represent each side of this transfer:
 

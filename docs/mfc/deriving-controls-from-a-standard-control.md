@@ -3,10 +3,12 @@ description: "Learn more about: Deriving Controls from a Standard Control"
 title: "Deriving Controls from a Standard Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["standard controls [MFC], deriving controls from", "common controls [MFC], deriving from", "derived controls", "controls [MFC], derived", "Windows common controls [MFC], deriving from", "standard controls"]
-ms.assetid: a6f84315-7007-4e0e-8576-78be81254802
 ms.topic: how-to
 ---
 # Deriving Controls from a Standard Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 As with any [CWnd](reference/cwnd-class.md)-derived class, you can modify a control's behavior by deriving a new class from an existing control class.
 

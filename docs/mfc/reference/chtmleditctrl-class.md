@@ -4,9 +4,11 @@ title: "CHtmlEditCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CHtmlEditCtrl", "AFXHTML/CHtmlEditCtrl", "AFXHTML/CHtmlEditCtrl::CHtmlEditCtrl", "AFXHTML/CHtmlEditCtrl::Create", "AFXHTML/CHtmlEditCtrl::GetDHtmlDocument", "AFXHTML/CHtmlEditCtrl::GetStartDocument"]
 helpviewer_keywords: ["CHtmlEditCtrl [MFC], CHtmlEditCtrl", "CHtmlEditCtrl [MFC], Create", "CHtmlEditCtrl [MFC], GetDHtmlDocument", "CHtmlEditCtrl [MFC], GetStartDocument"]
-ms.assetid: 0fc4a238-b05f-4874-9edc-6a6701f064d9
 ---
 # CHtmlEditCtrl Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides the functionality of the WebBrowser ActiveX control in an MFC window.
 

@@ -3,9 +3,11 @@ description: "Learn more about: Exceptions: OLE Exceptions"
 title: "Exceptions: OLE Exceptions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE, exceptions", "OLE exceptions [MFC]", "exceptions [MFC], OLE", "exception handling [MFC], OLE", "OLE exceptions [MFC], classes for handling"]
-ms.assetid: 2f8e0161-b94f-48bb-a5a2-6f644b192527
 ---
 # Exceptions: OLE Exceptions
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The techniques and facilities for handling exceptions in OLE are the same as those for handling other exceptions. For further information on exception handling, see the article [Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md).
 

@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMDITabInfo [MFC], Serialize", "CMDITabInfo [MFC], m_bAut
 ---
 # CMDITabInfo Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The `CMDITabInfo` class is used to pass parameters to [CMDIFrameWndEx::EnableMDITabbedGroups](../../mfc/reference/cmdiframewndex-class.md#enablemditabbedgroups) method. Set members of this class to control the behavior of MDI tabbed groups.
 
 ## Syntax

@@ -4,9 +4,11 @@ title: "Ready-to-Use Array Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.array"]
 helpviewer_keywords: ["arrays [MFC], classes", "collection classes [MFC], arrays", "classes [MFC], array"]
-ms.assetid: fdeabf95-2fe7-43a8-8f88-d954133caf52
 ---
 # Ready-to-Use Array Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following classes are ready-to-use array classes.
 

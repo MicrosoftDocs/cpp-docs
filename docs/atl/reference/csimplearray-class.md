@@ -4,9 +4,10 @@ title: "CSimpleArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSimpleArray", "ATLSIMPCOLL/ATL::CSimpleArray", "ATLSIMPCOLL/ATL::CSimpleArray::CSimpleArray", "ATLSIMPCOLL/ATL::CSimpleArray::Add", "ATLSIMPCOLL/ATL::CSimpleArray::Find", "ATLSIMPCOLL/ATL::CSimpleArray::GetData", "ATLSIMPCOLL/ATL::CSimpleArray::GetSize", "ATLSIMPCOLL/ATL::CSimpleArray::Remove", "ATLSIMPCOLL/ATL::CSimpleArray::RemoveAll", "ATLSIMPCOLL/ATL::CSimpleArray::RemoveAt", "ATLSIMPCOLL/ATL::CSimpleArray::SetAtIndex"]
 helpviewer_keywords: ["CSimpleArray class"]
-ms.assetid: ee0c9f39-b61c-4c18-bc43-4eada21dca3a
 ---
 # CSimpleArray Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides methods for managing a simple array.
 

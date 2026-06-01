@@ -4,9 +4,10 @@ title: "Control Containment Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["control containment classes"]
-ms.assetid: e0812aee-c078-4ced-b967-247976552b9a
 ---
 # Control Containment Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 The following classes provide containment support for hosting controls:
 

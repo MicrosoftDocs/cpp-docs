@@ -3,10 +3,12 @@ description: "Learn more about: Working with Dialog Boxes in MFC"
 title: "Working with Dialog Boxes in MFC"
 ms.date: "09/27/2019"
 helpviewer_keywords: ["dialog boxes [MFC], life cycle", "modal dialog boxes [MFC], life cycle", "modeless dialog boxes [MFC], life cycle", "MFC dialog boxes [MFC], life cycle", "life cycle of dialog boxes [MFC]"]
-ms.assetid: e16fd78e-238d-4f31-8c9d-8564f3953bd9
 ms.topic: concept-article
 ---
 # Working with Dialog Boxes in MFC
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 During the life cycle of a dialog box, the user invokes the dialog box, typically inside a command handler that creates and initializes the dialog object, the user interacts with the dialog box, then dialog box closes.
 

@@ -7,6 +7,9 @@ helpviewer_keywords: ["CDaoParameterInfo structure [MFC]", "DAO (Data Access Obj
 ---
 # CDaoParameterInfo Structure
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The `CDaoParameterInfo` structure contains information about a parameter object defined for data access objects (DAO).
 
 > [!NOTE]

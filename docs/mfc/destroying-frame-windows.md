@@ -4,10 +4,12 @@ title: "Destroying Frame Windows"
 ms.date: "11/04/2016"
 f1_keywords: ["PostNcDestroy"]
 helpviewer_keywords: ["Default method [MFC]", "DestroyWindow method [MFC]", "frame windows [MFC], destroying", "OnNcDestroy method, and frame windows", "document frame windows [MFC], destroying", "destroying frame windows", "MFC, frame windows", "windows [MFC], destroying", "OnClose method [MFC]", "PostNcDestroy method [MFC]"]
-ms.assetid: 5affca77-1999-4507-a2b2-9aa226611b4b
 ms.topic: concept-article
 ---
 # Destroying Frame Windows
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The MFC framework manages window destruction as well as creation for those windows associated with framework documents and views. If you create additional windows, you are responsible for destroying them.
 

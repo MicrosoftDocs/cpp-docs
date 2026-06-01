@@ -3,9 +3,10 @@ description: "Learn more about: Object Map Macros"
 title: "Object Map Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlcom/ATL::DECLARE_OBJECT_DESCRIPTION", "atlcom/ATL::OBJECT_ENTRY_AUTO", "atlcom/ATL::OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO", "ATLCOM/DECLARE_OBJECT_DESCRIPTION", "ATLCOM/OBJECT_ENTRY_AUTO", "ATLCOM/OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO"]
-ms.assetid: 680087f4-9894-41dd-a79c-6f337e1f13c1
 ---
 # Object Map Macros
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These macros define object maps and entries.
 

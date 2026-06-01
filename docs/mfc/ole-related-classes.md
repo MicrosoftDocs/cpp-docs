@@ -3,9 +3,11 @@ description: "Learn more about: OLE-Related Classes"
 title: "OLE-Related Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ActiveX classes [MFC]", "OLE classes [MFC]", "OLE [MFC], classes"]
-ms.assetid: 2135cf54-1d9d-4e0e-91b4-943b3440effa
 ---
 # OLE-Related Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 These classes provide a number of different services, ranging from exceptions to file input and output.
 

@@ -4,9 +4,11 @@ title: "OLE Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.ole"]
 helpviewer_keywords: ["ActiveX classes [MFC]", "classes [MFC], OLE", "OLE classes [MFC]", "OLE [MFC], classes"]
-ms.assetid: 4c2b2bca-fafb-4d2d-8498-9ed1e04011d2
 ---
 # OLE Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The OLE classes work with the other application framework classes to provide easy access to the ActiveX API, giving your programs an easy way to provide the power of ActiveX to your users. Using ActiveX, you can:
 

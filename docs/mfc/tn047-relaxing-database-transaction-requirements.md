@@ -4,9 +4,11 @@ title: "TN047: Relaxing Database Transaction Requirements"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.data"]
 helpviewer_keywords: ["TN047"]
-ms.assetid: f93c51cf-a8c0-43d0-aa47-7bcb8333d693
 ---
 # TN047: Relaxing Database Transaction Requirements
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This tech note, which discussed the transaction requirements of the MFC ODBC database classes, is now obsolete. Before MFC 4.2, the database classes required that cursors be preserved on recordsets after a **CommitTrans** or **Rollback** operation. If the ODBC driver and DBMS did not support this level of cursor preservation, then the database classes did not enable transactions.
 

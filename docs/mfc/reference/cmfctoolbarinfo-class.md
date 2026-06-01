@@ -4,9 +4,11 @@ title: "CMFCToolBarInfo Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCToolBarInfo", "AFXTOOLBAR/CMFCToolBarInfo", "AFXTOOLBAR/CMFCToolBarInfo::m_uiColdResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiDisabledResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiHotResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiLargeColdResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiLargeDisabledResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiLargeHotResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiMenuDisabledResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiMenuResID"]
 helpviewer_keywords: ["CMFCToolBarInfo [MFC], m_uiColdResID", "CMFCToolBarInfo [MFC], m_uiDisabledResID", "CMFCToolBarInfo [MFC], m_uiHotResID", "CMFCToolBarInfo [MFC], m_uiLargeColdResID", "CMFCToolBarInfo [MFC], m_uiLargeDisabledResID", "CMFCToolBarInfo [MFC], m_uiLargeHotResID", "CMFCToolBarInfo [MFC], m_uiMenuDisabledResID", "CMFCToolBarInfo [MFC], m_uiMenuResID"]
-ms.assetid: 6dc84482-eaaa-491f-aa5d-dd7a57886b46
 ---
 # CMFCToolBarInfo Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Contains the resource IDs of toolbar images in various states. `CMFCToolBarInfo` is a helper class that is used as a parameter of the [CMFCToolBar::LoadToolBarEx](../../mfc/reference/cmfctoolbar-class.md#loadtoolbarex) method.
 

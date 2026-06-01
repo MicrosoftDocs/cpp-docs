@@ -3,9 +3,11 @@ description: "Learn more about: One-Stage and Two-Stage Construction of Objects"
 title: "One-Stage and Two-Stage Construction of Objects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["objects [MFC], creating graphic objects", "object creation [MFC], graphic objects", "objects [MFC], graphic objects", "one-stage and two-stage construction of objects [MFC]"]
-ms.assetid: 5a1c410c-4a4b-4dd9-a2ec-ced831aa7f21
 ---
 # One-Stage and Two-Stage Construction of Objects
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 You have a choice between two techniques for creating graphic objects, such as pens and brushes:
 

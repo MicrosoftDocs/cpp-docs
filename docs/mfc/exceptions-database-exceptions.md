@@ -3,9 +3,11 @@ description: "Learn more about: Exceptions: Database Exceptions"
 title: "Exceptions: Database Exceptions"
 ms.date: "09/17/2019"
 helpviewer_keywords: ["DAO [MFC], exceptions", "exceptions [MFC], database", "exception handling [MFC], databases", "ODBC exceptions [MFC]", "ODBC [MFC], exceptions", "database exceptions [MFC]", "databases [MFC], exception handling", "error codes [MFC], database exception handling"]
-ms.assetid: 28daf260-f824-4be6-aecc-1f859e6dec26
 ---
 # Exceptions: Database Exceptions
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains how to handle database exceptions. Most of the material in this article applies whether you are working with the MFC classes for Open Database Connectivity (ODBC) or the MFC classes for Data Access Objects (DAO). Material specific to one or the other model is explicitly marked. Topics include:
 

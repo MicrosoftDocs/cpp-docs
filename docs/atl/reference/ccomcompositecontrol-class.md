@@ -4,9 +4,10 @@ title: "CComCompositeControl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComCompositeControl", "ATLCTL/ATL::CComCompositeControl", "ATLCTL/ATL::CComCompositeControl::CComCompositeControl", "ATLCTL/ATL::CComCompositeControl::AdviseSinkMap", "ATLCTL/ATL::CComCompositeControl::CalcExtent", "ATLCTL/ATL::CComCompositeControl::Create", "ATLCTL/ATL::CComCompositeControl::CreateControlWindow", "ATLCTL/ATL::CComCompositeControl::SetBackgroundColorFromAmbient", "ATLCTL/ATL::CComCompositeControl::m_hbrBackground", "ATLCTL/ATL::CComCompositeControl::m_hWndFocus"]
 helpviewer_keywords: ["CComCompositeControl class", "composite controls, CComCompositeControl class"]
-ms.assetid: 1304b931-27e8-4fbc-be8e-bb226ad887fb
 ---
 # CComCompositeControl Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides the methods required to implement a composite control.
 

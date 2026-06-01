@@ -3,9 +3,11 @@ description: "Learn more about: TN064: Apartment-Model Threading in ActiveX Cont
 title: "TN064: Apartment-Model Threading in ActiveX Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE controls [MFC], container support", "containers [MFC], multithreaded", "TN064 [MFC]", "multithread container [MFC]", "apartment model threading [MFC]"]
-ms.assetid: b2ab4c88-6954-48e2-9a74-01d4a60df073
 ---
 # TN064: Apartment-Model Threading in ActiveX Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

@@ -3,10 +3,12 @@ description: "Learn more about: Adding Controls By Hand"
 title: "Adding Controls By Hand"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows common controls [MFC], adding", "dialog box controls [MFC], adding to dialog boxes", "controlling input focus", "input focus control", "focus, controlling input [MFC]", "controls [MFC], adding to dialog boxes", "common controls [MFC], adding"]
-ms.assetid: bc843e59-0c51-4b5b-8bf2-343f716469d2
 ms.topic: concept-article
 ---
 # Adding Controls By Hand
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 You can either [add controls to a dialog box with the dialog editor](using-the-dialog-editor-to-add-controls.md) or add them yourself, with code.
 

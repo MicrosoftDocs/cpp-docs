@@ -4,9 +4,11 @@ title: "CD2DRoundedRect Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CD2DRoundedRect", "AFXRENDERTARGET/CD2DRoundedRect", "AFXRENDERTARGET/CD2DRoundedRect::CD2DRoundedRect"]
 helpviewer_keywords: ["CD2DRoundedRect [MFC], CD2DRoundedRect"]
-ms.assetid: 06207fb5-e92b-41c0-bceb-b45d8f466531
 ---
 # CD2DRoundedRect Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A wrapper for `D2D1_ROUNDED_RECT`.
 

@@ -3,9 +3,10 @@ description: "Learn more about: String Conversion Macros"
 title: "String Conversion Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlconv/ATL::DEVMODEA2W", "atlconv/ATL::TEXTMETRICA2W", "atlconv/ATL::DEVMODEOLE2T", "atlconv/ATL::TEXTMETRICOLE2T", "atlconv/ATL::DEVMODET2OLE", "atlconv/ATL::TEXTMETRICT2OLE", "atlconv/ATL::DEVMODEW2A", "atlconv/ATL::TEXTMETRICW2A", "ATLCONV/DEVMODEA2W", "ATLCONV/TEXTMETRICA2W", "ATLCONV/DEVMODEOLE2T", "ATLCONV/TEXTMETRICOLE2T", "ATLCONV/DEVMODET2OLE", "ATLCONV/TEXTMETRICT2OLE", "ATLCONV/DEVMODEW2A", "ATLCONV/TEXTMETRICW2A"]
-ms.assetid: 2ff7c0b6-2bde-45fe-897f-6128e18e0c27
 ---
 # String Conversion Macros
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These macros provide string conversion features.
 

@@ -4,9 +4,11 @@ title: "CRuntimeClass Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["CRuntimeClass"]
 helpviewer_keywords: ["CRuntimeClass structure [MFC]", "dynamic class information [MFC]", "runtime [MFC], class information", "run-time class [MFC], CRuntimeClass structure"]
-ms.assetid: de62b6ef-90d4-420f-8c70-f58b36976a2b
 ---
 # CRuntimeClass Structure
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Each class derived from `CObject` is associated with a `CRuntimeClass` structure that you can use to obtain information about an object or its base class at run time.
 

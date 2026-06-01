@@ -7,6 +7,8 @@ helpviewer_keywords: ["CComSafeArray class"]
 ---
 # `CComSafeArray` Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 This class is a wrapper for the `SAFEARRAY` structure.
 
 ## Syntax

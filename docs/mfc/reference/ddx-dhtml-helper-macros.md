@@ -4,9 +4,11 @@ title: "DDX_DHtml Helper Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["AFXDHTML/DDX_DHtml_ElementValue", "AFXDHTML/DDX_DHtml_ElementInnerText", "AFXDHTML/DDX_DHtml_ElementInnerHtml", "AFXDHTML/DDX_DHtml_Anchor_Href", "AFXDHTML/DDX_DHtml_Anchor_Target", "AFXDHTML/DDX_DHtml_Img_Src", "AFXDHTML/DDX_DHtml_Frame_Src", "AFXDHTML/DDX_DHtml_IFrame_Src"]
 helpviewer_keywords: ["macros [MFC], exchanging data with HMTL pages", "DDX macros [MFC]", "HTML pages [MFC], helper macros", "DDX (dialog data exchange), DHtml helper macros", "macros [MFC], DDX_DHtml helpers"]
-ms.assetid: c46302d2-ea43-4fea-bfc2-6f590d99f267
 ---
 # DDX_DHtml Helper Macros
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The DDX_DHtml helper macros allow easy access to the commonly used properties of controls on an HTML page.
 

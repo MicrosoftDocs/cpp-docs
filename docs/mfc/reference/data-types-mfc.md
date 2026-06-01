@@ -7,6 +7,9 @@ helpviewer_keywords: ["LPCRECT data type [MFC]", "WPARAM data type [MFC]", "data
 ---
 # Data Types (MFC)
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 This topic lists the data types most commonly used in the Microsoft Foundation Class (MFC) Library. Most of the data types are the same as those in the Platform Software Development Kit (SDK), while others are unique to MFC.
 
 For information about the data types used in both the Windows SDK and MFC, see [Windows Data Types](/windows/win32/WinProg/windows-data-types).

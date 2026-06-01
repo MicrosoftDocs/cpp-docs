@@ -4,9 +4,10 @@ title: "CAtlDebugInterfacesModule Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAtlDebugInterfacesModule", "atlbase/ATL::CAtlDebugInterfacesModule"]
 helpviewer_keywords: ["_ATL_DEBUG_QI macro", "CAtlDebugInterfacesModule class"]
-ms.assetid: a193b567-8191-4115-a963-a10805972bac
 ---
 # CAtlDebugInterfacesModule Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides support for debugging interfaces.
 

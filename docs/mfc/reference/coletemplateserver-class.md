@@ -7,6 +7,9 @@ helpviewer_keywords: ["COleTemplateServer [MFC], COleTemplateServer", "COleTempl
 ---
 # COleTemplateServer Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Used for OLE visual editing servers, automation servers, and link containers (applications that support links to embeddings).
 
 ## Syntax

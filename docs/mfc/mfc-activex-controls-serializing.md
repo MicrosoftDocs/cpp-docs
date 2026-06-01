@@ -4,9 +4,11 @@ title: "MFC ActiveX Controls: Serializing"
 ms.date: "09/12/2018"
 f1_keywords: ["_wVerMinor", "DoPropExchange", "_wVerMajor"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], version support", "wVerMinor global constant [MFC]", "GetVersion method [MFC]", "ExchangeVersion method [MFC]", "MFC ActiveX controls [MFC], serializing", "DoPropExchange method [MFC]", "versioning ActiveX controls", "wVerMajor global constant"]
-ms.assetid: 9d57c290-dd8c-4853-b552-6f17f15ebedd
 ---
 # MFC ActiveX Controls: Serializing
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article discusses how to serialize an ActiveX control. Serialization is the process of reading from or writing to a persistent storage medium, such as a disk file. The Microsoft Foundation Class (MFC) Library provides built-in support for serialization in class `CObject`. `COleControl` extends this support to ActiveX controls through the use of a property exchange mechanism.
 

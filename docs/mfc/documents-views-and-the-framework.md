@@ -3,9 +3,11 @@ title: "Documents, views, and the Microsoft Foundation Class (MFC) library frame
 description: "A description of documents and views in the Microsoft Foundation Class (MFC) library."
 ms.date: "09/25/2020"
 helpviewer_keywords: ["document templates [MFC], template objects", "applications [MFC]", "MFC, application framework", "application objects [MFC], relation to other MFC objects", "documents [MFC]", "MFC, documents", "document objects [MFC], in relation to other MFC objects", "view objects [MFC], relation to other MFC objects", "MFC, views", "document/view architecture [MFC], about document/view architecture", "objects [MFC], MFC applications", "MFC object relationships", "thread objects [MFC]"]
-ms.assetid: 409ddd9b-66ad-4625-84f7-bf55a41d697b
 ---
 # Documents, views, and the framework
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 At the heart of the MFC framework are the concepts of document and view. A document is a data object with which the user interacts in an editing session. It's created by the **New** or **Open** command on the **File** menu and is typically saved in a file. (Standard MFC documents, derived from class `CDocument`, are different from Active documents and OLE compound documents.) A view is a window object through which the user interacts with a document.
 

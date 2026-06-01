@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMFCButton [MFC], CleanUp", "CMFCButton [MFC], EnableFull
 ---
 # `CMFCButton` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The `CMFCButton` class adds functionality to the [`CButton`](../../mfc/reference/cbutton-class.md) class such as aligning button text, combining button text and an image, selecting a cursor, and specifying a tool tip.
 
 ## Syntax

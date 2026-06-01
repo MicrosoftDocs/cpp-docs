@@ -4,9 +4,11 @@ title: "CMFCRibbonSeparator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonSeparator", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::CMFCRibbonSeparator", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::AddToListBox", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::CopyFrom", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::GetRegularSize", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::IsSeparator", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::IsTabStop", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::OnDraw", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::OnDrawOnList"]
 helpviewer_keywords: ["CMFCRibbonSeparator [MFC], CMFCRibbonSeparator", "CMFCRibbonSeparator [MFC], AddToListBox", "CMFCRibbonSeparator [MFC], CopyFrom", "CMFCRibbonSeparator [MFC], GetRegularSize", "CMFCRibbonSeparator [MFC], IsSeparator", "CMFCRibbonSeparator [MFC], IsTabStop", "CMFCRibbonSeparator [MFC], OnDraw", "CMFCRibbonSeparator [MFC], OnDrawOnList"]
-ms.assetid: bedb1a53-cb07-4c3c-be12-698c5409e7cf
 ---
 # CMFCRibbonSeparator Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements the ribbon separator.
 

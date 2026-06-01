@@ -6,6 +6,9 @@ helpviewer_keywords: ["class libraries [MFC], building versions", "version infor
 ---
 # MFC Library Versions
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The MFC Library is available in versions that support ANSI single-byte and multibyte character set (MBCS) code, as well as versions that support Unicode (encoded as UTF-16LE, the Windows-native character set). Each MFC version is available as a static library or as a shared DLL. There is also a smaller MFC static library version that leaves out MFC controls for dialogs, for applications that are very sensitive to size and don't need those controls. The MFC libraries are available in both debug and release versions for supported architectures that include x86, x64, and ARM processors. You can create both applications (.exe files) and DLLs with any version of the MFC libraries. There is also a set of MFC libraries compiled for interfacing with managed code. The MFC shared DLLs include a version number to indicate library binary compatibility.
 
 ## Automatic linking of MFC library versions

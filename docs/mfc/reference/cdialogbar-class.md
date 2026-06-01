@@ -4,9 +4,11 @@ title: "CDialogBar Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDialogBar", "AFXEXT/CDialogBar", "AFXEXT/CDialogBar::CDialogBar", "AFXEXT/CDialogBar::Create"]
 helpviewer_keywords: ["CDialogBar [MFC], CDialogBar", "CDialogBar [MFC], Create"]
-ms.assetid: da2f7a30-970c-44e3-87f0-6094bd002cab
 ---
 # CDialogBar Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides the functionality of a Windows modeless dialog box in a control bar.
 

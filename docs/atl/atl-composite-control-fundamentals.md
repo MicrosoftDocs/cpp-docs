@@ -3,9 +3,10 @@ description: "Learn more about: ATL Composite Control Fundamentals"
 title: "ATL Composite Control Fundamentals"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["composite controls, about composite controls"]
-ms.assetid: 2ac78cdd-1ec4-4d78-871c-1bcc23b5253e
 ---
 # ATL Composite Control Fundamentals
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 A composite control is a type of ActiveX control that can contain (similar to a dialog box) other ActiveX controls or Windows controls. Once the composite control is built, it can be inserted anywhere an ActiveX control can be hosted.
 

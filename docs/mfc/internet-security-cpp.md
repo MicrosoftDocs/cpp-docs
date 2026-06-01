@@ -3,9 +3,11 @@ description: "Learn more about: Internet Security (C++)"
 title: "Internet Security (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["code signing [MFC], Internet security", "sandboxing [MFC]", "digital signatures [MFC], Internet security", "code signing [MFC]", "Web application security [MFC]", "code access security [MFC], Internet security considerations", "security [MFC]", "security [MFC], Internet", "Internet applications [MFC], security", "Web application security [MFC], Internet security approaches"]
-ms.assetid: bf0da697-81bc-41f0-83fa-d7f82ed83df8
 ---
 # Internet Security (C++)
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Code safety is a major issue for developers and for users of Internet applications. There are risks: malicious code, code that has been tampered with, and code from unknown sites or authors.
 

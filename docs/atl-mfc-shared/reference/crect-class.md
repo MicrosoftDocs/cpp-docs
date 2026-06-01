@@ -7,6 +7,8 @@ helpviewer_keywords: ["LPCRECT data type", "CRect class", "LPRECT operator", "RE
 ---
 # `CRect` Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 Similar to a Windows [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure.
 
 ## Syntax

@@ -8,6 +8,9 @@ ms.custom: sfi-ropc-nochange
 ---
 # `CDatabase` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Represents a connection to a data source, through which you can operate on the data source.
 
 ## Syntax

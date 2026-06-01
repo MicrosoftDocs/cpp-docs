@@ -4,9 +4,11 @@ title: "CSinusoidalTransitionFromRange Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSinusoidalTransitionFromRange", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::CSinusoidalTransitionFromRange", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::Create", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_dblMaximumValue", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_dblMinimumValue", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_duration", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_period", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_slope"]
 helpviewer_keywords: ["CSinusoidalTransitionFromRange [MFC], CSinusoidalTransitionFromRange", "CSinusoidalTransitionFromRange [MFC], Create", "CSinusoidalTransitionFromRange [MFC], m_dblMaximumValue", "CSinusoidalTransitionFromRange [MFC], m_dblMinimumValue", "CSinusoidalTransitionFromRange [MFC], m_duration", "CSinusoidalTransitionFromRange [MFC], m_period", "CSinusoidalTransitionFromRange [MFC], m_slope"]
-ms.assetid: 8b66a729-5f10-431a-b055-e3600d0065da
 ---
 # CSinusoidalTransitionFromRange Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Encapsulates a sinusoidal-range transition that has a given range of oscillation.
 

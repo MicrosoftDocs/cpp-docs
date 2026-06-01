@@ -3,9 +3,11 @@ description: "Learn more about: Messages and Commands in the Framework"
 title: "Messages and Commands in the Framework"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["events [MFC], command routing in MFC", "event-driven programming [MFC]", "events [MFC], event-driven programming", "message-driven programming [MFC]"]
-ms.assetid: d799ed8c-6a9f-4f05-be5d-29cb5bc6d185
 ---
 # Messages and Commands in the Framework
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Applications written for Microsoft Windows are "message driven." In response to events such as mouse clicks, keystrokes, window movements, and so on, Windows sends messages to the proper window. Framework applications process Windows messages like any other application for Windows. But the framework also provides some enhancements that make processing messages easier, more maintainable, and better encapsulated.
 

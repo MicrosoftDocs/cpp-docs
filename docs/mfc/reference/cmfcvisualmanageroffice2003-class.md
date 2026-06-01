@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMFCVisualManagerOffice2003 Class [MFC]"]
 ---
 # CMFCVisualManagerOffice2003 Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 `CMFCVisualManagerOffice2003` gives an application a Microsoft Office 2003 appearance.
 
 ## Syntax

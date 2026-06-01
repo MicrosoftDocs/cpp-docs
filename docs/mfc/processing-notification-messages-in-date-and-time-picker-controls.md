@@ -4,10 +4,12 @@ title: "Processing Notification Messages in Date and Time Picker Controls"
 ms.date: "11/04/2016"
 f1_keywords: ["DTN_CLOSEUP", "DTN_DATETIMECHANGE", "DTN_DROPDOWN"]
 helpviewer_keywords: ["DTN_DROPDOWN notification [MFC]", "DTN_DATETIMECHANGE notification [MFC]", "DTN_CLOSEUP notification [MFC]", "DateTimePicker control [MFC], handling notifications", "CDateTimeCtrl class [MFC], handling notifications", "DTN_FORMAT notification [MFC]", "DateTimePicker control [MFC]"]
-ms.assetid: ffbe29ab-ff80-4609-89f7-260b404439c4
 ms.topic: concept-article
 ---
 # Processing Notification Messages in Date and Time Picker Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 As users interact with the date and time picker control, the control (`CDateTimeCtrl`) sends notification messages to its parent window, usually a view or dialog object. Handle these messages if you want to do something in response. For example, when the user opens the date and time picker to display the embedded month calendar control, the DTN_DROPDOWN notification is sent.
 

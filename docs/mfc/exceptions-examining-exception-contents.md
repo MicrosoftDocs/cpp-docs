@@ -3,9 +3,11 @@ description: "Learn more about: Exceptions: Examining Exception Contents"
 title: "Exceptions: Examining Exception Contents"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exception handling [MFC], MFC", "try-catch exception handling [MFC], MFC function exceptions", "catch blocks, MFC function exceptions", "CException class [MFC], class exceptions", "try-catch exception handling [MFC], exception contents", "throwing exceptions [MFC], exception contents"]
-ms.assetid: dfda4782-b969-4f60-b867-cc204ea7f33a
 ---
 # Exceptions: Examining Exception Contents
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Although a **`catch`** block's argument can be of almost any data type, the MFC functions throw exceptions of types derived from the class `CException`. To catch an exception thrown by an MFC function, then, you write a **`catch`** block whose argument is a pointer to a `CException` object (or an object derived from `CException`, such as `CMemoryException`). Depending on the exact type of the exception, you can examine the data members of the exception object to gather information about the specific cause of the exception.
 

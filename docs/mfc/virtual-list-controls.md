@@ -3,9 +3,11 @@ description: "Learn more about: Virtual List Controls"
 title: "Virtual List Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["cache, virtual list control item data", "list controls [MFC], virtual", "list controls [MFC], List view", "virtual list controls"]
-ms.assetid: 319f841f-e426-423a-8276-d93f965b0b45
 ---
 # Virtual List Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A virtual list control is a list view control that has the LVS_OWNERDATA style. This style enables the control to support an item count up to a **DWORD** (the default item count only extends to an **`int`**). However, the biggest advantage provided by this style is the ability to only have a subset of data items in memory at any one time. This allows the virtual list view control to lend itself for use with large databases of information, where specific methods of accessing data are already in place.
 

@@ -4,9 +4,11 @@ title: "CAnimationSize Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAnimationSize", "AFXANIMATIONCONTROLLER/CAnimationSize", "AFXANIMATIONCONTROLLER/CAnimationSize::CAnimationSize", "AFXANIMATIONCONTROLLER/CAnimationSize::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationSize::GetCX", "AFXANIMATIONCONTROLLER/CAnimationSize::GetCY", "AFXANIMATIONCONTROLLER/CAnimationSize::GetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationSize::GetValue", "AFXANIMATIONCONTROLLER/CAnimationSize::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationSize::GetAnimationVariableList", "AFXANIMATIONCONTROLLER/CAnimationSize::m_cxValue", "AFXANIMATIONCONTROLLER/CAnimationSize::m_cyValue"]
 helpviewer_keywords: ["CAnimationSize [MFC], CAnimationSize", "CAnimationSize [MFC], AddTransition", "CAnimationSize [MFC], GetCX", "CAnimationSize [MFC], GetCY", "CAnimationSize [MFC], GetDefaultValue", "CAnimationSize [MFC], GetValue", "CAnimationSize [MFC], SetDefaultValue", "CAnimationSize [MFC], GetAnimationVariableList", "CAnimationSize [MFC], m_cxValue", "CAnimationSize [MFC], m_cyValue"]
-ms.assetid: ea06d1b5-502c-44a3-82ca-8bd6ba6a9364
 ---
 # CAnimationSize Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements the functionality of a size object whose dimensions can be animated.
 

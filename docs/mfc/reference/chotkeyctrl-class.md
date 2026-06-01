@@ -4,9 +4,11 @@ title: "CHotKeyCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CHotKeyCtrl", "AFXCMN/CHotKeyCtrl", "AFXCMN/CHotKeyCtrl::CHotKeyCtrl", "AFXCMN/CHotKeyCtrl::Create", "AFXCMN/CHotKeyCtrl::CreateEx", "AFXCMN/CHotKeyCtrl::GetHotKey", "AFXCMN/CHotKeyCtrl::GetHotKeyName", "AFXCMN/CHotKeyCtrl::GetKeyName", "AFXCMN/CHotKeyCtrl::SetHotKey", "AFXCMN/CHotKeyCtrl::SetRules"]
 helpviewer_keywords: ["CHotKeyCtrl [MFC], CHotKeyCtrl", "CHotKeyCtrl [MFC], Create", "CHotKeyCtrl [MFC], CreateEx", "CHotKeyCtrl [MFC], GetHotKey", "CHotKeyCtrl [MFC], GetHotKeyName", "CHotKeyCtrl [MFC], GetKeyName", "CHotKeyCtrl [MFC], SetHotKey", "CHotKeyCtrl [MFC], SetRules"]
-ms.assetid: 896f9766-0718-4f58-aab2-20325e118ca6
 ---
 # CHotKeyCtrl Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides the functionality of the Windows common hot key control.
 

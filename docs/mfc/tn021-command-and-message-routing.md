@@ -4,9 +4,11 @@ title: "TN021: Command and Message Routing"
 ms.date: "06/28/2018"
 f1_keywords: ["vc.routing"]
 helpviewer_keywords: ["TN021", "command routing [MFC], technical note TN021", "Windows messages [MFC], routing"]
-ms.assetid: b5952c8b-123e-406c-a36d-a6ac7c6df307
 ---
 # TN021: Command and Message Routing
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.

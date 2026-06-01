@@ -7,6 +7,9 @@ helpviewer_keywords: ["CTabView [MFC], AddView", "CTabView [MFC], FindTab", "CTa
 ---
 # CTabView Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The `CTabView` class simplifies the use of the tab control class ( [CMFCTabCtrl](../../mfc/reference/ctabview-class.md)) in applications that use MFC's document/view architecture.
 
 ## Syntax

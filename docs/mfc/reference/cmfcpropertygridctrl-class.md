@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMFCPropertyGridCtrl [MFC], CMFCPropertyGridCtrl", "CMFCP
 ---
 # CMFCPropertyGridCtrl Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 For more detail see the source code located in the **`mfc`** folder of your Visual Studio installation. For example, `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\atlmfc\src\mfc`.
 
 Supports an editable property grid control that can display properties in alphabetical or hierarchical order.

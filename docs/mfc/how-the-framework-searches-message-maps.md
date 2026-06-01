@@ -3,9 +3,11 @@ description: "Learn more about: How the Framework Searches Message Maps"
 title: "How the Framework Searches Message Maps"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["message maps [MFC], searching"]
-ms.assetid: fd1df878-5601-45d7-bd1f-b8f8e65b9a17
 ---
 # How the Framework Searches Message Maps
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The framework searches the message-map table for matches with incoming messages. Once you write a message-map entry for each message you want a class to handle and write the corresponding handlers, the framework calls your handlers automatically. The following topics explain message-map searching:
 

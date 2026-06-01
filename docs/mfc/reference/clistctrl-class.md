@@ -7,6 +7,9 @@ helpviewer_keywords: ["CListCtrl [MFC], CListCtrl", "CListCtrl [MFC], Approximat
 ---
 # `CListCtrl` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Encapsulates the functionality of a "list view control," which displays a collection of items each consisting of an icon (from an image list) and a label.
 
 ## Syntax

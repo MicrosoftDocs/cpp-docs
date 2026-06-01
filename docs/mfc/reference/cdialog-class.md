@@ -7,6 +7,9 @@ helpviewer_keywords: ["CDialog [MFC], CDialog", "CDialog [MFC], Create", "CDialo
 ---
 # CDialog Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The base class used for displaying dialog boxes on the screen.
 
 ## Syntax

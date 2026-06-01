@@ -3,9 +3,11 @@ description: "Learn more about: DAO Classes"
 title: "DAO Classes"
 ms.date: "09/17/2019"
 helpviewer_keywords: ["database classes [MFC], DAO", "DAO [MFC], classes"]
-ms.assetid: b15d0cd6-328b-4288-9c19-d037a795db57
 ---
 # DAO Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 DAO is used with Access databases and is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete.
 

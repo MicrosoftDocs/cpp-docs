@@ -4,9 +4,11 @@ title: "CMFCMenuButton Class"
 ms.date: "07/15/2019"
 f1_keywords: ["CMFCMenuButton", "AFXMENUBUTTON/CMFCMenuButton", "AFXMENUBUTTON/CMFCMenuButton::CMFCMenuButton", "AFXMENUBUTTON/CMFCMenuButton::PreTranslateMessage", "AFXMENUBUTTON/CMFCMenuButton::SizeToContent", "AFXMENUBUTTON/CMFCMenuButton::m_bOSMenu", "AFXMENUBUTTON/CMFCMenuButton::m_bRightArrow", "AFXMENUBUTTON/CMFCMenuButton::m_bStayPressed", "AFXMENUBUTTON/CMFCMenuButton::m_hMenu", "AFXMENUBUTTON/CMFCMenuButton::m_nMenuResult", "AFXMENUBUTTON/CMFCMenuButton::m_bDefaultClick"]
 helpviewer_keywords: ["CMFCMenuButton [MFC], CMFCMenuButton", "CMFCMenuButton [MFC], PreTranslateMessage", "CMFCMenuButton [MFC], SizeToContent", "CMFCMenuButton [MFC], m_bOSMenu", "CMFCMenuButton [MFC], m_bRightArrow", "CMFCMenuButton [MFC], m_bStayPressed", "CMFCMenuButton [MFC], m_hMenu", "CMFCMenuButton [MFC], m_nMenuResult", "CMFCMenuButton [MFC], m_bDefaultClick"]
-ms.assetid: 53d3d459-1e5a-47c5-8b7f-2e61f6af5187
 ---
 # CMFCMenuButton Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A button that displays a pop-up menu and reports on the user's menu selections.
 

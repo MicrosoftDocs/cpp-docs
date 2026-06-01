@@ -7,6 +7,9 @@ helpviewer_keywords: ["CDaoErrorInfo structure [MFC]", "DAO (Data Access Objects
 ---
 # CDaoErrorInfo Structure
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The `CDaoErrorInfo` structure contains information about an error object defined for data access objects (DAO).
 
 > [!NOTE]

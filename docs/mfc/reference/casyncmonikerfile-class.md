@@ -4,9 +4,11 @@ title: "CAsyncMonikerFile Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAsyncMonikerFile", "AFXOLE/CAsyncMonikerFile", "AFXOLE/CAsyncMonikerFile::CAsyncMonikerFile", "AFXOLE/CAsyncMonikerFile::Close", "AFXOLE/CAsyncMonikerFile::GetBinding", "AFXOLE/CAsyncMonikerFile::GetFormatEtc", "AFXOLE/CAsyncMonikerFile::Open", "AFXOLE/CAsyncMonikerFile::CreateBindStatusCallback", "AFXOLE/CAsyncMonikerFile::GetBindInfo", "AFXOLE/CAsyncMonikerFile::GetPriority", "AFXOLE/CAsyncMonikerFile::OnDataAvailable", "AFXOLE/CAsyncMonikerFile::OnLowResource", "AFXOLE/CAsyncMonikerFile::OnProgress", "AFXOLE/CAsyncMonikerFile::OnStartBinding", "AFXOLE/CAsyncMonikerFile::OnStopBinding"]
 helpviewer_keywords: ["CAsyncMonikerFile [MFC], CAsyncMonikerFile", "CAsyncMonikerFile [MFC], Close", "CAsyncMonikerFile [MFC], GetBinding", "CAsyncMonikerFile [MFC], GetFormatEtc", "CAsyncMonikerFile [MFC], Open", "CAsyncMonikerFile [MFC], CreateBindStatusCallback", "CAsyncMonikerFile [MFC], GetBindInfo", "CAsyncMonikerFile [MFC], GetPriority", "CAsyncMonikerFile [MFC], OnDataAvailable", "CAsyncMonikerFile [MFC], OnLowResource", "CAsyncMonikerFile [MFC], OnProgress", "CAsyncMonikerFile [MFC], OnStartBinding", "CAsyncMonikerFile [MFC], OnStopBinding"]
-ms.assetid: 17378b66-a49a-4b67-88e3-7756ad26a2fc
 ---
 # CAsyncMonikerFile Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides functionality for the use of asynchronous monikers in ActiveX controls (formerly OLE controls).
 

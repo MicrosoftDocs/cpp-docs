@@ -3,9 +3,11 @@ description: "Learn more about: Headers and Footers"
 title: "Headers and Footers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["printing [MFC], multipage documents", "page headers [MFC], printing", "headers [MFC], printing", "footers [MFC], printing", "page footers [MFC], printing", "page headers [MFC]", "printing [MFC], headers and footers", "page footers [MFC]"]
-ms.assetid: b0be9c53-5773-4955-a777-3c15da745128
 ---
 # Headers and Footers
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains how to add headers and footers to a printed document.
 

@@ -7,6 +7,9 @@ helpviewer_keywords: ["CImageList [MFC], CImageList", "CImageList [MFC], Add", "
 ---
 # `CImageList` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Provides the functionality of the Windows common image list control.
 
 ## Syntax

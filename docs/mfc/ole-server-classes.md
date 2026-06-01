@@ -3,9 +3,11 @@ description: "Learn more about: OLE Server Classes"
 title: "OLE Server Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE server applications [MFC], server classes", "OLE server documents", "COM components, classes [MFC]", "component classes [MFC]"]
-ms.assetid: 8e9b67a2-c0ff-479c-a8d6-19b36c5e6fc6
 ---
 # OLE Server Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 These classes are used by server applications. Server documents are derived from `COleServerDoc` rather than from `CDocument`. Note that because `COleServerDoc` is derived from `COleLinkingDoc`, server documents can also be containers that support linking.
 

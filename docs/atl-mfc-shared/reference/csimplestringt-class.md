@@ -7,6 +7,8 @@ helpviewer_keywords: ["shared classes, CSimpleStringT", "strings [C++], ATL clas
 ---
 # `CSimpleStringT` Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 This class represents a `CSimpleStringT` object.
 
 ## Syntax

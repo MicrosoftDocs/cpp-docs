@@ -3,9 +3,11 @@ description: "Learn more about: Windows Sockets: Deriving from Socket Classes"
 title: "Windows Sockets: Deriving from Socket Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["derived classes [MFC], from socket classes", "Windows Sockets [MFC], deriving from socket classes", "sockets [MFC], deriving from socket classes"]
-ms.assetid: 3a26e67a-e323-433b-9b05-eca018799801
 ---
 # Windows Sockets: Deriving from Socket Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article describes some of the functionality you can gain by deriving your own class from one of the socket classes.
 

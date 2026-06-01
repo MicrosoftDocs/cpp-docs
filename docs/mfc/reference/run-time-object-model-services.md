@@ -6,6 +6,9 @@ helpviewer_keywords: ["run-time object model services macros"]
 ---
 # Run-Time Object Model Services
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The classes [`CObject`](../../mfc/reference/cobject-class.md) and [`CRuntimeClass`](../../mfc/reference/cruntimeclass-structure.md) encapsulate several object services, including access to run-time class information, serialization, and dynamic object creation. All classes derived from `CObject` inherit this functionality.
 
 Access to run-time class information enables you to determine information about an object's class at run time. The ability to determine the class of an object at run time is useful when you need extra type-checking of function arguments and when you must write special-purpose code based on the class of an object. Run-time class information isn't supported directly by the C++ language.

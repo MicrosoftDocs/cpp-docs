@@ -7,6 +7,9 @@ helpviewer_keywords: ["CStatusBar [MFC], CStatusBar", "CStatusBar [MFC], Command
 ---
 # CStatusBar Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 A control bar with a row of text output panes, or "indicators."
 
 ## Syntax

@@ -4,9 +4,10 @@ title: "Connection Point Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlcom/ATL::BEGIN_CONNECTION_POINT_MAP", "atlcom/ATL::END_CONNECTION_POINT_MAP", "ATLCOM/BEGIN_CONNECTION_POINT_MAP", "ATLCOM/END_CONNECTION_POINT_MAP", "ATLCOM/CONNECTION_POINT_ENTRY", "ATLCOM/CONNECTION_POINT_ENTRY_P", "BEGIN_CONNECTION_POINT_MAP", "END_CONNECTION_POINT_MAP", "CONNECTION_POINT_ENTRY", "CONNECTION_POINT_ENTRY_P"]
 helpviewer_keywords: ["connection points [C++], macros"]
-ms.assetid: cc3a6dd3-5538-45df-b027-1f34963c31e5
 ---
 # Connection Point Macros
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These macros define connection point maps and entries.
 

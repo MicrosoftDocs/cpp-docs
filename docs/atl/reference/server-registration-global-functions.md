@@ -3,9 +3,10 @@ description: "Learn more about: Server Registration Global Functions"
 title: "Server Registration Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlbase/ATL::AtlComModuleRegisterServer", "atlbase/ATL::AtlComModuleUnregisterServer", "atlbase/ATL::AtlComModuleRegisterClassObjects", "atlbase/ATL::AtlComModuleRevokeClassObjects", "atlbase/ATL::AtlComModuleGetClassObject"]
-ms.assetid: c2f0a35d-857c-4538-a44d-c4ea0db63b06
 ---
 # Server Registration Global Functions
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These functions provide support for registering and unregistering server objects in the object map.
 

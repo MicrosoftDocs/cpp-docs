@@ -3,10 +3,12 @@ description: "Learn more about: Managing Data with Document Data Variables"
 title: "Managing Data with Document Data Variables"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["documents [MFC], data storage", "friend classes [MFC]", "classes [MFC], friend", "data [MFC]", "data [MFC], documents", "collection classes [MFC], used by document object", "document data [MFC]", "member variables [MFC], document class [MFC]"]
-ms.assetid: e70b87f4-8c30-49e5-8986-521c2ff91704
 ms.topic: concept-article
 ---
 # Managing Data with Document Data Variables
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implement your document's data as member variables of your document class. For example, the Scribble program declares a data member of type `CObList` — a linked list that stores pointers to `CObject` objects. This list is used to store arrays of points that make up a freehand line drawing.
 

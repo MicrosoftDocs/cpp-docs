@@ -3,9 +3,10 @@ description: "Learn more about: DCOMCNFG"
 title: "DCOMCNFG"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DCOMCNFG utility", "DCOM, configuring in ATL"]
-ms.assetid: 5a8126e9-ef27-40fb-a66e-9dce8d1a7e80
 ---
 # DCOMCNFG
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 DCOMCNFG is a Windows NT 4.0 utility that allows you to configure various DCOM-specific settings in the registry. The DCOMCNFG window has three pages: Default Security, Default Properties, and Applications. Under Windows 2000 a fourth page, Default Protocols, is present.
 

@@ -3,9 +3,11 @@ description: "Learn more about: Type-Safe Access to Controls Without Code Wizard
 title: "Type-Safe Access to Controls Without Code Wizards"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["dialog boxes [MFC], accessing controls", "dialog box controls [MFC], accessing"]
-ms.assetid: 325b4927-d49b-42b4-8e0b-fc84f31fb059
 ---
 # Type-Safe Access to Controls Without Code Wizards
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The first approach to creating type-safe access to controls uses an inline member function to cast the return type of class `CWnd`'s `GetDlgItem` member function to the appropriate C++ control type, as in this example:
 

@@ -3,9 +3,11 @@ description: "Learn more about: Interface Elements"
 title: "Interface Elements"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["architecture [MFC], MFC Feature Pack", "MFC Feature Pack, architecture"]
-ms.assetid: eead6827-9602-40a3-8038-8986e8207385
 ---
 # Interface Elements
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This document describes interface elements that were introduced in Visual Studio 2008 SP1, and also describes differences with the earlier version of the library.
 

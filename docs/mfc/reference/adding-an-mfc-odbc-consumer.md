@@ -3,9 +3,11 @@ description: "Learn more about: Adding an MFC ODBC Consumer"
 title: "Adding an MFC ODBC Consumer"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ODBC consumers"]
-ms.assetid: 2dc97909-1f7e-43ee-9d47-99e612727058
 ---
 # Adding an MFC ODBC Consumer
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 An MFC ODBC consumer consists of an ODBC recordset class and data bindings necessary to access a data source.
 

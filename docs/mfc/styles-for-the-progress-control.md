@@ -3,9 +3,11 @@ description: "Learn more about: Styles for the Progress Control"
 title: "Styles for the Progress Control"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["PBS_SMOOTH style", "progress controls [MFC], styles", "PBS_VERTICAL style", "CProgressCtrl class [MFC], styles"]
-ms.assetid: 39eb8081-bc20-4552-91b9-e7cdd1b7d8ae
 ---
 # Styles for the Progress Control
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 When you initially create the progress control ([CProgressCtrl::Create](../mfc/reference/cprogressctrl-class.md#create)), use the *dwStyle* parameter to specify the desired window styles for your progress control. The following list details the applicable window styles. The control ignores any window style other than the ones listed here. You should always create the control as a child window, usually of a dialog box parent.
 

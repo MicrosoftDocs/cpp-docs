@@ -4,9 +4,11 @@ title: "CMFCVisualManagerWindows7 Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CMFCVisualManagerWindows7", "AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7", "AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::CMFCVisualManagerWindows7", "AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::GetRibbonEditBackgroundColor", "AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::OnFillMenuImageRect"]
 helpviewer_keywords: ["CMFCVisualManagerWindows7 Class [MFC]"]
-ms.assetid: e8d87df1-0c09-4b58-8ade-4e911f796e42
 ---
 # CMFCVisualManagerWindows7 Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCVisualManagerWindows7` gives an application the appearance of a Windows 7 application.
 

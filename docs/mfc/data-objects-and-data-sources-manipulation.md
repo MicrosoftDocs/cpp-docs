@@ -3,9 +3,11 @@ description: "Learn more about: Data Objects and Data Sources: Manipulation"
 title: "Data Objects and Data Sources: Manipulation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["data objects [MFC], manipulating", "data sources [MFC], data operations", "data sources [MFC], inserting data", "Clipboard [MFC], determining available formats", "OLE [MFC], data objects", "Clipboard [MFC], passing format information", "data sources [MFC], determining available formats", "delayed rendering [MFC]", "OLE [MFC], data sources"]
-ms.assetid: f7f27e77-bb5d-4131-b819-d71bf929ebaf
 ---
 # Data Objects and Data Sources: Manipulation
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 After a data object or data source has been created, you can perform a number of common operations on the data, such as inserting and removing data, enumerating the formats the data is in, and more. This article describes the techniques necessary to complete the most common operations. Topics include:
 

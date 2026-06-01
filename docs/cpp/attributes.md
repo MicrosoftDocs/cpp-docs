@@ -1,9 +1,9 @@
 ---
 title: "Attributes in C++"
 description: "Learn more about: Attributes in C++"
-f1_keywords: ["deprecated", "noreturn", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::flatten", "msvc::forceinline", "msvc::forceinline_calls", "msvc::intrinsic", "msvc::noinline", "msvc::noinline_calls", "msvc::no_tls_guard", "msvc::musttail"]
-helpviewer_keywords: ["deprecated", "noreturn", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::flatten", "msvc::forceinline", "msvc::forceinline_calls", "msvc::intrinsic", "msvc::noinline", "msvc::noinline_calls", "msvc::no_tls_guard", "msvc::musttail"]
-ms.date: 12/9/2025
+f1_keywords: ["deprecated", "noreturn", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::disable", "msvc::enable", "msvc::flatten", "msvc::forceinline", "msvc::forceinline_calls", "msvc::intrinsic", "msvc::noinline", "msvc::noinline_calls", "msvc::no_tls_guard", "msvc::musttail"]
+helpviewer_keywords: ["deprecated", "noreturn", "carries_dependency", "fallthrough", "nodiscard", "maybe_unused", "likely", "unlikely", "gsl::suppress", "msvc::disable", "msvc::enable", "msvc::flatten", "msvc::forceinline", "msvc::forceinline_calls", "msvc::intrinsic", "msvc::noinline", "msvc::noinline_calls", "msvc::no_tls_guard", "msvc::musttail"]
+ms.date: 05/15/2026
 ---
 
 # Attributes in C++
@@ -46,7 +46,7 @@ The `[[carries_dependency]]` attribute specifies that the function propagates da
 
 ### `[[likely]]`
 
-**Visual Studio 2019 version 16.6 and later:** (Available with [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) and later.) The `[[likely]]` attribute specifies a hint to the compiler that the code path for the attributed label or statement is more likely to execute than alternatives. In the Microsoft compiler, the `[[likely]]` attribute marks blocks as "hot code", which increments an internal optimization score. The score is incremented more when optimizing for speed, and not as much when optimizing for size. The net score affects the likelihood of inlining, loop unrolling, and vectorizing optimizations. The effect of `[[likely]]` and `[[unlikely]]` is similar to [Profile-guided optimization](../build/profile-guided-optimizations.md), but limited in scope to the current translation unit. The block reordering optimization isn't implemented yet for this attribute.
+**Visual Studio 2019 version 16.6 and later:** (Available with [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) and later.) The `[[likely]]` attribute specifies a hint to the compiler that the code path for the attributed label or statement is more likely to execute than alternatives. In the Microsoft compiler, the `[[likely]]` attribute marks blocks as "hot code," which increments an internal optimization score. The score is incremented more when optimizing for speed, and not as much when optimizing for size. The net score affects the likelihood of inlining, loop unrolling, and vectorizing optimizations. The effect of `[[likely]]` and `[[unlikely]]` is similar to [Profile-guided optimization](../build/profile-guided-optimizations.md), but limited in scope to the current translation unit. The block reordering optimization isn't implemented yet for this attribute.
 
 ### `[[maybe_unused]]`
 
@@ -79,9 +79,11 @@ The `[[noreturn]]` attribute specifies that a function never returns; in other w
 
 ### `[[gsl::suppress(<tag> [, justification: <narrow-string-literal>])]]`
 
-`<tag>` is a string that specifies the name of the rule to suppress. The optional `justification` field allows you to explain why a warning is being disabled or suppressed. This value will appear in the SARIF output when the `/analyze:log:includesuppressed` option is specified. Its value is a UTF-8 encoded narrow string literal. The `[[gsl::suppress]]` attribute is available in Visual Studio 2022 version 17.14 and later versions.
+This Microsoft-specific attribute, introduced in Visual Studio 2022 version 17.14, suppresses warnings from checkers that enforce [Guidelines Support Library (GSL)](https://github.com/Microsoft/GSL) rules. The attribute can be applied to a statement, a block, or a declaration. It's only available for C++. For C code, use [`#pragma warning(suppress)`](../preprocessor/warning.md) instead.
 
-The Microsoft-specific `[[gsl::suppress]]` attribute is used to suppress warnings from checkers that enforce [Guidelines Support Library (GSL)](https://github.com/Microsoft/GSL) rules in code. For example, consider this code snippet:
+`<tag>` is a string that specifies the name of the rule to suppress. The optional `justification` field allows you to explain why a warning is being disabled or suppressed. This value appears in the Static Analysis Results Interchange Format ([SARIF](https://sarif.info/)) output when the `/analyze:log:includesuppressed` option is specified. Its value is a UTF-8 encoded narrow string literal. To generate a SARIF file, use the `/analyze:log:format:sarif` compiler option.
+
+Example:
 
 ```cpp
 int main()
@@ -96,19 +98,82 @@ int main()
 }
 ```
 
-The example raises these warnings:
+This example raises these warnings:
 
 - [C26494](../code-quality/c26494.md) (Type Rule 5: Always initialize an object.)
-
 - [C26485](../code-quality/c26485.md) (Bounds Rule 3: No array to pointer decay.)
-
 - [C26481](../code-quality/c26481.md) (Bounds Rule 1: Don't use pointer arithmetic. Use span instead.)
 
-The first two warnings fire when you compile this code with the CppCoreCheck code analysis tool installed and activated. But the third warning doesn't fire because of the attribute. You can suppress the entire bounds profile by writing `[[gsl::suppress("bounds")]]` without including a specific rule number. The C++ Core Guidelines are designed to help you write better and safer code. The suppress attribute makes it easy to turn off the warnings when they aren't wanted.
+The first two warnings occur when you compile this code with the CppCoreCheck code analysis tool installed and activated. But the third warning doesn't fire because of the attribute. You can suppress the entire bounds profile by writing `[[gsl::suppress("bounds")]]` without including a specific rule number. The C++ Core Guidelines are designed to help you write better and safer code. The suppress attribute makes it easy to turn off the warnings when they aren't wanted.
+
+**Choosing between `#pragma warning` and `[[gsl::suppress]]`**
+
+Both `#pragma warning(suppress)` and `[[gsl::suppress]]` offer fine-grained control over warning suppression:
+- `[[gsl::suppress]]` only suppresses warnings emitted by Microsoft C++ Code Analysis. Use it with the C++ Core Guidelines checks, which can be applied to a scope or a specific declaration.
+- `#pragma warning(suppress)` can be used for any compiler warning. It’s useful when you need to suppress a warning in a specific code block without altering the code’s structure significantly.
+
+Whenever possible, use `[[gsl::suppress]]` for suppressing Microsoft C++ Code Analysis warnings.
+
+### `[[msvc::disable(feature:APX)]]`
+
+The `[[msvc::disable(feature:APX)]]` attribute, introduced in [MSVC Build Tools version 14.51](../overview/what-s-new-for-msvc.md#whats-new-for-msvc-build-tools-version-1451) (Visual Studio version 18.6.0), is an x64-only Microsoft-specific attribute that disables Intel Advanced Performance Extensions (APX) instruction generation for a specific function. When applied to a function declaration or definition, it prevents the compiler from emitting APX instructions in that function's body, even if APX is globally enabled via the `/feature:APX` compiler option. Other functions in the same translation unit continue to use APX instructions unless they are similarly attributed. If a function with `[[msvc::disable(feature:APX)]]` calls inlined functions, the inlined code is also compiled without APX instructions.
+
+#### Example
+
+```cpp
+// The following shows how to disable APX instructions for specific functions,
+// even when APX is enabled globally with /feature:APX
+​int test(int argc)
+{
+    auto lambda = 
+        []
+        [[msvc::disable(feature:APX)]]
+        (int argc)
+        {
+            return argc + 42;
+        };
+    return lambda(argc);
+}
+
+[[msvc::disable(feature:APX)]]
+int test2(int x)
+{
+    return x + 42;
+}
+```
+
+### `[[msvc::enable(feature:APX)]]`
+
+The `[[msvc::enable(feature:APX)]]` attribute, introduced in [MSVC Build Tools version 14.51](../overview/what-s-new-for-msvc.md#whats-new-for-msvc-build-tools-version-1451) (Visual Studio version 18.6.0), is an x64-only Microsoft-specific attribute that enables Intel Advanced Performance Extensions (APX) instruction generation for a specific function. When applied to a function declaration or definition, it allows the compiler to emit APX instructions in that function's body, even when APX is not globally enabled. This provides per-function opt-in to APX features without requiring `/arch:APX` for the entire translation unit. If a function with `[[msvc::enable(feature:APX)]]` has calls that are inlined into it, the inlined code is also compiled with APX instructions.
+
+#### `[[msvc::enable(feature:APX)]]` example
+
+```cpp
+// The following shows how to enable APX instructions for specific functions,
+// even when APX isn't enabled globally with /feature:APX
+
+​int test(int argc)
+{
+    auto lambda = 
+        []
+        [[msvc::enable(feature:APX)]]
+        (int argc)
+        {
+            return argc + 42;
+        };
+    return lambda(argc);
+}
+
+[[msvc::enable(feature:APX), msvc::noinline]]
+int test2(int x)
+{
+    return x + 42;
+}
+```
 
 ### `[[msvc::flatten]]`
 
-The Microsoft-specific attribute `[[msvc::flatten]]` is very similar to `[[msvc::forceinline_calls]]`, and can be used in the same places and in the same way. The difference is that `[[msvc::flatten]]` will `[[msvc::forceinline_calls]]` all calls in the scope it's applied to recursively, until no calls are left. This may have consequences for the resulting code size growth of the function or the throughput of the compiler, which you must manage manually.
+The Microsoft-specific attribute `[[msvc::flatten]]` is similar to `[[msvc::forceinline_calls]]`, and can be used in the same places and in the same way. The difference is that `[[msvc::flatten]]` will `[[msvc::forceinline_calls]]` all calls in the scope it's applied to recursively, until no calls are left. This may have consequences for the resulting code size growth of the function or the throughput of the compiler, which you must manage manually.
 
 ### `[[msvc::forceinline]]`
 
@@ -168,12 +233,12 @@ The `[[msvc::musttail]]` attribute, introduced in [MSVC Build Tools version 14.5
 - The calling conventions must be compatible.
 - The tail call must be the final action in the calling function.
 - The callee can't use more stack space than the calling function.
-- If more than four integer parameters are passed, the calling function must allocate enough stack space for those additional arguments.
+- If more than four integer parameters are passed, the calling function must allocate enough stack space for the other arguments.
 - Compile with `/O2` or `/O2 /GL` optimization level.
 
 #### Example
 
-Tail calls are a compiler optimization that is possible when a function call is the last action performed before returning. Instead of creating a new stack frame to call the function, the current function's stack frame is reused. This reduces stack usage and improves performance—especially in recursive scenarios.
+Tail calls are a compiler optimization that's possible when a function call is the last action performed before returning. Instead of creating a new stack frame to call the function, the current function's stack frame is reused. This reduces stack usage and improves performance—especially in recursive scenarios.
 
 In the following code, the `[[msvc::musttail]]` attribute applied to `return increment(x)` causes control to transfer directly to `increment`. When `increment` reaches the `return x+1;` statement, its result is provided directly to the caller of `incrementIfPositive`, that is `main`. This replaces inlining `increment` into `incrementIfPositive` or calling `increment` from `incrementIfPositive` and returning to `incrementIfPositive` before returning to `main`. The tail call optimization eliminates the need for `incrementIfPositive` to regain control after `increment` finishes. This is a performance optimization that reduces stack usage, especially useful in recursive scenarios.
 

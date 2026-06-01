@@ -4,9 +4,11 @@ title: "CRecentFileList Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CRecentFileList", "AFXADV/CRecentFileList", "AFXADV/CRecentFileList::CRecentFileList", "AFXADV/CRecentFileList::Add", "AFXADV/CRecentFileList::GetDisplayName", "AFXADV/CRecentFileList::GetSize", "AFXADV/CRecentFileList::ReadList", "AFXADV/CRecentFileList::Remove", "AFXADV/CRecentFileList::UpdateMenu", "AFXADV/CRecentFileList::WriteList"]
 helpviewer_keywords: ["CRecentFileList [MFC], CRecentFileList", "CRecentFileList [MFC], Add", "CRecentFileList [MFC], GetDisplayName", "CRecentFileList [MFC], GetSize", "CRecentFileList [MFC], ReadList", "CRecentFileList [MFC], Remove", "CRecentFileList [MFC], UpdateMenu", "CRecentFileList [MFC], WriteList"]
-ms.assetid: a77f0524-7584-4582-849a-7e97b76d186e
 ---
 # CRecentFileList Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Supports control of the most recently used (MRU) file list.
 

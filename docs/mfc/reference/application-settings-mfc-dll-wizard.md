@@ -4,9 +4,11 @@ title: "Application Settings, MFC DLL Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.dll.appset"]
 helpviewer_keywords: ["MFC DLL Wizard, application settings"]
-ms.assetid: 0a96b94f-ae36-4975-951b-c9ffb3def21c
 ---
 # Application Settings, MFC DLL Wizard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Use this page of the MFC DLL wizard to design and add basic features to a new MFC DLL project.
 

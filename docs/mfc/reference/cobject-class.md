@@ -7,6 +7,9 @@ helpviewer_keywords: ["CObject [MFC], CObject", "CObject [MFC], AssertValid", "C
 ---
 # `CObject` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The principal base class for the Microsoft Foundation Class Library.
 
 ## Syntax

@@ -3,9 +3,10 @@ description: "Learn more about: ATL_URL_SCHEME"
 title: "ATL_URL_SCHEME enumeration"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATLUTIL/ATL::ATL_URL_SCHEME"]
-ms.assetid: f4131046-8ba0-4ec1-8209-84203f05d20e
 ---
 # ATL_URL_SCHEME
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 The members of this enumeration provide constants for the schemes understood by [CUrl](curl-class.md).
 

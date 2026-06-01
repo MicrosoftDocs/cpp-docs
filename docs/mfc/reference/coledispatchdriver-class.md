@@ -4,9 +4,11 @@ title: "COleDispatchDriver Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleDispatchDriver", "AFXDISP/COleDispatchDriver", "AFXDISP/COleDispatchDriver::COleDispatchDriver", "AFXDISP/COleDispatchDriver::AttachDispatch", "AFXDISP/COleDispatchDriver::CreateDispatch", "AFXDISP/COleDispatchDriver::DetachDispatch", "AFXDISP/COleDispatchDriver::GetProperty", "AFXDISP/COleDispatchDriver::InvokeHelper", "AFXDISP/COleDispatchDriver::ReleaseDispatch", "AFXDISP/COleDispatchDriver::SetProperty", "AFXDISP/COleDispatchDriver::m_bAutoRelease", "AFXDISP/COleDispatchDriver::m_lpDispatch"]
 helpviewer_keywords: ["COleDispatchDriver [MFC], COleDispatchDriver", "COleDispatchDriver [MFC], AttachDispatch", "COleDispatchDriver [MFC], CreateDispatch", "COleDispatchDriver [MFC], DetachDispatch", "COleDispatchDriver [MFC], GetProperty", "COleDispatchDriver [MFC], InvokeHelper", "COleDispatchDriver [MFC], ReleaseDispatch", "COleDispatchDriver [MFC], SetProperty", "COleDispatchDriver [MFC], m_bAutoRelease", "COleDispatchDriver [MFC], m_lpDispatch"]
-ms.assetid: 3ed98daf-cdc7-4374-8a0c-cf695a8d3657
 ---
 # COleDispatchDriver Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements the client side of OLE automation.
 

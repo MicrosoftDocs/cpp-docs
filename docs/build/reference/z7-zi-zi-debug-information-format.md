@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /Z7, /Zi, /ZI (Debug Information Format)"
 title: "/Z7, /Zi, /ZI (Debug Information Format)"
-ms.date: 12/09/2021
+ms.date: 3/26/2026
 f1_keywords: ["VC.Project.VCCLCompilerTool.DebugInformationFormat", "/ZI", "/Zi", "/Z7", "VC.Project.VCCLWCECompilerTool.DebugInformationFormat"]
 helpviewer_keywords: ["C7 compatible compiler option [C++]", "Debug Information Format compiler option", "ZI compiler option", "-Zi compiler option [C++]", "/ZI compiler option [C++]", "Z7 compiler option [C++]", "debugging [C++], debug information files", "Zi compiler option [C++]", "/Zi compiler option [C++]", "program database compiler option [C++]", "full symbolic debugging information", "/Z7 compiler option [C++]", "line numbers only compiler option [C++]", "cl.exe compiler, debugging options", "-Z7 compiler option [C++]"]
 ---
@@ -61,6 +61,27 @@ The **`/ZI`** option forces both the [`/Gy` (Enable Function-Level Linking)](gy-
 1. Select the **Configuration Properties** > **C/C++** > **General** property page.
 
 1. Modify the **Debug Information Format** property. Choose **OK** to save your changes.
+
+### To set this compiler option in a project file
+
+To set the debug information format in a `.vcxproj` project file, use the `<DebugInformationFormat>` property within a `<ClCompile>` item definition. The following table shows the MSBuild XML values and their corresponding compiler options:
+
+| MSBuild XML value | Compiler option | Description |
+|---|---|---|
+| `None` | *(none)* | No debug information |
+| `OldStyle` | **`/Z7`** | Full symbolic debug information embedded in .obj files, no PDB |
+| `ProgramDatabase` | **`/Zi`** | Program database (PDB) |
+| `EditAndContinue` | **`/ZI`** | PDB with Edit and Continue support |
+
+For example, to set the debug information format to program database in a release configuration:
+
+```xml
+<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+  <ClCompile>
+    <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+  </ClCompile>
+</ItemDefinitionGroup>
+```
 
 ### To set this compiler option programmatically
 

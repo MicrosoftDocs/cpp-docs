@@ -3,9 +3,11 @@ description: "Learn more about: Template-Based Classes"
 title: "Template-Based Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["type-safe collections", "CTypedPtrList class [MFC], template-based classes", "arrays [MFC], classes", "arrays [MFC], pointers", "typed pointers, collections of", "arrays [MFC], template-based", "CArray class [MFC], template-based classes", "simple template-based collections", "simple array collection classes [MFC]", "typed pointers", "collections, typed-pointer", "CList class [MFC], template-based classes", "collection classes [MFC], template-based", "CTypedPtrMap class [MFC], template-based classes", "pointers, collections of typed", "CTypedPtrArray class [MFC], template-based classes", "MFC collection classes [MFC], template-based", "template-based collection classes [MFC]", "simple list collection classes [MFC]"]
-ms.assetid: c69fc95b-c8f6-4a99-abed-517c9898ef0c
 ---
 # Template-Based Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains the type-safe template-based collection classes in MFC version 3.0 and later. Using these templates to create type-safe collections is more convenient and helps provide type safety more effectively than using the collection classes not based on templates.
 

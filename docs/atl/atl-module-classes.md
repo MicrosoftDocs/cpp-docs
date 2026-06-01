@@ -3,9 +3,10 @@ description: "Learn more about: ATL Module Classes"
 title: "ATL Module Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CComModule class, what's changed", "ATL, module classes", "module classes"]
-ms.assetid: fd75382d-c955-46ba-a38e-37728b7fa00f
 ---
 # ATL Module Classes
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 This topic discusses the module classes that were new in ATL 7.0.
 

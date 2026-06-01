@@ -3,9 +3,11 @@ description: "Learn more about: Exceptions: Freeing Objects in Exceptions"
 title: "Exceptions: Freeing Objects in Exceptions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["throwing exceptions [MFC], freeing objects in exceptions", "local exception handling", "memory leaks, caused by exception", "try-catch exception handling [MFC], destroying objects", "destroying objects [MFC]", "freeing objects [MFC]", "throwing exceptions [MFC], after destroying", "exception handling [MFC], destroying objects"]
-ms.assetid: 3b14b4ee-e789-4ed2-b8e3-984950441d97
 ---
 # Exceptions: Freeing Objects in Exceptions
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains the need and the method of freeing objects when an exception occurs. Topics include:
 

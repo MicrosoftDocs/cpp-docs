@@ -4,9 +4,10 @@ title: "CWin32Heap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CWin32Heap", "ATLMEM/ATL::CWin32Heap", "ATLMEM/ATL::CWin32Heap::CWin32Heap", "ATLMEM/ATL::CWin32Heap::Allocate", "ATLMEM/ATL::CWin32Heap::Attach", "ATLMEM/ATL::CWin32Heap::Detach", "ATLMEM/ATL::CWin32Heap::Free", "ATLMEM/ATL::CWin32Heap::GetSize", "ATLMEM/ATL::CWin32Heap::Reallocate", "ATLMEM/ATL::CWin32Heap::m_bOwnHeap", "ATLMEM/ATL::CWin32Heap::m_hHeap"]
 helpviewer_keywords: ["CWin32Heap class"]
-ms.assetid: 69176022-ed98-4e3b-96d8-116b0c58ac95
 ---
 # CWin32Heap Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class implements [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) using the Win32 heap allocation functions.
 

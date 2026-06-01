@@ -3,9 +3,11 @@ description: "Learn more about: Callback Items and the Callback Mask"
 title: "Callback Items and the Callback Mask"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["callback items in CListCtrl class [MFC]", "CListCtrl class [MFC], callback item and callback mask"]
-ms.assetid: 67c1f76f-6144-453e-9376-6712f89430ae
 ---
 # Callback Items and the Callback Mask
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 For each of its items, a list view control typically stores the label text, the image list index of the item's icons, and a set of bit flags for the item's state. You can define individual items as callback items, which are useful if your application already stores some of the information for an item.
 

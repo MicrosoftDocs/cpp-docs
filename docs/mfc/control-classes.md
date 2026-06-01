@@ -4,9 +4,11 @@ title: "Control Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.control"]
 helpviewer_keywords: ["static display controls [MFC]", "control classes [MFC]", "buttons, MFC control classes", "controls [MFC], MFC control classes", "controls [MFC]", "list boxes [MFC], MFC control classes", "control classes [MFC], MFC", "text, controls for input [MFC]", "user input [MFC], MFC control classes"]
-ms.assetid: f9876606-9f5b-44cb-9135-213298d1df8f
 ---
 # Control Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Control classes encapsulate a wide variety of standard Windows controls ranging from static text controls to tree controls. In addition, MFC provides some new controls, including buttons with bitmaps and control bars.
 

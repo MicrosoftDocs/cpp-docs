@@ -4,9 +4,10 @@ title: "Composite Control Macros"
 ms.date: "05/06/2019"
 f1_keywords: ["atlcom/ATL::BEGIN_SINK_MAP", "atlcom/ATL::END_SINK_MAP", "atlcom/ATL::SINK_ENTRY", "ATLCOM/BEGIN_SINK_MAP", "ATLCOM/END_SINK_MAP", "ATLCOM/SINK_ENTRY", "ATLCOM/SINK_ENTRY_EX", "ATLCOM/SINK_ENTRY_EX_P", "ATLCOM/SINK_ENTRY_INFO", "ATLCOM/SINK_ENTRY_INFO_P", "BEGIN_SINK_MAP", "END_SINK_MAP", "SINK_ENTRY", "SINK_ENTRY_EX", "SINK_ENTRY_EX_P", "SINK_ENTRY_INFO", "SINK_ENTRY_INFO_P"]
 helpviewer_keywords: ["composite controls, macros"]
-ms.assetid: 17f2dd5e-07e6-4aa6-b965-7a361c78c45e
 ---
 # Composite Control Macros
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 These macros define event sink maps and entries.
 

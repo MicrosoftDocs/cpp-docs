@@ -3,10 +3,11 @@ description: "Learn more about: Implementing a Dual Interface"
 title: "Implementing a Dual Interface (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["IDispatchImpl class, implementing dual interfaces", "dual interfaces, implementing"]
-ms.assetid: d1da3633-b445-4dcd-8a0a-3efdafada3ea
 ms.topic: concept-article
 ---
 # Implementing a Dual Interface
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 You can implement a dual interface using the [IDispatchImpl](../atl/reference/idispatchimpl-class.md) class, which provides a default implementation of the `IDispatch` methods in a dual interface. For more information, see [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).
 

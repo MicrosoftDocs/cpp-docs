@@ -3,9 +3,11 @@ description: "Learn more about: Recommendations for Choosing a Collection Class"
 title: "Recommendations for Choosing a Collection Class"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["type safety of collection classes [MFC]", "collection classes [MFC], serialization", "collection classes [MFC], speed", "collection classes [MFC], type safety", "collection classes [MFC], choosing", "collection classes [MFC], functionality", "shapes, collection", "collection classes [MFC], template-based", "MFC collection classes [MFC], characteristics", "collection classes [MFC], about collection classes [MFC]", "serialization [MFC], collection classes", "collection classes [MFC], duplicates allowed", "collection classes [MFC], shapes"]
-ms.assetid: a82188cd-443f-40d8-a244-edf292a53db4
 ---
 # Recommendations for Choosing a Collection Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article contains detailed information designed to help you choose a collection class for your particular application needs.
 

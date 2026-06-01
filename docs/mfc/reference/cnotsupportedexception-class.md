@@ -4,9 +4,11 @@ title: "CNotSupportedException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CNotSupportedException", "AFX/CNotSupportedException", "AFX/CNotSupportedException::CNotSupportedException"]
 helpviewer_keywords: ["CNotSupportedException [MFC], CNotSupportedException"]
-ms.assetid: e517391b-eb94-4c39-ae32-87b45bf7d624
 ---
 # CNotSupportedException Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Represents an exception that is the result of a request for an unsupported feature.
 

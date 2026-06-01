@@ -4,9 +4,11 @@ title: "CReBar Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CReBar", "AFXEXT/CReBar", "AFXEXT/CReBar::AddBar", "AFXEXT/CReBar::Create", "AFXEXT/CReBar::GetReBarCtrl"]
 helpviewer_keywords: ["CReBar [MFC], AddBar", "CReBar [MFC], Create", "CReBar [MFC], GetReBarCtrl"]
-ms.assetid: c1ad2720-1d33-4106-8e4e-80aa84f93559
 ---
 # CReBar Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A control bar that provides layout, persistence, and state information for rebar controls.
 

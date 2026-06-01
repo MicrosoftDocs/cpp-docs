@@ -3,9 +3,10 @@ description: "Learn more about: ATL Support for DHTML Controls"
 title: "ATL Support for DHTML Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["HTML controls, ATL support", "DHTML controls, ATL support", "DHTML controls"]
-ms.assetid: 4ba98098-da5d-4362-96ad-8372f816c307
 ---
 # ATL Support for DHTML Controls
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 Using ATL, you can create a control with Dynamic HTML (DHTML) capability. An ATL DHTML control:
 

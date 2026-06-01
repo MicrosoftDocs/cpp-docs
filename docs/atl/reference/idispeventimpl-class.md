@@ -7,6 +7,8 @@ helpviewer_keywords: ["IDispEventImpl class"]
 ---
 # `IDispEventImpl` Class
 
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
+
 This class provides implementations of the `IDispatch` methods.
 
 > [!IMPORTANT]

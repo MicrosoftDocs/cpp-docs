@@ -7,6 +7,9 @@ helpviewer_keywords: ["CDaoWorkspaceInfo structure [MFC]", "DAO (Data Access Obj
 ---
 # CDaoWorkspaceInfo Structure
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The `CDaoWorkspaceInfo` structure contains information about a workspace defined for data access objects (DAO) database access.
 
 > [!NOTE]

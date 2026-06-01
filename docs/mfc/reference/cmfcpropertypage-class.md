@@ -4,9 +4,11 @@ title: "CMFCPropertyPage Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCPropertyPage", "AFXPROPERTYPAGE/CMFCPropertyPage", "AFXPROPERTYPAGE/CMFCPropertyPage::CMFCPropertyPage"]
 helpviewer_keywords: ["CMFCPropertyPage [MFC], CMFCPropertyPage"]
-ms.assetid: d279d7f2-2d81-418d-9f23-6147d6e8df09
 ---
 # CMFCPropertyPage Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCPropertyPage` class supports the display of pop-up menus on a property page.
 

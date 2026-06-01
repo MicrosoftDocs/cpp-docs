@@ -4,9 +4,11 @@ title: "MFC ActiveX Controls: Distributing ActiveX Controls"
 ms.date: "09/12/2018"
 f1_keywords: ["GetWindowsDirectory", "GetSystemDirectory"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], ANSI or Unicode versions", "RegSvr32.exe", "MFC ActiveX controls [MFC], distributing", "distributing MFC ActiveX controls", "redistributable files, MFC ActiveX controls", "GetSystemDirectory method [MFC]", "registering ActiveX controls", "MSVCRT40.dll", "registry [MFC], registering controls", "LoadLibrary method, registering ActiveX controls", "MFC40U.DLL", "MFC40.DLL", "GetWindowsDirectory method [MFC]", "installing ActiveX controls", "GetProcAddress method, registering ActiveX controls", "MFC ActiveX controls [MFC], installing", "MFC ActiveX controls [MFC], registering", "registering controls", "OLEPRO32.DLL"]
-ms.assetid: cd70ac9b-f613-4879-9e81-6381fdfda2a1
 ---
 # MFC ActiveX Controls: Distributing ActiveX Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article discusses several issues related to redistributing ActiveX controls:
 

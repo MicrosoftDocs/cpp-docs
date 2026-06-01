@@ -3,10 +3,12 @@ description: "Learn more about: Optimizing Control Drawing"
 title: "Optimizing Control Drawing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], optimizing"]
-ms.assetid: 29ff985d-9bf5-4678-b62d-aad12def75fb
 ms.topic: concept-article
 ---
 # Optimizing Control Drawing
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 When a control is instructed to draw itself into a container-supplied device context, it typically selects GDI objects (such as pens, brushes, and fonts) into the device context, performs its drawing operations, and restores the previous GDI objects. If the container has multiple controls that are to be drawn into the same device context, and each control selects the GDI objects it requires, time can be saved if the controls do not individually restore previously selected objects. After all the controls have been drawn, the container can automatically restore the original objects.
 

@@ -4,9 +4,11 @@ title: "Creating an MFC DLL Project"
 ms.date: "08/19/2019"
 f1_keywords: ["vc.appwiz.mfcdll.project"]
 helpviewer_keywords: ["MFC DLLs [MFC], creating projects", "DLLs [MFC], MFC", "projects [MFC], creating", "DLLs [MFC], creating"]
-ms.assetid: 05540b93-4781-4a90-aadf-55158313f5b2
 ---
 # Creating an MFC DLL Project
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 An MFC DLL is a binary file that acts as a shared library of functions that can be used simultaneously by multiple applications. The easiest way to create an MFC DLL project is to use the MFC DLL Wizard.
 

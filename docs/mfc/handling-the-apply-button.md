@@ -3,10 +3,12 @@ description: "Learn more about: Handling the Apply Button"
 title: "Handling the Apply Button"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Apply button in property sheet", "property sheets, Apply button"]
-ms.assetid: 7e977015-59b8-406f-b545-aad0bfd8d55b
 ms.topic: concept-article
 ---
 # Handling the Apply Button
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Property sheets have a capability that standard dialog boxes do not: They allow the user to apply changes they have made before closing the property sheet. This is done using the Apply button. This article discusses methods you can use to implement this feature properly.
 

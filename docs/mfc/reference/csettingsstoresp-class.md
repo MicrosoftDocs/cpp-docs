@@ -4,9 +4,11 @@ title: "CSettingsStoreSP Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSettingsStoreSP", "AFXSETTINGSSTORE/CSettingsStoreSP", "AFXSETTINGSSTORE/CSettingsStoreSP::CSettingsStoreSP", "AFXSETTINGSSTORE/CSettingsStoreSP::Create", "AFXSETTINGSSTORE/CSettingsStoreSP::SetRuntimeClass"]
 helpviewer_keywords: ["CSettingsStoreSP [MFC], CSettingsStoreSP", "CSettingsStoreSP [MFC], Create", "CSettingsStoreSP [MFC], SetRuntimeClass"]
-ms.assetid: bcd37f40-cfd4-4d17-a5ce-3bfabe995dcc
 ---
 # CSettingsStoreSP Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CSettingsStoreSP` class is a helper class that you can use to create instances of the [CSettingsStore Class](../../mfc/reference/csettingsstore-class.md).
 

@@ -3,10 +3,11 @@ description: "Learn more about: Creating Registrar scripts"
 title: "Creating scripts for ATL Registrar"
 ms.date: "05/14/2014"
 helpviewer_keywords: ["scripting, registry scripting", "ATL, registry", "registrar scripts [ATL]", "scripts, Registrar scripts", "scripts, creating"]
-ms.assetid: cbd5024b-8061-4a71-be65-7fee90374a35
 ms.topic: concept-article
 ---
 # Creating Registrar scripts
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 A registrar script provides data-driven, rather than API-driven, access to the system registry. Data-driven access is typically more efficient since it takes only one or two lines in a script to add a key to the registry.
 

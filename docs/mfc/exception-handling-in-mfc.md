@@ -6,6 +6,9 @@ helpviewer_keywords: ["DAO [MFC], exceptions", "assertions [MFC], When to use ex
 ---
 # Exception Handling in MFC
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 This article explains the exception-handling mechanisms available in MFC. Two mechanisms are available:
 
 - C++ exceptions, available in MFC version 3.0 and later

@@ -4,9 +4,11 @@ title: "CAnimationVariableIntegerChangeHandler Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAnimationVariableIntegerChangeHandler", "AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler", "AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler::CAnimationVariableIntegerChangeHandler", "AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler::CreateInstance", "AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler::OnIntegerValueChanged", "AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler::SetAnimationController"]
 helpviewer_keywords: ["CAnimationVariableIntegerChangeHandler [MFC], CAnimationVariableIntegerChangeHandler", "CAnimationVariableIntegerChangeHandler [MFC], CreateInstance", "CAnimationVariableIntegerChangeHandler [MFC], OnIntegerValueChanged", "CAnimationVariableIntegerChangeHandler [MFC], SetAnimationController"]
-ms.assetid: 6ac8e91b-e514-4ff6-babd-33f77c4b2b61
 ---
 # CAnimationVariableIntegerChangeHandler Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements a callback, which is called by the Animation API when the value of an animation variable changes.
 

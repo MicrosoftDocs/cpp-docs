@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMFCTabCtrl [MFC], ActivateMDITab", "CMFCTabCtrl [MFC], A
 ---
 # `CMFCTabCtrl` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The `CMFCTabCtrl` class provides functionality for a tab control. The tab control displays a dockable window with flat or three-dimensional tabs at its top or bottom. The tabs can display text and an image and can change color when active.
 
 ## Syntax

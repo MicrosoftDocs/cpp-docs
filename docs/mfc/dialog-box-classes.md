@@ -4,9 +4,11 @@ title: "Dialog Box Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.dialog"]
 helpviewer_keywords: ["property sheet classes", "dialog box classes", "OLE common dialog classes", "common dialog classes [MFC]", "tab dialog boxes"]
-ms.assetid: db75da23-4eff-4c6c-beae-79cf046fbce9
 ---
 # Dialog Box Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Class `CDialog` and its derived classes encapsulate dialog-box functionality. Since a dialog box is a special kind of window, `CDialog` is derived from `CWnd`. Derive your dialog classes from `CDialog` or use one of the common dialog classes for standard dialog boxes, such as opening or saving a file, printing, selecting a font or color, initiating a search-and-replace operation, or performing various OLE-related operations.
 

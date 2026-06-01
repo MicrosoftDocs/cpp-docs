@@ -4,9 +4,11 @@ title: "CMFCColorPopupMenu Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCColorPopupMenu", "AFXCOLORPOPUPMENU/CMFCColorPopupMenu", "AFXCOLORPOPUPMENU/CMFCColorPopupMenu::CMFCColorPopupMenu", "AFXCOLORPOPUPMENU/CMFCColorPopupMenu::CreateTearOffBar", "AFXCOLORPOPUPMENU/CMFCColorPopupMenu::GetMenuBar", "AFXCOLORPOPUPMENU/CMFCColorPopupMenu::SetPropList"]
 helpviewer_keywords: ["CMFCColorPopupMenu [MFC], CMFCColorPopupMenu", "CMFCColorPopupMenu [MFC], CreateTearOffBar", "CMFCColorPopupMenu [MFC], GetMenuBar", "CMFCColorPopupMenu [MFC], SetPropList"]
-ms.assetid: 0bf9efe8-aed5-4ab7-b23b-eb284b4668be
 ---
 # CMFCColorPopupMenu Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Represents a pop-up menu that users use to select colors in a document or application.
 

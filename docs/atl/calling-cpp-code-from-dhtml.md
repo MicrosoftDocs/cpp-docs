@@ -3,10 +3,11 @@ description: "Learn more about: Calling C++ Code from DHTML"
 title: "Calling C++ Code from DHTML"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DHTML, calling C++ code from"]
-ms.assetid: 37329acd-4c22-40ca-a85a-b7480748f75f
 ms.topic: concept-article
 ---
 # Calling C++ Code from DHTML
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 A DHTML control can be hosted in a container, such as Test Container or Internet Explorer. See [Testing Properties and Events with Test Container](../mfc/testing-properties-and-events-with-test-container.md) for information on how to access Test Container.
 

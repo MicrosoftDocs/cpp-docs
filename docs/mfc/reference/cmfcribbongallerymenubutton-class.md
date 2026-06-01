@@ -4,9 +4,11 @@ title: "CMFCRibbonGalleryMenuButton Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonGalleryMenuButton", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CopyFrom", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CreatePopupMenu", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::GetPalette", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::HasButton", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed"]
 helpviewer_keywords: ["CMFCRibbonGalleryMenuButton [MFC], CMFCRibbonGalleryMenuButton", "CMFCRibbonGalleryMenuButton [MFC], CopyFrom", "CMFCRibbonGalleryMenuButton [MFC], CreatePopupMenu", "CMFCRibbonGalleryMenuButton [MFC], GetPalette", "CMFCRibbonGalleryMenuButton [MFC], HasButton", "CMFCRibbonGalleryMenuButton [MFC], IsEmptyMenuAllowed"]
-ms.assetid: 4d459d9b-8b1a-4371-92f6-dc4ce6cc42c8
 ---
 # CMFCRibbonGalleryMenuButton Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements a ribbon menu button that contains ribbon galleries.
 For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.

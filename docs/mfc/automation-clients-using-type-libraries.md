@@ -4,9 +4,11 @@ title: "Automation Clients: Using Type Libraries"
 ms.date: "11/04/2016"
 f1_keywords: ["MkTypLib"]
 helpviewer_keywords: ["clients, Automation", "dispatch class [MFC]", "Automation clients, type libraries", "type libraries, Automation clients", "ODL (Object Description Language)", "ODL files", "classes [MFC], dispatch", "MkTypLib tool", ".odl files"]
-ms.assetid: d405bc47-118d-4786-b371-920d035b2047
 ---
 # Automation Clients: Using Type Libraries
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Automation clients must have information about server objects' properties and methods if the clients are to manipulate the servers' objects. Properties have data types; methods often return values and accept parameters. The client requires information about the data types of all of these in order to statically bind to the server object type.
 

@@ -4,9 +4,11 @@ title: "CStatic Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CStatic", "AFXWIN/CStatic", "AFXWIN/CStatic::CStatic", "AFXWIN/CStatic::Create", "AFXWIN/CStatic::DrawItem", "AFXWIN/CStatic::GetBitmap", "AFXWIN/CStatic::GetCursor", "AFXWIN/CStatic::GetEnhMetaFile", "AFXWIN/CStatic::GetIcon", "AFXWIN/CStatic::SetBitmap", "AFXWIN/CStatic::SetCursor", "AFXWIN/CStatic::SetEnhMetaFile", "AFXWIN/CStatic::SetIcon"]
 helpviewer_keywords: ["CStatic [MFC], CStatic", "CStatic [MFC], Create", "CStatic [MFC], DrawItem", "CStatic [MFC], GetBitmap", "CStatic [MFC], GetCursor", "CStatic [MFC], GetEnhMetaFile", "CStatic [MFC], GetIcon", "CStatic [MFC], SetBitmap", "CStatic [MFC], SetCursor", "CStatic [MFC], SetEnhMetaFile", "CStatic [MFC], SetIcon"]
-ms.assetid: e7c94cd9-5ebd-428a-aa30-b3e51f8efb95
 ---
 # `CStatic` Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides the functionality of a Windows static control.
 

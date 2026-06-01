@@ -4,9 +4,10 @@ title: "CHeapPtrBase class"
 ms.date: "11/04/2016"
 f1_keywords: ["CHeapPtrBase", "ATLCORE/ATL::CHeapPtrBase", "ATLCORE/ATL::CHeapPtrBase::AllocateBytes", "ATLCORE/ATL::CHeapPtrBase::Attach", "ATLCORE/ATL::CHeapPtrBase::Detach", "ATLCORE/ATL::CHeapPtrBase::Free", "ATLCORE/ATL::CHeapPtrBase::ReallocateBytes", "ATLCORE/ATL::CHeapPtrBase::m_pData"]
 helpviewer_keywords: ["CHeapPtrBase class"]
-ms.assetid: 501ac1b2-fb34-4c72-b7e6-a4f1fc8fda21
 ---
 # `CHeapPtrBase` class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class forms the basis for several smart heap pointer classes.
 

@@ -3,9 +3,11 @@ description: "Learn more about: Internet Information by Task"
 title: "Internet Information by Task"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["MFC, Internet applications"]
-ms.assetid: da078bf5-53c3-4167-b1ef-509b5a544ad9
 ---
 # Internet Information by Task
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The tasks listed in this topic are sorted based on the task you want to accomplish.
 

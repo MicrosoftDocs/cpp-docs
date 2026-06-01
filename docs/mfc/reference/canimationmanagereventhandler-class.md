@@ -4,9 +4,11 @@ title: "CAnimationManagerEventHandler Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAnimationManagerEventHandler", "AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler", "AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::CAnimationManagerEventHandler", "AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::CreateInstance", "AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::OnManagerStatusChanged", "AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::SetAnimationController"]
 helpviewer_keywords: ["CAnimationManagerEventHandler [MFC], CAnimationManagerEventHandler", "CAnimationManagerEventHandler [MFC], CreateInstance", "CAnimationManagerEventHandler [MFC], OnManagerStatusChanged", "CAnimationManagerEventHandler [MFC], SetAnimationController"]
-ms.assetid: 6089ec07-e661-4805-b227-823b4652aade
 ---
 # CAnimationManagerEventHandler Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements a callback, which is called by the Animation API when a status of an animation manager is changed.
 

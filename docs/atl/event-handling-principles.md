@@ -3,9 +3,10 @@ description: "Learn more about: Event Handling Principles"
 title: "Event Handling Principles (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["event handling, implementing", "event handling, advising event sources", "interfaces, event and event sink", "dual interfaces, event interfaces", "event handling, dual event interfaces"]
-ms.assetid: d17ca7cb-54f2-4658-ab8b-b721ac56801d
 ---
 # Event Handling Principles
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 There are three steps common to all event handling. You will need to:
 

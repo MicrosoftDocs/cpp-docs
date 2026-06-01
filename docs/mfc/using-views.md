@@ -3,10 +3,12 @@ description: "Learn more about: Using Views"
 title: "Using Views"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["interacting with users and role of view class [MFC]", "drawing [MFC], data", "rendering data", "view classes [MFC], role in managing user interaction", "CView class [MFC], view architecture", "MFC, views", "views [MFC], using", "painting data", "user input [MFC], interpreting through view class [MFC]", "view classes [MFC], role in displaying application data"]
-ms.assetid: dc3de6ad-5c64-4317-8f10-8bdcc38cdbd5
 ms.topic: concept-article
 ---
 # Using Views
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The view's responsibilities are to display the document's data graphically to the user and to accept and interpret user input as operations on the document. Your tasks in writing your view class are to:
 

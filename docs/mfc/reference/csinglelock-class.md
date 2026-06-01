@@ -7,6 +7,9 @@ helpviewer_keywords: ["CSingleLock [MFC], CSingleLock", "CSingleLock [MFC], IsLo
 ---
 # `CSingleLock` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Represents the access-control mechanism used in controlling access to a resource in a multithreaded program.
 
 ## Syntax

@@ -3,10 +3,11 @@ description: "Learn more about: Creating the Project (ATL Tutorial, Part 1)"
 title: "Creating the Project (ATL Tutorial, Part 1)"
 ms.custom: "get-started-article"
 ms.date: "08/19/2019"
-ms.assetid: f6b727d1-390a-4b27-b82f-daadcd9fc059
 ms.topic: tutorial
 ---
 # Creating the Project (ATL Tutorial, Part 1)
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 This tutorial walks you step-by-step through a non-attributed ATL project that creates an ActiveX object that displays a polygon. The object includes options for allowing the user to change the number of sides making up the polygon, and code to refresh the display.
 

@@ -3,9 +3,11 @@ description: "Learn more about: Clipboard: Using the Windows Clipboard"
 title: "Clipboard: Using the Windows Clipboard"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Clipboard commands", "Cut/Copy and Paste command handler functions [MFC]", "handler functions, Cut/Copy and Paste commands", "Clipboard [MFC], commands", "commands [MFC], implementing Edit", "Clipboard commands [MFC], implementing", "Windows Clipboard [MFC]", "Clipboard [MFC], Windows Clipboard API"]
-ms.assetid: 24415b42-9301-4a70-b69a-44c97918319f
 ---
 # Clipboard: Using the Windows Clipboard
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This topic describes how to use the standard Windows Clipboard API within your MFC application.
 

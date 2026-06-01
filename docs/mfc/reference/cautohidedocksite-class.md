@@ -4,9 +4,11 @@ title: "CAutoHideDockSite Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAutoHideDockSite", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::CanAcceptPane", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::DockPane", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::GetAlignRect", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::RepositionPanes", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::SetOffsetLeft", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::SetOffsetRight", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::UnSetAutoHideMode", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::m_nExtraSpace"]
 helpviewer_keywords: ["CAutoHideDockSite [MFC], CanAcceptPane", "CAutoHideDockSite [MFC], DockPane", "CAutoHideDockSite [MFC], GetAlignRect", "CAutoHideDockSite [MFC], RepositionPanes", "CAutoHideDockSite [MFC], SetOffsetLeft", "CAutoHideDockSite [MFC], SetOffsetRight", "CAutoHideDockSite [MFC], UnSetAutoHideMode", "CAutoHideDockSite [MFC], m_nExtraSpace"]
-ms.assetid: 2a0f6bec-c369-4ab7-977d-564e7946ebad
 ---
 # CAutoHideDockSite Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CAutoHideDockSite` extends the [CDockSite Class](../../mfc/reference/cdocksite-class.md) to implement auto-hide dock panes.
 

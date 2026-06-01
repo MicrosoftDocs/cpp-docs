@@ -4,9 +4,11 @@ title: "CD2DGradientBrush Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CD2DGradientBrush", "AFXRENDERTARGET/CD2DGradientBrush", "AFXRENDERTARGET/CD2DGradientBrush::CD2DGradientBrush", "AFXRENDERTARGET/CD2DGradientBrush::Destroy", "AFXRENDERTARGET/CD2DGradientBrush::m_arGradientStops", "AFXRENDERTARGET/CD2DGradientBrush::m_colorInterpolationGamma", "AFXRENDERTARGET/CD2DGradientBrush::m_extendMode", "AFXRENDERTARGET/CD2DGradientBrush::m_pGradientStops"]
 helpviewer_keywords: ["CD2DGradientBrush [MFC], CD2DGradientBrush", "CD2DGradientBrush [MFC], Destroy", "CD2DGradientBrush [MFC], m_arGradientStops", "CD2DGradientBrush [MFC], m_colorInterpolationGamma", "CD2DGradientBrush [MFC], m_extendMode", "CD2DGradientBrush [MFC], m_pGradientStops"]
-ms.assetid: 5bf133e6-16b7-4e3a-845d-0ce63fafe5ec
 ---
 # CD2DGradientBrush Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The base class of the CD2DLinearGradientBrush and the CD2DRadialGradientBrush classes.
 

@@ -3,10 +3,12 @@ description: "Learn more about: Working with Window Objects"
 title: "Working with Window Objects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["child windows [MFC], working with", "window objects [MFC], working with"]
-ms.assetid: f73aa254-90e3-46a9-8e9b-d78b7054a331
 ms.topic: concept-article
 ---
 # Working with Window Objects
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Working with windows calls for two kinds of activity:
 

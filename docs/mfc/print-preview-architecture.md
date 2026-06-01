@@ -3,9 +3,11 @@ description: "Learn more about: Print Preview Architecture"
 title: "Print Preview Architecture"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["print preview [MFC], process", "previewing printing", "print preview [MFC], architecture", "printing [MFC], print preview", "print preview [MFC], modifications to MFC"]
-ms.assetid: 0efc87e6-ff8d-43c5-9d72-9b729a169115
 ---
 # Print Preview Architecture
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article explains how the MFC framework implements print preview functionality. Topics covered include:
 

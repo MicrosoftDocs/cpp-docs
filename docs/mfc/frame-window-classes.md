@@ -3,9 +3,11 @@ description: "Learn more about: Frame-Window Classes"
 title: "Frame-Window Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["frame window classes [MFC], about frame window classes", "frame window classes [MFC]", "windows [MFC], MDI", "document frame windows [MFC], classes", "single document interface (SDI), frame windows", "window classes [MFC], frame", "MFC, frame windows", "MDI [MFC], frame windows", "classes [MFC], window"]
-ms.assetid: c27e43a7-8ad0-4759-b1b7-43f4725f4132
 ---
 # Frame-Window Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Each application has one "main frame window," a desktop window that usually has the application name in its caption. Each document usually has one "document frame window." A document frame window contains at least one view, which presents the document's data.
 

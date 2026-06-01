@@ -7,6 +7,9 @@ helpviewer_keywords: ["CPane [MFC], AdjustSizeImmediate", "CPane [MFC], AllocEle
 ---
 # CPane Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The `CPane` class is an enhancement of the [CControlBar Class](../../mfc/reference/ccontrolbar-class.md). If you are upgrading an existing MFC project, replace all occurrences of `CControlBar` with `CPane`.
 
 ## Syntax

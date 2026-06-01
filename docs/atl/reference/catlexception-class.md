@@ -4,9 +4,10 @@ title: "CAtlException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAtlException", "ATLEXCEPT/ATL::CAtlException", "ATLEXCEPT/ATL::CAtlException::CAtlException", "ATLEXCEPT/ATL::CAtlException::m_hr"]
 helpviewer_keywords: ["CAtlException class"]
-ms.assetid: 3fd7b041-f70d-4292-b947-0d70781d95a8
 ---
 # CAtlException Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class defines an ATL exception.
 

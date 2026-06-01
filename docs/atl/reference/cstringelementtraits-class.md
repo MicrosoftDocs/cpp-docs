@@ -4,9 +4,10 @@ title: "CStringElementTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CStringElementTraits", "CSTRINGT/ATL::CStringElementTraits", "CSTRINGT/ATL::CStringElementTraits::INARGTYPE", "CSTRINGT/ATL::CStringElementTraits::OUTARGTYPE", "CSTRINGT/ATL::CStringElementTraits::CompareElements", "CSTRINGT/ATL::CStringElementTraits::CompareElementsOrdered", "CSTRINGT/ATL::CStringElementTraits::CopyElements", "CSTRINGT/ATL::CStringElementTraits::Hash", "CSTRINGT/ATL::CStringElementTraits::RelocateElements"]
 helpviewer_keywords: ["CStringElementTraits class"]
-ms.assetid: 74d7134b-099d-4455-bf91-3e68ccbf95bc
 ---
 # CStringElementTraits Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class provides static functions used by collection classes storing `CString` objects.
 

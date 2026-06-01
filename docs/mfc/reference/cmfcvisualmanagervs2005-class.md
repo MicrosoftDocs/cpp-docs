@@ -4,9 +4,11 @@ title: "CMFCVisualManagerVS2005 Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCVisualManagerVS2005", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::GetDockingTabsBordersSize", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::GetMDITabsBordersSize", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::GetPropertyGridGroupColor", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::GetTabFrameColors", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::HasOverlappedAutoHideButtons", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnDrawAutoHideButtonBorder", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnDrawCaptionButton", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnDrawPaneCaption", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnDrawSeparator", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnDrawTab", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnDrawToolBoxFrame", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnEraseTabsArea", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnFillAutoHideButtonBackground", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnFillHighlightedArea", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnFillMiniFrameCaption", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnUpdateSystemColors"]
 helpviewer_keywords: ["CMFCVisualManagerVS2005 [MFC], GetDockingTabsBordersSize", "CMFCVisualManagerVS2005 [MFC], GetMDITabsBordersSize", "CMFCVisualManagerVS2005 [MFC], GetPropertyGridGroupColor", "CMFCVisualManagerVS2005 [MFC], GetTabFrameColors", "CMFCVisualManagerVS2005 [MFC], HasOverlappedAutoHideButtons", "CMFCVisualManagerVS2005 [MFC], OnDrawAutoHideButtonBorder", "CMFCVisualManagerVS2005 [MFC], OnDrawCaptionButton", "CMFCVisualManagerVS2005 [MFC], OnDrawPaneCaption", "CMFCVisualManagerVS2005 [MFC], OnDrawSeparator", "CMFCVisualManagerVS2005 [MFC], OnDrawTab", "CMFCVisualManagerVS2005 [MFC], OnDrawToolBoxFrame", "CMFCVisualManagerVS2005 [MFC], OnEraseTabsArea", "CMFCVisualManagerVS2005 [MFC], OnFillAutoHideButtonBackground", "CMFCVisualManagerVS2005 [MFC], OnFillHighlightedArea", "CMFCVisualManagerVS2005 [MFC], OnFillMiniFrameCaption", "CMFCVisualManagerVS2005 [MFC], OnUpdateSystemColors"]
-ms.assetid: ea39b9ae-327e-4a51-bce7-dc84c78f005b
 ---
 # CMFCVisualManagerVS2005 Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 `CMFCVisualManagerVS2005` gives an application a Microsoft Visual Studio 2005 appearance.
 

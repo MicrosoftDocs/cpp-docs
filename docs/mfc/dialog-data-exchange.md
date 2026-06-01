@@ -3,9 +3,11 @@ description: "Learn more about: Dialog Data Exchange"
 title: "Dialog Data Exchange"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["initializing dialog boxes", "canceling data exchange", "dialog box data, retrieving", "DDX (dialog data exchange), data exchange mechanism", "dialog boxes [MFC], initializing", "dialog boxes [MFC], retrieving user input using DDX", "dialog box data", "dialog boxes [MFC], data exchange", "CDataExchange class [MFC], using DDX", "DoDataExchange method [MFC]", "user input [MFC], retrieving from MFC dialog boxes", "capturing user input [MFC]", "transferring dialog box data", "DDX (dialog data exchange), canceling", "UpdateData method [MFC]", "retrieving dialog box data [MFC]"]
-ms.assetid: 4675f63b-41d2-45ed-b6c3-235ad8ab924b
 ---
 # Dialog Data Exchange
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 If you use the DDX mechanism, you set the initial values of the dialog object's member variables, typically in your `OnInitDialog` handler or the dialog constructor. Immediately before the dialog is displayed, the framework's DDX mechanism transfers the values of the member variables to the controls in the dialog box, where they appear when the dialog box itself appears in response to `DoModal` or `Create`. The default implementation of `OnInitDialog` in `CDialog` calls the `UpdateData` member function of class `CWnd` to initialize the controls in the dialog box.
 

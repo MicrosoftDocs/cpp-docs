@@ -4,9 +4,11 @@ title: "CMapStringToString Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMapStringToString", "AFXCOLL/CMapStringToString", "AFXCOLL/CMapStringToString::CPair", "AFXCOLL/CMapStringToString::CMapStringToString", "AFXCOLL/CMapStringToString::GetCount", "AFXCOLL/CMapStringToString::GetHashTableSize", "AFXCOLL/CMapStringToString::GetNextAssoc", "AFXCOLL/CMapStringToString::GetSize", "AFXCOLL/CMapStringToString::GetStartPosition", "AFXCOLL/CMapStringToString::HashKey", "AFXCOLL/CMapStringToString::InitHashTable", "AFXCOLL/CMapStringToString::IsEmpty", "AFXCOLL/CMapStringToString::Lookup", "AFXCOLL/CMapStringToString::LookupKey", "AFXCOLL/CMapStringToString::PGetFirstAssoc", "AFXCOLL/CMapStringToString::PGetNextAssoc", "AFXCOLL/CMapStringToString::PLookup", "AFXCOLL/CMapStringToString::RemoveAll", "AFXCOLL/CMapStringToString::RemoveKey", "AFXCOLL/CMapStringToString::SetAt"]
 helpviewer_keywords: ["CMapStringToString [MFC], CPair", "CMapStringToString [MFC], CMapStringToString", "CMapStringToString [MFC], GetCount", "CMapStringToString [MFC], GetHashTableSize", "CMapStringToString [MFC], GetNextAssoc", "CMapStringToString [MFC], GetSize", "CMapStringToString [MFC], GetStartPosition", "CMapStringToString [MFC], HashKey", "CMapStringToString [MFC], InitHashTable", "CMapStringToString [MFC], IsEmpty", "CMapStringToString [MFC], Lookup", "CMapStringToString [MFC], LookupKey", "CMapStringToString [MFC], PGetFirstAssoc", "CMapStringToString [MFC], PGetNextAssoc", "CMapStringToString [MFC], PLookup", "CMapStringToString [MFC], RemoveAll", "CMapStringToString [MFC], RemoveKey", "CMapStringToString [MFC], SetAt"]
-ms.assetid: b45794c2-fe6b-4edb-a8ca-faa03b57b4a8
 ---
 # CMapStringToString Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Supports maps of `CString` objects keyed by `CString` objects.
 

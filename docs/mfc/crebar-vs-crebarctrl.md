@@ -3,9 +3,11 @@ description: "Learn more about: CReBar vs. CReBarCtrl"
 title: "CReBar vs. CReBarCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CReBar class [MFC], vs. CReBarCtrl", "rebar controls [MFC], CReBarCtrl class [MFC]", "GetReBarCtrl class [MFC]"]
-ms.assetid: 7f9c1d7e-5d5f-4956-843c-69ed3df688d0
 ---
 # CReBar vs. CReBarCtrl
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 MFC provides two classes to create rebars: [CReBar](reference/crebar-class.md) and [CReBarCtrl](reference/crebarctrl-class.md) (which wraps the Windows common control API). `CReBar` provides all of the functionality of the rebar common control, and it handles many of the required common control settings and structures for you.
 

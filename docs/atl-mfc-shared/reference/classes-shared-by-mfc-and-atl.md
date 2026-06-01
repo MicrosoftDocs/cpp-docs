@@ -3,9 +3,10 @@ description: "Learn more about: Classes Shared by MFC and ATL"
 title: "Classes Shared by MFC and ATL"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["shared classes, classes"]
-ms.assetid: ca8b4b6b-744d-430b-b31f-d5b2f17bf210
 ---
 # Classes Shared by MFC and ATL
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 The following table lists the classes shared between MFC and ATL.
 

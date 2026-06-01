@@ -4,9 +4,10 @@ title: "CTime Class"
 ms.date: "10/18/2018"
 f1_keywords: ["ATLTIME/ATL::CTime", "ATLTIME/ATL::CTime::CTime", "ATLTIME/ATL::CTime::Format", "ATLTIME/ATL::CTime::FormatGmt", "ATLTIME/ATL::CTime::GetAsDBTIMESTAMP", "ATLTIME/ATL::CTime::GetAsSystemTime", "ATLTIME/ATL::CTime::GetCurrentTime", "ATLTIME/ATL::CTime::GetDay", "ATLTIME/ATL::CTime::GetDayOfWeek", "ATLTIME/ATL::CTime::GetGmtTm", "ATLTIME/ATL::CTime::GetHour", "ATLTIME/ATL::CTime::GetLocalTm", "ATLTIME/ATL::CTime::GetMinute", "ATLTIME/ATL::CTime::GetMonth", "ATLTIME/ATL::CTime::GetSecond", "ATLTIME/ATL::CTime::GetTime", "ATLTIME/ATL::CTime::GetYear", "ATLTIME/ATL::CTime::Serialize64"]
 helpviewer_keywords: ["CTime class", "shared classes, CTime"]
-ms.assetid: 0a299544-485b-48dc-9d3c-fdc30f57d612
 ---
 # CTime Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 Represents an absolute time and date.
 

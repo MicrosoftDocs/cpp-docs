@@ -4,9 +4,10 @@ title: "CComClassFactorySingleton Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComClassFactorySingleton", "ATLCOM/ATL::CComClassFactorySingleton", "ATLCOM/ATL::CComClassFactorySingleton::CreateInstance", "ATLCOM/ATL::CComClassFactorySingleton::m_spObj"]
 helpviewer_keywords: ["CComClassFactorySingleton class"]
-ms.assetid: debb983c-382b-487b-8d42-7ea26dc158b8
 ---
 # CComClassFactorySingleton Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class derives from [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) and uses [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) to construct a single object.
 

@@ -4,9 +4,11 @@ title: "Ready-to-Use List Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.list"]
 helpviewer_keywords: ["classes [MFC], list", "list classes [MFC]", "collection classes [MFC], lists"]
-ms.assetid: aed8e9bd-edb7-4620-84a2-77c20322abd7
 ---
 # Ready-to-Use List Classes
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following classes are ready-to-use list classes.
 

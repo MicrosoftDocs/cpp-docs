@@ -3,9 +3,11 @@ description: "Learn more about: Sequence of Operations for Creating ActiveX Cont
 title: "Sequence of Operations for Creating ActiveX Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], creating", "ActiveX controls [MFC], creating", "sequence [MFC], for creating ActiveX controls", "OLE controls [MFC], MFC", "sequence [MFC]"]
-ms.assetid: 7d868c53-a0af-4ef6-a89c-e1c03c583a53
 ---
 # Sequence of Operations for Creating ActiveX Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following table shows your role and the framework's role in creating ActiveX controls (formerly known as OLE controls).
 

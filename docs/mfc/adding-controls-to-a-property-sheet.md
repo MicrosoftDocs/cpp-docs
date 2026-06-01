@@ -3,10 +3,12 @@ description: "Learn more about: Adding Controls to a Property Sheet"
 title: "Adding Controls to a Property Sheet"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["controls [MFC], adding to property sheets", "property sheets, adding controls"]
-ms.assetid: 24ad4c0b-c1db-4850-b9f0-34aae8d74571
 ms.topic: concept-article
 ---
 # Adding Controls to a Property Sheet
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 By default, a property sheet allocates window area for the property pages, the tab index, and the OK, Cancel, and Apply buttons. (A modeless property sheet does not have the OK, Cancel, and Apply buttons.) You can add other controls to the property sheet. For example, you can add a preview window to the right of the property page area to show the user what the current settings would look like if applied to an external object.
 

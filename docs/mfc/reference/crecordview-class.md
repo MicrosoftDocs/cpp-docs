@@ -4,9 +4,11 @@ title: "CRecordView Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CRecordView", "AFXDB/CRecordView", "AFXDB/CRecordView::CRecordView", "AFXDB/CRecordView::IsOnFirstRecord", "AFXDB/CRecordView::IsOnLastRecord", "AFXDB/CRecordView::OnGetRecordset", "AFXDB/CRecordView::OnMove"]
 helpviewer_keywords: ["CRecordView [MFC], CRecordView", "CRecordView [MFC], IsOnFirstRecord", "CRecordView [MFC], IsOnLastRecord", "CRecordView [MFC], OnGetRecordset", "CRecordView [MFC], OnMove", "CRecordView [MFC], OnMove"]
-ms.assetid: 9b4b0897-bd50-4d48-a0b4-f3323f5ccc55
 ---
 # CRecordView Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 A view that displays database records in controls.
 

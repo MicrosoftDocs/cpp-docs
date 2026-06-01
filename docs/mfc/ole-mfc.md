@@ -3,9 +3,11 @@ description: "Learn more about: OLE (MFC)"
 title: "OLE (MFC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE [MFC], user-interface topics", "OLE applications [MFC], user interface", "user interfaces, OLE", "applications [OLE], user interface"]
-ms.assetid: 61cb5d3e-1108-4e9b-b301-a8d8fcc586cb
 ---
 # OLE (MFC)
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implementing OLE functionality in your program affects your user interface in several ways:
 

@@ -3,9 +3,11 @@ description: "Learn more about: File Menu in an MFC Database Application"
 title: "File Menu in an MFC Database Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["File menu", "database applications [MFC], File menu commands"]
-ms.assetid: 92dafb75-c1b3-4860-80a0-87a83bfc36f2
 ---
 # File Menu in an MFC Database Application
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 If you create an MFC database application and don't use serialization, how should you interpret the Open, Close, Save, and Save As commands on the File menu While there are no style guidelines for this question, here are a few suggestions:
 

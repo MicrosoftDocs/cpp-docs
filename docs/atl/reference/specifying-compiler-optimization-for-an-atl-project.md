@@ -4,9 +4,10 @@ title: "Specifying Compiler Optimization for an ATL Project"
 ms.date: "08/19/2019"
 f1_keywords: ["vc.appwiz.ATL.optimization", "vc.appwiz.ATL.vtable"]
 helpviewer_keywords: ["ATL_DISABLE_NO_VTABLE macro", "ATL projects, compiler optimization", "ATL_NO_VTABLE macro"]
-ms.assetid: 7f379318-66d5-43dd-a53d-530758d3a228
 ---
 # Specifying Compiler Optimization for an ATL Project
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 By default, the [ATL Control Wizard](../../atl/reference/atl-control-wizard.md) generates new classes with the ATL_NO_VTABLE macro, as follows:
 

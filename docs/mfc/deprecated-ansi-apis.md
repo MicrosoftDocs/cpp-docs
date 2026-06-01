@@ -3,9 +3,11 @@ description: "Learn more about: Deprecated ANSI APIs"
 title: "Deprecated ANSI APIs"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, ANSI deprecated methods"]
-ms.assetid: c7c5a6fd-95e4-4bee-b3d5-d3826c30947d
 ---
 # Deprecated ANSI APIs
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The Microsoft Foundation Class (MFC) library is migrating toward classes and methods that are based on the Unicode character set. Consequently, the ANSI versions of several MFC methods are deprecated. Use the Unicode versions of these methods in your future applications.
 

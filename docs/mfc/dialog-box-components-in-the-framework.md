@@ -3,9 +3,11 @@ description: "Learn more about: Dialog-Box Components in the Framework"
 title: "Dialog-Box Components in the Framework"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC dialog boxes [MFC], creating", "dialog classes [MFC], dialog box components", "MFC dialog boxes [MFC], about MFC dialog boxes", "dialog templates [MFC], MFC framework", "MFC dialog boxes [MFC], dialog resource"]
-ms.assetid: 592db160-0a8a-49be-ac72-ead278aca53f
 ---
 # Dialog-Box Components in the Framework
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 In the MFC framework, a dialog box has two components:
 

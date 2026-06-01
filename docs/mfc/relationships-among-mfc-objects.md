@@ -3,9 +3,11 @@ description: "Learn more about: Relationships Among MFC Objects"
 title: "Relationships Among MFC Objects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, relationships between key objects", "objects [MFC], relationships", "relationships, MFC objects", "MFC object relationships"]
-ms.assetid: 6e8f3b51-e80f-4d88-94c8-4c1e4ee163ad
 ---
 # Relationships Among MFC Objects
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 To help put the document/view creation process in perspective, consider a running program: a document, the frame window used to contain the view, and the view associated with the document.
 

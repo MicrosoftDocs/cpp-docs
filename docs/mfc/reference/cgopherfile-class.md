@@ -4,9 +4,11 @@ title: "CGopherFile Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CGopherFile", "AFXINET/CGopherFile", "AFXINET/CGopherFile::CGopherFile"]
 helpviewer_keywords: ["CGopherFile [MFC], CGopherFile"]
-ms.assetid: 3ca9898f-8cdb-4495-bbde-46d40100feda
 ---
 # CGopherFile Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides the functionality to find and read files on a gopher server.
 

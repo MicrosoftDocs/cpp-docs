@@ -3,10 +3,12 @@ description: "Learn more about: Processing Tab Control Notification Messages"
 title: "Processing Tab Control Notification Messages"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["notifications [MFC], tab controls", "CTabCtrl class [MFC], processing notifications", "notifications [MFC], processing in CTabCtrl", "processing notifications [MFC]", "tab controls [MFC], processing notifications"]
-ms.assetid: 758ccb7a-9e73-48f8-9073-23f7cb09918c
 ms.topic: concept-article
 ---
 # Processing Tab Control Notification Messages
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 As users click tabs or buttons, the tab control ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) sends notification messages to its parent window. Handle these messages if you want to do something in response. For example, when the user clicks a tab, you may want to preset control data on the page prior to displaying it.
 

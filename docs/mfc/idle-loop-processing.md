@@ -3,9 +3,11 @@ description: "Learn more about: Idle Loop Processing"
 title: "Idle Loop Processing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, background processing", "PeekMessage method [MFC], elsewhere than message loop", "PeekMessage method [MFC]", "MFC, messages", "messages [MFC], loops", "OnIdle method [MFC]", "processing [MFC], background", "idle loop processing [MFC]", "idle processing [MFC]", "threading [MFC], alternatives to multithreading", "processing, during idle loop", "processing [MFC]", "background processing [MFC]"]
-ms.assetid: 5c7c46c1-6107-4304-895f-480983bb1e44
 ---
 # Idle Loop Processing
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Many applications perform lengthy processing "in the background." Sometimes performance considerations dictate using multithreading for such work. Threads involve extra development overhead, so they are not recommended for simple tasks like the idle-time work that MFC does in the [OnIdle](reference/cwinthread-class.md#onidle) function. This article focuses on idle processing. For more information about multithreading, see [Multithreading Topics](../parallel/multithreading-support-for-older-code-visual-cpp.md).
 

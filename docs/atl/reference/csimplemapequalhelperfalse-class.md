@@ -4,9 +4,10 @@ title: "CSimpleMapEqualHelperFalse Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSimpleMapEqualHelperFalse", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelperFalse", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelperFalse::IsEqualKey", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelperFalse::IsEqualValue"]
 helpviewer_keywords: ["CSimpleMapEqualHelperFalse class"]
-ms.assetid: a873eea3-e130-45cc-a476-61ee79511c3b
 ---
 # CSimpleMapEqualHelperFalse Class
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 This class is a helper for the [CSimpleMap](../../atl/reference/csimplemap-class.md) class.
 

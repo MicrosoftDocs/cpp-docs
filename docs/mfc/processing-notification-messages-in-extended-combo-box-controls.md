@@ -3,10 +3,12 @@ description: "Learn more about: Processing Notification Messages in Extended Com
 title: "Processing Notification Messages in Extended Combo Box Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["extended combo boxes [MFC], notifications", "notifications [MFC], extended combo box controls"]
-ms.assetid: 4e442758-d054-4746-bb1a-6ff84accb127
 ms.topic: concept-article
 ---
 # Processing Notification Messages in Extended Combo Box Controls
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 As users interact with the extended combo box, the control (`CComboBoxEx`) sends notification messages to its parent window, usually a view or dialog object. Handle these messages if you want to do something in response. For example, when the user activates the drop-down list or clicks in the control's edit box, the CBEN_BEGINEDIT notification is sent.
 

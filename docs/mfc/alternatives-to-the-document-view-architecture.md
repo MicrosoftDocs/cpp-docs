@@ -3,9 +3,11 @@ description: "Learn more about: Alternatives to the Document/View Architecture"
 title: "Alternatives to the Document-View Architecture"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["documents [MFC], applications without", "CDocument class [MFC], space requirements", "views [MFC], applications without"]
-ms.assetid: 2c22f352-a137-45ce-9971-c142173496fb
 ---
 # Alternatives to the Document/View Architecture
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 MFC applications normally use the document/view architecture to manage information, file formats, and the visual representation of data to users. For the majority of desktop applications, the document/view architecture is an appropriate and efficient application architecture. This architecture separates data from viewing and, in most cases, simplifies your application and reduces redundant code.
 

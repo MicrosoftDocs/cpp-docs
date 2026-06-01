@@ -4,9 +4,11 @@ title: "CCmdUI Class"
 ms.date: "09/06/2019"
 f1_keywords: ["CCmdUI", "AFXWIN/CCmdUI", "AFXWIN/CCmdUI::ContinueRouting", "AFXWIN/CCmdUI::Enable", "AFXWIN/CCmdUI::SetCheck", "AFXWIN/CCmdUI::SetRadio", "AFXWIN/CCmdUI::SetText", "AFXWIN/CCmdUI::m_nID", "AFXWIN/CCmdUI::m_nIndex", "AFXWIN/CCmdUI::m_pMenu", "AFXWIN/CCmdUI::m_pOther", "AFXWIN/CCmdUI::m_pSubMenu"]
 helpviewer_keywords: ["CCmdUI [MFC], ContinueRouting", "CCmdUI [MFC], Enable", "CCmdUI [MFC], SetCheck", "CCmdUI [MFC], SetRadio", "CCmdUI [MFC], SetText", "CCmdUI [MFC], m_nID", "CCmdUI [MFC], m_nIndex", "CCmdUI [MFC], m_pMenu", "CCmdUI [MFC], m_pOther", "CCmdUI [MFC], m_pSubMenu"]
-ms.assetid: 04eaaaf5-f510-48ab-b425-94665ba24766
 ---
 # CCmdUI Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Is used only within an `ON_UPDATE_COMMAND_UI` handler in a `CCmdTarget`-derived class.
 

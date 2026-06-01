@@ -4,9 +4,11 @@ title: "COleBusyDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleBusyDialog", "AFXODLGS/COleBusyDialog", "AFXODLGS/COleBusyDialog::COleBusyDialog", "AFXODLGS/COleBusyDialog::DoModal", "AFXODLGS/COleBusyDialog::GetSelectionType", "AFXODLGS/COleBusyDialog::m_bz"]
 helpviewer_keywords: ["COleBusyDialog [MFC], COleBusyDialog", "COleBusyDialog [MFC], DoModal", "COleBusyDialog [MFC], GetSelectionType", "COleBusyDialog [MFC], m_bz"]
-ms.assetid: c881a532-9672-4c41-b51b-5ce4a7246a6b
 ---
 # COleBusyDialog Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Used for the OLE Server Not Responding or Server Busy dialog boxes.
 

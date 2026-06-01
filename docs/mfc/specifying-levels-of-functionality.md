@@ -3,10 +3,12 @@ description: "Learn more about: Specifying Levels of Functionality"
 title: "Specifying Levels of Functionality"
 ms.date: "11/06/2018"
 helpviewer_keywords: ["CObject class [MFC], adding functionality to derived classes", "runtime [MFC], class information", "serialization [MFC], Cobject", "dynamic creation support", "levels [MFC], functionality in CObject", "run-time class [MFC], information support", "levels [MFC]"]
-ms.assetid: 562669ba-c858-4f66-b5f1-b3beeea4f486
 ms.topic: how-to
 ---
 # Specifying Levels of Functionality
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This article describes how to add the following levels of functionality to your [CObject](../mfc/reference/cobject-class.md)-derived class:
 

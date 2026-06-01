@@ -4,9 +4,10 @@ title: "ATL_DRAWINFO Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::ATL_DRAWINFO", "ATL_DRAWINFO", "ATL.ATL_DRAWINFO"]
 helpviewer_keywords: ["ATL_DRAWINFO structure"]
-ms.assetid: dd2e2aa8-e8c5-403b-b4df-35c0f6f57fb7
 ---
 # ATL_DRAWINFO Structure
+
+[!INCLUDE[product-lifecycle-status](../includes/lifecycle-note.md)]
 
 Contains information used for rendering to various targets, such as a printer, metafile, or ActiveX control.
 

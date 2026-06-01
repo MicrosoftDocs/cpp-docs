@@ -3,9 +3,11 @@ description: "Learn more about: How to: Implement Tracking in Your Code"
 title: "How to: Implement Tracking in Your Code"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CRectTracker class [MFC], implementing trackers"]
-ms.assetid: baaeca2c-5114-485f-bf58-8807db1bc973
 ---
 # How to: Implement Tracking in Your Code
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 To track an OLE item, you must handle certain events related to the item, such as clicking the item or updating the view of the document. In all cases, it is sufficient to declare a temporary [CRectTracker](reference/crecttracker-class.md) object and manipulate the item by means of this object.
 

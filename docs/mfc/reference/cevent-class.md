@@ -7,6 +7,9 @@ helpviewer_keywords: ["CEvent [MFC], CEvent", "CEvent [MFC], PulseEvent", "CEven
 ---
 # `CEvent` Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Represents an event, which is a synchronization object that enables one thread to notify another that an event has occurred.
 
 ## Syntax

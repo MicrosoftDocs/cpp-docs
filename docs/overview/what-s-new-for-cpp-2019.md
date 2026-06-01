@@ -134,7 +134,7 @@ For a summary of new features and bug fixes in Visual Studio version 16.8, see [
 
 - Support for ARM64 projects using clang-cl.
 
-- [Intel AMX intrinsics](https://software.intel.com/content/www/us/en/develop/documentation/cpp-compiler-developer-guide-and-reference/top/compiler-reference/intrinsics/intrinsics-for-intel-advanced-matrix-extensions-intel-amx-instructions.html) support.
+- [Intel AMX intrinsics](https://www.intel.com/content/www/us/en/developer/articles/code-sample/advanced-matrix-extensions-intrinsics-functions.html) support.
 
 ## What's new for C++ in Visual Studio version 16.7
 

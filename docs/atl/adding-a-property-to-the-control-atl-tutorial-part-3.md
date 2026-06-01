@@ -3,10 +3,11 @@ description: "Learn more about: Adding a Property to the Control (ATL Tutorial, 
 title: "Adding a Property to the Control (ATL Tutorial, Part 3)"
 ms.custom: "get-started-article"
 ms.date: "09/26/2018"
-ms.assetid: f775fe34-103b-4f07-9999-400e987ee030
 ms.topic: tutorial
 ---
 # Adding a Property to the Control (ATL Tutorial, Part 3)
+
+[!INCLUDE[product-lifecycle-status](includes/lifecycle-note.md)]
 
 `IPolyCtl` is the interface that contains the control's custom methods and properties, and you will add a property to it.
 

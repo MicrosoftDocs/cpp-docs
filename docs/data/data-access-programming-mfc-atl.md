@@ -3,9 +3,11 @@ description: "Learn more about: Data Access Programming (MFC/ATL)"
 title: "Data Access Programming (MFC-ATL)"
 ms.date: "11/16/2018"
 helpviewer_keywords: ["MFC [C++], data access applications", "databases [C++], MFC", "OLE DB [C++], data access technologies", "data [C++], data access technologies", "data access [C++], class libraries for databases"]
-ms.assetid: def97b2c-b5a6-445f-afeb-308050fd4852
 ---
 # Data Access Programming (MFC/ATL)
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) and Active Template Library (ATL) libraries continue to be supported. However, we're no longer adding features or updating the documentation.
 
 Over the years, Visual C++ has provided several ways to work with databases. In 2011 Microsoft announced that it is aligning on Open Database Connectivity (ODBC) as the preferred technology for accessing SQL Server products from native code. ODBC is an industry standard, and by using it you gain maximum portability of your code over multiple platforms and data sources. Most SQL database products and many NoSQL products support ODBC. You can use ODBC directly by calling the low-level ODBC APIs, or you can use the MFC ODBC wrapper classes, or a third-party C++ wrapper library.
 

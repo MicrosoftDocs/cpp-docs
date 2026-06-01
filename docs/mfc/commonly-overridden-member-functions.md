@@ -3,9 +3,11 @@ description: "Learn more about: Commonly Overridden Member Functions"
 title: "Commonly Overridden Member Functions"
 ms.date: "09/06/2019"
 helpviewer_keywords: ["CDialog class [MFC], members", "OnInitDialog function", "dialog classes [MFC], commonly overridden member functions", "OnCancel function", "overriding, dialog class members", "OnOK function", "MFC dialog boxes [MFC], overriding member functions"]
-ms.assetid: 78eb566c-e361-4c86-8db5-c7e2791b249a
 ---
 # Commonly Overridden Member Functions
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The following table lists the most likely member functions to override in your `CDialog`-derived class.
 

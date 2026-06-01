@@ -3,9 +3,11 @@ description: "Learn more about: Isolation of the MFC Common Controls Library"
 title: "Isolation of the MFC Common Controls Library"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, Common Controls library"]
-ms.assetid: 7471e6f0-49b0-47f7-86e7-8d6bc3541694
 ---
 # Isolation of the MFC Common Controls Library
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The Common Controls library is now isolated within MFC, allowing different modules (such as user DLLs) to use different versions of the Common Controls library by specifying the version in their manifests.
 

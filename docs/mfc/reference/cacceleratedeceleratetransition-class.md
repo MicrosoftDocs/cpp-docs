@@ -4,9 +4,11 @@ title: "CAccelerateDecelerateTransition Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAccelerateDecelerateTransition", "afxanimationcontroller/CAccelerateDecelerateTransition"]
 helpviewer_keywords: ["CAccelerateDecelerateTransition class [MFC]"]
-ms.assetid: b1f31ee8-bb11-4ccc-b124-365fb02b025c
 ---
 # CAccelerateDecelerateTransition Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Implements an accelerate-decelerate transition.
 

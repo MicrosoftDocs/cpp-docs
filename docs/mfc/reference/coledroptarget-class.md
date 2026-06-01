@@ -4,9 +4,11 @@ title: "COleDropTarget Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleDropTarget", "AFXOLE/COleDropTarget", "AFXOLE/COleDropTarget::COleDropTarget", "AFXOLE/COleDropTarget::OnDragEnter", "AFXOLE/COleDropTarget::OnDragLeave", "AFXOLE/COleDropTarget::OnDragOver", "AFXOLE/COleDropTarget::OnDragScroll", "AFXOLE/COleDropTarget::OnDrop", "AFXOLE/COleDropTarget::OnDropEx", "AFXOLE/COleDropTarget::Register", "AFXOLE/COleDropTarget::Revoke"]
 helpviewer_keywords: ["COleDropTarget [MFC], COleDropTarget", "COleDropTarget [MFC], OnDragEnter", "COleDropTarget [MFC], OnDragLeave", "COleDropTarget [MFC], OnDragOver", "COleDropTarget [MFC], OnDragScroll", "COleDropTarget [MFC], OnDrop", "COleDropTarget [MFC], OnDropEx", "COleDropTarget [MFC], Register", "COleDropTarget [MFC], Revoke"]
-ms.assetid: a58c9a48-6a93-4357-b078-4594df258311
 ---
 # COleDropTarget Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 Provides the communication mechanism between a window and the OLE libraries.
 

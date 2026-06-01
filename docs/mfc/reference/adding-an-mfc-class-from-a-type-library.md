@@ -7,6 +7,9 @@ ms.custom: devdivchpfy22
 ---
 # Add an MFC class from a type library
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 Use this wizard to create an MFC class from an interface in a type library. You can add an MFC class to an [MFC application](../../mfc/reference/creating-an-mfc-application.md), an [MFC DLL](../../mfc/reference/creating-an-mfc-dll-project.md), or an [MFC ActiveX control](../../mfc/reference/creating-an-mfc-activex-control.md).
 
 > [!NOTE]

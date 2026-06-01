@@ -7,6 +7,9 @@ helpviewer_keywords: ["CMFCRibbonCategory [MFC], CMFCRibbonCategory", "CMFCRibbo
 ---
 # CMFCRibbonCategory Class
 
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
+
 The `CMFCRibbonCategory` class implements a ribbon tab that contains a group of [ribbon panels](../../mfc/reference/cmfcribbonpanel-class.md).
 
 ## Syntax

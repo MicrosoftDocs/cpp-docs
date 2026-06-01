@@ -3,9 +3,11 @@ description: "Learn more about: Walkthrough: Adding a D2D Object to an MFC Proje
 title: "Walkthrough: Adding a D2D Object to an MFC Project"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["MFC, D2D", "D2D [MFC]"]
-ms.assetid: dda36c33-c231-4da6-a62f-72d69a12b6dd
 ---
 # Walkthrough: Adding a D2D Object to an MFC Project
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 This walkthrough teaches how to add a basic Direct2D (D2D) object to a Visual Studio, Microsoft Foundation Class Library (MFC) project, and then build the project into an application that prints "Hello, World!" on a gradient background.
 

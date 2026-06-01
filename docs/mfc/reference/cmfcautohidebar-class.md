@@ -4,9 +4,11 @@ title: "CMFCAutoHideBar Class"
 ms.date: "10/18/2018"
 f1_keywords: ["CMFCAutoHideBar", "AFXAUTOHIDEBAR/CMFCAutoHideBar", "AFXAUTOHIDEBAR/CMFCAutoHideBar::CMFCAutoHideBar", "AFXAUTOHIDEBAR/CMFCAutoHideBar::AddAutoHideWindow", "AFXAUTOHIDEBAR/CMFCAutoHideBar::AllowShowOnPaneMenu", "AFXAUTOHIDEBAR/CMFCAutoHideBar::CalcFixedLayout", "AFXAUTOHIDEBAR/CMFCAutoHideBar::Create", "AFXAUTOHIDEBAR/CMFCAutoHideBar::GetFirstAHWindow", "AFXAUTOHIDEBAR/CMFCAutoHideBar::GetVisibleCount", "AFXAUTOHIDEBAR/CMFCAutoHideBar::OnShowControlBarMenu", "AFXAUTOHIDEBAR/CMFCAutoHideBar::RemoveAutoHideWindow", "AFXAUTOHIDEBAR/CMFCAutoHideBar::SetActiveInGroup", "AFXAUTOHIDEBAR/CMFCAutoHideBar::SetRecentVisibleState", "AFXAUTOHIDEBAR/CMFCAutoHideBar::ShowAutoHideWindow", "AFXAUTOHIDEBAR/CMFCAutoHideBar::StretchPane", "AFXAUTOHIDEBAR/CMFCAutoHideBar::UnSetAutoHideMode", "AFXAUTOHIDEBAR/CMFCAutoHideBar::UpdateVisibleState", "AFXAUTOHIDEBAR/CMFCAutoHideBar::m_nShowAHWndDelay"]
 helpviewer_keywords: ["CMFCAutoHideBar [MFC], CMFCAutoHideBar", "CMFCAutoHideBar [MFC], AddAutoHideWindow", "CMFCAutoHideBar [MFC], AllowShowOnPaneMenu", "CMFCAutoHideBar [MFC], CalcFixedLayout", "CMFCAutoHideBar [MFC], Create", "CMFCAutoHideBar [MFC], GetFirstAHWindow", "CMFCAutoHideBar [MFC], GetVisibleCount", "CMFCAutoHideBar [MFC], OnShowControlBarMenu", "CMFCAutoHideBar [MFC], RemoveAutoHideWindow", "CMFCAutoHideBar [MFC], SetActiveInGroup", "CMFCAutoHideBar [MFC], SetRecentVisibleState", "CMFCAutoHideBar [MFC], ShowAutoHideWindow", "CMFCAutoHideBar [MFC], StretchPane", "CMFCAutoHideBar [MFC], UnSetAutoHideMode", "CMFCAutoHideBar [MFC], UpdateVisibleState", "CMFCAutoHideBar [MFC], m_nShowAHWndDelay"]
-ms.assetid: 54c8d84f-de64-4efd-8a47-3ea0ade40a70
 ---
 # CMFCAutoHideBar Class
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 The `CMFCAutoHideBar` class is a special toolbar class that implements the auto-hide feature.
 

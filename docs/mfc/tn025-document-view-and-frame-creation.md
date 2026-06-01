@@ -4,9 +4,11 @@ title: "TN025: Document, View, and Frame Creation"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.creation"]
 helpviewer_keywords: ["documents [MFC], view and frame creation", "TN025"]
-ms.assetid: 09254d72-6e1d-43db-80e9-693887dbeda2
 ---
 # TN025: Document, View, and Frame Creation
+
+>[!NOTE]
+> The Microsoft Foundation Classes (MFC) library continues to be supported. However, we're no longer adding features or updating the documentation.
 
 > [!NOTE]
 > The following technical note has not been updated since it was first included in the online documentation. As a result, some procedures and topics might be out of date or incorrect. For the latest information, it is recommended that you search for the topic of interest in the online documentation index.
