@@ -114,9 +114,9 @@ By default, this function's global state is scoped to the application. To change
 
 ## Requirements
 
-| Routine | Required header |
-|---|---|
-| **`wcstombs_s`** | `<stdlib.h>` |
+| Routine | Required header | Required library |
+|---|---|---|
+| **`wcstombs_s`** | `<stdlib.h>` | ucrt.lib (the Universal C Runtime Library) |
 
 For more compatibility information, see [Compatibility](../compatibility.md).
 

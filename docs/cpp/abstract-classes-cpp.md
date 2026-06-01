@@ -31,13 +31,15 @@ The only difference between this declaration and the previous one is that `Print
 
 Abstract classes can't be used for:
 
-- Variables or member data
+- Variables or member data (you can't declare a variable of an abstract class type)
 
-- Argument types
+- Argument types (you can't pass an abstract class by value as a function parameter)
 
-- Function return types
+- Function return types (a function can't return an abstract class by value)
 
-- Types of explicit conversions
+- Types of explicit conversions (you can't cast to an abstract class type)
+
+In each case, you can use pointers or references to the abstract class type instead. For example, a function can take `AbstractBase&` or `AbstractBase*` as a parameter, and you can declare pointers or references of the abstract class type.
 
 If the constructor for an abstract class calls a pure virtual function, either directly or indirectly, the result is undefined. However, constructors and destructors for abstract classes can call other member functions.
 

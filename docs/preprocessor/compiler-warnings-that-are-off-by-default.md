@@ -101,6 +101,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | [C4686](../error-messages/compiler-warnings/compiler-warning-level-3-c4686.md) (level 3) | '*user-defined type*': possible change in behavior, change in UDT return calling convention |
 | [C4692](../error-messages/compiler-warnings/compiler-warning-level-1-c4692.md) (level 1) | '*function*': signature of non-private member contains assembly private native type '*native_type*' |
 | [C4710](../error-messages/compiler-warnings/compiler-warning-level-4-c4710.md) (level 4) | '*function*': function not inlined |
+| [C4711](../error-messages/compiler-warnings/compiler-warning-level-1-c4711.md) (level 1) | function '*function*' selected for inline expansion |
 | [C4738](../error-messages/compiler-warnings/compiler-warning-level-3-c4738.md) (level 3) | storing 32-bit float result in memory, possible loss of performance |
 | [C4746](../error-messages/compiler-warnings/compiler-warning-c4746.md) | volatile access of '*expression*' is subject to /volatile:\<iso\|ms> setting; consider using __iso_volatile_load/store intrinsic functions |
 | C4749 (level 4) | conditionally supported: offsetof applied to non-standard-layout type '*type*' |

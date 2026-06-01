@@ -1,9 +1,9 @@
 ---
 description: "Learn more about: Symbols reference"
 title: "Symbols reference"
-ms.date: 07/15/2020
+ms.date: 05/04/2026
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), symbols reference"]
-ms.assetid: 96ed59cc-dafa-4299-bb2e-9c7c3f496491
+ai-usage: ai-assisted
 ---
 # Symbols reference
 
@@ -29,6 +29,9 @@ ms.assetid: 96ed59cc-dafa-4299-bb2e-9c7c3f496491
    :::column-end:::
    :::column span="":::
       [`@Interface`](at-interface.md)
+   :::column-end:::
+   :::column span="":::
+      [`@UnwindVersion`](at-unwindversion.md)
    :::column-end:::
    :::column span="":::
       [`@Version`](at-version.md)

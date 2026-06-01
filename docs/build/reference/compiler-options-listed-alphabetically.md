@@ -1,7 +1,8 @@
 ---
 title: "Compiler options listed alphabetically"
 description: "Reference listing in alphabetical order of the Microsoft C/C++ compiler command-line options."
-ms.date: 2/5/2025
+ms.date: 05/25/2026
+ai-usage: ai-assisted
 helpviewer_keywords: ["compiler options, C++"]
 ---
 # Compiler options listed alphabetically
@@ -66,7 +67,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/FC`](fc-full-path-of-source-code-file-in-diagnostics.md) | Displays the full path of source code files passed to *cl.exe* in diagnostic text. |
 | [`/Fd`](fd-program-database-file-name.md) | Renames program database file. |
 | [`/Fe`](fe-name-exe-file.md) | Renames the executable file. |
-| [`/feature`](feature-arm64.md) | Enable architecture features.<sup>17.10</sup> |
+| [`/feature`](feature-enable-architecture-features.md) | Enable architecture features. |
 | [`/forceInterlockedFunctions`](force-interlocked-functions.md) | Dynamically selects between Armv8.0 load, store exclusive instructions or Armv8.1 LSE atomic instructions based on target CPU.<sup>17.14</sup> |
 | [`/FI<file>`](fi-name-forced-include-file.md) | Preprocesses the specified include file. |
 | [`/Fi`](fi-preprocess-output-file-name.md) | Specifies the preprocessed output file name. |
@@ -251,7 +252,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/Zc:zeroSizeArrayNew[-]`](zc-zerosizearraynew.md) | Call member `new`/`delete` for zero-size arrays of objects (on by default). |
 | [`/Ze`](za-ze-disable-language-extensions.md) | Deprecated. Enables C89 language extensions. |
 | [`/Zf`](zf.md) | Improves PDB generation time in parallel builds. |
-| [`/ZH:[MD5|SHA1|SHA_256]`](zh.md) | Specifies MD5, SHA-1, or SHA-256 for checksums in debug info. |
+| [`/ZH:[MD5|SHA1|SHA_256|SHA384|SHA512]`](zh.md) | Specifies MD5, SHA-1, SHA-256, SHA-384<sup>18.6.0</sup>, or SHA-512<sup>18.6.0</sup> for checksums in debug info. |
 | [`/ZI`](z7-zi-zi-debug-information-format.md) | Includes debug information in a program database compatible with Edit and Continue. (x86 only) |
 | [`/Zi`](z7-zi-zi-debug-information-format.md) | Generates complete debugging information. |
 | [`/Zl`](zl-omit-default-library-name.md) | Removes the default library name from the *`.obj`* file. |
@@ -261,8 +262,8 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/Zs`](zs-syntax-check-only.md) | Checks syntax only. |
 | [`/ZW`](zw-windows-runtime-compilation.md) | Produces an output file to run on the Windows Runtime. |
 
-<sup>17.10</sup> This option is available starting in Visual Studio 2022 version 17.10.\
-<sup>17.14</sup> This option is available starting in Visual Studio 2022 version 17.14.
+<sup>17.14</sup> This option is available starting in Visual Studio 2022 version 17.14.\
+<sup>18.6.0</sup> This option is available starting in Visual Studio 2026 version 18.6.0 and MSVC version 14.51.
 
 ## See also
 

@@ -43,7 +43,7 @@ The articles in this section of the documentation explain a subset of the error 
 | [Fatal error C1026](fatal-error-c1026.md) | parser stack overflow, program too complex |
 | Fatal error C1027 | **(Obsolete)** Inconsistent values for /Ym between creation and use of precompiled header |
 | Fatal error C1028 | missing IFC for analysis.  Please rebuild *module* '*ifc filename*' with `/analyze`. |
-| Fatal error C1029|'*hash*': source file hash (*bytes* bytes) exceeds the IFC format's maximum supported hash size (*bytes* bytes); use a smaller hash algorithm such as SHA-256|
+| [Fatal error C1029](fatal-error-c1029.md) | '*filename*': source file hash (*number* bytes) exceeds the IFC format's maximum supported hash size (*number* bytes); use a smaller hash algorithm such as SHA-256 |
 | Fatal error C1030 | WMMX types not allowed in the function signature by the calling convention |
 | Fatal error C1032 | `__eabi` requires VFP code generation (`/QRfpe-`) |
 | [Fatal error C1033](fatal-error-c1033.md) | cannot open program database '*file*' |
