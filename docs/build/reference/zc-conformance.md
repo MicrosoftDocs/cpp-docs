@@ -52,6 +52,7 @@ Here are the **`/Zc`** compiler options:
 | [`/Zc:tlsGuards[-]`](zc-tlsguards.md) | Generate runtime checks for TLS variable initialization. On by default. |
 | [`/Zc:trigraphs[-]`](zc-trigraphs-trigraphs-substitution.md) | Enable trigraphs (obsolete, off by default). |
 | [`/Zc:twoPhase-`](zc-twophase.md) | Use nonconforming template parsing behavior (only applicable when **`/permissive-`** is specified, which defaults to conforming). |
+| [`/Zc:u8EscapeEncoding[-]`](zc-u8escapeencoding.md) | Encode integer escape sequences in u8 string literals as-is instead of as utf-8 characters. Off by default. |
 | [`/Zc:wchar_t[-]`](zc-wchar-t-wchar-t-is-native-type.md) | **`wchar_t`** is a native type, not a typedef. On by default. |
 | [`/Zc:zeroSizeArrayNew[-]`](zc-zerosizearraynew.md) | Call member `new`/`delete` for 0-size arrays of objects. On by default. |
 

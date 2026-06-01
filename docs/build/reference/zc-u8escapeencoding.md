@@ -5,12 +5,14 @@ author:      Rastaban
 ms.author:   philc
 ms.service: visual-cpp
 ms.topic: article
-ms.date:     02/10/2026
+ms.date: 06/01/2026
 ms.subservice: cpp-lang
 ---
 # /Zc:u8EscapeEncoding (numeric escape sequence encoding in u8 strings)
 
 Keep the value of numeric escape sequences in `u8` string literals without encoding them them as utf-8.
+
+Use this switch to increase cross compatability or when a non-utf-8 character is embedded in a utf-8 string literal.
 
 ## Syntax
 
@@ -33,6 +35,8 @@ int main()
     return 0;
 }
 ```
+
+This is subtle, but notice that the example string contains both a hex escape sequence '\\__x__' and a universal escape sequence '\\__u__'. `/Zc:u8EscapeEncoding[-]` will affect the encoding of the hex escape sequence, but the universal escape sequence will always be encoded the same way. The example string also includes the space character, which is encoded as `0x20`.
 
 Under `/Zc:u8EscapeEncoding` the escape sequence `\x00ff` is encoded as `0xFF` and the universal-character sequence `\u00ff` is encoded as the utf-8 sequence `0xC3 0xBF`. This gives the following output when run:
 
