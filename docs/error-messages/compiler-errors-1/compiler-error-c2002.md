@@ -1,13 +1,13 @@
 ---
 title: "Compiler Error C2002"
 description: "Learn more about: Compiler Error C2002"
-ms.date: 11/04/2016
+ms.date: 06/01/2026
 f1_keywords: ["C2002"]
 helpviewer_keywords: ["C2002"]
 ---
 # Compiler Error C2002
 
-> invalid wide-character constant
+> expected an ordinary string literal
 
 ## Remarks
 
