@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Compiler errors C2001 through C2099"
 title: "Compiler errors C2001 through C2099"
-ms.date: 08/24/2022
+ms.date: 06/01/2026
 f1_keywords: ["C2029"]
 helpviewer_keywords: ["C2029"]
 ---

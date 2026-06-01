@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2018"
 description: "Learn more about: Compiler Error C2018"
-ms.date: 06/21/2025
+ms.date: 06/01/2026
 f1_keywords: ["C2018"]
 helpviewer_keywords: ["C2018"]
 ---

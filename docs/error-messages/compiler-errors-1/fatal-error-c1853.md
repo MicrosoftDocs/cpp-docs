@@ -1,7 +1,7 @@
 ---
 title: "Fatal Error C1853"
 description: "Learn more about: Fatal Error C1853"
-ms.date: 11/04/2016
+ms.date: 06/01/2026
 f1_keywords: ["C1853"]
 helpviewer_keywords: ["C1853"]
 ---

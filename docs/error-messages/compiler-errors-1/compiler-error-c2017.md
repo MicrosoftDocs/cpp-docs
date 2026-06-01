@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2017"
 description: "Learn more about: Compiler Error C2017"
-ms.date: 11/04/2016
+ms.date: 06/01/2026
 f1_keywords: ["C2017"]
 helpviewer_keywords: ["C2017"]
 ---
