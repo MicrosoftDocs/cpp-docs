@@ -1,11 +1,11 @@
 ---
 title: "Use the Microsoft C++ Build Tools from the command line"
-description: "Learn how to install and use the Microsoft C++ Build Tools from the command line outside of the Visual Studio IDE."
+description: "Learn how to install and use the Microsoft C++ (MSVC) Build Tools from the command line."
 ms.custom: "conceptual"
-ms.date: 06/01/2026
+ms.date: 06/02/2026
 ms.topic: how-to
 helpviewer_keywords: ["command-line builds [C++]", "compiling source code [C++], command line", "builds [C++], command-line", "command line [C++], building from", "command line [C++], compilers"]
-#custom intent: As a C++ developer, I want to understand all the options for using the command line to compile and build my software projects as part of my workflow.
+#custom intent: As a C++ developer, I want to understand the options for using the command line to compile and build my software projects.
 ---
 # Use the Microsoft C++ Build Tools from the command line
 
