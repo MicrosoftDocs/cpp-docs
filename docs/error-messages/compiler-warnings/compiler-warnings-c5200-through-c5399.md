@@ -1,7 +1,7 @@
 ---
 title: "Microsoft C/C++ compiler (MSVC) compiler warnings C5200 through C5399"
 description: "Table of Microsoft C/C++ compiler (MSVC) warnings C5200 through C5399."
-ms.date: 04/19/2024
+ms.date: 06/01/2026
 f1_keywords: ["C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221", "C5222", "C5223", "C5224", "C5225", "C5226", "C5227", "C5228", "C5229", "C5230", "C5231", "C5232", "C5233", "C5234", "C5235", "C5236", "C5237", "C5238", "C5239", "C5241", "C5242", "C5244", "C5245", "C5246", "C5249", "C5250", "C5251", "C5252", "C5253", "C5254", "C5255", "C5256", "C5257", "C5258", "C5259", "C5260", "C5261", "C5263", "C5264", "C5265", "C5268", "C5269", "C5270", "C5271", "C5272", "C5273", "C5274", "C5275", "C5276", "C5277", "C5278", "C5279", "C5280", "C5281", "C5282", "C5283", "C5284", "C5285", "C5286", "C5287", "C5300", "C5303", "C5304", "C5305", "C5306", "C5307", "C5308", "C5309"]
 helpviewer_keywords: ["C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221", "C5222", "C5223", "C5224", "C5225", "C5226", "C5227", "C5228", "C5229", "C5230", "C5231", "C5232", "C5233", "C5234", "C5235", "C5236", "C5237", "C5238", "C5239", "C5241", "C5242", "C5244", "C5245", "C5246", "C5249", "C5250", "C5251", "C5252", "C5253", "C5254", "C5255", "C5256", "C5257", "C5258", "C5259", "C5260", "C5261", "C5263", "C5264", "C5265", "C5268", "C5269", "C5270", "C5271", "C5272", "C5273", "C5274", "C5275", "C5276", "C5277", "C5278", "C5279", "C5280", "C5281", "C5282", "C5283", "C5284", "C5285", "C5286", "C5287", "C5300", "C5303", "C5304", "C5305", "C5306", "C5307", "C5308", "C5309"]
 ---
@@ -102,6 +102,18 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 | Compiler warning (level 1) C5285 | cannot declare a specialization for '*template name*': *template argument* |
 | Compiler warning (level 1) C5286 | implicit conversion from `enum` type '*type 1*' to `enum` type '*type 2*'; use an explicit cast to silence this warning |
 | Compiler warning (level 1) C5287 | operands are different `enum` types '*type 1*' and '*type 2*'; use an explicit cast to silence this warning |
+|Compiler warning (level 4) C5288|only '`= 0`' is allowed as a pure specifier|
+|Compiler warning (level 4) C5289|'*identifier*' after '`template`' keyword does not refer to a template|
+|Compiler warning (level 1) C5290|an alias-declaration in this context requires at least '`/std:c++23`'|
+|Compiler warning (level 1, off) C5291|'*derived*': deriving from the base class '*base*' can cause potential runtime issues due to an ABI bug. Recommend adding a *number*-byte data member to the base class for the padding at the end of it to work around this bug.|
+|Compiler warning (level 4) C5292|'*operator*': '*type*' to '*type*' differs in indirection: one is the unique plain '`char`' type and the other is not|
+|Compiler warning (level 4) C5293|function parameter *parameter number* type '*type*' differs from declaration parameter type '*type*': one is the unique plain '`char`' type and the other is not|
+|Compiler warning (level 4) C5294|'*identifier*': benign redefinition of type from '*type*' to '*type*': one is the unique plain '`char`' type and the other is not|
+|Compiler warning (level 1) C5295|`#warning` *message*|
+|Compiler warning (level 4) C5296|parsing resumes here after skipping tokens for error recovery|
+|Compiler warning (level 1) C5297|value in string literal is not a valid character in code page *codepage* or can not be re-encoded in code page *codepage*. Switching to permissive character translation.|
+|Compiler warning (level 1) C5298|ignoring spurious 'U+*NNNNNNNN*' character in source|
+|Compiler warning (level 1, error) C5299|a label appearing at the end of a compound statement requires at least '`/std:c++23`'|
 | Compiler warning (error) C5300 | '`#pragma omp atomic` *clause*': expression mismatch for lvalue being updated |
 | [Compiler warning (level 1) C5301](c5301-c5302.md) | '`#pragma omp for`': '*loop-index*' increases while loop condition uses '*comparison*'; non-terminating loop? |
 | [Compiler warning (level 1) C5302](c5301-c5302.md) | '`#pragma omp for`': '*loop-index*' decreases while loop condition uses '*comparison*'; non-terminating loop? |
@@ -112,6 +124,16 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 | Compiler warning (level 3) C5307 | '*function*': argument (*argument number*) converted from '*type 1*' to '*type 2*'. Missing '`L`' encoding-prefix for character literal? |
 | Compiler warning (level 1, error) C5308 | Modifying reserved macro name '*macro name*' may cause undefined behavior |
 | Compiler warning (level 1, error) C5309 | literal suffix '*name*' requires at least '*language version*'|
+|Compiler warning (level 1) C5310|The experimental standard library modules have been deprecated. The core language Modules facility is available with '`/std:c++20`' or higher, allowing '`import std;`' to be used. See: https://aka.ms/import-std|
+|Compiler warning (level 4) C5311|A literal-operator-id of the form '`operator string-literal identifier`' has been deprecated|
+|Compiler warning (level 4, off) C5320|'*escape sequence*' in a u8 string is encoded as 0x*NNNN*, which is not a valid utf-8 code point. For a multi-byte unicode character use `\u`.|
+|Compiler warning (level 4) C5321|nonstandard extension used: encoding '*escape sequence*' as a multi-byte utf-8 character. Use `\u` instead for cross platform compatibility and '`/Zc:u8EscapeEncoding`' to disable the extension.|
+|Compiler warning (level 4, off) C5322|'*identifier*': dynamic initialization of a variable in a readonly custom section '*segment*' is not supported|
+|Compiler warning (level 1) C5332|delimited escape sequences are only valid in C++23|
+|Compiler warning (level 1) C5333|backslash and newline separated by space is treated as a line continuation in C++23 and later|
+|Compiler warning (level 1) C5334|named universal characters require at least '`/std:c++23`'|
+|Compiler warning (level 1) C5335|incomplete named universal character|
+|Compiler warning (level 1) C5336|invalid string literal created by '`#`' operator, ignoring final '`\`'|
 
 ## See also
 

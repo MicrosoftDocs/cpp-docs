@@ -1,13 +1,13 @@
 ---
 title: "Compiler Error C2043"
 description: "Learn more about: Compiler Error C2043"
-ms.date: 11/04/2016
+ms.date: 06/01/2026
 f1_keywords: ["C2043"]
 helpviewer_keywords: ["C2043"]
 ---
 # Compiler Error C2043
 
-> illegal break
+> break statement not within loop or switch statement
 
 ## Remarks
 

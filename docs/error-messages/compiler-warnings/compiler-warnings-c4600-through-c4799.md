@@ -1,7 +1,7 @@
 ---
 title: "Microsoft C/C++ compiler (MSVC) warnings C4600 through C4799"
 description: "Table of Microsoft C/C++ compiler (MSVC) warnings C4600 through C4799"
-ms.date: 05/03/2021
+ms.date: 06/01/2026
 f1_keywords: ["C4604", "C4605", "C4609", "C4631", "C4642", "C4643", "C4644", "C4647", "C4648", "C4649", "C4654", "C4658", "C4671", "C4676", "C4689", "C4695", "C4696", "C4719", "C4720", "C4721", "C4725", "C4726", "C4728", "C4729", "C4732", "C4734", "C4735", "C4736", "C4745", "C4749", "C4751", "C4752", "C4753", "C4755", "C4757", "C4761", "C4767", "C4771", "C4774", "C4775", "C4776", "C4777", "C4778", "C4792", "C4798"]
 helpviewer_keywords: ["C4604", "C4605", "C4609", "C4631", "C4642", "C4643", "C4644", "C4647", "C4648", "C4649", "C4654", "C4658", "C4671", "C4676", "C4689", "C4695", "C4696", "C4719", "C4720", "C4721", "C4725", "C4726", "C4728", "C4729", "C4732", "C4734", "C4735", "C4736", "C4745", "C4749", "C4751", "C4752", "C4753", "C4755", "C4757", "C4761", "C4767", "C4771", "C4774", "C4775", "C4776", "C4777", "C4778", "C4792", "C4798"]
 ---
@@ -41,7 +41,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 1, no longer emitted) C4627](compiler-warning-level-1-c4627.md)|'`identifier`': skipped when looking for precompiled header use|
 |[Compiler warning (level 1, off) C4628](compiler-warning-level-1-c4628.md)|digraphs not supported with `-Ze`. Character sequence '*digraph*' not interpreted as alternate token for '*token*'|
 |[Compiler warning (level 4, no longer emitted) C4629](compiler-warning-level-4-c4629.md)|digraph used, character sequence '*digraph*' interpreted as token '*char*' (insert a space between the two characters if this is not what you intended)|
-|[Compiler warning (level 1) C4630](compiler-warning-level-1-c4630.md)|'*symbol*': '*extern*' storage-class specifier illegal on member definition|
+|[Compiler warning (level 1) C4630](compiler-warning-level-1-c4630.md)|'*symbol*': '*extern*' storage-class specifier cannot be applied to a member|
 |Compiler warning (level 2) C4631|`MSXML` or `XPath` unavailable, XML document comments will not be processed. *reason*|
 |[Compiler warning (level 1) C4632](compiler-warning-level-1-c4632.md)|XML document comment: *file* - access denied: *reason*|
 |[Compiler warning (level 3 and level 4) C4633](compiler-warning-level-3-c4633.md)|XML document comment *target*: error: *reason*|
@@ -108,7 +108,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 |[Compiler warning (level 4) C4702](compiler-warning-level-4-c4702.md)|unreachable code|
 |[Compiler warning (level 4) C4703](compiler-warning-level-4-c4703.md)|potentially uninitialized local pointer variable '*identifier*' used|
 |[Compiler warning (level 4) C4706](compiler-warning-level-4-c4706.md)|assignment used as a condition|
-|[Compiler warning (level 4) C4709](compiler-warning-level-4-c4709.md)|comma operator within array index expression|
+|[Compiler warning (level 4) C4709](compiler-warning-level-4-c4709.md)|comma operator within a subscript expression|
 |[Compiler warning (level 4, off) C4710](compiler-warning-level-4-c4710.md)|'*function*': function not inlined|
 |[Compiler warning (level 1) C4711](compiler-warning-level-1-c4711.md)|function 'function' selected for automatic inline expansion|
 |[Compiler warning (level 4) C4714](compiler-warning-level-4-c4714.md)|function '*function*' marked as `__forceinline` not inlined|

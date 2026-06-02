@@ -1,17 +1,17 @@
 ---
 title: "Compiler Warning (level 4) C4709"
 description: "Learn more about: Compiler Warning (level 4) C4709"
-ms.date: 11/04/2016
+ms.date: 06/01/2026
 f1_keywords: ["C4709"]
 helpviewer_keywords: ["C4709"]
 ---
 # Compiler Warning (level 4) C4709
 
-> comma operator within array index expression
+> comma operator within a subscript expression
 
 ## Remarks
 
-When a comma occurs in an array index expression, the compiler uses the value after the last comma.
+When a comma occurs in a subscript expression, the compiler uses the value after the last comma.
 
 ## Example
 
