@@ -202,7 +202,7 @@ The following table describes how each register is used across function calls:
 |`R9`|Volatile|Fourth integer argument|
 |`R10`:`R11`|Volatile|Must be preserved as needed by caller; used in syscall/sysret instructions|
 |`R12`:`R15`|Nonvolatile|Must be preserved by callee|
-|`R16`:`R29`|Volatile|Must be preserved by callee (APX Register)|
+|`R16`:`R29`|Volatile|Must be preserved as needed by caller (APX Register)|
 |`R30`:`R31`|Nonvolatile|Must be preserved by callee (APX Register)|
 |`RDI`|Nonvolatile|Must be preserved by callee|
 |`RSI`|Nonvolatile|Must be preserved by callee|
