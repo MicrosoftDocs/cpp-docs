@@ -43,7 +43,7 @@ The tools include the C/C++ compilers, linkers, assemblers, and other build tool
 
 The tools require several environment variables to be set. These variables add the tools to the path and set the locations of include files, library files, and SDKs. To make it easy to set these environment variables, the installer creates customized *command files*, or batch files, during installation. You can run one of these command files to set a specific host and target build architecture, Windows SDK version, and platform toolset.
 
-For convenience, the installer also creates shortcuts in your **Start** menu. The shortcuts open developer Command Prompt windows by using these command files for specific combinations of host and target. These shortcuts ensure all the required environment variables are set and ready to use.
+For convenience, the installer also creates shortcuts in your **Start** menu. The shortcuts open developer Command Prompt windows by using these command files for specific combinations of host and target architectures. These shortcuts ensure all the required environment variables are set and ready to use.
 
 The required environment variables are specific to your installation and to the build architecture you choose. Product updates or upgrades might change the variables. This variability is one reason why we recommend you use an installed command prompt shortcut or command file, instead of setting the environment variables yourself.
 
