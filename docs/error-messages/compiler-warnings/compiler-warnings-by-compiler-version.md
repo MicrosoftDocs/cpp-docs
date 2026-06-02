@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warnings by compiler version"
 description: "Table of Microsoft C/C++ compiler warnings by compiler version."
-ms.date: 01/18/2024
+ms.date: 06/01/2026
 helpviewer_keywords: ["warnings, by compiler version", "cl.exe compiler, setting warning options"]
 ---
 # Compiler Warnings by compiler version
@@ -12,6 +12,9 @@ These versions of the compiler introduced new warnings:
 
 | Product | Compiler version number |
 |--|--|
+| MSVC version 14.51 | 19.51 |
+| Visual Studio 2026 version 18.1 | 19.46 |
+| Visual Studio 2026 version 18.0 | 19.45 |
 | Visual Studio 2022 version 17.14 | 19.44 |
 | Visual Studio 2022 version 17.13 | 19.43 |
 | Visual Studio 2022 version 17.12 | 19.42 |
@@ -64,13 +67,73 @@ The following sections list the warnings introduced by each version of Visual C+
 
 ::: moniker range=">= msvc-170"
 
+## Warnings introduced in MSVC version 14.51 (compiler version 19.51)
+
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.51`**.
+
+| Warning | Message |
+|--|--|
+|C4876|incomplete or invalid multi-byte character in string literal. Use an escape sequence to preserve these byte values.|
+|C5299|a label appearing at the end of a compound statement requires at least '`/std:c++23`'|
+
+## Warnings introduced in Visual Studio 2026 version 18.1 (compiler version 19.46)
+
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.46`**.
+
+| Warning | Message |
+|--|--|
+|C5296|parsing resumes here after skipping tokens for error recovery|
+|C5297|value in string literal is not a valid character in code page *codepage* or can not be re-encoded in code page *codepage*. Switching to permissive character translation.|
+
+## Warnings introduced in Visual Studio 2026 version 18.0 (compiler version 19.45)
+
+These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.45`**.
+
+| Warning | Message |
+|--|--|
+|C4864|expected '`template`' keyword before dependent template name|
+|C4865|the underlying type of '*type*' will change when '`/Zc:enumTypes`' is specified on the command line|
+|C4873|'*identifier*' cannot be a function template|
+|C4874|assignment used as a condition|
+|C4875|a non-string literal argument to `[[gsl::suppress]]` is deprecated and will be removed in a future release|
+|C5290|an alias-declaration in this context requires at least '`/std:c++23`'|
+|C5291|'*derived*': deriving from the base class '*base*' can cause potential runtime issues due to an ABI bug. Recommend adding a *number*-byte data member to the base class for the padding at the end of it to work around this bug.|
+|C5295|`#warning` *message*|
+|C5298|ignoring spurious 'U+*NNNNNNNN*' character in source|
+|C5311|A literal-operator-id of the form '`operator string-literal identifier`' has been deprecated|
+|C5322|'*identifier*': dynamic initialization of a variable in a readonly custom section '*segment*' is not supported|
+|C5332|delimited escape sequences are only valid in C++23|
+|C5333|backslash and newline separated by space is treated as a line continuation in C++23 and later|
+|C5334|named universal characters require at least '`/std:c++23`'|
+|C5335|incomplete named universal character|
+|C5336|invalid string literal created by '`#`' operator, ignoring final '`\`'|
+
 ## Warnings introduced in Visual Studio 2022 version 17.14 (compiler version 19.44)
 
 These warnings, and all warnings in later versions, are suppressed by using the compiler option **`/Wv:19.43`**.
 
 | Warning | Message |
 |--|--|
-| C4862 | justification property is not allowed with more than one warning number |
+|C4862 | justification property is not allowed with more than one warning number|
+|C4863|unknown property in `#pragma warning`: '*property*'|
+|C5278 | adding a specialization for '*type*' has undefined behavior|
+|C5279 | a lambda declarator without a parameter list requires at least '*language version*'|
+|C5280 | a static operator '*operator name*' requires at least '*language version*'|
+|C5281 | a static lambda requires at least '*language version*'|
+|C5282 | '`if consteval`' requires at least '*language version*'|
+|C5283 | an attribute in this position requires at least '*language version*'|
+|C5284 | conversion from value '*value*' of type '*type 1*' to '*type 2*' requires a narrowing conversion|
+|C5285 | cannot declare a specialization for '*template name*': *template argument*|
+|C5286 | implicit conversion from `enum` type '*type 1*' to `enum` type '*type 2*'; use an explicit cast to silence this warning|
+|C5287 | operands are different `enum` types '*type 1*' and '*type 2*'; use an explicit cast to silence this warning|
+|C5288|only '`= 0`' is allowed as a pure specifier|
+|C5289|'*identifier*' after '`template`' keyword does not refer to a template|
+|C5292|'*operator*': '*type*' to '*type*' differs in indirection: one is the unique plain '`char`' type and the other is not|
+|C5293|function parameter *parameter number* type '*type*' differs from declaration parameter type '*type*': one is the unique plain '`char`' type and the other is not|
+|C5294|'*identifier*': benign redefinition of type from '*type*' to '*type*': one is the unique plain '`char`' type and the other is not|
+|C5310|The experimental standard library modules have been deprecated. The core language Modules facility is available with '`/std:c++20`' or higher, allowing '`import std;`' to be used. See: https://aka.ms/import-std|
+|C5320|'*escape sequence*' in a u8 string is encoded as 0x*NNNN*, which is not a valid utf-8 code point. For a multi-byte unicode character use `\u`.|
+|C5321|nonstandard extension used: encoding '*escape sequence*' as a multi-byte utf-8 character. Use `\u` instead for cross platform compatibility and '`/Zc:u8EscapeEncoding`' to disable the extension.|
 
 ## Warnings introduced in Visual Studio 2022 version 17.13 (compiler version 19.43)
 

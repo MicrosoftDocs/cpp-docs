@@ -131,6 +131,7 @@ The articles in this section of the documentation explain a subset of the error 
 | [Fatal error C1126](fatal-error-c1126.md) | automatic allocation exceeds *size* |
 | Fatal error C1127 | *Operation* requires *option* |
 | [Fatal error C1128](fatal-error-c1128.md) | number of sections exceeded object file format limit: compile with `/bigobj` |
+|Compiler error C1188|'`#warning`' requires '*language version*' or later|
 | [Fatal error C1189](fatal-error-c1189.md) | `#error`: *message* |
 | [Fatal error C1190](fatal-error-c1190.md) | `System::Object` not found, missing `/clr` option or missing import of standard assemblies? |
 | [Fatal error C1191](fatal-error-c1191.md) | '*file*' can only be imported at global scope |
@@ -198,7 +199,7 @@ The articles in this section of the documentation explain a subset of the error 
 | Fatal error C1604 | fatal lambda parsing error: see the lambda definition beginning on line *number* |
 | Fatal error C1605 | compiler limit: object file size cannot exceed 4 GB |
 | [Fatal error C1852](fatal-error-c1852.md) | '*file*' is not a valid precompiled header file |
-| [Fatal error C1853](fatal-error-c1853.md) | '*file*' precompiled header file is from a previous version of the compiler, or the precompiled header is C++ and you are using it from C (or vice versa) |
+| [Fatal error C1853](fatal-error-c1853.md) | '*file*' precompiled header file is from a different version of the compiler, or the precompiled header is C++ and you are using it from C (or vice versa) |
 | [Fatal error C1854](fatal-error-c1854.md) | cannot overwrite information formed during creation of the precompiled header in object file: '*file*' |
 | Fatal error C1859 | **(Obsolete)** '*Message*' unexpected precompiled header error, simply rerunning the compiler might fix this problem |
 | [Fatal error C1900](fatal-error-c1900.md) | IL mismatch between '*tool*' version '*number*' and '*tool*' version '*number*' |

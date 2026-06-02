@@ -1,7 +1,7 @@
 ---
 title: "Compiler errors C7500 through C7999"
 description: "Learn more about: Compiler errors C7500 through C7999"
-ms.date: 10/13/2023
+ms.date: 06/01/2026
 f1_keywords: ["C7500", "C7501", "C7502", "C7503", "C7504", "C7505", "C7506", "C7507", "C7508", "C7509", "C7511", "C7512", "C7513", "C7514", "C7515", "C7516", "C7517", "C7518", "C7519", "C7520", "C7521", "C7522", "C7523", "C7524", "C7525", "C7526", "C7527", "C7528", "C7529", "C7530", "C7531", "C7532", "C7533", "C7534", "C7535", "C7537", "C7538", "C7539", "C7540", "C7541", "C7542", "C7543", "C7544", "C7545", "C7546", "C7547", "C7548", "C7549", "C7550", "C7551", "C7552", "C7554", "C7555", "C7556", "C7557", "C7558", "C7559", "C7560", "C7561", "C7562", "C7563", "C7564", "C7565", "C7566", "C7567", "C7568", "C7569", "C7570", "C7571", "C7572", "C7573", "C7574", "C7575", "C7576", "C7577", "C7578", "C7579", "C7580", "C7581", "C7582", "C7583", "C7584", "C7585", "C7586", "C7587", "C7588", "C7589", "C7590", "C7591", "C7592", "C7593", "C7594", "C7595", "C7596", "C7597", "C7598", "C7599", "C7600", "C7601", "C7602", "C7603", "C7604", "C7605", "C7606", "C7607", "C7608", "C7609", "C7610", "C7611", "C7612", "C7613", "C7614", "C7615", "C7616", "C7617", "C7618", "C7619", "C7620", "C7621", "C7622", "C7623", "C7624", "C7625", "C7627", "C7628", "C7629", "C7630", "C7631", "C7632", "C7633", "C7634", "C7635", "C7636", "C7637", "C7638", "C7639", "C7640", "C7641", "C7642", "C7643", "C7644", "C7645", "C7646", "C7647", "C7648", "C7649", "C7650", "C7651", "C7652", "C7653", "C7654", "C7655", "C7656", "C7657", "C7658", "C7659", "C7660", "C7661", "C7662", "C7665", "C7666", "C7667", "C7668", "C7669", "C7670", "C7671", "C7672", "C7673", "C7674", "C7675", "C7676", "C7677", "C7678", "C7679", "C7680", "C7682", "C7683", "C7684", "C7685", "C7686", "C7687", "C7689", "C7690", "C7691", "C7692", "C7693", "C7694", "C7695", "C7696", "C7697", "C7698", "C7699", "C7700", "C7701", "C7702", "C7703", "C7704", "C7705", "C7706", "C7707", "C7708", "C7709", "C7710", "C7711", "C7712", "C7713", "C7714", "C7720", "C7730", "C7731", "C7732", "C7733", "C7734", "C7735", "C7736", "C7737", "C7738", "C7739", "C7740", "C7741", "C7800", "C7801", "C7802", "C7803", "C7804", "C7806", "C7807"]
 helpviewer_keywords: ["C7500", "C7501", "C7502", "C7503", "C7504", "C7505", "C7506", "C7507", "C7508", "C7509", "C7511", "C7512", "C7513", "C7514", "C7515", "C7516", "C7517", "C7518", "C7519", "C7520", "C7521", "C7522", "C7523", "C7524", "C7525", "C7526", "C7527", "C7528", "C7529", "C7530", "C7531", "C7532", "C7533", "C7534", "C7535", "C7537", "C7538", "C7539", "C7540", "C7541", "C7542", "C7543", "C7544", "C7545", "C7546", "C7547", "C7548", "C7549", "C7550", "C7551", "C7552", "C7554", "C7555", "C7556", "C7557", "C7558", "C7559", "C7560", "C7561", "C7562", "C7563", "C7564", "C7565", "C7566", "C7567", "C7568", "C7569", "C7570", "C7571", "C7572", "C7573", "C7574", "C7575", "C7576", "C7577", "C7578", "C7579", "C7580", "C7581", "C7582", "C7583", "C7584", "C7585", "C7586", "C7587", "C7588", "C7589", "C7590", "C7591", "C7592", "C7593", "C7594", "C7595", "C7596", "C7597", "C7598", "C7599", "C7600", "C7601", "C7602", "C7603", "C7604", "C7605", "C7606", "C7607", "C7608", "C7609", "C7610", "C7611", "C7612", "C7613", "C7614", "C7615", "C7616", "C7617", "C7618", "C7619", "C7620", "C7621", "C7622", "C7623", "C7624", "C7625", "C7627", "C7628", "C7629", "C7630", "C7631", "C7632", "C7633", "C7634", "C7635", "C7636", "C7637", "C7638", "C7639", "C7640", "C7641", "C7642", "C7643", "C7644", "C7645", "C7646", "C7647", "C7648", "C7649", "C7650", "C7651", "C7652", "C7653", "C7654", "C7655", "C7656", "C7657", "C7658", "C7659", "C7660", "C7661", "C7662", "C7665", "C7666", "C7667", "C7668", "C7669", "C7670", "C7671", "C7672", "C7673", "C7674", "C7675", "C7676", "C7677", "C7678", "C7679", "C7680", "C7682", "C7683", "C7684", "C7685", "C7686", "C7687", "C7689", "C7690", "C7691", "C7692", "C7693", "C7694", "C7695", "C7696", "C7697", "C7698", "C7699", "C7700", "C7701", "C7702", "C7703", "C7704", "C7705", "C7706", "C7707", "C7708", "C7709", "C7710", "C7711", "C7712", "C7713", "C7714", "C7720", "C7730", "C7731", "C7732", "C7733", "C7734", "C7735", "C7736", "C7737", "C7738", "C7739", "C7740", "C7741", "C7800", "C7801", "C7802", "C7803", "C7804", "C7806", "C7807"]
 ---
@@ -178,6 +178,8 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C7660 | '%s': requires '%s' command line option(s) |
 | Compiler error C7661 | header-name '%s' has an ambiguous resolution to header '%s' |
 | Compiler error C7662 | '%$S': a coroutine cannot be constexpr or consteval |
+|Compiler error C7663|'*version*': unsupported ABI version; using default|
+|Compiler error C7664|'*operator*': ordered comparison of pointer and integer zero ('*type*' and '*type*')|
 | Compiler error C7665 | '*operator*': you cannot assign to '`this`' as it is not an lvalue |
 | Compiler error C7666 | you cannot apply '*operator*' to '`this`' as it is not an lvalue |
 | Compiler error C7667 | no global `operator delete` function found |
@@ -242,6 +244,33 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C7741 | ABI inconsistency: '*function*' was originally assumed to use '`C`' return semantics but now it requires '`C++`' return semantics |
 | [Compiler error C7742](compiler-error-c7742.md) | '*identifier*': a forward declaration of an enum can only use a simple identifier |
 | Compiler error C7743 | [`__preserve_none` calling convention](../../cpp/preserve-none.md) is not supported |
+|Compiler error C7744|escape sequence '*sequence*' out of range|
+|Compiler error C7745|attribute `[[msvc::musttail]]` may only be applied to return statements that return a function call expression|
+|Compiler error C7746|'*symbol*': cannot appear in its own initializer|
+|Compiler error C7747|a type name cannot include the '*specifier*' specifier|
+|Compiler error C7748|a type name cannot include the '`__declspec(`*specifier*`)`' specifier|
+|Compiler error C7749|'*identifier*': a lambda template parameter cannot have the same name as a capture|
+|Compiler error C7750|'*identifier*': a lambda parameter cannot have the same name as a capture|
+|Compiler error C7751|'*function*': overriding virtual function has different ref-qualifier from base class virtual member function '*function*'|
+|Compiler error C7752|call stack overflow due to excessive template instantiation|
+|Compiler error C7753|ill-formed conversion-function-id|
+|Compiler error C7754|'*type*' a type cannot be defined as a return or parameter type|
+|Compiler error C7755|'*function*': noexcept-specifier depends on itself|
+|Compiler error C7756|'*symbol*': declaration attached to module '*name*' conflicts with '*name*' attached to the global module|
+|Compiler error C7757|an array of unknown size cannot be initialized by an empty initializer|
+|Compiler error C7758|'*type*': cannot be used as the type of an explicit object parameter for a lambda|
+|Compiler error C7759|linkage specification is not allowed on an explicit specialization, an explicit instantiation or an export declaration|
+|Compiler error C7760|export declaration is not allowed on an explicit specialization, an explicit instantiation, a partial specialization or an export declaration|
+|Compiler error C7762|'`\`*escape sequence*`{`' not terminated with '`}`'|
+|Compiler error C7763|empty delimited escape sequence|
+|Compiler error C7765|'`\o`' not followed by '`{`'|
+|Compiler error C7766|incomplete universal character name *name*|
+|Compiler error C7767|incomplete named universal character|
+|Compiler error C7768|'*name*' is not a valid Unicode character name: names are sensative to casing and whitespace|
+|Compiler error C7769|unable to look up Unicode character name, Unicode name support is missing on host machine|
+|Compiler error C7770|invalid `[[`*attribute*`]]` attribute|
+|Compiler error C7771|ill-formed attribute `[[`*attribute*`]]`|
+|Compiler error C7772|invalid string literal|
 | Compiler error C7800 | duplicate explicit instantiation definition of '*name*' |
 | Compiler error C7801 | '*function*': if one declaration of '*identifier*' has the '`[[msvc::disptach]]`' attribute then all functions must have the attribute |
 | Compiler error C7802 | '*identifier*': a capability must resolve to an enumerator |
@@ -249,6 +278,12 @@ The articles in this section of the documentation explain a subset of the error 
 | Compiler error C7804 | '*identifier*': cannot find a matching default dispatch function |
 | Compiler error C7806 | support for the '`msvc::dispatch`' attribute requires '`/experimental:loadTimeSelection`' |
 | Compiler error C7807 | expecting a narrow string literal |
+|Compiler error C7808|'*identifier*': a non-default dispatch function cannot be declared with '*keyword*'|
+|Compiler error C7809|'*identifier*': a non-default dispatch function cannot have any default arguments|
+|Compiler error C7810|decltype cannot be used in declarative nested name specifiers|
+|Compiler error C7811|value of intrinsic immediate argument '*argument number*' is out of range '*number* - *number*'|
+|Compiler error C7812|a non-default dispatch function cannot be declared to have `'C'` linkage|
+|Compiler error C7813|'*attribute*': attribute only applies for x64 target|
 
 ## See also
 
