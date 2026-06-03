@@ -1,7 +1,7 @@
 ---
 title: "/internalPartition"
 description: "Use the /internalPartition compiler option to treat the input file as an internal partition unit."
-ms.date: 11/16/2022
+ms.date: 6/3/2026
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["/internalPartition", "VC.Project.VCCLCompilerTool.Interface"]
@@ -30,7 +30,7 @@ void internalFunc() {} // cannot have `export` since this is an internal partiti
 
 Source file `m.ixx`:
 
-```ixx
+```cpp
 // m.ixx
 export module m;
 import :internals; // Cannot export this partition.
