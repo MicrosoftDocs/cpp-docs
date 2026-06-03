@@ -36,13 +36,13 @@ int main()
 }
 ```
 
-Under `/Zc:u8EscapeEncoding`, the escape sequence `\x00ff` is encoded as `0xFF` and the universal-character sequence `\u00ff` is encoded as the utf-8 sequence `0xC3 0xBF`. The result is the following output when run:
+Under `/Zc:u8EscapeEncoding`, the escape sequence `\x00ff` is encoded as `0xFF` and the universal-character sequence `\u00ff` is encoded as the utf-8 sequence `0xC3 0xBF`. The code example outputs:
 
 ```output
 0x20 0xFF 0x20 0xC3 0xBF 0x20 0x0
 ```
 
-Under `/Zc:u8EscapeEncoding-`, the values of both `\x00ff` and `\u00ff` are re-encoded as the utf-8 sequence `0xC3 0xBF`. The result is the following output when run:
+Under `/Zc:u8EscapeEncoding-`, the values of both `\x00ff` and `\u00ff` are re-encoded as the utf-8 sequence `0xC3 0xBF`. The code example outputs:
 
 ```output
 0x20 0xC3 0xBF 0x20 0xC3 0xBF 0x20 0x0
