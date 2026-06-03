@@ -1,6 +1,6 @@
 ---
-title: `/Zc:u8EscapeEncoding` (numeric escape sequence encoding in u8 strings)
-description: "Learn more about the compiler option `/Zc:u8EscapeEncoding` (numeric escape sequence encoding in u8 strings)"
+title: /Zc:u8EscapeEncoding (numeric escape sequence encoding in u8 strings)
+description: "Learn more about the compiler option /Zc:u8EscapeEncoding (numeric escape sequence encoding in u8 strings)"
 author:      Rastaban
 ms.author:   philc
 ms.service: visual-cpp
