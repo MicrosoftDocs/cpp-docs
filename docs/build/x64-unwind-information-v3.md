@@ -174,7 +174,7 @@ Zero or more `EPILOG_INFO_V3` structures follow the prolog IP offsets. Each can 
 | 0 | [7:3] | `NumberOfOps` (= 0) | 5 bits |
 | 1–2 | [15:0] | `EpilogOffset` | 16-bit signed |
 
-The `Flags` bits 0 and 1, `FirstOp`, `IpOffsetOfLastInstruction`, and IP offset array are inherited from the immediately preceding `EPILOG_INFO_V3`.
+An `EPILOG_INFO_V3` record with `NumberOfOps == 0` inherits the effective values for `NumberOfOps`, `FirstOp`, `IpOffsetOfLastInstruction` fields, and IP offset array from the first preceding `EPILOG_INFO_V3` with `NumberOfOps != 0`. The compiler must ensure `Flags` bits 0 and 1 on an epilog record with `NumberOfOps == 0` have the same value as those from the first preceding `EPILOG_INFO_V3` with `NumberOfOps != 0`.
 
 #### Epilog Field Semantics
 
