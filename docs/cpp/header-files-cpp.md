@@ -94,7 +94,7 @@ namespace N
 #endif /* MY_CLASS_H */
 ```
 
-## What to put in a header file
+## What to avoid in a header file
 
 Because a header file might potentially be included by multiple files, it cannot contain definitions that might produce multiple definitions of the same name. The following are not allowed, or are considered very bad practice:
 
