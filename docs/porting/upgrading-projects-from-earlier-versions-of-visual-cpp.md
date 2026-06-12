@@ -14,6 +14,8 @@ In Visual Studio 2026, this experience is enhanced with a setup assistant. The s
 
 With the setup assistant open, choose an action for each target or select **Retarget all** to set all projects at once. Then select **Apply** to complete the upgrade in place. Once your projects are retargeted, they can't be converted back to the earlier version. It's good practice to make a backup copy of the existing project and solution files before upgrading them.
 
+The [GitHub Copilot modernization agent](./github-copilot-modernization-cpp/overview.md) can assist you with any changes that need to be made after your project files are upgraded. It will analyze your project for any new compilation warnings or errors and will iterate along with you to resolve them to complete your upgrade process.
+
 > [!NOTE]
 > Visual Studio 2022 and later have deprecated support for the upgrade of project types that have *`.dsw`* or *`.dsp`* extensions. You can use an earlier version of Visual Studio, such as Visual Studio 2019, to upgrade these projects, then upgrade them again in Visual Studio 2022 or later to use the latest tools and features of Visual Studio.
 
