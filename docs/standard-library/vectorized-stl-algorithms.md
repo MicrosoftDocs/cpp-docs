@@ -24,7 +24,7 @@ Algorithms like `transform`, `reduce`, and `accumulate` benefit heavily from aut
 
 ## Manual vectorization in the MSVC STL
 
-Certain algorithms for x64 and x86 include manual vectorization. This implementation is separately compiled and relies on runtime CPU dispatch, so it applies only to suitable CPUs.
+Certain algorithms include manual vectorization. This implementation is separately compiled and relies on runtime CPU dispatch, so it applies only to suitable CPUs.
 
 Manually vectorized algorithms use template metaprogramming to detect if the element type is suitable for vectorization. As a result, they're only vectorized for simple types such as standard integer types.
 
@@ -35,17 +35,18 @@ Assign the same value to `_USE_STD_VECTOR_ALGORITHMS` for all linked translation
 
 The `_USE_STD_VECTOR_ALGORITHMS` macro controls the behavior of these manually vectorized algorithms:
  - `contains`, `contains_subrange`
- - `find`, `find_last`, `find_end`, `find_first_of`, `adjacent_find`
+ - `find`, `find_last`, `find_first_of`, `adjacent_find`
  - `count`
  - `mismatch`
- - `search`, `search_n`
+ - `search`, `search_n`, `find_end`
  - `swap_ranges`
- - `replace`
+ - `replace`, `replace_copy`
  - `remove`, `remove_copy`
  - `unique`, `unique_copy`
  - `reverse`, `reverse_copy`
  - `rotate`
  - `is_sorted`, `is_sorted_until`
+ - `includes`
  - `lexicographical_compare`, `lexicographical_compare_three_way`
  - `max`, `min`, `minmax`
  - `max_element`, `min_element`, `minmax_element`
