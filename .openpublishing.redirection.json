@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "docs/porting/copilot-app-modernization-cpp.md",
+      "redirect_url": "/cpp/porting/github-copilot-modernization-cpp/overview",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md",
       "redirect_url": "/previous-versions/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism",
       "redirect_document_id": false,
