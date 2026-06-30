@@ -3,6 +3,7 @@ title: Debugger Properties (Linux C++)
 description: "Describes the Microsoft Visual Studio Linux C++ debugger properties"
 ms.date: "06/07/2019"
 ms.assetid: 0c1c0fcc-a49b-451c-a5cb-ce9711fac064
+f1_keywords: ["VC.Project.RaspberryDebugger.LaunchActivity", "VC.Project.RaspberryDebugger.LaunchActivity", "VC.Project.RaspberryDebugger.DebuggerType", "VC.Project.AndroidDebugger.LaunchActivity", "VC.Project.LinuxDebugger.DebugChildProcesses", "VC.Project.RaspberryDebugger.EnablePrettyPrinting", "VC.Project.RaspberryDebugger.LinuxNatvisFile", "VC.Project.RaspberryDebugger.SourceMap"]
 ---
 # C++ Debugging Properties (Linux C++)
 
