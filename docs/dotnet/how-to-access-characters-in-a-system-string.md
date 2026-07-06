@@ -10,7 +10,7 @@ helpviewer_keywords: ["characters [C++], accessing in System::String", "examples
 You can access characters of a <xref:System.String> object for high-performance calls to unmanaged functions that take `wchar_t*` strings. The method yields an interior pointer to the first character of the <xref:System.String> object. This pointer can be manipulated directly or pinned and passed to a function expecting an ordinary **`wchar_t`** string.
 
 > [!IMPORTANT]
-> Interior pointers into <xref:System.String> objects must be treated as `const`. A <xref:System.String> object is considered immutable and changes outside of the <xref:System.String> API surface can destabilize the runtime.
+> Interior pointers into <xref:System.String> objects must be treated as `const`. A <xref:System.String> object is considered immutable and changing its content can destabilize the runtime.
 > See [Unsafe code best practices](https://learn.microsoft.com/dotnet/standard/unsafe-code/best-practices#17-string-mutations).
 
 ## Examples
