@@ -29,14 +29,14 @@ The C and C++ languages are powerful, but can suffer from a class of bugs that a
 Use AddressSanitizer to reduce your time spent on:
 
 - Basic correctness
-- Cross platform portability
+- Cross-platform portability
 - Security
 - Stress testing
 - Integrating new code
 
 AddressSanitizer, originally [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany), provides runtime bug-finding technologies that use your existing build systems and existing test assets directly.
 
-AddressSanitizer is integrated with the Visual Studio project system, the CMake build system, and the IDE. Projects can enable AddressSanitizer by setting a project property, or by using one extra compiler option: `/fsanitize=address`. The new option is compatible with all levels of optimization and configurations of x86 and x64. However, it isn't compatible with [edit-and-continue](/visualstudio/debugger/edit-and-continue-visual-cpp), [incremental linking](../build/reference/incremental-link-incrementally.md), and [`/RTC`](../build/reference/rtc-run-time-error-checks.md).
+AddressSanitizer is integrated with the Visual Studio project system, the CMake build system, and the IDE. Projects can enable AddressSanitizer by setting a project property, or by using one extra compiler option: `/fsanitize=address`. This option is compatible with all levels of optimization and configurations of x86 and x64. However, it isn't compatible with [edit-and-continue](/visualstudio/debugger/edit-and-continue-visual-cpp), [incremental linking](../build/reference/incremental-link-incrementally.md), and [`/RTC`](../build/reference/rtc-run-time-error-checks.md).
 
 Starting in Visual Studio 2019 version 16.9, Microsoft's AddressSanitizer technology enables integration with the Visual Studio IDE. The functionality can optionally create a crash dump file when the sanitizer finds a bug at runtime. If you set the `ASAN_SAVE_DUMPS=MyFileName.dmp` environment variable before you run your program, a crash dump file is created with extra metadata for efficient [post-mortem debugging](#crash-dumps) of precisely diagnosed bugs. These dump files make extended use of AddressSanitizer easier for:
 
@@ -63,7 +63,7 @@ Start building your executables with the `/fsanitize=address` compiler option us
 - Visual Studio project system
 - Visual Studio CMake integration
 
-Recompile, then run your program normally. This code generation exposes [many types of precisely diagnosed bugs](#error-types). These errors get reported in three ways: in the debugger IDE, on the command line, or stored in a [new type of dump file](#crash-dumps) for precise off-line processing.
+Recompile, then run your program normally. This code generation exposes [many types of precisely diagnosed bugs](#error-types). These errors get reported in three ways: in the debugger IDE, on the command line, or stored in a [dump file](#crash-dumps) for precise offline processing.
 
 Microsoft recommends you use AddressSanitizer in these three standard workflows:
 
@@ -72,8 +72,8 @@ Microsoft recommends you use AddressSanitizer in these three standard workflows:
   - Visual Studio - [Project system](#ide-msbuild)
   - Visual Studio - [CMake](#ide-cmake)
 
-- **CI/CD** - continuous integration / continuous development
-  - Error reporting - [New AddressSanitizer dump files](#crash-dumps)
+- **CI/CD** - continuous integration / continuous delivery
+  - Error reporting - [AddressSanitizer dump files](#crash-dumps)
 
 - **Fuzzing** - building with the [libFuzzer](https://llvm.org/docs/LibFuzzer.html) wrapper
   - [Azure OneFuzz](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)
@@ -227,11 +227,11 @@ To enable AddressSanitizer for a [CMake project created to target Windows](../bu
     
 ## <a name="crash-dumps"></a> AddressSanitizer crash dumps
 
-We introduced new functionality in AddressSanitizer for use with cloud and distributed workflows. This functionality allows offline viewing of an AddressSanitizer error in the IDE. The error gets overlaid on top of your source, just as you would experience in a live debug session.
+AddressSanitizer includes functionality for use with cloud and distributed workflows. This functionality allows offline viewing of an AddressSanitizer error in the IDE. The error gets overlaid on top of your source, just as you would experience in a live debug session.
 
-These new dump files can lead to efficiencies when you analyze a bug. You don't need to rerun, or find remote data or look for a machine that went off-line.
+These dump files can lead to efficiencies when you analyze a bug. You don't need to rerun, or find remote data or look for a machine that went offline.
 
-To produce a new type of dump file that can be viewed in Visual Studio on another machine at a later date:
+To produce a dump file that can be viewed in Visual Studio on another machine at a later date:
 
 ```cmd
 set ASAN_SAVE_DUMPS=MyFileName.dmp
@@ -239,7 +239,7 @@ set ASAN_SAVE_DUMPS=MyFileName.dmp
 
 Starting with Visual Studio 16.9, you can display *a precisely diagnosed error*, stored in your `*.dmp` file, on top of your source code.
 
-[This new crash dump functionality](./asan-offline-crash-dumps.md) enables cloud-based workflows, or distributed testing. It can also be used to file a detailed, actionable bug in any scenario.
+[This crash dump functionality](./asan-offline-crash-dumps.md) enables cloud-based workflows, or distributed testing. It can also be used to file a detailed, actionable bug in any scenario.
 
 ## <a name="error-types"></a> Example errors
 
