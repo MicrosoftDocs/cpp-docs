@@ -63,9 +63,7 @@ Start building your executables with the `/fsanitize=address` compiler option us
 - Visual Studio project system
 - Visual Studio CMake integration
 
-Recompile, then run your program normally. This code generation exposes [many types of precisely diagnosed bugs](#error-types). These errors get reported in three ways: in the debugger IDE, on the command line, or stored in a [dump file](#crash-dumps) for precise offline processing.
-
-Recompile your code, and then run your program normally. This code generation exposes [many types of precisely diagnosed bugs](#error-types). Errors are reported in three ways: the debugger IDE, on the command line, or stored in a [dump file](#crash-dumps) that you can review later.
+Recompile, then run your program normally. This code generation exposes [many types of precisely diagnosed bugs](#error-types). Errors are reported in three ways: the debugger IDE, on the command line, or stored in a [dump file](#crash-dumps) that you can review later.
 
 Microsoft recommends you use AddressSanitizer in these three standard workflows:
 
@@ -231,7 +229,7 @@ To enable AddressSanitizer for a [CMake project created to target Windows](../bu
 
 AddressSanitizer includes functionality for use with cloud and distributed workflows. This functionality allows offline viewing of an AddressSanitizer error in the IDE. The error gets overlaid on top of your source, just as you would experience in a live debug session.
 
-These dump files can lead to efficiencies when you analyze a bug. You don't need to rerun, or find remote data or look for a machine that went offline.
+These dump files can lead to efficiencies when you analyze a bug. You don't need to rerun, find remote data, or look for a machine that went offline.
 
 To produce a dump file that you can view in Visual Studio on another machine at a later date:
 
