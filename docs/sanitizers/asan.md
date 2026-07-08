@@ -69,7 +69,7 @@ Start building your executables with the `/fsanitize=address` compiler option us
 - Visual Studio project system
 - Visual Studio CMake integration
 
-Recompile your code, and then run your program normally. This code generation exposes [many types of precisely diagnosed bugs](#error-types). The debugger IDE, the command line, or a [dump file](#crash-dumps) that you can review later reports errors.
+Recompile your code, and then run your program normally to expose [many types of precisely diagnosed bugs](#error-types). You can review the issues in the debugger IDE, the command line, or the [dump file](#crash-dumps).
 
 Microsoft recommends you use AddressSanitizer in these three standard workflows:
 
@@ -85,7 +85,7 @@ Microsoft recommends you use AddressSanitizer in these three standard workflows:
   - [Azure OneFuzz](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)
   - Local Machine
 
-This article covers the information you require to enable the three workflows listed previously. The information is specific to the *platform-dependent* Windows 10 (and later) implementation of AddressSanitizer. This documentation supplements the documentation from [Google, Apple, and GCC](#external-docs) already published.
+This article covers the information you require to enable the three workflows listed previously. The information is specific to the *platform-dependent* Windows 10 (and later) implementation of AddressSanitizer. This documentation supplements the documentation from [Google, Apple, and GCC](#external-docs).
 
 > [!NOTE]
 > Support is limited to x86 and x64 on Windows 10 and later. [Send us feedback](https://aka.ms/vsfeedback/browsecpp) on what you'd like to see in future releases. Your feedback helps us prioritize other sanitizers for the future, such as `/fsanitize=thread`, `/fsanitize=leak`, `/fsanitize=memory`, `/fsanitize=undefined`, or `/fsanitize=hwaddress`. You can [report bugs here](https://aka.ms/feedback/report?space=62) if you run into issues.
