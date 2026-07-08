@@ -9,6 +9,10 @@ helpviewer_keywords: ["characters [C++], accessing in System::String", "examples
 
 You can access characters of a <xref:System.String> object for high-performance calls to unmanaged functions that take `wchar_t*` strings. The method yields an interior pointer to the first character of the <xref:System.String> object. This pointer can be manipulated directly or pinned and passed to a function expecting an ordinary **`wchar_t`** string.
 
+> [!IMPORTANT]
+> Interior pointers into <xref:System.String> objects must be treated as `const`. A <xref:System.String> object is considered immutable and changing its content can destabilize the runtime.
+> For more information see [Unsafe code best practices - 17. String mutations](/dotnet/standard/unsafe-code/best-practices).
+
 ## Examples
 
 `PtrToStringChars` returns a <xref:System.Char>, which is an interior pointer (also known as a `byref`). As such, it is subject to garbage collection. You don't have to pin this pointer unless you're going to pass it to a native function.
