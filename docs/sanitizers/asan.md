@@ -26,6 +26,8 @@ The C and C++ languages are powerful, but can suffer from a class of bugs that a
 - [Stack use after `return`](error-stack-use-after-return.md) and [use after scope](error-stack-use-after-scope.md)
 - [Memory use after it's poisoned](error-use-after-poison.md)
 
+### Why use AddressSanitizer
+
 Use AddressSanitizer to reduce your time spent on:
 
 - Basic correctness
@@ -36,7 +38,11 @@ Use AddressSanitizer to reduce your time spent on:
 
 AddressSanitizer, originally [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany), provides runtime bug-finding technologies that use your existing build systems and existing test assets directly.
 
+### Build integration and compatibility
+
 AddressSanitizer is integrated with the Visual Studio project system, the CMake build system, and the IDE. Projects can enable AddressSanitizer by setting a project property or by using one extra compiler option: `/fsanitize=address`. This option is compatible with all levels of optimization and configurations of x86 and x64. However, it isn't compatible with [edit-and-continue](/visualstudio/debugger/edit-and-continue-visual-cpp), [incremental linking](../build/reference/incremental-link-incrementally.md), and [`/RTC`](../build/reference/rtc-run-time-error-checks.md).
+
+### Crash dump support
 
 Starting in Visual Studio 2019 version 16.9, Microsoft's AddressSanitizer technology enables integration with the Visual Studio IDE. The functionality can optionally create a crash dump file when the sanitizer finds a bug at runtime. If you set the `ASAN_SAVE_DUMPS=MyFileName.dmp` environment variable before you run your program, a crash dump file is created with extra metadata for efficient [post-mortem debugging](#crash-dumps) of precisely diagnosed bugs. These dump files make extended use of AddressSanitizer easier for:
 
@@ -79,7 +85,7 @@ Microsoft recommends you use AddressSanitizer in these three standard workflows:
   - [Azure OneFuzz](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)
   - Local Machine
 
-This article covers the information you require to enable the three workflows listed previously. The information is specific to the *platform-dependent* Windows 10 (and later) implementation of AddressSanitizer. This documentation supplements the excellent documentation from [Google, Apple, and GCC](#external-docs) already published.
+This article covers the information you require to enable the three workflows listed previously. The information is specific to the *platform-dependent* Windows 10 (and later) implementation of AddressSanitizer. This documentation supplements the documentation from [Google, Apple, and GCC](#external-docs) already published.
 
 > [!NOTE]
 > Support is limited to x86 and x64 on Windows 10 and later. [Send us feedback](https://aka.ms/vsfeedback/browsecpp) on what you'd like to see in future releases. Your feedback helps us prioritize other sanitizers for the future, such as `/fsanitize=thread`, `/fsanitize=leak`, `/fsanitize=memory`, `/fsanitize=undefined`, or `/fsanitize=hwaddress`. You can [report bugs here](https://aka.ms/feedback/report?space=62) if you run into issues.
@@ -283,9 +289,9 @@ Features that could lead to false positives in Visual Studio 2019 16.9 weren't i
 
 For more information, see [Building for AddressSanitizer with MSVC](./asan-building.md).
 
-## <a name="external-docs"></a> Existing industry documentation
+## <a name="external-docs"></a> Industry documentation
 
-Extensive documentation already exists for these language and platform-dependent implementations of the AddressSanitizer technology.
+Extensive documentation exists for these language and platform-dependent implementations of the AddressSanitizer technology.
 
 - [Google](https://github.com/google/sanitizers/wiki/AddressSanitizer)
 - [Apple](https://developer.apple.com/documentation/xcode/diagnosing_memory_thread_and_crash_issues_early)
