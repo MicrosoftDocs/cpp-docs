@@ -65,6 +65,8 @@ Start building your executables with the `/fsanitize=address` compiler option us
 
 Recompile, then run your program normally. This code generation exposes [many types of precisely diagnosed bugs](#error-types). These errors get reported in three ways: in the debugger IDE, on the command line, or stored in a [dump file](#crash-dumps) for precise offline processing.
 
+Recompile your code, and then run your program normally. This code generation exposes [many types of precisely diagnosed bugs](#error-types). Errors are reported in three ways: the debugger IDE, on the command line, or stored in a [dump file](#crash-dumps) that you can review later.
+
 Microsoft recommends you use AddressSanitizer in these three standard workflows:
 
 - **Developer inner loop**
