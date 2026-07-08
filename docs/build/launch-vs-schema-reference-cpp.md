@@ -151,14 +151,14 @@ Use with the `sourceFileMap` property:
 
 ## <a name="debuginfod_options"></a> debuginfod options
 
-Use with the `debuginfod` property to control how `gdb` downloads debug symbols from debuginfod servers. This option helps on Linux systems that configure debuginfod, such as Ubuntu, Fedora, or Arch Linux. Visual Studio applies this option only when `MIMode` is `gdb`.
+Use with the `debuginfod` property to control how `gdb` downloads debug symbols from debuginfod servers. On Linux systems that configure debuginfod, such as Ubuntu, Fedora, or Arch Linux, this option lets `gdb` automatically retrieve debug symbols and source files from the distribution's debuginfod servers so you don't have to install debug symbol packages manually. Visual Studio applies this option only when `MIMode` is `gdb`.
 
 | Property | Type | Description |
 |--|--|--|
-| `enabled` | boolean | When `true`, `gdb` queries debuginfod servers for missing debug info and source files. The default value is **`false`**, which keeps `gdb` from contacting servers that might be unreachable and cause `gdb` to hang on launch. |
-| `timeout` | integer | The timeout in seconds for debuginfod server requests. The default value is **`30`**. Set it to `0` to apply the `gdb` defaults with no override. |
+| `enabled` | boolean | When `true`, `gdb` queries debuginfod servers for missing debug info and source files. The default value is **`false`**, which avoids delays caused by network requests. |
+| `timeout` | integer | The timeout in seconds for debuginfod server requests. The default value is **`30`**. Set it to `0` to use `gdb`'s default timeout. |
 
-The following example shows a `debuginfod` override:
+The following example enables debuginfod server support and sets the timeout to 10 seconds:
 
 ```json
 "debuginfod": {
