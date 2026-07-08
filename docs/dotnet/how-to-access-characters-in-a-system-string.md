@@ -11,7 +11,7 @@ You can access characters of a <xref:System.String> object for high-performance 
 
 > [!IMPORTANT]
 > Interior pointers into <xref:System.String> objects must be treated as `const`. A <xref:System.String> object is considered immutable and changing its content can destabilize the runtime.
-> For more information see [Unsafe code best practices - 17. String mutations](/dotnet/standard/unsafe-code/best-practices).
+> For more information see [Unsafe code best practices - 17. String mutations](/dotnet/standard/unsafe-code/best-practices#17-string-mutations).
 
 ## Examples
 
