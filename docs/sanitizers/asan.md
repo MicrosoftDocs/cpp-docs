@@ -69,7 +69,7 @@ Start building your executables with the `/fsanitize=address` compiler option us
 - Visual Studio project system
 - Visual Studio CMake integration
 
-Recompile, then run your program normally. This code generation exposes [many types of precisely diagnosed bugs](#error-types). Errors are reported in three ways: the debugger IDE, on the command line, or stored in a [dump file](#crash-dumps) that you can review later.
+Recompile your code, and then run your program normally. This code generation exposes [many types of precisely diagnosed bugs](#error-types). The debugger IDE, the command line, or a [dump file](#crash-dumps) that you can review later reports errors.
 
 Microsoft recommends you use AddressSanitizer in these three standard workflows:
 
@@ -78,7 +78,7 @@ Microsoft recommends you use AddressSanitizer in these three standard workflows:
   - Visual Studio - [Project system](#ide-msbuild)
   - Visual Studio - [CMake](#ide-cmake)
 
-- **CI/CD** - continuous integration / continuous delivery
+- **CI/CD** - continuous integration and continuous delivery
   - Error reporting - [AddressSanitizer dump files](#crash-dumps)
 
 - **Fuzzing** - building with the [libFuzzer](https://llvm.org/docs/LibFuzzer.html) wrapper
