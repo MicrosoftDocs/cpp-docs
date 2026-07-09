@@ -1,7 +1,7 @@
 ---
 title: "launch.vs.json schema reference (C++)"
 description: "Describes the schema elements for the `launch.vs.json` file"
-ms.date: 07/15/2021
+ms.date: 06/30/2026
 helpviewer_keywords: ["launch.vs.json file [C++]"]
 ---
 # `launch.vs.json` schema reference (C++)
@@ -40,6 +40,7 @@ To create the file, right-click on an executable file in **Solution Explorer** a
 | `sourceFileMap` | object | Optional source file mappings passed to the debug engine. Format: `{ "\<Compiler source location>": "\<Editor source location>" }` or `{ "\<Compiler source location>": { "editorPath": "\<Editor source location>", "useForBreakpoints": true } }`. Example: `{ "/home/user/foo": "C:\\foo" }` or `{ "/home/user/foo": { "editorPath": "c:\\foo", "useForBreakpoints": true } }`. For more information, see [Source file map options](#source_file_map_options). |
 | `additionalProperties` | string | One of the sourceFileMapOptions. (See below.) |
 | `MIMode` | string | Indicates the type of MI-enabled console debugger that the MIDebugEngine will connect to. Allowed values are `"gdb"`, `"lldb"`. |
+| `debuginfod` | object | Controls how `gdb` uses [debuginfod](https://sourceware.org/elfutils/Debuginfod.html) to download missing debug symbols and source files from debuginfod servers. Visual Studio applies this option only when `MIMode` is `gdb`. For more information, see [debuginfod options](#debuginfod_options). |
 | `args` | array | Command-line arguments passed to the program. |
 | `environment` | array | Environment variables to add to the environment for the program. Example: `[ { "name": "squid", "value": "clam" } ]`. |
 | `targetArchitecture` | string | The architecture of the debuggee. The architecture is detected automatically unless this parameter is set. Allowed values are `x86`, `arm`, `arm64`, `mips`, `x64`, `amd64`, `x86_64`. |
@@ -147,3 +148,21 @@ Use with the `sourceFileMap` property:
 |--|--|--|
 | `editorPath` | string | The location of the source code for the editor to locate. |
 | `useForBreakpoints` | boolean | When setting breakpoints, this source mapping should be used. If **`false`**, only the filename and line number is used for setting breakpoints. If **`true`**, breakpoints will be set with the full path to the file and line number only when this source mapping is used. Otherwise just filename and line number will be used when setting breakpoints. Default is **`true`**. |
+
+## <a name="debuginfod_options"></a> debuginfod options
+
+Use with the `debuginfod` property to control how `gdb` downloads debug symbols from debuginfod servers. On Linux systems that configure debuginfod, such as Ubuntu, Fedora, or Arch Linux, this option lets `gdb` automatically retrieve debug symbols and source files from the distribution's debuginfod servers so you don't have to install debug symbol packages manually. Visual Studio applies this option only when `MIMode` is `gdb`.
+
+| Property | Type | Description |
+|--|--|--|
+| `enabled` | boolean | When `true`, `gdb` queries debuginfod servers for missing debug info and source files. The default value is **`false`**, which avoids delays caused by network requests. |
+| `timeout` | integer | The timeout in seconds for debuginfod server requests. The default value is **`30`**. Set it to `0` to use `gdb`'s default timeout. |
+
+The following example enables debuginfod server support and sets the timeout to 10 seconds:
+
+```json
+"debuginfod": {
+    "enabled": true,
+    "timeout": 10
+}
+```
