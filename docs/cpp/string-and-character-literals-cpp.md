@@ -1,10 +1,9 @@
 ---
 title: "String and character literals (C++)"
 description: "How to declare and define string and character literals in C++."
-ms.date: 08/27/2021
+ms.date: 07/01/2026
 f1_keywords: ["R", "L", "u", "u8", "LR", "uR", "u8R"]
 helpviewer_keywords: ["literal strings [C++]", "string literals [C++]"]
-ms.assetid: 61de8f6f-2714-4e7b-86b6-a3f885d3b9df
 ---
 # String and character literals (C++)
 
@@ -59,64 +58,57 @@ int main()
 }
 ```
 
-String literals can have no prefix, or `u8`, `L`, `u`, and  `U` prefixes to denote narrow character (single-byte or multi-byte), UTF-8, wide character (UCS-2 or UTF-16), UTF-16 and UTF-32 encodings, respectively. A raw string literal can have `R`, `u8R`, `LR`, `uR`, and `UR` prefixes for the raw version equivalents of these encodings.  To create temporary or static `std::string` values, you can use string literals or raw string literals with an `s` suffix. For more information, see the [String literals](#string-literals) section below. For more information on the basic source character set, universal character names, and using characters from extended codepages in your source code, see [Character sets](../cpp/character-sets.md).
+String literals can have no prefix, or `u8`, `L`, `u`, and `U` prefixes to denote narrow character (single-byte or multibyte), UTF-8, wide character (UCS-2 or UTF-16), UTF-16, and UTF-32 encodings, respectively. A raw string literal can have `R`, `u8R`, `LR`, `uR`, and `UR` prefixes for the raw version equivalents of these encodings. To create temporary or static `std::string` values, you can use string literals or raw string literals with an `s` suffix. For more information on the basic source character set, universal character names, and using characters from extended codepages in your source code, see [Character sets](../cpp/character-sets.md).
 
 ## Character literals
 
 A *character literal* is composed of a constant character. It's represented by the character surrounded by single quotation marks. There are five kinds of character literals:
 
 - Ordinary character literals of type **`char`**, for example `'a'`
-
 - UTF-8 character literals of type **`char`** (**`char8_t`** in C++20), for example `u8'a'`
-
 - Wide-character literals of type **`wchar_t`**, for example `L'a'`
-
 - UTF-16 character literals of type **`char16_t`**, for example `u'a'`
-
 - UTF-32 character literals of type **`char32_t`**, for example `U'a'`
 
 The character used for a character literal may be any character, except for the reserved characters backslash (**`\`**), single quotation mark (**`'`**), or newline. Reserved characters can be specified by using an escape sequence. Characters may be specified by using universal character names, as long as the type is large enough to hold the character.
 
 ### Encoding
 
-Character literals are encoded differently based their prefix.
+Character literals are encoded differently based on their prefix.
 
-- A character literal without a prefix is an ordinary character literal. The value of an ordinary character literal containing a single character, escape sequence, or universal character name that can be represented in the execution character set has a value equal to the numerical value of its encoding in the execution character set. An ordinary character literal that contains more than one character, escape sequence, or universal character name is a *multicharacter literal*. A multicharacter literal or an ordinary character literal that can't be represented in the execution character set has type **`int`**, and its value is implementation-defined. For MSVC, see the **Microsoft-specific** section below.
-
-- A character literal that begins with the `L` prefix is a wide-character literal. The value of a wide-character literal containing a single character, escape sequence, or universal character name has a value equal to the numerical value of its encoding in the execution wide-character set unless the character literal has no representation in the execution wide-character set, in which case the value is implementation-defined. The value of a wide-character literal containing multiple characters, escape sequences, or universal character names is implementation-defined. For MSVC, see the **Microsoft-specific** section below.
-
+- A character literal without a prefix is an ordinary character literal. The value of an ordinary character literal containing a single character, escape sequence, or universal character name that the execution character set can represent has a value equal to the numerical value of its encoding in the execution character set. An ordinary character literal that contains more than one character, escape sequence, or universal character name is a *multicharacter literal*. If the character can't be represented in the execution character set, it's a *non-encodable character literal*. A multicharacter literal and a non-encodable character literal have type **`int`**, and their value is implementation-defined. For MSVC, see the **Microsoft-specific** section below. The execution character set is defined at compile time and defaults to the codepage of the host machine. You can set the execution charset by using the [`/execution-charset`](../build/reference/execution-charset-set-execution-character-set.md) switch.
+- A character literal that begins with the `L` prefix is a wide-character literal. The value of a wide-character literal containing a single character, escape sequence, or universal character name has a value equal to the numerical value of its encoding in what the standard calls the *execution wide-character set*, which on Windows is defined as UTF-16. If the character has no representation in the execution wide-character set, it's an error.
 - A character literal that begins with the `u8` prefix is a UTF-8 character literal. The value of a UTF-8 character literal containing a single character, escape sequence, or universal character name has a value equal to its ISO 10646 code point value if it can be represented by a single UTF-8 code unit (corresponding to the C0 Controls and Basic Latin Unicode block). If the value can't be represented by a single UTF-8 code unit, the program is ill-formed. A UTF-8 character literal containing more than one character, escape sequence, or universal character name is ill-formed.
-
 - A character literal that begins with the `u` prefix is a UTF-16 character literal. The value of a UTF-16 character literal containing a single character, escape sequence, or universal character name has a value equal to its ISO 10646 code point value if it can be represented by a single UTF-16 code unit (corresponding to the basic multi-lingual plane). If the value can't be represented by a single UTF-16 code unit, the program is ill-formed. A UTF-16 character literal containing more than one character, escape sequence, or universal character name is ill-formed.
-
 - A character literal that begins with the `U` prefix is a UTF-32 character literal. The value of a UTF-32 character literal containing a single character, escape sequence, or universal character name has a value equal to its ISO 10646 code point value. A UTF-32 character literal containing more than one character, escape sequence, or universal character name is ill-formed.
 
-### <a name="bkmk_Escape"></a> Escape sequences
+### Escape sequences
 
-There are three kinds of escape sequences: simple, octal, and hexadecimal. Escape sequences may be any of the following values:
+There are three kinds of escape sequences: simple, numeric, and universal. Escape sequences can be any of the following values:
 
-|Value|Escape sequence|
-|-----------|---------------------|
-| newline | \\n |
-| backslash | \\\\ |
-| horizontal tab | \\t |
-| question mark | ? or \\? |
-| vertical tab | \\v |
-| single quote | \\' |
-| backspace | \\b |
-| double quote | \\" |
-| carriage return | \\r |
-| the null character | \\0 |
-| form feed | \\f |
-| octal | \\ooo |
-| alert (bell) | \\a |
-| hexadecimal | \\xhhh |
+| Value | Escape sequence |
+| --- | --- |
+| newline | `\n` |
+| backslash | `\\` |
+| horizontal tab | `\t` |
+| question mark | `?` or `\?` |
+| vertical tab | `\v` |
+| single quote | `\'` |
+| backspace | `\b` |
+| double quote | `\"` |
+| carriage return | `\r` |
+| form feed | `\f` |
+| alert (bell) | `\a` |
+| the null character | `\0` |
+| octal | `\ooo` |
+| delimited octal (C++23) | `\o{OOO}` |
+| hexadecimal | `\xhhh` |
+| delimited hexadecimal (C++23) | `\x{hhhh}` |
+| universal character | `\uHHHH` or `\UHHHHHHHH` |
+| delimited universal (C++23) | `\u{HHHH}` |
+| named universal (C++23) | `\N{UNIVERSAL CHARACTER NAME}` |
 
-An octal escape sequence is a backslash followed by a sequence of one to three octal digits. An octal escape sequence terminates at the first character that's not an octal digit, if encountered sooner than the third digit. The highest possible octal value is `\377`.
-
-A hexadecimal escape sequence is a backslash followed by the character `x`, followed by a sequence of one or more hexadecimal digits. Leading zeroes are ignored. In an ordinary or u8-prefixed character literal, the highest hexadecimal value is 0xFF. In an L-prefixed or u-prefixed wide character literal, the highest hexadecimal value is 0xFFFF. In a U-prefixed wide character literal, the highest hexadecimal value is 0xFFFFFFFF.
-
-This sample code shows some examples of escaped characters using ordinary character literals. The same escape sequence syntax is valid for the other character literal types.
+This sample code shows examples of simple escape sequences using ordinary character literals. The same escape sequence syntax is valid for the other character literal types.
 
 ```cpp
 #include <iostream>
@@ -141,129 +133,164 @@ ending
 Tab character:  ending
 Backspace character:ending
 Backslash character: \ending
-Null character:  ending
+Null character: ending
 */
 ```
 
 The backslash character (**`\`**) is a line-continuation character when it's placed at the end of a line. If you want a backslash character to appear as a character literal, you must type two backslashes in a row (**`\\`**). For more information about the line continuation character, see [Phases of Translation](../preprocessor/phases-of-translation.md).
 
-#### Microsoft-specific
+Numeric escape sequences include octal and hexadecimal escape sequences. These sequences result in a numeric value when the compiler evaluates them.
 
-To create a value from a narrow multicharacter literal, the compiler converts the character or character sequence between single quotes into 8-bit values within a 32-bit integer. Multiple characters in the literal fill corresponding bytes as needed from high-order to low-order. The compiler then converts the integer to the destination type following the usual rules. For example, to create a **`char`** value, the compiler takes the low-order byte. To create a **`wchar_t`** or **`char16_t`** value, the compiler takes the low-order word. The compiler warns that the result is truncated if any bits are set above the assigned byte or word.
+An octal escape sequence is a backslash followed by a sequence of one to three octal digits. An octal escape sequence terminates at the first character that's not an octal digit, if encountered sooner than the third digit. The highest possible octal value is `\377`. C++23 added delimited octal sequences which consist of a backslash followed by the characters `o{`, followed by a sequence of octal characters, and then a matching `}`. The highest possible value in a delimited octal sequence is determined by the type of the character literal it is part of.
 
-```cpp
-char c0    = 'abcd';    // C4305, C4309, truncates to 'd'
-wchar_t w0 = 'abcd';    // C4305, C4309, truncates to '\x6364'
-int i0     = 'abcd';    // 0x61626364
-```
-
-An octal escape sequence that appears to contain more than three digits is treated as a 3-digit octal sequence, followed by the subsequent digits as characters in a multicharacter literal, which can give surprising results. For example:
+A common mistake when using octal escape sequences is expecting the sequence to allow more than three octal digits, or to terminate the sequence early with a non-octal digit. When you make this mistake in what would otherwise be an ordinary character literal, it turns the literal into a multicharacter literal.
 
 ```cpp
-char c1 = '\100';   // '@'
-char c2 = '\1000';  // C4305, C4309, truncates to '0'
+char c1 = '\100';   // Okay, '@'
+char c2 = '\1000';  // multicharacter literal, truncates to '0'
+char c3 = '\009';   // multicharacter literal, truncates to '9'
 ```
-
-Escape sequences that appear to contain non-octal characters are evaluated as an octal sequence up to the last octal character, followed by the remaining characters as the subsequent characters in a multicharacter literal. Warning C4125 is generated if the first non-octal character is a decimal digit. For example:
-
+You can avoid this mistake by using delimited octal sequences.
 ```cpp
-char c3 = '\009';   // '9'
-char c4 = '\089';   // C4305, C4309, truncates to '9'
-char c5 = '\qrs';   // C4129, C4305, C4309, truncates to 's'
+char c1 = '\o{100}';   // Okay, '@'
+char c2 = '\o{1000}';  // error, value is out of range for char
+char c3 = '\o{009}';   // error, non-octal value inside octal sequence.
 ```
 
-An octal escape sequence that has a higher value than `\377` causes error C2022: '*value-in-decimal*': too big for character.
+A hexadecimal escape sequence is a backslash followed by the character `x`, followed by a sequence of one or more hexadecimal digits. Leading zeroes are ignored. C++23 added delimited hexadecimal sequences, which consist of a backslash, followed by the characters `x{`, followed by a sequence of hexadecimal characters, and then a matching `}`. In an ordinary or `u8`-prefixed character literal, the highest hexadecimal value is `0xFF`. In an `L`-prefixed or `u`-prefixed character literal, the highest hexadecimal value is `0xFFFF`. In a `U`-prefixed character literal, the highest hexadecimal value is `0xFFFFFFFF`.
 
-An escape sequence that appears to have hexadecimal and non-hexadecimal characters is evaluated as a multicharacter literal that contains a hexadecimal escape sequence up to the last hexadecimal character, followed by the non-hexadecimal characters. A hexadecimal escape sequence that contains no hexadecimal digits causes compiler error C2153: "hex literals must have at least one hex digit".
+### Universal character names
 
-```cpp
-char c6 = '\x0050'; // 'P'
-char c7 = '\x0pqr'; // C4305, C4309, truncates to 'r'
-```
-
-If a wide character literal prefixed with `L` contains a multicharacter sequence, the value is taken from the first character, and the compiler raises warning C4066. Subsequent characters are ignored, unlike the behavior of the equivalent ordinary multicharacter literal.
-
-```cpp
-wchar_t w1 = L'\100';   // L'@'
-wchar_t w2 = L'\1000';  // C4066 L'@', 0 ignored
-wchar_t w3 = L'\009';   // C4066 L'\0', 9 ignored
-wchar_t w4 = L'\089';   // C4066 L'\0', 89 ignored
-wchar_t w5 = L'\qrs';   // C4129, C4066 L'q' escape, rs ignored
-wchar_t w6 = L'\x0050'; // L'P'
-wchar_t w7 = L'\x0pqr'; // C4066 L'\0', pqr ignored
-```
-
-The **Microsoft-specific** section ends here.
-
-### <a name="bkmk_UCN"></a> Universal character names
-
-In character literals and native (non-raw) string literals, any character may be represented by a universal character name.  Universal character names are formed by a prefix `\U` followed by an eight-digit Unicode code point, or by a prefix `\u` followed by a four-digit Unicode code point. All eight or four digits, respectively, must be present to make a well-formed universal character name.
+In character literals and native (non-raw) string literals, use a universal character name to represent any character. Universal character names use the prefix `\U` followed by an eight-digit Unicode code point, or the prefix `\u` followed by a four-digit Unicode code point. You must include all eight or four digits to create a well-formed universal character name.
+C++23 introduced delimited universal characters and named universal characters. A delimited universal character consists of the prefix `\u{`, followed by a series of hexadecimal characters, followed by `}`. A named universal character consists of the prefix `\N{`, followed by a universal character name, followed by `}`. The case-sensitive universal character name must match a name from the Unicode character database from the Unicode Consortium. The compiler uses the version of Unicode installed on your system to determine the value of the character.
 
 ```cpp
 char u1 = 'A';          // 'A'
 char u2 = '\101';       // octal, 'A'
 char u3 = '\x41';       // hexadecimal, 'A'
-char u4 = '\u0041';     // \u UCN 'A'
-char u5 = '\U00000041'; // \U UCN 'A'
+char u4 = '\u0041';     // UCN 'A'
+char u5 = '\U00000041'; // UCN 'A'
+char u6 = '\u{41}';     // UCN 'A'
+char u7 = '\N{LATIN CAPITAL LETTER A}'; // UCN 'A'
 ```
 
-#### Surrogate Pairs
+### Multicharacter and non-encodable character literals
 
-Universal character names can't encode values in the surrogate code point range D800-DFFF. For Unicode surrogate pairs, specify the universal character name by using `\UNNNNNNNN`, where NNNNNNNN is the eight-digit code point for the character. The compiler generates a surrogate pair if necessary.
+A *multicharacter literal* is an ordinary character literal with multiple characters and no prefix. `'AB'` is an example of a multicharacter literal.
 
-In C++03, the language only allowed a subset of characters to be represented by their universal character names, and allowed some universal character names that didn't actually represent any valid Unicode characters. This mistake was fixed in the C++11 standard. In C++11, both character and string literals and identifiers can use universal character names.  For more information on universal character names, see [Character Sets](../cpp/character-sets.md). For more information about Unicode, see [Unicode](/windows/win32/intl/unicode). For more information about surrogate pairs, see [Surrogate Pairs and Supplementary Characters](/windows/win32/Intl/surrogates-and-supplementary-characters).
+A *non-encodable character literal* is a character literal with no prefix that contains a character that isn't encodable as a single `char` value. An example is the Unicode character U+1F609 `'😉'`, because it takes four bytes to represent in UTF-8 so it can't be encoded in a single 8-bit `char` value.
 
-## <a name="string-literals"></a> String literals
+The compiler treats multicharacter and non-encodable character literals similarly. Their type is `int` and their value at runtime is implementation defined. See the Microsoft-specific section below for details. You can avoid implementation defined behavior by using a character prefix such as `U'😉'`.
+
+#### Microsoft-specific
+
+The maximum sequence of characters in a multicharacter literal is four because the value maps to a 32-bit integer value. When there are fewer than four characters, the compiler pads the high-order bits with 0.
+
+```cpp
+int c1 = 'a';   // 0x00000061 (not a multicharacter literal)
+int c2 = 'ab';  // 0x00006162
+int c3 = 'abc'; // 0x00616263
+int c4 = 'abcd';// 0x61626364
+```
+
+The mapping of ordinary characters into an integer guarantees the value of the resulting integer is independent of the endianness of the target machine. As a result, on little endian machines, the order of the individual character values in memory is flipped and doesn't match the equivalent string value.
+
+```cpp
+int ch = 'abcd'; // 'd' is first in memory on little endian machines
+const char* str = "abcd";
+// compare the first byte of str with the last byte of ch
+if(str[0] == reinterpret_cast<const char*>(&ch)[3])
+{
+    printf("little-endian\n");
+}
+```
+Integer escape sequences used in multicharacter literals must fit into an 8-bit `char` value. Unlike ordinary character sequences, the escaped values inside a multicharacter literal are encoded according to the endianness of the target machine. This means the resulting value of the sequence is flipped in little endian machines. The compiler pads the high-order bits with 0.
+```cpp
+int ch1 = '\x61';            // 0x00000061 (not a multicharacter literal)
+int ch2 = '\x61\x62';        // 0x00006261
+int ch3 = '\x61\x62\x63';    // 0x00636261
+int ch4 = '\x61\x62\x63\x64';// 0x64636261
+```
+Don't mix ordinary and integer escape sequences in a single multicharacter literal. Their encoding rules are different based on the endianness of the machine so the result is not defined.
+
+The range of values that qualify as a non-encodable character literal depend on the current execution character set. The Japanese half width kanji `ﾂ` (U+FF82) is a non-encodable character under `/execution-charset:utf-8` because it takes three bytes to represent. The same character is considered an ordinary character literal under `/execution-charset:shift_jis` because it can be represented in a single byte.
+
+The compiler computes the integer value by first converting the character into the multibyte execution character set representation, then maps the sequence of bytes to the integer. The compiler pads the high-order bytes with 0.
+
+Use the Japanese full width kanji `ツ` (U+30C4) as an example. `ツ` is represented in UTF-8 as the three-byte sequence `0xe3 0x83 0x84` and in shift_jis as the two-byte sequence `0x83 0x63`.
+
+```cpp
+int tsu = 'ツ'; // non-encodable character literal
+if (tsu == 0xe38384)
+{
+    printf("detected /execution-charset:utf-8");
+}
+else if (tsu == 0x8363)
+{
+    printf("detected /execution-charset:shift_jis");
+}
+```
+To avoid implementation defined behavior and get the Unicode value of a character that isn't affected by the execution character set, use a character prefix such as `U'ツ'`.
+
+The **Microsoft-specific** section ends here.
+
+## String literals
 
 A string literal represents a sequence of characters that together form a null-terminated string. The characters must be enclosed between double quotation marks. There are the following kinds of string literals:
 
-### Narrow string literals
+### Ordinary string literals
 
-A narrow string literal is a non-prefixed, double-quote delimited, null-terminated array of type `const char[n]`, where n is the length of the array in bytes. A narrow string literal may contain any graphic character except the double quotation mark (`"`), backslash (`\`), or newline character. A narrow string literal may also contain the escape sequences listed above, and universal character names that fit in a byte.
+An ordinary string literal is a non-prefixed, double-quote delimited, null-terminated array of type `const char[n]`, where *n* is the length of the array in bytes. An ordinary string literal can contain any graphic character except the double quotation mark (`"`), backslash (`\`), or newline character. An ordinary string literal can also contain escape sequences. The encoding of universal character names in ordinary string literals depends on the execution character set.
 
 ```cpp
-const char *narrow = "abcd";
+const char *ordinary = "abcd";
 
 // represents the string: yes\no
 const char *escaped = "yes\\no";
 ```
 
-#### UTF-8 encoded strings
+### UTF-8 string literal
 
-A UTF-8 encoded string is a u8-prefixed, double-quote delimited, null-terminated array of type `const char[n]`, where *n* is the length of the encoded array in bytes. A u8-prefixed string literal may contain any graphic character except the double quotation mark (`"`), backslash (`\`), or newline character. A u8-prefixed string literal may also contain the escape sequences listed above, and any universal character name.
+A UTF-8 encoded string is a `u8`-prefixed, double-quote delimited, null-terminated array of type `const char[n]`, where *n* is the length of the encoded array in bytes. A `u8`-prefixed string literal can contain any graphic character except the double quotation mark (`"`), backslash (`\`), or newline character. A `u8`-prefixed string literal can also contain escape sequences.
 
 C++20 introduces the portable **`char8_t`** (UTF-8 encoded 8-bit Unicode) character type. In C++20, `u8` literal prefixes specify characters or strings of **`char8_t`** instead of **`char`**.
 
 ```cpp
 // Before C++20
 const char* str1 = u8"Hello World";
-const char* str2 = u8"\U0001F607 is O:-)";
+const char* str2 = u8"\U0001F607 is 😇";
 // C++20 and later
 const char8_t* u8str1 = u8"Hello World";
-const char8_t* u8str2 = u8"\U0001F607 is O:-)";
+const char8_t* u8str2 = u8"\U0001F607 is 😇";
 ```
 
 ### Wide string literals
 
-A wide string literal is a null-terminated array of constant **`wchar_t`** that is prefixed by '`L`' and contains any graphic character except the double quotation mark (**`"`**), backslash (**`\`**), or newline character. A wide string literal may contain the escape sequences listed above and any universal character name.
+A wide string literal is a null-terminated array of constant **`wchar_t`** that's prefixed by '`L`' and contains any graphic character except the double quotation mark (**`"`**), backslash (**`\`**), or newline character. A wide string literal can also contain escape sequences.
 
 ```cpp
 const wchar_t* wide = L"zyxw";
 const wchar_t* newline = L"hello\ngoodbye";
 ```
 
-#### char16_t and char32_t (C++11)
+### UTF-16 string literals
 
-C++11 introduces the portable **`char16_t`** (16-bit Unicode) and **`char32_t`** (32-bit Unicode) character types:
+A UTF-16 string literal is a null-terminated array of constant **`char16_t`** that's prefixed by '`u`' and contains any graphic character except the double quotation mark (**`"`**), backslash (**`\`**), or newline character. A UTF-16 string literal can also contain escape sequences.
 
 ```cpp
-auto s3 = u"hello"; // const char16_t*
-auto s4 = U"hello"; // const char32_t*
+const char16_t* utf_16 = u"hello 🌍";
+```
+### UTF-32 string literals
+
+A UTF-32 string literal is a null-terminated array of constant **`char32_t`** that's prefixed by '`U`' and contains any graphic character except the double quotation mark (**`"`**), backslash (**`\`**), or newline character. A UTF-32 string literal can also contain escape sequences.
+
+```cpp
+const char32_t* utf_32 = U"hello 🌏";
 ```
 
 ### Raw string literals (C++11)
 
-A raw string literal is a null-terminated array—of any character type—that contains any graphic character, including the double quotation mark (**`"`**), backslash (**`\`**), or newline character. Raw string literals are often used in regular expressions that use character classes, and in HTML strings and XML strings. For examples, see the following article: [Bjarne Stroustrup's FAQ on C++11](https://www.stroustrup.com/C++11FAQ.html).
+A raw string literal is a null-terminated array, of any character type, that contains any graphic character, including the double quotation mark (**`"`**), backslash (**`\`**), or newline character. Use raw string literals for regular expressions that use character classes, and in HTML strings and XML strings.
 
 ```cpp
 // represents the string: An unescaped \ character
@@ -275,7 +302,7 @@ const char16_t* raw_utf16 = uR"(An unescaped \ character)";
 const char32_t* raw_utf32 = UR"(An unescaped \ character)";
 ```
 
-A delimiter is a user-defined sequence of up to 16 characters that immediately precedes the opening parenthesis of a raw string literal, and immediately follows its closing parenthesis.  For example, in `R"abc(Hello"\()abc"` the delimiter sequence is `abc` and the string content is `Hello"\(`. You can use a delimiter to disambiguate raw strings that contain both double quotation marks and parentheses. This string literal causes a compiler error:
+A delimiter is a user-defined sequence of up to 16 characters that immediately precedes the opening parenthesis of a raw string literal, and immediately follows its closing parenthesis. For example, in `R"abc(Hello"\()abc"` the delimiter sequence is `abc` and the string content is `Hello"\(`. Use a delimiter to disambiguate raw strings that contain both double quotation marks and parentheses. This string literal causes a compiler error:
 
 ```cpp
 // meant to represent the string: )"
@@ -299,7 +326,7 @@ goodbye)";
 
 ### std::string literals (C++14)
 
-`std::string` literals are Standard Library implementations of user-defined literals (see below) that are represented as `"xyz"s` (with a `s` suffix). This kind of string literal produces a temporary object of type `std::string`, `std::wstring`, `std::u32string`, or `std::u16string`, depending on the prefix that is specified. When no prefix is used, as above, a `std::string` is produced. `L"xyz"s` produces a `std::wstring`. `u"xyz"s` produces a [std::u16string](../standard-library/string-typedefs.md#u16string), and `U"xyz"s` produces a [std::u32string](../standard-library/string-typedefs.md#u32string).
+`std::string` literals are Standard Library implementations of user-defined literals (see below) that are represented as `"xyz"s` (with a `s` suffix). This kind of string literal produces a temporary object of type `std::string`, `std::wstring`, `std::u32string`, or `std::u16string`, depending on the prefix that you specify. When you don't use a prefix, as in the preceding example, the literal produces a `std::string`. `L"xyz"s` produces a `std::wstring`. `u"xyz"s` produces a [std::u16string](../standard-library/string-typedefs.md#u16string), and `U"xyz"s` produces a [std::u32string](../standard-library/string-typedefs.md#u32string).
 
 ```cpp
 //#include <string>
@@ -318,11 +345,11 @@ The `s` suffix may also be used on raw string literals:
 u32string str6{ UR"(She said "hello.")"s };
 ```
 
-`std::string` literals are defined in the namespace `std::literals::string_literals` in the \<string> header file. Because `std::literals::string_literals`, and `std::literals` are both declared as [inline namespaces](../cpp/namespaces-cpp.md), `std::literals::string_literals` is automatically treated as if it belonged directly in namespace `std`.
+`std::string` literals are defined in the namespace `std::literals::string_literals` in the `<string>` header file. Because `std::literals::string_literals` and `std::literals` are both declared as [inline namespaces](../cpp/namespaces-cpp.md), the compiler automatically treats `std::literals::string_literals` as if it belonged directly in namespace `std`.
 
 ### Size of string literals
 
-For ANSI `char*` strings and other single-byte encodings (but not UTF-8), the size (in bytes) of a string literal is the number of characters plus 1 for the terminating null character. For all other string types, the size isn't strictly related to the number of characters. UTF-8 uses up to four **`char`** elements to encode some *code units*, and **`char16_t`** or **`wchar_t`** encoded as UTF-16 may use two elements (for a total of four bytes) to encode a single *code unit*. This example shows the size of a wide string literal in bytes:
+For ASCII `char*` strings and other single-byte encodings, the size (in bytes) of a string literal is the number of characters plus 1 for the terminating null character. For all other string literals, the size isn't strictly related to the number of characters. UTF-8 uses up to four **`char`** elements to encode some *code units*, and **`char16_t`** or **`wchar_t`** encoded as UTF-16 may use two elements (for a total of four bytes) to encode a single *code unit*. This example shows the size of a wide string literal in bytes:
 
 ```cpp
 const wchar_t* str = L"Hello!";
@@ -333,8 +360,9 @@ Notice that `strlen()` and `wcslen()` don't include the size of the terminating 
 
 Maximum length of a string literal after concatenation:
 
-* Visual Studio prior to 2022 version 17.0: the maximum length of a string literal after concatenation is 65,535 bytes. This applies to both narrow and wide string literals.
-* From Visual Studio 2022 version 17.0 onwards: the maximum length of a string literal after concatenation is only limited by available memory. However, the size limit before concatenation is still 16,384 bytes
+- Visual Studio before 2022 version 17.0: the maximum length of a string literal after concatenation is 65,535 bytes. This applies to both narrow and wide string literals.
+- Before MSVC 14.51: the maximum length of a string literal after concatenation is only limited by available memory. However, the size limit before concatenation is still 16,384 bytes.
+- From MSVC 14.51 onwards: the maximum length limitation for a string literal before concatenation is removed and is only limited by available memory.
 
 ### Modifying string literals
 
@@ -353,7 +381,7 @@ You can cause the compiler to emit an error when a string literal is converted t
 
 ```cpp
 auto str = L"hello";
-str[2] = L'a'; // C3892: you cannot assign to a variable that is const.
+str[2] = L'a'; // C3892: you cannot assign to a variable that's const.
 ```
 
 In some cases, identical string literals may be pooled to save space in the executable file. In string-literal pooling, the compiler causes all references to a particular string literal to point to the same location in memory, instead of having each reference point to a separate instance of the string literal. To enable string pooling, use the [`/GF`](../build/reference/gf-eliminate-duplicate-strings.md) compiler option.
@@ -374,7 +402,7 @@ is identical to this declaration:
 char atr[] = "1234";
 ```
 
-and to this declaration:
+and is identical to this declaration:
 
 ```cpp
 char atr[] =  "12\
@@ -392,40 +420,52 @@ The actual result is a hexadecimal 5F, which is the ASCII code for an underscore
 ```cpp
 "\005five"     // Use octal literal.
 "\x05" "five"  // Use string splicing.
+"\x{05}five" // (C++23) delimited escape sequence
 ```
-
-`std::string` literals (and the related `std::u8string`, `std::u16string`, and `std::u32string`) can be concatenated with the **`+`** operator that's defined for [`basic_string`](../standard-library/basic-string-class.md) types. They can also be concatenated in the same way as adjacent string literals. In both cases, the string encoding and the suffix must match:
+Concatenate `std::string` literals (and the related `std::u8string`, `std::u16string`, and `std::u32string`) at runtime using the **`+`** operator that's defined for [`basic_string`](../standard-library/basic-string-class.md) types. You can also concatenate them at compile time in the same way as adjacent string literals. In both cases, the string encoding and the suffix of each literal must not conflict:
 
 ```cpp
-auto x1 = "hello" " " " world"; // OK
+auto x1 = "hello" " " " world"s; // OK, results in std::string "hello world"s
 auto x2 = U"hello" " " L"world"; // C2308: disagree on prefix
 auto x3 = u8"hello" " "s u8"world"z; // C3688, disagree on suffixes
 ```
 
 ### String literals with universal character names
 
-Native (non-raw) string literals may use universal character names to represent any character, as long as the universal character name can be encoded as one or more characters in the string type.  For example, a universal character name representing an extended character can't be encoded in a narrow string using the ANSI code page, but it can be encoded in narrow strings in some multi-byte code pages, or in UTF-8 strings, or in a wide string. In C++11, Unicode support is extended by the `char16_t*` and `char32_t*` string types, and C++20 extends it to the `char8_t` type:
+Native (non-raw) string literals can use universal character names to represent any character, as long as the universal character name can be encoded as one or more characters in the string type. For example, a universal character name representing an extended character can't be encoded in an ordinary string when using the ANSI code page, but it can be encoded in narrow strings in some multibyte code pages, or in UTF-8 strings, or in a wide string. In C++11, Unicode support is extended by the `char16_t*` and `char32_t*` string types, and C++20 extends it to the `char8_t` type:
 
 ```cpp
 // ASCII smiling face
 const char*     s1 = ":-)";
 
 // UTF-16 (on Windows) encoded WINKING FACE (U+1F609)
-const wchar_t*  s2 = L"😉 = \U0001F609 is ;-)";
+const wchar_t*  s2 = L"😉 = \U0001F609";
 
 // UTF-8  encoded SMILING FACE WITH HALO (U+1F607)
-const char*     s3a = u8"😇 = \U0001F607 is O:-)"; // Before C++20
-const char8_t*  s3b = u8"😇 = \U0001F607 is O:-)"; // C++20
+const char*     s3a = u8"😇 = \U0001F607"; // Before C++20
+const char8_t*  s3b = u8"😇 = \U0001F607"; // C++20
 
 // UTF-16 encoded SMILING FACE WITH OPEN MOUTH (U+1F603)
-const char16_t* s4 = u"😃 = \U0001F603 is :-D";
+const char16_t* s4 = u"😃 = \U0001F603";
 
 // UTF-32 encoded SMILING FACE WITH SUNGLASSES (U+1F60E)
-const char32_t* s5 = U"😎 = \U0001F60E is B-)";
+const char32_t* s5 = U"😎 = \U0001F60E";
 ```
+
+In C++11 and later, Universal characters can be any *Unicode scalar value* when used in a string literal. Unicode scalar values include the full Unicode codespace from U+0000 to U+10FFFF other than the surrogate code point range (U+D800 through U+DFFF). Before C++11, Universal characters can be any value in the Unicode codespace, except those in the basic source character set and control characters (ranges U+0000 to U+0001F and U+007F to 0x9F). For more information on universal character names, see [Character Sets](../cpp/character-sets.md). For more information about Unicode, see [Unicode](/windows/win32/intl/unicode).
+
+When used inside an ordinary string literal `""`, the Unicode code point is encoded in the codepage of the execution character set. The codepage controls the value as well as the number of bytes used to represent the code point. If the Unicode code point can't be represented in the execution character set codepage, then a warning is emitted and the character is replaced by the default replacement character for the codepage. The default replacement character is defined by the codepage and is typically a character equivelent to U+FFFD (�) or '?'. The execution character set can be set by the compiler switch [`/execution-charset`](../build/reference/execution-charset-set-execution-character-set.md).
+
+When used in a utf-8 literal type `u8""`, the Unicode code point is encoded in a possibly multibyte utf-8 sequence.
+
+When used in a 16-bit string literal type `L""` or `u""`, the Unicode code point is encoded in UTF-16. A universal characters that does not fit in 16-bits is automatically encoded as a UTF-16 surrogate pair. For more information about surrogate pairs, see [Surrogate Pairs and Supplementary Characters](/windows/win32/Intl/surrogates-and-supplementary-characters)
+
+When used in a UTF-32 literal type `U""`, the Unicode code point is encoded in UTF-32.
 
 ## See also
 
 [Character sets](../cpp/character-sets.md)\
 [Numeric, Boolean, and pointer literals](../cpp/numeric-boolean-and-pointer-literals-cpp.md)\
+[Surrogate Pairs and Supplementary Characters](/windows/win32/Intl/surrogates-and-supplementary-characters)\
+[Unicode](/windows/win32/intl/unicode)\
 [User-defined literals](../cpp/user-defined-literals-cpp.md)
