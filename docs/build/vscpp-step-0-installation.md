@@ -73,6 +73,9 @@ You can use the installer to customize your installation by selecting the *workl
 
    The **Installation details** pane lists the included and optional components installed by each workload. You can select or deselect optional components in this list. For example, to support development by using the Visual Studio 2017 or 2015 compiler toolsets, choose the MSVC v141 or MSVC v140 optional components. You can add support for MFC, the experimental Modules language extension, IncrediBuild, and more.
 
+   > [!TIP]
+   > To install a specific MSVC Build Tools version (Preview, latest release, or an older in-support release), see [Install the Microsoft C++ (MSVC) Build Tools](../overview/acquire-msvc.md).
+
    Other workloads support more kinds of development. For example, choose the **Universal Windows Platform development** workload to create apps that use the Windows Runtime for the Microsoft Store. Choose **Game development with C++** to create games that use DirectX, Unreal, or Cocos2d. Choose **Linux development with C++** to target Linux platforms, including IoT development.
 
 1. After you choose the workloads and optional components you want, choose **Install**.
