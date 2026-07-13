@@ -8,6 +8,8 @@ items:
       href: ../overview/overview-of-cpp-development.md
     - name: What's new for MSVC Build Tools
       href: ../overview/what-s-new-for-msvc.md
+    - name: Install the Microsoft C++ (MSVC) Build Tools
+      href: ../overview/acquire-msvc.md
     - name: What's new for C++ in Visual Studio 2022
       href: ../overview/what-s-new-for-visual-cpp-in-visual-studio.md
     - name: What's new for C++ in Visual Studio 2019
