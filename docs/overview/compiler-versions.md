@@ -192,5 +192,6 @@ The minimum value of `_MSC_FULL_VER` for Visual Studio 2019 version 16.9 is 1928
 
 ## See also
 
+- [Install the Microsoft C++ (MSVC) Build Tools](acquire-msvc.md)
 - [`_MSC_VER`](../preprocessor/predefined-macros.md)
 - [Visual C++ compiler version blog post](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/)
