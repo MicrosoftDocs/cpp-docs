@@ -2,8 +2,6 @@
 title: Set C++ Compiler and Build Properties in Visual Studio
 description: Use the Visual Studio IDE to change C++ compiler and linker options and other build settings. Modify these settings in the Properties pages for your project.
 ms.date: 07/13/2026
-author: TimShererWithAquent
-ms.author: v-tishe
 ms.topic: concept-article
 helpviewer_keywords: ["project properties [C++], modifying", "properties [C++]", "Visual C++ projects, properties", "projects [C++], properties"]
 ---
