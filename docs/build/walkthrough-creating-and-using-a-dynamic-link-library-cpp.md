@@ -1,13 +1,11 @@
 ---
 title: Create and Use Your Own Dynamic-Link Library (C++)
 description: Learn how to build a C++ DLL in Visual Studio. This tutorial walks you through creating exported functions, a console client app, and running the finished project.
-#customer intent: As a C++ developer, I want to create a dynamic-link library in Visual Studio, so that I can share code and resources across multiple apps.
 ms.topic: tutorial
 ms.date: 07/16/2026
-author: TimShererWithAquent
-ms.author: v-tishe
 helpviewer_keywords: ["libraries [C++], DLLs", "DLLs [C++], walkthroughs"]
 ms.custom: sfi-image-nochange
+#customer intent: As a C++ developer, I want to create a dynamic-link library in Visual Studio, so that I can share code and resources across multiple apps.
 ---
 # Walkthrough: Create and use your own dynamic-link library (C++)
 
