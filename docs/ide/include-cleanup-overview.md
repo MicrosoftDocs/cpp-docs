@@ -9,7 +9,12 @@ helpviewer_keywords: ["include cleanup"]
 ---
 # Clean up C/C++ includes in Visual Studio
 
+::: moniker range="<msvc-180"
 Starting with Visual Studio 17.8 Preview 1, Visual Studio provides an `#include` cleanup feature that improves the quality of your code in the following ways:
+::: moniker-end
+::: moniker range=">=msvc-180"
+Visual Studio provides an `#include` cleanup feature that improves the quality of your code in the following ways:
+::: moniker-end
 
 - Offers to add header files for code that compiles only because a needed header file is included indirectly by another header file.
 - Offers to remove unused header files--improving build times and code cleanliness.
