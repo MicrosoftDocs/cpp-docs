@@ -1,7 +1,7 @@
 ---
 title: "Clean up C/C++ #includes in Visual Studio"
 description: "Learn about using C/C++ Include Cleanup in Visual Studio to remove unused headers, and transitively add indirect headers needed in your project."
-ms.date: 07/13/2026
+ms.date: 07/27/2026
 ms.topic: "overview"
 ms.custom: intro-overview
 f1_keywords: ["include cleanup"]
@@ -9,12 +9,17 @@ helpviewer_keywords: ["include cleanup"]
 ---
 # Clean up C/C++ includes in Visual Studio
 
+::: moniker range="<msvc-180"
 Starting with Visual Studio 17.8 Preview 1, Visual Studio provides an `#include` cleanup feature that improves the quality of your code in the following ways:
+::: moniker-end
+::: moniker range=">=msvc-180"
+Visual Studio provides an `#include` cleanup feature that improves the quality of your code in the following ways:
+::: moniker-end
 
 - Offers to add header files for code that compiles only because a needed header file is included indirectly by another header file.
 - Offers to remove unused header files--improving build times and code cleanliness.
 
-Include Cleanup is on by default. To learn how to configure it, see [Config C/C++ Include Cleanup in Visual Studio](include-cleanup-config.md).
+Include Cleanup is off by default. To learn how to configure it, see [Config C/C++ Include Cleanup in Visual Studio](include-cleanup-config.md).
 
 ## Direct vs indirect headers
 
