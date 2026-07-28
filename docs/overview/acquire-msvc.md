@@ -184,10 +184,10 @@ cmake -G "Visual Studio 18 2026" -T "version=14.52" ..\
 
 Some build systems need the command prompt to have the `PATH`, `LIB`, `INCLUDE`, and related environment variables set before you run them.
 
-To start a Visual Studio Command Prompt that targets a supported Build Tools version, add `-vcvars_ver=<version>` where `<version>` matches the folder name under `<vs-install-dir>\VC\Tools\MSVC\<version>`.
+To start a Visual Studio Command Prompt that targets a supported Build Tools version, add `-vcvars_ver=<version-prefix>` where `<version-prefix>` matches the prefix of a folder name under `<vs-install-dir>\VC\Tools\MSVC\<version>`.
 
 ```cmd
-<vs-install-dir>\VC\Auxiliary\Build\vcvars64.bat -vcvars_ver=14.50.35717
+<vs-install-dir>\VC\Auxiliary\Build\vcvars64.bat -vcvars_ver=14.50
 ```
 
 To start a Visual Studio Command Prompt targeting the MSVC preview tools, use `-vcvars_ver=preview`:
