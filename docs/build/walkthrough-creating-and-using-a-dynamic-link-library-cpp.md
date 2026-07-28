@@ -2,7 +2,7 @@
 title: Create and Use Your Own Dynamic-Link Library (C++)
 description: Learn how to build a C++ DLL in Visual Studio. This tutorial walks you through creating exported functions, a console client app, and running the finished project.
 ms.topic: tutorial
-ms.date: 07/16/2026
+ms.date: 07/28/2026
 helpviewer_keywords: ["libraries [C++], DLLs", "DLLs [C++], walkthroughs"]
 ms.custom: sfi-image-nochange
 #customer intent: As a C++ developer, I want to create a dynamic-link library in Visual Studio, so that I can share code and resources across multiple apps.
@@ -53,7 +53,7 @@ For links to more information about DLLs, see [Create C/C++ DLLs in Visual Studi
 
 - Some familiarity with the C++ language. Don't worry, the walkthrough doesn't cover anything too complicated.
 
-::: moniker range=">=msvc-150"
+::: moniker range="msvc-150"
 
 > [!NOTE]
 > This walkthrough assumes you're using Visual Studio 2017 version 15.9 or later. Some earlier versions of Visual Studio 2017 had defects in the code templates, or used different user interface dialogs. To avoid problems, use the Visual Studio Installer to update Visual Studio 2017 to version 15.9 or later.
@@ -88,7 +88,7 @@ When the solution is created, you can see the generated project and source files
 
 ::: moniker-end
 
-::: moniker range=">=msvc-150"
+::: moniker range="msvc-150"
 
 ### To create a DLL project in Visual Studio 2017
 
@@ -406,7 +406,7 @@ A minimal console application project is created for you. The name for the main 
 
 ::: moniker-end
 
-::: moniker range=">=msvc-150"
+::: moniker range="msvc-150"
 
 ### To create a client app in Visual Studio 2017
 
