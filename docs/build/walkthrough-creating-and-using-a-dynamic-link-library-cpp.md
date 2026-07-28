@@ -346,7 +346,7 @@ To verify that everything works so far, compile the DLL. To compile, choose **Bu
 
 ::: moniker-end
 
-::: moniker range=">=msvc-150"
+::: moniker range="msvc-150"
 
 ```Output
 1>------ Build started: Project: MathLibrary, Configuration: Debug Win32 ------
