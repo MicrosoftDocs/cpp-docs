@@ -59,6 +59,7 @@ The articles in this section describe Microsoft C/C++ compiler warning messages 
 | Compiler warning (level 1) C5063 | '`std::is_constant_evaluated`' always evaluates to true in manifestly constant-evaluated expressions |
 | [Compiler warning (level 1) C5072](compiler-warning-c5072.md) | ASAN enabled without debug information emission. Enable debug info for better ASAN error reporting |
 | Compiler warning (level 1) C5081 | Secure hotpatch is not supported with `/GENPROFILE`, `/FASTGENPROFILE` or `/LTCG:PGI`, disabling secure hotpatch. |
+| [Compiler warning (level 1) C5089](compiler-warning-c5089.md) | using `/fsanitize=address` with `/clr` is experimental and may result in unexpected behavior. |
 | Compiler warning (level 1) C5100 | `__VA_ARGS__` is reserved for use in variadic macros |
 | Compiler warning (level 1) C5101 | use of preprocessor directive in function-like macro argument list is undefined behavior |
 | Compiler warning (level 1) C5102 | ignoring invalid command-line macro definition '*value*' |

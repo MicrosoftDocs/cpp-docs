@@ -29,7 +29,9 @@ The **`/fsanitize=fuzzer`** compiler option enables experimental support for [Li
 
 The **`/fsanitize`** option doesn't allow comma-separated syntax, for example: **`/fsanitize=address,fuzzer`**. These options must be specified individually.
 
-The **`/fsanitize-address-use-after-return`**, **`/fno-sanitize-address-vcasan-lib`**, **`/fsanitize-address-asan-compat-lib`**, and **`/fno-sanitize-address-asan-compat-lib`** compiler options, and the [`/INFERASANLIBS` (Use inferred sanitizer libs)](./inferasanlibs.md) and **`/INFERASANLIBS:NO`** linker options offer support for advanced users. For more information, see [AddressSanitizer build and language reference](../../sanitizers/asan-building.md).
+The **`/fsanitize-address-use-after-return`** compiler option enables experimental support for detecting memory safety issues arising from using a variable that has left scope. This requires that the ASan runtime option `ASAN_OPTIONS=detect_stack_use_after_return=1` is also set and incurs an additional performance penalty. For more information, see [Error: stack-use-after-return](../../sanitizers/error-stack-use-after-return.md).
+
+The **`/fno-sanitize-address-vcasan-lib`**, **`/fsanitize-address-asan-compat-lib`**, and **`/fno-sanitize-address-asan-compat-lib`** compiler options, and the [`/INFERASANLIBS` (Use inferred sanitizer libs)](./inferasanlibs.md) and **`/INFERASANLIBS:NO`** linker options offer support for advanced users. For more information, see [AddressSanitizer build and language reference](../../sanitizers/asan-building.md).
 
 ### To set the **`/fsanitize=address`** compiler option in the Visual Studio development environment
 
