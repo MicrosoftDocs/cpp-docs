@@ -16,6 +16,8 @@ To enable one or more features the targeted ARM64 extension supports, specify on
 
 | Feature argument | Feature identifier | Optional from | Enabled by default | Description | Supported in version
 |--|--|--|--|--|--|
+|**`cssc`**  | `FEAT_CSSC` | Armv8.7 | Armv8.9 | Common Short Sequence Compression instructions. | Visual Studio 2026 18.10 (14.52)
+|**`faminmax`**  | `FEAT_FAMINMAX` | Armv9.2 | Armv9.5 | Floating-point maximum and minimum absolute value instructions. | Visual Studio 2026 18.10 (14.52)
 |**`lse`**   | `FEAT_LSE` | Armv8.0  | Armv8.1 | Large System Extensions. | Visual Studio 2022 17.10
 |**`rcpc`**  | `FEAT_LRCPC` | Armv8.2 | Armv8.3 | Load-Acquire RCpc instructions. | Visual Studio 2022 17.10
 |**`rcpc2`**  | `FEAT_LRCPC2` | Armv8.2 | Armv8.4 | Load-Acquire RCpc instructions v2. | Visual Studio 2022 17.11
