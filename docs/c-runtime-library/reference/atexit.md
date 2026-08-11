@@ -36,6 +36,8 @@ The **`atexit`** function is passed the address of a function *`func`* to be cal
 
 The code in the **`atexit`** function shouldn't contain any dependency on any DLL that could have already been unloaded when the **`atexit`** function is called.
 
+In the case when **`atexit`** is called from within a DLL, routines registered with **`atexit`** run when the DLL is unloaded, after `DllMain` is called with `DLL_PROCESS_DETACH`.
+
 To generate an ANSI-conformant application, use the ANSI-standard **`atexit`** function (rather than the similar **`_onexit`** function).
 
 ## Requirements
