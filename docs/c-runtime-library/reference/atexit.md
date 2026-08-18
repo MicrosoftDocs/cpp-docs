@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: atexit"
 title: "atexit"
-ms.date: "11/04/2016"
+ms.date: "8/18/2026"
 api_name: ["atexit"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
@@ -36,7 +36,7 @@ The **`atexit`** function is passed the address of a function *`func`* to be cal
 
 The code in the **`atexit`** function shouldn't contain any dependency on any DLL that could have already been unloaded when the **`atexit`** function is called.
 
-In the case when **`atexit`** is called from within a DLL, routines registered with **`atexit`** run when the DLL is unloaded, after `DllMain` is called with `DLL_PROCESS_DETACH`.
+**Microsoft-specific DLL behavior**: When a DLL unloads, after `DLLMain` receives `DLL_PROCESS_DETACH`, the DLL's `atexit` callbacks run in reverse registration order, with the last callback registered running first.
 
 To generate an ANSI-conformant application, use the ANSI-standard **`atexit`** function (rather than the similar **`_onexit`** function).
 
