@@ -197,6 +197,20 @@ cmake -G "Visual Studio 18 2026" -T "version=14.51" ..\
 cmake -G "Visual Studio 18 2026" -T "version=14.52" ..\
 ```
 
+### vcpkg
+
+Configure vcpkg with the [VCPKG_PLATFORM_TOOLSET_VERSION](https://learn.microsoft.com/en-us/vcpkg/users/triplets#vcpkg_platform_toolset_version) triplet. For example:
+
+```
+set(VCPKG_PLATFORM_TOOLSET_VERSION "14.50")
+```
+
+or
+
+```
+set(VCPKG_PLATFORM_TOOLSET_VERSION "14.51")
+```
+
 ### Visual Studio Command Prompt
 
 Some build systems need the command prompt to have the `PATH`, `LIB`, `INCLUDE`, and related environment variables set before you run them.
