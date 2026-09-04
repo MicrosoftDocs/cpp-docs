@@ -125,7 +125,7 @@ A traditional Windows desktop application uses several pieces of setup code befo
 | `WinMain` | Registers the window class, creates and displays the window, and runs the message loop. |
 | `WndProc` | Processes messages from Windows, such as requests to paint or close the window. |
 
-The excerpts that follow focus on one part of the program at a time. The [complete source](#build-the-code) combines the parts in the right order.
+The following excerpts focus on one part of the program at a time. The [complete source](#build-the-code) combines the parts in the right order.
 
 ### Where code starts running in a Windows desktop application
 
@@ -205,7 +205,7 @@ LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 
    For information about the fields of this structure, see [`WNDCLASSEX`](/windows/win32/api/winuser/ns-winuser-wndclassexw).
 
-1. Once you have the `WNDCLASSEX` structure filled out, you register it with Windows so that it knows about your window and how to send messages to it. Use the [`RegisterClassEx`](/windows/win32/api/winuser/nf-winuser-registerclassexw) function and pass the window class structure as an argument. The `_T` macro makes the string literal match the character type selected by `TCHAR`, as described in the preceding discussion about Unicode. The following code shows how to register the window class.
+1. Once you have the `WNDCLASSEX` structure filled out, register it with Windows so that it knows about your window and how to send messages to it. Use the [`RegisterClassEx`](/windows/win32/api/winuser/nf-winuser-registerclassexw) function and pass the window class structure as an argument. The `_T` macro makes the string literal match the character type selected by `TCHAR`, as described in the preceding discussion about Unicode. The following code shows how to register the window class.
 
    ```cpp
    if (!RegisterClassEx(&wcex))
