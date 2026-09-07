@@ -100,7 +100,7 @@ struct S3 {
    struct S1 s1;   // S3 inherits cache alignment requirement
                   // from S1 declaration
    int a;         // a is now cache aligned because of s1
-                  // 28 bytes of trailing padding
+                  // 16 bytes of trailing padding
 };
 ```
 
