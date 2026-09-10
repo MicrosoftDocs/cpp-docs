@@ -819,6 +819,8 @@ items:
                       href: ../build/reference/zc-char8-t.md
                     - name: "/Zc:checkGwOdr (Enforce Standard C++ ODR violations under /Gw)"
                       href: ../build/reference/zc-check-gwodr.md
+                    - name: "/Zc:cmath (Enable libc math)"
+                      href: ../build/reference/zc-cmath.md
                     - name: "/Zc:enumTypes (Enable enum type deduction)"
                       href: ../build/reference/zc-enumtypes.md
                     - name: '/Zc:externC (Use Standard C++ extern "C" rules)'
