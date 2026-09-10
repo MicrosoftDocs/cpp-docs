@@ -9,7 +9,7 @@ helpviewer_keywords: ["Clean Build option", "output files, setting directory", "
 
 This article applies to Visual Studio projects for Windows. For Linux projects, see [Linux C++ Property page reference](../../linux/prop-pages-linux.md). For CMake projects, see [CMake projects in Visual Studio](../cmake-projects-in-visual-studio.md). For Android projects, see [General project properties (Android C++)](../../cross-platform/general-android-prop-page.md). For Android Makefile projects, see [General project properties (Android C++ Makefile)](../../cross-platform/general-makefile-android-prop-page.md). In Visual Studio 2019, some properties for non-UWP (Windows Runtime or Universal Windows Platform) projects have moved to the [Advanced property page](./advanced-property-page.md).
 
-To open the Property Pages dialog for a project, select the project (not the solution) in Solution Explorer. Next, select the **Project** > **Project-name Properties** menu from the menu bar. Or, right-click on the project node in Solution Explorer and select **Properties** from the shortcut menu.
+To open the Property Pages dialog for a project, select the project (not the solution) in Solution Explorer. Next, select the **Project** > **Properties** menu from the menu bar. Or right-click the project node in Solution Explorer and select **Properties** in the shortcut menu.
 
 In the Property Pages dialog, the **Configuration Properties** > **General** property page displays project properties based on project type. These properties are gathered under one or two headings, depending on project type:
 
