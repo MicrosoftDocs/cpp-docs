@@ -40,10 +40,11 @@ The following symbols are defined for the values of their indicated expressions:
 | `M_SQRT2` | sqrt(2) | 1.41421356237309504880 |
 | `M_SQRT1_2` | 1/sqrt(2) | 0.707106781186547524401 |
 
-The math constants aren't defined in Standard C/C++. To use them, you must first define `_USE_MATH_DEFINES`, and then include `<cmath>` or `<math.h>`.
+Standard C and C++ don't define these math constants. To use them, define `_USE_MATH_DEFINES` and include `<cmath>` or `<math.h>`. If you use `/Zc:cmath`, `_USE_MATH_DEFINES` has no effect. Use the constants in the `<numerics>` header when possible. Otherwise, to use these math constants with `/Zc:cmath`, directly include `<corecrt_math_defines.h>`.
 
 The file `<ATLComTime.h>` includes `<math.h>` when your project is built in Release mode. If you use one or more of the math constants in a project that also includes `<ATLComTime.h>`, you must define `_USE_MATH_DEFINES` before you include `<ATLComTime.h>`.
 
 ## See also
 
-[Global constants](./global-constants.md)
+[Global constants](./global-constants.md)\
+[Zc:cmath](../build/reference/zc-cmath.md)
