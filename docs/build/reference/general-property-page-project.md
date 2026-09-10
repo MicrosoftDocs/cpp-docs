@@ -1,11 +1,11 @@
 ---
-description: "Learn more about: General Property Page (Project)"
-title: "General Property Page (Project)"
-ms.date: 05/28/2021
+description: Learn more about the General property page for projects.
+title: General Property Page (Project)
+ms.date: 09/10/2026
 f1_keywords: ["VC.Project.VCConfiguration.IntermediateDirectory", "VC.Project.VCConfiguration.ConfigurationType", "VC.Project.VCConfiguration.BuildBrowserInformation", "VC.Project.VCConfiguration.PlatformToolset", "VC.Project.VCConfiguration.TargetName", "VC.Project.VCConfiguration.", "VC.Project.VCConfiguration.ATLMinimizesCRunTimeLibraryUsage", "VC.Project.VCConfiguration.ReferencesPath", "VC.Project.VCGeneralMakefileSettings.ConfigurationType", "VC.Project.VCConfiguration.OutputDirectory", "VC.Project.VCConfiguration.AppSupport", "VC.Project.VCConfiguration.ToolFiles", "VC.Project.VCConfiguration.useOfATL", "VC.Project.VCConfiguration.DesktopCompatible"]
 helpviewer_keywords: ["Clean Build option", "output files, setting directory", "Unicode, creating C++ build configuration"]
 ---
-# General Property Page (Project)
+# General property page (project)
 
 This article applies to Visual Studio projects for Windows. For Linux projects, see [Linux C++ Property page reference](../../linux/prop-pages-linux.md). For CMake projects, see [CMake projects in Visual Studio](../cmake-projects-in-visual-studio.md). For Android projects, see [General project properties (Android C++)](../../cross-platform/general-android-prop-page.md). For Android Makefile projects, see [General project properties (Android C++ Makefile)](../../cross-platform/general-makefile-android-prop-page.md). In Visual Studio 2019, some properties for non-UWP (Windows Runtime or Universal Windows Platform) projects have moved to the [Advanced property page](./advanced-property-page.md).
 
