@@ -11,7 +11,7 @@ f1_keywords: ["VC.Project.VCConfiguration.TargetExt", "VC.Project.VCConfiguratio
 
 The Advanced property page is available in Visual Studio 2019 and later. To see the documentation for that version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019 or later. It's found at the top of the table of contents on this page. In earlier versions of Visual Studio, these properties appear on the [General property page](./general-property-page-project.md):
 
-- [Target Extension](./general-property-page-project.md#target-extension)
+- [Target File Extension](./general-property-page-project.md#target-file-extension)
 - [Extensions to Delete on Clean](./general-property-page-project.md#extensions-to-delete-on-clean)
 - [Build Log File](./general-property-page-project.md#build-log-file)
 - [Enable Managed Incremental Build](./general-property-page-project.md#enable-managed-incremental-build)
