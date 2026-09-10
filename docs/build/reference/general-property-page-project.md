@@ -7,7 +7,7 @@ helpviewer_keywords: ["Clean Build option", "output files, setting directory", "
 ---
 # General property page (project)
 
-This article applies to Visual Studio projects for Windows. For Linux projects, see [Linux C++ Property page reference](../../linux/prop-pages-linux.md). For CMake projects, see [CMake projects in Visual Studio](../cmake-projects-in-visual-studio.md). For Android projects, see [General project properties (Android C++)](../../cross-platform/general-android-prop-page.md). For Android Makefile projects, see [General project properties (Android C++ Makefile)](../../cross-platform/general-makefile-android-prop-page.md). In Visual Studio 2019, some properties for non-UWP (Windows Runtime or Universal Windows Platform) projects have moved to the [Advanced property page](./advanced-property-page.md).
+This article applies to Visual Studio projects for Windows. For Linux projects, see [Linux C++ Property page reference](../../linux/prop-pages-linux.md). For CMake projects, see [CMake projects in Visual Studio](../cmake-projects-in-visual-studio.md). For Android projects, see [General project properties (Android C++)](../../cross-platform/general-android-prop-page.md). For Android Makefile projects, see [General project properties (Android C++ Makefile)](../../cross-platform/general-makefile-android-prop-page.md). In Visual Studio 2019, some properties for non-UWP (Windows Runtime or Universal Windows Platform) projects moved to the [Advanced property page](./advanced-property-page.md).
 
 To open the Property Pages dialog for a project, select the project (not the solution) in Solution Explorer. Next, select the **Project** > **Properties** menu from the menu bar. Or right-click the project node in Solution Explorer and select **Properties** in the shortcut menu.
 
@@ -59,19 +59,19 @@ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCPro
 
 Specifies the file name this project generates. By default, this property is the filename specified by the macro `$(ProjectName)`.
 
-### Target Extension
+### Target File Extension
 
-Specifies the file extension this project generates, such as *`.exe`* or *`.dll`*. For some Visual Studio 2019 project types, this property has moved to the [Advanced property page](./advanced-property-page.md).
+Specifies the file extension this project generates, such as *`.exe`* or *`.dll`*. For some Visual Studio 2019 and later project types, this property is on the [Advanced property page](./advanced-property-page.md).
 
 ### Extensions to Delete on Clean
 
-The **Build** > **Clean** menu command deletes files from the intermediate directory where a project's configuration is built. The build system deletes files that have the specified extensions when you run the **Clean** command or when you rebuild. The build system also deletes any known output of the build no matter where it's located. Deleted files include any intermediate outputs such as *`.obj`* files. Use semicolons (**`;`**) to separate extensions. You can specify wildcard characters (**`*`**, **`?`**) in the extensions.
+The **Build** > **Clean** menu command deletes files from the intermediate directory where a project's configuration is built. The build system deletes files that have the specified extensions when you run the **Clean** command or when you rebuild. The build system also deletes any known output of the build no matter where it's located. Deleted files include any intermediate outputs, such as *`.obj`* files. Use semicolons (**`;`**) to separate extensions. You can specify wildcard characters (**`*`**, **`?`**) in the extensions.
 
-To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean%2A>. For some Visual Studio 2019 project types, this property has moved to the [Advanced property page](./advanced-property-page.md).
+To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean%2A>. For some Visual Studio 2019 and later project types, this property is on the [Advanced property page](./advanced-property-page.md).
 
 ### Build Log File
 
-Allows you to specify a non-default location for the log file that's created whenever you build a project. The default location is specified by the macro combination `$(IntDir)$(MSBuildProjectName).log`. For some Visual Studio 2019 project types, this property has moved to the [Advanced property page](./advanced-property-page.md).
+Allows you to specify a non-default location for the log file that's created whenever you build a project. The default location is specified by the macro combination `$(IntDir)$(MSBuildProjectName).log`. For some Visual Studio 2019 and later project types, this property is on the [Advanced property page](./advanced-property-page.md).
 
 You can use project macros to change the directory location. For more information, see [Common macros for build commands and properties](common-macros-for-build-commands-and-properties.md).
 
@@ -81,7 +81,7 @@ Specifies the toolset used for building the current configuration. This property
 
 ### Enable Managed Incremental Build
 
-For managed projects, this property enables detection of external visibility when you generate assemblies. If a change to a managed project isn't visible to other projects, then dependent projects don't get rebuilt. This option can dramatically improve build times in solutions that include managed projects. In Visual Studio 2019 projects, this property has moved to the [Advanced property page](./advanced-property-page.md).
+For managed projects, this property enables detection of external visibility when you generate assemblies. If a change to a managed project isn't visible to other projects, dependent projects don't get rebuilt. This option can dramatically improve build times in solutions that include managed projects. In Visual Studio 2019 and later projects, this property is on the [Advanced property page](./advanced-property-page.md).
 
 ::: moniker range=">=msvc-160"
 
@@ -155,29 +155,29 @@ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCPro
 
 ### Use of MFC
 
-Specifies whether the MFC project statically or dynamically links to the MFC DLL. Non-MFC projects select **Use Standard Windows Libraries**. In Visual Studio 2019 projects, this property has moved to the [Advanced property page](./advanced-property-page.md).
+Specifies whether the MFC project statically or dynamically links to the MFC DLL. Non-MFC projects select **Use Standard Windows Libraries**. In Visual Studio 2019 and later projects, this property is on the [Advanced property page](./advanced-property-page.md).
 
 To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.useOfMfc%2A>.
 
 ### Character Set
 
-Specifies whether the `_UNICODE` or `_MBCS` preprocessor macro should be set. Also affects the linker entry point, where appropriate. In Visual Studio 2019 projects, this property has moved to the [Advanced property page](./advanced-property-page.md).
+Specifies whether the `_UNICODE` or `_MBCS` preprocessor macro should be set. Also affects the linker entry point, where appropriate. In Visual Studio 2019 and later projects, this property is on the [Advanced property page](./advanced-property-page.md).
 
 To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.CharacterSet%2A>.
 
-### Common Language Runtime support
+### Common Language Runtime Support
 
-Causes the [`/clr`](clr-common-language-runtime-compilation.md) compiler option to be used. In Visual Studio 2019 projects, this property has moved to the [Advanced property page](./advanced-property-page.md).
+Causes the [`/clr`](clr-common-language-runtime-compilation.md) compiler option to be used. In Visual Studio 2019 and later projects, this property is on the [Advanced property page](./advanced-property-page.md).
 
 To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.ManagedExtensions%2A>.
 
 ### .NET Target Framework Version
 
-In managed projects, specifies the .NET framework version to target. In Visual Studio 2019 projects, this property has moved to the [Advanced property page](./advanced-property-page.md).
+In managed projects, specifies the .NET Framework version to target. In Visual Studio 2019 and later projects, this property is on the [Advanced property page](./advanced-property-page.md).
 
 ### Whole Program Optimization
 
-Specifies the [`/GL`](gl-whole-program-optimization.md) compiler option and [`/LTCG`](ltcg-link-time-code-generation.md) linker option. By default, this property is disabled for Debug configurations, and enabled for Release configurations. In Visual Studio 2019 projects, this property has moved to the [Advanced property page](./advanced-property-page.md).
+Specifies the [`/GL`](gl-whole-program-optimization.md) compiler option and [`/LTCG`](ltcg-link-time-code-generation.md) linker option. By default, this property is disabled for Debug configurations and enabled for Release configurations. In Visual Studio 2019 and later projects, this property is on the [Advanced property page](./advanced-property-page.md).
 
 ### Windows Store App Support
 
