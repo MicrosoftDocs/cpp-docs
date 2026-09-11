@@ -405,7 +405,7 @@ items:
               href: ../build/reference/property-pages-visual-cpp.md
             - name: General property page (project)
               href: ../build/reference/general-property-page-project.md
-            - name: General property page
+            - name: General property page (file)
               href: ../build/reference/general-property-page-file.md
             - name: Advanced property page
               href: ../build/reference/advanced-property-page.md
