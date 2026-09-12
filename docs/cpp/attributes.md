@@ -177,7 +177,7 @@ The Microsoft-specific attribute `[[msvc::flatten]]` is similar to `[[msvc::forc
 
 ### `[[msvc::forceinline]]`
 
-When placed before a function declaration, the Microsoft-specific attribute `[[msvc::forceinline]]` has the same meaning as `__forceinline`.
+When placed before a function declaration, the Microsoft-specific attribute `[[msvc::forceinline]]` behaves similarly to `__forceinline`, but preserves the creation of a symbol in the translation unit where the function is defined.
 
 ### `[[msvc::forceinline_calls]]`
 
