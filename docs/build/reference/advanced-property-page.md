@@ -1,11 +1,11 @@
 ---
-description: "Use the Advanced property page in Visual Studio 2019 to set various properties for C++ projects."
+description: "Use the Advanced property page in Visual Studio to set various properties for C++ projects."
 title: "Advanced Property Page (Project)"
-ms.date: 08/31/2022
+ms.date: 09/11/2026
 f1_keywords: ["VC.Project.VCConfiguration.TargetExt", "VC.Project.VCConfiguration.DeleteExtensionsOnClean", "VC.Project.VCConfiguration.BuildLogFile", "VC.Project.VCConfiguration.PreferredToolArchitecture", "VC.Project.VCConfiguration.UseDebugLibraries", "VC.Project.VCConfiguration.EnableUnitySupport", "VC.Project.VCConfiguration.CopyLocalDeploymentContent", "VC.Project.VCConfiguration.CopyLocalProjectReference", "VC.Project.VCConfiguration.CopyLocalDebugSymbols", "VC.Project.VCConfiguration.CopyCppRuntimeToOutputDir", "VC.Project.VCConfiguration.useOfMfc", "VC.Project.VCConfiguration.CharacterSet", "VC.Project.VCConfiguration.WholeProgramOptimization", "VC.Project.VCConfiguration.VCToolsVersion", "VC.Project.VCConfiguration.LLVMToolsVersion", "VC.Project.VCConfiguration.ManagedExtensions", "VC.Project.TargetFrameworkVersion", "VC.Project.VCConfiguration.EnableManagedIncrementalBuild", "VC.Project.VCConfiguration.ManagedAssembly"]
 ---
 
-# Advanced Property Page
+# Advanced property page
 
 ::: moniker range="<=msvc-150"
 
@@ -23,7 +23,7 @@ The Advanced property page is available in Visual Studio 2019 and later. To see 
 
 ::: moniker-end
 
-::: moniker range=">=msvc-160"
+::: moniker range="msvc-160 || msvc-170"
 
 The Advanced property page is available in Visual Studio 2019 and later. The specific properties shown depend on the project type. Windows Runtime (Universal Windows Platform, or UWP) projects don't show this page.
 
@@ -35,7 +35,7 @@ Specifies the file extension to use for the build output. Defaults to *`.exe`* f
 
 ### Extensions to Delete on Clean
 
-The **Build** > **Clean** menu command deletes files from the intermediate directory where a project's configuration is built. The build system deletes files that have the specified extensions when you run the **Clean** command or when you rebuild. The build system also deletes any known output of the build no matter where it's located. Deleted files include any intermediate outputs such as *`.obj`* files. Use semicolons (**`;`**) to separate extensions. You can specify wildcard characters (**`*`**, **`?`**) in the extensions.
+The **Build** > **Clean** menu command deletes files from the intermediate directory where a project's configuration is built. The build system deletes files that have the specified extensions when you run the **Clean** command or when you rebuild. The build system also deletes any known output of the build, no matter where it's located. Deleted files include any intermediate outputs such as *`.obj`* files. Use semicolons (**`;`**) to separate extensions. You can specify wildcard characters (**`*`**, **`?`**) in the extensions.
 
 To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean%2A>.
 
@@ -51,11 +51,11 @@ Specifies whether to use the x86 or x64 build tools.
 
 ### Use Debug Libraries
 
-Specifies whether to create a Debug or Release build. Despite the name, **Use Debug Libraries** is a build system-specific property that is effectively shorthand for "Make a Debug build" or "Make a Release build". It sets several compiler and linker properties for Debug or Release builds, including the library settings. You can use it to create Debug or Release configurations for a new platform or in a new template. We don't recommend you change this property in an existing configuration. Use the individual compiler and linker properties instead.
+Specifies whether to create a Debug or Release build. Despite the name, **Use Debug Libraries** is a build system-specific property that is effectively shorthand for "Make a Debug build" or "Make a Release build." It sets several compiler and linker properties for Debug or Release builds, including the library settings. You can use it to create Debug or Release configurations for a new platform or in a new template. We don't recommend you change this property in an existing configuration. Use the individual compiler and linker properties instead.
 
-### Enable Unity (JUMBO) build
+### Enable Unity (JUMBO) Build
 
-Enables a faster build process that combines many C++ source files into one or more files before compilation. These combined files are known as *unity* files. They're unrelated to the Unity game engine.
+Enables a faster build process that combines many C++ source files into one or more files before compilation.
 
 ### Copy Content to OutDir
 
@@ -63,7 +63,7 @@ Copy the items marked as *content* in the project to the project's output direct
 
 ### Copy Project References to OutDir
 
-Copy the executable (DLL and EXE file) project reference items to the project's output directory (`$(OutDir)`). In C++/CLI ([`/clr`](clr-common-language-runtime-compilation.md)) projects, this property is ignored. Instead, the **Copy Local** property on each project reference controls whether it's copied to the output directory. This setting can simplify local deployment. It's available starting in Visual Studio 2019 version 16.7.
+Copy the executable (DLL and EXE file) project reference items to the project's output directory (`$(OutDir)`). In C++/CLI ([`/clr`](clr-common-language-runtime-compilation.md)) projects, this property is ignored. Instead, the **Copy Local** property on each project reference controls whether the items are copied to the output directory. This setting can simplify local deployment. It's available starting in Visual Studio 2019 version 16.7.
 
 ### Copy Project References' Symbols to OutDir
 
@@ -71,7 +71,7 @@ Copy the PDB files for project reference items along with the project reference 
 
 ### Copy C++ Runtime to OutDir
 
-Copy the runtime DLLs to the project's output directory (`$(OutDir)`). This setting can simplify local deployment. It's available starting in Visual Studio 2019 version 16.7.
+Copy the C++ runtime DLLs to the project's output directory (`$(OutDir)`). This setting can simplify local deployment. It's available starting in Visual Studio 2019 version 16.7.
 
 ### Use of MFC
 
@@ -81,7 +81,7 @@ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCPro
 
 ### Character Set
 
-Specifies whether the `_UNICODE` or `_MBCS` preprocessor macro should be set. Also affects the linker entry point, where appropriate.
+Specifies whether the `_UNICODE` or `_MBCS` preprocessor macro should be set. Also affects the linker entry point, where appropriate. For `_UNICODE`, the expected code entry point is `wmain` or `wWinMain`. For `_MBCS`, the expected code entry point is `main` or `WinMain`.
 
 To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.CharacterSet%2A>.
 
@@ -103,7 +103,7 @@ Specifies whether to enable [structured SARIF output](sarif-output.md), which en
 
 ## C++/CLI Properties
 
-### Common Language Runtime support
+### Common Language Runtime Support
 
 Causes the [`/clr`](clr-common-language-runtime-compilation.md) compiler option to be used.
 
@@ -111,25 +111,133 @@ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCPro
 
 ### .NET Target Framework Version
 
-This property only applies when the **Common Language Runtime support** property is set to **.NET Framework Runtime Support**, that is the project targets [.NET Framework](/dotnet/standard/glossary#net-framework), and it specifies the version of the .NET Framework.
+This property only applies when the **Common Language Runtime Support** property is set to **.NET Framework Runtime Support**. That is, when the project targets [.NET Framework](/dotnet/standard/glossary#net-framework), and it specifies the version of the .NET Framework.
 
 ### .NET Target Framework
 
-This property only applies when the **Common Language Runtime support** property is set to **.NET Runtime Support**, that is the project targets [.NET](/dotnet/standard/glossary#net).
+This property only applies when the **Common Language Runtime Support** property is set to **.NET Runtime Support**. That is, when the project targets [.NET](/dotnet/standard/glossary#net).
 
 This property specifies the .NET 5+ Target Framework Moniker this project targets, for example `net6.0-windows` or `net7.0-windows8.0`.
 
 ### Enable Managed Incremental Build
 
-For managed projects, this option enables detection of external visibility when you generate assemblies. If a change to a managed project isn't visible to other projects, dependent projects aren't rebuilt. Managed incremental builds can dramatically improve build times in solutions that include managed projects.
+This property helps dramatically improve build times in large solutions by ensuring dependent projects aren't rebuilt if a change doesn't alter the parts of your code that other assemblies or projects can see and interact with.
 
 ### Enable CLR Support for Individual Files
 
-This option sets a `ManagedAssembly` build property that enables building only some files in the project as managed code. You must set **Enable CLR Support for Individual Files** to **Yes** if some but not all of your project files are built as managed code. This property is only available in projects that use the v143 or later toolset in Visual Studio 2022 and later versions.
+This option sets a `ManagedAssembly` build property that enables building only some files in the project as managed code. You must set **Enable CLR Support for Individual Files** to **Yes** if some but not all of your project files are built as managed code. This property is only available in projects that use Visual Studio 2022 or later and the v143 or later platform toolset.
 
 ### .NET Target Windows Version
 
-This property only applies when the **Common Language Runtime support** property is set to **.NET Runtime Support**, that is the project targets [.NET](/dotnet/standard/glossary#net).
+This property only applies when the **Common Language Runtime Support** property is set to **.NET Runtime Support**. That is, when the project targets [.NET](/dotnet/standard/glossary#net).
+
+This property specifies the minimum Windows version that the project supports. This value is used by NuGet to determine the compatibility of projects and NuGet package dependencies. If a project A depends on project B, project A's .NET target Windows version must be greater or equal to project B's.
+
+::: moniker-end
+
+::: moniker range="msvc-180"
+
+The Advanced property page is available in Visual Studio 2019 and later. The specific properties shown depend on the project type. Windows Runtime (Universal Windows Platform, or UWP) projects don't show this page.
+
+## Advanced Properties
+
+### Target File Extension
+
+Specifies the file extension to use for the build output. Defaults to *`.exe`* for applications, *`.lib`* for static libraries, and *`.dll`* for DLLs.
+
+### Extensions to Delete on Clean
+
+The **Build** > **Clean** menu command deletes files from the intermediate directory where a project's configuration is built. The build system deletes files that have the specified extensions when you run the **Clean** command or when you rebuild. The build system also deletes any known output of the build, no matter where it's located. Deleted files include any intermediate outputs such as *`.obj`* files. Use semicolons (**`;`**) to separate extensions. You can specify wildcard characters (**`*`**, **`?`**) in the extensions.
+
+To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean%2A>.
+
+### Build Log File
+
+Allows you to specify a non-default location for the log file that's created whenever you build a project. The default location is specified by the macros `$(IntDir)$(MSBuildProjectName).log`.
+
+You can use project macros to change the directory location. For more information, see [Common macros for build commands and properties](common-macros-for-build-commands-and-properties.md).
+
+### Preferred Build Tool Architecture
+
+Specifies whether to use the ARM64, x86, or x64 build tools.
+
+### Use Debug Libraries
+
+Specifies whether to create a Debug or Release build. Despite the name, **Use Debug Libraries** is a build system-specific property that is effectively shorthand for "Make a Debug build" or "Make a Release build." It sets several compiler and linker properties for Debug or Release builds, including the library settings. You can use it to create Debug or Release configurations for a new platform or in a new template. We don't recommend you change this property in an existing configuration. Use the individual compiler and linker properties instead.
+
+### Enable Unity (JUMBO) Build
+
+Enables a faster build process that combines many C++ source files into one or more files before compilation.
+
+### Copy Content to OutDir
+
+Copy the items marked as *content* in the project to the project's output directory (`$(OutDir)`). This setting can simplify deployment. This property is available starting in Visual Studio 2019 version 16.7.
+
+### Copy Project References to OutDir
+
+Copy the executable (DLL and EXE file) project reference items to the project's output directory (`$(OutDir)`). In C++/CLI ([`/clr`](clr-common-language-runtime-compilation.md)) projects, this property is ignored. Instead, the **Copy Local** property on each project reference controls whether the items are copied to the output directory. This setting can simplify local deployment. It's available starting in Visual Studio 2019 version 16.7.
+
+### Copy Project References' Symbols to OutDir
+
+Copy the PDB files for project reference items along with the project reference executable items to the project's output directory (`$(OutDir)`). This property is always enabled for C++/CLI projects. This setting can simplify debug deployment. It's available starting in Visual Studio 2019 version 16.7.
+
+### Copy C++ Runtime to OutDir
+
+Copy the C++ runtime DLLs to the project's output directory (`$(OutDir)`). This setting can simplify local deployment. It's available starting in Visual Studio 2019 version 16.7.
+
+### Use of MFC
+
+Specifies whether the MFC project statically or dynamically links to the MFC DLL. Non-MFC projects select **Use Standard Windows Libraries**.
+
+To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.useOfMfc%2A>.
+
+### Character Set
+
+Specifies whether the `_UNICODE` or `_MBCS` preprocessor macro should be set. Also affects the linker entry point, where appropriate.  For `_UNICODE`, the expected code entry point is `wmain` or `wWinMain`. For `_MBCS`, the expected code entry point is `main` or `WinMain`.
+
+To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.CharacterSet%2A>.
+
+### Whole Program Optimization
+
+Specifies the [`/GL`](gl-whole-program-optimization.md) compiler option and [`/LTCG`](ltcg-link-time-code-generation.md) linker option. By default, this property is disabled for Debug configurations, and enabled for Release configurations.
+
+### Use C++ Dynamic Debugging
+
+Specifies whether to use C++ Dynamic Debugging. Use this mode for debugging optimized code. If you enable this setting, Whole Program Optimization is turned off. For more information, see [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging).
+
+### Enable MSVC Structured Output
+
+Specifies whether to enable [structured SARIF output](sarif-output.md), which enables the [**Problem Details** window](/visualstudio/ide/reference/problem-details-window) and hierarchical output in the [**Output** window](/visualstudio/ide/reference/output-window) in Visual Studio.  
+
+## C++/CLI Properties
+
+### Common Language Runtime Support
+
+Causes the [`/clr`](clr-common-language-runtime-compilation.md) compiler option to be used.
+
+To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.ManagedExtensions%2A>.
+
+### .NET Target Framework Version
+
+This property only applies when the **Common Language Runtime Support** property is set to **.NET Framework Runtime Support**. That is, when the project targets [.NET Framework](/dotnet/standard/glossary#net-framework), and it specifies the version of the .NET Framework.
+
+### .NET Target Framework
+
+This property only applies when the **Common Language Runtime Support** property is set to **.NET Runtime Support**. That is, when the project targets [.NET](/dotnet/standard/glossary#net).
+
+This property specifies the .NET 5+ Target Framework Moniker this project targets, for example `net6.0-windows` or `net7.0-windows8.0`.
+
+### Enable Managed Incremental Build
+
+This property helps dramatically improve build times in large solutions by ensuring dependent projects aren't rebuilt if a change doesn't alter the parts of your code that other assemblies or projects can see and interact with.
+
+### Enable CLR Support for Individual Files
+
+This option sets a `ManagedAssembly` build property that enables building only some files in the project as managed code. You must set **Enable CLR Support for Individual Files** to **Yes** if some but not all of your project files are built as managed code. This property is only available in projects that use Visual Studio 2022 or later and the v143 or later platform toolset.
+
+### .NET Target Windows Version
+
+This property only applies when the **Common Language Runtime support** property is set to **.NET Runtime Support**. That is, when the project targets [.NET](/dotnet/standard/glossary#net).
 
 This property specifies the minimum Windows version that the project supports. This value is used by NuGet to determine the compatibility of projects and NuGet package dependencies. If a project A depends on project B, project A's .NET target Windows version must be greater or equal to project B's.
 
