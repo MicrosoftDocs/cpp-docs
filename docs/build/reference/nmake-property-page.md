@@ -28,6 +28,11 @@ The property page contains the following properties:
 
    Specifies the command to be run when **Clean** is selected on the **Build** menu.
 
+:::moniker range=">=msvc-170"
+- **Compile File Command Line**
+ 
+:::moniker-end
+
 - **Output**
 
    Specifies the name of the file that will contain the output for the command line. By default, this file name is based on the project name.
