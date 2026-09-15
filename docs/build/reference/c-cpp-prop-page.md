@@ -1,45 +1,52 @@
 ---
-title: "C/C++ Project Properties (Visual Studio)"
-description: "Reference guide to the Visual Studio Microsoft C/C++ project Property Pages properties."
-ms.date: 3/26/2026
+title: C/C++ Project Properties (Visual Studio)
+description: Reference guide to the Visual Studio C/C++ project Property Pages properties.
+ms.date: 09/14/2026
 ms.topic: "article"
+ai-usage: ai-assisted
 f1_keywords: ["VC.Project.VCCLCompilerTool.AdditionalModuleDirectories", "VC.Project.VCCLCompilerTool.ScanSourceForModuleDependencies"]
 ---
-# C/C++ Property Pages
+# C/C++ property pages
 
 The following property pages are found under **Project** > **Properties** > **Configuration Properties** > **C/C++**:
 
-## C/C++ General Properties
+## C/C++ General properties
 
 ### Additional Include Directories
 
-Specifies one or more directories to add to the include path. Separate directories with semi-colons ('`;`') if there's more than one. Sets the [`/I` (Additional include directories)](i-additional-include-directories.md) compiler option.
+Specifies one or more directories to add to the include path. Separate directories with semicolons (`;`) if there's more than one. Sets the [`/I` (Additional include directories)](i-additional-include-directories.md) compiler option.
 
 ### Additional #using Directories
 
-Specifies one or more directories to search to resolve names passed to a `#using` directive. Separate directories with semi-colons ('`;`') if there's more than one. Sets the [`/AI`](ai-specify-metadata-directories.md) compiler option.
+Specifies one or more directories to search to resolve names passed to a `#using` directive. Separate directories with semicolons (`;`) if you add more than one. Sets the [`/AI`](ai-specify-metadata-directories.md) compiler option.
 
 ### Additional BMI Directories
 
-Specifies one or more directories to search to resolve names passed to an `import` directive. Separate directories with semi-colons ('`;`') if there's more than one. Sets the **`/ifcSearchDir[path]`** compiler option.
+Specifies one or more directories to search to resolve names passed to an `import` directive. Separate directories with semicolons (`;`) if you add more than one. Sets the **`/ifcSearchDir[path]`** compiler option.
 
 ### Additional Module Dependencies
 
-Specifies one or more modules to use to resolve names passed to an `import` directive. Separate directories with semi-colons ('`;`') if there's more than one. Sets the [`/reference`](module-reference.md) compiler option.
+Specifies one or more modules to use to resolve names passed to an `import` directive. Separate directories with semicolons (`;`) if you add more than one. Sets the [`/reference`](module-reference.md) compiler option.
 
 ### Additional Header Unit Dependencies
 
-Specifies one or more header units to use to resolve names passed to an `import` header directive. Separate directories with semi-colons ('`;`') if there's more than one. Sets the [`/headerUnit`](headerunit.md) compiler option.
+Specifies one or more header units to use to resolve names passed to an `import` header directive. Separate directories with semicolons (`;`) if you add more than one. Sets the [`/headerUnit`](headerunit.md) compiler option.
 
 ### Scan Sources for Module Dependencies
 
-When set to **Yes**, the compiler scans all C++ sources, not just module interface and header unit sources, for module and header units dependencies. The build system builds the full dependencies graph, which ensures that all imported modules and header units are built before compiling the files that depend on them. When combined with **Translate Includes to Imports**, any header file that's specified in a [`header-units.json`](header-unit-json-reference.md) file in the same directory as the header file is compiled into a header unit.
+When this property is set to **Yes**, the compiler scans all C++ sources, not just module interface and header unit sources, for module and header units dependencies. The build system builds the full dependencies graph, which ensures that all imported modules and header units are built before compiling the files that depend on them. When **Scan Sources for Module Dependencies** and **Translate Includes to Imports** are both set to **Yes**, any header file that's specified in a [`header-units.json`](header-unit-json-reference.md) file in the same directory as the header file is compiled into a header unit.
 
+:::moniker range=">=msvc-170"
+Files that have the extension *`.ixx`*, and files that have their **File properties** > **C/C++** > **Advanced** > **Compile As** property set to **Compile as C++ Header Unit (/exportHeader)**, are always scanned.
+:::moniker-end
+
+:::moniker range="<msvc-170"
 Files that have the extension *`.ixx`*, and files that have their **File properties** > **C/C++** > **Compile As** property set to **Compile as C++ Header Unit (/exportHeader)**, are always scanned.
+:::moniker-end
 
 ### Translate Includes to Imports
 
-When set to **Yes**, the compiler treats a `#include` directive as an `import` directive if certain conditions are met: The header file is specified in a *`header-units.json`* file in the same directory, and a compiled header unit (an *`.ifc`* file) is available for the header file. Otherwise, the header file is treated as a normal `#include`. The *`header-units.json`* file is used to build header units for each `#include` without symbol duplication. When combined with **Scan Sources for Module Dependencies**, the compiler automatically finds all of the header files that can be compiled into header units. This property sets the [`/translateInclude`](translateinclude.md) compiler option.
+When this property is set to **Yes**, the compiler treats a `#include` directive as an `import` directive if certain conditions are met: The header file is specified in a *`header-units.json`* file in the same directory, and a compiled header unit (an *`.ifc`* file) is available for the header file. Otherwise, the header file is treated as a normal `#include`. The *`header-units.json`* file is used to build header units for each `#include` without symbol duplication. When **Translate Includes to Imports** and **Scan Sources for Module Dependencies** are both set to **Yes**, the compiler automatically finds all of the header files that can be compiled into header units. This property sets the [`/translateInclude`](translateinclude.md) compiler option.
 
 ### Debug Information Format
 
@@ -47,7 +54,7 @@ Specifies the type of debugging information generated by the compiler.  This pro
 
 #### Choices
 
-- **None** (`None`) - Produces no debugging information, so compilation may be faster.
+- **None** (`None`) - Produces no debugging information, so compilation might be faster.
 - **C7 compatible** (`OldStyle`) - Produces object files that contain full symbolic debugging information. No PDB file is produced.
 - **Program Database** (`ProgramDatabase`) - Produces a program database (PDB) that contains type information and symbolic debugging information for use with the debugger. The symbolic debugging information includes the names and types of variables and functions, and line numbers.
 - **Program Database for Edit And Continue** (`EditAndContinue`) - Produces a program database, as described previously, in a format that supports the [Edit and Continue](/visualstudio/debugger/edit-and-continue) feature.
@@ -62,18 +69,18 @@ Adds supporting code for enabling [Just My Code](/visualstudio/debugger/just-my-
 
 ### Common Language RunTime Support
 
-Use the .NET runtime service.  This switch is incompatible with some other switches; see the documentation on the [`/clr`](clr-common-language-runtime-compilation.md) family of switches for details.
+Use the .NET runtime service. This switch is incompatible with some other switches. See the documentation on the [`/clr`](clr-common-language-runtime-compilation.md) family of switches for details.
 
 #### Choices
 
-- **No Common Language RunTime Support** - No Common Language RunTime Support
+- **No Common Language RunTime Support** - No Common Language Runtime Support.
 - **Common Language RunTime Support** - Creates metadata for your application that can be consumed by other CLR applications. Also allows your application to consume types and data in the metadata of other CLR components.
 - **Pure MSIL Common Language RunTime Support** - Produces an [MSIL](/dotnet/standard/managed-code)-only output file with no native executable code, although it can contain native types compiled to MSIL.
 - **Safe MSIL Common Language RunTime Support** - Produces an MSIL-only (no native executable code) and verifiable output file.
 
 ### Consume Windows Runtime Extension
 
-Consume the Windows Run Time languages extensions. Sets [`/ZW`](zw-windows-runtime-compilation.md).
+Consume the Windows Runtime Language Extensions. Sets [`/ZW`](zw-windows-runtime-compilation.md).
 
 ### Suppress Startup Banner
 
@@ -89,12 +96,12 @@ Select how strict you want the compiler to be about code errors. Sets [`/W0` - `
 - **Level1** - Level 1 displays severe warnings. Level 1 is the default warning level at the command line.
 - **Level2** - Level 2 displays all level 1 warnings and warnings less severe than level 1.
 - **Level3** - Level 3 displays all level 2 warnings and all other warnings recommended for production purposes.
-- **Level4** - Level 4 displays all level 3 warnings plus informational warnings, which in most cases can be safely ignored.
+- **Level4** - Level 4 displays all level 3 warnings and informational warnings, which in most cases can be safely ignored.
 - **EnableAllWarnings** - Enables all warnings, including the ones disabled by default.
 
 ### Treat Warnings As Errors
 
-Treats compiler warnings as errors. For a new project, it may be best to use [`/WX`](wx-treat-linker-warnings-as-errors.md) in every compilation. Resolve all warnings to minimize hard-to-find code defects.
+Treats compiler warnings as errors. For a new project, it might be best to use [`/WX`](wx-treat-linker-warnings-as-errors.md) in every compilation. Resolve all warnings to minimize hard-to-find code defects.
 
 ### Warning Version
 
@@ -106,13 +113,13 @@ Enables rich diagnostics, with column information and source context in diagnost
 
 #### Choices
 
-- **Caret** - Provides column information in the diagnostic message. And, outputs the relevant line of source code with a caret that indicates the offending column.
+- **Caret** - Provides column information in the diagnostic message. Also outputs the relevant line of source code with a caret that indicates the offending column.
 - **Column Info** - Additionally provides the column number within the line where the diagnostic is issued, where applicable.
 - **Classic** - Outputs only the prior, concise diagnostic messages with the line number.
 
 ### SDL checks
 
-Additional Security Development Lifecycle (SDL) recommended checks; includes enabling additional secure code generation features and enables extra security-relevant warnings as errors. Sets [`/sdl`, `/sdl-`](sdl-enable-additional-security-checks.md).
+Additional Security Development Lifecycle (SDL)-recommended checks. Includes enabling additional secure code generation features and enables extra security-relevant warnings as errors. Sets [`/sdl`, `/sdl-`](sdl-enable-additional-security-checks.md).
 
 ### Multi-processor Compilation
 
@@ -126,19 +133,19 @@ Compiles and links the program with AddressSanitizer instrumentation. This prope
 
 Compiles programs with the Fuzzer. Enable AddressSanitizer for best results. Currently available for x86 and x64 builds. Sets [`/fsanitize=fuzzer`](fsanitize.md).
 
-## C/C++ Optimization Properties
+## C/C++ Optimization properties
 
 ### Optimization
 
-Select option for code optimization; choose Custom to use specific optimization options. Sets [`/Od`](od-disable-debug.md), [`/O1`, `/O2`](o-options-optimize-code.md).
+Select an option for code optimization. Select **Custom** to use specific optimization options. Sets [`/Od`](od-disable-debug.md), [`/O1`, `/O2`](o-options-optimize-code.md).
 
 #### Choices
 
 - **Custom** - Custom optimization.
 - **Disabled** - Disable optimization.
-- **Maximum Optimization (Favor Size)** - Equivalent to **`/Os /Oy /Ob2 /Gs /GF /Gy`**
-- **Maximum Optimization (Favor Speed)** - Equivalent to **`/Oi /Ot /Oy /Ob2 /Gs /GF /Gy`**
-- **Optimizations (Favor Speed)** - Equivalent to **`/Oi /Ot /Oy /Ob2`**
+- **Maximum Optimization (Favor Size)** - Equivalent to **`/Os /Oy /Ob2 /Gs /GF /Gy`**.
+- **Maximum Optimization (Favor Speed)** - Equivalent to **`/Oi /Ot /Oy /Ob2 /Gs /GF /Gy`**.
+- **Optimizations (Favor Speed)** - Equivalent to **`/Oi /Ot /Oy /Ob2`**.
 
 ### Inline Function Expansion
 
@@ -149,20 +156,20 @@ Select the level of [inline function](../../cpp/inline-functions-cpp.md) expansi
 - **Default**
 - **Disabled** - Disables inline expansion, which is on by default.
 - **Only __inline** - Expands only functions marked as **`inline`**, **`__forceinline`**, or **`__inline`**. Or, in a C++ member function, defined within a class declaration.
-- **Any Suitable** - Expands functions marked as **`inline`** or **`__inline`** and any other function that the compiler chooses. (Expansion occurs at the compiler's discretion, often referred to as *autoinlining*.)
+- **Any Suitable** - Expands functions marked as **`inline`** or **`__inline`** and any other function that the compiler chooses. (Expansion occurs at the compiler's discretion. This compiler-selected expansion is often referred to as *autoinlining*.)
 
 ### Enable Intrinsic Functions
 
-Enables intrinsic functions.  Using intrinsic functions generates faster, but possibly larger, code. Sets [`/Oi`](oi-generate-intrinsic-functions.md).
+Enables intrinsic functions.  Using intrinsic functions generates faster but possibly larger code. Sets [`/Oi`](oi-generate-intrinsic-functions.md).
 
 ### Favor Size Or Speed
 
-Whether to favor code size or code speed; 'Global Optimization' must be turned on. Sets [`/Ot`, `/Os`](os-ot-favor-small-code-favor-fast-code.md).
+Whether to favor code size or code speed. `Global Optimization` must be turned on. Sets [`/Ot`, `/Os`](os-ot-favor-small-code-favor-fast-code.md).
 
 #### Choices
 
 - **Favor small code** - Minimizes the size of EXEs and DLLs by instructing the compiler to favor size over speed.
-- **Favor fast code** - Maximizes the speed of EXEs and DLLs by instructing the compiler to favor speed over size. (This value is the default.)
+- **Favor fast code** - Maximizes the speed of EXEs and DLLs by instructing the compiler to favor speed over size. (This value is the default when optimizations are enabled.)
 - **Neither** - No size and speed optimization.
 
 ### Omit Frame Pointers
@@ -171,13 +178,13 @@ Suppresses creation of frame pointers on the call stack.
 
 ### Enable Fiber-Safe Optimizations
 
-Enables memory space optimization when using fibers and thread local storage access. Sets [`/GT`](gt-support-fiber-safe-thread-local-storage.md).
+Enables fiber-safe optimizations for applications that use fibers to access thread-local storage. Sets [`/GT`](gt-support-fiber-safe-thread-local-storage.md).
 
 ### Whole Program Optimization
 
 Enables cross-module optimizations by delaying code generation to link time. Requires the linker option **Link Time Code Generation**. Sets [`/GL`](gl-whole-program-optimization.md).
 
-## C/C++ Preprocessor Properties
+## C/C++ Preprocessor properties
 
 ### Preprocessor Definitions
 
@@ -189,7 +196,7 @@ Specifies one or more preprocessor undefines. Sets [`/U`](u-u-undefine-symbols.m
 
 ### Undefine All Preprocessor Definitions
 
-Undefine all previously defined preprocessor values. Sets [`/u`](u-u-undefine-symbols.md).
+Undefines all previously defined preprocessor values. Sets [`/u`](u-u-undefine-symbols.md).
 
 ### Ignore Standard Include Paths
 
@@ -205,21 +212,23 @@ Preprocess without #line directives.
 
 ### Keep Comments
 
-Suppresses comment strip from source code; requires setting at least one of the **Preprocessing** options. Sets [`/C`](c-preserve-comments-during-preprocessing.md).
+Enable this option to preserve C and C++ source comments (// and /* ... */) in `.i` files and other preprocessor output. The preprocessor removes comments by default.
+
+Requires setting at least one of the **Preprocessing** options. Sets [`/C`](c-preserve-comments-during-preprocessing.md).
 
 ### Use Standard Conforming Preprocessor
 
-Use a standard conforming preprocessor ([`/Zc:preprocessor`](zc-preprocessor.md)). Currently implied by [`/std:c11`](std-specify-language-standard-version.md) and later versions. To use legacy preprocessor set this property to 'No'.
+Use a standard conforming preprocessor ([`/Zc:preprocessor`](zc-preprocessor.md)). Currently implied by [`/std:c11`](std-specify-language-standard-version.md) and later versions. To use the legacy preprocessor, set this property to **No**.
 
-## C/C++ Code Generation Properties
+## C/C++ Code Generation properties
 
 ### Enable String Pooling
 
-The compiler creates only one read-only copy of identical strings in the program image. It results in smaller programs, an optimization called *string pooling*. [`/O1`, `/O2`](o-options-optimize-code.md), and [`/ZI`](z7-zi-zi-debug-information-format.md) automatically set [`/GF`](gf-eliminate-duplicate-strings.md) option.
+Enable this property to enable string pooling, which combines identical strings into one read-only copy in the compiled program. This can result in smaller programs. [`/O1`, `/O2`](o-options-optimize-code.md), and [`/ZI`](z7-zi-zi-debug-information-format.md) automatically set the [`/GF`](gf-eliminate-duplicate-strings.md) option.
 
 ### Enable Minimal Rebuild
 
-Enables minimal rebuild, which determines whether to recompile C++ source files that include changed C++ class definitions, stored in header *`.h`* files.
+Enables minimal rebuild, which determines whether to recompile C++ source files that include header (.h) files containing changed C++ class definitions.
 
 ### Enable C++ Exceptions
 
@@ -228,39 +237,40 @@ Specifies the model of exception handling to be used by the compiler.
 #### Choices
 
 - **Yes with SEH Exceptions** - The exception-handling model that catches asynchronous (structured) and synchronous (C++) exceptions. Sets [`/EHa`](eh-exception-handling-model.md).
-- **Yes** - The exception-handling model that catches C++ exceptions only and tells the compiler to assume that extern C functions never throw a C++ exception. Sets [`/EHsc`](eh-exception-handling-model.md).
-- **Yes with Extern C functions** - The exception-handling model that catches C++ exceptions only and tells the compiler to assume that extern C functions do throw an exception. Sets [`/EHs`](eh-exception-handling-model.md).
+- **Yes** - The exception-handling model that catches C++ exceptions only and configures the compiler to assume that `extern "C"` functions never throw a C++ exception. Sets [`/EHsc`](eh-exception-handling-model.md).
+- **Yes with Extern C functions** - The exception-handling model that catches C++ exceptions only and configures the compiler to assume that `extern "C"` functions do throw an exception. Sets [`/EHs`](eh-exception-handling-model.md).
 - **No** - No exception handling.
 
 ### Smaller Type Check
 
-Enable checking for conversion to smaller types, incompatible with any optimization type other than debug. Sets [`/RTCc`](rtc-run-time-error-checks.md).
+Enables checking for conversion to smaller types. Incompatible with any optimization type other than debug. Sets [`/RTCc`](rtc-run-time-error-checks.md).
 
 ### Basic Runtime Checks
 
-Enable basic runtime error checks, incompatible with any optimization type other than debug. Sets [`/RTCs`, `/RTCu`, `/RTC1`](rtc-run-time-error-checks.md).
+Enables basic runtime error checks. Incompatible with any optimization type other than debug. Sets [`/RTCs`, `/RTCu`, `/RTC1`](rtc-run-time-error-checks.md).
 
 #### Choices
 
-- **Stack Frames** - Enables stack frame run-time error checking.
+- **Stack Frames** - Enables stack frame runtime error checking.
 - **Uninitialized variables** - Reports when a variable is used without having been initialized.
 - **Both (/RTC1, equiv. to /RTCsu)** - Equivalent of **`/RTCsu`**.
 - **Default** - Default runtime checks.
 
 ### Runtime Library
 
-Specify runtime library for linking. Sets [`/MT`, `/MTd`, `/MD`, `/MDd`](md-mt-ld-use-run-time-library.md).
+Specifies a runtime library for linking. Sets [`/MT`, `/MTd`, `/MD`, `/MDd`](md-mt-ld-use-run-time-library.md).
 
 #### Choices
 
-- **Multi-threaded** - Causes your application to use the multithread, static version of the run-time library.
-- **Multi-threaded Debug** - Defines `_DEBUG` and `_MT`. This option also causes the compiler to place the library name *`LIBCMTD.lib`* into the *`.obj`* file so that the linker will use *`LIBCMTD.lib`* to resolve external symbols.
-- **Multi-threaded DLL** - Causes your application to use the multithread- and DLL-specific version of the run-time library. Defines `_MT` and `_DLL` and causes the compiler to place the library name *MSVCRT.lib* into the *`.obj`* file.
-- **Multi-threaded Debug DLL** - Defines `_DEBUG`, `_MT`, and `_DLL` and causes your application to use the debug multithread- and DLL-specific version of the run-time library. It also causes the compiler to place the library name *`MSVCRTD.lib`* into the *`.obj`* file.
+- **Multi-threaded** - Causes your application to use the multithreaded, static version of the runtime library.
+- **Multi-threaded Debug** - Defines `_DEBUG` and `_MT`. This option also causes the compiler to place the library name *LIBCMTD.lib* into the *`.obj`* file so that the linker uses *`LIBCMTD.lib`* to resolve external symbols.
+- **Multi-threaded DLL** - Causes your application to use the DLL-specific, multithreaded version of the runtime library. Defines `_MT` and `_DLL` and causes the compiler to place the library name *MSVCRT.lib* into the *`.obj`* file.
+- **Multi-threaded Debug DLL** - Defines `_DEBUG`, `_MT`, and `_DLL` and causes your application to use the debug, DLL-specific, multithreaded version of the runtime library. It also causes the compiler to place the library name *MSVCRTD.lib* into the *`.obj`* file.
 
 ### Struct Member Alignment
 
-Specifies 1, 2, 4, or 8-byte boundaries for struct member alignment. Sets [`/Zp`](zp-struct-member-alignment.md).
+:::moniker range=">=msvc-170"
+Specifies 1, 2, 4, 8, or 16-byte boundaries for struct member alignment. Sets [`/Zp`](zp-struct-member-alignment.md).
 
 #### Choices
 
@@ -270,23 +280,36 @@ Specifies 1, 2, 4, or 8-byte boundaries for struct member alignment. Sets [`/Zp`
 - **8 Bytes** - Packs structures on eight-byte boundaries (default).
 - **16 Bytes** - Packs structures on sixteen-byte boundaries.
 - **Default** - Default alignment settings.
+:::moniker-end
+
+:::moniker range="<msvc-170"
+Specifies 1, 2, 4, or 8-byte boundaries for struct member alignment. Sets [`/Zp`](zp-struct-member-alignment.md).
+
+#### Choices
+
+- **1 Byte** - Packs structures on one-byte boundaries. Same as **`/Zp`**.
+- **2 Bytes** - Packs structures on two-byte boundaries.
+- **4 Bytes** - Packs structures on four-byte boundaries.
+- **8 Bytes** - Packs structures on eight-byte boundaries (default).
+- **Default** - Default alignment settings.
+:::moniker-end
 
 ### Security Check
 
-The Security Check helps detect stack-buffer over-runs, a common attempted attack upon a program's security.
+Helps detect stack-buffer overruns, which attackers can exploit to compromise your application.
 
 #### Choices
 
-- **Disable Security Check** - Disable Security Check. Sets [`/GS-`](gs-buffer-security-check.md).
-- **Enable Security Check** - Enable Security Check. Sets [`/GS`](gs-buffer-security-check.md).
+- **Disable Security Check** - Sets [`/GS-`](gs-buffer-security-check.md).
+- **Enable Security Check** - Sets [`/GS`](gs-buffer-security-check.md).
 
 ### Control Flow Guard
 
-Guard security check helps detect attempts to dispatch to illegal block of code.
+Helps detect attempts to dispatch to illegal blocks of code.
 
 #### Choices
 
-- **Yes** - Enable Security Check with Guard Sets [`/guard:cf`](guard-enable-control-flow-guard.md).
+- **Yes** - Enable Control Flow Guard. Sets [`/guard:cf`](guard-enable-control-flow-guard.md).
 - **No**
 
 ### Enable Function-Level Linking
@@ -299,8 +322,62 @@ Allows the compiler to generate parallel code for loops identified using `#pragm
 
 ### Enable Enhanced Instruction Set
 
-Enable use of instructions found on processors that support enhanced instruction sets. For example, the SSE, SSE2, AVX, and AVX2 enhancements to IA-32. And, the AVX and AVX2 enhancements to x64. Currently **`/arch:SSE`** and **`/arch:SSE2`** are only available when building for the x86 architecture. If no option is specified, the compiler uses instructions found on processors that support SSE2. Use of enhanced instructions can be disabled with **`/arch:IA32`**. For more information, see [`/arch (x86)`](arch-x86.md), [`/arch (x64)`](arch-x64.md), [`/arch (ARM64)`](arch-arm64.md), and [`/arch (ARM)`](arch-arm.md).
+:::moniker range="msvc-180"
+Enable use of instructions found on processors that support enhanced instruction sets. For example, the SSE, SSE2, AVX, and AVX2 enhancements to IA-32, and the AVX and AVX2 enhancements to x64. **`/arch:SSE`** is available only for x86 builds. **`/arch:SSE2`** is available for x86 and x64 builds and is the default for both architectures. Use of enhanced instructions can be disabled with **`/arch:IA32`**. For more information, see [`/arch (x86)`](arch-x86.md), [`/arch (x64)`](arch-x64.md), [`/arch (ARM64)`](arch-arm64.md), and [`/arch (ARM)`](arch-arm.md).
 
+#### Choices
+
+- **Streaming SIMD Extensions (X86)** - Enables Streaming SIMD Extensions. Sets **`/arch:SSE`**.
+- **Streaming SIMD Extensions 2 (X86)** - Enables Streaming SIMD Extensions 2. Sets **`/arch:SSE2`**.
+- **Advanced Vector Extensions (X86/X64)** - Enables Advanced Vector Extensions. Sets **`/arch:AVX`**.
+- **Advanced Vector Extensions 2 (X86/X64)** - Enables Advanced Vector Extensions 2. Sets **`/arch:AVX2`**.
+- **Advanced Vector Extensions 512 (X86/X64)** - Enables Advanced Vector Extensions 512. Sets **`/arch:AVX512`**.
+- **Advanced Vector Extensions AVX10.1 (X86/X64)** - Enables Advanced Vector Extensions 10 version 1. Sets **`/arch:AVX10.1`**.
+- **Advanced Vector Extensions AVX10.2 (X86/X64)** - Enables Advanced Vector Extensions 10 version 2. Sets **`/arch:AVX10.2`**.
+- **Virtualization Extensions (ARM)**. Enables ARM virtualization extensions. Sets  **`/arch:ARMv7VE`**.
+- **ARM VFPv4 instructions (ARM)**. Enables ARM VFPv4 instructions. Sets  **`/arch:VFPv4`**.
+- **CPU extension requirements ARMv8.0-A (ARM64)**. Enables ARMv8.0-A requirements. Sets **`/arch:arm8.0`**.
+- **CPU extension requirements ARMv8.1-A (ARM64)**. Enables ARMv8.1-A requirements. Sets **`/arch:arm8.1`**.
+- **CPU extension requirements ARMv8.2-A (ARM64)**. Enables ARMv8.2-A requirements. Sets **`/arch:arm8.2`**.
+- **CPU extension requirements ARMv8.3-A (ARM64)**. Enables ARMv8.3-A requirements. Sets **`/arch:arm8.3`**.
+- **CPU extension requirements ARMv8.4-A (ARM64)**. Enables ARMv8.4-A requirements. Sets **`/arch:arm8.4`**.
+- **CPU extension requirements ARMv8.5-A (ARM64)**. Enables ARMv8.5-A requirements. Sets **`/arch:arm8.5`**.
+- **CPU extension requirements ARMv8.6-A (ARM64)**. Enables ARMv8.6-A requirements. Sets **`/arch:arm8.6`**.
+- **CPU extension requirements ARMv8.7-A (ARM64)**. Enables ARMv8.7-A requirements. Sets **`/arch:arm8.7`**.
+- **CPU extension requirements ARMv8.8-A (ARM64)**. Enables ARMv8.8-A requirements. Sets **`/arch:arm8.8`**.
+- **No Enhanced Instructions** - Disables enhanced instructions for x86 builds. Sets **`/arch:IA32`**.
+- **Not Set** - Doesn't explicitly set an **`/arch`** option.
+:::moniker-end
+
+:::moniker range="<=msvc-170"
+Enable use of instructions found on processors that support enhanced instruction sets. For example, the SSE, SSE2, AVX, and AVX2 enhancements to IA-32, and the AVX and AVX2 enhancements to x64. Currently **`/arch:SSE`** and **`/arch:SSE2`** are only available when building for the x86 architecture. If no option is specified, the compiler uses instructions found on processors that support SSE2. Use of enhanced instructions can be disabled with **`/arch:IA32`**. For more information, see [`/arch (x86)`](arch-x86.md), [`/arch (x64)`](arch-x64.md), [`/arch (ARM64)`](arch-arm64.md), and [`/arch (ARM)`](arch-arm.md).
+:::moniker-end
+
+:::moniker range="msvc-170"
+#### Choices
+
+- **Streaming SIMD Extensions (X86)** - Enables Streaming SIMD Extensions. Sets **`/arch:SSE`**.
+- **Streaming SIMD Extensions 2 (X86)** - Enables Streaming SIMD Extensions 2. Sets **`/arch:SSE2`**.
+- **Advanced Vector Extensions (X86/X64)** - Enables Advanced Vector Extensions. Sets **`/arch:AVX`**.
+- **Advanced Vector Extensions 2 (X86/X64)** - Enables Advanced Vector Extensions 2. Sets **`/arch:AVX2`**.
+- **Advanced Vector Extensions 512 (X86/X64)** - Enables Advanced Vector Extensions 512. Sets **`/arch:AVX512`**.
+- **Advanced Vector Extensions AVX10.1 (X86/X64)** - Enables Advanced Vector Extensions 10 version 1. Sets **`/arch:AVX10.1`**.
+- **Virtualization Extensions (ARM)**. Enables ARM virtualization extensions. Sets  **`/arch:ARMv7VE`**.
+- **ARM VFPv4 instructions (ARM)**. Enables ARM VFPv4 instructions. Sets  **`/arch:VFPv4`**.
+- **CPU extension requirements ARMv8.0-A (ARM64)**. Enables ARMv8.0-A requirements. Sets **`/arch:arm8.0`**.
+- **CPU extension requirements ARMv8.1-A (ARM64)**. Enables ARMv8.1-A requirements. Sets **`/arch:arm8.1`**.
+- **CPU extension requirements ARMv8.2-A (ARM64)**. Enables ARMv8.2-A requirements. Sets **`/arch:arm8.2`**.
+- **CPU extension requirements ARMv8.3-A (ARM64)**. Enables ARMv8.3-A requirements. Sets **`/arch:arm8.3`**.
+- **CPU extension requirements ARMv8.4-A (ARM64)**. Enables ARMv8.4-A requirements. Sets **`/arch:arm8.4`**.
+- **CPU extension requirements ARMv8.5-A (ARM64)**. Enables ARMv8.5-A requirements. Sets **`/arch:arm8.5`**.
+- **CPU extension requirements ARMv8.6-A (ARM64)**. Enables ARMv8.6-A requirements. Sets **`/arch:arm8.6`**.
+- **CPU extension requirements ARMv8.7-A (ARM64)**. Enables ARMv8.7-A requirements. Sets **`/arch:arm8.7`**.
+- **CPU extension requirements ARMv8.8-A (ARM64)**. Enables ARMv8.8-A requirements. Sets **`/arch:arm8.8`**.
+- **No Enhanced Instructions** - Disables enhanced instructions for x86 builds. Sets **`/arch:IA32`**.
+- **Not Set** - Doesn't explicitly set an **`/arch`** option.
+:::moniker-end
+
+:::moniker range="<msvc-170"
 #### Choices
 
 - **Streaming SIMD Extensions** - Streaming SIMD Extensions. Sets  **`/arch:SSE`**
@@ -309,6 +386,7 @@ Enable use of instructions found on processors that support enhanced instruction
 - **Advanced Vector Extensions 2** - Advanced Vector Extensions 2. Sets  **`/arch:AVX2`**
 - **No Enhanced Instructions** - No Enhanced Instructions. Sets  **`/arch:IA32`**
 - **Not Set** - Not Set.
+:::moniker-end
 
 ### Enable Vector Length
 
@@ -321,7 +399,7 @@ Sets the floating point model. Sets [`/fp:precise`, `/fp:strict`, `/fp:fast`](fp
 #### Choices
 
 - **Precise** - Default. Improves the consistency of floating-point tests for equality and inequality.
-- **Strict** - The strictest floating-point model. **`/fp:strict`** causes **`fp_contract`** to be OFF and **`fenv_access`** to be ON. **`/fp:except`** is implied and can be disabled by explicitly specifying **`/fp:except-`**. When used with **`/fp:except-`**, **`/fp:strict`** enforces strict floating-point semantics but without respect for exceptional events.
+- **Strict** - The strictest floating-point model. **`/fp:strict`** causes **`fp_contract`** to be off and **`fenv_access`** to be on. **`/fp:except`** is implied and can be disabled by explicitly specifying **`/fp:except-`**. When used with **`/fp:except-`**, **`/fp:strict`** enforces strict floating-point semantics but without respect for exceptional events.
 - **Fast** - Creates the fastest code in most cases.
 
 ### Enable Floating Point Exceptions
@@ -332,14 +410,29 @@ Reliable floating-point exception model. Exceptions will be raised immediately a
 
 When hotpatching is on, the compiler ensures that first instruction of each function is two bytes, as required for hot patching. Sets [`/hotpatch`](hotpatch-create-hotpatchable-image.md).
 
+:::moniker range=">=msvc-170"
 ### Spectre Mitigation
 
 Spectre mitigations for CVE 2017-5753. Sets [`/Qspectre`](qspectre.md).
 
 #### Choices
 
-- **Enabled** - Enable Spectre mitigation feature for CVE 2017-5753
-- **Disabled** - Not Set.
+- **Enabled** - Enable Spectre mitigation for CVE 2017-5753.
+- **All Loads** - Enable Spectre mitigation on all loads.
+- **All Control Flow Loads** - Enable Spectre mitigation on control flow loads.
+- **Disabled** - Not set.
+:::moniker-end
+
+:::moniker range="<msvc-170"
+### Spectre Mitigation
+
+Spectre mitigations for CVE 2017-5753. Sets [`/Qspectre`](qspectre.md).
+
+#### Choices
+
+- **Enabled** - Enable Spectre mitigation for CVE 2017-5753.
+- **Disabled** - Not set.
+:::moniker-end
 
 ### Enable Intel JCC Erratum Mitigation
 
@@ -351,9 +444,9 @@ Generates a sorted list of all the valid exception handling continuation targets
 
 ### Enable Signed Returns
 
-Enables signed returns which help detect and prevent attempts to dispatch to illegal blocks from function returns. Currently available for ARM64 builds. Sets `/guard:signret`.
+Enables signed returns, which help detect and prevent attempts to dispatch to illegal blocks from function returns. Currently available for ARM64 builds. Sets `/guard:signret`.
 
-## C/C++ Language Properties
+## C/C++ Language properties
 
 ### Disable Language Extensions
 
@@ -361,7 +454,7 @@ Suppresses or enables language extensions. Sets [`/Za`](za-ze-disable-language-e
 
 ### Treat WChar_t As Built in Type
 
-When specified, the type **`wchar_t`** becomes a native type that maps to **`__wchar_t`** in the same way that **`short`** maps to **`__int16`**. [`/Zc:wchar_t`](zc-wchar-t-wchar-t-is-native-type.md) is on by default.
+When you enable this property, the type **`wchar_t`** becomes a native type that maps to **`__wchar_t`** in the same way that **`short`** maps to **`__int16`**. [`/Zc:wchar_t`](zc-wchar-t-wchar-t-is-native-type.md) is on by default.
 
 ### Force Conformance in For Loop Scope
 
@@ -369,15 +462,15 @@ Implements standard C++ behavior for the `for` statement loops with Microsoft ex
 
 ### Remove unreferenced code and data
 
-When specified, the compiler no longer generates symbol information for unreferenced code and data.
+When you enable this property, the compiler no longer generates symbol information for unreferenced code and data.
 
 ### Enforce type conversion rules
 
-Used to identify an rvalue reference type as the result of a cast operation according to the C++11 standard.
+Used to identify an rvalue reference type as the result of a cast operation in accordance with the C++11 standard.
 
 ### Enable Run-Time Type Information
 
-Adds code for checking C++ object types at run time (*runtime type information*, or RTTI). Sets [`/GR`, `/GR-`](gr-enable-run-time-type-information.md).
+Adds code for checking C++ object types at runtime (*runtime type information*, or RTTI). Sets [`/GR`, `/GR-`](gr-enable-run-time-type-information.md).
 
 ### Open MP Support
 
@@ -385,7 +478,7 @@ Enables OpenMP 2.0 language extensions. Sets [`/openmp`](openmp-enable-openmp-2-
 
 ### <a name="cpplang"></a> C++ Language Standard
 
-Determines the C++ language standard that the compiler enables. The default value doesn't set a standard option, so the compiler uses its default C++14 setting. If you select a specific value, the corresponding [`/std`](std-specify-language-standard-version.md) compiler option is set.md).
+Determines the C++ language standard that the compiler enforces. The default value doesn't set a standard option, so the compiler uses its default C++14 setting. If you select a specific value, the corresponding [`/std`](std-specify-language-standard-version.md) compiler option is set.
 
 #### Choices
 
@@ -398,7 +491,7 @@ Determines the C++ language standard that the compiler enables. The default valu
 
 ### C Language Standard
 
-Determines the C language standard that the compiler enables. The default value doesn't set a standard option, so the compiler uses its default legacy MSVC setting. If you select a specific value, the corresponding [`/std`](std-specify-language-standard-version.md) compiler option is set.md).
+Determines the C language standard that the compiler enforces. The default value doesn't set a standard option, so the compiler uses its default legacy MSVC setting. If you select a specific value, the corresponding [`/std`](std-specify-language-standard-version.md) compiler option is set.
 
 #### Choices
 
@@ -411,17 +504,27 @@ Determines the C language standard that the compiler enables. The default value 
 
 Enables or suppresses conformance mode. Sets [`/permissive-`](permissive-standards-conformance.md).
 
+:::moniker range="<=msvc-170"
+
 ### Enable Experimental C++ Standard Library Modules
 
 Experimental support for the C++ Modules TS and Standard Library modules.
+
+:::moniker-end
 
 ### Build ISO C++23 Standard Library Modules
 
 Starting in Visual Studio 17.6, when this property is enabled and [C++ Language Standard](#cpplang) is set to `/std:c++latest`, Microsoft C++ projects automatically find and build ISO C++23 Standard Library modules. This enables you to `import std` or `import std.compat` in your C++ code.
 
-## C/C++ Precompiled Headers Properties
+## C/C++ Precompiled Headers properties
 
+:::moniker range=">=msvc-170"
+### Precompiled Header
+:::moniker-end
+
+:::moniker range="<msvc-170"
 ### Create/Use Precompiled Header
+:::moniker-end
 
 Enables creation or use of a precompiled header during the build. Sets [`/Yc`](yc-create-precompiled-header-file.md), [`/Yu`](yu-use-precompiled-header-file.md).
 
@@ -433,29 +536,29 @@ Enables creation or use of a precompiled header during the build. Sets [`/Yc`](y
 
 ### Precompiled Header File
 
-Specifies header file name to use when creating or using a precompiled header file. Sets [`/Yc`](yc-create-precompiled-header-file.md), [`/Yu`](yu-use-precompiled-header-file.md).
+Specifies the name of the header file that the compiler uses to create or access a precompiled header. Sets [`/Yc`](yc-create-precompiled-header-file.md), [`/Yu`](yu-use-precompiled-header-file.md).
 
 ### Precompiled Header Output File
 
 Specifies the path or name of the generated precompiled header file. Sets [`/Fp`](fp-name-dot-pch-file.md).
 
-## C/C++ Output Files Properties
+## C/C++ Output Files properties
 
 ### Expand Attributed Source
 
-Create listing file with expanded attributes injected into source file. Sets [`/Fx`](fx-merge-injected-code.md).
+Creates a listing file with expanded attributes injected into the source file. Sets [`/Fx`](fx-merge-injected-code.md).
 
 ### Assembler Output
 
-Specifies the contents of assembly language output file. Sets [`/FA`, `/FAc`, `/FAs`, `/FAcs`](fa-fa-listing-file.md).
+Specifies the contents of the assembly language output file. Sets [`/FA`, `/FAc`, `/FAs`, `/FAcs`](fa-fa-listing-file.md).
 
 #### Choices
 
 - **No Listing** - No listing.
-- **Assembly-Only Listing** - Assembly code; *`.asm`*
-- **Assembly With Machine Code** - Machine and assembly code; *`.cod`*
-- **Assembly With Source Code** - Source and assembly code; *`.asm`*
-- **Assembly, Machine Code and Source** - Assembly, machine code and source code; *`.cod`*
+- **Assembly-Only Listing** - Assembly code: *`.asm`*.
+- **Assembly With Machine Code** - Machine and assembly code: *`.cod`*.
+- **Assembly With Source Code** - Source and assembly code: *`.asm`*.
+- **Assembly, Machine Code and Source** - Assembly, machine code, and source code: *`.cod`*.
 
 ### Use Unicode For Assembler Listing
 
@@ -463,11 +566,11 @@ Causes the output file to be created in UTF-8 format.
 
 ### ASM List Location
 
-Specifies relative path or name for ASM listing file; can be file or directory name. Sets [`/Fa`](fa-fa-listing-file.md).
+Specifies the relative path or name for the ASM listing file. Can be a file or directory name. Sets [`/Fa`](fa-fa-listing-file.md).
 
 ### Module Output File Name
 
-Module or header unit output (BMI) file location; can be file or directory name. Sets [`/ifcOutput[name]`](ifc-output.md).
+Module or header unit output (BMI) file location. Can be a file or directory name. Sets [`/ifcOutput[name]`](ifc-output.md).
 
 ### Module Dependencies File Name
 
@@ -475,11 +578,11 @@ Specifies the path and/or name of the generated module dependencies file. Sets [
 
 ### Object File Name
 
-Specifies a name to override the default object file name; can be file or directory name. Sets [`/Fo`](fo-object-file-name.md).
+Specifies a name to override the default object file name. Can be a file or directory name. Sets [`/Fo`](fo-object-file-name.md).
 
 ### Program Database File Name
 
-Specifies a name for a compiler-generated PDB file; also specifies base name for the required compiler-generated IDB file; can be file or directory name. Sets [`/Fd`](fd-program-database-file-name.md).
+Specifies a name for a compiler-generated PDB file. Also specifies base name for the required compiler-generated IDB file. Can be a file or directory name. Sets [`/Fd`](fd-program-database-file-name.md).
 
 ### Generate XML Documentation Files
 
@@ -487,27 +590,27 @@ Specifies that the compiler should generate XML documentation comment files (.XD
 
 ### XML Documentation File Name
 
-Specifies the name of the generated XML documentation files; can be file or directory name. Sets [`/doc:`\<name>](doc-process-documentation-comments-c-cpp.md).
+Specifies the name of the generated XML documentation files. Can be a file or directory name. Sets [`/doc:`\<name>](doc-process-documentation-comments-c-cpp.md).
 
 ### Generate Source Dependencies File
 
-Generates a json file with the list of all files the compiler used for the compilation of the source. Sets [`/sourceDependencies`](sourcedependencies.md).
+Generates a JSON file with the list of all files the compiler used for the compilation of the source. Sets [`/sourceDependencies`](sourcedependencies.md).
 
 ### Source Dependencies File Name
 
 Specifies the path and/or name of the generated source dependencies file. Sets [`/sourceDependencies[path]`](sourcedependencies.md).
 
-## C/C++ Browse Information Properties
+## C/C++ Browse Information properties
 
 ### Enable Browse Information
 
-Specifies level of browse information in *`.bsc`* file. Sets [`/FR`](fr-fr-create-dot-sbr-file.md).
+Specifies whether the compiler should generate a *`.bsc`* file. Sets [`/FR`](fr-fr-create-dot-sbr-file.md).
 
 ### Browse Information File
 
-Specifies optional name for browser information file. Sets [`/FR`\<name>](fr-fr-create-dot-sbr-file.md).
+Specifies an optional name for the browser information file. Sets [`/FR`\<name>](fr-fr-create-dot-sbr-file.md).
 
-## <a name="external-includes"></a> C/C++ External Includes Properties
+## <a name="external-includes"></a> C/C++ External Includes properties
 
 ### Treat Files Included with Angle Brackets as External
 
@@ -519,7 +622,7 @@ Select how strict you want the compiler to be about code errors in external head
 
 ### Template Diagnostics in External Headers
 
-Specifies whether to evaluate the warning level across a template instantiation chain.  Set this property to **Yes** to set the [`/external:templates-`](external-external-headers-diagnostics.md) compiler option.
+Specifies whether to evaluate the warning level across a template instantiation chain. Set this property to **Yes** to set the [`/external:templates-`](external-external-headers-diagnostics.md) compiler option.
 
 ### Disable Code Analysis for External Headers
 
@@ -527,9 +630,9 @@ Disables code analysis for external headers. Sets the [`/analyze:external-`](ana
 
 ### Analysis Ruleset for External Headers
 
-Specifies a code analysis ruleset override for external headers. If not specified, the Code Analysis setting is used. Sets the [`/analyze:external:ruleset path`](analyze-code-analysis.md) compiler option.
+Specifies a code analysis ruleset override for external headers. If this property isn't specified, the Code Analysis setting is used. Sets the [`/analyze:external:ruleset path`](analyze-code-analysis.md) compiler option.
 
-## C/C++ Advanced Properties
+## C/C++ Advanced properties
 
 ### Calling Convention
 
@@ -537,31 +640,31 @@ Select the default calling convention for your application (can be overridden by
 
 #### Choices
 
-- **`__cdecl`** - Specifies the **`__cdecl`** calling convention for all functions except C++ member functions and functions marked **`__stdcall`** or **`__fastcall`**.
-- **`__fastcall`** - Specifies the **`__fastcall`** calling convention for all functions except C++ member functions and functions marked **`__cdecl`** or **`__stdcall`**. All **`__fastcall`** functions must have prototypes.
-- **`__stdcall`** - Specifies the **`__stdcall`** calling convention for all functions except C++ member functions and functions marked **`__cdecl`** or **`__fastcall`**. All **`__stdcall`** functions must have prototypes.
-- **`__vectorcall`** - Specifies the **`__vectorcall`** calling convention for all functions except C++ member functions and functions marked **`__cdecl`**, **`__fastcall`**, or **`__stdcall`**. All **`__vectorcall`** functions must have prototypes.
+- **`__cdecl`** - Specifies the **`__cdecl`** calling convention for all functions, except C++ member functions and functions marked **`__stdcall`** or **`__fastcall`**.
+- **`__fastcall`** - Specifies the **`__fastcall`** calling convention for all functions, except C++ member functions and functions marked **`__cdecl`** or **`__stdcall`**. All **`__fastcall`** functions must have prototypes.
+- **`__stdcall`** - Specifies the **`__stdcall`** calling convention for all functions, except C++ member functions and functions marked **`__cdecl`** or **`__fastcall`**. All **`__stdcall`** functions must have prototypes.
+- **`__vectorcall`** - Specifies the **`__vectorcall`** calling convention for all functions, except C++ member functions and functions marked **`__cdecl`**, **`__fastcall`**, or **`__stdcall`**. All **`__vectorcall`** functions must have prototypes.
 
 ### Compile As
 
-Select compile language option for source files. Sets [`/TC`, `/TP`](tc-tp-tc-tp-specify-source-file-type.md), [/interface](./interface.md), [`/internalPartition`](./internal-partition.md), or [`/exportHeader`](./module-exportheader.md) options.
+Select a compile language option for source files. Sets [`/TC`, `/TP`](tc-tp-tc-tp-specify-source-file-type.md), [/interface](./interface.md), [`/internalPartition`](./internal-partition.md), or [`/exportHeader`](./module-exportheader.md) options.
 
 #### Choices
 
 - **Default** - Default.
 - **Compile as C Code ([`/TC`](./tc-tp-tc-tp-specify-source-file-type.md))** - Compile specified source files as C code. By default, files with a *`.c`* extension are compiled as C.
-- **Compile as C++ Code ([`/TP`](./tc-tp-tc-tp-specify-source-file-type.md))** - Compile specified source files as C++ code. By default, all source files that don't have a *`.c`*, *`.ixx`*, *`.cppm`*, *`.h`*, or no extension are compiled as C++.
-- **Compile as C++ Module Code ([`/interface`](./interface.md))** - Compile specified source files as C++ module code. By default, files with a *`.ixx`* or *`.cppm`* extension are compiled as C++ module code.
+- **Compile as C++ Code ([`/TP`](./tc-tp-tc-tp-specify-source-file-type.md))** - Compile specified source files as C++ code. By default, all source files that don't have a *`.c`*, *`.ixx`*, *`.cppm`*, or *`.h`* extension, or that don't have an extension, are compiled as C++.
+- **Compile as C++ Module Code ([`/interface`](./interface.md))** - Compile specified source files as C++ module code. By default, files with an *`.ixx`* or *`.cppm`* extension are compiled as C++ module code.
 - **Compile as C++ Module Internal Partition ([`/internalPartition`](./internal-partition.md))** - Compile specified source files as C++ module internal partition.
-- **Compile as C++ Header Unit ([`/exportHeader`](./module-exportheader.md))** - Compile specified source files as C++ header unit. By default, files with a *`.h`* extension or no extension are compiled as header units.
+- **Compile as C++ Header Unit ([`/exportHeader`](./module-exportheader.md))** - Compile specified source files as C++ header unit. By default, files with an *`.h`* extension or no extension are compiled as header units.
 
 ### Disable Specific Warnings
 
-Disable the specified warning numbers. Put the warning numbers in a semi-colon delimited list. Sets [`/wd`\<number>](compiler-option-warning-level.md).
+Disable the specified warning numbers. Put the warning numbers in a semicolon-delimited list. Sets [`/wd`\<number>](compiler-option-warning-level.md).
 
 ### Forced Include File
 
-one or more forced include files. Sets [`/FI`\<name>](fi-name-forced-include-file.md).
+Specifies one or more forced include files. Sets [`/FI`\<name>](fi-name-forced-include-file.md).
 
 ### Forced #using File
 
@@ -577,7 +680,7 @@ Use full paths in diagnostic messages. Sets [`/FC`](fc-full-path-of-source-code-
 
 ### Omit Default Library Name
 
-Doesn't include default library names in *`.obj`* files. Sets [`/Zl`](zl-omit-default-library-name.md).
+Specifies to omit default library names in *`.obj`* files. Sets [`/Zl`](zl-omit-default-library-name.md).
 
 ### Internal Compiler Error Reporting
 
@@ -586,8 +689,10 @@ Doesn't include default library names in *`.obj`* files. Sets [`/Zl`](zl-omit-de
 
 ### Treat Specific Warnings As Errors
 
-Treats the specific compiler warning as an error where n is a compiler warning.
+Treats the specific compiler warning as an error, where n is a compiler warning.
 
+:::moniker range="<msvc-170"
 ### Additional Options
 
 Additional Options.
+:::moniker-end
