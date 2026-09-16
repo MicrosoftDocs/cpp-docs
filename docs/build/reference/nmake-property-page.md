@@ -18,18 +18,20 @@ The property page contains the following properties:
 
 - **Build Command Line**
 
-   Specifies the command to be run when **Build** is selected on the **Build** menu.
+   Specifies the command to run when **Build** is selected on the **Build** menu.
 
 - **Rebuild All Command Line**
 
-   Specifies the command to be run when **Rebuild All** is selected on the **Build** menu.
+   Specifies the command to run when **Rebuild All** is selected on the **Build** menu.
 
 - **Clean Command Line**
 
-   Specifies the command to be run when **Clean** is selected on the **Build** menu.
+   Specifies the command to run when **Clean** is selected on the **Build** menu.
 
 :::moniker range=">=msvc-170"
 - **Compile File Command Line**
+
+  Specifies the command to run for the **Compile** (Ctrl+F7) command.  
  
 :::moniker-end
 
