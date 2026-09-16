@@ -1,15 +1,16 @@
 ---
-title: "Linker Property Pages"
-description: "Learn more about: Linker Property Pages"
-ms.date: 09/07/2022
+title: Linker Property Pages
+description: Learn more about Linker property pages.
+ms.date: 09/15/2026
 ms.topic: "article"
+ai-usage: ai-assisted
 f1_keywords: ["VC.Project.VCLinkerTool.IgnoreImportLibrary", "VC.Project.VCLinkerTool.RegisterOutput", "VC.Project.VCLinkerTool.PerUserRedirection", "VC.Project.VCLinkerTool.LinkLibraryDependencies", "VC.Project.VCLinkerTool.UseLibraryDependencyInputs"]
 ---
-# Linker Property Pages
+# Linker property pages
 
-The following properties are found under **Project** > **Properties** > **Configuration Properties** > **Linker**. For more information about the linker, see [CL Invokes the Linker](cl-invokes-the-linker.md) and [Linker Options](linker-options.md).
+The following properties are found under **Project** > **Properties** > **Configuration Properties** > **Linker**. For more information about the linker, see [CL Invokes the Linker](cl-invokes-the-linker.md) and [Linker options](linker-options.md).
 
-## General Property Page
+## General property page
 
 ### Output File
 
@@ -17,7 +18,7 @@ The [`/OUT`](out-output-file-name.md) option overrides the default name and loca
 
 ### Show Progress
 
-Prints Linker Progress Messages
+Prints linker progress messages.
 
 **Choices**
 
@@ -27,7 +28,7 @@ Prints Linker Progress Messages
 - **About COMDAT folding during optimized linking** - Displays information about COMDAT folding during optimized linking.
 - **About data removed during optimized linking** - Displays information about functions and data removed during optimized linking.
 - **About Modules incompatible with SEH** - Displays information about modules incompatible with Safe Exception Handling.
-- **About linker activity related to managed code** - Display information about linker activity related to managed code.
+- **About linker activity related to managed code** - Displays information about linker activity related to managed code.
 
 ### Version
 
@@ -39,7 +40,7 @@ Enables incremental linking. ([`/INCREMENTAL, /INCREMENTAL:NO`](incremental-link
 
 ### Incremental Link Database File
 
-Specifies incremental link database file location. ([`/ILK:[name]`](ilk-name-incremental-database-file.md))
+Specifies the incremental link database file location. ([`/ILK:[name]`](ilk-name-incremental-database-file.md))
 
 ### Suppress Startup Banner
 
@@ -47,13 +48,13 @@ The [`/NOLOGO`](nologo-suppress-startup-banner-linker.md) option prevents displa
 
 ### Ignore Import Library
 
-This property tells the linker not to link any *`.lib`* output generated from this build into any dependent project. It allows the project system to handle *`.dll`* files that don't produce a *`.lib`* file when built. If a project depends on another project that produces a DLL, the project system automatically links the *`.lib`* file produced by that child project. This property may be unnecessary in projects that produce COM DLLs or resource-only DLLs, because these DLLs don't have any meaningful exports. If a DLL has no exports, the linker doesn't generate a *`.lib`* file. If no export *`.lib`* file is present, and the project system tells the linker to link with the missing DLL, the link fails. Use the **Ignore Import Library** property to resolve this problem. When set to **Yes**, the project system ignores the presence or absence of the *`.lib`* file, and causes any project that depends on this project to not link with the nonexistent *`.lib`* file.
+This property tells the linker not to link any *`.lib`* output generated from this build into any dependent project. It allows the project system to handle *`.dll`* files that don't produce a *`.lib`* file when built. If a project depends on another project that produces a DLL, the project system automatically links the *`.lib`* file produced by that child project. This property might be unnecessary in projects that produce COM DLLs or resource-only DLLs, because these DLLs don't have any meaningful exports. If a DLL has no exports, the linker doesn't generate a *`.lib`* file. If no export *`.lib`* file is present, and the project system tells the linker to link with the missing DLL, the link fails. Use the **Ignore Import Library** property to resolve this problem. When this property is set to **Yes**, the project system ignores the presence or absence of the *`.lib`* file, and ensures that any project that depends on this project doesn't link with the nonexistent *`.lib`* file.
 
 To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreImportLibrary%2A>.
 
 ### Register Output
 
-Runs `regsvr32.exe /s $(TargetPath)` on the build output, which is valid only on *`.dll`* projects. For *`.exe`* projects, this property is ignored. To register an *`.exe`* output, set a postbuild event on the configuration to do the custom registration that is always required for registered *`.exe`* files.
+Runs `regsvr32.exe /s $(TargetPath)` on the build output, which is valid only on *`.dll`* projects. For *`.exe`* projects, this property is ignored. To register an *`.exe`* output, set a postbuild event on the configuration to do the custom registration that's always required for registered *`.exe`* files.
 
 To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.RegisterOutput%2A>.
 
@@ -61,7 +62,7 @@ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCPro
 
 Registration in Visual Studio has traditionally been done in `HKEY_CLASSES_ROOT` (HKCR). With Windows Vista and later operating systems, to access HKCR you must run Visual Studio in elevated mode. Developers don't always want to run in elevated mode but still must work with registration. Per-user redirection allows you to register without having to run in elevated mode.
 
-Per-user redirection forces any writes to HKCR to be redirected to `HKEY_CURRENT_USER` (HKCU). If per-user redirection is turned off, it can cause [Project Build Error PRJ0050](../../error-messages/tool-errors/project-build-error-prj0050.md) when the program tries to write to HKCR.
+Per-user redirection forces any writes to HKCR to be redirected to `HKEY_CURRENT_USER` (HKCU). If per-user redirection is turned off, a [Project Build Error PRJ0050](../../error-messages/tool-errors/project-build-error-prj0050.md) can occur when the program tries to write to HKCR.
 
 ### Additional Library Directories
 
@@ -69,7 +70,7 @@ Allows the user to override the environment's library path. ([`/LIBPATH:folder`]
 
 ### Link Library Dependencies
 
-Specifies whether to link the *`.lib`* files that are produced by dependent projects. Typically, you want to link in the *`.lib`* files, but it may not be the case for certain DLLs.
+Specifies whether to link the *`.lib`* files that are produced by dependent projects. Typically, you want to link in the *`.lib`* files, but you might not want to for certain DLLs.
 
 You can also specify a *`.obj`* file by providing the file name and relative path, for example, *`..\..\MyLibProject\MyObjFile.obj`*. If the source code for the *`.obj`* file has a `#include` for a precompiled header, for example, *`pch.h`*, then the *`pch.obj`* file is located in the same folder as *`MyObjFile.obj`*. You must also add *`pch.obj`* as an additional dependency.
 
@@ -81,25 +82,25 @@ For information about how to access the **General** linker property page, see [S
 
 ### Link Status
 
-Specifies whether the linker should display a progress indicator showing what percentage of the link is complete. The default is to not display this status information. ([`/LTCG:STATUS|LTCG:NOSTATUS`](ltcg-link-time-code-generation.md))
+Specifies whether the linker should display a progress indicator showing what percentage of the link is complete. By default, the linker doesn't display this status information. ([`/LTCG:STATUS|LTCG:NOSTATUS`](ltcg-link-time-code-generation.md))
 
 ### Prevent DLL Binding
 
-[`/ALLOWBIND:NO`](allowbind-prevent-dll-binding.md) sets a bit in a DLL's header that indicates to *`Bind.exe`* that binding the image isn't allowed. You may not want a DLL to be bound if it has been digitally signed (binding invalidates the signature).
+[`/ALLOWBIND:NO`](allowbind-prevent-dll-binding.md) sets a bit in a DLL's header that indicates to *`Bind.exe`* that binding the image isn't allowed. You might not want a DLL to be bound if it's been digitally signed. (Binding invalidates the signature.)
 
 ### Treat Linker Warning As Errors
 
-[`/WX`](wx-treat-linker-warnings-as-errors.md) causes no output file to be generated if the linker generates a warning.
+If this property is set to **Yes** ([`/WX`](wx-treat-linker-warnings-as-errors.md)), no output file is generated if the linker generates a warning.
 
 ### Force File Output
 
-The [`/FORCE`](force-force-file-output.md) option tells the linker to create an *`.exe`* file or DLL even if a symbol is referenced but not defined (**`UNRESOLVED`**), or is defined multiple times (**`MULTIPLE`**). It may create an invalid *`.exe`* file.
+The [`/FORCE`](force-force-file-output.md) option tells the linker to create an *`.exe`* file or DLL even if a symbol is referenced but not defined (**`UNRESOLVED`**), or is defined multiple times (**`MULTIPLE`**). It might create an invalid *`.exe`* file.
 
 **Choices**
 
 - **Enabled** - **`/FORCE`** with no arguments implies both **`/FORCE:MULTIPLE`** and **`/FORCE:UNRESOLVED`**.
 - **Multiply Defined Symbol Only** - Use **`/FORCE:MULTIPLE`** to create an output file, even if LINK finds more than one definition for a symbol.
-- **Undefined Symbol Only** - Use **`/FORCE:UNRESOLVED`** to create an output file whether or not LINK finds an undefined symbol. **`/FORCE:UNRESOLVED`** is ignored if the entry point symbol is unresolved.
+- **Undefined Symbol Only** - Use **`/FORCE:UNRESOLVED`** to create an output file regardless of whether LINK finds an undefined symbol. **`/FORCE:UNRESOLVED`** is ignored if the entry point symbol is unresolved.
 
 ### Create Hot Patchable Image
 
@@ -108,15 +109,15 @@ Prepares an image for hot patching.
 **Choices**
 
 - **Enabled** - Prepares an image for hot patching.
-- **X86 Image Only** - Prepares an X86 image for hot patching.
-- **X64 Image Only** - Prepares an X64 image for hot patching.
+- **X86 Image Only** - Prepares an x86 image for hot patching.
+- **X64 Image Only** - Prepares an x64 image for hot patching.
 - **Itanium Image Only** - Prepares an Itanium image for hot patching.
 
 ### Specify Section Attributes
 
 The [`/SECTION`](section-specify-section-attributes.md) option changes the attributes of a section, overriding the attributes set when the *`.obj`* file for the section was compiled.
 
-## Input Property Page
+## Input property page
 
 ### Additional Dependencies
 
@@ -128,7 +129,7 @@ The [`/NODEFAULTLIB`](nodefaultlib-ignore-libraries.md) option tells the linker 
 
 ### Ignore Specific Default Libraries
 
-Specifies one or more names of default libraries to ignore. Separate multiple libraries with semi-colons. ([`/NODEFAULTLIB:[name, name, ...]`](nodefaultlib-ignore-libraries.md))
+Specifies one or more names of default libraries to ignore. Separate multiple libraries with semicolons. ([`/NODEFAULTLIB:[name, name, ...]`](nodefaultlib-ignore-libraries.md))
 
 ### Module Definition File
 
@@ -154,7 +155,7 @@ The [`/DELAYLOAD`](delayload-delay-load-import.md) option causes delayed loading
 
 The [`/ASSEMBLYLINKRESOURCE`](assemblylinkresource-link-to-dotnet-framework-resource.md) option creates a link to a .NET Framework resource in the output file. The linker doesn't place the resource file in the output file.
 
-## Manifest File Property Page
+## Manifest File property page
 
 ### Generate Manifest
 
@@ -174,11 +175,11 @@ Specifies behavior for manifest lookup. ([`/ALLOWISOLATION:NO`](allowisolation-m
 
 ### Enable User Account Control (UAC)
 
-Specifies whether or not User Account Control is enabled.  ([`/MANIFESTUAC, /MANIFESTUAC:NO`](manifestuac-embeds-uac-information-in-manifest.md))
+Specifies whether User Account Control is enabled. ([`/MANIFESTUAC, /MANIFESTUAC:NO`](manifestuac-embeds-uac-information-in-manifest.md))
 
 ### UAC Execution Level
 
-Specifies the requested execution level for the application when running with User Account Control.  ([`/MANIFESTUAC:level=[value]`](manifestuac-embeds-uac-information-in-manifest.md))
+Specifies the requested execution level for the application when it runs with User Account Control. ([`/MANIFESTUAC:level=[value]`](manifestuac-embeds-uac-information-in-manifest.md))
 
 **Choices**
 
@@ -188,9 +189,9 @@ Specifies the requested execution level for the application when running with Us
 
 ### UAC Bypass UI Protection
 
-Specifies whether or not to bypass user interface protection levels for other windows on the desktop.  Set this property to 'Yes' only for accessibility applications.  ([`/MANIFESTUAC:uiAccess=[true | false]`](manifestuac-embeds-uac-information-in-manifest.md))
+Specifies whether to bypass user interface protection levels for other windows on the desktop. Set this property to **Yes** only for accessibility applications. ([`/MANIFESTUAC:uiAccess=[true | false]`](manifestuac-embeds-uac-information-in-manifest.md))
 
-## Debugging Property Page
+## Debugging property page
 
 ### Generate Debug Info
 
@@ -199,17 +200,17 @@ This option enables creation of debugging information for the *`.exe`* file or t
 **Choices**
 
 - **No** - Produces no debugging information.
-- **Generate Debug Information** - Create a complete Program Database (PDB) ideal for distribution to Microsoft Symbol Server.
-- **Generate Debug Information optimized for faster links** - Produces a program database (PDB) ideal for a fast edit-link-debug cycle.
-- **Generate Debug Information optimized for sharing and publishing** - Produces a program database (PDB) ideal for a shared edit-link-debug cycle.
+- **Generate Debug Information** - Create a complete program database (PDB) that's ideal for distribution to Microsoft Symbol Server.
+- **Generate Debug Information optimized for faster links** - Produces a PDB that's ideal for a fast edit-link-debug cycle.
+- **Generate Debug Information optimized for sharing and publishing** - Produces a PDB that's ideal for a shared edit-link-debug cycle.
 
 ### Generate Program Database File
 
-By default, when [`/DEBUG`](debug-generate-debug-info.md) is specified, the linker creates a program database (PDB) which holds debugging information. The default file name for the PDB has the base name of the program and the extension *`.pdb`*.
+By default, when [`/DEBUG`](debug-generate-debug-info.md) is specified, the linker creates a PDB that holds debugging information. The default file name for the PDB has the base name of the program and the extension *`.pdb`*.
 
 ### Strip Private Symbols
 
-The [`/PDBSTRIPPED`](pdbstripped-strip-private-symbols.md) option creates a second program database (PDB) file when you build your program image with any of the compiler or linker options that generate a PDB file (**`/DEBUG`**, **`/Z7`**, **`/Zd`**, or **`/Zi`**).
+The [`/PDBSTRIPPED`](pdbstripped-strip-private-symbols.md) option creates a second PDB file when you build your program image with any of the compiler or linker options that generate a PDB file (**`/DEBUG`**, **`/Z7`**, **`/Zd`**, or **`/Zi`**).
 
 ### Generate Map File
 
@@ -231,7 +232,7 @@ The [`/MAPINFO`](mapinfo-include-information-in-mapfile.md) option tells the lin
 
 (Preview) Set linker flag [`/DYNAMICDEOPT`](dynamic-deopt-linker.md) to turn on [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging). Place deoptimized breakpoints and step in anywhere with on-demand function deoptimization. Use this mode for debugging optimized code.
 
-## System Property Page
+## System property page
 
 ### SubSystem
 
@@ -241,7 +242,7 @@ The [`/SUBSYSTEM`](subsystem-specify-subsystem.md) option tells the operating sy
 
 - **Not Set** - No subsystem set.
 - **Console** - Win32 character-mode application. Console applications are given a console by the operating system. If `main` or `wmain` is defined, `CONSOLE` is the default.
-- **Windows** - Application doesn't require a console, probably because it creates its own windows for interaction with the user. If `WinMain` or `wWinMain` is defined, `WINDOWS` is the default.
+- **Windows** - The application doesn't require a console, probably because it creates its own windows for interaction with the user. If `WinMain` or `wWinMain` is defined, `WINDOWS` is the default.
 - **Native** - Device drivers for Windows NT. If **`/DRIVER:WDM`** is specified, `NATIVE` is the default.
 - **EFI Application** - EFI Application.
 - **EFI Boot Service Driver** - EFI Boot Service Driver.
@@ -251,23 +252,23 @@ The [`/SUBSYSTEM`](subsystem-specify-subsystem.md) option tells the operating sy
 
 ### Minimum Required Version
 
-Specify the minimum required version of the subsystem. The arguments are decimal numbers in the range 0 through 65535.
+Specify the minimum required version of the subsystem. Enter decimal numbers in the range 0 through 65,535.
 
 ### Heap Reserve Size
 
-Specifies total heap allocation size in virtual memory. Default is 1 MB.    ([`/HEAP:reserve`](heap-set-heap-size.md))
+Specifies total heap allocation size in virtual memory. The default is 1 MB. ([`/HEAP:reserve`](heap-set-heap-size.md))
 
 ### Heap Commit Size
 
-Specifies total heap allocation size in physical memory. Default is 4 KB.    ([`/HEAP:reserve,commit`](heap-set-heap-size.md))
+Specifies total heap allocation size in physical memory. The default is 4 KB. ([`/HEAP:reserve,commit`](heap-set-heap-size.md))
 
 ### Stack Reserve Size
 
-Specifies the total stack allocation size in virtual memory. Default is 1 MB.     ([`/STACK:reserve`](stack-stack-allocations.md))
+Specifies the total stack allocation size in virtual memory. The default is 1 MB. ([`/STACK:reserve`](stack-stack-allocations.md))
 
 ### Stack Commit Size
 
-Specifies the total stack allocation size in physical memory. Default is 4 KB.     ([`/STACK:reserve,commit`](stack-stack-allocations.md))
+Specifies the total stack allocation size in physical memory. The default is 4 KB. ([`/STACK:reserve,commit`](stack-stack-allocations.md))
 
 ### Enable Large Addresses
 
@@ -279,11 +280,11 @@ The [`/TSAWARE`](tsaware-create-terminal-server-aware-application.md) option set
 
 ### Swap Run From CD
 
-The [`/SWAPRUN`](swaprun-load-linker-output-to-swap-file.md) option tells the operating system to first copy the linker output to a swap file, and then run the image from there. This option is a Windows NT 4.0 (and later) feature. When **`CD`** is specified, the operating system will copy the image on a removable disk to a page file, and then load it.
+The [`/SWAPRUN`](swaprun-load-linker-output-to-swap-file.md) option tells the operating system to first copy the linker output to a swap file and then run the image from there. This option is a Windows NT 4.0 and later feature. When **`CD`** is specified, the operating system will copy the image on a removable disk to a page file and then load it.
 
 ### Swap Run From Network
 
-The [`/SWAPRUN`](swaprun-load-linker-output-to-swap-file.md) option tells the operating system to first copy the linker output to a swap file, and then run the image from there. This option is a Windows NT 4.0 (and later) feature. If **`NET`** is specified, the operating system will first copy the binary image from the network to a swap file and load it from there. This option is useful for running applications over the network.
+The [`/SWAPRUN`](swaprun-load-linker-output-to-swap-file.md) option tells the operating system to first copy the linker output to a swap file and then run the image from there. This option is a Windows NT 4.0 and later feature. If **`NET`** is specified, the operating system will first copy the binary image from the network to a swap file and load it from there. This option is useful for running applications over the network.
 
 ### Driver
 
@@ -292,15 +293,15 @@ Use the [`/DRIVER`](driver-windows-nt-kernel-mode-driver.md) linker option to bu
 **Choices**
 
 - **Not Set** - Default driver setting.
-- **Driver** - Driver
+- **Driver** - Driver.
 - **UP Only** - **`/DRIVER:UPONLY`** causes the linker to add the `IMAGE_FILE_UP_SYSTEM_ONLY` bit to the characteristics in the output header to specify that it's a uniprocessor (UP) driver. The operating system will refuse to load a UP driver on a multiprocessor (MP) system.
 - **WDM** - **`/DRIVER:WDM`** causes the linker to set the `IMAGE_DLLCHARACTERISTICS_WDM_DRIVER` bit in the optional header's `DllCharacteristics` field.
 
-## Optimization Property Page
+## Optimization property page
 
 ### References
 
-[`/OPT:REF`](opt-optimizations.md) eliminates functions and/or data that's never referenced while **`/OPT:NOREF`** keeps functions and/or data that's never referenced.
+[`/OPT:REF`](opt-optimizations.md) eliminates functions and/or data that's never referenced. **`/OPT:NOREF`** keeps functions and/or data that's never referenced.
 
 ### Enable COMDAT Folding
 
@@ -312,7 +313,7 @@ The [`/ORDER`](order-put-functions-in-order.md) option tells LINK to optimize yo
 
 ### Profile Guided Database
 
-Specify the *`.pgd`* file for profile guided optimizations. ([`/PGD`](pgd-specify-database-for-profile-guided-optimizations.md))
+Specify the *`.pgd`* file for profile-guided optimizations. ([`/PGD`](pgd-specify-database-for-profile-guided-optimizations.md))
 
 ### Link Time Code Generation
 
@@ -323,15 +324,15 @@ Specifies link-time code generation. ([`/LTCG`](ltcg-link-time-code-generation.m
 - **Default** - Default LTCG setting.
 - **Use Fast Link Time Code Generation** - Use Link Time Code Generation with [`/FASTGENPROFILE`](genprofile-fastgenprofile-generate-profiling-instrumented-build.md).
 - **Use Link Time Code Generation** - Use [Link Time Code Generation](ltcg-link-time-code-generation.md).
-- **Profile Guided Optimization - Instrument** - Use [profile guided optimization](../profile-guided-optimizations.md) with `:PGINSTRUMENT`.
+- **Profile Guided Optimization - Instrument** - Use [profile-guided optimization](../profile-guided-optimizations.md) with `:PGINSTRUMENT`.
 - **Profile Guided Optimization - Optimization** - Specifies that the linker should use the profile data created after running the instrumented binary to create an optimized image.
-- **Profile Guided Optimization - Update** - Allows and tracks list of input files to be added or modified from what was specified in the `:PGINSTRUMENT` phase.
+- **Profile Guided Optimization - Update** - Allows and tracks a list of input files to be added or modified from what was specified in the `:PGINSTRUMENT` phase.
 
 ### Link Time Code Generation Object File
 
 Specifies *`.iobj`* file location. ([`/LTCGOUT:[name]`](ltcgout.md))
 
-## Embedded IDL Property Page
+## Embedded IDL property page
 
 ### MIDL Commands
 
@@ -353,7 +354,7 @@ The [`/TLBOUT`](tlbout-name-dot-tlb-file.md) option specifies the name and exten
 
 Allows you to specify the resource ID of the linker-generated type library. ([`/TLBID:id`](tlbid-specify-resource-id-for-typelib.md))
 
-## Windows Metadata Property Page
+## Windows Metadata property page
 
 ### Generate Windows Metadata
 
@@ -380,7 +381,7 @@ Specify a key container to sign the Windows Metadata. ([`/WINMDKEYCONTAINER:name
 
 Partially sign the Windows Metadata. Use [`/WINMDDELAYSIGN`](winmddelaysign-partially-sign-a-winmd.md) if you only want to place the public key in the Windows Metadata. The default is **`/WINMDDELAYSIGN:NO`**.
 
-## Advanced Property Page
+## Advanced property page
 
 ### Entry Point
 
@@ -392,7 +393,7 @@ The [`/NOENTRY`](noentry-no-entry-point.md) option is required for creating a re
 
 ### Set Checksum
 
-The [`/RELEASE`](release-set-the-checksum.md) option sets the Checksum in the header of an *`.exe`* file.
+The [`/RELEASE`](release-set-the-checksum.md) option sets the checksum in the header of an *`.exe`* file.
 
 ### Base Address
 
@@ -400,7 +401,7 @@ Sets a base address for the program. ([`/BASE:{address[,size] | @filename,key}`]
 
 ### Randomized Base Address
 
-Randomized Base Address. ([`/DYNAMICBASE[:NO]`](dynamicbase-use-address-space-layout-randomization.md))
+Randomized base address. ([`/DYNAMICBASE[:NO]`](dynamicbase-use-address-space-layout-randomization.md))
 
 ### Fixed Base Address
 
@@ -408,7 +409,7 @@ Creates a program that can be loaded only at its preferred base address. ([`/FIX
 
 ### Data Execution Prevention (DEP)
 
-Marks an executable as having been tested to be compatible with Windows Data Execution Prevention feature. ([`/NXCOMPAT[:NO]`](nxcompat-compatible-with-data-execution-prevention.md))
+Marks an executable as having been tested to be compatible with the Windows Data Execution Prevention feature. ([`/NXCOMPAT[:NO]`](nxcompat-compatible-with-data-execution-prevention.md))
 
 ### Turn Off Assembly Generation
 
@@ -430,6 +431,24 @@ Overrides the default import library name. ([`/IMPLIB:filename`](implib-name-imp
 
 The [`/MERGE`](merge-combine-sections.md) option combines the first section with the second section, and gives the resulting section the second section name. For example, `/merge:.rdata=.text` merges the `.rdata` section with the `.text` section, and names the combined section `.text`.
 
+:::moniker range=">=msvc-170"
+### Target Machine
+
+The [`/MACHINE`](machine-specify-target-platform.md) option specifies the target platform for the program.
+
+**Choices**
+
+- **Not Set**
+- **MachineARM**
+- **MachineARM64**
+- **MachineARM64EC**
+- **MachineARM64X**
+- **MachineEBC**
+- **MachineX64**
+- **MachineX86**
+:::moniker-end
+
+:::moniker range="<msvc-170"
 ### Target Machine
 
 The [`/MACHINE`](machine-specify-target-platform.md) option specifies the target platform for the program.
@@ -449,20 +468,21 @@ The [`/MACHINE`](machine-specify-target-platform.md) option specifies the target
 - **MachineTHUMB**
 - **MachineX64**
 - **MachineX86**
+:::moniker-end
 
 ### Profile
 
-Produces an output file that can be used with the Performance Tools profiler. Requires the **Generate Debug Info** property be set to **GenerateDebugInformation (/DEBUG)**. ([`/PROFILE`](profile-performance-tools-profiler.md))
+Produces an output file that can be used with the Performance Tools profiler. Requires that the **Generate Debug Info** property is set to **GenerateDebugInformation (/DEBUG)**. ([`/PROFILE`](profile-performance-tools-profiler.md))
 
 ### CLR Thread Attribute
 
-Explicitly specify the threading attribute for the entry point of your CLR program.
+Explicitly specify the threading attribute for the entry point of your Common Language Runtime (CLR) program.
 
 **Choices**
 
 - **MTA threading attribute** - Applies the MTAThreadAttribute attribute to the entry point of your program.
 - **STA threading attribute** - Applies the STAThreadAttribute attribute to the entry point of your program.
-- **Default threading attribute** - Same as not specifying [`/CLRTHREADATTRIBUTE`](clrthreadattribute-set-clr-thread-attribute.md). Lets the Common Language Runtime (CLR) set the default threading attribute.
+- **Default threading attribute** - The same as not specifying [`/CLRTHREADATTRIBUTE`](clrthreadattribute-set-clr-thread-attribute.md). Lets the CLR set the default threading attribute.
 
 ### CLR Image Type
 
@@ -508,7 +528,7 @@ The [`/ALIGN`](align-section-alignment.md) option specifies the alignment of eac
 
 ### Preserve Last Error Code for PInvoke Calls
 
-[`/CLRSUPPORTLASTERROR`](clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls.md), which is on by default, preserves the last error code of functions called through the P/Invoke mechanism, which allows you to call native functions in DLLS, from code compiled with **`/clr`**.
+[`/CLRSUPPORTLASTERROR`](clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls.md), which is on by default, preserves the last error code of functions called through the P/Invoke mechanism, which allows you to call native functions in DLLs from code compiled with **`/clr`**.
 
 **Choices**
 
