@@ -433,7 +433,7 @@ items:
               href: ../build/reference/web-references-property-page.md
             - name: XML Data Generator Tool property page
               href: ../build/reference/xml-data-generator-tool-property-page.md
-            - name: XML Document Generator Tool property pages
+            - name: XML Document Generator property page
               href: ../build/reference/xml-document-generator-tool-property-pages.md
             - name: "Custom build step property page: General"
               href: ../build/reference/custom-build-step-property-page-general.md

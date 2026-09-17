@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: Manifest Tool Property Pages"
+description: Learn more about the Manifest Tool property pages.
 title: "Manifest Tool Property Pages"
 ms.date: 11/30/2021
 f1_keywords:
@@ -24,11 +24,11 @@ f1_keywords:
   - VC.Project.VCManifestTool.UpdateFileHashesSearchPath
   - VC.Project.VCManifestTool.EnableSegmentHeap
 ---
-# Manifest Tool Property Pages
+# Manifest Tool property pages
 
 Use these pages to specify general options for [`Mt.exe`](/windows/win32/sbscs/mt-exe). These pages are found under **Project** > **Properties** > **Configuration Properties** > **Manifest Tool**.
 
-## General Property Page
+## General property page
 
 ### Suppress Startup Banner
 
@@ -40,13 +40,13 @@ Use these pages to specify general options for [`Mt.exe`](/windows/win32/sbscs/m
 
 ### Assembly Identity
 
-Uses the **`/identity`** option to specify an identity string, which holds the attributes for the [`<assemblyIdentity>` element](/visualstudio/deployment/assemblyidentity-element-clickonce-application). An identity string begins with the value for the `name` attribute, and is followed by *attribute* = *value* pairs. The attributes in an identity string are delimited by a comma.
+Uses the **`/identity`** option to specify an identity string, which holds the attributes for the [`<assemblyIdentity>` element](/visualstudio/deployment/assemblyidentity-element-clickonce-application). An identity string begins with the value for the `name` attribute and is followed by *attribute* = *value* pairs. The attributes in an identity string are delimited by a comma.
 
 Here's an example identity string:
 
 `Microsoft.Windows.Common-Controls, processorArchitecture=x86, version=6.0.0.0, type=win32, publicKeyToken=6595b64144ccf1df`
 
-## Input and Output Property Page
+## Input and Output property page
 
 ### Additional Manifest Files
 
@@ -54,7 +54,7 @@ Uses the **`/manifest`** option to specify the full paths of more manifest files
 
 ### Input Resource Manifests
 
-Uses the **`/inputresource`** option to specify the full path of a resource of type `RT_MANIFEST`, to input into the manifest tool. The path can be followed by the specified resource ID. For example:
+Uses the **`/inputresource`** option to specify the full path of a resource of type `RT_MANIFEST` to input into the manifest tool. The path can be followed by the specified resource ID. For example:
 
 `dll_with_manifest.dll;#1`
 
@@ -90,7 +90,7 @@ Used with **`/managedassemblyname`**. **`/category`** causes the category tags t
 
 ### DPI Awareness
 
-Specifies whether the application is DPI-aware. By default, the setting is **Yes** for MFC projects and **No** otherwise because only MFC projects have built in DPI awareness. You can override the setting to **Yes** if you add code to handle different DPI settings. Your application might appear fuzzy or small if it isn't DPI-aware, but you set a DPI-aware option.
+Specifies whether the application is DPI-aware. By default, the setting is **Yes** for MFC projects and **No** otherwise because only MFC projects have built-in DPI awareness. You can override the setting to **Yes** if you add code to handle different DPI settings. Your application might be blurry or small if it isn't DPI-aware and you set a DPI-aware option.
 
 **Choices**
 
@@ -98,11 +98,13 @@ Specifies whether the application is DPI-aware. By default, the setting is **Yes
 - **High DPI Aware**
 - **Per Monitor High DPI Aware**
 
-### Segment Heap
+:::moniker range="msvc-180"
+### Enable Segment Heap
 
-Specifies whether the application utilizes the Segment Heap. When enabled, applications benefit from improved memory efficiency, reduced fragmentation, and enhanced memory security. For new C++ projects, the setting is **Yes** by default. 
+Specifies whether the application uses Segment Heap. [Segment Heap](https://devblogs.microsoft.com/cppblog/segment-heap-support-for-c-projects-in-visual-studio/) is a modern heap implementation in Windows that provides stronger protection against common memory vulnerabilities, higher allocation throughput, lower memory fragmentation, better scalability across cores, and more predictable performance under load. For new C++ projects, this property is **Yes** by default.
+:::moniker-end
 
-## Isolated COM Property Page
+## Isolated COM property page
 
 For more information about isolated COM, see [Isolated applications](/windows/win32/SbsCs/isolated-applications) and [How to: Build isolated applications to consume COM components](../how-to-build-isolated-applications-to-consume-com-components.md).
 
@@ -116,13 +118,13 @@ Specifies the registrar script file to use for regfree COM manifest support. (`/
 
 ### Component File Name
 
-Specifies the file name of the component that is built from the .tlb or .rgs specified. (`/dll:[file]`)
+Specifies the file name of the component that's built from the .tlb or .rgs specified. (`/dll:[file]`)
 
 ### Replacements File
 
 Specifies the file that contains values for replaceable strings in the RGS file. (`/replacements:[file]`)
 
-## Advanced Property Page
+## Advanced property page
 
 ### Update File Hashes
 
