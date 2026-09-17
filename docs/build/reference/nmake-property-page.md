@@ -1,16 +1,16 @@
 ---
-description: "Learn more about: NMake Property Page"
+description: Learn more about the NMake property page.
 title: NMake Property Page (Windows C++)
-ms.date: "11/04/2016"
+ms.date: 09/15/2026
 f1_keywords: ["VC.Project.VCNMakeTool.ReBuildCommandLine", "VC.Project.VCNMakeTool.CleanCommandLine", "VC.Project.VCNMakeTool.Output", "VC.Project.VCNMakeTool.BuildCommandLine"]
 helpviewer_keywords: ["NMake property page"]
 ms.assetid: bd20cb52-9f1d-4240-b4fc-4f43205ac94b
 ---
-# NMake Property Page
+# NMake property page
 
 The **NMake** property page lets you specify build settings for *Makefile* projects. (NMAKE is the Microsoft implementation of [Make](https://wikipedia.org/wiki/Make_(software)).)
 
-For more information about Makefile projects, see [Creating a Makefile Project](creating-a-makefile-project.md). For non-Windows Makefile projects, see [Makefile Project Properties (Linux C++)](../../linux/prop-pages/makefile-linux.md), [General Project Properties (Android C++ Makefile)](/visualstudio/cross-platform/general-makefile-android-prop-page) or [NMake Properties (Android C++)](/visualstudio/cross-platform/nmake-android-prop-page).
+For more information about Makefile projects, see [Create a Makefile project](creating-a-makefile-project.md). For non-Windows Makefile projects, see [Makefile Project Properties (Linux C++)](../../linux/prop-pages/makefile-linux.md), [General project properties (Android C++ Makefile)](/visualstudio/cross-platform/general-makefile-android-prop-page), or [NMake properties (Android C++)](/visualstudio/cross-platform/nmake-android-prop-page).
 
 The property page contains the following properties:
 
@@ -18,15 +18,22 @@ The property page contains the following properties:
 
 - **Build Command Line**
 
-   Specifies the command to be run when **Build** is clicked on the **Build** menu.
+   Specifies the command to run when **Build** is selected on the **Build** menu.
 
 - **Rebuild All Command Line**
 
-   Specifies the command to be run when **Rebuild All** is clicked on the **Build** menu.
+   Specifies the command to run when **Rebuild All** is selected on the **Build** menu.
 
 - **Clean Command Line**
 
-   Specifies the command to be run when **Clean** is clicked on the **Build** menu.
+   Specifies the command to run when **Clean** is selected on the **Build** menu.
+
+:::moniker range=">=msvc-170"
+- **Compile File Command Line**
+
+  Specifies the command to run for the **Compile** (Ctrl+F7) command.  
+ 
+:::moniker-end
 
 - **Output**
 
