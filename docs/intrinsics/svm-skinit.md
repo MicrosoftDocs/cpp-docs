@@ -31,7 +31,7 @@ The `__svm_skinit` function is equivalent to the `SKINIT` machine instruction. T
 
 The *block_address* parameter specifies the physical address of a 64K block of memory called the *Secure Loader Block* (SLB). The SLB contains a program called the *secure loader*. It establishes the operating environment for the computer, and then loads the security kernel.
 
-This function supports the interaction of a host's virtual machine monitor with a guest operating system and its applications. For more information, search for "AMD64 Architecture Programmer's Manual Volume 2: System Programming," at the [AMD corporation](https://developer.amd.com/resources/developer-guides-manuals/) site.
+This function supports the interaction of a host's virtual machine monitor with a guest operating system and its applications. For more information, see [AMD64 Architecture Programmer's Manual, Volume 2: System Programming](https://docs.amd.com/v/u/en-US/24593_3.45_APM_Vol2_PUB).
 
 ## Requirements
 
