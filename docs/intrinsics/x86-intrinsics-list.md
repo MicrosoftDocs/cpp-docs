@@ -12,16 +12,11 @@ This document lists intrinsics that the Microsoft C/C++ compiler supports when x
 For information about individual intrinsics, see these resources, as appropriate for the processor you're targeting:
 
 - The header file. Many intrinsics are documented in comments in the header file.
-
 - [Intel Intrinsics Guide](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html). Use the search box to find specific intrinsics.
-
 - [Intel 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/articles/intel-sdm)
-
 - [Intel Architecture Instruction Set Extensions Programming Reference](https://software.intel.com/isa-extensions)
-
 - [Introduction to Intel Advanced Vector Extensions](https://software.intel.com/articles/introduction-to-intel-advanced-vector-extensions)
-
-- [AMD Developer Guides, Manuals & ISA Documents](https://developer.amd.com/resources/developer-guides-manuals/)
+- [AMD Documentation hub](https://www.amd.com/en/search/documentation/hub.html#sortCriteria=%40amd_release_date%20descending&f-amd_product_type=Processors&f-amd_document_location=AMD.com&f-amd_archive_status=Active)
 
 ## x86 intrinsics
 

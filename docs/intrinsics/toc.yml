@@ -173,6 +173,10 @@ items:
           href: ../intrinsics/outwordstring.md
         - name: __popcnt16, __popcnt, __popcnt64
           href: ../intrinsics/popcnt16-popcnt-popcnt64.md
+        - name: __psmash
+          href: ../intrinsics/psmash.md
+        - name: __pvalidate
+          href: ../intrinsics/pvalidate.md
         - name: __rdtsc
           href: ../intrinsics/rdtsc.md
         - name: __rdtscp
@@ -205,6 +209,14 @@ items:
           href: ../intrinsics/readwritebarrier.md
         - name: _ReturnAddress
           href: ../intrinsics/returnaddress.md
+        - name: __rmpadjust
+          href: ../intrinsics/rmpadjust.md
+        - name: __rmpquery
+          href: ../intrinsics/rmpquery.md
+        - name: __rmpread
+          href: ../intrinsics/rmpread.md
+        - name: __rmpupdate
+          href: ../intrinsics/rmpupdate.md
         - name: _rotl8, _rotl16
           href: ../intrinsics/rotl8-rotl16.md
         - name: _rotr8, _rotr16
