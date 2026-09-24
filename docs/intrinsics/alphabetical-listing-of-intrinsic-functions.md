@@ -1,9 +1,8 @@
 ---
-description: "Learn more about: Alphabetical listing of intrinsic functions"
 title: "Alphabetical listing of intrinsic functions"
-ms.date: 11/18/2021
+description: "Learn more about: Alphabetical listing of intrinsic functions"
+ms.date: 09/16/2026
 helpviewer_keywords: ["cl.exe compiler intrinsics", "intrinsics, alphabetical list", "intrinsics"]
-ms.assetid: 178f88a2-7e8e-43ac-b55e-ef3298bef895
 ---
 # Alphabetical listing of intrinsic functions
 
@@ -159,6 +158,10 @@ The following sections describe the Microsoft-specific intrinsic functions avail
 
 [`__popcnt16`, `__popcnt`, `__popcnt64`](../intrinsics/popcnt16-popcnt-popcnt64.md)
 
+[`__psmash`](../intrinsics/psmash.md)
+
+[`__pvalidate`](../intrinsics/pvalidate.md)
+
 [`__rdtsc`](../intrinsics/rdtsc.md)
 
 [`__rdtscp`](../intrinsics/rdtscp.md)
@@ -190,6 +193,14 @@ The following sections describe the Microsoft-specific intrinsic functions avail
 [`_ReadWriteBarrier`](../intrinsics/readwritebarrier.md)
 
 [`_ReturnAddress`](../intrinsics/returnaddress.md)
+
+[`__rmpadjust`](../intrinsics/rmpadjust.md)
+
+[`__rmpquery`](../intrinsics/rmpquery.md)
+
+[`__rmpread`](../intrinsics/rmpread.md)
+
+[`__rmpupdate`](../intrinsics/rmpupdate.md)
 
 [`_rotl8`, `_rotl16`](../intrinsics/rotl8-rotl16.md)
 
