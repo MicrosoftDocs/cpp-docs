@@ -3,7 +3,7 @@ title: "__psmash"
 description: "Learn how to use the Microsoft C++ __psmash intrinsic on x64."
 author: twhitney
 ms.author: twhitney
-ms.date: 09/16/2026
+ms.date: 09/25/2026
 ms.topic: reference
 f1_keywords: ["__psmash", "ammintrin/__psmash"]
 helpviewer_keywords: ["__psmash intrinsic", "PSMASH instruction"]
@@ -47,6 +47,8 @@ The `__psmash` intrinsic corresponds to the AMD `PSMASH` machine instruction. It
 For more information, see [AMD64 Architecture Programmer's Manual, Volume 2: System Programming](https://docs.amd.com/v/u/en-US/24593_3.45_APM_Vol2_PUB).
 
 ## Requirements
+
+Available starting with MSVC 19.52.3683
 
 | Intrinsic | Architecture | Header |
 |-----------|------------|---------------|
