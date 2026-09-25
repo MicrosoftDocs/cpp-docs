@@ -3,7 +3,7 @@ title: "__pvalidate"
 description: "Learn how to use the Microsoft C++ __pvalidate intrinsic on x64."
 author: twhitney
 ms.author: twhitney
-ms.date: 09/16/2026
+ms.date: 09/25/2026
 ms.topic: reference
 f1_keywords: ["__pvalidate", "ammintrin/__pvalidate"]
 helpviewer_keywords: ["__pvalidate intrinsic", "PVALIDATE instruction"]
@@ -57,6 +57,8 @@ The `__pvalidate` intrinsic corresponds to the AMD `PVALIDATE` machine instructi
 For more information, see [AMD64 Architecture Programmer's Manual, Volume 2: System Programming](https://docs.amd.com/v/u/en-US/24593_3.45_APM_Vol2_PUB).
 
 ## Requirements
+
+Available starting with MSVC 19.52.3683
 
 | Intrinsic   | Architecture | Header |
 |-------------|------------|---------------|

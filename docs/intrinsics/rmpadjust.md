@@ -3,7 +3,7 @@ title: "__rmpadjust"
 description: "Learn how to use the Microsoft C++ __rmpadjust intrinsic on x64."
 author: twhitney
 ms.author: twhitney
-ms.date: 09/16/2026
+ms.date: 09/25/2026
 ms.topic: reference
 f1_keywords: ["__rmpadjust", "ammintrin/__rmpadjust"]
 helpviewer_keywords: ["__rmpadjust intrinsic", "RMPADJUST instruction"]
@@ -23,7 +23,7 @@ unsigned int __rmpadjust(
    unsigned __int8 page_size,
    unsigned __int8 target_vmpl,
    unsigned __int8 target_perm_mask,
-   unsigned __int8  vmsa);
+   unsigned __int8  vmsa
 );
 ```
 
@@ -62,6 +62,8 @@ The `__rmpadjust` intrinsic corresponds to the AMD `RMPADJUST` machine instructi
 For more information, see [AMD64 Architecture Programmer's Manual, Volume 2: System Programming](https://docs.amd.com/v/u/en-US/24593_3.45_APM_Vol2_PUB).
 
 ## Requirements
+
+Available starting with MSVC 19.52.3683
 
 | Intrinsic   | Architecture | Header |
 |-------------|------------|---------------|
