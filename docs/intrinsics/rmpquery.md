@@ -3,7 +3,7 @@ title: "__rmpquery"
 description: "Learn how to use the Microsoft C++ __rmpquery intrinsic on x64."
 author: twhitney
 ms.author: twhitney
-ms.date: 09/16/2026
+ms.date: 09/25/2026
 ms.topic: reference
 f1_keywords: ["__rmpquery", "ammintrin/__rmpquery"]
 helpviewer_keywords: ["__rmpquery intrinsic", "RMPQUERY instruction"]
@@ -58,6 +58,8 @@ The `__rmpquery` intrinsic corresponds to the AMD `RMPQUERY` machine instruction
 For more information, see [AMD64 Architecture Programmer's Manual, Volume 2: System Programming](https://docs.amd.com/v/u/en-US/24593_3.45_APM_Vol2_PUB).
 
 ## Requirements
+
+Available starting with MSVC 19.52.3683
 
 | Intrinsic  | Architecture | Header |
 |------------|------------|---------------|
