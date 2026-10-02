@@ -4,13 +4,13 @@ title: "checked_array_iterator Class"
 ms.date: "03/27/2019"
 f1_keywords: ["iterator/checked_array_iterator", "iterator/stdext::checked_array_iterator::difference_type", "iterator/stdext::checked_array_iterator::pointer", "iterator/stdext::checked_array_iterator::reference", "iterator/stdext::checked_array_iterator::base"]
 helpviewer_keywords: ["stdext::checked_array_iterator [C++], difference_type", "stdext::checked_array_iterator [C++], pointer", "stdext::checked_array_iterator [C++], reference", "stdext::checked_array_iterator [C++], base"]
-ms.assetid: 7f07185e-d588-4ae3-9c4f-84ec4aa25a28
 ---
 # checked_array_iterator Class
 
 The `checked_array_iterator` class allows you to transform an array or pointer into a checked iterator. Use this class as a wrapper (using the [make_checked_array_iterator](../standard-library/iterator-functions.md#make_checked_array_iterator) function) for raw pointers or arrays as a targeted way to provide checking and to manage unchecked pointer warnings instead of globally silencing these warnings. If necessary, you can use the unchecked version of this class, [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md).
 
 > [!NOTE]
+> The `checked_array_iterator` class was removed in MSVC Build Tools 14.51.
 > This class is a Microsoft extension of the C++ Standard Library. Code implemented by using this function is not portable to C++ Standard build environments that do not support this Microsoft extension. For an example demonstrating how to write code that does not require the use of this class, see the second example below.
 
 ## Syntax

@@ -2,13 +2,15 @@
 description: "Learn more about: hash_compare Class"
 title: "hash_compare Class"
 ms.date: "11/04/2016"
-f1_keywords: ["hash_set/stdext::hash_compare"]
+f1_keywords: ["stdext::hash_compare"]
 helpviewer_keywords: ["hash_compare class"]
-ms.assetid: d502bb59-de57-4585-beb9-00e3a998c0af
 ---
-# hash_compare Class
+# hash_compare class
 
 The class template describes an object that can be used by any of the hash associative containers — hash_map, hash_multimap, hash_set, or hash_multiset — as a default **Traits** parameter object to order and hash the elements they contain.
+
+> [!NOTE]
+> `hash_compare` was removed in MSVC Build Tools 14.51
 
 ## Syntax
 
@@ -46,9 +48,9 @@ See examples for [hash_map::hash_map](../standard-library/hash-map-class.md#hash
 
 ## Requirements
 
-**Header:** \<hash_map>
+**Header:** `<hash_map>`
 
-**Namespace:** stdext
+**Namespace:** `stdext`
 
 ## See also
 

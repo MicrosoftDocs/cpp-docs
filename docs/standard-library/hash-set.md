@@ -8,7 +8,8 @@ helpviewer_keywords: ["hash_set header"]
 # `<hash_set>`
 
 > [!NOTE]
-> This header is obsolete. The alternative is [<unordered_set>](../standard-library/unordered-set.md).
+> This header is obsolete. The alternative is [`<unordered_set>`](../standard-library/unordered-set.md).
+> This header was removed in MSVC Build Tools 14.51
 
 Defines the container class templates hash_set and hash_multiset and their supporting templates.
 

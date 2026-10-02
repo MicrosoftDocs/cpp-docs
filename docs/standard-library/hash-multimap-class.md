@@ -1,14 +1,15 @@
 ---
-title: "hash_multimap Class"
+title: "hash_multimap class"
 description: "Learn more about: hash_multimap Class"
 ms.date: 10/18/2018
 f1_keywords: ["hash_map/stdext::hash_multimap", "hash_map/stdext::hash_multimap::allocator_type", "hash_map/stdext::hash_multimap::const_iterator", "hash_map/stdext::hash_multimap::const_pointer", "hash_map/stdext::hash_multimap::const_reference", "hash_map/stdext::hash_multimap::const_reverse_iterator", "hash_map/stdext::hash_multimap::difference_type", "hash_map/stdext::hash_multimap::iterator", "hash_map/stdext::hash_multimap::key_compare", "hash_map/stdext::hash_multimap::key_type", "hash_map/stdext::hash_multimap::mapped_type", "hash_map/stdext::hash_multimap::pointer", "hash_map/stdext::hash_multimap::reference", "hash_map/stdext::hash_multimap::reverse_iterator", "hash_map/stdext::hash_multimap::size_type", "hash_map/stdext::hash_multimap::value_type", "hash_map/stdext::hash_multimap::begin", "hash_map/stdext::hash_multimap::cbegin", "hash_map/stdext::hash_multimap::cend", "hash_map/stdext::hash_multimap::clear", "hash_map/stdext::hash_multimap::count", "hash_map/stdext::hash_multimap::crbegin", "hash_map/stdext::hash_multimap::crend", "hash_map/stdext::hash_multimap::emplace", "hash_map/stdext::hash_multimap::emplace_hint", "hash_map/stdext::hash_multimap::empty", "hash_map/stdext::hash_multimap::end", "hash_map/stdext::hash_multimap::equal_range", "hash_map/stdext::hash_multimap::erase", "hash_map/stdext::hash_multimap::find", "hash_map/stdext::hash_multimap::get_allocator", "hash_map/stdext::hash_multimap::insert", "hash_map/stdext::hash_multimap::key_comp", "hash_map/stdext::hash_multimap::lower_bound", "hash_map/stdext::hash_multimap::max_size", "hash_map/stdext::hash_multimap::rbegin", "hash_map/stdext::hash_multimap::rend", "hash_map/stdext::hash_multimap::size", "hash_map/stdext::hash_multimap::swap", "hash_map/stdext::hash_multimap::upper_bound", "hash_map/stdext::hash_multimap::value_comp"]
 helpviewer_keywords: ["stdext::hash_multimap", "stdext::hash_multimap::allocator_type", "stdext::hash_multimap::const_iterator", "stdext::hash_multimap::const_pointer", "stdext::hash_multimap::const_reference", "stdext::hash_multimap::const_reverse_iterator", "stdext::hash_multimap::difference_type", "stdext::hash_multimap::iterator", "stdext::hash_multimap::key_compare", "stdext::hash_multimap::key_type", "stdext::hash_multimap::mapped_type", "stdext::hash_multimap::pointer", "stdext::hash_multimap::reference", "stdext::hash_multimap::reverse_iterator", "stdext::hash_multimap::size_type", "stdext::hash_multimap::value_type", "stdext::hash_multimap::begin", "stdext::hash_multimap::cbegin", "stdext::hash_multimap::cend", "stdext::hash_multimap::clear", "stdext::hash_multimap::count", "stdext::hash_multimap::crbegin", "stdext::hash_multimap::crend", "stdext::hash_multimap::emplace", "stdext::hash_multimap::emplace_hint", "stdext::hash_multimap::empty", "stdext::hash_multimap::end", "stdext::hash_multimap::equal_range", "stdext::hash_multimap::erase", "stdext::hash_multimap::find", "stdext::hash_multimap::get_allocator", "stdext::hash_multimap::insert", "stdext::hash_multimap::key_comp", "stdext::hash_multimap::lower_bound", "stdext::hash_multimap::max_size", "stdext::hash_multimap::rbegin", "stdext::hash_multimap::rend", "stdext::hash_multimap::size", "stdext::hash_multimap::swap", "stdext::hash_multimap::upper_bound", "stdext::hash_multimap::value_comp"]
 ---
-# hash_multimap Class
+# hash_multimap class
 
 > [!NOTE]
-> This API is obsolete. The alternative is [unordered_multimap Class](../standard-library/unordered-multimap-class.md).
+> This API is obsolete. The alternative is [`unordered_multimap`](../standard-library/unordered-multimap-class.md).
+> `hash_multimap` was removed in MSVC Build Tools 14.51.
 
 The container class hash_multimap is an extension of the C++ Standard Library and is used for the storage and fast retrieval of data from a collection in which each element is a pair that has a sort key whose value need not be unique and an associated data value.
 
@@ -130,7 +131,7 @@ The iterator provided by the hash_multimap class is a bidirectional iterator, bu
 
 ## Requirements
 
-**Header:** \<hash_map>
+**Header:** `<hash_map>`
 
 **Namespace:** stdext
 

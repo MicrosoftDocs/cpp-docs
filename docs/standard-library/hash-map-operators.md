@@ -11,7 +11,8 @@ The `<hash_map>` header provides the following operators:
 ## <a name="op_neq"></a> operator!=
 
 > [!NOTE]
-> This API is obsolete. The alternative is [unordered_map Class](unordered-map-class.md).
+> This API is obsolete. The alternative is [`unordered_map`](unordered-map-class.md).
+> This header was removed in MSVC Build Tools 14.51
 
 Tests if the hash_map object on the left side of the operator is not equal to the hash_map object on the right side.
 

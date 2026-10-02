@@ -8,7 +8,8 @@ helpviewer_keywords: ["hash_map header"]
 # `<hash_map>`
 
 > [!NOTE]
-> This header is obsolete. The alternative is [\<unordered_map>](unordered-map.md).
+> This header is obsolete. The alternative is [`<unordered_map>`](unordered-map.md).
+> This header was removed in MSVC Build Tools 14.51
 
 Defines the container class templates hash_map and hash_multimap and their supporting templates.
 
