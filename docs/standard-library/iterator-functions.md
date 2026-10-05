@@ -778,6 +778,7 @@ After the insertions, the list L is:
 Creates a [checked_array_iterator](../standard-library/checked-array-iterator-class.md) that can be used by other algorithms.
 
 > [!NOTE]
+> `checked_array_iterator` was removed in MSVC Build Tools 14.51.
 > This function is a Microsoft extension of the C++ Standard Library. Code implemented by using this function is not portable to C++ Standard build environments that do not support this Microsoft extension.
 
 ```cpp
@@ -896,6 +897,7 @@ The template function returns `move_iterator` `<Iterator>(_It)`.
 Creates an [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md) that can be used by other algorithms.
 
 > [!NOTE]
+> The `unchecked_array_iterator` class was removed in MSVC Build Tools 14.51.
 > This function is a Microsoft extension of the C++ Standard Library. Code implemented by using this function is not portable to C++ Standard build environments that do not support this Microsoft extension.
 
 ```cpp

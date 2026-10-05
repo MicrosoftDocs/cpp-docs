@@ -21,11 +21,8 @@ You can use the [`_ITERATOR_DEBUG_LEVEL`](iterator-debug-level.md) preprocessor 
 When `_ITERATOR_DEBUG_LEVEL` is defined as 1 or 2, these iterator checks are performed:
 
 - All standard iterators (for example, [`vector::iterator`](vector-class.md#iterator)) are checked.
-
 - If an output iterator is a checked iterator, calls to standard library functions such as [`std::copy`](algorithm-functions.md#copy) get checked behavior.
-
 - If an output iterator is an unchecked iterator, calls to standard library functions cause compiler warnings.
-
 - The following functions generate a runtime error if there is an access that is outside the bounds of the container:
 
 :::row:::
@@ -52,14 +49,15 @@ When `_ITERATOR_DEBUG_LEVEL` is defined as 1 or 2, these iterator checks are per
 When `_ITERATOR_DEBUG_LEVEL` is defined as 0:
 
 - All standard iterators are unchecked. Iterators can move beyond the container boundaries, which leads to undefined behavior.
-
 - If an output iterator is a checked iterator, calls to standard library functions such as `std::copy` get checked behavior.
-
 - If an output iterator is an unchecked iterator, calls to standard library functions get unchecked behavior.
 
 A checked iterator refers to an iterator that calls `invalid_parameter_handler` if you attempt to move past the boundaries of the container. For more information about `invalid_parameter_handler`, see [Parameter Validation](../c-runtime-library/parameter-validation.md).
 
 The iterator adaptors that support checked iterators are [`checked_array_iterator` Class](checked-array-iterator-class.md) and [`unchecked_array_iterator` Class](unchecked-array-iterator-class.md).
+
+> [!NOTE]
+> Both `checked_array_iterator` and `unchecked_array_iterator` were removed in MSVC Build Tools 14.51.
 
 ## Examples
 

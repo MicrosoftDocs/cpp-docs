@@ -5,7 +5,7 @@ ms.date: 08/27/2026
 f1_keywords: ["filesystem/std::filesystem::file_status", "filesystem/std::filesystem::file_status::operator=", "filesystem/std::filesystem::file_status::type", "filesystem/std::filesystem::file_status::permissions"]
 helpviewer_keywords: ["std::filesystem::file_status", "std::filesystem::file_status::operator=", "std::filesystem::file_status::type", "std::filesystem::file_status::permissions"]
 ---
-# file_status Class
+# file_status class
 
 Wraps a [file_type](../standard-library/filesystem-enumerations.md#file_type) and file [perms](../standard-library/filesystem-enumerations.md#perms).
 
@@ -36,9 +36,9 @@ class file_status;
 
 ## Requirements
 
-**Header:** \<filesystem>
+**Header:** `<filesystem>`
 
-**Namespace:** std::filesystem
+**Namespace:** `std::filesystem`
 
 ## <a name="file_status"></a> file_status::file_status
 

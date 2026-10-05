@@ -11,7 +11,8 @@ The `<hash_set>` header provides the following functions:
 ## <a name="swap"></a> swap
 
 > [!NOTE]
-> This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
+> This API is obsolete. The alternative is [`<unordered_set>`](../standard-library/unordered-set-class.md).
+> This header was removed in MSVC Build Tools 14.51.
 
 Exchanges the elements of two hash_sets.
 
@@ -54,24 +55,20 @@ void swap(hash_multiset <Key, Traits, Allocator>& left, hash_multiset <Key, Trai
 
 ### Parameters
 
-*right*\
-The hash_multiset providing the elements to be swapped, or the hash_multiset whose elements are to be exchanged with those of the hash_multiset *left*.
+*`right`*\
+The hash_multiset providing the elements to swap, or the hash_multiset whose elements to exchange with those of the hash_multiset *`left`*.
 
-*left*\
-The hash_multiset whose elements are to be exchanged with those of the hash_multiset *right*.
+*`left`*\
+The hash_multiset whose elements to exchange with those of the hash_multiset *`right`*.
 
 ### Remarks
 
-The `swap` template function is an algorithm specialized on the container class hash_multiset to execute the member function `left.`[swap](../standard-library/hash-multiset-class.md#swap)(`right`). This is an instance of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function
-
-**template \<class T> void swap(T&, T&),**
-
-in the algorithm class works by assignment and is a slow operation. The specialized version in each container is much faster as it can work with the internal representation of the container class.
+The `swap` template function is an algorithm specialized on the container class hash_multiset to execute the member function `left.`[swap](../standard-library/hash-multiset-class.md#swap)(`right`). This function demonstrates how the compiler uses partial ordering of function templates. When template functions are overloaded so that the match of the template with the function call isn't unique, the compiler selects the most specialized version of the template function. The general version of the template function `template <class T> void swap(T&, T&)` in the algorithm class works by assignment and is a slow operation. The specialized version in each container is much faster because it works with the internal representation of the container class.
 
 ### Example
 
-See the code example for the member class [hash_multiset::swap](../standard-library/hash-multiset-class.md#swap) for an example that uses the template version of `swap`.
+For an example that uses the template version of `swap`, see the code example for the member class [`hash_multiset::swap`](../standard-library/hash-multiset-class.md#swap).
 
 ## See also
 
-[<hash_set>](../standard-library/hash-set.md)
+[`<hash_set>`](../standard-library/hash-set.md)

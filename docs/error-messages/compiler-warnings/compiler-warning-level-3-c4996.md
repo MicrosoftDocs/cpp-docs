@@ -1,8 +1,9 @@
 ---
 title: "Compiler Warning (level 3) C4996"
-description: "Explains why Compiler warning C4996 happens, and describes what to do about it."
-ms.date: 08/30/2022
+description: "Explains why Compiler warning C4996 happens and what to do about it."
+ms.date: 05/12/2026
 f1_keywords: ["C4996"]
+ai-usage: ai-assisted
 helpviewer_keywords: ["C4996"]
 ---
 # Compiler Warning (level 3) C4996
@@ -39,9 +40,7 @@ To turn off the warning globally in command-line builds, use the [`/wd4996`](../
 To turn off the warning for an entire project in the Visual Studio IDE:
 
 1. Open the **Property Pages** dialog for your project. For information on how to use the Property Pages dialog, see [Property Pages](../../build/reference/property-pages-visual-cpp.md).
-
 1. Select the **Configuration Properties** > **C/C++** > **Advanced** property page.
-
 1. Edit the **Disable Specific Warnings** property to add *`4996`*. Choose **OK** to apply your changes.
 
 ### Disable the warning using preprocessor macros
@@ -51,14 +50,15 @@ You can also use preprocessor macros to turn off certain specific classes of dep
 To define a preprocessor macro in Visual Studio:
 
 1. Open the **Property Pages** dialog for your project. For information on how to use the Property Pages dialog, see [Property Pages](../../build/reference/property-pages-visual-cpp.md).
-
 1. Expand **Configuration Properties > C/C++ > Preprocessor**.
-
 1. In the **Preprocessor Definitions** property, add the macro name. Choose **OK** to save, and then rebuild your project.
 
 To define a macro only in specific source files, add a line such as `#define EXAMPLE_MACRO_NAME` before any line that includes a header file.
 
 Here are some of the common sources of C4996 warnings and errors:
+
+> [!NOTE]
+> Visual Studio 2017 version 15.8 removed the C4996 warnings controlled by `_SCL_SECURE_NO_WARNINGS` from the Microsoft C++ Standard Library. Current versions of the library don't emit these warnings. For details, see [STL Features and Fixes in VS 2017 15.8](https://devblogs.microsoft.com/cppblog/stl-features-and-fixes-in-vs-2017-15-8/).
 
 ## POSIX function names
 
@@ -74,7 +74,7 @@ To turn off deprecation warnings for these functions, define the preprocessor ma
 
 > This function or variable may be unsafe. Consider using *`safe-version`* instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 
-Microsoft deprecated some CRT and C++ Standard Library functions and globals because more secure versions are available. Most of the deprecated functions allow unchecked read or write access to buffers. Their misuse can lead to serious security issues. The compiler issues a deprecation warning for these functions, and suggests the preferred function.
+Microsoft deprecated some CRT and C++ Standard Library functions and globals because more secure versions are available. Most of the deprecated functions allow unchecked read or write access to buffers. Their misuse can lead to security problems. The compiler issues a deprecation warning for these functions, and suggests the preferred function.
 
 To fix this issue, we recommend you use the function or variable *`safe-version`* instead. Sometimes you can't, for portability or backwards compatibility reasons. Carefully verify it's not possible for a buffer overwrite or overread to occur in your code. Then, you can turn off the warning.
 
@@ -86,156 +86,57 @@ For more information about these deprecated functions and globals, see [Security
 
 ## Unsafe Standard Library functions
 
-> 'std:: *`function_name`* ::_Unchecked_iterators::_Deprecate' Call to std:: *`function_name`* with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+> 'std:: *`function_name`* ::_Unchecked_iterators::_Deprecate' call to std:: *`function_name`* with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use `-D_SCL_SECURE_NO_WARNINGS`. For more information about how to use Visual C++ 'Checked Iterators', see [Checked iterators](../../standard-library/checked-iterators.md).
 
-In Visual Studio 2015, this warning appears in debug builds because certain C++ Standard Library function templates don't check parameters for correctness. Often it's because not enough information is available to the function to check container bounds. Or, because iterators may be used incorrectly with the function. This warning helps you identify these functions, because they may be a source of serious security holes in your program. For more information, see [Checked iterators](../../standard-library/checked-iterators.md).
+This warning comes from certain C++ Standard Library function templates when you call them with iterators the library can't verify. Often, the function doesn't have enough information to check container bounds, or you might be using iterators incorrectly with the function. The warning helps you identify calls that might cause security problems in your program. For more information, see [Checked iterators](../../standard-library/checked-iterators.md).
 
-For example, this warning appears in Debug mode if you pass an element pointer to `std::copy`, instead of a plain array. To fix this issue, use an appropriately declared array, so the library can check the array extents and do bounds checking.
+The library treats pointers you pass to standard algorithms as checked iterators when it can deduce the destination range. This category of C4996 warnings remains for cases the library still can't verify, such as user-defined output iterators that aren't marked as checked.
 
-```cpp
-// C4996_copyarray.cpp
-// compile with: cl /c /W4 /D_DEBUG C4996_copyarray.cpp
-#include <algorithm>
+To fix the warning, use a standard iterator the library already classifies as checked, such as a container iterator, `std::back_inserter`, or an iterator into a `std::array` or `std::span`. If you verify the call can't overrun its destination, you can turn off this warning by defining **`_SCL_SECURE_NO_WARNINGS`**.
 
-void example(char const * const src) {
-    char dest[1234];
-    char * pdest3 = dest + 3;
-    std::copy(src, src + 42, pdest3); // C4996
-    std::copy(src, src + 42, dest);   // OK, copy can tell that dest is 1234 elements
-}
-```
+## Deprecated C++ Standard Library features
 
-Several standard library algorithms were updated to have "dual range" versions in C++14. If you use the dual range versions, the second range provides the necessary bounds checking:
+C4996 also occurs when your code uses a Standard Library type, function, or template that a revision of the C++ Standard deprecated. The warning appears at the point of use, and the message identifies the deprecated symbol.
+
+`std::iterator` is the canonical example: The C++17 standard deprecated it and modern conformance modes still include it (only deprecated, not removed). Other features - such as `std::auto_ptr`, `std::random_shuffle`, `std::unary_function`, and `std::binary_function` - were *removed* by C++17. In default `/std:c++17` and later modes, code that names them fails to compile rather than emitting C4996. They only emit C4996 when you explicitly opt them back in (for example, by compiling with `/std:c++14`, or by defining macros such as `_HAS_AUTO_PTR_ETC=1` and `_HAS_FEATURES_REMOVED_IN_CXX17=1` before including any standard headers).
+
+To fix the warning, replace the deprecated symbol with its modern equivalent. For example, instead of deriving an iterator type from `std::iterator`, define the five iterator typedefs (`iterator_category`, `value_type`, `difference_type`, `pointer`, and `reference`) directly on the iterator type:
 
 ```cpp
-// C4996_containers.cpp
-// compile with: cl /c /W4 /D_DEBUG C4996_containers.cpp
-#include <algorithm>
-
-bool example(
-    char const * const left,
-    const size_t leftSize,
-    char const * const right,
-    const size_t rightSize)
-{
-    bool result = false;
-    result = std::equal(left, left + leftSize, right); // C4996
-    // To fix, try this form instead:
-    // result = std::equal(left, left + leftSize, right, right + rightSize); // OK
-    return result;
-}
-```
-
-This example demonstrates several more ways the standard library may be used to check iterator usage, and when unchecked usage may be dangerous:
-
-```cpp
-// C4996_standard.cpp
-// compile with: cl /EHsc /W4 /MDd C4996_standard.cpp
-#include <algorithm>
-#include <array>
-#include <iostream>
-#include <iterator>
-#include <numeric>
-#include <string>
-#include <vector>
-
-using namespace std;
-
-template <typename C> void print(const string& s, const C& c) {
-    cout << s;
-
-    for (const auto& e : c) {
-        cout << e << " ";
-    }
-
-    cout << endl;
-}
-
-int main()
-{
-    vector<int> v(16);
-    iota(v.begin(), v.end(), 0);
-    print("v: ", v);
-
-    // OK: vector::iterator is checked in debug mode
-    // (i.e. an overrun triggers a debug assertion)
-    vector<int> v2(16);
-    transform(v.begin(), v.end(), v2.begin(), [](int n) { return n * 2; });
-    print("v2: ", v2);
-
-    // OK: back_insert_iterator is marked as checked in debug mode
-    // (i.e. an overrun is impossible)
-    vector<int> v3;
-    transform(v.begin(), v.end(), back_inserter(v3), [](int n) { return n * 3; });
-    print("v3: ", v3);
-
-    // OK: array::iterator is checked in debug mode
-    // (i.e. an overrun triggers a debug assertion)
-    array<int, 16> a4;
-    transform(v.begin(), v.end(), a4.begin(), [](int n) { return n * 4; });
-    print("a4: ", a4);
-
-    // OK: Raw arrays are checked in debug mode
-    // (i.e. an overrun triggers a debug assertion)
-    // NOTE: This applies only when raw arrays are
-    // given to C++ Standard Library algorithms!
-    int a5[16];
-    transform(v.begin(), v.end(), a5, [](int n) { return n * 5; });
-    print("a5: ", a5);
-
-    // WARNING C4996: Pointers cannot be checked in debug mode
-    // (i.e. an overrun triggers undefined behavior)
-    int a6[16];
-    int * p6 = a6;
-    transform(v.begin(), v.end(), p6, [](int n) { return n * 6; });
-    print("a6: ", a6);
-
-    // OK: stdext::checked_array_iterator is checked in debug mode
-    // (i.e. an overrun triggers a debug assertion)
-    int a7[16];
-    int * p7 = a7;
-    transform(v.begin(), v.end(),
-        stdext::make_checked_array_iterator(p7, 16),
-        [](int n) { return n * 7; });
-    print("a7: ", a7);
-
-    // WARNING SILENCED: stdext::unchecked_array_iterator
-    // is marked as checked in debug mode, but it performs no checking,
-    // so an overrun triggers undefined behavior
-    int a8[16];
-    int * p8 = a8;
-    transform( v.begin(), v.end(),
-        stdext::make_unchecked_array_iterator(p8),
-        [](int n) { return n * 8; });
-    print("a8: ", a8);
-}
-```
-
-If you've verified that your code can't have a buffer-overrun error, you can turn off this warning. To turn off warnings for these functions, define **`_SCL_SECURE_NO_WARNINGS`**.
-
-## Checked iterators enabled
-
-C4996 can also occur if you don't use a checked iterator when `_ITERATOR_DEBUG_LEVEL` is defined as 1 or 2. It's set to 2 by default for debug mode builds, and to 0 for retail builds. For more information, see [Checked iterators](../../standard-library/checked-iterators.md).
-
-```cpp
-// C4996_checked.cpp
-// compile with: /EHsc /W4 /MDd C4996_checked.cpp
-#define _ITERATOR_DEBUG_LEVEL 2
-
-#include <algorithm>
+// C4996_iterator.cpp
+// compile with: cl /c /EHsc /W4 /std:c++20 C4996_iterator.cpp
 #include <iterator>
 
-using namespace std;
-using namespace stdext;
+// std::iterator was deprecated in C++17, generates C4996
+struct my_iterator : std::iterator<std::input_iterator_tag, int>  // C4996
+{
+    int* p;
+    my_iterator(int* p) : p(p) {}
+    int& operator*() { return *p; }
+    my_iterator& operator++() { ++p; return *this; }
+    my_iterator operator++(int) { auto tmp = *this; ++p; return tmp; }
+    bool operator==(const my_iterator& o) const { return p == o.p; }
+};
 
-int main() {
-    int a[] = { 1, 2, 3 };
-    int b[] = { 10, 11, 12 };
-    copy(a, a + 3, b + 1);   // C4996
-    // try the following line instead:
-    // copy(a, a + 3, checked_array_iterator<int *>(b, 3));   // OK
-}
+// Fix: declare the iterator typedefs directly.
+struct my_iterator_fixed
+{
+    using iterator_category = std::input_iterator_tag;
+    using value_type        = int;
+    using difference_type   = std::ptrdiff_t;
+    using pointer           = int*;
+    using reference         = int&;
+
+    int* p;
+    my_iterator_fixed(int* p) : p(p) {}
+    int& operator*() { return *p; }
+    my_iterator_fixed& operator++() { ++p; return *this; }
+    my_iterator_fixed operator++(int) { auto tmp = *this; ++p; return tmp; }
+    bool operator==(const my_iterator_fixed& o) const { return p == o.p; }
+};
 ```
+
+If you can't change the code, you can suppress these warnings by defining the appropriate `_SILENCE_*_DEPRECATION_WARNING` macro before including any standard header. The macro name is specific to the deprecated feature and is included in the warning message. For example, `_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING` for `std::iterator`. To silence all such warnings for a given standard, define `_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS` or `_SILENCE_ALL_CXX20_DEPRECATION_WARNINGS`. Define these macros project-wide (in **Preprocessor Definitions** or via `/D`), because once a standard header is processed - including via a precompiled header - a later `#define` in user code has no effect on the warnings it already emitted.
 
 ## Unsafe MFC or ATL code
 
@@ -282,7 +183,7 @@ int main() {
 
 ## Example: User-defined deprecated function
 
-You can use the `deprecated` attribute in your own code to warn callers when you no longer recommend use of certain functions. In this example, C4996 is generated in two places: One for the line the deprecated function is declared on, and one for the line where the function is used.
+Use the `[[deprecated]]` attribute in your own code to warn callers when you no longer recommend use of certain functions. The attribute on the declaration itself doesn't emit C4996; only uses of the deprecated symbol do. In this example, C4996 is generated at the call site of the deprecated overload.
 
 ```cpp
 // C4996.cpp
@@ -297,7 +198,7 @@ void func1(void) {
 
 [[deprecated]]
 void func1(int) {
-   printf_s("\nIn func2");
+   printf_s("\nIn func1(int)");
 }
 
 int main() {
@@ -305,3 +206,9 @@ int main() {
    func1(1);    // C4996
 }
 ```
+
+## See also
+
+[`__declspec(deprecated)`](../../cpp/deprecated-cpp.md)\
+[Safe Libraries: C++ Standard Library](../../standard-library/safe-libraries-cpp-standard-library.md)\
+[Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md)
