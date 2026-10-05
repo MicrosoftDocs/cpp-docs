@@ -18,9 +18,9 @@ This article documents the enumerations in the C++17 `std::filesystem` implement
 
 **Namespace:** `std::filesystem`
 
-## <a name="copy_options"></a> copy_options
+## <a name="copy_options"></a> `copy_options`
 
-An enumeration of bitmask values that is used with [copy](filesystem-functions.md#copy) and [copy_file](filesystem-functions.md#copy_file) functions to specify behavior.
+An enumeration of bitmask values that you use with [`copy`](filesystem-functions.md#copy) and [`copy_file`](filesystem-functions.md#copy_file) functions to specify behavior.
 
 ### Syntax
 
@@ -171,4 +171,4 @@ enum class perms {// names for permissions
 ## See also
 
 [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
-[\<filesystem>](../standard-library/filesystem.md)
+[`<filesystem>`](../standard-library/filesystem.md)

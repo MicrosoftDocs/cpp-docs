@@ -8,7 +8,8 @@ helpviewer_keywords: ["stdext::hash_set", "stdext::hash_set::allocator_type", "s
 # hash_set Class
 
 > [!NOTE]
-> This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
+> This API is obsolete. The alternative is [`unordered_set`](../standard-library/unordered-set-class.md).
+> `hash_set` was removed in MSVC Build Tools 14.51
 
 The container class hash_set is an extension of the C++ Standard Library and is used for the storage and fast retrieval of data from a collection in which the values of the elements contained are unique and serve as the key values.
 

@@ -1,12 +1,12 @@
 ---
 description: "Learn more about: C++ Standard Library (STL) Overview"
 title: "C++ Standard Library Overview (STL)"
-ms.date: "08/18/2022"
+ms.date: 05/12/2026
 helpviewer_keywords: ["headers, C++ library", "C++ Standard Library", "libraries, Standard C++", "C++ Standard Library, headers", "STL", "Standard template library, headers"]
 ---
 # C++ Standard Library (STL) overview
 
-All C++ library entities are declared or defined in one or more standard headers. This implementation includes two other headers, `<hash_map>` and `<hash_set>`, that aren't required by the C++ Standard. For a complete list of headers that this implementation supports, see [Header files reference](../standard-library/cpp-standard-library-header-files.md).
+The C++ standard library declares or defines all library entities in one or more standard headers. For a complete list of headers that this implementation supports, see [Header files reference](../standard-library/cpp-standard-library-header-files.md).
 
 The C++ standard defines two kinds of conforming libraries:
 - A *hosted implementation*, which supports all of the required standard library headers described by the C++ ISO standard.
@@ -36,31 +36,20 @@ The Microsoft C++ standard library satisfies both freestanding and hosted requir
 The C++ library headers have two broader subdivisions:
 
 - [iostreams](../standard-library/iostreams-conventions.md) conventions.
-
 - [C++ Standard library (STL) reference](../standard-library/cpp-standard-library-reference.md) conventions.
 
 This section contains the following sections:
 
 - [Using C++ library headers](../standard-library/using-cpp-library-headers.md)
-
 - [C++ library conventions](../standard-library/cpp-library-conventions.md)
-
 - [iostreams Conventions](../standard-library/iostreams-conventions.md)
-
 - [C++ program startup and termination](../standard-library/cpp-program-startup-and-termination.md)
-
 - [Safe libraries: C++ standard library](../standard-library/safe-libraries-cpp-standard-library.md)
-
 - [Checked iterators](../standard-library/checked-iterators.md)
-
 - [Debug iterator support](../standard-library/debug-iterator-support.md)
-
 - [C++ standard library (STL) reference](../standard-library/cpp-standard-library-reference.md)
-
 - [Thread safety in the C++ standard library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
-
 - [stdext namespace](../standard-library/stdext-namespace.md)
-
 - [Regular expressions (C++)](../standard-library/regular-expressions-cpp.md)
 
 For more information about Visual C++ run-time libraries, see [CRT Library Features](../c-runtime-library/crt-library-features.md).

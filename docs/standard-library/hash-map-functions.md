@@ -11,7 +11,8 @@ The `<hash_map>` header provides the following functions:
 ## <a name="swap_hash_map"></a> `swap` (`hash_map`)
 
 > [!NOTE]
-> This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).
+> This API is obsolete. The alternative is [`unordered_map`](../standard-library/unordered-map-class.md).
+> This header was removed in MSVC Build Tools 14.51
 
 Exchanges the elements of two hash_maps.
 
