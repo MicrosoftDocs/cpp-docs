@@ -1,11 +1,14 @@
 ---
-title: "value_compare Class"
-description: "Learn more about: value_compare Class"
+title: "value_compare class"
+description: "Learn more about: value_compare class"
 ms.date: 11/04/2016
 f1_keywords: ["hash_map/std::value_compare"]
 helpviewer_keywords: ["value_compare class"]
 ---
-# `value_compare` Class
+# `value_compare` class
+
+> [!NOTE]
+> `value_compare` was removed in MSVC Build Tools 14.51.
 
 Provides a function object that can compare the elements of a `hash_map` by comparing the values of their keys to determine their relative order in the `hash_map`.
 
@@ -31,9 +34,14 @@ protected:
 
 ## Remarks
 
-The comparison criteria provided by `value_compare` between `value_types` of whole elements contained by a `hash_map` is induced from a comparison between the keys of the respective elements by the auxiliary class construction. The member function operator uses the object `comp` of type `key_compare` stored in the function object provided by `value_compare` to compare the sort-key components of two elements.
+Before removal, `value_compare` compared two `hash_map` elements by applying its stored `key_compare` object, `comp`, to their keys. It compared the `first` members of the elements rather than their mapped values.
 
-For `hash_set`s and `hash_multiset`s, which are simple containers where the key values are identical to the element values, `value_compare` is equivalent to `key_compare`; for `hash_map`s and `hash_multimap`s they are not, because the value of the type `pair` elements is not identical to the value of the element's key.
+For the legacy `hash_set` and `hash_multiset` containers, the key was also the element value, so `value_compare` was equivalent to `key_compare`. For the legacy `hash_map` and `hash_multimap` containers, the element was a `pair`, so the two comparison types weren't equivalent.
+
+The standard unordered containers aren't direct replacements for this API. Because they don't order their elements, `unordered_map`, `unordered_multimap`, `unordered_set`, and `unordered_multiset` provide `key_equal` instead of `value_compare` or `value_comp`.
+
+> [!NOTE]
+> `hash_set`, `hash_multiset`, `hash_map` and `hash_multimap` were removed in MSVC Build Tools 14.51
 
 ## Example
 

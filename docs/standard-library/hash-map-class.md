@@ -9,6 +9,7 @@ helpviewer_keywords: ["stdext::hash_map", "stdext::hash_map::allocator_type", "s
 
 > [!NOTE]
 > This API is obsolete. The alternative is [`unordered_map` Class](../standard-library/unordered-map-class.md).
+> This class was removed in MSVC Build Tools 14.51
 
 Stores and retrieves data quickly from a collection in which each element is a pair that has a sort key whose value is unique and an associated data value.
 

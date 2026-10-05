@@ -35,7 +35,7 @@ The type that provides a function object that can compare two element values as 
 In C++14, you can enable heterogeneous lookup by specifying the `std::less<>` predicate that has no type parameters. See [Heterogeneous Lookup in Associative Containers](stl-containers.md#heterogeneous-lookup-in-associative-containers) for more information.
 
 *`Allocator`*\
-The type that represents the stored allocator object that encapsulates details about the map's allocation and deallocation of memory. This argument is optional and the default value is `allocator<pair<const Key, Type> >`.
+The type that represents the stored allocator object and encapsulates details about the map's allocation and deallocation of memory. This argument is optional. The default value is `allocator<pair<const Key, Type>>`.
 
 ## Remarks
 
@@ -178,20 +178,20 @@ If the argument key value isn't found, then the function throws an object of cla
 
 typedef std::map<char, int> Mymap;
 int main()
-    {
+{
     Mymap c1;
 
     c1.insert(Mymap::value_type('a', 1));
     c1.insert(Mymap::value_type('b', 2));
     c1.insert(Mymap::value_type('c', 3));
 
-// find and show elements
+    // find and show elements
     std::cout << "c1.at('a') == " << c1.at('a') << std::endl;
     std::cout << "c1.at('b') == " << c1.at('b') << std::endl;
     std::cout << "c1.at('c') == " << c1.at('c') << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ## <a name="begin"></a> `begin`
@@ -216,31 +216,31 @@ A bidirectional iterator addressing the first element in the `map` or the locati
 #include <map>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
-   map <int, int> m1;
+   map<int, int> m1;
 
-   map <int, int> :: iterator m1_Iter;
-   map <int, int> :: const_iterator m1_cIter;
+   map<int, int>::iterator m1_Iter;
+   map<int, int>::const_iterator m1_cIter;
    typedef pair <int, int> Int_Pair;
 
-   m1.insert ( Int_Pair ( 0, 0 ) );
-   m1.insert ( Int_Pair ( 1, 1 ) );
-   m1.insert ( Int_Pair ( 2, 4 ) );
+   m1.insert(Int_Pair(0, 0));
+   m1.insert(Int_Pair(1, 1));
+   m1.insert(Int_Pair(2, 4));
 
-   m1_cIter = m1.begin ( );
-   cout << "The first element of m1 is " << m1_cIter -> first << endl;
+   m1_cIter = m1.begin();
+   cout << "The first element of m1 is " << m1_cIter->first << endl;
 
-   m1_Iter = m1.begin ( );
-   m1.erase ( m1_Iter );
+   m1_Iter = m1.begin();
+   m1.erase(m1_Iter);
 
    // The following 2 lines would err because the iterator is const
-   // m1_cIter = m1.begin ( );
-   // m1.erase ( m1_cIter );
+   // m1_cIter = m1.begin();
+   // m1.erase(m1_cIter);
 
-   m1_cIter = m1.begin( );
-   cout << "The first element of m1 is now " << m1_cIter -> first << endl;
+   m1_cIter = m1.begin();
+   cout << "The first element of m1 is now " << m1_cIter->first << endl;
 }
 ```
 
@@ -265,7 +265,7 @@ A **`const`** bidirectional iterator addressing the first element in the range, 
 
 With the return value of `cbegin`, the elements in the range can't be modified.
 
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [`auto`](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `begin()` and `cbegin()`.
+Use this member function instead of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, use it in conjunction with the [`auto`](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non-**`const`**) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -291,7 +291,7 @@ A **`const`** bidirectional-access iterator that points just beyond the end of t
 
 `cend` is used to test whether an iterator has passed the end of its range.
 
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [`auto`](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `end()` and `cend()`.
+Use this member function instead of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, use it in conjunction with the [`auto`](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non-**`const`**) container of any kind that supports `end()` and `cend()`.  
 
 ```cpp
 auto i1 = Container.end();
@@ -363,9 +363,9 @@ The `const_iterator` defined by map points to elements that are objects of [`val
 
 To dereference a `const_iterator` `cIter` pointing to an element in a map, use the `->` operator.
 
-To access the value of the key for the element, use `cIter` -> **`first`**, which is equivalent to (\* `cIter`). **`first`**.
+To access the value of the key for the element, use `cIter`->**`first`**, which is equivalent to (\* `cIter`). **`first`**.
 
-To access the value of the mapped datum for the element, use `cIter` -> **`second`**, which is equivalent to (\* `cIter`). **`second`**.
+To access the value of the mapped datum for the element, use `cIter`->**`second`**, which is equivalent to (\* `cIter`). **`second`**.
 
 ### Example
 
@@ -401,29 +401,29 @@ typedef typename allocator_type::const_reference const_reference;
 #include <map>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
-   map <int, int> m1;
+   map<int, int> m1;
    typedef pair <int, int> Int_Pair;
 
-   m1.insert ( Int_Pair ( 1, 10 ) );
-   m1.insert ( Int_Pair ( 2, 20 ) );
+   m1.insert(Int_Pair(1, 10));
+   m1.insert(Int_Pair(2, 20));
 
    // Declare and initialize a const_reference &Ref1
    // to the key of the first element
-   const int &Ref1 = ( m1.begin( ) -> first );
+   const int &Ref1 = (m1.begin()->first);
 
    // The following line would cause an error as the
    // non-const_reference can't be used to access the key
-   // int &Ref1 = ( m1.begin( ) -> first );
+   // int &Ref1 = (m1.begin()->first);
 
    cout << "The key of first element in the map is "
         << Ref1 << "." << endl;
 
    // Declare and initialize a reference &Ref2
    // to the data value of the first element
-   int &Ref2 = ( m1.begin( ) -> second );
+   int &Ref2 = (m1.begin()->second);
 
    cout << "The data value of first element in the map is "
         << Ref2 << "." << endl;
@@ -451,9 +451,9 @@ The `const_reverse_iterator` defined by map points to elements that are objects 
 
 To dereference a `const_reverse_iterator crIter` pointing to an element in a map, use the `->` operator.
 
-To access the value of the key for the element, use `crIter` -> **`first`**, which is equivalent to (\* `crIter`).**`first`**.
+To access the value of the key for the element, use `crIter`->**`first`**, which is equivalent to (\* `crIter`).**`first`**.
 
-To access the value of the mapped datum for the element, use `crIter` -> **`second`**, which is equivalent to (\* `crIter`).**`first`**.
+To access the value of the mapped datum for the element, use `crIter`->**`second`**, which is equivalent to (\* `crIter`).**`first`**.
 
 ### Example
 
@@ -480,7 +480,7 @@ The key value of the elements to be matched from the map.
 
 The member function returns the number of elements *x* in the range
 
-\[ lower_bound(*key*), upper_bound(*key*) )
+\[ lower_bound(*key*), upper_bound(*key*))
 
 which is 0 or 1 in the case of map, which is a unique associative container.
 
@@ -613,21 +613,21 @@ With the return value of `crbegin`, the `map` object can't be modified
 #include <map>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
-   map <int, int> m1;
+   map<int, int> m1;
 
-   map <int, int> :: const_reverse_iterator m1_crIter;
+   map<int, int>::const_reverse_iterator m1_crIter;
    typedef pair <int, int> Int_Pair;
 
-   m1.insert ( Int_Pair ( 1, 10 ) );
-   m1.insert ( Int_Pair ( 2, 20 ) );
-   m1.insert ( Int_Pair ( 3, 30 ) );
+   m1.insert(Int_Pair(1, 10));
+   m1.insert(Int_Pair(2, 20));
+   m1.insert(Int_Pair(3, 30));
 
-   m1_crIter = m1.crbegin( );
+   m1_crIter = m1.crbegin();
    cout << "The first element of the reversed map m1 is "
-        << m1_crIter -> first << "." << endl;
+        << m1_crIter->first << "." << endl;
 }
 ```
 
@@ -665,22 +665,22 @@ The value returned by `crend` should not be dereferenced.
 #include <map>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
-   map <int, int> m1;
+   map<int, int> m1;
 
-   map <int, int> :: const_reverse_iterator m1_crIter;
+   map<int, int>::const_reverse_iterator m1_crIter;
    typedef pair <int, int> Int_Pair;
 
-   m1.insert ( Int_Pair ( 1, 10 ) );
-   m1.insert ( Int_Pair ( 2, 20 ) );
-   m1.insert ( Int_Pair ( 3, 30 ) );
+   m1.insert(Int_Pair(1, 10));
+   m1.insert(Int_Pair(2, 20));
+   m1.insert(Int_Pair(3, 30));
 
-   m1_crIter = m1.crend( );
+   m1_crIter = m1.crend();
    m1_crIter--;
    cout << "The last element of the reversed map m1 is "
-        << m1_crIter -> first << "." << endl;
+        << m1_crIter->first << "." << endl;
 }
 ```
 
@@ -711,25 +711,25 @@ Although `difference_type` is available for all iterators that satisfy the requi
 #include <map>
 #include <algorithm>
 
-int main( )
+int main()
 {
    using namespace std;
-   map <int, int> m1;
+   map<int, int> m1;
    typedef pair <int, int> Int_Pair;
 
-   m1.insert ( Int_Pair ( 2, 20 ) );
-   m1.insert ( Int_Pair ( 1, 10 ) );
-   m1.insert ( Int_Pair ( 3, 20 ) );
-   m1.insert ( Int_Pair ( 2, 30 ) );
+   m1.insert(Int_Pair(2, 20));
+   m1.insert(Int_Pair(1, 10));
+   m1.insert(Int_Pair(3, 20));
+   m1.insert(Int_Pair(2, 30));
 
-   map <int, int>::iterator m1_Iter, m1_bIter, m1_eIter;
-   m1_bIter = m1.begin( );
-   m1_eIter = m1.end( );
+   map<int, int>::iterator m1_Iter, m1_bIter, m1_eIter;
+   m1_bIter = m1.begin();
+   m1_eIter = m1.end();
 
    // Count the number of elements in a map
-   map <int, int>::difference_type  df_count = 1;
-   m1_Iter = m1.begin( );
-   while ( m1_Iter != m1_eIter)
+   map<int, int>::difference_type  df_count = 1;
+   m1_Iter = m1.begin();
+   while (m1_Iter != m1_eIter)
    {
       df_count++;
       m1_Iter++;
@@ -751,8 +751,7 @@ Inserts an element constructed in place (no copy or move operations are performe
 ```cpp
 template <class... Args>
 pair<iterator, bool>
-emplace(
-    Args&&... args);
+emplace(Args&&... args);
 ```
 
 ### Parameters
@@ -788,7 +787,8 @@ using namespace std;
 template <typename M> void print(const M& m) {
     cout << m.size() << " elements: ";
 
-    for (const auto& p : m) {
+    for (const auto& p : m)
+    {
         cout << "(" << p.first << ", " << p.second << ") ";
     }
 
@@ -801,14 +801,15 @@ int main()
 
     auto ret = m1.emplace(10, "ten");
 
-    if (!ret.second){
+    if (!ret.second)
+    {
         auto pr = *ret.first;
         cout << "Emplace failed, element with key 10 already exists."
-            << endl << "  The existing element is (" << pr.first << ", " << pr.second << ")"
-            << endl;
+            << endl << "  The existing element is (" << pr.first << ", " << pr.second << ")" << endl;
         cout << "map not modified" << endl;
     }
-    else{
+    else
+    {
         cout << "map modified, now contains ";
         print(m1);
     }
@@ -816,13 +817,14 @@ int main()
 
     ret = m1.emplace(10, "one zero");
 
-    if (!ret.second){
+    if (!ret.second)
+    {
         auto pr = *ret.first;
         cout << "Emplace failed, element with key 10 already exists."
-            << endl << "  The existing element is (" << pr.first << ", " << pr.second << ")"
-            << endl;
+            << endl << "  The existing element is (" << pr.first << ", " << pr.second << ")" << endl;
     }
-    else{
+    else
+    {
         cout << "map modified, now contains ";
         print(m1);
     }
@@ -874,10 +876,12 @@ The [`value_type`](#value_type) of an element is a pair, so that the value of an
 
 using namespace std;
 
-template <typename M> void print(const M& m) {
+template <typename M> void print(const M& m)
+{
     cout << m.size() << " elements: " << endl;
 
-    for (const auto& p : m) {
+    for (const auto& p : m)
+    {
         cout << "(" << p.first <<  "," << p.second << ") ";
     }
 
@@ -927,20 +931,20 @@ bool empty() const;
 #include <map>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
-   map <int, int> m1, m2;
+   map<int, int> m1, m2;
 
    typedef pair <int, int> Int_Pair;
-   m1.insert ( Int_Pair ( 1, 1 ) );
+   m1.insert(Int_Pair(1, 1));
 
-   if ( m1.empty( ) )
+   if (m1.empty())
       cout << "The map m1 is empty." << endl;
    else
       cout << "The map m1 is not empty." << endl;
 
-   if ( m2.empty( ) )
+   if (m2.empty())
       cout << "The map m2 is empty." << endl;
    else
       cout << "The map m2 is not empty." << endl;
@@ -979,9 +983,9 @@ For a code example, see [`map::find`](#find).
 Returns a pair of iterators that represent the [`lower_bound`](#lower_bound) of the key and the [`upper_bound`](#upper_bound) of the key.
 
 ```cpp
-pair <const_iterator, const_iterator> equal_range (const Key& key) const;
+pair <const_iterator, const_iterator> equal_range(const Key& key) const;
 
-pair <iterator, iterator> equal_range (const Key& key);
+pair <iterator, iterator> equal_range(const Key& key);
 ```
 
 ### Parameters
@@ -1001,55 +1005,55 @@ To access the first iterator of a pair `pr` returned by the member function, use
 #include <map>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
-   typedef map <int, int, less<int> > IntMap;
+   typedef map<int, int, less<int>> IntMap;
    IntMap m1;
-   map <int, int> :: const_iterator m1_RcIter;
+   map<int, int>::const_iterator m1_RcIter;
    typedef pair <int, int> Int_Pair;
 
-   m1.insert ( Int_Pair ( 1, 10 ) );
-   m1.insert ( Int_Pair ( 2, 20 ) );
-   m1.insert ( Int_Pair ( 3, 30 ) );
+   m1.insert(Int_Pair(1, 10));
+   m1.insert(Int_Pair(2, 20));
+   m1.insert(Int_Pair(3, 30));
 
    pair <IntMap::const_iterator, IntMap::const_iterator> p1, p2;
-   p1 = m1.equal_range( 2 );
+   p1 = m1.equal_range(2);
 
    cout << "The lower bound of the element with "
         << "a key of 2 in the map m1 is: "
-        << p1.first -> second << "." << endl;
+        << p1.first->second << "." << endl;
 
    cout << "The upper bound of the element with "
         << "a key of 2 in the map m1 is: "
-        << p1.second -> second << "." << endl;
+        << p1.second->second << "." << endl;
 
    // Compare the upper_bound called directly
-   m1_RcIter = m1.upper_bound( 2 );
+   m1_RcIter = m1.upper_bound(2);
 
-   cout << "A direct call of upper_bound( 2 ) gives "
-        << m1_RcIter -> second << "," << endl
+   cout << "A direct call of upper_bound(2) gives "
+        << m1_RcIter->second << "," << endl
         << "matching the 2nd element of the pair"
-        << " returned by equal_range( 2 )." << endl;
+        << " returned by equal_range(2)." << endl;
 
-   p2 = m1.equal_range( 4 );
+   p2 = m1.equal_range(4);
 
    // If no match is found for the key,
-   // both elements of the pair return end( )
-   if ( ( p2.first == m1.end( ) ) && ( p2.second == m1.end( ) ) )
+   // both elements of the pair return end()
+   if ((p2.first == m1.end()) && (p2.second == m1.end()))
       cout << "The map m1 doesn't have an element "
            << "with a key less than 40." << endl;
    else
       cout << "The element of map m1 with a key >= 40 is: "
-           << p2.first -> first << "." << endl;
+           << p2.first->first << "." << endl;
 }
 ```
 
 ```Output
 The lower bound of the element with a key of 2 in the map m1 is: 20.
 The upper bound of the element with a key of 2 in the map m1 is: 30.
-A direct call of upper_bound( 2 ) gives 30,
-matching the 2nd element of the pair returned by equal_range( 2 ).
+A direct call of upper_bound(2) gives 30,
+matching the 2nd element of the pair returned by equal_range(2).
 The map m1 doesn't have an element with a key less than 40.
 ```
 
@@ -1104,8 +1108,10 @@ using namespace std;
 
 using mymap = map<int, string>;
 
-void printmap(const mymap& m) {
-    for (const auto& elem : m) {
+void printmap(const mymap& m)
+{
+    for (const auto& elem : m)
+    {
         cout << " [" << elem.first << ", " << elem.second << "]";
     }
     cout << endl << "size() == " << m.size() << endl << endl;
@@ -1132,11 +1138,11 @@ int main()
     // Fill in some data to test with, one at a time, using an initializer list
     mymap m2
     {
-        { 10, "Bob" },
-        { 11, "Rob" },
-        { 12, "Robert" },
-        { 13, "Bert" },
-        { 14, "Bobby" }
+        {10, "Bob"},
+        {11, "Rob"},
+        {12, "Robert"},
+        {13, "Bert"},
+        {14, "Bobby"}
     };
 
     cout << "Starting data of map m2 is:" << endl;
@@ -1206,11 +1212,13 @@ If the return value of `find` is assigned to a `const_iterator`, the map object 
 
 using namespace std;
 
-template <typename A, typename B> void print_elem(const pair<A, B>& p) {
+template <typename A, typename B> void print_elem(const pair<A, B>& p)
+{
     cout << "(" << p.first << ", " << p.second << ") ";
 }
 
-template <typename T> void print_collection(const T& t) {
+template <typename T> void print_collection(const T& t)
+{
     cout << t.size() << " elements: ";
 
     for (const auto& p : t) {
@@ -1219,7 +1227,8 @@ template <typename T> void print_collection(const T& t) {
     cout << endl;
 }
 
-template <typename C, class T> void findit(const C& c, T val) {
+template <typename C, class T> void findit(const C& c, T val)
+{
     cout << "Trying find() on value " << val << endl;
     auto result = c.find(val);
     if (result != c.end()) {
@@ -1231,7 +1240,7 @@ template <typename C, class T> void findit(const C& c, T val) {
 
 int main()
 {
-    map<int, string> m1({ { 40, "Zr" }, { 45, "Rh" } });
+    map<int, string> m1({{40, "Zr"}, {45, "Rh"}});
     cout << "The starting map m1 is (key, value):" << endl;
     print_collection(m1);
 
@@ -1280,42 +1289,42 @@ Allocators for the map class specify how the class manages storage. The default 
 #include <map>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
-   map <int, int>::allocator_type m1_Alloc;
-   map <int, int>::allocator_type m2_Alloc;
-   map <int, double>::allocator_type m3_Alloc;
-   map <int, int>::allocator_type m4_Alloc;
+   map<int, int>::allocator_type m1_Alloc;
+   map<int, int>::allocator_type m2_Alloc;
+   map<int, double>::allocator_type m3_Alloc;
+   map<int, int>::allocator_type m4_Alloc;
 
    // The following lines declare objects
    // that use the default allocator.
-   map <int, int> m1;
-   map <int, int, allocator<int> > m2;
-   map <int, double, allocator<double> > m3;
+   map<int, int> m1;
+   map<int, int, allocator<int>> m2;
+   map<int, double, allocator<double>> m3;
 
-   m1_Alloc = m1.get_allocator( );
-   m2_Alloc = m2.get_allocator( );
-   m3_Alloc = m3.get_allocator( );
+   m1_Alloc = m1.get_allocator();
+   m2_Alloc = m2.get_allocator();
+   m3_Alloc = m3.get_allocator();
 
    cout << "The number of integers that can be allocated\n"
         << "before free memory is exhausted: "
-        << m2.max_size( ) << ".\n" << endl;
+        << m2.max_size() << ".\n" << endl;
 
    cout << "The number of doubles that can be allocated\n"
         << "before free memory is exhausted: "
-        << m3.max_size( ) <<  ".\n" << endl;
+        << m3.max_size() <<  ".\n" << endl;
 
    // The following line creates a map m4
    // with the allocator of map m1.
-   map <int, int> m4( less<int>( ), m1_Alloc );
+   map<int, int> m4(less<int>(), m1_Alloc);
 
-   m4_Alloc = m4.get_allocator( );
+   m4_Alloc = m4.get_allocator();
 
    // Two allocators are interchangeable if
    // storage allocated from each can be
    // deallocated with the other
-   if( m1_Alloc == m4_Alloc )
+   if (m1_Alloc == m4_Alloc)
    {
       cout << "The allocators are interchangeable." << endl;
    }
@@ -1422,10 +1431,12 @@ For insertion of an element constructed in place—that is, no copy or move oper
 
 using namespace std;
 
-template <typename M> void print(const M& m) {
+template <typename M> void print(const M& m)
+{
     cout << m.size() << " elements: ";
 
-    for (const auto& p : m) {
+    for (const auto& p : m)
+    {
         cout << "(" << p.first << ", " << p.second << ") ";
     }
 
@@ -1437,7 +1448,7 @@ int main()
     // insert single values
     map<int, int> m1;
     // call insert(const value_type&) version
-    m1.insert({ 1, 10 });
+    m1.insert({1, 10});
     // call insert(ValTy&&) version
     m1.insert(make_pair(2, 20));
 
@@ -1446,13 +1457,15 @@ int main()
 
     // intentionally attempt a duplicate, single element
     auto ret = m1.insert(make_pair(1, 111));
-    if (!ret.second){
+    if (!ret.second)
+    {
         auto pr = *ret.first;
         cout << "Insert failed, element with key value 1 already exists."
             << endl << "  The existing element is (" << pr.first << ", " << pr.second << ")"
             << endl;
     }
-    else{
+    else
+    {
         cout << "The modified key and mapped values of m1 are:" << endl;
         print(m1);
     }
@@ -1499,7 +1512,7 @@ int main()
 
     map<int, int> m4;
     // Insert the elements from an initializer_list
-    m4.insert({ { 4, 44 }, { 2, 22 }, { 3, 33 }, { 1, 11 }, { 5, 55 } });
+    m4.insert({{4, 44}, {2, 22}, {3, 33}, {1, 11}, {5, 55}});
     cout << "After initializer_list insertion, m4 contains:" << endl;
     print(m4);
     cout << endl;
@@ -1554,38 +1567,38 @@ which returns **`true`** if `left` precedes and isn't equal to `right` in the so
 #include <map>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
 
-   map <int, int, less<int> > m1;
-   map <int, int, less<int> >::key_compare kc1 = m1.key_comp( ) ;
-   bool result1 = kc1( 2, 3 ) ;
-   if( result1 == true )
+   map<int, int, less<int>> m1;
+   map<int, int, less<int>>::key_compare kc1 = m1.key_comp();
+   bool result1 = kc1(2, 3);
+   if (result1 == true)
    {
-      cout << "kc1( 2,3 ) returns value of true, "
+      cout << "kc1(2, 3) returns value of true, "
            << "where kc1 is the function object of m1."
            << endl;
    }
    else
    {
-      cout << "kc1( 2,3 ) returns value of false "
+      cout << "kc1(2, 3) returns value of false "
            << "where kc1 is the function object of m1."
            << endl;
    }
 
-   map <int, int, greater<int> > m2;
-   map <int, int, greater<int> >::key_compare kc2 = m2.key_comp( );
-   bool result2 = kc2( 2, 3 ) ;
-   if( result2 == true )
+   map<int, int, greater<int>> m2;
+   map<int, int, greater<int>>::key_compare kc2 = m2.key_comp();
+   bool result2 = kc2(2, 3);
+   if (result2 == true)
    {
-      cout << "kc2( 2,3 ) returns value of true, "
+      cout << "kc2(2, 3) returns value of true, "
            << "where kc2 is the function object of m2."
            << endl;
    }
    else
    {
-      cout << "kc2( 2,3 ) returns value of false, "
+      cout << "kc2(2, 3) returns value of false, "
            << "where kc2 is the function object of m2."
            << endl;
    }
@@ -1593,8 +1606,8 @@ int main( )
 ```
 
 ```Output
-kc1( 2,3 ) returns value of true, where kc1 is the function object of m1.
-kc2( 2,3 ) returns value of false, where kc2 is the function object of m2.
+kc1(2, 3) returns value of true, where kc1 is the function object of m1.
+kc2(2, 3) returns value of false, where kc2 is the function object of m2.
 ```
 
 ## <a name="key_compare"></a> `key_compare`
@@ -1662,39 +1675,39 @@ If the return value of `lower_bound` is assigned to a `const_iterator`, the map 
 #include <map>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
-   map <int, int> m1;
-   map <int, int> :: const_iterator m1_AcIter, m1_RcIter;
+   map<int, int> m1;
+   map<int, int>::const_iterator m1_AcIter, m1_RcIter;
    typedef pair <int, int> Int_Pair;
 
-   m1.insert ( Int_Pair ( 1, 10 ) );
-   m1.insert ( Int_Pair ( 2, 20 ) );
-   m1.insert ( Int_Pair ( 3, 30 ) );
+   m1.insert(Int_Pair(1, 10));
+   m1.insert(Int_Pair(2, 20));
+   m1.insert(Int_Pair(3, 30));
 
-   m1_RcIter = m1.lower_bound( 2 );
+   m1_RcIter = m1.lower_bound(2);
    cout << "The first element of map m1 with a key of 2 is: "
-        << m1_RcIter -> second << "." << endl;
+        << m1_RcIter->second << "." << endl;
 
-   // If no match is found for this key, end( ) is returned
-   m1_RcIter = m1. lower_bound ( 4 );
+   // If no match is found for this key, end() is returned
+   m1_RcIter = m1. lower_bound(4);
 
-   if ( m1_RcIter == m1.end( ) )
+   if (m1_RcIter == m1.end())
       cout << "The map m1 doesn't have an element "
            << "with a key of 4." << endl;
    else
       cout << "The element of map m1 with a key of 4 is: "
-           << m1_RcIter -> second << "." << endl;
+           << m1_RcIter->second << "." << endl;
 
    // The element at a specific location in the map can be found
    // using a dereferenced iterator addressing the location
-   m1_AcIter = m1.end( );
+   m1_AcIter = m1.end();
    m1_AcIter--;
-   m1_RcIter = m1. lower_bound ( m1_AcIter -> first );
+   m1_RcIter = m1. lower_bound(m1_AcIter->first);
    cout << "The element of m1 with a key matching "
         << "that of the last element is: "
-        << m1_RcIter -> second << "." << endl;
+        << m1_RcIter->second << "." << endl;
 }
 ```
 
@@ -1761,7 +1774,7 @@ map(
 The storage allocator class to be used for this map object, which defaults to `Allocator`.
 
 *`Comp`*\
-The comparison function of type `const Traits` used to order the elements in the `map`, which defaults to `hash_compare`.
+The comparison function of type `const Traits` that orders the elements in the `map`. The default is `less<Key>`.
 
 *`Right`*\
 The map of which the constructed set is to be a copy.
@@ -1805,15 +1818,15 @@ int main()
 {
     using namespace std;
     typedef pair <int, int> Int_Pair;
-    map <int, int>::iterator m1_Iter, m3_Iter, m4_Iter, m5_Iter, m6_Iter, m7_Iter;
-    map <int, int, less<int> >::iterator m2_Iter;
+    map<int, int>::iterator m1_Iter, m3_Iter, m4_Iter, m5_Iter, m6_Iter, m7_Iter;
+    map<int, int, less<int>>::iterator m2_Iter;
 
     // Create an empty map m0 of key type integer
-    map <int, int> m0;
+    map<int, int> m0;
 
     // Create an empty map m1 with the key comparison
     // function of less than, then insert 4 elements
-    map <int, int, less<int> > m1;
+    map<int, int, less<int>> m1;
     m1.insert(Int_Pair(1, 10));
     m1.insert(Int_Pair(2, 20));
     m1.insert(Int_Pair(3, 30));
@@ -1821,33 +1834,33 @@ int main()
 
     // Create an empty map m2 with the key comparison
     // function of greater than, then insert 2 elements
-    map <int, int, less<int> > m2;
+    map<int, int, less<int>> m2;
     m2.insert(Int_Pair(1, 10));
     m2.insert(Int_Pair(2, 20));
 
     // Create a map m3 with the
     // allocator of map m1
-    map <int, int>::allocator_type m1_Alloc;
+    map<int, int>::allocator_type m1_Alloc;
     m1_Alloc = m1.get_allocator();
-    map <int, int> m3(less<int>(), m1_Alloc);
+    map<int, int> m3(less<int>(), m1_Alloc);
     m3.insert(Int_Pair(3, 30));
 
     // Create a copy, map m4, of map m1
-    map <int, int> m4(m1);
+    map<int, int> m4(m1);
 
     // Create a map m5 by copying the range m1[ first,  last)
-    map <int, int>::const_iterator m1_bcIter, m1_ecIter;
+    map<int, int>::const_iterator m1_bcIter, m1_ecIter;
     m1_bcIter = m1.begin();
     m1_ecIter = m1.begin();
     m1_ecIter++;
     m1_ecIter++;
-    map <int, int> m5(m1_bcIter, m1_ecIter);
+    map<int, int> m5(m1_bcIter, m1_ecIter);
 
     // Create a map m6 by copying the range m4[ first,  last)
     // and with the allocator of map m2
-    map <int, int>::allocator_type m2_Alloc;
+    map<int, int>::allocator_type m2_Alloc;
     m2_Alloc = m2.get_allocator();
-    map <int, int> m6(m4.begin(), ++m4.begin(), less<int>(), m2_Alloc);
+    map<int, int> m6(m4.begin(), ++m4.begin(), less<int>(), m2_Alloc);
 
     cout << "m1 =";
     for (auto i : m1)
@@ -1855,7 +1868,7 @@ int main()
     cout << endl;
 
     cout << "m2 =";
-    for(auto i : m2)
+    for (auto i : m2)
         cout << i.first << " " << i.second << ", ";
     cout << endl;
 
@@ -1887,21 +1900,21 @@ int main()
     cout << endl;
 
     // Create a map m8 by copying in an initializer_list
-    map<int, int> m8{ { { 1, 1 }, { 2, 2 }, { 3, 3 }, { 4, 4 } } };
+    map<int, int> m8{{{ 1, 1 }, { 2, 2 }, { 3, 3 }, { 4, 4 }}};
     cout << "m8: = ";
     for (auto i : m8)
         cout << i.first << " " << i.second << ", ";
     cout << endl;
 
     // Create a map m9 with an initializer_list and a comparator
-    map<int, int> m9({ { 5, 5 }, { 6, 6 }, { 7, 7 }, { 8, 8 } }, less<int>());
+    map<int, int> m9({{ 5, 5 }, { 6, 6 }, { 7, 7 }, { 8, 8 }}, less<int>());
     cout << "m9: = ";
     for (auto i : m9)
         cout << i.first << " " << i.second << ", ";
     cout << endl;
 
     // Create a map m10 with an initializer_list, a comparator, and an allocator
-    map<int, int> m10({ { 9, 9 }, { 10, 10 }, { 11, 11 }, { 12, 12 } }, less<int>(), m9.get_allocator());
+    map<int, int> m10({{ 9, 9 }, { 10, 10 }, { 11, 11 }, { 12, 12 }}, less<int>(), m9.get_allocator());
     cout << "m10: = ";
     for (auto i : m10)
         cout << i.first << " " << i.second << ", ";
@@ -1947,13 +1960,13 @@ The maximum possible length of the map.
 #include <map>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
-   map <int, int> m1;
-   map <int, int> :: size_type i;
+   map<int, int> m1;
+   map<int, int>::size_type i;
 
-   i = m1.max_size( );
+   i = m1.max_size();
    cout << "The maximum possible length "
         << "of the map is " << i << "."
         << endl << "(Magnitude is machine specific.)";
@@ -1996,47 +2009,47 @@ When using `operator[]` to insert elements, the returned reference does not indi
 #include <iostream>
 #include <string>
 
-int main( )
+int main()
 {
    using namespace std;
    typedef pair <const int, int> cInt2Int;
-   map <int, int> m1;
-   map <int, int> :: iterator pIter;
+   map<int, int> m1;
+   map<int, int>::iterator pIter;
 
    // Insert a data value of 10 with a key of 1
    // into a map using the operator[] member function
-   m1[ 1 ] = 10;
+   m1[1] = 10;
 
    // Compare other ways to insert objects into a map
-   m1.insert ( map <int, int> :: value_type ( 2, 20 ) );
-   m1.insert ( cInt2Int ( 3, 30 ) );
+   m1.insert(map<int, int>::value_type(2, 20));
+   m1.insert(cInt2Int(3, 30));
 
    cout  << "The keys of the mapped elements are:";
-   for ( pIter = m1.begin( ) ; pIter != m1.end( ) ; pIter++ )
-      cout << " " << pIter -> first;
+   for (pIter = m1.begin(); pIter != m1.end(); pIter++)
+      cout << " " << pIter->first;
    cout << "." << endl;
 
    cout  << "The values of the mapped elements are:";
-   for ( pIter = m1.begin( ) ; pIter != m1.end( ) ; pIter++ )
-      cout << " " << pIter -> second;
+   for (pIter = m1.begin(); pIter != m1.end(); pIter++)
+      cout << " " << pIter->second;
    cout << "." << endl;
 
    // If the key already exists, operator[]
    // changes the value of the datum in the element
-   m1[ 2 ] = 40;
+   m1[2] = 40;
 
    // operator[] will also insert the value of the data
    // type's default constructor if the value is unspecified
    m1[5];
 
    cout  << "The keys of the mapped elements are now:";
-   for ( pIter = m1.begin( ) ; pIter != m1.end( ) ; pIter++ )
-      cout << " " << pIter -> first;
+   for (pIter = m1.begin(); pIter != m1.end(); pIter++)
+      cout << " " << pIter->first;
    cout << "." << endl;
 
    cout  << "The values of the mapped elements are now:";
-   for ( pIter = m1.begin( ) ; pIter != m1.end( ) ; pIter++ )
-      cout << " " << pIter -> second;
+   for (pIter = m1.begin(); pIter != m1.end(); pIter++)
+      cout << " " << pIter->second;
    cout << "." << endl;
 
 // insert by moving key
@@ -2084,8 +2097,8 @@ After erasing any existing elements in a `map`, `operator=` either copies or mov
 #include <map>
 #include <iostream>
 
-int main( )
-   {
+int main()
+{
    using namespace std;
    map<int, int> v1, v2, v3;
    map<int, int>::iterator iter;
@@ -2103,14 +2116,14 @@ int main( )
       cout << iter->second << " ";
    cout << endl;
 
-// move v1 into v2
+   // move v1 into v2
    v2.clear();
    v2 = move(v1);
    cout << "v2 = ";
    for (iter = v2.begin(); iter != v2.end(); iter++)
       cout << iter->second << " ";
    cout << endl;
-   }
+}
 ```
 
 ## <a name="pointer"></a> `pointer`
@@ -2127,7 +2140,7 @@ A type `pointer` can be used to modify the value of an element.
 
 In most cases, an [`iterator`](#iterator) should be used to access the elements in a map object.
 
-## <a name="rbegin"></a> rbegin
+## <a name="rbegin"></a> `rbegin`
 
 Returns an iterator addressing the first element in a reversed map.
 
@@ -2157,46 +2170,46 @@ If the return value of `rbegin` is assigned to a `const_reverse_iterator`, then 
 #include <map>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
-   map <int, int> m1;
+   map<int, int> m1;
 
-   map <int, int> :: iterator m1_Iter;
-   map <int, int> :: reverse_iterator m1_rIter;
-   map <int, int> :: const_reverse_iterator m1_crIter;
+   map<int, int>::iterator m1_Iter;
+   map<int, int>::reverse_iterator m1_rIter;
+   map<int, int>::const_reverse_iterator m1_crIter;
    typedef pair <int, int> Int_Pair;
 
-   m1.insert ( Int_Pair ( 1, 10 ) );
-   m1.insert ( Int_Pair ( 2, 20 ) );
-   m1.insert ( Int_Pair ( 3, 30 ) );
+   m1.insert(Int_Pair(1, 10));
+   m1.insert(Int_Pair(2, 20));
+   m1.insert(Int_Pair(3, 30));
 
-   m1_rIter = m1.rbegin( );
+   m1_rIter = m1.rbegin();
    cout << "The first element of the reversed map m1 is "
-        << m1_rIter -> first << "." << endl;
+        << m1_rIter->first << "." << endl;
 
    // begin can be used to start an iteration
    // through a map in a forward order
    cout << "The map is: ";
-   for ( m1_Iter = m1.begin( ) ; m1_Iter != m1.end( ); m1_Iter++)
-      cout << m1_Iter -> first << " ";
+   for (m1_Iter = m1.begin(); m1_Iter != m1.end(); m1_Iter++)
+      cout << m1_Iter->first << " ";
       cout << "." << endl;
 
    // rbegin can be used to start an iteration
    // through a map in a reverse order
    cout << "The reversed map is: ";
-   for ( m1_rIter = m1.rbegin( ) ; m1_rIter != m1.rend( ); m1_rIter++)
-      cout << m1_rIter -> first << " ";
+   for (m1_rIter = m1.rbegin(); m1_rIter != m1.rend(); m1_rIter++)
+      cout << m1_rIter->first << " ";
       cout << "." << endl;
 
    // A map element can be erased by dereferencing to its key
-   m1_rIter = m1.rbegin( );
-   m1.erase ( m1_rIter -> first );
+   m1_rIter = m1.rbegin();
+   m1.erase(m1_rIter->first);
 
-   m1_rIter = m1.rbegin( );
+   m1_rIter = m1.rbegin();
    cout << "After the erasure, the first element "
         << "in the reversed map is "
-        << m1_rIter -> first << "." << endl;
+        << m1_rIter->first << "." << endl;
 }
 ```
 
@@ -2223,29 +2236,29 @@ typedef typename allocator_type::reference reference;
 #include <map>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
-   map <int, int> m1;
+   map<int, int> m1;
    typedef pair <int, int> Int_Pair;
 
-   m1.insert ( Int_Pair ( 1, 10 ) );
-   m1.insert ( Int_Pair ( 2, 20 ) );
+   m1.insert(Int_Pair(1, 10));
+   m1.insert(Int_Pair(2, 20));
 
    // Declare and initialize a const_reference &Ref1
    // to the key of the first element
-   const int &Ref1 = ( m1.begin( ) -> first );
+   const int &Ref1 = (m1.begin()->first);
 
    // The following line would cause an error because the
    // non-const_reference can't be used to access the key
-   // int &Ref1 = ( m1.begin( ) -> first );
+   // int &Ref1 = (m1.begin()->first);
 
    cout << "The key of first element in the map is "
         << Ref1 << "." << endl;
 
    // Declare and initialize a reference &Ref2
    // to the data value of the first element
-   int &Ref2 = ( m1.begin( ) -> second );
+   int &Ref2 = (m1.begin()->second);
 
    cout << "The data value of first element in the map is "
         << Ref2 << "." << endl;
@@ -2296,48 +2309,48 @@ The value returned by `rend` should not be dereferenced.
 #include <map>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
-   map <int, int> m1;
+   map<int, int> m1;
 
-   map <int, int> :: iterator m1_Iter;
-   map <int, int> :: reverse_iterator m1_rIter;
-   map <int, int> :: const_reverse_iterator m1_crIter;
+   map<int, int>::iterator m1_Iter;
+   map<int, int>::reverse_iterator m1_rIter;
+   map<int, int>::const_reverse_iterator m1_crIter;
    typedef pair <int, int> Int_Pair;
 
-   m1.insert ( Int_Pair ( 1, 10 ) );
-   m1.insert ( Int_Pair ( 2, 20 ) );
-   m1.insert ( Int_Pair ( 3, 30 ) );
+   m1.insert(Int_Pair(1, 10));
+   m1.insert(Int_Pair(2, 20));
+   m1.insert(Int_Pair(3, 30));
 
-   m1_rIter = m1.rend( );
+   m1_rIter = m1.rend();
    m1_rIter--;
    cout << "The last element of the reversed map m1 is "
-        << m1_rIter -> first << "." << endl;
+        << m1_rIter->first << "." << endl;
 
    // begin can be used to start an iteration
    // through a map in a forward order
    cout << "The map is: ";
-   for ( m1_Iter = m1.begin( ) ; m1_Iter != m1.end( ); m1_Iter++)
-      cout << m1_Iter -> first << " ";
+   for (m1_Iter = m1.begin(); m1_Iter != m1.end(); m1_Iter++)
+      cout << m1_Iter->first << " ";
       cout << "." << endl;
 
    // rbegin can be used to start an iteration
    // through a map in a reverse order
    cout << "The reversed map is: ";
-   for ( m1_rIter = m1.rbegin( ) ; m1_rIter != m1.rend( ); m1_rIter++)
-      cout << m1_rIter -> first << " ";
+   for (m1_rIter = m1.rbegin(); m1_rIter != m1.rend(); m1_rIter++)
+      cout << m1_rIter->first << " ";
       cout << "." << endl;
 
    // A map element can be erased by dereferencing to its key
-   m1_rIter = --m1.rend( );
-   m1.erase ( m1_rIter -> first );
+   m1_rIter = --m1.rend();
+   m1.erase(m1_rIter->first);
 
-   m1_rIter = m1.rend( );
+   m1_rIter = m1.rend();
    m1_rIter--;
    cout << "After the erasure, the last element "
         << "in the reversed map is "
-        << m1_rIter -> first << "." << endl;
+        << m1_rIter->first << "." << endl;
 }
 ```
 
@@ -2364,7 +2377,7 @@ The `reverse_iterator` defined by map points to elements that are objects of [`v
 
 To dereference a `reverse_iterator` *rIter* pointing to an element in a map, use the `->` operator.
 
-To access the value of the key for the element, use `rIter` -> **first**, which is equivalent to (\* `rIter`). **first**. To access the value of the mapped datum for the element, use `rIter` -> **second**, which is equivalent to (\* `rIter`). **first**.
+To access the value of the key for the element, use `rIter`->**first**, which is equivalent to (\* `rIter`). **first**. To access the value of the mapped datum for the element, use `rIter`->**second**, which is equivalent to (\* `rIter`). **first**.
 
 ### Example
 
@@ -2452,40 +2465,40 @@ The member function invalidates no references, pointers, or iterators that desig
 #include <map>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
-   map <int, int> m1, m2, m3;
-   map <int, int>::iterator m1_Iter;
+   map<int, int> m1, m2, m3;
+   map<int, int>::iterator m1_Iter;
    typedef pair <int, int> Int_Pair;
 
-   m1.insert ( Int_Pair ( 1, 10 ) );
-   m1.insert ( Int_Pair ( 2, 20 ) );
-   m1.insert ( Int_Pair ( 3, 30 ) );
-   m2.insert ( Int_Pair ( 10, 100 ) );
-   m2.insert ( Int_Pair ( 20, 200 ) );
-   m3.insert ( Int_Pair ( 30, 300 ) );
+   m1.insert(Int_Pair(1, 10));
+   m1.insert(Int_Pair(2, 20));
+   m1.insert(Int_Pair(3, 30));
+   m2.insert(Int_Pair(10, 100));
+   m2.insert(Int_Pair(20, 200));
+   m3.insert(Int_Pair(30, 300));
 
    cout << "The original map m1 is:";
-   for ( m1_Iter = m1.begin( ); m1_Iter != m1.end( ); m1_Iter++ )
-      cout << " " << m1_Iter -> second;
+   for (m1_Iter = m1.begin(); m1_Iter != m1.end(); m1_Iter++)
+      cout << " " << m1_Iter->second;
    cout   << "." << endl;
 
    // This is the member function version of swap
    //m2 is said to be the argument map; m1 the target map
-   m1.swap( m2 );
+   m1.swap(m2);
 
    cout << "After swapping with m2, map m1 is:";
-   for ( m1_Iter = m1.begin( ); m1_Iter != m1.end( ); m1_Iter++ )
-      cout << " " << m1_Iter -> second;
+   for (m1_Iter = m1.begin(); m1_Iter != m1.end(); m1_Iter++)
+      cout << " " << m1_Iter->second;
    cout  << "." << endl;
 
    // This is the specialized template version of swap
-   swap( m1, m3 );
+   swap(m1, m3);
 
    cout << "After swapping with m3, map m1 is:";
-   for ( m1_Iter = m1.begin( ); m1_Iter != m1.end( ); m1_Iter++ )
-      cout << " " << m1_Iter -> second;
+   for (m1_Iter = m1.begin(); m1_Iter != m1.end(); m1_Iter++)
+      cout << " " << m1_Iter->second;
    cout   << "." << endl;
 }
 ```
@@ -2525,39 +2538,39 @@ If the return value is assigned to a `const_iterator`, the map object can't be m
 #include <map>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
-   map <int, int> m1;
-   map <int, int> :: const_iterator m1_AcIter, m1_RcIter;
+   map<int, int> m1;
+   map<int, int>::const_iterator m1_AcIter, m1_RcIter;
    typedef pair <int, int> Int_Pair;
 
-   m1.insert ( Int_Pair ( 1, 10 ) );
-   m1.insert ( Int_Pair ( 2, 20 ) );
-   m1.insert ( Int_Pair ( 3, 30 ) );
+   m1.insert(Int_Pair(1, 10));
+   m1.insert(Int_Pair(2, 20));
+   m1.insert(Int_Pair(3, 30));
 
-   m1_RcIter = m1.upper_bound( 2 );
+   m1_RcIter = m1.upper_bound(2);
    cout << "The first element of map m1 with a key "
         << "greater than 2 is: "
-        << m1_RcIter -> second << "." << endl;
+        << m1_RcIter->second << "." << endl;
 
    // If no match is found for the key, end is returned
-   m1_RcIter = m1. upper_bound ( 4 );
+   m1_RcIter = m1. upper_bound(4);
 
-   if ( m1_RcIter == m1.end( ) )
+   if (m1_RcIter == m1.end())
       cout << "The map m1 doesn't have an element "
            << "with a key greater than 4." << endl;
    else
       cout << "The element of map m1 with a key > 4 is: "
-           << m1_RcIter -> second << "." << endl;
+           << m1_RcIter->second << "." << endl;
 
    // The element at a specific location in the map can be found
    // using a dereferenced iterator addressing the location
-   m1_AcIter = m1.begin( );
-   m1_RcIter = m1. upper_bound ( m1_AcIter -> first );
+   m1_AcIter = m1.begin();
+   m1_RcIter = m1. upper_bound(m1_AcIter->first);
    cout << "The 1st element of m1 with a key greater than\n"
         << "that of the initial element of m1 is: "
-        << m1_RcIter -> second << "." << endl;
+        << m1_RcIter->second << "." << endl;
 }
 ```
 
@@ -2584,7 +2597,7 @@ Returns the comparison function object that a map uses to order its elements.
 
 For a map *m*, if two elements *e1*(*k1*, *d1*) and *e2*(*k2*, *d2*) are objects of type `value_type`, where *k1* and *k1* are their keys of type `key_type` and *d1* and *d2* are their data of type `mapped_type`, then `m.value_comp(e1, e2)` is equivalent to `m.key_comp(k1, k2)`. A stored object defines the member function
 
-`bool operator( value_type& left, value_type& right);`
+`bool operator(value_type& left, value_type& right);`
 
 which returns **`true`** if the key value of `left` precedes and isn't equal to the key value of `right` in the sort order.
 
@@ -2596,44 +2609,40 @@ which returns **`true`** if the key value of `left` precedes and isn't equal to 
 #include <map>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
 
-   map <int, int, less<int> > m1;
-   map <int, int, less<int> >::value_compare vc1 = m1.value_comp( );
-   pair< map<int,int>::iterator, bool > pr1, pr2;
+   map<int, int, less<int>> m1;
+   map<int, int, less<int>>::value_compare vc1 = m1.value_comp();
+   pair<map<int,int>::iterator, bool> pr1, pr2;
 
-   pr1= m1.insert ( map <int, int> :: value_type ( 1, 10 ) );
-   pr2= m1.insert ( map <int, int> :: value_type ( 2, 5 ) );
+   pr1= m1.insert(map<int, int>::value_type(1, 10));
+   pr2= m1.insert(map<int, int>::value_type(2, 5));
 
-   if( vc1( *pr1.first, *pr2.first ) == true )
+   if (vc1(*pr1.first, *pr2.first) == true)
    {
-      cout << "The element ( 1,10 ) precedes the element ( 2,5 )."
-           << endl;
+      cout << "The element (1,10) precedes the element (2,5)." << endl;
    }
    else
    {
-      cout << "The element ( 1,10 ) does not precede the element ( 2,5 )."
-           << endl;
+      cout << "The element (1,10) does not precede the element (2,5)." << endl;
    }
 
-   if(vc1( *pr2.first, *pr1.first ) == true )
+   if (vc1(*pr2.first, *pr1.first) == true)
    {
-      cout << "The element ( 2,5 ) precedes the element ( 1,10 )."
-           << endl;
+      cout << "The element (2,5) precedes the element (1,10)." << endl;
    }
    else
    {
-      cout << "The element ( 2,5 ) does not precede the element ( 1,10 )."
-           << endl;
+      cout << "The element (2,5) does not precede the element (1,10)." << endl;
    }
 }
 ```
 
 ```Output
-The element ( 1,10 ) precedes the element ( 2,5 ).
-The element ( 2,5 ) does not precede the element ( 1,10 ).
+The element (1,10) precedes the element (2,5).
+The element (2,5) does not precede the element (1,10).
 ```
 
 ## <a name="value_type"></a> `value_type`
@@ -2652,27 +2661,27 @@ typedef pair<const Key, Type> value_type;
 #include <map>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
    typedef pair <const int, int> cInt2Int;
-   map <int, int> m1;
-   map <int, int> :: key_type key1;
-   map <int, int> :: mapped_type mapped1;
-   map <int, int> :: value_type value1;
-   map <int, int> :: iterator pIter;
+   map<int, int> m1;
+   map<int, int>::key_type key1;
+   map<int, int>::mapped_type mapped1;
+   map<int, int>::value_type value1;
+   map<int, int>::iterator pIter;
 
    // value_type can be used to pass the correct type
    // explicitly to avoid implicit type conversion
-   m1.insert ( map <int, int> :: value_type ( 1, 10 ) );
+   m1.insert(map<int, int>::value_type(1, 10));
 
    // Compare other ways to insert objects into a map
-   m1.insert ( cInt2Int ( 2, 20 ) );
+   m1.insert(cInt2Int(2, 20));
    m1[ 3 ] = 30;
 
    // Initializing key1 and mapped1
-   key1 = ( m1.begin( ) -> first );
-   mapped1 = ( m1.begin( ) -> second );
+   key1 = (m1.begin()->first);
+   mapped1 = (m1.begin()->second);
 
    cout << "The key of first element in the map is "
         << key1 << "." << endl;
@@ -2682,16 +2691,16 @@ int main( )
 
    // The following line would cause an error because
    // the value_type isn't assignable
-   // value1 = cInt2Int ( 4, 40 );
+   // value1 = cInt2Int(4, 40);
 
    cout  << "The keys of the mapped elements are:";
-   for ( pIter = m1.begin( ) ; pIter != m1.end( ) ; pIter++ )
-      cout << " " << pIter -> first;
+   for (pIter = m1.begin(); pIter != m1.end(); pIter++)
+      cout << " " << pIter->first;
    cout << "." << endl;
 
    cout  << "The values of the mapped elements are:";
-   for ( pIter = m1.begin( ) ; pIter != m1.end( ) ; pIter++ )
-      cout << " " << pIter -> second;
+   for (pIter = m1.begin(); pIter != m1.end(); pIter++)
+      cout << " " << pIter->second;
    cout << "." << endl;
 }
 ```

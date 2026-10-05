@@ -31,12 +31,12 @@ struct space_info
 
 ## Requirements
 
-**Header:** \<filesystem>
+**Header:** `<filesystem>`
 
-**Namespace:** std::filesystem
+**Namespace:** `std::filesystem`
 
 ## See also
 
 [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
-[\<filesystem>](../standard-library/filesystem.md)\
+[`<filesystem>`](../standard-library/filesystem.md)\
 [File System Navigation (C++)](../standard-library/file-system-navigation.md)

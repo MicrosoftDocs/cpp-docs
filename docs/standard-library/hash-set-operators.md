@@ -11,7 +11,8 @@ The `<hash_set>` header provides the following operators:
 ## <a name="op_neq"></a> operator!=
 
 > [!NOTE]
-> This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
+> This API is obsolete. The alternative is [`<unordered_set>`](../standard-library/unordered-set-class.md).
+> This header was removed in MSVC Build Tools 14.51
 
 Tests if the hash_set object on the left side of the operator is not equal to the hash_set object on the right side.
 
@@ -21,10 +22,10 @@ bool operator!=(const hash_set <Key, Traits, Allocator>& left, const hash_set <K
 
 ### Parameters
 
-*left*\
+*`left`*\
 An object of type `hash_set`.
 
-*right*\
+*`right`*\
 An object of type `hash_set`.
 
 ### Return Value
@@ -35,7 +36,7 @@ An object of type `hash_set`.
 
 The comparison between hash_set objects is based on a pairwise comparison between their elements. Two hash_sets are equal if they have the same number of elements and their respective elements have the same values. Otherwise, they are unequal.
 
-Members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are in the [stdext Namespace](../standard-library/stdext-namespace.md).
+Members of the [`<hash_map>`](../standard-library/hash-map.md) and [`<hash_set>`](../standard-library/hash-set.md) header files were in the [stdext Namespace](../standard-library/stdext-namespace.md).
 
 ### Example
 
