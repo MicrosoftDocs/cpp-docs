@@ -308,7 +308,7 @@ Experimental options may only be supported by certain versions of the compiler. 
 | Option | Purpose |
 |--|--|
 | [`/experimental:log`](experimental-log.md) | Enables experimental structured SARIF output. |
-| [`/experimental:module`](experimental-module.md) | Enables experimental module support. |
+| [`/experimental:module`](experimental-module.md) | Enables experimental module support. Obsolete starting with Visual Studio 2022 version 17.14. |
 
 ## Deprecated and removed compiler options
 

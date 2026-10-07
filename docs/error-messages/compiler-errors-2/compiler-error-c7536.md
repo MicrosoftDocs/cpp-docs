@@ -18,4 +18,4 @@ error C7536: ifc failed integrity checks.
 Expected SHA2: '66d5c8154df0c71d4cab7665bab4a125c7ce5cb9a401a4d8b461b706ddd771c6'
 ```
 
-This error is new in Visual Studio 2017 version 15.9. It's only generated when creating or consuming modules, specified by the `/experimental:module` compiler option.
+This error is new in Visual Studio 2017 version 15.9. The compiler generates this error only when you create or consume modules.

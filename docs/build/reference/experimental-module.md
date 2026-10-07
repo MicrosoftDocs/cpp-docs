@@ -1,13 +1,16 @@
 ---
 title: "/experimental:module (Enable module support)"
 description: "Use the /experimental:module compiler option to enable experimental compiler support for named modules."
-ms.date: 02/12/2025
+ms.date: 10/06/2026
 f1_keywords: ["module", "/experimental:module"]
 helpviewer_keywords: ["module", "/experimental:module", "Enable module support"]
 ---
 # `/experimental:module` (Enable experimental module support)
 
-Enables compiler support for Microsoft's experimental form of C++ Standard modules. This option is obsolete in Visual Studio 2019 version 16.11 and later.
+Enables compiler support for Microsoft's experimental form of C++ Standard modules.
+
+> [!NOTE]
+> This option is obsolete starting in Visual Studio 2022 version 17.14.
 
 ## Syntax
 
@@ -25,6 +28,7 @@ This compiler switch is available starting in Visual Studio 2015 Update 1. In th
 | Visual Studio 2019 version 16.10 | C++20 modules support is feature complete. |
 | Visual Studio 2019 16.11 and earlier | Enable experimental modules support using **`/experimental:module`** along with [`/std:c++latest`](std-specify-language-standard-version.md). |
 | Visual Studio 2019 version 16.11 and later | Modules support is enabled automatically with **`/std:c++20`** or later, or **`/std:c++latest`**. Use **`/experimental:module-`** to disable experimental module support. |
+| Visual Studio 2022 version 17.14 and later | `/experimental:module` is deprecated.  |
 
 The experimental library consists of the following named modules:
 
