@@ -256,7 +256,7 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[Standard pragmas for floating-point evaluation](https://open-std.org/JTC1/SC22/WG14/www/docs/n696.ps) | No <sup>[W](#note_W)</sup> |
 | **C11 Core language features** | **Yes** |
 | &emsp;[type-generic expressions `_Generic`](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1441.htm) | Yes |
-| &emsp;[static assertions `_Static_assert`](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1330.pdf) | Yes |
+| &emsp;[static assertions `_Static_assert`](https://open-std.org/jtc1/sc22/wg14/www/docs/n1330.pdf) | Yes |
 | &emsp;[anonymous structs and unions](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1406.pdf) | Yes |
 | &emsp;[No-return functions](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1478.htm) | Yes |
 | **Optional C11 Core Language features** |
@@ -731,11 +731,11 @@ These algorithms aren't presently parallelized:
 
 <a name="note_V"></a> **V** Use the compiler options `/source-charset:utf-8` and `/we4828` to treat source files as UTF-8 encoded.
 
-<a name="note_W"></a> **W** The compiler supports controlling the floating-point behavior using non-standard pragmas [`fp_contract`](../preprocessor/fp-contract.md), [`fenv_access`](../preprocessor/fenv-access), and [`float_control`](../preprocessor/float-control.md).
+<a name="note_W"></a> **W** The compiler supports controlling the floating-point behavior by using nonstandard pragmas [`fp_contract`](../preprocessor/fp-contract.md), [`fenv_access`](../preprocessor/fenv-access), and [`float_control`](../preprocessor/float-control.md).
 
-<a name="note_X"></a> **X** C11 atomics is supported under `/experimental:c11atomics`
+<a name="note_X"></a> **X** C11 atomics is supported under `/experimental:c11atomics`.
 
-<a name="note_Y"></a> **Y** C23 attributes `[[unsequenced]]` and `[[reproducible]]` are accepted in the grammar, but are not used by optimizations.
+<a name="note_Y"></a> **Y** The C23 attributes `[[unsequenced]]` and `[[reproducible]]` are accepted in the grammar, but optimizations don't use them.
 
 <a name="note_Label"></a> **Label** The compiler supports labels on declarations, but not at the end of a compound statement.
 
@@ -751,11 +751,11 @@ These algorithms aren't presently parallelized:
 
 <a name="note_24"></a> **24** In MSVC Build Tools version 14.50 and up (first shipped with Visual Studio 2026 version 18.0), these features are enabled by the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
 
-<a name="note_C99"></a> **C99** Most C99 features that were made optional in C11 are not supported or only partially supported by the compiler.
+<a name="note_C99"></a> **C99** Most C99 features that were made optional in C11 aren't supported or are only partially supported by the compiler.
 
 <a name="note_C11"></a> **C11** Compiler support for C11 and C17 requires Visual Studio 2019 version 16.8 or higher. Except as noted, C11 and C17 library support requires Windows SDK build 10.0.20211.0 or higher. For more information on how to install support for C11 and C17, see [Install C11 and C17 support in Visual Studio](./install-c17-support.md).
 
-<a name="note_C17"></a> **C17** No major features were added to the language in C17
+<a name="note_C17"></a> **C17** The C17 standard didn't add any major features to the language.
 
 <a name="note_DR"></a> **DR** These features are enabled in all C++ [`/std`](../build/reference/std-specify-language-standard-version.md) compiler option modes. The C++ Standard committee adopted this change as a retroactive Defect Report to C++11 and all later versions.
 
