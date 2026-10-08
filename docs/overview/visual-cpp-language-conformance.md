@@ -228,7 +228,7 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | Feature | Supported |
 |--|--|
 | **C99 Core language features** | **Partial** <sup>[C99](#note_C99)</sup> |
-| &emsp;[Universal-character-names](../cpp/character-sets.md#universal-character-names.md) in identifiers | Yes |
+| &emsp;[Universal-character-names](../cpp/character-sets.md#universal-character-names) in identifiers | Yes |
 | &emsp;Increased [translation limits](../cpp/compiler-limits.md) | Yes |
 | &emsp;[`//` comments](https://open-std.org/JTC1/SC22/WG14/www/docs/n644.htm) | Yes |
 | &emsp;[`restrict` pointers](https://open-std.org/JTC1/SC22/WG14/www/docs/n448.pdf) | Yes |
