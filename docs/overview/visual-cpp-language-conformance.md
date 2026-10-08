@@ -250,7 +250,7 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;Init-statement in for loops | Yes |
 | &emsp;[inline functions](https://open-std.org/JTC1/SC22/WG14/www/docs/n741.htm) | Yes |
 | &emsp;[Predefined variable `__func__`](https://open-std.org/JTC1/SC22/WG14/www/docs/n611.ps) | Yes |
-| &emsp;CVR-qualifiers and `static` in `[]` within function declarations | MSVC 19.53 |
+| &emsp;CVR-qualifiers and `static` in `[]` within function declarations | VS 2022 17.5 |
 | &emsp;[variadic macros](https://open-std.org/JTC1/SC22/WG14/www/docs/n707.htm) | Yes |
 | &emsp;_Pragma preprocessor unary operator | Yes |
 | &emsp;[Standard pragmas for floating-point evaluation](https://open-std.org/JTC1/SC22/WG14/www/docs/n696.ps) | No <sup>[W](#note_W)</sup> |
@@ -266,14 +266,14 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;Complex Math | Partial <sup>[K](#note_K)</sup> |
 | **C17 Core Language features** | **Yes** <sup>[C17](#note_C17)</sup>|
 | **C23 Core language features** | **Partial** |
-| &emsp;[Attributes](https://open-std.org/JTC1/SC22/WG14/www/docs/n2335.pdf) | MSVC 19.37 |
-| &emsp;[`[[nodiscard]]`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2267.pdf) [with message](https://open-std.org/JTC1/SC22/WG14/www/docs/n2448.pdf) | MSVC 19.37 |
-| &emsp;[`[[maybe_unused]]`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2270.pdf) [with labels](https://open-std.org/JTC1/SC22/WG14/www/docs/n2662.pdf) | MSVC 19.37 |
-| &emsp;[`[[deprecated]]`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2334.pdf) | MSVC 19.37 |
-| &emsp;[`[[fallthrough]]`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2408.pdf) | MSVC 19.37 |
-| &emsp;[`[[noreturn]]`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2764.pdf) | MSVC 19.37 |
-| &emsp;[`[[unsequenced]]` and `[[reproducible]]`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2956.htm) | MSVC 19.37 <sup>[Y](#note_Y)</sup> |
-| &emsp;[allow duplicate attributes](https://open-std.org/JTC1/SC22/WG14/www/docs/n2557.pdf) | MSVC 19.37 |
+| &emsp;[Attributes](https://open-std.org/JTC1/SC22/WG14/www/docs/n2335.pdf) | VS 2022 17.7 |
+| &emsp;[`[[nodiscard]]`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2267.pdf) [with message](https://open-std.org/JTC1/SC22/WG14/www/docs/n2448.pdf) | VS 2022 17.7 |
+| &emsp;[`[[maybe_unused]]`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2270.pdf) [with labels](https://open-std.org/JTC1/SC22/WG14/www/docs/n2662.pdf) | VS 2022 17.7 |
+| &emsp;[`[[deprecated]]`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2334.pdf) | VS 2022 17.7 |
+| &emsp;[`[[fallthrough]]`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2408.pdf) | VS 2022 17.7 |
+| &emsp;[`[[noreturn]]`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2764.pdf) | VS 2022 17.7 |
+| &emsp;[`[[unsequenced]]` and `[[reproducible]]`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2956.htm) | VS 2022 17.7 <sup>[Y](#note_Y)</sup> |
+| &emsp;[allow duplicate attributes](https://open-std.org/JTC1/SC22/WG14/www/docs/n2557.pdf) | VS 2022 17.7 |
 | &emsp;[`static_assert` with no message](https://open-std.org/JTC1/SC22/WG14/www/docs/n2265.pdf) | Yes |
 | &emsp;[IEEE 754 decimal floating-point types](https://open-std.org/JTC1/SC22/WG14/www/docs/n2341.pdf) | No |
 | &emsp;[IEEE 754 interchange and extended types](https://open-std.org/JTC1/SC22/WG14/www/docs/n2601.pdf) | No |
@@ -281,20 +281,20 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[Removal of function definitions without prototype](https://open-std.org/JTC1/SC22/WG14/www/docs/n2432.pdf) | No |
 | &emsp;[Unnamed parameters in function definitions](https://open-std.org/JTC1/SC22/WG14/www/docs/n2480.pdf) | No |
 | &emsp;[Labels before declarations and end of blocks](https://open-std.org/JTC1/SC22/WG14/www/docs/n2508.pdf) | Partial <sup>[label](#note_Label)</sup>|
-| &emsp;[Binary integer constants](https://open-std.org/JTC1/SC22/WG14/www/docs/n2549.pdf) | MSVC 19.0 |
-| &emsp;[`__has_c_attribute` in preprocessor conditionals](https://open-std.org/JTC1/SC22/WG14/www/docs/n2553.pdf) | MSVC 19.37 |
-| &emsp;[Digit separators](https://open-std.org/JTC1/SC22/WG14/www/docs/n2626.pdf) | MSVC 19.0 |
-| &emsp;[`#elifdef` and `#elifndef`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2645.pdf) | MSVC 19.40 |
+| &emsp;[Binary integer constants](https://open-std.org/JTC1/SC22/WG14/www/docs/n2549.pdf) | VS 2015 14.0 |
+| &emsp;[`__has_c_attribute` in preprocessor conditionals](https://open-std.org/JTC1/SC22/WG14/www/docs/n2553.pdf) | VS 2022 17.7 |
+| &emsp;[Digit separators](https://open-std.org/JTC1/SC22/WG14/www/docs/n2626.pdf) | VS 2015 14.0 |
+| &emsp;[`#elifdef` and `#elifndef`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2645.pdf) | VS 2022 17.10 |
 | &emsp;[Type change of `u8` string literals](https://open-std.org/JTC1/SC22/WG14/www/docs/n2653.htm) | No |
-| &emsp;[`#warning`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2686.pdf) | MSVC 19.50 |
+| &emsp;[`#warning`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2686.pdf) | VS 2026 18.0 |
 | &emsp;[Bit-precise integer types (`_BitInt`)](https://open-std.org/JTC1/SC22/WG14/www/docs/n2763.pdf) | No |
 | &emsp;[Suffixes for bit-precise integer constants](https://open-std.org/JTC1/SC22/WG14/www/docs/n2775.pdf) | No |
-| &emsp;[`__has_include` in preprocessor conditionals](https://open-std.org/JTC1/SC22/WG14/www/docs/n2799.pdf) | MSVC 19.11 |
-| &emsp;[Identifier Syntax using Unicode Standard Annex 31](https://open-std.org/JTC1/SC22/WG14/www/docs/n2836.pdf) | MSVC 19.50 |
+| &emsp;[`__has_include` in preprocessor conditionals](https://open-std.org/JTC1/SC22/WG14/www/docs/n2799.pdf) | VS 2017 15.3 |
+| &emsp;[Identifier Syntax using Unicode Standard Annex 31](https://open-std.org/JTC1/SC22/WG14/www/docs/n2836.pdf) | VS 2026 18.0 |
 | &emsp;[Removal of function declarations without prototype](https://open-std.org/JTC1/SC22/WG14/www/docs/n2841.htm) | No |
-| &emsp;[Empty brace initializers](https://open-std.org/JTC1/SC22/WG14/www/docs/n2900.htm) | MSVC 19.39 |
-| &emsp;[`typeof` and](https://open-std.org/JTC1/SC22/WG14/www/docs/n2927.htm) [`typeof_unqual`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2930.pdf) | MSVC 19.39 |
-| &emsp;[New spelling of keywords](https://open-std.org/JTC1/SC22/WG14/www/docs/n2934.pdf) | Partial MSVC 19.36:`static_assert` MSVC 19.37:`thread_local` |
+| &emsp;[Empty brace initializers](https://open-std.org/JTC1/SC22/WG14/www/docs/n2900.htm) | VS 2022 17.9 |
+| &emsp;[`typeof` and](https://open-std.org/JTC1/SC22/WG14/www/docs/n2927.htm) [`typeof_unqual`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2930.pdf) | VS 2022 17.9 |
+| &emsp;[New spelling of keywords](https://open-std.org/JTC1/SC22/WG14/www/docs/n2934.pdf) | Partial VS 2022 17.6:`static_assert` VS 2022 17.7:`thread_local` |
 | &emsp;[`true` and `false` first class language features](https://open-std.org/JTC1/SC22/WG14/www/docs/n2935.pdf) | No |
 | &emsp;[Relax requirements for variadic parameter list](https://open-std.org/JTC1/SC22/WG14/www/docs/n2975.pdf) | No |
 | &emsp;[Type inference in object definitions (`auto`)](https://open-std.org/JTC1/SC22/WG14/www/docs/n3007.htm) | No |
@@ -302,7 +302,7 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[`constexpr` objects](https://open-std.org/JTC1/SC22/WG14/www/docs/n3018.htm) | No |
 | &emsp;[Improved Normal Enumerations](https://open-std.org/JTC1/SC22/WG14/www/docs/n3029.htm) | No |
 | &emsp;[Enumerations with fixed underlying types](https://open-std.org/JTC1/SC22/WG14/www/docs/n3030.htm) | No |
-| &emsp;[`__VA_OPT__`](https://open-std.org/JTC1/SC22/WG14/www/docs/n3033.htm) | MSVC 19.39 |
+| &emsp;[`__VA_OPT__`](https://open-std.org/JTC1/SC22/WG14/www/docs/n3033.htm) | VS 2022 17.9 |
 | &emsp;[Storage-class specifiers for compound literals](https://open-std.org/JTC1/SC22/WG14/www/docs/n3038.htm) | No |
 | &emsp;[`nullptr`](https://open-std.org/JTC1/SC22/WG14/www/docs/n3042.htm) | No |
 
