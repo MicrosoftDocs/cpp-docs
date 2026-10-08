@@ -228,18 +228,18 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | Feature | Supported |
 |--|--|
 | **C99 Core language features** | **Partial** <sup>[C99](#note_C99)</sup> |
-| &emsp;Universal-character-names in identifiers | Yes |
-| &emsp;Increased translation limits | Yes |
+| &emsp;[Universal-character-names](../cpp/character-sets.md#universal-character-names.md) in identifiers | Yes |
+| &emsp;Increased [translation limits](../cpp/compiler-limits.md) | Yes |
 | &emsp;[`//` comments](https://open-std.org/JTC1/SC22/WG14/www/docs/n644.htm) | Yes |
 | &emsp;[`restrict` pointers](https://open-std.org/JTC1/SC22/WG14/www/docs/n448.pdf) | Yes |
 | &emsp;[`_Bool`](https://open-std.org/JTC1/SC22/WG14/www/docs/n815.htm) | Yes |
 | &emsp;[`long long`](https://open-std.org/JTC1/SC22/WG14/www/docs/n601.ps) | Yes |
 | &emsp;[`_Complex`/`_Imaginary` keywords](https://open-std.org/JTC1/SC22/WG14/www/docs/n809.doc) | Partial <sup>[K](#note_K)</sup> |
-| &emsp;Flexible array members | Yes |
+| &emsp;[Flexible array members](https://open-std.org/jtc1/sc22/wg14/www/docs/n791.htm) | Yes |
 | &emsp;[Variable-length array (VLA) types](https://open-std.org/JTC1/SC22/WG14/www/docs/n683.htm) | No <sup>[C99](#note_C99)</sup> |
-| &emsp;Variably-modified (VM) types | No <sup>[C99](#note_C99)</sup> |
+| &emsp;Variably-modified (VM) types (such as a pointer to a VLA) | No <sup>[C99](#note_C99)</sup> |
 | &emsp;[Designated initializers](https://open-std.org/JTC1/SC22/WG14/www/docs/n494.pdf) | Yes |
-| &emsp;non-constant initializers | Yes |
+| &emsp;non-constant initializers in aggregate initialization (such as `int a[2] = { init_func(), init_func() };`) | Yes |
 | &emsp;[idempotent cvr-qualifiers](https://open-std.org/JTC1/SC22/WG14/www/docs/n505.pdf) | Yes |
 | &emsp;Trailing comma in enumerator-list | Yes |
 | &emsp;[Hexadecimal floating constants](https://open-std.org/JTC1/SC22/WG14/www/docs/n308.pdf) | Yes |
