@@ -250,7 +250,7 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;Init-statement in for loops | Yes |
 | &emsp;[inline functions](https://open-std.org/JTC1/SC22/WG14/www/docs/n741.htm) | Yes |
 | &emsp;[Predefined variable `__func__`](https://open-std.org/JTC1/SC22/WG14/www/docs/n611.ps) | Yes |
-| &emsp;CVR-qualifiers and `static` in `[]` within function declarations | VS 2022 17.5 |
+| &emsp;CVR-qualifiers and `static` in `[]` within function declarations | MSVC 19.52 |
 | &emsp;[variadic macros](https://open-std.org/JTC1/SC22/WG14/www/docs/n707.htm) | Yes |
 | &emsp;_Pragma preprocessor unary operator | Yes |
 | &emsp;[Standard pragmas for floating-point evaluation](https://open-std.org/JTC1/SC22/WG14/www/docs/n696.ps) | No <sup>[W](#note_W)</sup> |
@@ -286,11 +286,11 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[Digit separators](https://open-std.org/JTC1/SC22/WG14/www/docs/n2626.pdf) | VS 2015 14.0 |
 | &emsp;[`#elifdef` and `#elifndef`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2645.pdf) | VS 2022 17.10 |
 | &emsp;[Type change of `u8` string literals](https://open-std.org/JTC1/SC22/WG14/www/docs/n2653.htm) | No |
-| &emsp;[`#warning`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2686.pdf) | VS 2026 18.0 |
+| &emsp;[`#warning`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2686.pdf) | MSVC 19.50 |
 | &emsp;[Bit-precise integer types (`_BitInt`)](https://open-std.org/JTC1/SC22/WG14/www/docs/n2763.pdf) | No |
 | &emsp;[Suffixes for bit-precise integer constants](https://open-std.org/JTC1/SC22/WG14/www/docs/n2775.pdf) | No |
 | &emsp;[`__has_include` in preprocessor conditionals](https://open-std.org/JTC1/SC22/WG14/www/docs/n2799.pdf) | VS 2017 15.3 |
-| &emsp;[Identifier Syntax using Unicode Standard Annex 31](https://open-std.org/JTC1/SC22/WG14/www/docs/n2836.pdf) | VS 2026 18.0 |
+| &emsp;[Identifier Syntax using Unicode Standard Annex 31](https://open-std.org/JTC1/SC22/WG14/www/docs/n2836.pdf) | MSVC 19.50 |
 | &emsp;[Removal of function declarations without prototype](https://open-std.org/JTC1/SC22/WG14/www/docs/n2841.htm) | No |
 | &emsp;[Empty brace initializers](https://open-std.org/JTC1/SC22/WG14/www/docs/n2900.htm) | VS 2022 17.9 |
 | &emsp;[`typeof` and](https://open-std.org/JTC1/SC22/WG14/www/docs/n2927.htm) [`typeof_unqual`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2930.pdf) | VS 2022 17.9 |
