@@ -252,11 +252,11 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[Predefined variable `__func__`](https://open-std.org/JTC1/SC22/WG14/www/docs/n611.ps) | Yes |
 | &emsp;CVR-qualifiers and `static` in `[]` within function declarations | MSVC 19.52 |
 | &emsp;[variadic macros](https://open-std.org/JTC1/SC22/WG14/www/docs/n707.htm) | Yes |
-| &emsp;_Pragma preprocessor unary operator | Yes |
+| &emsp;_Pragma preprocessor unary operator | VS 2019 16.7 |
 | &emsp;[Standard pragmas for floating-point evaluation](https://open-std.org/JTC1/SC22/WG14/www/docs/n696.ps) | No <sup>[W](#note_W)</sup> |
 | **C11 Core language features** | **Yes** |
-| &emsp;[type-generic expressions `_Generic`](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1441.htm) | Yes |
-| &emsp;[static assertions `_Static_assert`](https://open-std.org/jtc1/sc22/wg14/www/docs/n1330.pdf) | Yes |
+| &emsp;[type-generic expressions `_Generic`](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1441.htm) | VS 2019 16.7 |
+| &emsp;[static assertions `_Static_assert`](https://open-std.org/jtc1/sc22/wg14/www/docs/n1330.pdf) | VS 2019 16.8 |
 | &emsp;[anonymous structs and unions](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1406.pdf) | Yes |
 | &emsp;[No-return functions](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1478.htm) | Yes |
 | **Optional C11 Core Language features** |
