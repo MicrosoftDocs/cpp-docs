@@ -731,7 +731,7 @@ These algorithms aren't presently parallelized:
 
 <a name="note_V"></a> **V** Use the compiler options `/source-charset:utf-8` and `/we4828` to treat source files as UTF-8 encoded.
 
-<a name="note_W"></a> **W** The compiler supports controlling the floating-point behavior by using nonstandard pragmas [`fp_contract`](../preprocessor/fp-contract.md), [`fenv_access`](../preprocessor/fenv-access.md), and [`float_control`](../preprocessor/float-control.md).
+<a name="note_W"></a> **W** The compiler controls floating-point behavior by using the nonstandard pragmas [`fp_contract`](../preprocessor/fp-contract.md), [`fenv_access`](../preprocessor/fenv-access.md), and [`float_control`](../preprocessor/float-control.md).
 
 <a name="note_X"></a> **X** C11 atomics is supported under `/experimental:c11atomics`.
 
