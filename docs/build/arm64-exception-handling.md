@@ -1,7 +1,8 @@
 ---
 title: "ARM64 exception handling"
 description: "Describes the exception handling conventions and data used by windows on ARM64."
-ms.date: 01/13/2023
+ms.date: 10/14/2026
+ai-usage: ai-assisted
 ---
 # ARM64 exception handling
 
@@ -281,7 +282,7 @@ If exceptions were guaranteed to only ever occur within a function body, and nev
 
 - By counting the number of instructions before the end of the prolog, it's possible to skip the equivalent number of unwind codes. We can execute the rest of the sequence to undo only those parts of the prolog that have completed execution.
 
-The unwind codes are encoded according to the table below. All unwind codes are a single/double byte, except the one that allocates a huge stack (`alloc_l`). There are 22 unwind codes in total. Each unwind code maps exactly one instruction in the prolog/epilog, to allow for unwinding of partially executed prologs and epilogs.
+The unwind codes are encoded according to the table below. Each unwind code is between one and four bytes long. Each unwind code maps exactly one instruction in the prolog or epilog, to allow for unwinding of partially executed prologs and epilogs.
 
 | Unwind code | Bits and interpretation |
 |--|--|
@@ -311,7 +312,8 @@ The unwind codes are encoded according to the table below. All unwind codes are 
 | `save_any_dreg` | 11100111'0pxrrrrr'01oooooo: save register(s)<ul><li>`p`: 0/1 => single `D(#r)` vs pair `D(#r)` + `D(#r+1)`</li><li>`x`: 0/1 => positive vs negative pre-indexed stack offset</li><li>`o`: offset = `o` * 16, if x=1 or p=1, else `o` * 8</li></ul>(Windows >= 11 required) |
 | `save_any_qreg` | 11100111'0pxrrrrr'10oooooo: save register(s)<ul><li>`p`: 0/1 => single `Q(#r)` vs pair `Q(#r)` + `Q(#r+1)`</li><li>`x`: 0/1 => positive vs negative pre-indexed stack offset</li><li>`o`: offset = `o` * 16</li></ul>(Windows >= 11 required) |
 | `save_zreg` | 11100111'0oo0rrrr'11oooooo: save reg `Z(#r+8)` at `[sp + #o * VL]`, (`Z8` through `Z23`)
-| `save_preg` | 11100111'0oo1rrrr'11oooooo: save reg `P(#r)` at `[sp + #o * (VL / 8)]`, (`P4` through `P15`; `r` values `[0, 3]` are reserved)
+| `save_vg_sm` | 11100111'0oo10000'11oooooo: save `VG` and `SM` at `[sp + #o * 8]`. For the saved 64-bit value, see [Saved `VG` and `SM` values](#saved-vg-and-sm-values). |
+| `save_preg` | 11100111'0oo1rrrr'11oooooo: save reg `P(#r)` at `[sp + #o * (VL / 8)]`, (`P4` through `P15`; `r` values `1` through `3` are reserved)
 |  | 11100111'1yyyyyyy': reserved |
 |  | 11101xxx: reserved for custom stack cases below only generated for asm routines |
 |  | 11101000: Custom stack for `MSFT_OP_TRAP_FRAME` |
@@ -341,6 +343,20 @@ Post-indexed offset addressing isn't allowed in a prolog. All offset ranges (#Z)
 Since the sizes of regular return and jump instructions are the same, there's no need for a separated `end` unwind code in tail-call scenarios.
 
 `end_c` is designed to handle noncontiguous function fragments for optimization purposes. An `end_c` that indicates the end of unwind codes in the current scope must be followed by another series of unwind codes ending with a real `end`. The unwind codes between `end_c` and `end` represent the prolog operations in the parent region (a "phantom" prolog). More details and examples are described in the section below.
+
+#### Saved `VG` and `SM` values
+
+Compilers should emit `save_vg_sm` for code that might switch between Streaming SVE mode and non-streaming SVE mode. A mode switch might also change the vector granule. Such code must preserve the previous `SM` and `VG` values in a 64-bit stack slot and use this opcode to identify the slot.
+
+The data at `[sp + #o * 8]` must have the following layout:
+
+```text
+s0000000'00000000'00000000'00000000'00000000'00000000'00000000'00vvvvvv
+```
+
+- Bit 63 (`s`) contains the previous `SM` (streaming mode) value.
+- Bits 62 through 6 are reserved and must be set to zero.
+- Bits 5 through 0 (`v`) contain the previous `VG` value. The `VG` value represents the number of 64-bit granules in the SVE vector length.
 
 ### Packed unwind data
 
