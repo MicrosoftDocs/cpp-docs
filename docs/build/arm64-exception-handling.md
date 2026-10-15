@@ -282,7 +282,7 @@ If exceptions were guaranteed to only ever occur within a function body, and nev
 
 - By counting the number of instructions before the end of the prolog, it's possible to skip the equivalent number of unwind codes. We can execute the rest of the sequence to undo only those parts of the prolog that have completed execution.
 
-The unwind codes are encoded according to the table below. Each unwind code is between one and four bytes long. Each unwind code maps exactly one instruction in the prolog or epilog, to allow for unwinding of partially executed prologs and epilogs.
+The following table shows how the unwind codes are encoded. Each unwind code is between one and four bytes long. Each unwind code maps exactly one instruction in the prolog or epilog, to allow for unwinding of partially executed prologs and epilogs.
 
 | Unwind code | Bits and interpretation |
 |--|--|
