@@ -7,7 +7,7 @@ ms.subservice: "cpp-lang"
 ---
 # Microsoft C/C++ language conformance by Visual Studio version
 
-Standards conformance for the Microsoft C/C++ compiler in Visual Studio (MSVC) is a work in progress. Here's a summary of ISO Standard C and C++ language and library conformance by Visual Studio version. Each C++ compiler and standard library feature name has a link to the ISO Standard C++ proposal paper that describes the feature, when one is available at publication time. The **Supported** column lists the Visual Studio version in which support for the feature first appeared.
+Standards conformance for the Microsoft C/C++ compiler in Visual Studio (MSVC) is a work in progress. Here's a summary of ISO Standard C and C++ compiler and standard library conformance by Visual Studio version. Each feature name has a link to the ISO Standard proposal paper that describes the feature, when one is available at publication time. The **Supported** column lists the Visual Studio version in which support for the feature first appeared.
 
 For details on conformance improvements, see [C++ conformance improvements in Visual Studio](cpp-conformance-improvements.md). For a list of other changes, see [What's New for Microsoft C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md). For conformance changes in earlier versions, see [Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md) and [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md). For current news from the C++ team, visit the [C++ team blog](https://devblogs.microsoft.com/cppblog/).
 
@@ -222,6 +222,89 @@ For details on conformance improvements, see [C++ conformance improvements in Vi
 | &emsp;[`P2579R0 Mitigation strategies for P2036 "Changing scope for lambda trailing-return-type"`](https://wg21.link/p2579r0) | MSVC Build Tools version 14.50 <sup>[24](#note_24)</sup> |
 | &emsp;[`P2582R1 Wording for class template argument deduction from inherited constructors`](https://wg21.link/p2582r1) | no |
 | &emsp;[`P2589R1 static operator[]`](https://wg21.link/p2589r1) | VS 2022 17.14 <sup>[23](#note_23)</sup> |
+
+## C compiler features
+
+| Feature | Supported |
+|--|--|
+| **C99 Core language features** | **Partial** <sup>[C99](#note_C99)</sup> |
+| &emsp;[Universal-character-names](../cpp/character-sets.md#universal-character-names) in identifiers | Yes |
+| &emsp;Increased [translation limits](../cpp/compiler-limits.md) | Yes |
+| &emsp;[`//` comments](https://open-std.org/JTC1/SC22/WG14/www/docs/n644.htm) | Yes |
+| &emsp;[`restrict` pointers](https://open-std.org/JTC1/SC22/WG14/www/docs/n448.pdf) | Yes |
+| &emsp;[`_Bool`](https://open-std.org/JTC1/SC22/WG14/www/docs/n815.htm) | Yes |
+| &emsp;[`long long`](https://open-std.org/JTC1/SC22/WG14/www/docs/n601.ps) | Yes |
+| &emsp;[`_Complex`/`_Imaginary` keywords](https://open-std.org/JTC1/SC22/WG14/www/docs/n809.doc) | Partial <sup>[K](#note_K)</sup> |
+| &emsp;[Flexible array members](https://open-std.org/jtc1/sc22/wg14/www/docs/n791.htm) | Yes |
+| &emsp;[Variable-length array (VLA) types](https://open-std.org/JTC1/SC22/WG14/www/docs/n683.htm) | No <sup>[C99](#note_C99)</sup> |
+| &emsp;Variably-modified (VM) types (such as a pointer to a VLA) | No <sup>[C99](#note_C99)</sup> |
+| &emsp;[Designated initializers](https://open-std.org/JTC1/SC22/WG14/www/docs/n494.pdf) | Yes |
+| &emsp;non-constant initializers in aggregate initialization (such as `int a[2] = { init_func(), init_func() };`) | Yes |
+| &emsp;[idempotent cvr-qualifiers](https://open-std.org/JTC1/SC22/WG14/www/docs/n505.pdf) | Yes |
+| &emsp;Trailing comma in enumerator-list | Yes |
+| &emsp;[Hexadecimal floating constants](https://open-std.org/JTC1/SC22/WG14/www/docs/n308.pdf) | Yes |
+| &emsp;[Compound Literals](https://open-std.org/JTC1/SC22/WG14/www/docs/n716.htm) | Yes |
+| &emsp;[Truncation for signed integer division](https://open-std.org/JTC1/SC22/WG14/www/docs/n617.htm) | Yes |
+| &emsp;implicit `return 0;` in `main()` function | Yes |
+| &emsp;[Declarations and statements in mixed order](https://open-std.org/JTC1/SC22/WG14/www/docs/n740.htm) | Yes |
+| &emsp;Init-statement in for loops | Yes |
+| &emsp;[inline functions](https://open-std.org/JTC1/SC22/WG14/www/docs/n741.htm) | Yes |
+| &emsp;[Predefined variable `__func__`](https://open-std.org/JTC1/SC22/WG14/www/docs/n611.ps) | Yes |
+| &emsp;CVR-qualifiers and `static` in `[]` within function declarations | MSVC 19.52 |
+| &emsp;[variadic macros](https://open-std.org/JTC1/SC22/WG14/www/docs/n707.htm) | Yes |
+| &emsp;_Pragma preprocessor unary operator | VS 2019 16.7 |
+| &emsp;[Standard pragmas for floating-point evaluation](https://open-std.org/JTC1/SC22/WG14/www/docs/n696.ps) | No <sup>[W](#note_W)</sup> |
+| **C11 Core language features** | **Yes** |
+| &emsp;[type-generic expressions `_Generic`](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1441.htm) | VS 2019 16.7 |
+| &emsp;[static assertions `_Static_assert`](https://open-std.org/jtc1/sc22/wg14/www/docs/n1330.pdf) | VS 2019 16.8 |
+| &emsp;[anonymous structs and unions](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1406.pdf) | Yes |
+| &emsp;[No-return functions](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1478.htm) | Yes |
+| **Optional C11 Core Language features** |
+| &emsp;Threads | Yes |
+| &emsp;Atomics | Partial in VS 2022 17.5 <sup>[X](#note_X)</sup> |
+| &emsp;VLA | No |
+| &emsp;Complex Math | Partial <sup>[K](#note_K)</sup> |
+| **C17 Core Language features** | **Yes** <sup>[C17](#note_C17)</sup>|
+| **C23 Core language features** | **Partial** |
+| &emsp;[Attributes](https://open-std.org/JTC1/SC22/WG14/www/docs/n2335.pdf) | VS 2022 17.7 |
+| &emsp;[`[[nodiscard]]`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2267.pdf) [with message](https://open-std.org/JTC1/SC22/WG14/www/docs/n2448.pdf) | VS 2022 17.7 |
+| &emsp;[`[[maybe_unused]]`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2270.pdf) [with labels](https://open-std.org/JTC1/SC22/WG14/www/docs/n2662.pdf) | VS 2022 17.7 |
+| &emsp;[`[[deprecated]]`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2334.pdf) | VS 2022 17.7 |
+| &emsp;[`[[fallthrough]]`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2408.pdf) | VS 2022 17.7 |
+| &emsp;[`[[noreturn]]`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2764.pdf) | VS 2022 17.7 |
+| &emsp;[`[[unsequenced]]` and `[[reproducible]]`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2956.htm) | VS 2022 17.7 <sup>[Y](#note_Y)</sup> |
+| &emsp;[allow duplicate attributes](https://open-std.org/JTC1/SC22/WG14/www/docs/n2557.pdf) | VS 2022 17.7 |
+| &emsp;[`static_assert` with no message](https://open-std.org/JTC1/SC22/WG14/www/docs/n2265.pdf) | Yes |
+| &emsp;[IEEE 754 decimal floating-point types](https://open-std.org/JTC1/SC22/WG14/www/docs/n2341.pdf) | No |
+| &emsp;[IEEE 754 interchange and extended types](https://open-std.org/JTC1/SC22/WG14/www/docs/n2601.pdf) | No |
+| &emsp;[`u8` character constants](https://open-std.org/JTC1/SC22/WG14/www/docs/n2418.pdf) | No |
+| &emsp;[Removal of function definitions without prototype](https://open-std.org/JTC1/SC22/WG14/www/docs/n2432.pdf) | No |
+| &emsp;[Unnamed parameters in function definitions](https://open-std.org/JTC1/SC22/WG14/www/docs/n2480.pdf) | No |
+| &emsp;[Labels before declarations and end of blocks](https://open-std.org/JTC1/SC22/WG14/www/docs/n2508.pdf) | Partial <sup>[label](#note_Label)</sup>|
+| &emsp;[Binary integer constants](https://open-std.org/JTC1/SC22/WG14/www/docs/n2549.pdf) | VS 2015 14.0 |
+| &emsp;[`__has_c_attribute` in preprocessor conditionals](https://open-std.org/JTC1/SC22/WG14/www/docs/n2553.pdf) | VS 2022 17.7 |
+| &emsp;[Digit separators](https://open-std.org/JTC1/SC22/WG14/www/docs/n2626.pdf) | VS 2015 14.0 |
+| &emsp;[`#elifdef` and `#elifndef`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2645.pdf) | VS 2022 17.10 |
+| &emsp;[Type change of `u8` string literals](https://open-std.org/JTC1/SC22/WG14/www/docs/n2653.htm) | No |
+| &emsp;[`#warning`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2686.pdf) | MSVC 19.50 |
+| &emsp;[Bit-precise integer types (`_BitInt`)](https://open-std.org/JTC1/SC22/WG14/www/docs/n2763.pdf) | No |
+| &emsp;[Suffixes for bit-precise integer constants](https://open-std.org/JTC1/SC22/WG14/www/docs/n2775.pdf) | No |
+| &emsp;[`__has_include` in preprocessor conditionals](https://open-std.org/JTC1/SC22/WG14/www/docs/n2799.pdf) | VS 2017 15.3 |
+| &emsp;[Identifier Syntax using Unicode Standard Annex 31](https://open-std.org/JTC1/SC22/WG14/www/docs/n2836.pdf) | MSVC 19.50 |
+| &emsp;[Removal of function declarations without prototype](https://open-std.org/JTC1/SC22/WG14/www/docs/n2841.htm) | No |
+| &emsp;[Empty brace initializers](https://open-std.org/JTC1/SC22/WG14/www/docs/n2900.htm) | VS 2022 17.9 |
+| &emsp;[`typeof` and](https://open-std.org/JTC1/SC22/WG14/www/docs/n2927.htm) [`typeof_unqual`](https://open-std.org/JTC1/SC22/WG14/www/docs/n2930.pdf) | VS 2022 17.9 |
+| &emsp;[New spelling of keywords](https://open-std.org/JTC1/SC22/WG14/www/docs/n2934.pdf) | Partial VS 2022 17.6:`static_assert` VS 2022 17.7:`thread_local` |
+| &emsp;[`true` and `false` first class language features](https://open-std.org/JTC1/SC22/WG14/www/docs/n2935.pdf) | No |
+| &emsp;[Relax requirements for variadic parameter list](https://open-std.org/JTC1/SC22/WG14/www/docs/n2975.pdf) | No |
+| &emsp;[Type inference in object definitions (`auto`)](https://open-std.org/JTC1/SC22/WG14/www/docs/n3007.htm) | No |
+| &emsp;[`#embed`](https://open-std.org/JTC1/SC22/WG14/www/docs/n3017.htm) | No |
+| &emsp;[`constexpr` objects](https://open-std.org/JTC1/SC22/WG14/www/docs/n3018.htm) | No |
+| &emsp;[Improved Normal Enumerations](https://open-std.org/JTC1/SC22/WG14/www/docs/n3029.htm) | No |
+| &emsp;[Enumerations with fixed underlying types](https://open-std.org/JTC1/SC22/WG14/www/docs/n3030.htm) | No |
+| &emsp;[`__VA_OPT__`](https://open-std.org/JTC1/SC22/WG14/www/docs/n3033.htm) | VS 2022 17.9 |
+| &emsp;[Storage-class specifiers for compound literals](https://open-std.org/JTC1/SC22/WG14/www/docs/n3038.htm) | No |
+| &emsp;[`nullptr`](https://open-std.org/JTC1/SC22/WG14/www/docs/n3042.htm) | No |
 
 ## C++ Standard library features
 
@@ -648,6 +731,14 @@ These algorithms aren't presently parallelized:
 
 <a name="note_V"></a> **V** Use the compiler options `/source-charset:utf-8` and `/we4828` to treat source files as UTF-8 encoded.
 
+<a name="note_W"></a> **W** The compiler controls floating-point behavior by using the nonstandard pragmas [`fp_contract`](../preprocessor/fp-contract.md), [`fenv_access`](../preprocessor/fenv-access.md), and [`float_control`](../preprocessor/float-control.md).
+
+<a name="note_X"></a> **X** C11 atomics is supported under `/experimental:c11atomics`.
+
+<a name="note_Y"></a> **Y** The C23 attributes `[[unsequenced]]` and `[[reproducible]]` are accepted in the grammar, but optimizations don't use them.
+
+<a name="note_Label"></a> **Label** The compiler supports labels on declarations, but not at the end of a compound statement.
+
 <a name="note_14"></a> **14** These C++17 and C++20 features are always enabled, even when [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) (the default) is specified. The reason is either because the feature was implemented before the introduction of the **`/std`** options, or because conditional implementation was undesirably complex.
 
 <a name="note_17"></a> **17** These features are enabled by the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) or later compiler option.
@@ -660,7 +751,11 @@ These algorithms aren't presently parallelized:
 
 <a name="note_24"></a> **24** In MSVC Build Tools version 14.50 and up (first shipped with Visual Studio 2026 version 18.0), these features are enabled by the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
 
+<a name="note_C99"></a> **C99** Most C99 features that were made optional in C11 aren't supported or are only partially supported by the compiler.
+
 <a name="note_C11"></a> **C11** Compiler support for C11 and C17 requires Visual Studio 2019 version 16.8 or higher. Except as noted, C11 and C17 library support requires Windows SDK build 10.0.20211.0 or higher. For more information on how to install support for C11 and C17, see [Install C11 and C17 support in Visual Studio](./install-c17-support.md).
+
+<a name="note_C17"></a> **C17** The C17 standard didn't add any major features to the language.
 
 <a name="note_DR"></a> **DR** These features are enabled in all C++ [`/std`](../build/reference/std-specify-language-standard-version.md) compiler option modes. The C++ Standard committee adopted this change as a retroactive Defect Report to C++11 and all later versions.
 
