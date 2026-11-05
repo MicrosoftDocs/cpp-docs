@@ -230,7 +230,7 @@ The [`/MAPINFO`](mapinfo-include-information-in-mapfile.md) option tells the lin
 
 ### Support C++ Dynamic Debugging
 
-(Preview) Set linker flag [`/DYNAMICDEOPT`](dynamic-deopt-linker.md) to turn on [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging). Place deoptimized breakpoints and step in anywhere with on-demand function deoptimization. Use this mode for debugging optimized code.
+Set linker flag [`/DYNAMICDEOPT`](dynamic-deopt-linker.md) to turn on [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging). Place deoptimized breakpoints and step in anywhere with on-demand function deoptimization. Use this mode for debugging optimized code.
 
 ## System property page
 

@@ -1,17 +1,13 @@
 ---
-title: "/dynamicdeopt (Enable C++ Dynamic Debugging (Preview))"
+title: "/dynamicdeopt (Enable C++ Dynamic Debugging)"
 description: "Enable the Microsoft C++ compiler option /dynamicdeopt to use C++ Dynamic Debugging."
 ms.date: 04/01/2025
 f1_keywords: ["/dynamicdeopt"]
 helpviewer_keywords: ["-dynamicdeopt compiler option [C++]", "dynamicdeopt compiler option [C++]"]
 ---
-# `/dynamicdeopt` (Enable C++ Dynamic Debugging) (Preview)
+# `/dynamicdeopt` (Enable C++ Dynamic Debugging)
 
-> [!IMPORTANT]
-> The `/dynamicdeopt` compiler switch is currently in PREVIEW.
-> This information relates to a prerelease feature that might be substantially modified before release. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
-
-Enable [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging) so you can debug optimized code as if it were compiled deoptimized and step in anywhere with on-demand function deoptimization.
+Enable [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging) so you can debug optimized code as if it were compiled deoptimized and step in anywhere with on-demand function deoptimization.
 
 ## Syntax
 
@@ -24,14 +20,14 @@ Enable [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debu
 *`suffix`*\
 Specify the file extension for the deoptimized output.
 
-With no options and given `test.cpp` as input, your output includes `test.obj`, `test.exe`, and `test.pdb`, as well as `test.alt.obj`, `test.alt.exe`, and `test.alt.pdb`. This switch allows you to change the suffix of the unoptimized binary build artifacts from `.alt` to something else. If you change the suffix, all files must use the new suffix, and it needs to match the name passed to the linker using [`/dynamicdeopt:suffix` (Preview)](dynamic-deopt-linker.md). You typically don't use this switch unless you need to avoid filename collisions with other files that you have.
+With no options and given `test.cpp` as input, your output includes `test.obj`, `test.exe`, and `test.pdb`, as well as `test.alt.obj`, `test.alt.exe`, and `test.alt.pdb`. This switch allows you to change the suffix of the unoptimized binary build artifacts from `.alt` to something else. If you change the suffix, all files must use the new suffix, and it needs to match the name passed to the linker using [`/dynamicdeopt:suffix`](dynamic-deopt-linker.md). You typically don't use this switch unless you need to avoid filename collisions with other files that you have.
 
 *`sync`*\
 Builds the deoptimized output after building the optimized output instead of in parallel. By default, the compiler spawns a parallel instance of the code generator. This switch makes them run serially instead. This switch is provided in case this better suits your build environment.
 
 ## Remarks
 
-This preview flag, available starting with Visual Studio 2022 Version 17.14 Preview 2, applies only to x64 projects and must be used with the corresponding linker flag, [`/DYNAMICDEOPT`](dynamic-deopt-linker.md).
+This flag, available starting with Visual Studio 2022 Version 17.14 Preview 2, applies only to x64 projects and must be used with the corresponding linker flag, [`/DYNAMICDEOPT`](dynamic-deopt-linker.md).
 
 Compiling with `/dynamicdeopt` generates other binaries that are used for debugging. When you debug an optimized function in an optimized file, the debugger steps into the alternate binary instead. This allows you to debug as if you're debugging unoptimized code while still getting the performance advantages of optimized code. 
 
@@ -65,7 +61,7 @@ All of the CLR flags
 
 ### Set this linker option in the Visual Studio development environment
 
-You can set this switch inside Visual Studio. For more information, see [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging#build-system-integration). There are advantages to setting the switch in Visual Studio because MSBuild automatically suppresses some of the incompatible switches such as `/GL` and `/OPT:ICF`. It also sets the corresponding linker option (`/DYNAMICDEOPT`). You can also set the switch in the command line.
+You can set this switch inside Visual Studio. For more information, see [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging#build-system-integration). There are advantages to setting the switch in Visual Studio because MSBuild automatically suppresses some of the incompatible switches such as `/GL` and `/OPT:ICF`. It also sets the corresponding linker option (`/DYNAMICDEOPT`). You can also set the switch in the command line.
 
 ### Set this compiler option programmatically
 
@@ -73,6 +69,6 @@ You can set this switch inside Visual Studio. For more information, see [C++ Dyn
 
 ## See also
 
-[C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging)\
+[C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging)\
 [MSVC Compiler Options](compiler-options.md)\
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)
