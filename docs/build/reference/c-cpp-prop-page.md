@@ -65,7 +65,7 @@ Adds supporting code for enabling [Just My Code](/visualstudio/debugger/just-my-
 
 ### Support C++ Dynamic Debugging
 
-(Preview) Sets compiler flag [`/dynamicdeopt`](dynamic-deopt.md) to turn on [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging). Place deoptimized breakpoints and step in anywhere with on-demand function deoptimization. Use this mode for debugging optimized code.
+Sets compiler flag [`/dynamicdeopt`](dynamic-deopt.md) to turn on [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging). Place deoptimized breakpoints and step in anywhere with on-demand function deoptimization. Use this mode for debugging optimized code.
 
 ### Common Language RunTime Support
 
