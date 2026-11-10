@@ -59,7 +59,7 @@ The processor extensions have the following characteristics:
 - **`AVX10.2`** expands the instruction set introduced in `AVX10.1`. The default vector length for **`AVX10.2`** is 256 bits and can be increased to 512 bits using the [`/vlen`](vlen.md) flag.
 `AVX10.2` adds instructions that are enhancements of legacy instructions and media acceleration instructions. For more information about the new instructions, see section 3.1.4 in the [Intel Advanced Vector Extensions 10.2 Architecture Specification](https://www.intel.com/content/www/us/en/content-details/856721/intel-advanced-vector-extensions-10-2-intel-avx10-2-architecture-specification.html). The AI related instructions in that document are supported via MSVC intrinsics instead of being directly emitted because MSVC doesn't support their data types. This compiler option was introduced in Visual Studio 2026.
 
-Optionally, enable one or more architecture features by appending a feature argument to the option. For example, to target AVX10.2 and enable feature `APX`, append feature argument **`APX`** so that the option becomes **`/arch:AVX10.2+APX`**.
+Enable one or more architecture features by appending a feature argument to the option. For example, to target AVX10.2 and enable APX, append feature argument **`APX`** so that the option becomes **`/arch:AVX10.2+APX`**.
 
 Each **`/arch`** option may also enable the use of other nonvector instructions that are associated with that option. An example is the use of certain BMI instructions when **`/arch:AVX2`** is specified.
 
