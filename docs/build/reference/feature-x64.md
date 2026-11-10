@@ -17,7 +17,7 @@ To enable one or more features the x64 target supports, specify one or more of t
 
 | Feature argument | Description | Supported in version |
 |--|--|--|
-| **`APX`** | Enables support for Intel APX (Advanced Performance Extensions). Enables the compiler to target various APX features like Extended General-Purpose Registers (EGPRs), New Data Destination (NDD), No-Flags Update (NF), new conditional ISA and optimized registers save/restore operations. For more information, see [Intel Advanced Performance Extensions (APX)](https://www.intel.com/content/www/us/en/developer/articles/technical/advanced-performance-extensions-apx.html). | MSVC Build Tools 14.52 |
+| **`APX`** | Enables support for Intel APX (Advanced Performance Extensions). Enables the compiler to target various APX features, such as Extended General-Purpose Registers (EGPRs), New Data Destination (NDD), No-Flags Update (NF), new conditional ISA, and optimized register save and restore operations. For more information, see [Intel Advanced Performance Extensions (APX)](https://www.intel.com/content/www/us/en/developer/articles/technical/advanced-performance-extensions-apx.html). | MSVC Build Tools 14.52 |
 
 ## Remarks
 
