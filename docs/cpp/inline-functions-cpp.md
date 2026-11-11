@@ -180,7 +180,7 @@ The C++ Standard defines a common set of attributes. It also allows compiler ven
 
 |Attribute | Meaning |
 |---------|---------|
-| [`[msvc::forceinline]`](/cpp/cpp/attributes#msvcforceinline)| Has the same meaning as **`__forceinline`**.|
+| [`[msvc::forceinline]`](/cpp/cpp/attributes#msvcforceinline)| It behaves similarly to **`__forceinline`**, but preserves the creation of a symbol in the translation unit where the function (to which it is applied) is defined.|
 | [`[msvc::forceinline_calls]`](/cpp/cpp/attributes#msvcforceinline_calls) | Can be placed on or before a statement or block to cause the inline heuristic to force-inline all calls in that statement or block.|
 | [`[msvc::flatten]`](/cpp/cpp/attributes#msvcflatten) | Similar to `[[msvc::forceinline_calls]]`, but recursively force-inlines all calls in the scope it's applied to until no calls are left. |
 | [`[msvc::noinline]`](/cpp/cpp/attributes#msvcnoinline) | When placed before a function declaration, has the same meaning as `__declspec(noinline)`. |
