@@ -52,7 +52,7 @@ Use the [`comment`](../../preprocessor/comment-c-cpp.md) pragma to specify some 
 | [`/DLL`](dll-build-a-dll.md) | Builds a DLL. |
 | [`/DRIVER`](driver-windows-nt-kernel-mode-driver.md) | Creates a kernel mode driver. |
 | [`/DYNAMICBASE`](dynamicbase-use-address-space-layout-randomization.md) | Specifies whether to generate an executable image that's rebased at load time by using the address space layout randomization (ASLR) feature. |
-| [`/DYNAMICDEOPT`](dynamic-deopt-linker.md) | Enable [C++ Dynamic Debugging (Preview)](/visualstudio/debugger/cpp-dynamic-debugging) and step in anywhere with on-demand function deoptimization. |
+| [`/DYNAMICDEOPT`](dynamic-deopt-linker.md) | Enable [C++ Dynamic Debugging](/visualstudio/debugger/cpp-dynamic-debugging) and step in anywhere with on-demand function deoptimization. |
 | [`/ENTRY`](entry-entry-point-symbol.md) | Sets the starting address. |
 | [`/ERRORREPORT`](errorreport-report-internal-linker-errors.md) | Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
 | [`/EXPORT`](export-exports-a-function.md) | Exports a function. |
