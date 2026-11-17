@@ -1,7 +1,7 @@
 ---
 title: "What's new for MSVC Build Tools"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools (MSVC)."
-ms.date: 05/15/2026
+ms.date: 11/17/2026
 ms.service: "visual-cpp"
 ms.subservice: "cpp-lang"
 ms.custom: intro-whats-new
@@ -9,9 +9,65 @@ ms.custom: intro-whats-new
 
 # What's new for MSVC Build Tools
 
-Version 14.51 brings many updates and fixes to the Microsoft C++ compiler and other build tools.
+Version 14.52 brings many updates and fixes to the Microsoft C++ compiler and other build tools.
 
 - For more information about what's new in all of Visual Studio, see [Visual Studio 2026 release notes](/visualstudio/releases/2026/release-notes).
+
+## What's new for MSVC Build Tools version 14.52
+
+* Introduced in Visual Studio 2026 version 18.12 and Visual Studio 2026 LTSC version 18.11, both released November 2026.
+
+MSVC Build Tools version 14.52 is a long-term support (LTS) release. It's available in Visual Studio 2026 version 18.12 on the Stable channel and in Visual Studio 2026 LTSC version 18.11. MSVC and Visual Studio have separate support lifecycles. For more information, see [Announcing Visual Studio 2026 LTSC 18.11](https://devblogs.microsoft.com/visualstudio/announcing-visual-studio-2026-ltsc-1811/).
+
+Visual Studio 2026 ships with the v145 platform toolset for MSBuild C++ projects. With version 14.52, C++23 is ready for production use: build with `/std:c++23` to select C++23 language rules. The `/std:c++23preview` option is now a deprecated alias for `/std:c++23`. To access all the new language features, build with `/std:c++latest`.
+
+MSVC Build Tools version 14.52 preserves binary compatibility with code built with MSVC tools shipped in Visual Studio 2015 or later. For more information about binary compatibility, see [C++ binary compatibility between Visual Studio versions](/cpp/porting/binary-compat-2015-2017).
+
+| For detailed information about | See |
+|---|---|
+| What's new for C++ developers | [MSVC Build Tools version 14.52 now generally available](https://devblogs.microsoft.com/cppblog/msvc-build-tools-version-14-52-now-generally-available/) |
+| Full list of changes | [MSVC Build Tools version 14.52 Release Candidate Now Available](https://devblogs.microsoft.com/cppblog/msvc-build-tools-version-14-52-release-candidate-now-available/) |
+| Standard Library (STL) improvements | [STL Changelog MSVC Build Tools 14.52](https://github.com/microsoft/STL/wiki/Changelog#msvc-build-tools-1452) |
+| C++ language conformance improvements | [C/C++ Conformance improvements, behavior changes, and bug fixes in Microsoft C++ (MSVC) Build Tools](msvc-conformance-improvements.md) |
+
+Here's a quick highlight of some of the new features in MSVC Build Tools version 14.52:
+
+### C++ language enhancements
+
+- **C++23 language mode:** `/std:c++23` selects C++23 language rules. For more information, see [`/std` (Specify Language Standard Version)](../build/reference/std-specify-language-standard-version.md).
+- C++23 immediate escalation ([P2564R3](https://wg21.link/P2564R3)) is enabled in C++23 and later modes. C++20 builds can opt in with `/Zc:immediateEscalation`.
+- C++23 and C23 modes recognize the mathematical compatibility identifier ranges from [P3658R1](https://wg21.link/P3658R1).
+- Module interfaces can represent `constexpr` functions that contain `new T[n]` expressions.
+- `_Pragma` works in more macro-expansion cases and is supported under `/E`.
+- `/clr` is now available in C++23 and later modes.
+- Improved C++ modules reliability, including module serialization, type merging across modules that share a header unit, argument-dependent lookup of non-exported names, and header-unit macro handling.
+
+### C language enhancements
+
+- In C code, C4815 and C4816 now warn when a structure is allocated without storage for its flexible array member, or when a structure with a flexible array member is passed by value.
+
+### Standard Library enhancements
+
+- **C++23 feature complete:** The STL implements [P0533R9](https://wg21.link/P0533R9) `constexpr` for `<cmath>` and `<cstdlib>`. This support is opt-in under `/std:c++23 /Zc:cmath`. For more information, see [`/Zc:cmath`](../build/reference/zc-cmath.md) and [MSVC C++23: constexpr cmath with LLVM libc](https://devblogs.microsoft.com/cppblog/msvc-c23-constexpr-cmath-with-llvm-libc/).
+- Under `/std:c++latest /Zc:cmath`, most of the C++26 `constexpr` additions to `<cmath>` ([P1383R2](https://wg21.link/P1383R2)) are implemented.
+- Implemented 19 Library Working Group (LWG) issue resolutions.
+- Improved `<regex>` performance in several scenarios.
+- **ARM64 SVE vectorization:** Added SVE-vectorized implementations of several STL algorithms, and improved the existing ARM64/ARM64EC NEON implementations.
+
+### Build enhancements
+
+- **Optimizer improvements:** Improvements to inlining, loop optimization, vectorization, and instruction selection on x64 and ARM64.
+- **Intel APX:** Production support for targeting Intel Advanced Performance Extensions (APX) in x64 builds, including more APX code-generation forms and APX support in the ABI, assembler, disassembler, and debugging tools. For more information, see [/feature (x64)](../build/reference/feature-x64.md).
+- **ARM64:** Better address sharing and load/store pairing, improved NEON constant and lane handling, and smaller stack frames for large `switch` statements. With `/feature:sme`, the compiler accepts SME attributes and ZA-state types on supported external declarations. For more information, see [/feature (ARM64)](../build/reference/feature-arm64.md).
+- **C++ Dynamic Debugging:** Now generally available. For more information, see [C++ Dynamic Debugging is now generally available](https://devblogs.microsoft.com/cppblog/c-dynamic-debugging-is-now-generally-available/).
+- **AddressSanitizer:** Runtime performance improvements, and the MSVC disassembler is used as a fallback instruction decoder for interception, which reduces "unrecognized instruction" failures. To disable it, set `ASAN_OPTIONS=windows_use_msdis_decoder=false`.
+- The opt-in `/PDB4GBSTREAMS` linker option raises the size limit for the PDB global/public symbol-record stream to roughly 4 GiB.
+- Code Analysis SARIF output includes rule names, descriptions, and help links by default. `/analyze:log:format:sarifandxml` writes both log formats.
+- PE reproducibility improves because the image hash no longer includes the PDB age.
+
+### Deprecations
+
+- `/std:c++23preview` is deprecated and will be removed in a future update. Use `/std:c++23` instead.
 
 ## What's new for MSVC Build Tools version 14.51
 
