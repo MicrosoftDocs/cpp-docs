@@ -1,19 +1,19 @@
 ---
 title: "StartTracingSessionW"
 description: "The C++ Build Insights SDK StartTracingSessionW function reference."
-ms.date: "02/12/2020"
+ms.date: "11/10/2026"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "StartTracingSessionW", "throughput analysis", "build time analysis", "vcperf.exe"]
 ---
 # StartTracingSessionW
 
 ::: moniker range="<=msvc-140"
 
-The C++ Build Insights SDK is compatible with Visual Studio 2017 and later. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2017 or later. It's found at the top of the table of contents on this page.
+The C++ Build Insights SDK works with Visual Studio 2017 and later. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2017 or later. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
 ::: moniker range=">=msvc-150"
 
-The `StartTracingSessionW` function starts a tracing session. Executables calling this function must have administrator privileges.
+The `StartTracingSessionW` function starts a tracing session. Executables that call this function must have administrator privileges.
 
 ## Syntax
 

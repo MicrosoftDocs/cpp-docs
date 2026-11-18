@@ -70,6 +70,12 @@ items:
               href: ../build-insights/reference/sdk/functions/start-tracing-session-a.md
             - name: "StartTracingSessionW"
               href: ../build-insights/reference/sdk/functions/start-tracing-session-w.md
+            - name: "StartTracingSession2"
+              href: ../build-insights/reference/sdk/functions/start-tracing-session2.md
+            - name: "StartTracingSession2A"
+              href: ../build-insights/reference/sdk/functions/start-tracing-session2-a.md
+            - name: "StartTracingSession2W"
+              href: ../build-insights/reference/sdk/functions/start-tracing-session2-w.md
             - name: "StopAndAnalyzeTracingSession"
               href: ../build-insights/reference/sdk/functions/stop-and-analyze-tracing-session.md
             - name: "StopAndAnalyzeTracingSessionA"
@@ -266,6 +272,8 @@ items:
               href: ../build-insights/reference/sdk/other-types/tracing-session-msvc-event-flags-constants.md
             - name: "TRACING_SESSION_OPTIONS"
               href: ../build-insights/reference/sdk/other-types/tracing-session-options-struct.md
+            - name: "TRACING_SESSION_OPTIONS_V2"
+              href: ../build-insights/reference/sdk/other-types/tracing-session-options-v2-struct.md
             - name: "TRACING_SESSION_STATISTICS"
               href: ../build-insights/reference/sdk/other-types/tracing-session-statistics-struct.md
             - name: "TRACING_SESSION_SYSTEM_EVENT_FLAGS"
