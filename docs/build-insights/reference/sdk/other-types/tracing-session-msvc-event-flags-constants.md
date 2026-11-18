@@ -1,7 +1,7 @@
 ---
 title: "TRACING_SESSION_MSVC_EVENT_FLAGS constants"
 description: "The C++ Build Insights SDK TRACING_SESSION_MSVC_EVENT_FLAGS constants reference."
-ms.date: "02/12/2020"
+ms.date: "11/10/2026"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "TRACING_SESSION_MSVC_EVENT_FLAGS", "throughput analysis", "build time analysis", "vcperf.exe"]
 ms.topic: reference
 ---
@@ -14,7 +14,7 @@ The C++ Build Insights SDK is compatible with Visual Studio 2017 and later. To s
 ::: moniker-end
 ::: moniker range=">=msvc-150"
 
-The `TRACING_SESSION_MSVC_EVENT_FLAGS` constants are used to describe which MSVC events to collect during a trace. Use them to initialize the [TRACING_SESSION_OPTIONS](tracing-session-options-struct.md) structure's `MsvcEventFlags` field.
+The `TRACING_SESSION_MSVC_EVENT_FLAGS` constants describe which MSVC events to collect during a trace. Use them to initialize the `MsvcEventFlags` field of [TRACING_SESSION_OPTIONS](tracing-session-options-struct.md) or [TRACING_SESSION_OPTIONS_V2](../other-types/tracing-session-options-v2-struct.md).
 
 ## Syntax
 

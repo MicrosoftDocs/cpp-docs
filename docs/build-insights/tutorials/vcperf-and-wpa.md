@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: vcperf and Windows Performance Analyzer"
 description: "Tutorial on how to use vcperf and WPA for analyzing C++ build traces."
-ms.date: "11/03/2019"
+ms.date: "11/11/2026"
 helpviewer_keywords: ["C++ Build Insights", "throughput analysis", "build time analysis", "vcperf.exe"]
 ms.topic: tutorial
 ---
@@ -79,6 +79,26 @@ Here's what a typical *vcperf.exe* command sequence looks like in a developer co
 
 ![Screenshot of a command window showing vcperf.exe commands and results.](media/vcperf-simple-usage.png)
 
+### Trace a containerized build
+
+To collect MSVC events from a process-isolated Windows container on the same host, use a version of vcperf that supports `/enableSilos`. Run `vcperf` without arguments to check whether the option is listed.
+
+1. On the Windows host, open a Native Tools Command Prompt as an administrator and start a trace:
+
+   ```cmd
+   vcperf /start /enableSilos ContainerBuild
+   ```
+
+1. Run the build inside a process-isolated Windows container.
+
+1. On the host, stop the trace:
+
+   ```cmd
+   vcperf /stop ContainerBuild container-build.etl
+   ```
+
+The option collects MSVC events from Windows server silos as well as the host. It doesn't collect events from Hyper-V-isolated containers, which use a separate kernel. For more information, see [Windows container isolation modes](/virtualization/windowscontainers/manage-containers/hyperv-container).
+
 ### Important notes about vcperf.exe
 
 - Administrator privileges are required to start or stop a *vcperf.exe* trace. Use a developer command prompt window that you open by using **Run as administrator**.
@@ -110,7 +130,7 @@ If you can't see these views, double-check that WPA is configured correctly, as 
 
 Other views are available in the Graph Explorer panel. Drag them into the Analysis window when you're interested in the information they contain. A useful one is the CPU (Sampled) view, which shows CPU utilization throughout your build.
 
-## More information
+## See also
 
 [Tutorial: Windows Performance Analyzer basics](wpa-basics.md)\
 Learn about common WPA operations that can help you analyze your build traces.
