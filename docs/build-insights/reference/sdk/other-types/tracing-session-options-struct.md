@@ -1,7 +1,7 @@
 ---
 title: "TRACING_SESSION_OPTIONS structure"
 description: "Learn about the C++ Build Insights SDK TRACING_SESSION_OPTIONS structure reference."
-ms.date: "02/12/2020"
+ms.date: "11/10/2026"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "TRACING_SESSION_OPTIONS", "throughput analysis", "build time analysis", "vcperf.exe"]
 ms.topic: reference
 ---
@@ -14,7 +14,9 @@ The C++ Build Insights SDK is compatible with Visual Studio 2017 and later. To s
 ::: moniker-end
 ::: moniker range=">=msvc-150"
 
-The `TRACING_SESSION_OPTIONS` structure is used when initializing an [ANALYSIS_DESCRIPTOR](analysis-descriptor-struct.md) or [RELOG_DESCRIPTOR](relog-descriptor-struct.md) structure. It describes which events to capture during the collection of a trace.
+The `TRACING_SESSION_OPTIONS` structure describes which events to capture when you start a trace with [StartTracingSession](../functions/start-tracing-session.md), [StartTracingSessionA](../functions/start-tracing-session-a.md), or [StartTracingSessionW](../functions/start-tracing-session-w.md).
+
+The original start functions use zero ETW enable-property flags. To configure those flags, use [TRACING_SESSION_OPTIONS_V2](../other-types/tracing-session-options-v2-struct.md) with [StartTracingSession2](../functions/start-tracing-session2.md) or its C counterparts.
 
 ## Syntax
 

@@ -1,7 +1,7 @@
 ---
 title: "TRACING_SESSION_SYSTEM_EVENT_FLAGS constants"
 description: "The C++ Build Insights SDK TRACING_SESSION_SYSTEM_EVENT_FLAGS constants reference."
-ms.date: "02/12/2020"
+ms.date: "11/10/2026"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "TRACING_SESSION_SYSTEM_EVENT_FLAGS", "throughput analysis", "build time analysis", "vcperf.exe"]
 ms.topic: reference
 ---
@@ -14,14 +14,11 @@ The C++ Build Insights SDK is compatible with Visual Studio 2017 and later. To s
 ::: moniker-end
 ::: moniker range=">=msvc-150"
 
-The `TRACING_SESSION_SYSTEM_EVENT_FLAGS` constants are used to describe which system events to collect during a trace. Use them to initialize the [TRACING_SESSION_OPTIONS](tracing-session-options-struct.md) structure's `SystemEventFlags` field.
+The `TRACING_SESSION_SYSTEM_EVENT_FLAGS` constants describe which system events to collect during a trace. Use them to initialize the `SystemEventFlags` field of [TRACING_SESSION_OPTIONS](tracing-session-options-struct.md) or [TRACING_SESSION_OPTIONS_V2](tracing-session-options-v2-struct.md).
 
 ## Syntax
 
 ```cpp
-static const unsigned long long
-    TRACING_SESSION_SYSTEM_EVENT_FLAGS_CONTEXT      = 0x1ULL;
-
 static const unsigned long long
     TRACING_SESSION_SYSTEM_EVENT_FLAGS_CPU_SAMPLES  = 0x2ULL;
 
@@ -33,8 +30,7 @@ static const unsigned long long
 
 | Name | Events turned on by this flag |
 |--|--|
-| `TRACING_SESSION_SYSTEM_EVENT_FLAGS_CONTEXT` | This flag is activated by default by the C++ Build Insights SDK even if not specified explicitly. It enables basic system events that are required by C++ Build Insights to function properly. The events enabled by this flag provide information about processes, threads, and image loading. You can't disable these events. |
-| `TRACING_SESSION_SYSTEM_EVENT_FLAGS_CPU_SAMPLES` | CPU samples |
+| `TRACING_SESSION_SYSTEM_EVENT_FLAGS_CPU_SAMPLES` | CPU samples. Collecting these events requires administrator privileges. |
 | `TRACING_SESSION_SYSTEM_EVENT_FLAGS_ALL` | This flag turns on all system events. |
 
 ::: moniker-end

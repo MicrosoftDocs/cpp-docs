@@ -1,7 +1,7 @@
 ---
 title: "C++ Build Insights SDK"
 description: "An overview of the Visual Studio C++ Build Insights SDK."
-ms.date: "02/12/2020"
+ms.date: "11/10/2026"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "Analyzing", "Relogging", "throughput analysis", "build time analysis", "vcperf.exe"]
 ---
 # C++ Build Insights SDK
@@ -35,13 +35,15 @@ Using the C++ Build Insights SDK to analyze events coming out of the MSVC toolch
 
 ### Method 1: using vcperf in Visual Studio 2019 and above
 
-1. Open an elevated x64 Native Tools Command Prompt for VS 2019.
+1. Open an elevated x64 Native Tools Command Prompt for Visual Studio 2019.
 1. Run the following command: `vcperf /start MySessionName`
 1. Build your project.
 1. Run the following command: `vcperf /stopnoanalyze MySessionName outputTraceFile.etl`
 
    > [!IMPORTANT]
    > Use the `/stopnoanalyze` command when stopping your trace with vcperf. You can't use the C++ Build Insights SDK to analyze traces stopped by the regular `/stop` command.
+
+To collect MSVC events from process-isolated Windows containers on the same host, use a version of vcperf that supports `/enableSilos`. For more information, see [vcperf commands](../vcperf-commands.md).
 
 ### Method 2: programmatically
 
@@ -52,9 +54,12 @@ Use any of these C++ Build Insights SDK trace collection functions to start and 
 | Functionality | C++ API | C API |
 |--|--|--|
 | Starting a trace | [StartTracingSession](functions/start-tracing-session.md) | [StartTracingSessionA](functions/start-tracing-session-a.md)<br />[StartTracingSessionW](functions/start-tracing-session-w.md) |
+| Starting a trace with ETW enable properties | [StartTracingSession2](functions/start-tracing-session2.md) | [StartTracingSession2A](functions/start-tracing-session2-a.md)<br />[StartTracingSession2W](functions/start-tracing-session2-w.md) |
 | Stopping a trace | [StopTracingSession](functions/stop-tracing-session.md) | [StopTracingSessionA](functions/stop-tracing-session-a.md)<br />[StopTracingSessionW](functions/stop-tracing-session-w.md) |
 | Stopping a trace and<br />immediately analyzing the result | [StopAndAnalyzeTracingSession](functions/stop-and-analyze-tracing-session.md) | [StopAndAnalyzeTracingSessionA](functions/stop-and-analyze-tracing-session-a.md)<br />[StopAndAnalyzeTracingSession](functions/stop-and-analyze-tracing-session-w.md) |
 | Stopping a trace and<br />immediately relogging the result | [StopAndRelogTracingSession](functions/stop-and-relog-tracing-session.md) | [StopAndRelogTracingSessionA](functions/stop-and-relog-tracing-session-a.md)<br />[StopAndRelogTracingSessionW](functions/stop-and-relog-tracing-session-w.md) |
+
+The `StartTracingSession2` functions and [TRACING_SESSION_OPTIONS_V2](other-types/tracing-session-options-v2-struct.md) require version 1.6.0 or later of the `Microsoft.Cpp.BuildInsights` NuGet package. Use them to configure ETW enable properties for the MSVC provider, including cross-silo event collection. The original start functions continue to use zero enable-property flags.
 
 The sections that follow show you how to configure an analysis or a relogging session. It's required for the combined functionality functions, such as [StopAndAnalyzeTracingSession](functions/stop-and-analyze-tracing-session.md).
 
@@ -241,5 +246,9 @@ void PrintIncludes(FrontEndFileGroup parentIncludes, FrontEndFile currentFile)
     }
 }
 ```
+
+## See also
+
+- [Reference: vcperf commands](../vcperf-commands.md)
 
 ::: moniker-end
